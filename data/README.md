@@ -47,6 +47,17 @@
 
 이 예시로 같은 폴더의 서로 다른 작업을 구분하고, 다른 폴더에 있는 같은 과제의 코드·데이터·결과물을 연결할 수 있는지 확인합니다. 작업 관계와 검색 정답은 검색 대상 폴더 밖의 `labeled/`에 기록합니다.
 
+## Microsoft 공개 수업 자료
+
+- 원본: [Microsoft Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners)
+- 파일: `raw/microsoft-data-science-for-beginners.zip`
+- 수집 버전: `4d2ac427ad6f022e73a75c4f46a28bbb7978ec3f`
+- 범위: `2-Working-With-Data/`, `3-Data-Visualization/`, `data/`의 문서·노트북·표 데이터 53개, 원본 합계 약 10.1 MB.
+- 별도 이미지 파일, R 하위 폴더, 패키지 설정 파일은 제외했습니다. 노트북에 포함된 그래프 출력은 원본 그대로 유지했습니다.
+- 원본 파일 내용과 상대 폴더 구조를 보존했습니다. 전체 실행 환경이 아닌 검색용 부분 집합이므로 일부 문서 링크나 외부 데이터 참조는 이 묶음에 없을 수 있습니다.
+- ZIP 안의 `LICENSE`에 원본 MIT 라이선스를, `SOURCE.json`에 출처·버전·파일별 SHA-256을 보관합니다. 이 두 관리 파일은 검색·평가 대상에서 제외합니다.
+- 실제 개인 사용 이력과 평가 정답 라벨은 포함하지 않습니다.
+
 ## 라벨 정보
 
 - 파일 ID와 원본 경로
