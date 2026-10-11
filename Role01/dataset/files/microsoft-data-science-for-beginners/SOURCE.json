@@ -1,0 +1,296 @@
+{
+  "repository": "https://github.com/microsoft/Data-Science-For-Beginners",
+  "commit": "4d2ac427ad6f022e73a75c4f46a28bbb7978ec3f",
+  "selection": {
+    "folders": [
+      "2-Working-With-Data/",
+      "3-Data-Visualization/",
+      "data/"
+    ],
+    "extensions": [
+      ".csv",
+      ".ipynb",
+      ".json",
+      ".md",
+      ".pdf",
+      ".py",
+      ".tsv",
+      ".txt",
+      ".xlsx"
+    ],
+    "excluded": [
+      "R subdirectories",
+      "package.json",
+      "package-lock.json",
+      "standalone images"
+    ]
+  },
+  "notes": "Original bytes preserved. Notebook outputs may contain embedded images. This is a search corpus subset, not a complete runnable curriculum.",
+  "files": [
+    {
+      "path": "2-Working-With-Data/05-relational-databases/README.md",
+      "bytes": 10150,
+      "sha256": "29a1c05d1a3856d3593769d4a014eff69e10cc1e748c79544d1d261520f64239"
+    },
+    {
+      "path": "2-Working-With-Data/05-relational-databases/assignment.md",
+      "bytes": 3515,
+      "sha256": "700289162ae6bc7208411bd6acbb7a6d0391ee1d4b9780664a6680d5bbec1c60"
+    },
+    {
+      "path": "2-Working-With-Data/06-non-relational/CocaColaCo.xlsx",
+      "bytes": 10750,
+      "sha256": "7423ca18a5cf2b37ce265de6497ac83b42ba3fff89bf39af1332deec008d6ca0"
+    },
+    {
+      "path": "2-Working-With-Data/06-non-relational/PersonsData.json",
+      "bytes": 494,
+      "sha256": "7d41803ddae07faf4e15c8210e1249aa6f1a72e0171835ff4281acd81237a135"
+    },
+    {
+      "path": "2-Working-With-Data/06-non-relational/README.md",
+      "bytes": 12207,
+      "sha256": "97955909078ed5426afcc71c97417986aa6f53d87fdae779c1308cdb4d4002ea"
+    },
+    {
+      "path": "2-Working-With-Data/06-non-relational/TwitterData.json",
+      "bytes": 2860,
+      "sha256": "c83e03d87f6984058a4a9f00c966c95a31e5ee36f00e5d132ab54152f63e0ae1"
+    },
+    {
+      "path": "2-Working-With-Data/06-non-relational/assignment.md",
+      "bytes": 799,
+      "sha256": "8dcb559c9f914a17f2524f15f9dc11221889f08105ff9a772f69256bc7f4eb8f"
+    },
+    {
+      "path": "2-Working-With-Data/07-python/README.md",
+      "bytes": 20878,
+      "sha256": "648062176fd205d22018648837f04c6bae66c1ef9cb53bd50f83915c3e0ad11f"
+    },
+    {
+      "path": "2-Working-With-Data/07-python/assignment.md",
+      "bytes": 2043,
+      "sha256": "e736f55e8773637d4673641d1dc5547df689e36beee9073cd2474da5d803359a"
+    },
+    {
+      "path": "2-Working-With-Data/07-python/notebook-covidspread.ipynb",
+      "bytes": 699571,
+      "sha256": "356d97168cf8a14601387513b70427eea089b5d469647ca47fa6d17adb66e883"
+    },
+    {
+      "path": "2-Working-With-Data/07-python/notebook-papers.ipynb",
+      "bytes": 872839,
+      "sha256": "cbd7d63544993ac629750987f93b8bcce2f731c0505a4ab494e3e752a549630e"
+    },
+    {
+      "path": "2-Working-With-Data/07-python/notebook.ipynb",
+      "bytes": 497885,
+      "sha256": "bf39e32719912a7b8f7188a0331ed4279198f4ddc07fbf1434a1f8c3fee04563"
+    },
+    {
+      "path": "2-Working-With-Data/08-data-preparation/README.md",
+      "bytes": 17463,
+      "sha256": "e6fff0d33cc033c074d7ea97e35ed9a8f4db32823409e44220716ef299773bcc"
+    },
+    {
+      "path": "2-Working-With-Data/08-data-preparation/assignment.ipynb",
+      "bytes": 22472,
+      "sha256": "6c5e48f0ce1765e0f7f37bc935eb17d705511775fc11f757a0588efe745a1fa3"
+    },
+    {
+      "path": "2-Working-With-Data/08-data-preparation/assignment.md",
+      "bytes": 836,
+      "sha256": "764d63198f11ea0170081be1bbc5255ee3787c7b96c7a2e225da851acf374ff8"
+    },
+    {
+      "path": "2-Working-With-Data/08-data-preparation/notebook.ipynb",
+      "bytes": 142726,
+      "sha256": "88a56e26a506fd37b7f38083debd5568b1cb3eef3e7c75ede7d95fd5b87d7323"
+    },
+    {
+      "path": "2-Working-With-Data/README.md",
+      "bytes": 1152,
+      "sha256": "ae06a890084700422acb02255c9a74085f92dc1154d0ad4d8acaed05f3958408"
+    },
+    {
+      "path": "3-Data-Visualization/09-visualization-quantities/README.md",
+      "bytes": 10945,
+      "sha256": "3c49228c844f3781e43fb88d164e688d9446665c3bcfa45973a78589e35b5a8a"
+    },
+    {
+      "path": "3-Data-Visualization/09-visualization-quantities/assignment.md",
+      "bytes": 686,
+      "sha256": "97aecab2cd0d68229c480a751c13de843ac636a6a6015d7810dfdc5e9398ada9"
+    },
+    {
+      "path": "3-Data-Visualization/09-visualization-quantities/notebook.ipynb",
+      "bytes": 660,
+      "sha256": "f24676e5367079931599aaff73617488ca78778896c1a55228f305f5f05875dc"
+    },
+    {
+      "path": "3-Data-Visualization/09-visualization-quantities/solution/notebook.ipynb",
+      "bytes": 3241587,
+      "sha256": "f1ab872573ec46988abda91694ee9c993d408965bd56c637de421eb822a94365"
+    },
+    {
+      "path": "3-Data-Visualization/10-visualization-distributions/README.md",
+      "bytes": 11272,
+      "sha256": "92ab0688fe4b4d81c1bc88ab20ce40d86cf35c3ac20e53b8fa230adedd9f32ff"
+    },
+    {
+      "path": "3-Data-Visualization/10-visualization-distributions/assignment.md",
+      "bytes": 747,
+      "sha256": "d939dcfb4598b11cf8cbc0006d4baaf9579280eb6adf1579f95b61fca4e57053"
+    },
+    {
+      "path": "3-Data-Visualization/10-visualization-distributions/notebook.ipynb",
+      "bytes": 244,
+      "sha256": "0e645fbb3559a3c22e68fec49151b5fb98d8152657a3651a5240ee0577fe103f"
+    },
+    {
+      "path": "3-Data-Visualization/10-visualization-distributions/solution/notebook.ipynb",
+      "bytes": 166874,
+      "sha256": "8119204897081353cc4e1e54bbe2f57bd27aad2520260c4808ec0c02306cbc40"
+    },
+    {
+      "path": "3-Data-Visualization/11-visualization-proportions/README.md",
+      "bytes": 10684,
+      "sha256": "cc90d2eb3ef5a00709c9b70f9d02a5fb7290cd6f369986634da41a7a1b9a9b14"
+    },
+    {
+      "path": "3-Data-Visualization/11-visualization-proportions/assignment.md",
+      "bytes": 710,
+      "sha256": "8d15353f8b61757922e25b4c4b28a6fbd44a5460fdd880166299a4c52cb721bf"
+    },
+    {
+      "path": "3-Data-Visualization/11-visualization-proportions/notebook.ipynb",
+      "bytes": 251,
+      "sha256": "20239bec7ccfd709ead35014d38cc8aa528e17272e3c3f810b625a77ab61c8d7"
+    },
+    {
+      "path": "3-Data-Visualization/11-visualization-proportions/solution/notebook.ipynb",
+      "bytes": 156621,
+      "sha256": "2130bad60face18f7ac7660e6bd6072181b32006a32ed47452c6c76a46090315"
+    },
+    {
+      "path": "3-Data-Visualization/12-visualization-relationships/README.md",
+      "bytes": 10669,
+      "sha256": "89f0d74ef709fb99ad628a711456aaa5c761c109947659f24945e2e116c7fd76"
+    },
+    {
+      "path": "3-Data-Visualization/12-visualization-relationships/assignment.md",
+      "bytes": 1143,
+      "sha256": "6f2e37e39a9462593e4c798b0b5076cffe2aa13a53f3e9e4a0010e173ee201d1"
+    },
+    {
+      "path": "3-Data-Visualization/12-visualization-relationships/notebook.ipynb",
+      "bytes": 264,
+      "sha256": "dcc650315d1b86c421213fdabf87e61aa0edb1b47a567e0c6a570d72532f3a9a"
+    },
+    {
+      "path": "3-Data-Visualization/12-visualization-relationships/solution/notebook.ipynb",
+      "bytes": 1837527,
+      "sha256": "50c4c34343d2c047fdc27e39daa255b0449c7429402eaa8e18c169b6a7d50f8c"
+    },
+    {
+      "path": "3-Data-Visualization/13-meaningful-visualizations/README.md",
+      "bytes": 10686,
+      "sha256": "0bcfb154632e144530dffeeb4a8f4e0db4fffd5ff40cb304e75b710558d7f077"
+    },
+    {
+      "path": "3-Data-Visualization/13-meaningful-visualizations/assignment.md",
+      "bytes": 659,
+      "sha256": "c674bdf065520dd074ff0a13f4211c601099cd6256739a530c36d80010f31329"
+    },
+    {
+      "path": "3-Data-Visualization/13-meaningful-visualizations/correlation-analysis.ipynb",
+      "bytes": 45136,
+      "sha256": "6038b8e603025a3eaa84bf9cc5484c1f88f19b21e8534c974ebe5a0891790676"
+    },
+    {
+      "path": "3-Data-Visualization/13-meaningful-visualizations/solution/README.md",
+      "bytes": 547,
+      "sha256": "5e297730ec876c49a654fa6c2938cda2abf24a774117c0f54319e66739b3e602"
+    },
+    {
+      "path": "3-Data-Visualization/13-meaningful-visualizations/solution/src/assets/letters.json",
+      "bytes": 27225,
+      "sha256": "82b303018e6549725d9f502259e7bbb5c96cc895c32e50f689d6044f4f290703"
+    },
+    {
+      "path": "3-Data-Visualization/13-meaningful-visualizations/starter/README.md",
+      "bytes": 547,
+      "sha256": "5e297730ec876c49a654fa6c2938cda2abf24a774117c0f54319e66739b3e602"
+    },
+    {
+      "path": "3-Data-Visualization/13-meaningful-visualizations/starter/src/assets/letters.json",
+      "bytes": 27225,
+      "sha256": "82b303018e6549725d9f502259e7bbb5c96cc895c32e50f689d6044f4f290703"
+    },
+    {
+      "path": "3-Data-Visualization/README.md",
+      "bytes": 3805,
+      "sha256": "079f40d4264d3d3aba6f98256fd2edb3802119014b31ccb78295b117e08f0ed8"
+    },
+    {
+      "path": "data/COVID/time_series_covid19_confirmed_global.csv",
+      "bytes": 141804,
+      "sha256": "a793773aee80b85b3b3d0880463c3dbfaf137c013fd946c02fa3ceeee4e8216d"
+    },
+    {
+      "path": "data/COVID/time_series_covid19_deaths_global.csv",
+      "bytes": 103722,
+      "sha256": "8a747c0061bb3bb9649bd7c427966d7c56e04c87943f72350b9682ec151faea7"
+    },
+    {
+      "path": "data/COVID/time_series_covid19_recovered_global.csv",
+      "bytes": 121596,
+      "sha256": "42d2fc6fa22e4ef5d064cebca3ddb4f8d2c5d02e53f215345ea0294a82947046"
+    },
+    {
+      "path": "data/SOCR_MLB.tsv",
+      "bytes": 45446,
+      "sha256": "c7453f9a7049cbb5c53d85cb2d45328b0006413c3a7434ea7d113d4f9cf3cd1b"
+    },
+    {
+      "path": "data/UID_ISO_FIPS_LookUp_Table.csv",
+      "bytes": 386595,
+      "sha256": "5bd28b1fb8c30502fd6c17a548a2bf493b2a269f84394d939db8f491036b4c60"
+    },
+    {
+      "path": "data/birds.csv",
+      "bytes": 49679,
+      "sha256": "c508f9e8a597535d5955b1574745d902697e8677e67a768f0dd3db6a9dab6147"
+    },
+    {
+      "path": "data/diabetes.tsv",
+      "bytes": 18496,
+      "sha256": "4733febee697862c22139cdac87478a300ce0d101593deb07ed6c0f3328a99cd"
+    },
+    {
+      "path": "data/emails.csv",
+      "bytes": 18549,
+      "sha256": "d75c56c025776a6272abff1ee7e91f2bb7c231a4c03876f0be732f63730d30fd"
+    },
+    {
+      "path": "data/form.csv",
+      "bytes": 192,
+      "sha256": "d024c299c2f1c2f888d8bd7b51746e355de6f3230a1b94a4a90e40cb83f5cf6e"
+    },
+    {
+      "path": "data/honey.csv",
+      "bytes": 29143,
+      "sha256": "70a831b5c9872904df3aa3fc4142a5749f968e7e64405f6e2e116c5c49ed038e"
+    },
+    {
+      "path": "data/mushrooms.csv",
+      "bytes": 1264979,
+      "sha256": "d767bda21ca437e812761c4eb499e7344c074adea724c3347bc82423ee5d47cd"
+    },
+    {
+      "path": "data/taxi.csv",
+      "bytes": 21369,
+      "sha256": "46c9ac10f26975029efcf2b8cffce70db68dfa1d7f1f1c09b8d7313e4d3cd9d7"
+    }
+  ]
+}
