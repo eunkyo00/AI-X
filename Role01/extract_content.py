@@ -228,19 +228,36 @@ for _, row in metadata.iterrows():
 # 12. 결과 저장
 result_df = pd.DataFrame(results)
 
+# metadata.csv에만 있는 추가 정보 가져오기
+extra_columns = [
+    col for col in metadata.columns
+    if col not in result_df.columns and col != "file_id"
+]
+
+# file_id를 기준으로 두 데이터 합치기
+if extra_columns:
+    result_df = result_df.merge(
+        metadata[["file_id"] + extra_columns],
+        on="file_id",
+        how="left"
+    )
+
+# 13. 결과 저장
 result_df.to_csv(
     OUTPUT_CSV,
     index=False,
     encoding="utf-8-sig"
 )
 
-print("\n텍스트 추출 완료!")
+print("\n텍스트 추출 및 파일 정보 결합 완료!")
 print(f"총 파일 수: {len(result_df)}")
-print(f"추출 성공: {(result_df['extraction_status'] == 'success').sum()}")
+print(
+    f"추출 성공: "
+    f"{(result_df['extraction_status'] == 'success').sum()}"
+)
 print(f"저장 위치: {OUTPUT_CSV.resolve()}")
 
-
-# 결과 미리 보기
+# 14. 결과 미리 보기
 result_df["preview"] = (
     result_df["extracted_text"]
     .str.replace("\n", " ", regex=False)
