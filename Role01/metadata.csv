@@ -1,4 +1,4 @@
-file_id,filename,extension,path,size_bytes,created_at,modified_at,project,role,description
+﻿file_id,filename,extension,path,size_bytes,created_at,modified_at,project,role,description
 F001,Cross-Validation_Decoded.pdf,.pdf,dataset\files\딥러닝_수업자료\Cross-Validation_Decoded.pdf,1234592,2026-10-08 14:50:20,2026-04-10 18:31:57,딥러닝,강의자료,NumPy를 이용한 10-Fold 교차 검증(Cross-Validation) 수동 구현 방법과 Scikit-learn을 통한 자동화(Stratified K-Fold) 과정을 비교 설명한 강의 자료.
 F002,MLP(다층퍼셉트론)(강의).pdf,.pdf,dataset\files\딥러닝_수업자료\MLP(다층퍼셉트론)(강의).pdf,3607923,2026-10-08 14:50:20,2026-04-15 15:22:00,딥러닝,강의자료,"다층 퍼셉트론(MLP)의 구조와 순방향 패스, 오차 역전파(Back-propagation) 알고리즘, 그리고 경사하강법을 통한 가중치 갱신 원리를 다룬 강의 자료."
 F003,Transformer_강의자료.pdf,.pdf,dataset\files\딥러닝_수업자료\Transformer_강의자료.pdf,958949,2026-10-08 14:50:20,2026-06-11 14:08:08,딥러닝,강의자료,"트랜스포머(Transformer) 모델의 구조와 특징, 위치 인코딩(Positional Encoding), 그리고 쿼리·키·값(Q, K, V) 기반의 셀프 어텐션(Self-Attention) 및 멀티 헤드 어텐션 메커니즘을 다룬 강의 자료."
@@ -10,7 +10,6 @@ F008,제09장 컨벌루션 신경망(강의).pdf,.pdf,dataset\files\딥러닝_�
 F009,제11장 순환신경망(강의).pdf,.pdf,dataset\files\딥러닝_수업자료\제11장 순환신경망(강의).pdf,1292369,2026-10-08 14:50:20,2026-06-18 03:20:47,딥러닝,강의자료,"순차 데이터와 시계열 데이터 처리를 위한 순환 신경망(RNN)의 구조와 원리, 그래디언트 소실 문제 및 해결 방안(LSTM), 그리고 케라스(Keras)를 활용한 사인파 및 주가 예측 실습을 다룬 강의 자료."
 F010,케라스 라이브러리.pdf,.pdf,dataset\files\딥러닝_수업자료\케라스 라이브러리.pdf,1014516,2026-10-08 14:50:20,2026-04-15 15:22:29,딥러닝,강의자료,"텐서플로우와 케라스(Keras)의 기본 개념, 신경망 모델 구축 방법, MNIST 데이터셋을 활용한 숫자 인식 실습, 손실 함수, 옵티마이저, 그리고 하이퍼파라미터 튜닝(그리드 검색)을 다룬 강의 자료."
 F011,퍼셉트론_추가.pdf,.pdf,dataset\files\딥러닝_수업자료\퍼셉트론_추가.pdf,2302711,2026-10-08 14:50:20,2026-04-01 16:28:32,딥러닝,강의자료,"인공 신경망의 기본 개념과 초기 모델인 퍼셉트론(Perceptron)의 작동 원리, 학습 알고리즘, 그리고 단층 퍼셉트론의 한계점과 다층 퍼셉트론을 통한 XOR 문제 해결을 다룬 강의 자료입니다"
-<<<<<<< HEAD
 F012,.Rhistory,,dataset\files\시계열 분석_code\.Rhistory,0,2026-10-08 14:51:43,2026-10-08 13:25:08,시계열분석,,""
 F013,time_series_analysis10_1.R,.r,dataset\files\시계열 분석_code\time_series_analysis10_1.R,404,2026-10-08 14:51:43,2026-05-05 19:31:50,시계열분석,코드,"R 언어의 lmtest 및 vars 패키지를 활용한 주가지수(DAX, SMI) 간의 그랜저 인과관계 검정(Granger Causality Test), 최적 시차 선택을 위한 VARselect, 그리고 VAR(Vector Autoregression) 모형 적합 10주차 실습 코드."
 F014,time_series_analysis11_1.R,.r,dataset\files\시계열 분석_code\time_series_analysis11_1.R,775,2026-10-08 14:51:43,2026-05-18 15:05:25,시계열분석,코드,"R을 활용한 주가지수 공분적 검정, VECM 적합 및 충격반응 분석 11주차 실습 코드."
@@ -473,4 +472,3 @@ F158,form.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\form.
 F159,honey.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\honey.csv,29143,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,시각화 입력 데이터,미국 주별 벌 군집 수·군집당 수확량·총생산량·재고·가격·생산액·연도 표. 꿀 생산과 가격 관계 시각화에 사용함.
 F160,mushrooms.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\mushrooms.csv,1264979,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,시각화 입력 데이터,식용·독성 구분과 갓 모양·색·냄새·주름·서식지 등 버섯 특성 표. 원형·도넛·와플 차트 실습의 입력 자료.
 F161,taxi.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\taxi.csv,21369,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 데이터,택시 승하차 시각·승객 수·이동 거리·위치 ID·요금·팁·총액 등이 담긴 운행 기록 CSV.
->>>>>>> 6db91b2b5db1464c4f23319f6a76ef1df23059d9
