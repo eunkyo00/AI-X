@@ -160,3 +160,4 @@ F158,form.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\form.
 F159,honey.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\honey.csv,29143,2026-10-12 02:28:29,2026-10-12 02:28:29,데이터사이언스,시각화 입력 데이터,"미국 주별 벌 군집 수·군집당 수확량·총생산량·재고·가격·생산액·연도 표. 꿀 생산과 가격 관계 시각화에 사용함."
 F160,mushrooms.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\mushrooms.csv,1264979,2026-10-12 02:28:29,2026-10-12 02:28:29,데이터사이언스,시각화 입력 데이터,"식용·독성 구분과 갓 모양·색·냄새·주름·서식지 등 버섯 특성 표. 원형·도넛·와플 차트 실습의 입력 자료."
 F161,taxi.csv,.csv,dataset\files\microsoft-data-science-for-beginners\data\taxi.csv,21369,2026-10-12 02:28:29,2026-10-12 02:28:29,데이터사이언스,실습 데이터,"택시 승하차 시각·승객 수·이동 거리·위치 ID·요금·팁·총액 등이 담긴 운행 기록 CSV."
+>>>>>>> 3acae3e706940d8ec273151d640b5cf5eeb3d796
