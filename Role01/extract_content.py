@@ -1,5 +1,6 @@
 from pathlib import Path
 import pandas as pd
+import json
 
 import pymupdf
 from openpyxl import load_workbook
@@ -33,7 +34,34 @@ def extract_plain_text(file_path):
         errors="replace"
     )
 
-# 4. CSV 파일 읽기
+# 4. Jupyter Notebook(.ipynb) 파일 읽기
+def extract_ipynb(file_path):
+    with file_path.open("r", encoding="utf-8") as f:
+        notebook = json.load(f)
+
+    texts = []
+
+    for cell_num, cell in enumerate(notebook.get("cells", []), start=1):
+        cell_type = cell.get("cell_type", "")
+        source = cell.get("source", "")
+
+        # source가 문자열 또는 문자열 리스트인 경우 모두 처리
+        if isinstance(source, list):
+            source = "".join(source)
+
+        if not source.strip():
+            continue
+
+        if cell_type == "code":
+            texts.append(f"[코드 셀 {cell_num}]\n{source}")
+
+        elif cell_type == "markdown":
+            texts.append(f"[설명 셀 {cell_num}]\n{source}")
+
+    return "\n\n".join(texts)
+
+
+# 5. CSV 파일 읽기
 def extract_csv(file_path):
     last_error = None
 
@@ -55,7 +83,7 @@ def extract_csv(file_path):
 
     raise ValueError(f"CSV 읽기 실패: {last_error}")
 
-# 5. XLSX 파일 읽기
+# 6. XLSX 파일 읽기
 def extract_xlsx(file_path):
     workbook = load_workbook(
         file_path,
@@ -89,7 +117,7 @@ def extract_xlsx(file_path):
 
     return "\n".join(texts)
 
-# 6. PDF 파일 읽기
+# 7. PDF 파일 읽기
 def extract_pdf(file_path):
     texts = []
 
@@ -103,7 +131,7 @@ def extract_pdf(file_path):
 
     return "\n".join(texts)
 
-# 7. DOCX 파일 읽기
+# 8. DOCX 파일 읽기
 def extract_docx(file_path):
     doc = Document(file_path)
     texts = []
@@ -122,7 +150,7 @@ def extract_docx(file_path):
 
     return "\n".join(texts)
 
-# 8. PPTX 파일 읽기
+# 9. PPTX 파일 읽기
 def extract_pptx(file_path):
     presentation = Presentation(file_path)
     texts = []
@@ -145,7 +173,7 @@ def extract_pptx(file_path):
 
     return "\n".join(texts)
 
-# 9. 파일 확장자에 따라 추출 함수 선택
+# 10. 파일 확장자에 따라 추출 함수 선택
 def extract_content(file_path):
     if not file_path.exists():
         return "", "file_not_found"
@@ -158,6 +186,9 @@ def extract_content(file_path):
             ".html", ".css", ".js", ".sql", ".r"
         }:
             text = extract_plain_text(file_path)
+
+        elif ext == ".ipynb":
+            text = extract_ipynb(file_path)
 
         elif ext == ".csv":
             text = extract_csv(file_path)
@@ -188,7 +219,7 @@ def extract_content(file_path):
         return "", f"error: {type(e).__name__}: {e}"
 
 
-# 10. 기존 CSV 읽기
+# 11. 기존 CSV 읽기
 metadata = pd.read_csv(
     METADATA_CSV,
     encoding="utf-8-sig"
@@ -203,7 +234,7 @@ if not required_columns.issubset(metadata.columns):
         f"현재 열: {list(metadata.columns)}"
     )
 
-# 11. 각 파일의 내용 추출
+# 12. 각 파일의 내용 추출
 results = []
 
 for _, row in metadata.iterrows():
@@ -225,7 +256,7 @@ for _, row in metadata.iterrows():
         "extraction_status": status
     })
 
-# 12. 결과 저장
+# 13. 결과 저장
 result_df = pd.DataFrame(results)
 
 # metadata.csv에만 있는 추가 정보 가져오기
@@ -242,7 +273,7 @@ if extra_columns:
         how="left"
     )
 
-# 13. 결과 저장
+# 14. 결과 저장
 result_df.to_csv(
     OUTPUT_CSV,
     index=False,

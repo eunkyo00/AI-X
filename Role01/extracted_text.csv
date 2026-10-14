@@ -8767,12 +8767,522 @@ finally:
     GPIO.cleanup()
     print(""시스템 종료"")
 ",7632,success,8167,2026.10.8 14:50,2026.9.28 16:50,졸업작품,코드,하단 낙하 센서를 비활성화하고 전/측방 장애물 감지 거리만 터미널에 실시간 덮어쓰기로 출력하는 테스트 코드
-F058,YOLO(test) (1).ipynb,.ipynb,dataset\files\캡스톤디자인\YOLO(test) (1).ipynb,,0,unsupported_extension,904212,2026.10.8 14:50,2026.9.28 16:47,졸업작품,코드,사전학습 YOLOv5s(yolov5su)로 업로드한 의자·사람 이미지에 객체 탐지(conf 0.4)를 적용해 matplotlib으로 보여주는 기본 동작 테스트용 노트북.
-F059,YOLO(test)_picture(light_ver) (1).ipynb,.ipynb,dataset\files\캡스톤디자인\YOLO(test)_picture(light_ver) (1).ipynb,,0,unsupported_extension,13750,2026.10.8 14:50,2026.9.28 16:47,졸업작품,코드,사전학습 YOLOv8s로 복도 영상(third_floor_corridor.mp4)을 3프레임 간격·640x360으로 줄여 사람 탐지 후 결과 영상을 저장하는 경량 추론 노트북.
-F060,YOLO(test)_picture.ipynb,.ipynb,dataset\files\캡스톤디자인\YOLO(test)_picture.ipynb,,0,unsupported_extension,5080719,2026.10.8 14:50,2026.9.28 16:48,졸업작품,코드,사전학습 YOLOv8s로 강의실·엘리베이터·자판기 등 교내 시설 사진 13장과 3층 강의실·복도 영상을 탐지(conf 0.5)해 결과 영상(.avi)을 내려받는 베이스라인 성능 점검용 노트북
-F061,yolo_learn.ipynb,.ipynb,dataset\files\캡스톤디자인\yolo_learn.ipynb,,0,unsupported_extension,142239,2026.10.8 14:50,2026.9.28 16:11,졸업작품,코드,"층별 복도 데이터 zip 7개를 통합해 14개 시설물 클래스의 data.yaml을 만들고, YOLOv8n을 100 epoch 학습하는 초기 학습 노트북(검증셋을 학습셋과 같이 사용)."
-F062,yolo_learning2 (1).ipynb,.ipynb,dataset\files\캡스톤디자인\yolo_learning2 (1).ipynb,,0,unsupported_extension,143674,2026.10.8 14:50,2026.9.28 16:45,졸업작품,코드,"미완성 데이터셋(tuk_objects_incomplete2, 23,593장)에서 10프레임당 1장(2,360장)만 뽑아 17개 클래스로 YOLOv8n을 학습(patience 20)하는 노트북."
-F063,yolo_learning5 (1).ipynb,.ipynb,dataset\files\캡스톤디자인\yolo_learning5 (1).ipynb,,0,unsupported_extension,175183,2026.10.8 14:50,2026.9.28 16:46,졸업작품,코드,"완성본 데이터셋을 10프레임 간격으로 줄인 뒤, 다중라벨 계층 분할(MultilabelStratifiedShuffleSplit)로 Train/Val/Test를 8:1:1로 나누고 클래스 분포를 시각화하며 YOLOv8n을 학습하는 최종 학습 노트북."
+F058,YOLO(test) (1).ipynb,.ipynb,dataset\files\캡스톤디자인\YOLO(test) (1).ipynb,"[코드 셀 1]
+!pip install ultralytics
+
+[코드 셀 2]
+from ultralytics import YOLO
+from matplotlib import pyplot as plt
+import cv2
+
+[코드 셀 3]
+from google.colab import files
+
+[코드 셀 4]
+model = YOLO(""yolov5s.pt"")
+
+[코드 셀 5]
+uploaded = files.upload()
+
+[코드 셀 6]
+for img_name in uploaded.keys():
+    img = cv2.imread(img_name)
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    results = model(img_rgb, conf=0.4)
+    annotated = results[0].plot()
+
+    # 화면에 연속 출력
+    plt.figure(figsize=(8,6))
+    plt.imshow(annotated)
+    plt.axis('off')
+    plt.title(img_name)
+    plt.show()",565,success,904212,2026.10.8 14:50,2026.9.28 16:47,졸업작품,코드,사전학습 YOLOv5s(yolov5su)로 업로드한 의자·사람 이미지에 객체 탐지(conf 0.4)를 적용해 matplotlib으로 보여주는 기본 동작 테스트용 노트북.
+F059,YOLO(test)_picture(light_ver) (1).ipynb,.ipynb,dataset\files\캡스톤디자인\YOLO(test)_picture(light_ver) (1).ipynb,"[코드 셀 1]
+!pip install ultralytics
+
+[코드 셀 2]
+from ultralytics import YOLO
+from matplotlib import pyplot as plt
+import cv2
+
+[코드 셀 3]
+model = YOLO(""yolov8s.pt"")
+
+[코드 셀 4]
+from google.colab import drive
+drive.mount('/content/drive')
+
+[코드 셀 5]
+# 입력 영상
+input_video = ""/content/drive/MyDrive/third_floor_corridor.mp4""
+cap = cv2.VideoCapture(input_video)
+
+# 출력 영상 세팅
+fourcc = cv2.VideoWriter_fourcc(*""mp4v"")
+output_path = ""/content/drive/MyDrive/output_detected_person.mp4""
+
+# 원본 FPS 유지
+fps = cap.get(cv2.CAP_PROP_FPS)
+
+# 원하는 출력 크기 (프레임 축소), 예: 640x360
+resize_width = 640
+resize_height = 360
+
+out = cv2.VideoWriter(output_path, fourcc, fps, (resize_width, resize_height))
+
+# 프레임 스킵 값 (예: 3 → 3프레임 중 1프레임만 처리)
+FRAME_SKIP = 3
+frame_count = 0
+
+while cap.isOpened():
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # 프레임 스킵
+    if frame_count % FRAME_SKIP != 0:
+        frame_count += 1
+        continue
+
+    # 프레임 크기 줄이기
+    frame_resized = cv2.resize(frame, (resize_width, resize_height))
+
+    # YOLO 탐지
+    results = model.predict(
+        source=frame_resized,
+        conf=0.5,
+        imgsz=640,       # YOLO 내부 입력 크기
+        verbose=False     # 출력 줄이기
+    )
+
+    # 박스 그리기
+    annotated_frame = results[0].plot()
+
+    # 저장
+    out.write(annotated_frame)
+
+    frame_count += 1
+
+cap.release()
+out.release()
+
+print(""완료! 결과 영상 저장됨:"", output_path)",1351,success,13750,2026.10.8 14:50,2026.9.28 16:47,졸업작품,코드,사전학습 YOLOv8s로 복도 영상(third_floor_corridor.mp4)을 3프레임 간격·640x360으로 줄여 사람 탐지 후 결과 영상을 저장하는 경량 추론 노트북.
+F060,YOLO(test)_picture.ipynb,.ipynb,dataset\files\캡스톤디자인\YOLO(test)_picture.ipynb,"[코드 셀 1]
+!pip install ultralytics
+
+[코드 셀 2]
+from ultralytics import YOLO
+from matplotlib import pyplot as plt
+import cv2
+
+[코드 셀 3]
+from google.colab import files
+
+[코드 셀 4]
+model = YOLO(""yolov8s.pt"")
+
+[코드 셀 5]
+uploaded = files.upload()
+
+[코드 셀 6]
+for img_name in uploaded.keys():
+    img = cv2.imread(img_name)
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    results = model(img_rgb, conf=0.5)
+    annotated = results[0].plot()
+
+    # 화면에 연속 출력
+    plt.figure(figsize=(8,6))
+    plt.imshow(annotated)
+    plt.axis('off')
+    plt.title(img_name)
+    plt.show()
+
+[코드 셀 7]
+import glob
+from google.colab import drive
+drive.mount('/content/drive')
+
+[코드 셀 8]
+# class
+results = model.predict(
+    source=""/content/drive/MyDrive/third_floor_class.mp4"",
+    conf=0.5,      # 신뢰도는 50%
+    show=False,
+    save=True,
+    stream=False
+)
+
+[코드 셀 9]
+!ls runs/detect/predict2
+
+[코드 셀 10]
+files.download('/content/runs/detect/predict2/third_floor_class.avi')
+
+[코드 셀 11]
+# corridor
+results = model.predict(
+    source=""/content/drive/MyDrive/third_floor_corridor.mp4"",
+    conf=0.5,      # 신뢰도는 50%
+    show=False,
+    save=True,
+    stream=False
+)
+
+[코드 셀 12]
+files.download('/content/runs/detect/predict2/third_floor_corridor.avi')",1219,success,5080719,2026.10.8 14:50,2026.9.28 16:48,졸업작품,코드,사전학습 YOLOv8s로 강의실·엘리베이터·자판기 등 교내 시설 사진 13장과 3층 강의실·복도 영상을 탐지(conf 0.5)해 결과 영상(.avi)을 내려받는 베이스라인 성능 점검용 노트북
+F061,yolo_learn.ipynb,.ipynb,dataset\files\캡스톤디자인\yolo_learn.ipynb,"[코드 셀 1]
+import os
+import zipfile
+from google.colab import drive
+
+if not os.path.exists('/content/drive'):
+    drive.mount('/content/drive')
+
+[코드 셀 2]
+# 경로 설정
+ZIP_SOURCE_DIR = '/content/drive/MyDrive/tuk_YOLO_data' # zip 파일들이 있는 폴더 경로
+DATASET_DEST_DIR = '/content/dataset'
+
+[코드 셀 3]
+# 압축 풀기
+os.makedirs(DATASET_DEST_DIR, exist_ok=True)
+for root, dirs, files in os.walk(ZIP_SOURCE_DIR):
+    for file in files:
+        if file.endswith('.zip'):
+            zip_path = os.path.join(root, file)
+            print(f""압축 해제 중: {file}"")
+            with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+                zip_ref.extractall(DATASET_DEST_DIR)
+
+print(""\n모든 데이터셋 통합 완료"")
+
+[코드 셀 4]
+# 라이브러리 설치
+!pip install ultralytics
+
+import os
+import shutil
+import glob
+from ultralytics import YOLO
+
+[코드 셀 5]
+# 경로 설정 및 필수 폴더 생성
+DATASET_ROOT = '/content/dataset'
+TRAIN_IMG_DIR = os.path.join(DATASET_ROOT, 'train/images')
+TRAIN_LBL_DIR = os.path.join(DATASET_ROOT, 'train/labels')
+
+os.makedirs(TRAIN_IMG_DIR, exist_ok=True)
+os.makedirs(TRAIN_LBL_DIR, exist_ok=True)
+
+# 흩어져 있는 이미지와 라벨을 새로 만든 폴더로 강제 이동
+all_images = glob.glob(f""{DATASET_ROOT}/**/*.jpg"", recursive=True) + \
+             glob.glob(f""{DATASET_ROOT}/**/*.png"", recursive=True)
+all_labels = glob.glob(f""{DATASET_ROOT}/**/*.txt"", recursive=True)
+
+print(f""찾은 이미지 개수: {len(all_images)}개"")
+print(f""찾은 라벨 개수: {len(all_labels)}개"")
+
+for img in all_images:
+    if 'train/images' not in img: # 이미 옮겨진 건 제외
+        shutil.move(img, os.path.join(TRAIN_IMG_DIR, os.path.basename(img)))
+for lbl in all_labels:
+    if 'train/labels' not in lbl: # 이미 옮겨진 건 제외
+        shutil.move(lbl, os.path.join(TRAIN_LBL_DIR, os.path.basename(lbl)))
+
+# 3. data.yaml 새로 생성 (가장 안전한 방식)
+yaml_path = os.path.join(DATASET_ROOT, 'data.yaml')
+yaml_content = f""""""
+train: {TRAIN_IMG_DIR}
+val: {TRAIN_IMG_DIR}  # 검증 데이터가 없으면 학습용을 같이 사용
+
+nc: 14
+names: ['elevator', 'board', 'locker', 'vending_machine', 'trash_bin', 'door', 'book_shelf', 'signboard', 'self_service_cafe', 'water_dispenser', 'white_locker', 'paper_box', 'column', 'bench']
+""""""
+
+with open(yaml_path, 'w') as f:
+    f.write(yaml_content.strip())
+
+print(""데이터 정리 및 data.yaml 생성 완료"")
+
+# 4. YOLOv8n 학습 시작
+model = YOLO('yolov8n.pt')
+model.train(
+    data=yaml_path,
+    epochs=100,
+    imgsz=640,
+    name='hallway_project',
+    device=0  # GPU 사용
+)",2310,success,142239,2026.10.8 14:50,2026.9.28 16:11,졸업작품,코드,"층별 복도 데이터 zip 7개를 통합해 14개 시설물 클래스의 data.yaml을 만들고, YOLOv8n을 100 epoch 학습하는 초기 학습 노트북(검증셋을 학습셋과 같이 사용)."
+F062,yolo_learning2 (1).ipynb,.ipynb,dataset\files\캡스톤디자인\yolo_learning2 (1).ipynb,"[코드 셀 1]
+!pip install ultralytics
+
+[코드 셀 2]
+from google.colab import drive
+drive.mount('/content/drive')
+
+[코드 셀 3]
+zip_path = '/content/drive/MyDrive/tuk_YOLO_data/tuk_objects_incomplete2.zip'
+
+# 압축을 풀 폴더 경로
+extract_dir = '/content/dataset/'
+
+# 압축 풀기 명령
+!unzip -q ""{zip_path}"" -d ""{extract_dir}""
+
+print(""✅ 압축 해제가 완료되었습니다!"")
+
+[코드 셀 4]
+import glob
+import os
+
+# 경로
+image_dir = '/content/dataset/obj_train_data/'
+
+# glob이 파일을 잘 가져오는지 확인하기 위해 확장자를 소문자/대문자 모두 체크하게 바꿨습니다.
+image_files = sorted(glob.glob(os.path.join(image_dir, '*.png')))
+
+if len(image_files) == 0:
+    print(f""여전히 이미지를 찾지 못했습니다. 현재 경로: {image_dir}"")
+    # 폴더 내용 확인
+    print(""폴더 내용 확인:"", os.listdir(image_dir) if os.path.exists(image_dir) else ""폴더 없음"")
+else:
+    selected_images = image_files[::10]
+
+    # train.txt 생성
+    txt_output_path = '/content/dataset/train.txt'
+    with open(txt_output_path, 'w') as f:
+        for img_path in selected_images:
+            f.write(os.path.abspath(img_path) + '\n')
+
+    print(f""성공! 전체 {len(image_files)}장 중 {len(selected_images)}장이 train.txt에 등록되었습니다."")
+
+[코드 셀 5]
+import yaml
+
+data_config = {
+    'train': '/content/dataset/train.txt',  # 위에서 만든 리스트 경로
+    'val': '/content/dataset/train.txt',
+    'nc': 17,                                # 클래스 총 개수
+    'names': ['elevator', 'board', 'vending_machine', 'trash_bin', 'self_service_cafe', 'water_dispenser', 'locker', 'door', 'obstacle',
+              'ATM', 'snack_vending_machine', 'photo_copier', 'person', 'lectern', 'desk', 'chair', 'signboard'] # 클래스 이름들
+}
+
+
+[코드 셀 6]
+# data.yaml 파일로 저장
+with open('/content/dataset/data.yaml', 'w') as f:
+    yaml.dump(data_config, f, default_flow_style=False)
+
+print(""완료: data.yaml 파일이 생성되었습니다."")
+
+from ultralytics import YOLO
+
+# 모델 로드 (기존에 쓰던 모델 파일 경로)
+model = YOLO('yolov8n.pt')
+
+# 학습 실행
+model.train(
+    data='/content/dataset/data.yaml',
+    epochs=100,      # 에폭 100번
+    imgsz=640,
+    patience=20,     # 성능 안 오르면 알아서 멈춰주는 기능
+    device=0         # GPU 사용
+)",1955,success,143674,2026.10.8 14:50,2026.9.28 16:45,졸업작품,코드,"미완성 데이터셋(tuk_objects_incomplete2, 23,593장)에서 10프레임당 1장(2,360장)만 뽑아 17개 클래스로 YOLOv8n을 학습(patience 20)하는 노트북."
+F063,yolo_learning5 (1).ipynb,.ipynb,dataset\files\캡스톤디자인\yolo_learning5 (1).ipynb,"[코드 셀 1]
+!pip install ultralytics
+
+[코드 셀 2]
+!pip install iterative-stratification
+
+[코드 셀 3]
+import os
+import glob
+import shutil
+import numpy as np
+import yaml
+import matplotlib.pyplot as plt
+import torch
+from ultralytics import YOLO
+from google.colab import drive
+from sklearn.model_selection import train_test_split
+from iterstrat.ml_stratifiers import MultilabelStratifiedShuffleSplit
+
+[코드 셀 4]
+drive.mount('/content/drive')
+
+[코드 셀 5]
+# 1. 압축 해제 (최신 완료본 파일명 반영)
+zip_path = '/content/drive/MyDrive/tuk_YOLO_data/tuk_objects_completed_final.zip'
+extract_dir = '/content/dataset/'
+
+if os.path.exists(extract_dir):
+    shutil.rmtree(extract_dir)
+
+print(""🚀 1단계: 원본 스타일로 초고속 압축 해제 시작..."")
+!unzip -qo ""{zip_path}"" -d ""{extract_dir}""
+print(""✅ 압축 해제가 완료되었습니다!"")
+
+[코드 셀 6]
+# 2. 이미지 및 라벨 경로 자동 탐색
+image_dir = '/content/dataset/train/images/'
+image_files = sorted(glob.glob(os.path.join(image_dir, '*.png')))
+
+# 1순위 경로에 없으면 2순위 표준 경로 체크
+if len(image_files) == 0:
+    image_dir = '/content/dataset/images/train/'
+    image_files = sorted(glob.glob(os.path.join(image_dir, '*.png')))
+
+# 최종 경로 확인 예외 처리
+if len(image_files) == 0:
+    print(""❌ 이미지를 찾을 수 없습니다. 현재 폴더 구조를 확인하세요."")
+    if os.path.exists('/content/dataset/'):
+        print(os.listdir('/content/dataset/'))
+else:
+    print(f""📸 원본 이미지 총 {len(image_files)}장 발견"")
+
+    # 3. 데이터 다이어트 (정확히 10프레임당 1장 추출 확인)
+    selected_images = image_files[::10]
+    print(f""✂️ 10프레임 스킵 적용 후 추출된 이미지: {len(selected_images)}장"")
+
+    # 4. 클래스 정의 및 원-핫 인코딩 행렬(Y) 생성
+    class_names = [
+        'elevator', 'vending_machine', 'trash_bin', 'self_service_cafe',
+        'water_dispenser', 'locker', 'door', 'cabinet', 'photo_copier',
+        'person', 'lectern', 'desk', 'chair', 'signboard'
+    ]
+    nc = len(class_names)
+
+    X = np.array(selected_images)
+    Y = np.zeros((len(selected_images), nc))
+
+    # 이미지별 라벨 파싱하여 존재하는 클래스 표시 (경로 치환 버그 예방 안전 코드 적용)
+    for i, img_path in enumerate(selected_images):
+        if 'train/images/' in img_path:
+            label_path = img_path.replace('train/images/', 'train/labels/').replace('.png', '.txt')
+        else:
+            label_path = img_path.replace('/images/', '/labels/').replace('.png', '.txt')
+
+        if not os.path.exists(label_path):
+            continue
+
+        with open(label_path, 'r') as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                cls = int(line.split()[0])
+                if cls < nc:
+                    Y[i, cls] = 1  # 멀티라벨 인덱스 세팅
+
+    # 5. 다중라벨 계층 분할 (Multilabel Stratified Shuffle Split) - 8:1:1
+    msss1 = MultilabelStratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+    train_idx, temp_idx = next(msss1.split(X, Y))
+
+    train_imgs = X[train_idx]
+    temp_imgs = X[temp_idx]
+    temp_Y = Y[temp_idx]
+
+    msss2 = MultilabelStratifiedShuffleSplit(n_splits=1, test_size=0.5, random_state=42)
+    val_idx, test_idx = next(msss2.split(temp_imgs, temp_Y))
+
+    val_imgs = temp_imgs[val_idx]
+    test_imgs = temp_imgs[test_idx]
+
+    print(""\n📊 데이터 분할 완료 (이미지 수 기준)"")
+    print(f""  - Train (학습용)    : {len(train_imgs)}장"")
+    print(f""  - Val   (검증용)    : {len(val_imgs)}장"")
+    print(f""  - Test  (최종평가용) : {len(test_imgs)}장"")
+
+    # 6. YOLO 포맷 경로 지정을 위한 txt 파일 저장
+    def save_txt(path, img_list):
+        with open(path, 'w') as f:
+            for img_path in img_list:
+                f.write(os.path.abspath(img_path) + '\n')
+
+    save_txt('/content/dataset/train.txt', train_imgs)
+    save_txt('/content/dataset/val.txt', val_imgs)
+    save_txt('/content/dataset/test.txt', test_imgs)
+    print(""✅ train.txt / val.txt / test.txt 생성 완료"")
+
+    # 7. data.yaml 환경 설정 파일 생성
+    data_config = {
+        'train': '/content/dataset/train.txt',
+        'val': '/content/dataset/val.txt',
+        'test': '/content/dataset/test.txt',
+        'nc': nc,
+        'names': class_names
+    }
+
+    with open('/content/dataset/data.yaml', 'w') as f:
+        yaml.dump(data_config, f, default_flow_style=False)
+    print(""✅ data.yaml 설정 파일 생성 완료"")
+
+    # 8. 실제 분할셋별 객체 빈도수 카운트 함수 (경로 안전 매핑 완료)
+    def count_classes(img_list):
+        counts = [0] * nc
+        for img_path in img_list:
+            if 'train/images/' in img_path:
+                label_path = img_path.replace('train/images/', 'train/labels/').replace('.png', '.txt')
+            else:
+                label_path = img_path.replace('/images/', '/labels/').replace('.png', '.txt')
+
+            if not os.path.exists(label_path):
+                continue
+
+            with open(label_path, 'r') as f:
+                for line in f:
+                    if line.strip():
+                        cls = int(line.split()[0])
+                        if cls < nc:
+                            counts[cls] += 1
+        return counts
+
+    train_counts = count_classes(train_imgs)
+    val_counts = count_classes(val_imgs)
+    test_counts = count_classes(test_imgs)
+
+    # 9. 클래스 분할 비율 터미널 출력 및 검증
+    print(""\n📊 각 클래스별 8:1:1 분할 비율 정밀 검증"")
+    for i, name in enumerate(class_names):
+        total = train_counts[i] + val_counts[i] + test_counts[i]
+        if total == 0:
+            continue
+        print(f""  - [{name:18s}] Train:{train_counts[i]/total*100:5.1f}% | Val:{val_counts[i]/total*100:5.1f}% | Test:{test_counts[i]/total*100:5.1f}% (총 {total}개)"")
+
+    # 10. Matplotlib 활용 누적 막대 그래프 시각화
+    x = np.arange(nc)
+    plt.figure(figsize=(14, 8))
+
+    plt.bar(x, train_counts, label='Train', color='#2b5c8f')
+    plt.bar(x, val_counts, bottom=train_counts, label='Val', color='#4682b4')
+    plt.bar(x, test_counts, bottom=np.array(train_counts) + np.array(val_counts), label='Test', color='#add8e6')
+
+    plt.xticks(x, class_names, rotation=45, ha='right')
+    plt.xlabel('Class Names', fontweight='bold', labelpad=10)
+    plt.ylabel('Object Count', fontweight='bold', labelpad=10)
+    plt.title('Multilabel Stratified Class Distribution (Train / Val / Test)', fontsize=14, fontweight='bold', pad=15)
+    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    plt.legend(loc='upper right')
+
+    plt.tight_layout()
+    plt.savefig('/content/dataset/class_distribution_ratio.png', dpi=300)
+    plt.show()
+    print(""📈 클래스 비율 분포 그래프 출력 및 저장 완료"")
+
+    # 11. 디바이스 자동 체크 및 YOLOv8 모델 학습 시작
+    selected_device = 0 if torch.cuda.is_available() else 'cpu'
+    print(f""\n🚀 학습 사용 디바이스: {selected_device}"")
+
+    model = YOLO('yolov8n.pt')
+    model.train(
+        data='/content/dataset/data.yaml',
+        epochs=100,
+        imgsz=640,
+        patience=20,
+        device=selected_device
+    )",6500,success,175183,2026.10.8 14:50,2026.9.28 16:46,졸업작품,코드,"완성본 데이터셋을 10프레임 간격으로 줄인 뒤, 다중라벨 계층 분할(MultilabelStratifiedShuffleSplit)로 Train/Val/Test를 8:1:1로 나누고 클래스 분포를 시각화하며 YOLOv8n을 학습하는 최종 학습 노트북."
 F064,yolo_open.py,.py,dataset\files\캡스톤디자인\yolo_open.py,"yolo predict model=~/obstacle_detection/best_incomplete_ncnn_model source=0 imgsz=320 show=True
 ",96,success,96,2026.10.8 14:50,2026.9.28 16:48,졸업작품,코드,라즈베리 파이에서 학습된 NCNN 모델(best_incomplete_ncnn_model)로 웹캠(source=0)을 imgsz 320으로 실시간 탐지하는 yolo predict CLI 한 줄 명령.
 F065,yolo_stream.py,.py,dataset\files\캡스톤디자인\yolo_stream.py,"import cv2
@@ -25402,9 +25912,590 @@ Exemplary | Adequate | Needs Improvement
 --- | --- | -- |
 All tasks are complete, graphically illustrated and explained, including at least one of two stretch goals | More than 5 tasks are complete, no stretch goals are attempted, or the results are not clear | Less than 5 (but more than 3) tasks are complete, visualizations do not help to demonstrate the point
 ",2043,success,2043,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 안내,국가별 코로나19 전파·치명률 비교와 논문 속 약물 동시출현 분석을 확장하는 과제 안내.
-F118,notebook-covidspread.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\07-python\notebook-covidspread.ipynb,,0,unsupported_extension,699571,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,분석 예제,코로나19 국가별 확진·사망·회복 시계열을 불러와 유행 추이를 분석하는 노트북. 온라인 자료와 로컬 COVID 데이터 경로를 안내함.
-F119,notebook-papers.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\07-python\notebook-papers.ipynb,,0,unsupported_extension,872839,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,분석 예제,CORD-19 논문 메타데이터·초록을 분석하는 노트북. 분석용 metadata.csv는 외부에서 별도로 내려받아야 함.
-F120,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\07-python\notebook.ipynb,,0,unsupported_extension,497885,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 예제,Pandas Series와 날짜 인덱스부터 시작하는 데이터 처리 기초 노트북. 일별 판매량과 주간 수량의 인덱스 정렬 예제를 포함함.
+F118,notebook-covidspread.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\07-python\notebook-covidspread.ipynb,"[설명 셀 1]
+# Estimation of COVID-19 Pandemic
+
+## Loading Data
+
+We will use data on COVID-19 infected individuals, provided by the [Center for Systems Science and Engineering](https://systems.jhu.edu/) (CSSE) at [Johns Hopkins University](https://jhu.edu/). Dataset is available in [this GitHub Repository](https://github.com/CSSEGISandData/COVID-19).
+
+[코드 셀 2]
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+plt.rcParams[""figure.figsize""] = (10,3) # make figures larger
+
+[설명 셀 3]
+We can load the most recent data directly from GitHub using `pd.read_csv`. If for some reason the data is not available, you can always use the copy available locally in the `data` folder - just uncomment the line below that defines `base_url`:
+
+[코드 셀 4]
+base_url = ""https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"" # loading from Internet
+# base_url = ""../../data/COVID/"" # loading from disk
+infected_dataset_url = base_url + ""time_series_covid19_confirmed_global.csv""
+recovered_dataset_url = base_url + ""time_series_covid19_recovered_global.csv""
+deaths_dataset_url = base_url + ""time_series_covid19_deaths_global.csv""
+countries_dataset_url = base_url + ""../UID_ISO_FIPS_LookUp_Table.csv""
+
+[설명 셀 5]
+Let's now load the data for infected individuals and see how the data looks like:
+
+[코드 셀 6]
+infected = pd.read_csv(infected_dataset_url)
+infected.head()
+
+[설명 셀 7]
+We can see that each row of the table defines the number of infected individuals for each country and/or province, and columns correspond to dates. Similar tables can be loaded for other data, such as number of recovered and number of deaths.
+
+[코드 셀 8]
+recovered = pd.read_csv(recovered_dataset_url)
+deaths = pd.read_csv(deaths_dataset_url)
+
+[설명 셀 9]
+## Making Sense of the Data
+
+From the table above the role of province column is not clear. Let's see the different values that are present in `Province/State` column:
+
+[코드 셀 10]
+infected['Province/State'].value_counts()
+
+[설명 셀 11]
+From the names we can deduce that countries like Australia and China have more detailed breakdown by provinces. Let's look for information on China to see the example:
+
+[코드 셀 12]
+infected[infected['Country/Region']=='China']
+
+[설명 셀 13]
+## Pre-processing the Data 
+
+We are not interested in breaking countries down to further territories, thus we would first get rid of this breakdown and add information on all territories together, to get info for the whole country. This can be done using `groupby`:
+
+[코드 셀 14]
+infected = infected.groupby('Country/Region').sum()
+recovered = recovered.groupby('Country/Region').sum()
+deaths = deaths.groupby('Country/Region').sum()
+
+infected.head()
+
+[설명 셀 15]
+You can see that due to using `groupby` all DataFrames are now indexed by Country/Region. We can thus access the data for a specific country by using `.loc`:|
+
+[코드 셀 16]
+infected.loc['US'][3:].plot()
+recovered.loc['US'][3:].plot()
+plt.show()
+
+[설명 셀 17]
+> **Note** how we use `[3:]` to remove the first three elements of a sequence that contain non-date metadata (the Province/State and geolocation columns). We can also drop those three columns altogether:
+
+[코드 셀 18]
+infected.drop(columns=['Lat','Long','Province/State'],inplace=True)
+recovered.drop(columns=['Lat','Long','Province/State'],inplace=True)
+deaths.drop(columns=['Lat','Long','Province/State'],inplace=True)
+
+[설명 셀 19]
+## Investigating the Data
+
+Let's now switch to investigating a specific country. Let's create a frame that contains the data on infections indexed by date:
+
+[코드 셀 20]
+def mkframe(country):
+    df = pd.DataFrame({ 'infected' : infected.loc[country],
+                        'recovered' : recovered.loc[country],
+                        'deaths' : deaths.loc[country]})
+    df.index = pd.to_datetime(df.index)
+    return df
+
+df = mkframe('US')
+df
+
+[코드 셀 21]
+df.plot()
+plt.show()
+
+[설명 셀 22]
+Now let's compute the number of new infected people each day. This will allow us to see the speed at which pandemic progresses. The easiest way to do it is to use `diff`:
+
+[코드 셀 23]
+df['ninfected'] = df['infected'].diff()
+df['ninfected'].plot()
+plt.show()
+
+[설명 셀 24]
+We can see high fluctuations in data. Let's look closer at one of the months:
+
+[코드 셀 25]
+df[(df.index.year==2020) & (df.index.month==7)]['ninfected'].plot()
+plt.show()
+
+[설명 셀 26]
+It clearly looks like there are weekly fluctuations in data. Because we want to be able to see the trends, it makes sense to smooth out the curve by computing running average (i.e. for each day we will compute the average value of the previous several days):
+
+[코드 셀 27]
+df['ninfav'] = df['ninfected'].rolling(window=7).mean()
+df['ninfav'].plot()
+plt.show()
+
+[설명 셀 28]
+In order to be able to compare several countries, we might want to take the country's population into account, and compare the percentage of infected individuals with respect to country's population. In order to get country's population, let's load the dataset of countries:
+
+[코드 셀 29]
+countries = pd.read_csv(countries_dataset_url)
+countries
+
+[설명 셀 30]
+Because this dataset contains information on both countries and provinces, to get the population of the whole country we need to be a little bit clever: 
+
+[코드 셀 31]
+countries[(countries['Country_Region']=='US') & countries['Province_State'].isna()]
+
+[코드 셀 32]
+pop = countries[(countries['Country_Region']=='US') & countries['Province_State'].isna()]['Population'].iloc[0]
+df['pinfected'] = df['infected']*100 / pop
+df['pinfected'].plot(figsize=(10,3))
+plt.show()
+
+[설명 셀 33]
+
+## Computing $R_t$
+
+To see how infectious is the disease, we look at the **basic reproduction number** $R_0$, which indicated the number of people that an infected person would further infect. When $R_0$ is more than 1, the epidemic is likely to spread.
+
+$R_0$ is a property of the disease itself, and does not take into account some protective measures that people may take to slow down the pandemic. During the pandemic progression, we can estimate the reproduction number $R_t$ at any given time $t$. It has been shown that this number can be roughly estimated by taking a window of 8 days, and computing $$R_t=\frac{I_{t-7}+I_{t-6}+I_{t-5}+I_{t-4}}{I_{t-3}+I_{t-2}+I_{t-1}+I_t}$$
+where $I_t$ is the number of newly infected individuals on day $t$.
+
+Let's compute $R_t$ for our pandemic data. To do this, we will take a rolling window of 8 `ninfected` values, and apply the function to compute the ratio above:
+
+[코드 셀 34]
+df['Rt'] = df['ninfected'].rolling(8).apply(lambda x: x[4:].sum()/x[:4].sum())
+df['Rt'].plot()
+plt.show()
+
+[설명 셀 35]
+You can see that there are some gaps in the graph. Those can be caused by either `NaN`, if  `inf` values being present in the dataset. `inf` may be caused by division by 0, and `NaN` can indicate missing data, or no data available to compute the result (like in the very beginning of our frame, where rolling window of width 8 is not yet available). To make the graph nicer, we need to fill those values using `replace` and `fillna` function.
+
+Let's further look at the beginning of the pandemic. We will also limit the y-axis values to show only values below 6, in order to see better, and draw horizontal line at 1.
+
+[코드 셀 36]
+ax = df[df.index<""2020-05-01""]['Rt'].replace(np.inf,np.nan).fillna(method='pad').plot(figsize=(10,3))
+ax.set_ylim([0,6])
+ax.axhline(1,linestyle='--',color='red')
+plt.show()
+
+[설명 셀 37]
+Another interesting indicator of the pandemic is the **derivative**, or **daily difference** in new cases. It allows us to see clearly when pandemic is increasing or declining. 
+
+[코드 셀 38]
+df['ninfected'].diff().plot()
+plt.show()
+
+[설명 셀 39]
+Given the fact that there are a lot of fluctuations in data caused by reporting, it makes sense to smooth the curve by running rolling average to get the overall picture. Let's again focus on the first months of the pandemic:
+
+[코드 셀 40]
+ax=df[df.index<""2020-06-01""]['ninfected'].diff().rolling(7).mean().plot()
+ax.axhline(0,linestyle='-.',color='red')
+plt.show()
+
+[설명 셀 41]
+
+## Challenge
+
+Now it is time for you to play more with the code and data! Here are a few suggestions you can experiment with:
+* See the spread of the pandemic in different countries.
+* Plot $R_t$ graphs for several countries on one plot for comparison, or make several plots side-by-side
+* See how the number of deaths and recoveries correlate with number of infected cases.
+* Try to find out how long a typical disease lasts by visually correlating infection rate and deaths rate and looking for some anomalies. You may need to look at different countries to find that out.
+* Calculate the fatality rate and how it changes over time. You may want to take into account the length of the disease in days to shift one time series before doing calculations
+
+[설명 셀 42]
+## References
+
+You may look at further studies of COVID epidemic spread in the following publications:
+* [Sliding SIR Model for Rt Estimation during COVID Pandemic](https://soshnikov.com/science/sliding-sir-model-for-rt-estimation/), blog post by [Dmitry Soshnikov](http://soshnikov.com)
+* T.Petrova, D.Soshnikov, A.Grunin. [Estimation of Time-Dependent Reproduction Number for Global COVID-19 Outbreak](https://www.preprints.org/manuscript/202006.0289/v1). *Preprints* **2020**, 2020060289 (doi: 10.20944/preprints202006.0289.v1)
+* [Code for the above paper on GitHub](https://github.com/shwars/SlidingSIR)",9362,success,699571,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,분석 예제,코로나19 국가별 확진·사망·회복 시계열을 불러와 유행 추이를 분석하는 노트북. 온라인 자료와 로컬 COVID 데이터 경로를 안내함.
+F119,notebook-papers.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\07-python\notebook-papers.ipynb,"[설명 셀 1]
+# Analyzing COVID-19 Papers
+
+In this challenge, we will continue with the topic of COVID pandemic, and focus on processing scientific papers on the subject. There is [CORD-19 Dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) with more than 7000 (at the time of writing) papers on COVID, available with metadata and abstracts (and for about half of them there is also full text provided).
+
+A full example of analyzing this dataset using [Text Analytics for Health](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-for-health/?WT.mc_id=academic-77958-bethanycheum) cognitive service is described [in this blog post](https://soshnikov.com/science/analyzing-medical-papers-with-azure-and-text-analytics-for-health/). We will discuss simplified version of this analysis.
+
+[코드 셀 2]
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+[설명 셀 3]
+## Getting the Data
+
+First, we need get the metadata for CORD papers that we will be working with.
+
+**NOTE**: We do not provide a copy of the dataset as part of this repository. You may first need to download the [`metadata.csv`](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge?select=metadata.csv) file from [this dataset on Kaggle](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge). Registration with Kaggle may be required. You may also download the dataset without registration [from here](https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/historical_releases.html), but it will include all full texts in addition to metadata file.
+
+We will try to get the data directly from online source, however, if it fails, you need to download the data as described above. Also, it makes sense to download the data if you plan to experiment with it further, to save on waiting time.
+
+> **NOTE** that dataset is quite large, around 1 Gb in size, and the following line of code can take a long time to complete! (~5 mins)
+
+[코드 셀 4]
+df = pd.read_csv(""https://datascience4beginners.blob.core.windows.net/cord/metadata.csv.zip"",compression='zip')
+# df = pd.read_csv(""metadata.csv"")
+df.head()
+
+[설명 셀 5]
+We will now convert publication date column to `datetime`, and plot the histogram to see the range of publication dates.
+
+[코드 셀 6]
+df['publish_time'] = pd.to_datetime(df['publish_time'])
+df['publish_time'].hist()
+plt.show()
+
+[설명 셀 7]
+Interestingly, there are coronavirus-related papers that date back to 1880!
+
+[설명 셀 8]
+## Structured Data Extraction
+
+Let's see what kind of information we can easily extract from abstracts. One thing we might be interested in is to see which treatment strategies exist, and how they evolved over time. To begin with, we can manually compile the list of possible medications used to treat COVID, and also the list of diagnoses. We then go over them and search corresponding terms in the abstracts of papers.
+
+[코드 셀 9]
+medications = [
+    'hydroxychloroquine', 'chloroquine', 'tocilizumab', 'remdesivir', 'azithromycin', 
+    'lopinavir', 'ritonavir', 'dexamethasone', 'heparin', 'favipiravir', 'methylprednisolone']
+diagnosis = [
+    'covid','sars','pneumonia','infection','diabetes','coronavirus','death'
+]
+
+for m in medications:
+    print(f"" + Processing medication: {m}"")
+    df[m] = df['abstract'].apply(lambda x: str(x).lower().count(' '+m))
+    
+for m in diagnosis:
+    print(f"" + Processing diagnosis: {m}"")
+    df[m] = df['abstract'].apply(lambda x: str(x).lower().count(' '+m))
+
+[설명 셀 10]
+We have added a bunch of columns to our dataframe that contain number of times a given medicine/diagnosis is present in the abstract. 
+
+> **Note** that we add space to the beginning of the word when looking for a substring. If we do not do that, we might get wrong results, because *chloroquine* would also be found inside substring *hydroxychloroquine*. Also, we force conversion of abstracts column to `str` to get rid of an error - try removing `str` and see what happens.
+
+To make working with data easier, we can extract the sub-frame with only medication counts, and compute the accumulated number of occurrences. This gives is the most popular medication: 
+
+[코드 셀 11]
+dfm = df[medications]
+dfm = dfm.sum().reset_index().rename(columns={ 'index' : 'Name', 0 : 'Count'})
+dfm.sort_values('Count',ascending=False)
+
+[코드 셀 12]
+dfm.set_index('Name').plot(kind='bar')
+plt.show()
+
+[설명 셀 13]
+## Looking for Trends in Treatment Strategy
+
+In the example above we have `sum`ed all values, but we can also do the same on a monthly basis:
+
+[코드 셀 14]
+dfm = df[['publish_time']+medications].set_index('publish_time')
+dfm = dfm[(dfm.index>=""2020-01-01"") & (dfm.index<=""2021-07-31"")]
+dfmt = dfm.groupby([dfm.index.year,dfm.index.month]).sum()
+dfmt
+
+[설명 셀 15]
+This gives us a good picture of treatment strategies. Let's visualize it!
+
+[코드 셀 16]
+dfmt.plot()
+plt.show()
+
+[설명 셀 17]
+An interesting observation is that we have huge spikes at two locations: January, 2020 and January, 2021. It is caused by the fact that some papers do not have a clearly specified data of publication, and they are specified as January of the respective year.
+
+To make more sense of the data, let's visualize just a few medicines. We will also ""erase"" data for January, and fill it in by some medium value, in order to make nicer plot:
+
+[코드 셀 18]
+meds = ['hydroxychloroquine','tocilizumab','favipiravir']
+dfmt.loc[(2020,1)] = np.nan
+dfmt.loc[(2021,1)] = np.nan
+dfmt.fillna(method='pad',inplace=True)
+fig, ax = plt.subplots(1,len(meds),figsize=(10,3))
+for i,m in enumerate(meds):
+    dfmt[m].plot(ax=ax[i])
+    ax[i].set_title(m)
+plt.show()
+
+[설명 셀 19]
+Observe how popularity of hydroxychloroquine was on the rise in the first few months, and then started to decline, while number of mentions of favipiravir shows stable rise. Another good way to visualize relative popularity is to use **stack plot** (or **area plot** in Pandas terminology):
+
+[코드 셀 20]
+dfmt.plot.area()
+plt.show()
+
+[설명 셀 21]
+Even further, we can compute relative popularity in percents:
+
+[코드 셀 22]
+dfmtp = dfmt.iloc[:,:].apply(lambda x: x/x.sum(), axis=1)
+dfmtp.plot.area()
+plt.show()
+
+[설명 셀 23]
+
+## Computing Medicine-Diagnosis Correspondence
+
+One of the most interesting relationships we can look for is how different diagnoses are treated with different medicines. In order to visualize it, we need to compute **co-occurence frequency map**, which would show how many times two terms are mentioned in the same paper.
+
+Such a map is essentially a 2D matrix, which is best represented by **numpy array**. We will compute this map by walking through all abstracts, and marking entities that occur there:
+
+[코드 셀 24]
+m = np.zeros((len(medications),len(diagnosis)))
+for a in df['abstract']:
+    x = str(a).lower()
+    for i,d in enumerate(diagnosis):
+        if ' '+d in x:
+            for j,me in enumerate(medications):
+                if ' '+me in x:
+                    m[j,i] += 1
+
+[코드 셀 25]
+m
+
+[설명 셀 26]
+One of the ways to visualize this matrix is to draw a **heatmap**:
+
+[코드 셀 27]
+plt.imshow(m,interpolation='nearest',cmap='hot')
+ax = plt.gca()
+ax.set_yticks(range(len(medications))) 
+ax.set_yticklabels(medications)
+ax.set_xticks(range(len(diagnosis)))
+ax.set_xticklabels(diagnosis,rotation=90)
+plt.show()
+
+[설명 셀 28]
+However, even better visualization can be done using so-called **Sankey** diagram! `matplotlib` does not have built-in support for this diagram type, so we would have to use [Plotly](https://plotly.com/python/) as described [in this tutorial](https://plotly.com/python/sankey-diagram/).
+
+To make plotly sankey diagram, we need to build the following lists:
+* List `all_nodes` of all nodes in the graph, which will include both medications and diagnosis
+* List of source and target indices - those lists would show, which nodes go to the left, and which to the right part of the diagram
+* List of all links, each link consisting of:
+   - Source index in the `all_nodes` array
+   - Target index 
+   - Value indicating strength of the link. This is exactly the value from our co-occurence matrix.
+   - Optionally color of the link. We will make an option to highlight some of the terms for clarity
+
+Generic code to draw sankey diagram is structured as a separate `sankey` function, which takes two lists (source and target categories) and co-occurence matrix. It also allows us to specify the threshold, and omit all links that are weaker than that threshold - this makes the diagram a little bit less complex. 
+
+[코드 셀 29]
+import plotly.graph_objects as go
+
+def sankey(cat1, cat2, m, treshold=0, h1=[], h2=[]):
+    all_nodes = cat1 + cat2
+    source_indices = list(range(len(cat1)))
+    target_indices = list(range(len(cat1),len(cat1)+len(cat2)))
+
+    s, t, v, c = [], [], [], []
+    for i in range(len(cat1)):
+        for j in range(len(cat2)):
+            if m[i,j]>treshold:
+                s.append(i)
+                t.append(len(cat1)+j)
+                v.append(m[i,j])
+                c.append('pink' if i in h1 or j in h2 else 'lightgray')
+
+    fig = go.Figure(data=[go.Sankey(
+        # Define nodes
+        node = dict(
+        pad = 40,
+        thickness = 40,
+        line = dict(color = ""black"", width = 1.0),
+        label =  all_nodes),
+
+        # Add links
+        link = dict(
+        source =  s,
+        target =  t,
+        value =  v,
+        color = c
+    ))])
+    fig.show()
+
+sankey(medications,diagnosis,m,500,h2=[0])
+
+[설명 셀 30]
+## Conclusion
+
+You have seen that we can use quite simple methods to extract information from non-structured data sources, such as text. In this example, we have taken the existing list of medications, but it would be much more powerful to use natural language processing (NLP) techniques to perform entity extraction from text. In [this blog post](https://soshnikov.com/science/analyzing-medical-papers-with-azure-and-text-analytics-for-health/) we describe how to use cloud services for entity extraction. Another option would be using Python NLP libraries such as [NLTK](https://www.nltk.org/) - an approach for extracting information from text using NLTK is described [here](https://www.nltk.org/book/ch07.html).
+
+[설명 셀 31]
+## Challenge
+
+Continue to research the COVID paper data along the following lines:
+
+1. Build co-occurrence matrix of different medications, and see which medications often occur together (i.e. mentioned in one abstract). You can modify the code for building co-occurrence matrix for medications and diagnoses.
+1. Visualize this matrix using heatmap.
+1. As a stretch goal, you may want to visualize the co-occurrence of medications using [chord diagram](https://en.wikipedia.org/wiki/Chord_diagram). [This library](https://pypi.org/project/chord/) may help you draw a chord diagram.
+1. As another stretch goal, try to extract dosages of different medications (such as **400mg** in *take 400mg of chloroquine daily*) using regular expressions, and build dataframe that shows different dosages for different medications. **Note**: consider numeric values that are in close textual vicinity of the medicine name.",11064,success,872839,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,분석 예제,CORD-19 논문 메타데이터·초록을 분석하는 노트북. 분석용 metadata.csv는 외부에서 별도로 내려받아야 함.
+F120,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\07-python\notebook.ipynb,"[설명 셀 1]
+## Basic Pandas Examples
+
+This notebook will walk you through some very basic Pandas concepts. We will start with importing typical data science libraries:
+
+[코드 셀 2]
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+[설명 셀 3]
+### Series
+
+Series is like a list or 1D-array, but with index. All operations are index-aligned.
+
+[코드 셀 4]
+a = pd.Series(range(1,10))
+b = pd.Series([""I"",""like"",""to"",""use"",""Python"",""and"",""Pandas"",""very"",""much""],index=range(0,9))
+print(a,b)
+
+[설명 셀 5]
+One of the frequent usage of series is **time series**. In time series, index has a special structure - typically a range of dates or datetimes. We can create such an index with `pd.date_range`.
+
+Suppose we have a series that shows the amount of product bought every day, and we know that every sunday we also need to take one item for ourselves. Here is how to model that using series:
+
+[코드 셀 6]
+start_date = ""Jan 1, 2020""
+end_date = ""Dec 31, 2020""
+idx = pd.date_range(start_date,end_date)
+print(f""Length of index is {len(idx)}"")
+items_sold = pd.Series(np.random.randint(25,50,size=len(idx)),index=idx)
+items_sold.plot(figsize=(10,3))
+plt.show()
+
+[코드 셀 7]
+additional_items = pd.Series(10,index=pd.date_range(start_date,end_date,freq=""W""))
+print(f""Additional items (10 item each week):\n{additional_items}"")
+total_items = items_sold+additional_items
+print(f""Total items (sum of two series):\n{total_items}"")
+
+[설명 셀 8]
+As you can see, we are having problems here, because in the weekly series non-mentioned days are considered to be missing (`NaN`), and adding `NaN` to a number gives us `NaN`. In order to get correct result, we need to specify `fill_value` when adding series:
+
+[코드 셀 9]
+total_items = items_sold.add(additional_items,fill_value=0)
+print(total_items)
+total_items.plot(figsize=(10,3))
+plt.show()
+
+[코드 셀 10]
+monthly = total_items.resample(""1M"").mean()
+ax = monthly.plot(kind='bar',figsize=(10,3))
+ax.set_xticklabels([x.strftime(""%b-%Y"") for x in monthly.index], rotation=45)
+plt.show()
+
+[설명 셀 11]
+## DataFrame
+
+A dataframe is essentially a collection of series with the same index. We can combine several series together into a dataframe. Given `a` and `b` series defined above:
+
+[코드 셀 12]
+df = pd.DataFrame([a,b])
+df
+
+[설명 셀 13]
+We can also use Series as columns, and specify column names using dictionary:
+
+[코드 셀 14]
+df = pd.DataFrame({ 'A' : a, 'B' : b })
+df
+
+[설명 셀 15]
+The same result can be achieved by transposing (and then renaming columns, to match the previous example):
+
+[코드 셀 16]
+pd.DataFrame([a,b]).T.rename(columns={ 0 : 'A', 1 : 'B' })
+
+[설명 셀 17]
+**Selecting columns** from DataFrame can be done like this:
+
+[코드 셀 18]
+print(f""Column A (series):\n{df['A']}"")
+print(f""Columns B and A (DataFrame):\n{df[['B','A']]}"")
+
+[설명 셀 19]
+**Selecting rows** based on filter expression:
+
+[코드 셀 20]
+df[df['A']<5]
+
+[설명 셀 21]
+The way it works is that expression `df['A']<5` returns a boolean series, which indicates whether expression is `True` or `False` for each elements of the series. When series is used as an index, it returns subset of rows in the DataFrame. Thus it is not possible to use arbitrary Python boolean expression, for example, writing `df[df['A']>5 and df['A']<7]` would be wrong. Instead, you should use special `&` operation on boolean series:
+
+[코드 셀 22]
+df[(df['A']>5) & (df['A']<7)]
+
+[설명 셀 23]
+**Creating new computable columns**. We can easily create new computable columns for our DataFrame by using intuitive expressions. The code below calculates divergence of A from its mean value.
+
+[코드 셀 24]
+df['DivA'] = df['A']-df['A'].mean()
+df
+
+[설명 셀 25]
+What actually happens is we are computing a series, and then assigning this series to the left-hand-side, creating another column.
+
+[코드 셀 26]
+# WRONG: df['ADescr'] = ""Low"" if df['A'] < 5 else ""Hi""
+df['LenB'] = len(df['B']) # Wrong result
+
+[코드 셀 27]
+df['LenB'] = df['B'].apply(lambda x: len(x))
+# or
+df['LenB'] = df['B'].apply(len)
+df
+
+[설명 셀 28]
+**Selecting rows based on numbers** can be done using `iloc` construct. For example, to select first 5 rows from the DataFrame:
+
+[코드 셀 29]
+df.iloc[:5]
+
+[설명 셀 30]
+**Grouping** is often used to get a result similar to *pivot tables* in Excel. Suppose that we want to compute mean value of column `A` for each given number of `LenB`. Then we can group our DataFrame by `LenB`, and call `mean`:
+
+[코드 셀 31]
+df.groupby(by='LenB').mean()
+
+[설명 셀 32]
+If we need to compute mean and the number of elements in the group, then we can use more complex `aggregate` function:
+
+[코드 셀 33]
+df.groupby(by='LenB') \
+ .aggregate({ 'DivA' : len, 'A' : lambda x: x.mean() }) \
+ .rename(columns={ 'DivA' : 'Count', 'A' : 'Mean'})
+
+[설명 셀 34]
+## Printing and Plotting
+
+Data Scientist often has to explore the data, thus it is important to be able to visualize it. When DataFrame is big, many times we want just to make sure we are doing everything correctly by printing out the first few rows. This can be done by calling `df.head()`. If you are running it from Jupyter Notebook, it will print out the DataFrame in a nice tabular form.
+
+[코드 셀 35]
+df.head()
+
+[설명 셀 36]
+
+We have also seen the usage of `plot` function to visualize some columns. While `plot` is very useful for many tasks, and supports many different graph types via `kind=` parameter, you can always use raw `matplotlib` library to plot something more complex. We will cover data visualization in detail in separate course lessons.
+
+
+[코드 셀 37]
+df['A'].plot()
+plt.show()
+
+[코드 셀 38]
+df['A'].plot(kind='bar')
+plt.show()
+
+[설명 셀 39]
+
+This overview covers most important concepts of Pandas, however, the library is very rich, and there is no limit to what you can do with it! Let's now apply this knowledge for solving specific problem.",5701,success,497885,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 예제,Pandas Series와 날짜 인덱스부터 시작하는 데이터 처리 기초 노트북. 일별 판매량과 주간 수량의 인덱스 정렬 예제를 포함함.
 F121,README.md,.md,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\08-data-preparation\README.md,"# Working with Data: Data Preparation
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/08-DataPreparation.png)|
@@ -25741,7 +26832,37 @@ There are many ways to discover and approach preparing your data for analysis an
 
 [Evaluating Data from a Form](assignment.md)
 ",17450,success,17463,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,강의자료,결측·부정확·불완전한 데이터를 정리하고 표준화하는 전처리 수업. Pandas를 이용한 데이터 품질 점검을 설명함.
-F122,assignment.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\08-data-preparation\assignment.ipynb,,0,unsupported_extension,22472,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 실습,form.csv의 주·생일 월·반려동물 응답을 살펴보는 과제 노트북. 값의 불일치와 잘못된 시각화를 찾아 입력 폼 개선안을 작성함.
+F122,assignment.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\08-data-preparation\assignment.ipynb,"[설명 셀 2]
+# Assignment: Evaluating Data from a Form
+
+A client has been testing a [small form](index.html) to gather some basic data about their client-base. They have brought their findings to you to validate the data they have gathered. You can open the `index.html` page in a browser to take a look at the form.
+
+You have been provided a [dataset of csv records](../../data/form.csv) that contain entries from the form as well as some basic visualizations.The client pointed out that some of the visualizations look incorrect but they're unsure about how to resolve them. You can explore it in the [assignment notebook](assignment.ipynb).
+
+## Instructions
+
+Use the techniques in this lesson to make recommendations about the form so it captures accurate and consistent information. 
+
+[코드 셀 3]
+!pip install pandas
+!pip install matplotlib
+
+[코드 셀 4]
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#Loading the dataset
+path = '../../data/form.csv'
+form_df = pd.read_csv(path)
+print(form_df)
+
+[코드 셀 5]
+form_df['state'].value_counts().plot(kind='bar');
+plt.show()
+
+[코드 셀 6]
+form_df['birth_month'].value_counts().plot(kind='bar');
+plt.show()",1158,success,22472,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 실습,form.csv의 주·생일 월·반려동물 응답을 살펴보는 과제 노트북. 값의 불일치와 잘못된 시각화를 찾아 입력 폼 개선안을 작성함.
 F123,assignment.md,.md,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\08-data-preparation\assignment.md,"# Evaluating Data from a Form
 
 A client has been testing a [small form](index.html) to gather some basic data about their client-base. They have brought their findings to you to validate the data they have gathered. You can open the `index.html` page in the browser to take a look at the form.
@@ -25757,7 +26878,992 @@ Use the techniques in this lesson to make recommendations about the form so it c
 Exemplary | Adequate | Needs Improvement
 --- | --- | -- |
 ",836,success,836,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 안내,고객 입력 폼으로 수집한 form.csv의 정확성과 일관성을 검토하고 개선안을 제안하는 전처리 과제 설명.
-F124,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\08-data-preparation\notebook.ipynb,,0,unsupported_extension,142726,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 예제,Iris 데이터로 DataFrame의 크기와 내용을 확인하며 시작하는 데이터 준비 노트북. 데이터 탐색과 정제 방법을 실습함.
+F124,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\08-data-preparation\notebook.ipynb,"[설명 셀 1]
+# Data Preparation
+
+[Original Notebook source from *Data Science: Introduction to Machine Learning for Data Science Python and Machine Learning Studio by Lee Stott*](https://github.com/leestott/intro-Datascience/blob/master/Course%20Materials/4-Cleaning_and_Manipulating-Reference.ipynb)
+
+## Exploring `DataFrame` information
+
+> **Learning goal:** By the end of this subsection, you should be comfortable finding general information about the data stored in pandas DataFrames.
+
+Once you have loaded your data into pandas, it will more likely than not be in a `DataFrame`. However, if the data set in your `DataFrame` has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to quickly look at overall information about a `DataFrame` in addition to the first few and last few rows.
+
+In order to explore this functionality, we will import the Python scikit-learn library and use an iconic dataset that every data scientist has seen hundreds of times: British biologist Ronald Fisher's *Iris* data set used in his 1936 paper ""The use of multiple measurements in taxonomic problems"":
+
+[코드 셀 2]
+import pandas as pd
+from sklearn.datasets import load_iris
+
+iris = load_iris()
+iris_df = pd.DataFrame(data=iris['data'], columns=iris['feature_names'])
+
+[설명 셀 3]
+### `DataFrame.shape`
+We have loaded the Iris Dataset in the variable `iris_df`. Before diving into the data, it would be valuable to know the number of datapoints we have and the overall size of the dataset. It is useful to look at the volume of data we are dealing with. 
+
+[코드 셀 4]
+iris_df.shape
+
+[설명 셀 5]
+So, we are dealing with 150 rows and 4 columns of data. Each row represents one datapoint and each column represents a single feature associated with the data frame. So basically, there are 150 datapoints containing 4 features each.
+
+`shape` here is an attribute of the dataframe and not a function, which is why it doesn't end in a pair of parentheses. 
+
+[설명 셀 6]
+### `DataFrame.columns`
+Let us now move into the 4 columns of data. What does each of them exactly represent? The `columns` attribute will give us the name of the columns in the dataframe. 
+
+[코드 셀 7]
+iris_df.columns
+
+[설명 셀 8]
+As we can see, there are four(4) columns. The `columns` attribute tells us the name of the columns and basically nothing else. This attribute assumes importance when we want to identify the features a dataset contains.
+
+[설명 셀 9]
+### `DataFrame.info`
+The amount of data(given by the `shape` attribute) and the name of the features or columns(given by the `columns` attribute) tell us something about the dataset. Now, we would want to dive deeper into the dataset. The `DataFrame.info()` function is quite useful for this. 
+
+[코드 셀 10]
+iris_df.info()
+
+[설명 셀 11]
+From here, we get to can make a few observations:
+1. The DataType of each column: In this dataset, all of the data is stored as 64-bit floating-point numbers.
+2. Number of Non-Null values: Dealing with null values is an important step in data preparation. It will be dealt with later in the notebook.
+
+[설명 셀 12]
+### DataFrame.describe()
+Say we have a lot of numerical data in our dataset. Univariate statistical calculations such as the mean, median, quartiles etc. can be done on each of the columns individually. The `DataFrame.describe()` function provides us with a statistical summary of the numerical columns of a dataset.
+
+
+
+[코드 셀 13]
+iris_df.describe()
+
+[설명 셀 14]
+The output above shows the total number of data points, mean, standard deviation, minimum, lower quartile(25%), median(50%), upper quartile(75%) and the maximum value of each column.
+
+[설명 셀 15]
+### `DataFrame.head`
+With all the above functions and attributes, we have got a top level view of the dataset. We know how many data points are there, how many features are there, the data type of each feature and the number of non-null values for each feature.
+
+Now its time to look at the data itself. Let's see what the first few rows(the first few datapoints) of our `DataFrame` look like:
+
+[코드 셀 16]
+iris_df.head()
+
+[설명 셀 17]
+As the output here, we can see five(5) entries of the dataset. If we look at the index at the left, we find out that these are the first five rows.
+
+[설명 셀 18]
+### Exercise:
+
+From the example given above, it is clear that, by default, `DataFrame.head` returns the first five rows of a `DataFrame`. In the code cell below, can you figure out a way to display more than five rows?
+
+[코드 셀 19]
+# Hint: Consult the documentation by using iris_df.head?
+
+[설명 셀 20]
+### `DataFrame.tail`
+Another way of looking at the data can be from the end(instead of the beginning). The flipside of `DataFrame.head` is `DataFrame.tail`, which returns the last five rows of a `DataFrame`:
+
+[코드 셀 21]
+iris_df.tail()
+
+[설명 셀 22]
+In practice, it is useful to be able to easily examine the first few rows or the last few rows of a `DataFrame`, particularly when you are looking for outliers in ordered datasets. 
+
+All the functions and attributes shown above with the help of code examples, help us get a look and feel of the data. 
+
+> **Takeaway:** Even just by looking at the metadata about the information in a DataFrame or the first and last few values in one, you can get an immediate idea about the size, shape, and content of the data you are dealing with.
+
+[설명 셀 23]
+### Missing Data
+Let us dive into missing data. Missing data occurs, when no value is stored in some of the columns. 
+
+Let us take an example: say someone is conscious about his/her weight and doesn't fill the weight field in a survey. Then, the weight value for that certain person will be missing. 
+
+Most of the time, in real world datasets, missing values occur.
+
+**How Pandas Handles missing data**
+
+
+Pandas handles missing values in two ways. The first you've seen before in previous sections: `NaN`, or Not a Number. This is a actually a special value that is part of the IEEE floating-point specification and it is only used to indicate missing floating-point values.
+
+For missing values apart from floats, pandas uses the Python `None` object. While it might seem confusing that you will encounter two different kinds of values that say essentially the same thing, there are sound programmatic reasons for this design choice and, in practice, going this route enables pandas to deliver a good compromise for the vast majority of cases. Notwithstanding this, both `None` and `NaN` carry restrictions that you need to be mindful of with regards to how they can be used.
+
+[설명 셀 24]
+### `None`: non-float missing data
+Because `None` comes from Python, it cannot be used in NumPy and pandas arrays that are not of data type `'object'`. Remember, NumPy arrays (and the data structures in pandas) can contain only one type of data. This is what gives them their tremendous power for large-scale data and computational work, but it also limits their flexibility. Such arrays have to upcast to the “lowest common denominator,” the data type that will encompass everything in the array. When `None` is in the array, it means you are working with Python objects.
+
+To see this in action, consider the following example array (note the `dtype` for it):
+
+[코드 셀 25]
+import numpy as np
+
+example1 = np.array([2, None, 6, 8])
+example1
+
+[설명 셀 26]
+The reality of upcast data types carries two side effects with it. First, operations will be carried out at the level of interpreted Python code rather than compiled NumPy code. Essentially, this means that any operations involving `Series` or `DataFrames` with `None` in them will be slower. While you would probably not notice this performance hit, for large datasets it might become an issue.
+
+The second side effect stems from the first. Because `None` essentially drags `Series` or `DataFrame`s back into the world of vanilla Python, using NumPy/pandas aggregations like `sum()` or `min()` on arrays that contain a ``None`` value will generally produce an error:
+
+[코드 셀 27]
+example1.sum()
+
+[설명 셀 28]
+**Key takeaway**: Addition (and other operations) between integers and `None` values is undefined, which can limit what you can do with datasets that contain them.
+
+[설명 셀 29]
+### `NaN`: missing float values
+
+In contrast to `None`, NumPy (and therefore pandas) supports `NaN` for its fast, vectorized operations and ufuncs. The bad news is that any arithmetic performed on `NaN` always results in `NaN`. For example:
+
+[코드 셀 30]
+np.nan + 1
+
+[코드 셀 31]
+np.nan * 0
+
+[설명 셀 32]
+The good news: aggregations run on arrays with `NaN` in them don't pop errors. The bad news: the results are not uniformly useful:
+
+[코드 셀 33]
+example2 = np.array([2, np.nan, 6, 8]) 
+example2.sum(), example2.min(), example2.max()
+
+[설명 셀 34]
+### Exercise:
+
+[코드 셀 35]
+# What happens if you add np.nan and None together?
+
+
+[설명 셀 36]
+Remember: `NaN` is just for missing floating-point values; there is no `NaN` equivalent for integers, strings, or Booleans.
+
+[설명 셀 37]
+### `NaN` and `None`: null values in pandas
+
+Even though `NaN` and `None` can behave somewhat differently, pandas is nevertheless built to handle them interchangeably. To see what we mean, consider a `Series` of integers:
+
+[코드 셀 38]
+int_series = pd.Series([1, 2, 3], dtype=int)
+int_series
+
+[설명 셀 39]
+### Exercise:
+
+[코드 셀 40]
+# Now set an element of int_series equal to None.
+# How does that element show up in the Series?
+# What is the dtype of the Series?
+
+
+[설명 셀 41]
+In the process of upcasting data types to establish data homogeneity in `Series` and `DataFrame`s, pandas will willingly switch missing values between `None` and `NaN`. Because of this design feature, it can be helpful to think of `None` and `NaN` as two different flavors of ""null"" in pandas. Indeed, some of the core methods you will use to deal with missing values in pandas reflect this idea in their names:
+
+- `isnull()`: Generates a Boolean mask indicating missing values
+- `notnull()`: Opposite of `isnull()`
+- `dropna()`: Returns a filtered version of the data
+- `fillna()`: Returns a copy of the data with missing values filled or imputed
+
+These are important methods to master and get comfortable with, so let's go over them each in some depth.
+
+[설명 셀 42]
+### Detecting null values
+
+Now that we have understood the importance of missing values, we need to detect them in our dataset, before dealing with them.
+Both `isnull()` and `notnull()` are your primary methods for detecting null data. Both return Boolean masks over your data.
+
+[코드 셀 43]
+example3 = pd.Series([0, np.nan, '', None])
+
+[코드 셀 44]
+example3.isnull()
+
+[설명 셀 45]
+Look closely at the output. Does any of it surprise you? While `0` is an arithmetic null, it's nevertheless a perfectly good integer and pandas treats it as such. `''` is a little more subtle. While we used it in Section 1 to represent an empty string value, it is nevertheless a string object and not a representation of null as far as pandas is concerned.
+
+Now, let's turn this around and use these methods in a manner more like you will use them in practice. You can use Boolean masks  directly as a ``Series`` or ``DataFrame`` index, which can be useful when trying to work with isolated missing (or present) values.
+
+If we want the total number of missing values, we can just do a sum over the mask produced by the `isnull()` method.
+
+[코드 셀 46]
+example3.isnull().sum()
+
+[설명 셀 47]
+### Exercise:
+
+[코드 셀 48]
+# Try running example3[example3.notnull()].
+# Before you do so, what do you expect to see?
+
+
+[설명 셀 49]
+**Key takeaway**: Both the `isnull()` and `notnull()` methods produce similar results when you use them in DataFrames: they show the results and the index of those results, which will help you enormously as you wrestle with your data.
+
+[설명 셀 50]
+### Dealing with missing data
+
+> **Learning goal:** By the end of this subsection, you should know how and when to replace or remove null values from DataFrames.
+
+Machine Learning models can't deal with missing data themselves. So, before passing the data into the model, we need to deal with these missing values.
+
+How missing data is handled carries with it subtle tradeoffs, can affect your final analysis and real-world outcomes.
+
+There are primarily two ways of dealing with missing data:
+
+
+1.   Drop the row containing the missing value
+2.   Replace the missing value with some other value
+
+We will discuss both these methods and their pros and cons in details.
+
+
+
+[설명 셀 51]
+### Dropping null values
+
+The amount of data we pass on to our model has a direct effect on its performance. Dropping null values means that we are reducing the number of datapoints, and hence reducing the size of the dataset. So, it is advisable to drop rows with null values when the dataset is quite large.
+
+Another instance maybe that a certain row or column has a lot of missing values. Then, they maybe dropped because they wouldn't add much value to our analysis as most of the data is missing for that row/column.
+
+Beyond identifying missing values, pandas provides a convenient means to remove null values from `Series` and `DataFrame`s. To see this in action, let's return to `example3`. The `DataFrame.dropna()` function helps in dropping the rows with null values. 
+
+[코드 셀 52]
+example3 = example3.dropna()
+example3
+
+[설명 셀 53]
+Note that this should look like your output from `example3[example3.notnull()]`. The difference here is that, rather than just indexing on the masked values, `dropna` has removed those missing values from the `Series` `example3`.
+
+Because DataFrames have two dimensions, they afford more options for dropping data.
+
+[코드 셀 54]
+example4 = pd.DataFrame([[1,      np.nan, 7], 
+                         [2,      5,      8], 
+                         [np.nan, 6,      9]])
+example4
+
+[설명 셀 55]
+(Did you notice that pandas upcast two of the columns to floats to accommodate the `NaN`s?)
+
+You cannot drop a single value from a `DataFrame`, so you have to drop full rows or columns. Depending on what you are doing, you might want to do one or the other, and so pandas gives you options for both. Because in data science, columns generally represent variables and rows represent observations, you are more likely to drop rows of data; the default setting for `dropna()` is to drop all rows that contain any null values:
+
+[코드 셀 56]
+example4.dropna()
+
+[설명 셀 57]
+If necessary, you can drop NA values from columns. Use `axis=1` to do so:
+
+[코드 셀 58]
+example4.dropna(axis='columns')
+
+[설명 셀 59]
+Notice that this can drop a lot of data that you might want to keep, particularly in smaller datasets. What if you just want to drop rows or columns that contain several or even just all null values? You specify those setting in `dropna` with the `how` and `thresh` parameters.
+
+By default, `how='any'` (if you would like to check for yourself or see what other parameters the method has, run `example4.dropna?` in a code cell). You could alternatively specify `how='all'` so as to drop only rows or columns that contain all null values. Let's expand our example `DataFrame` to see this in action in the next exercise.
+
+[코드 셀 60]
+example4[3] = np.nan
+example4
+
+[설명 셀 61]
+> Key takeaways: 
+1. Dropping null values is a good idea only if the dataset is large enough.
+2. Full rows or columns can be dropped if they have most of their data missing.
+3. The `DataFrame.dropna(axis=)` method helps in dropping null values. The `axis` argument signifies whether rows are to be dropped or columns. 
+4. The `how` argument can also be used. By default it is set to `any`. So, it drops only those rows/columns which contain any null values. It can be set to `all` to specify that we will drop only those rows/columns where all values are null.
+
+[설명 셀 62]
+### Exercise:
+
+[코드 셀 63]
+# How might you go about dropping just column 3?
+# Hint: remember that you will need to supply both the axis parameter and the how parameter.
+
+
+[설명 셀 64]
+The `thresh` parameter gives you finer-grained control: you set the number of *non-null* values that a row or column needs to have in order to be kept:
+
+[코드 셀 65]
+example4.dropna(axis='rows', thresh=3)
+
+[설명 셀 66]
+Here, the first and last row have been dropped, because they contain only two non-null values.
+
+[설명 셀 67]
+### Filling null values
+
+It sometimes makes sense to fill in missing values with ones which could be valid. There are a few techniques to fill null values. The first is using Domain Knowledge(knowledge of the subject on which the dataset is based) to somehow approximate the missing values. 
+
+
+You could use `isnull` to do this in place, but that can be laborious, particularly if you have a lot of values to fill. Because this is such a common task in data science, pandas provides `fillna`, which returns a copy of the `Series` or `DataFrame` with the missing values replaced with one of your choosing. Let's create another example `Series` to see how this works in practice.
+
+[설명 셀 68]
+### Categorical Data(Non-numeric)
+First let us consider non-numeric data. In datasets, we have columns with categorical data. Eg. Gender, True or False etc.
+
+In most of these cases, we replace missing values with the `mode` of the column. Say, we have 100 data points and 90 have said True, 8 have said False and 2 have not filled. Then, we can will the 2 with True, considering the full column. 
+
+Again, here we can use domain knowledge here. Let us consider an example of filling with the mode.
+
+[코드 셀 69]
+fill_with_mode = pd.DataFrame([[1,2,""True""],
+                               [3,4,None],
+                               [5,6,""False""],
+                               [7,8,""True""],
+                               [9,10,""True""]])
+
+fill_with_mode
+
+[설명 셀 70]
+Now, lets first find the mode before filling the `None` value with the mode.
+
+[코드 셀 71]
+fill_with_mode[2].value_counts()
+
+[설명 셀 72]
+So, we will replace None with True
+
+[코드 셀 73]
+fill_with_mode[2].fillna('True',inplace=True)
+
+[코드 셀 74]
+fill_with_mode
+
+[설명 셀 75]
+As we can see, the null value has been replaced. Needless to say, we could have written anything in place or `'True'` and it would have got substituted.
+
+[설명 셀 76]
+### Numeric Data
+Now, coming to numeric data. Here, we have a two common ways of replacing missing values:
+
+1. Replace with Median of the row
+2. Replace with Mean of the row 
+
+We replace with Median, in case of skewed data with outliers. This is because median is robust to outliers.
+
+When the data is normalized, we can use mean, as in that case, mean and median would be pretty close.
+
+First, let us take a column which is normally distributed and let us fill the missing value with the mean of the column. 
+
+[코드 셀 77]
+fill_with_mean = pd.DataFrame([[-2,0,1],
+                               [-1,2,3],
+                               [np.nan,4,5],
+                               [1,6,7],
+                               [2,8,9]])
+
+fill_with_mean
+
+[설명 셀 78]
+The mean of the column is
+
+[코드 셀 79]
+np.mean(fill_with_mean[0])
+
+[설명 셀 80]
+Filling with mean
+
+[코드 셀 81]
+fill_with_mean[0].fillna(np.mean(fill_with_mean[0]),inplace=True)
+fill_with_mean
+
+[설명 셀 82]
+As we can see, the missing value has been replaced with its mean.
+
+[설명 셀 83]
+Now let us try another dataframe, and this time we will replace the None values with the median of the column.
+
+[코드 셀 84]
+fill_with_median = pd.DataFrame([[-2,0,1],
+                               [-1,2,3],
+                               [0,np.nan,5],
+                               [1,6,7],
+                               [2,8,9]])
+
+fill_with_median
+
+[설명 셀 85]
+The median of the second column is
+
+[코드 셀 86]
+fill_with_median[1].median()
+
+[설명 셀 87]
+Filling with median
+
+[코드 셀 88]
+fill_with_median[1].fillna(fill_with_median[1].median(),inplace=True)
+fill_with_median
+
+[설명 셀 89]
+As we can see, the NaN value has been replaced by the median of the column
+
+[코드 셀 90]
+example5 = pd.Series([1, np.nan, 2, None, 3], index=list('abcde'))
+example5
+
+[설명 셀 91]
+You can fill all of the null entries with a single value, such as `0`:
+
+[코드 셀 92]
+example5.fillna(0)
+
+[설명 셀 93]
+> Key takeaways:
+1. Filling in missing values should be done when either there is less data or there is a strategy to fill in the missing data.
+2. Domain knowledge can be used to fill in missing values by approximating them.
+3. For Categorical data, mostly, missing values are substituted with the mode of the column. 
+4. For numeric data, missing values are usually filled in with the mean(for normalized datasets) or the median of the columns. 
+
+[설명 셀 94]
+### Exercise:
+
+[코드 셀 95]
+# What happens if you try to fill null values with a string, like ''?
+
+
+[설명 셀 96]
+You can **forward-fill** null values, which is to use the last valid value to fill a null:
+
+[코드 셀 97]
+example5.fillna(method='ffill')
+
+[설명 셀 98]
+You can also **back-fill** to propagate the next valid value backward to fill a null:
+
+[코드 셀 99]
+example5.fillna(method='bfill')
+
+[설명 셀 100]
+As you might guess, this works the same with DataFrames, but you can also specify an `axis` along which to fill null values:
+
+[코드 셀 101]
+example4
+
+[코드 셀 102]
+example4.fillna(method='ffill', axis=1)
+
+[설명 셀 103]
+Notice that when a previous value is not available for forward-filling, the null value remains.
+
+[설명 셀 104]
+### Exercise:
+
+[코드 셀 105]
+# What output does example4.fillna(method='bfill', axis=1) produce?
+# What about example4.fillna(method='ffill') or example4.fillna(method='bfill')?
+# Can you think of a longer code snippet to write that can fill all of the null values in example4?
+
+
+[설명 셀 106]
+You can be creative about how you use `fillna`. For example, let's look at `example4` again, but this time let's fill the missing values with the average of all of the values in the `DataFrame`:
+
+[코드 셀 107]
+example4.fillna(example4.mean())
+
+[설명 셀 108]
+Notice that column 3 is still valueless: the default direction is to fill values row-wise.
+
+> **Takeaway:** There are multiple ways to deal with missing values in your datasets. The specific strategy you use (removing them, replacing them, or even how you replace them) should be dictated by the particulars of that data. You will develop a better sense of how to deal with missing values the more you handle and interact with datasets.
+
+[설명 셀 109]
+### Encoding Categorical Data
+
+Machine learning models only deal with numbers and any form of numeric data. It won't be able to tell the difference between a Yes and a No, but it would be able to distinguish between 0 and 1. So, after filling in the missing values, we need to do encode the categorical data to some numeric form for the model to understand.
+
+Encoding can be done in two ways. We will be discussing them next.
+
+
+[설명 셀 110]
+**LABEL ENCODING**
+
+
+Label encoding is basically converting each category to a number. For example, say we have a dataset of airline passengers and there is a column containing their class among the following ['business class', 'economy class','first class']. If Label encoding is done on this, this would be transformed to [0,1,2]. Let us see an example via code. As we would be learning `scikit-learn` in the upcoming notebooks, we won't use it here.
+
+[코드 셀 111]
+label = pd.DataFrame([
+                      [10,'business class'],
+                      [20,'first class'],
+                      [30, 'economy class'],
+                      [40, 'economy class'],
+                      [50, 'economy class'],
+                      [60, 'business class']
+],columns=['ID','class'])
+label
+
+[설명 셀 112]
+To perform label encoding on the 1st column, we have to first describe a mapping from each class to a number, before replacing
+
+[코드 셀 113]
+class_labels = {'business class':0,'economy class':1,'first class':2}
+label['class'] = label['class'].replace(class_labels)
+label
+
+[설명 셀 114]
+As we can see, the output matches what we thought would happen. So, when do we use label encoding? Label encoding is used in either or both of the following cases :
+1. When the number of categories is large
+2. When the categories are in order. 
+
+[설명 셀 115]
+**ONE HOT ENCODING**
+
+Another type of encoding is One Hot Encoding. In this type of encoding, each category of the column gets added as a separate column and each datapoint will get a 0 or a 1 based on whether it contains that category. So, if there are n different categories, n columns will be appended to the dataframe.
+
+For example, let us take the same aeroplane class example. The categories were: ['business class', 'economy class','first class'] . So, if we perform one hot encoding, the following three columns will be added to the dataset: ['class_business class','class_economy class','class_first class'].
+
+[코드 셀 116]
+one_hot = pd.DataFrame([
+                      [10,'business class'],
+                      [20,'first class'],
+                      [30, 'economy class'],
+                      [40, 'economy class'],
+                      [50, 'economy class'],
+                      [60, 'business class']
+],columns=['ID','class'])
+one_hot
+
+[설명 셀 117]
+Let us perform one hot encoding on the 1st column
+
+[코드 셀 118]
+one_hot_data = pd.get_dummies(one_hot,columns=['class'])
+
+[코드 셀 119]
+one_hot_data
+
+[설명 셀 120]
+Each one hot encoded column contains 0 or 1, which specifies whether that category exists for that datapoint.
+
+[설명 셀 121]
+When do we use one hot encoding? One hot encoding is used in either or both of the following cases :
+
+1. When the number of categories and the size of the dataset is smaller.
+2. When the categories follow no particular order.
+
+[설명 셀 122]
+> Key Takeaways:
+1. Encoding is done to convert non-numeric data to numeric data.
+2. There are two types of encoding: Label encoding and One Hot encoding, both of which can be performed based on the demands of the dataset. 
+
+[설명 셀 123]
+## Removing duplicate data
+
+> **Learning goal:** By the end of this subsection, you should be comfortable identifying and removing duplicate values from DataFrames.
+
+In addition to missing data, you will often encounter duplicated data in real-world datasets. Fortunately, pandas provides an easy means of detecting and removing duplicate entries.
+
+[설명 셀 124]
+### Identifying duplicates: `duplicated`
+
+You can easily spot duplicate values using the `duplicated` method in pandas, which returns a Boolean mask indicating whether an entry in a `DataFrame` is a duplicate of an earlier one. Let's create another example `DataFrame` to see this in action.
+
+[코드 셀 125]
+example6 = pd.DataFrame({'letters': ['A','B'] * 2 + ['B'],
+                         'numbers': [1, 2, 1, 3, 3]})
+example6
+
+[코드 셀 126]
+example6.duplicated()
+
+[설명 셀 127]
+### Dropping duplicates: `drop_duplicates`
+`drop_duplicates` simply returns a copy of the data for which all of the `duplicated` values are `False`:
+
+[코드 셀 128]
+example6.drop_duplicates()
+
+[설명 셀 129]
+Both `duplicated` and `drop_duplicates` default to consider all columns but you can specify that they examine only a subset of columns in your `DataFrame`:
+
+[코드 셀 130]
+example6.drop_duplicates(['letters'])
+
+[설명 셀 131]
+> **Takeaway:** Removing duplicate data is an essential part of almost every data-science project. Duplicate data can change the results of your analyses and give you inaccurate results!
+
+[설명 셀 132]
+## Real-World Data Quality Checks
+
+> **Learning goal:** By the end of this section, you should be comfortable detecting and correcting common real-world data quality issues including inconsistent categorical values, abnormal numeric values (outliers), and duplicate entities with variations.
+
+While missing values and exact duplicates are common issues, real-world datasets often contain more subtle problems:
+
+1. **Inconsistent categorical values**: The same category spelled differently (e.g., ""USA"", ""U.S.A"", ""United States"")
+2. **Abnormal numeric values**: Extreme outliers that indicate data entry errors (e.g., age = 999)
+3. **Near-duplicate rows**: Records that represent the same entity with slight variations
+
+Let's explore techniques to detect and handle these issues.
+
+[설명 셀 133]
+### Creating a Sample ""Dirty"" Dataset
+
+First, let's create a sample dataset that contains the types of issues we commonly encounter in real-world data:
+
+[코드 셀 134]
+import pandas as pd
+import numpy as np
+
+# Create a sample dataset with quality issues
+dirty_data = pd.DataFrame({
+    'customer_id': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    'name': ['John Smith', 'Jane Doe', 'John Smith', 'Bob Johnson', 
+             'Alice Williams', 'Charlie Brown', 'John  Smith', 'Eva Martinez',
+             'Bob Johnson', 'Diana Prince', 'Frank Castle', 'Alice Williams'],
+    'age': [25, 32, 25, 45, 28, 199, 25, 31, 45, 27, -5, 28],
+    'country': ['USA', 'UK', 'U.S.A', 'Canada', 'USA', 'United Kingdom',
+                'United States', 'Mexico', 'canada', 'USA', 'UK', 'usa'],
+    'purchase_amount': [100.50, 250.00, 105.00, 320.00, 180.00, 90.00,
+                       102.00, 275.00, 325.00, 195.00, 410.00, 185.00]
+})
+
+print(""Sample 'Dirty' Dataset:"")
+print(dirty_data)
+
+[설명 셀 135]
+### 1. Detecting Inconsistent Categorical Values
+
+Notice the `country` column has multiple representations for the same countries. Let's identify these inconsistencies:
+
+[코드 셀 136]
+# Check unique values in the country column
+print(""Unique country values:"")
+print(dirty_data['country'].unique())
+print(f""\nTotal unique values: {dirty_data['country'].nunique()}"")
+
+# Count occurrences of each variation
+print(""\nValue counts:"")
+print(dirty_data['country'].value_counts())
+
+[설명 셀 137]
+#### Standardizing Categorical Values
+
+We can create a mapping to standardize these values. A simple approach is to convert to lowercase and create a mapping dictionary:
+
+[코드 셀 138]
+# Create a standardization mapping
+country_mapping = {
+    'usa': 'USA',
+    'u.s.a': 'USA',
+    'united states': 'USA',
+    'uk': 'UK',
+    'united kingdom': 'UK',
+    'canada': 'Canada',
+    'mexico': 'Mexico'
+}
+
+# Standardize the country column
+dirty_data['country_clean'] = dirty_data['country'].str.lower().map(country_mapping)
+
+print(""Before standardization:"")
+print(dirty_data['country'].value_counts())
+print(""\nAfter standardization:"")
+print(dirty_data[['country_clean']].value_counts())
+
+[설명 셀 139]
+**Alternative: Using Fuzzy Matching**
+
+For more complex cases, we can use fuzzy string matching with the `rapidfuzz` library to automatically detect similar strings:
+
+[코드 셀 140]
+try:
+    from rapidfuzz import process, fuzz
+except ImportError:
+    print(""rapidfuzz is not installed. Please install it with 'pip install rapidfuzz' to use fuzzy matching."")
+    process = None
+    fuzz = None
+
+# Get unique countries
+unique_countries = dirty_data['country'].unique()
+
+# For each country, find similar matches
+if process is not None and fuzz is not None:
+    print(""Finding similar country names (similarity > 70%):"")
+    for country in unique_countries:
+        matches = process.extract(country, unique_countries, scorer=fuzz.ratio, limit=3)
+        # Filter matches with similarity > 70 and not identical
+        similar = [m for m in matches if m[1] > 70 and m[0] != country]
+        if similar:
+            print(f""\n'{country}' is similar to:"")
+            for match, score, _ in similar:
+                print(f""  - '{match}' (similarity: {score}%)"")
+else:
+    print(""Skipping fuzzy matching because rapidfuzz is not available."")
+
+[설명 셀 141]
+### 2. Detecting Abnormal Numeric Values (Outliers)
+
+Looking at the `age` column, we have some suspicious values like 199 and -5. Let's use statistical methods to detect these outliers.
+
+[코드 셀 142]
+# Display basic statistics
+print(""Age column statistics:"")
+print(dirty_data['age'].describe())
+
+# Identify impossible values using domain knowledge
+print(""\nRows with impossible age values (< 0 or > 120):"")
+impossible_ages = dirty_data[(dirty_data['age'] < 0) | (dirty_data['age'] > 120)]
+print(impossible_ages[['customer_id', 'name', 'age']])
+
+[설명 셀 143]
+#### Using IQR (Interquartile Range) Method
+
+The IQR method is a robust statistical technique for outlier detection that is less sensitive to extreme values:
+
+[코드 셀 144]
+# Calculate IQR for age (excluding impossible values)
+valid_ages = dirty_data[(dirty_data['age'] >= 0) & (dirty_data['age'] <= 120)]['age']
+
+Q1 = valid_ages.quantile(0.25)
+Q3 = valid_ages.quantile(0.75)
+IQR = Q3 - Q1
+
+# Define outlier bounds
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+print(f""IQR-based outlier bounds for age: [{lower_bound:.2f}, {upper_bound:.2f}]"")
+
+# Identify outliers
+age_outliers = dirty_data[(dirty_data['age'] < lower_bound) | (dirty_data['age'] > upper_bound)]
+print(f""\nRows with age outliers:"")
+print(age_outliers[['customer_id', 'name', 'age']])
+
+[설명 셀 145]
+#### Using Z-Score Method
+
+The Z-score method identifies outliers based on standard deviations from the mean:
+
+[코드 셀 146]
+try:
+    from scipy import stats
+except ImportError:
+    print(""scipy is required for Z-score calculation. Please install it with 'pip install scipy' and rerun this cell."")
+else:
+    # Calculate Z-scores for age, handling NaN values
+    age_nonan = dirty_data['age'].dropna()
+    zscores = np.abs(stats.zscore(age_nonan))
+    dirty_data['age_zscore'] = np.nan
+    dirty_data.loc[age_nonan.index, 'age_zscore'] = zscores
+
+    # Typically, Z-score > 3 indicates an outlier
+    print(""Rows with age Z-score > 3:"")
+    zscore_outliers = dirty_data[dirty_data['age_zscore'] > 3]
+    print(zscore_outliers[['customer_id', 'name', 'age', 'age_zscore']])
+
+    # Clean up the temporary column
+    dirty_data = dirty_data.drop('age_zscore', axis=1)
+
+[설명 셀 147]
+#### Handling Outliers
+
+Once detected, outliers can be handled in several ways:
+1. **Remove**: Drop rows with outliers (if they're errors)
+2. **Cap**: Replace with boundary values
+3. **Replace with NaN**: Treat as missing data and use imputation techniques
+4. **Keep**: If they're legitimate extreme values
+
+[코드 셀 148]
+# Create a cleaned version by replacing impossible ages with NaN
+dirty_data['age_clean'] = dirty_data['age'].apply(
+    lambda x: np.nan if (x < 0 or x > 120) else x
+)
+
+print(""Age column before and after cleaning:"")
+print(dirty_data[['customer_id', 'name', 'age', 'age_clean']])
+
+[설명 셀 149]
+### 3. Detecting Near-Duplicate Rows
+
+Notice that our dataset has multiple entries for ""John Smith"" with slightly different values. Let's identify potential duplicates based on name similarity.
+
+[코드 셀 150]
+# First, let's look at exact name matches (ignoring extra whitespace)
+dirty_data['name_normalized'] = dirty_data['name'].str.strip().str.lower()
+
+print(""Checking for duplicate names:"")
+duplicate_names = dirty_data[dirty_data.duplicated(['name_normalized'], keep=False)]
+print(duplicate_names.sort_values('name_normalized')[['customer_id', 'name', 'age', 'country']])
+
+[설명 셀 151]
+#### Finding Near-Duplicates with Fuzzy Matching
+
+For more sophisticated duplicate detection, we can use fuzzy matching to find similar names:
+
+[코드 셀 152]
+try:
+    from rapidfuzz import process, fuzz
+
+    # Function to find potential duplicates
+    def find_near_duplicates(df, column, threshold=90):
+        """"""
+        Find near-duplicate entries in a column using fuzzy matching.
+        
+        Parameters:
+        - df: DataFrame
+        - column: Column name to check for duplicates
+        - threshold: Similarity threshold (0-100)
+        
+        Returns: List of potential duplicate groups
+        """"""
+        values = df[column].unique()
+        duplicate_groups = []
+        checked = set()
+        
+        for value in values:
+            if value in checked:
+                continue
+                
+            # Find similar values
+            matches = process.extract(value, values, scorer=fuzz.ratio, limit=len(values))
+            similar = [m[0] for m in matches if m[1] >= threshold]
+            
+            if len(similar) > 1:
+                duplicate_groups.append(similar)
+                checked.update(similar)
+        
+        return duplicate_groups
+
+    # Find near-duplicate names
+    duplicate_groups = find_near_duplicates(dirty_data, 'name', threshold=90)
+
+    print(""Potential duplicate groups:"")
+    for i, group in enumerate(duplicate_groups, 1):
+        print(f""\nGroup {i}:"")
+        for name in group:
+            matching_rows = dirty_data[dirty_data['name'] == name]
+            print(f""  '{name}': {len(matching_rows)} occurrence(s)"")
+            for _, row in matching_rows.iterrows():
+                print(f""    - Customer {row['customer_id']}: age={row['age']}, country={row['country']}"")
+except ImportError:
+    print(""rapidfuzz is not installed. Skipping fuzzy matching for near-duplicates."")
+
+[설명 셀 153]
+#### Handling Duplicates
+
+Once identified, you need to decide how to handle duplicates:
+1. **Keep the first occurrence**: Use `drop_duplicates(keep='first')`
+2. **Keep the last occurrence**: Use `drop_duplicates(keep='last')`
+3. **Aggregate information**: Combine information from duplicate rows
+4. **Manual review**: Flag for human review
+
+[코드 셀 154]
+# Example: Remove duplicates based on normalized name, keeping first occurrence
+cleaned_data = dirty_data.drop_duplicates(subset=['name_normalized'], keep='first')
+
+print(f""Original dataset: {len(dirty_data)} rows"")
+print(f""After removing name duplicates: {len(cleaned_data)} rows"")
+print(f""Removed: {len(dirty_data) - len(cleaned_data)} duplicate rows"")
+
+print(""\nCleaned dataset:"")
+print(cleaned_data[['customer_id', 'name', 'age', 'country_clean']])
+
+[설명 셀 155]
+### Summary: Complete Data Cleaning Pipeline
+
+Let's put it all together into a comprehensive cleaning pipeline:
+
+[코드 셀 156]
+def clean_dataset(df):
+    """"""
+    Comprehensive data cleaning function.
+    """"""
+    # Create a copy to avoid modifying the original
+    cleaned = df.copy()
+    
+    # 1. Standardize categorical values (country)
+    country_mapping = {
+        'usa': 'USA', 'u.s.a': 'USA', 'united states': 'USA',
+        'uk': 'UK', 'united kingdom': 'UK',
+        'canada': 'Canada', 'mexico': 'Mexico'
+    }
+    cleaned['country'] = cleaned['country'].str.lower().map(country_mapping)
+    
+    # 2. Clean abnormal age values
+    cleaned['age'] = cleaned['age'].apply(
+        lambda x: np.nan if (x < 0 or x > 120) else x
+    )
+    
+    # 3. Remove near-duplicate names (normalize whitespace)
+    cleaned['name'] = cleaned['name'].str.strip()
+    cleaned = cleaned.drop_duplicates(subset=['name'], keep='first')
+    
+    return cleaned
+
+# Apply the cleaning pipeline
+final_cleaned_data = clean_dataset(dirty_data)
+
+print(""Before cleaning:"")
+print(f""  Rows: {len(dirty_data)}"")
+print(f""  Unique countries: {dirty_data['country'].nunique()}"")
+print(f""  Invalid ages: {((dirty_data['age'] < 0) | (dirty_data['age'] > 120)).sum()}"")
+
+print(""\nAfter cleaning:"")
+print(f""  Rows: {len(final_cleaned_data)}"")
+print(f""  Unique countries: {final_cleaned_data['country'].nunique()}"")
+print(f""  Invalid ages: {((final_cleaned_data['age'] < 0) | (final_cleaned_data['age'] > 120)).sum()}"")
+
+print(""\nCleaned dataset:"")
+print(final_cleaned_data[['customer_id', 'name', 'age', 'country', 'purchase_amount']])
+
+[설명 셀 157]
+### 🎯 Challenge Exercise
+
+Now it's your turn! Below is a new row of data with multiple quality issues. Can you:
+
+1. Identify all the issues in this row
+2. Write code to clean each issue
+3. Add the cleaned row to the dataset
+
+Here's the problematic data:
+
+[코드 셀 158]
+# New problematic row
+new_row = pd.DataFrame({
+    'customer_id': [13],
+    'name': ['  Diana  Prince  '],  # Extra whitespace
+    'age': [250],  # Impossible age
+    'country': ['U.S.A.'],  # Inconsistent format
+    'purchase_amount': [150.00]
+})
+
+print(""New row to clean:"")
+print(new_row)
+
+# TODO: Your code here to clean this row
+# Hints:
+# 1. Strip whitespace from the name
+# 2. Check if the name is a duplicate (Diana Prince already exists)
+# 3. Handle the impossible age value
+# 4. Standardize the country name
+
+# Example solution (uncomment and modify as needed):
+# new_row_cleaned = new_row.copy()
+# new_row_cleaned['name'] = new_row_cleaned['name'].str.strip()
+# new_row_cleaned['age'] = np.nan  # Invalid age
+# new_row_cleaned['country'] = 'USA'  # Standardized
+# print(""\nCleaned row:"")
+# print(new_row_cleaned)
+
+[설명 셀 159]
+### Key Takeaways
+
+1. **Inconsistent categories** are common in real-world data. Always check unique values and standardize them using mappings or fuzzy matching.
+
+2. **Outliers** can significantly affect your analysis. Use domain knowledge combined with statistical methods (IQR, Z-score) to detect them.
+
+3. **Near-duplicates** are harder to detect than exact duplicates. Consider using fuzzy matching and normalizing data (lowercasing, stripping whitespace) to identify them.
+
+4. **Data cleaning is iterative**. You may need to apply multiple techniques and review the results before finalizing your cleaned dataset.
+
+5. **Document your decisions**. Keep track of what cleaning steps you applied and why, as this is important for reproducibility and transparency.
+
+> **Best Practice:** Always keep a copy of your original ""dirty"" data. Never overwrite your source data files - create cleaned versions with clear naming conventions like `data_cleaned.csv`.",40843,success,142726,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 예제,Iris 데이터로 DataFrame의 크기와 내용을 확인하며 시작하는 데이터 준비 노트북. 데이터 탐색과 정제 방법을 실습함.
 F125,README.md,.md,dataset\files\microsoft-data-science-for-beginners\2-Working-With-Data\README.md,"# Working with Data
 
 ![data love](images/data-love.jpg)
@@ -25992,8 +28098,126 @@ In this lesson, you worked with line charts, scatterplots, and bar charts to sho
 Exemplary | Adequate | Needs Improvement
 --- | --- | -- |
 A notebook is presented with good annotations, solid storytelling, and attractive graphs | The notebook is missing one of these elements | The notebook is missing two of these elements",686,success,686,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 안내,특정 조류의 특징을 선 그래프·산점도·막대그래프로 설명하는 노트북 작성 과제. Snow Geese를 예시로 제시함.
-F128,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\09-visualization-quantities\notebook.ipynb,,0,unsupported_extension,660,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,조류 수량 시각화 수업의 시작용 노트북. 제목만 있고 분석 코드는 작성되지 않은 상태.
-F129,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\09-visualization-quantities\solution\notebook.ipynb,,0,unsupported_extension,3241587,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,birds.csv를 읽어 조류별 최대 날개폭과 분류별 수량을 그리는 풀이. 큰 날개폭의 이상치를 표시하고 제외하는 예제를 포함함.
+F128,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\09-visualization-quantities\notebook.ipynb,"[설명 셀 1]
+# Let's learn about birds
+",35,success,660,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,조류 수량 시각화 수업의 시작용 노트북. 제목만 있고 분석 코드는 작성되지 않은 상태.
+F129,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\09-visualization-quantities\solution\notebook.ipynb,"[설명 셀 1]
+# Let's learn about birds
+
+[설명 셀 3]
+Import pandas and matplotlib along with the data
+
+[코드 셀 4]
+import pandas as pd
+import matplotlib.pyplot as plt
+birds = pd.read_csv('../../../data/birds.csv')
+birds.head()
+
+
+[설명 셀 5]
+Let's visualize these birds' wingspan by showing a very basic line plot
+
+[코드 셀 6]
+
+plt.title('Max Wingspan in Centimeters')
+plt.ylabel('Wingspan (CM)')
+plt.xlabel('Birds')
+wingspan = birds.MaxWingspan 
+wingspan.plot()
+
+
+[설명 셀 7]
+Show the birds' names correlated to their wingspan
+
+[코드 셀 8]
+
+plt.title('Max Wingspan in Centimeters')
+plt.ylabel('Wingspan (CM)')
+plt.xlabel('Birds')
+plt.xticks(rotation=45)
+x = birds['Name'] 
+y = birds['MaxWingspan']
+
+plt.plot(x, y)
+
+plt.show()
+
+[설명 셀 9]
+Label the birds whose wingspan is particularly large and are probably outliers
+
+[코드 셀 10]
+plt.title('Max Wingspan in Centimeters')
+plt.ylabel('Wingspan (CM)')
+plt.tick_params(axis='both',which='both',labelbottom=False,bottom=False)
+
+for i in range(len(birds)):
+    x = birds['Name'][i]
+    y = birds['MaxWingspan'][i]
+    plt.plot(x, y, 'bo')
+    if birds['MaxWingspan'][i] > 500:
+        plt.text(x, y * (1 - 0.05), birds['Name'][i], fontsize=12)
+    
+plt.show()
+    
+
+    
+
+
+[설명 셀 11]
+Remove those outliers and redraw the wingspan
+
+[코드 셀 12]
+plt.title('Max Wingspan in Centimeters')
+plt.ylabel('Wingspan (CM)')
+plt.xlabel('Birds')
+plt.tick_params(axis='both',which='both',labelbottom=False,bottom=False)
+for i in range(len(birds)):
+    x = birds['Name'][i]
+    y = birds['MaxWingspan'][i]
+    if birds['Name'][i] not in ['Bald eagle', 'Prairie falcon']:
+        plt.plot(x, y, 'bo')
+plt.show()
+    
+
+[설명 셀 13]
+Working with bar charts, show the categories of birds
+
+[코드 셀 14]
+birds.plot(x='Category',
+        kind='bar',
+        stacked=True,
+        title='Birds of Minnesota')
+
+[설명 셀 15]
+Show the count of birds within categories, and show the labels horizontally so we can read the category names
+
+[코드 셀 16]
+category_count = birds.value_counts(birds['Category'].values, sort=True)
+plt.rcParams['figure.figsize'] = [6, 12]
+category_count.plot.barh()
+
+[설명 셀 17]
+Show the categories with their maxlength displayed per category
+
+[코드 셀 18]
+maxlength = birds['MaxLength']
+plt.barh(y=birds['Category'], width=maxlength)
+plt.rcParams['figure.figsize'] = [6, 12]
+plt.show()
+
+
+[설명 셀 19]
+Superimpose the birds minimum and maximum lengths per category
+
+[코드 셀 20]
+minLength = birds['MinLength']
+maxLength = birds['MaxLength']
+category = birds['Category']
+
+plt.barh(category, maxLength)
+plt.barh(category, minLength)
+
+plt.show()",2531,success,3241587,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,birds.csv를 읽어 조류별 최대 날개폭과 분류별 수량을 그리는 풀이. 큰 날개폭의 이상치를 표시하고 제외하는 예제를 포함함.
 F130,README.md,.md,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\10-visualization-distributions\README.md,"# Visualizing Distributions
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/10-Visualizing-Distributions.png)|
@@ -26208,8 +28432,108 @@ So far, you have worked with the Minnesota birds dataset to discover information
 Exemplary | Adequate | Needs Improvement
 --- | --- | -- |
 A notebook is presented with annotations about this dataset, including its source, and uses at least 5 histograms to discover facts about the data. | A notebook is presented with incomplete annotations or bugs. | A notebook is presented without annotations and includes bugs.",747,success,747,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 안내,새 데이터셋을 골라 출처와 설명을 적고 최소 5개 히스토그램으로 특징을 설명하는 과제.
-F132,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\10-visualization-distributions\notebook.ipynb,,0,unsupported_extension,244,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,조류 분포 시각화 수업의 시작용 노트북. Bird distributions 제목만 있고 분석 코드는 비어 있음.
-F133,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\10-visualization-distributions\solution\notebook.ipynb,,0,unsupported_extension,166874,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,birds.csv의 몸무게를 히스토그램으로 그리고 구간 수를 바꾸는 풀이. 필터링·2차원 히스토그램·보전 상태별 비교를 포함함.
+F132,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\10-visualization-distributions\notebook.ipynb,"[설명 셀 1]
+# Bird distributions",29,success,244,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,조류 분포 시각화 수업의 시작용 노트북. Bird distributions 제목만 있고 분석 코드는 비어 있음.
+F133,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\10-visualization-distributions\solution\notebook.ipynb,"[설명 셀 1]
+# Bird distributions
+
+[설명 셀 2]
+Visualize the dataset
+
+[코드 셀 3]
+import pandas as pd
+import matplotlib.pyplot as plt
+birds = pd.read_csv('../../../data/birds.csv')
+birds.head()
+
+[설명 셀 4]
+Show a histogram of the MaxBodyMass data
+
+[코드 셀 5]
+birds['MaxBodyMass'].plot(kind = 'hist',bins = 10,figsize = (12,12))
+plt.show()
+
+[설명 셀 6]
+Experiment with bins 
+
+[코드 셀 7]
+birds['MaxBodyMass'].plot(kind = 'hist',bins = 30,figsize = (12,12))
+plt.show()
+
+[설명 셀 8]
+Filter the data and create a new histogram
+
+[코드 셀 9]
+filteredBirds = birds[(birds['MaxBodyMass'] > 1) & (birds['MaxBodyMass'] < 60)]      
+filteredBirds['MaxBodyMass'].plot(kind = 'hist',bins = 40,figsize = (12,12))
+plt.show()        
+
+
+[설명 셀 10]
+Create a 2D histgram showing the relationship between MaxBodyMass and MaxLength
+
+[코드 셀 11]
+from matplotlib import colors
+from matplotlib.ticker import PercentFormatter
+
+x = filteredBirds['MaxBodyMass']
+y = filteredBirds['MaxLength']
+
+fig, ax = plt.subplots(tight_layout=True)
+hist = ax.hist2d(x, y)
+
+[설명 셀 12]
+Working with the filtered dataset, create a labelled and stacked histogram superimposing ConservationStatus with MaxBodyMass
+
+[코드 셀 13]
+x1 = filteredBirds.loc[filteredBirds.ConservationStatus=='EX', 'MinWingspan']
+x2 = filteredBirds.loc[filteredBirds.ConservationStatus=='CR', 'MinWingspan']
+x3 = filteredBirds.loc[filteredBirds.ConservationStatus=='EN', 'MinWingspan']
+x4 = filteredBirds.loc[filteredBirds.ConservationStatus=='NT', 'MinWingspan']
+x5 = filteredBirds.loc[filteredBirds.ConservationStatus=='VU', 'MinWingspan']
+x6 = filteredBirds.loc[filteredBirds.ConservationStatus=='LC', 'MinWingspan']
+
+kwargs = dict(alpha=0.5, bins=20)
+
+plt.hist(x1, **kwargs, color='red', label='Extinct')
+plt.hist(x2, **kwargs, color='orange', label='Critically Endangered')
+plt.hist(x3, **kwargs, color='yellow', label='Endangered')
+plt.hist(x4, **kwargs, color='green', label='Near Threatened')
+plt.hist(x5, **kwargs, color='blue', label='Vulnerable')
+plt.hist(x6, **kwargs, color='gray', label='Least Concern')
+
+plt.gca().set(title='Conservation Status', ylabel='Max Body Mass')
+plt.legend();
+
+[설명 셀 14]
+Working with Seaborn, create a smooth plot about MinWingspan
+
+[코드 셀 15]
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.kdeplot(filteredBirds['MinWingspan'])
+plt.show()
+
+[설명 셀 16]
+Try a kdeplot about MaxBodyMass
+
+[코드 셀 17]
+sns.kdeplot(filteredBirds['MaxBodyMass'])
+plt.show()
+
+[설명 셀 18]
+Experiment with the plot smoothing parameter
+
+[코드 셀 19]
+sns.kdeplot(filteredBirds['MaxBodyMass'], bw_adjust=.2)
+plt.show()
+
+[설명 셀 20]
+Create a 2D kdeplot comparing MinLength and MaxLength with hue showing ConservationStatus
+
+[코드 셀 21]
+sns.kdeplot(data=filteredBirds, x=""MinLength"", y=""MaxLength"", hue=""ConservationStatus"")
+",2729,success,166874,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,birds.csv의 몸무게를 히스토그램으로 그리고 구간 수를 바꾸는 풀이. 필터링·2차원 히스토그램·보전 상태별 비교를 포함함.
 F134,README.md,.md,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\11-visualization-proportions\README.md,"# Visualizing Proportions
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/11-Visualizing-Proportions.png)|
@@ -26412,8 +28736,102 @@ Did you know you can create donut, pie, and waffle charts in Excel? Using a data
 | Exemplary                                               | Adequate                                          | Needs Improvement                                      |
 | ------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------ |
 | An Excel spreadsheet is presented with all three charts | An Excel spreadsheet is presented with two charts | An Excel spreadsheet is presented with only one chart |",710,success,710,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 안내,선택한 데이터로 Excel에서 원형·도넛·와플 차트 세 종류를 만드는 비율 시각화 과제.
-F136,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\11-visualization-proportions\notebook.ipynb,,0,unsupported_extension,251,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,버섯 비율 시각화 수업의 시작용 노트북. Mushroom Proportions 제목만 있고 구현은 비어 있음.
-F137,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\11-visualization-proportions\solution\notebook.ipynb,,0,unsupported_extension,156621,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,mushrooms.csv로 식용·독버섯 비율과 서식지·갓 색 분포를 그리는 풀이. Matplotlib 원형·도넛 차트와 PyWaffle을 사용함.
+F136,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\11-visualization-proportions\notebook.ipynb,"[설명 셀 1]
+# 🍄 Mushroom Proportions",33,success,251,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,버섯 비율 시각화 수업의 시작용 노트북. Mushroom Proportions 제목만 있고 구현은 비어 있음.
+F137,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\11-visualization-proportions\solution\notebook.ipynb,"[설명 셀 1]
+# 🍄 Mushroom Proportions
+
+[설명 셀 2]
+Import the mushroom dataset
+
+[코드 셀 3]
+import pandas as pd
+import matplotlib.pyplot as plt
+mushrooms = pd.read_csv('../../../data/mushrooms.csv')
+mushrooms.head()
+
+[설명 셀 4]
+# Pie chart
+
+Create a pie chart displaying the proportion of Poisonous vs. Edible mushrooms
+
+[코드 셀 5]
+print(mushrooms.select_dtypes([""object""]).columns)
+
+[코드 셀 6]
+cols = mushrooms.select_dtypes([""object""]).columns
+mushrooms[cols] = mushrooms[cols].astype('category')
+
+[코드 셀 7]
+edibleclass=mushrooms.groupby(['class']).count()
+edibleclass
+
+[코드 셀 8]
+labels=['Edible','Poisonous']
+plt.pie(edibleclass['population'],labels=labels,autopct='%.1f %%')
+plt.title('Edible?')
+plt.show()
+
+[코드 셀 9]
+capcolor=mushrooms.groupby(['cap-color']).count()
+capcolor
+
+[설명 셀 10]
+# Donut chart
+
+[코드 셀 11]
+habitat=mushrooms.groupby(['habitat']).count()
+habitat
+
+[코드 셀 12]
+  
+labels=['Grasses','Leaves','Meadows','Paths','Urban','Waste','Wood']
+
+plt.pie(habitat['class'], labels=labels,
+        autopct='%1.1f%%', pctdistance=0.85)
+  
+center_circle = plt.Circle((0, 0), 0.40, fc='white')
+fig = plt.gcf()
+
+fig.gca().add_artist(center_circle)
+  
+# Adding Title of chart
+plt.title('Mushroom Habitats')
+  
+plt.show()
+
+[설명 셀 13]
+# Waffle chart
+
+[코드 셀 14]
+pip install pywaffle
+
+[코드 셀 15]
+import pandas as pd
+import matplotlib.pyplot as plt
+from pywaffle import Waffle
+  
+# creation of a dataframe
+
+
+data ={'color': ['brown', 'buff', 'cinnamon', 'green', 'pink', 'purple', 'red', 'white', 'yellow'],
+    'amount': capcolor['class']
+     }
+  
+df = pd.DataFrame(data)
+  
+# To plot the waffle Chart
+fig = plt.figure(
+    FigureClass = Waffle,
+    rows = 100,
+    values = df.amount,
+    labels = list(df.color),
+    figsize = (30,30),
+    colors=[""brown"", ""tan"", ""maroon"", ""green"", ""pink"", ""purple"", ""red"", ""whitesmoke"", ""yellow""],
+)
+
+
+",1817,success,156621,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,mushrooms.csv로 식용·독버섯 비율과 서식지·갓 색 분포를 그리는 풀이. Matplotlib 원형·도넛 차트와 PyWaffle을 사용함.
 F138,README.md,.md,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\12-visualization-relationships\README.md,"# Visualizing Relationships: All About Honey 🍯
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/12-Visualizing-Relationships.png)|
@@ -26602,8 +29020,79 @@ In this lesson you started looking at a dataset around bees and their honey prod
 | Exemplary                                                                                                                                               | Adequate                                 | Needs Improvement                        |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | A notebook is presented with a story annotated with at least three different charts showing aspects of the dataset, state over state and year over year | The notebook lacks one of these elements | The notebook lacks two of these elements |",1143,success,1143,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 안내,꿀 생산 데이터로 주별·연도별 벌 군집 변화에 관한 이야기를 구성하는 과제. 최소 세 종류의 차트와 설명을 요구함.
-F140,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\12-visualization-relationships\notebook.ipynb,,0,unsupported_extension,264,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,꿀 생산 관계 시각화 수업의 시작용 노트북. 제목만 있고 데이터 분석 코드는 작성되지 않음.
-F141,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\12-visualization-relationships\solution\notebook.ipynb,,0,unsupported_extension,1837527,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,honey.csv의 가격·생산량·벌 군집 수를 산점도와 선 그래프로 비교하는 풀이. 연도별 색·점 크기와 패싯 차트를 포함함.
+F140,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\12-visualization-relationships\notebook.ipynb,"[설명 셀 1]
+# Visualizing Honey Production 🍯 🐝",43,success,264,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 시작 틀,꿀 생산 관계 시각화 수업의 시작용 노트북. 제목만 있고 데이터 분석 코드는 작성되지 않음.
+F141,notebook.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\12-visualization-relationships\solution\notebook.ipynb,"[설명 셀 1]
+# Visualizing Honey Production 🍯 🐝
+
+[코드 셀 2]
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+honey = pd.read_csv('../../../data/honey.csv')
+honey.head()
+
+[설명 셀 3]
+Use a scatterplot to show the relationship between a state and its price per pound for local honey
+
+[코드 셀 4]
+sns.relplot(x=""priceperlb"", y=""state"", data=honey, height=15, aspect=.5);
+
+
+[설명 셀 5]
+Show this relationship plus a new yellow-colored scatterplot with hue determined by year.
+
+[코드 셀 6]
+sns.relplot(x=""priceperlb"", y=""state"", hue=""year"", palette=""YlOrBr"", data=honey, height=15, aspect=.5);
+
+
+[설명 셀 7]
+Try this plot one more time, this time showing the price change by size of the dot in the scatterplot
+
+[코드 셀 8]
+sns.relplot(x=""priceperlb"", y=""state"", size=""year"", data=honey, height=15, aspect=.5);
+
+
+[설명 셀 9]
+Explore some line charting options
+
+[코드 셀 10]
+sns.relplot(x=""year"", y=""priceperlb"", kind=""line"", data=honey);
+
+[코드 셀 11]
+sns.relplot(x=""year"", y=""totalprod"", kind=""line"", data=honey);
+
+[설명 셀 12]
+Build a facet grid
+
+[코드 셀 13]
+
+sns.relplot(
+    data=honey, 
+    x=""yieldpercol"", y=""numcol"",
+    col=""year"", 
+    col_wrap=3,
+    kind=""line""
+)
+
+
+[설명 셀 14]
+Create a dual line plot (this solution is suggested by Kedar Ghule: https://kedar.hashnode.dev/how-to-combine-two-line-charts-in-seaborn-and-python)
+
+[코드 셀 15]
+fig, ax = plt.subplots(figsize=(12,6))
+lineplot = sns.lineplot(x=honey['year'], y=honey['numcol'], data=honey, 
+                        label = 'Number of bee colonies', legend=False)
+sns.despine()
+plt.ylabel('# colonies')
+plt.title('Honey Production Year over Year');
+
+ax2 = ax.twinx()
+lineplot2 = sns.lineplot(x=honey['year'], y=honey['yieldpercol'], ax=ax2, color=""r"", 
+                         label ='Yield per colony', legend=False) 
+sns.despine(right=False)
+plt.ylabel('colony yield')
+ax.figure.legend();",1840,success,1837527,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,실습 풀이,honey.csv의 가격·생산량·벌 군집 수를 산점도와 선 그래프로 비교하는 풀이. 연도별 색·점 크기와 패싯 차트를 포함함.
 F142,README.md,.md,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\13-meaningful-visualizations\README.md,"# Making Meaningful Visualizations
 
 |![ Sketchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/13-MeaningfulViz.png)|
@@ -26783,7 +29272,46 @@ Using the code sample in this project to create a social network, mock up data o
 Exemplary | Adequate | Needs Improvement
 --- | --- | -- |
 A GitHub repo is presented with code that runs properly (try deploying it as a static web app) and has an annotated README explaining the project | The repo does not run properly or is not documented well | The repo does not run properly and is not documented well",659,success,659,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,과제 안내,자신의 사회적 관계를 예시 데이터로 만들고 소셜 네트워크 시각화 웹앱을 작성하는 과제.
-F144,correlation-analysis.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\13-meaningful-visualizations\correlation-analysis.ipynb,,0,unsupported_extension,45136,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,분석 예제,수학·물리·화학·생물 점수의 Pearson 상관행렬을 계산하고 Seaborn 히트맵으로 표현하는 노트북.
+F144,correlation-analysis.ipynb,.ipynb,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\13-meaningful-visualizations\correlation-analysis.ipynb,"[코드 셀 1]
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+data = {
+    'Math': [80, 85, 90, 95, 100],
+    'Physics': [82, 88, 91, 97, 99],
+    'Chemistry': [78, 83, 88, 90, 94],
+    'Biology': [76, 81, 85, 89, 92]
+}
+
+df = pd.DataFrame(data)
+corr = df.corr()
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(corr, annot=True, cmap='YlGnBu')
+plt.title(""Pearson Correlation Matrix"")
+plt.show()
+
+
+[설명 셀 2]
+## 🔍 Pearson Correlation Analysis
+
+This notebook enhances the data visualization module by demonstrating how to analyze the relationship between multiple features using Pearson correlation.
+
+Pearson correlation measures the strength and direction of a **linear relationship** between two continuous variables. It returns a value between -1 and 1:
+- **+1** → Perfect positive relationship  
+- **0** → No linear relationship  
+- **-1** → Perfect negative relationship
+
+Here, we calculated the correlation matrix for student scores in Math, Physics, Chemistry, and Biology. The resulting **heatmap** helps us visually understand how strongly each subject score is related to the others.
+
+Such correlation analysis is crucial in **feature engineering and preprocessing**, especially before building machine learning models. It helps identify:
+- Redundant features
+- Strong predictors
+- Potential multicollinearity
+
+This is a helpful addition to meaningful visualizations when analyzing real-world datasets.
+",1422,success,45136,2026.10.12 2:28,2026.10.12 2:28,데이터사이언스,분석 예제,수학·물리·화학·생물 점수의 Pearson 상관행렬을 계산하고 Seaborn 히트맵으로 표현하는 노트북.
 F145,README.md,.md,dataset\files\microsoft-data-science-for-beginners\3-Data-Visualization\13-meaningful-visualizations\solution\README.md,"# Dangerous Liaisons data visualization project
 
 To get started, you need to ensure that you have NPM and Node **>=20.0.0** running on your machine. Install the dependencies (npm install) and then run the project locally (npm run serve):
