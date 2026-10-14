@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/eunkyo00/AI-X",
+  "commit": "b3eea84ed31f011a368b4d2f2f54e13b672d1210",
+  "files": [
+    "Role01/metadata.csv",
+    "Role01/extracted_text.csv"
+  ]
+}

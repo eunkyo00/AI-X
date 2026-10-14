@@ -1,0 +1,771 @@
+﻿source_id,target_id,relation_type,reference_path,status,match_method,evidence_location,evidence
+F017,,reads,Lec14_french_flu.csv,missing,not_registered,source_line:9,"flu <- read.csv(""Lec14_french_flu.csv"")"
+F017,,reads,apple.csv,missing,not_registered,source_line:69,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)"
+F017,,reads,apple.csv,missing,not_registered,source_line:72,"apple<-read.csv(""apple.csv"")"
+F019,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:37,"unemp<-fread(""Lec2_UNRATE.csv"")"
+F019,,reads,Lec2_sample.txt,missing,not_registered,source_line:40,"missing_sample<-scan(""Lec2_sample.txt"", what=integer())"
+F019,,reads,Lec2_sample_high.txt,missing,not_registered,source_line:42,"missing_sample_high<-scan(""Lec2_sample_high.txt"", what=integer())"
+F020,,reads,Lec3_emails.csv,missing,not_registered,source_line:7,"emails<-fread(""Lec3_emails.csv"")"
+F020,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:46,"unemp<-fread(""Lec2_UNRATE.csv"")"
+F020,,reads,Lec3_donations.csv,missing,not_registered,source_line:52,"donations<-fread(""Lec3_donations.csv"")"
+F020,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:71,"unemp<-fread(""Lec2_UNRATE.csv"")"
+F021,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:12,"air <-fread(""Lec4_AirPassengers.csv"")"
+F021,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:56,"unemp<-fread(""Lec2_UNRATE.csv"")"
+F022,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:8,"air <-fread(""Lec4_AirPassengers.csv"")"
+F023,,reads,Lec6_Nile.csv,missing,not_registered,source_line:73,"nile<-fread(""Lec6_Nile.csv"")"
+F024,,reads,Lec7_global_temps.csv,missing,not_registered,source_line:6,"temps<-fread(""Lec7_global_temps.csv"")"
+F024,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:17,"air <- fread(""Lec4_AirPassengers.csv"")"
+F033,,reads,apple.csv,missing,not_registered,source_line:8,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)"
+F034,,reads,apple.csv,missing,not_registered,source_line:8,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)"
+F035,,reads,apple.csv,missing,not_registered,source_line:8,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)"
+F036,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:65,"unemp <- fread(""Lec2_UNRATE.csv"")"
+F036,,reads,Lec2_sample.txt,missing,not_registered,source_line:68,"missing_sample <- scan(""Lec2_sample.txt"", what=integer())"
+F036,,reads,Lec2_sample_high.txt,missing,not_registered,source_line:70,"missing_sample_high <- scan(""Lec2_sample_high.txt"", what=integer())"
+F037,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:73,"unemp<-fread(""Lec2_UNRATE.csv"")"
+F037,,reads,Lec2_sample.txt,missing,not_registered,source_line:77,"missing_sample<-scan(""Lec2_sample.txt"", what=integer()) # 정수(integer)형태의 벡터로 저장"
+F037,,reads,Lec2_sample_high.txt,missing,not_registered,source_line:79,"missing_sample_high<-scan(""Lec2_sample_high.txt"", what=integer())"
+F038,,reads,Lec3_emails.csv,missing,not_registered,source_line:6,"emails <- fread(""Lec3_emails.csv"")"
+F038,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:46,"unemp <- fread(""Lec2_UNRATE.csv"")"
+F038,,reads,Lec3_donations.csv,missing,not_registered,source_line:52,"donations <- fread(""Lec3_donations.csv"")"
+F038,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:72,"unemp <- fread(""Lec2_UNRATE.csv"")"
+F039,,reads,Lec3_emails.csv,missing,not_registered,source_line:7,"emails<-fread(""Lec3_emails.csv"")"
+F039,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:63,"unemp<-fread(""Lec2_UNRATE.csv"")"
+F039,,reads,Lec3_donations.csv,missing,not_registered,source_line:74,"donations <- fread(""Lec3_donations.csv"")"
+F039,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:102,"unemp <- fread(""Lec2_UNRATE.csv"")"
+F040,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:9,"air <- fread(""Lec4_AirPassengers.csv"")"
+F040,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:49,"unemp <- fread(""Lec2_UNRATE.csv"")"
+F040,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:87,"unrate <- fread(""Lec2_UNRATE.csv"")"
+F041,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:9,"air <- fread(""Lec4_AirPassengers.csv"")"
+F041,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:79,"unemp<-fread(""Lec2_UNRATE.csv"")"
+F041,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:115,"unrate <- fread(""Lec2_UNRATE.csv"")"
+F042,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:8,"air <- fread(""Lec4_AirPassengers.csv"")"
+F043,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:8,"air <- fread(""Lec4_AirPassengers.csv"")"
+F044,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:9,"air <- fread(""Lec4_AirPassengers.csv"")"
+F045,,reads,Lec6_Nile.csv,missing,not_registered,source_line:8,"nile <- fread(""Lec6_Nile.csv"")"
+F046,,reads,Lec6_Nile.csv,missing,not_registered,source_line:91,"nile<-fread(""Lec6_Nile.csv"")"
+F047,,reads,Lec7_global_temps.csv,missing,not_registered,source_line:8,"temps <- fread(""Lec7_global_temps.csv"")"
+F047,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:23,"air <- fread(""Lec4_AirPassengers.csv"")"
+F048,,reads,Lec7_global_temps.csv,missing,not_registered,source_line:8,"temps <- fread(""Lec7_global_temps.csv"")"
+F048,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:30,"air <- fread(""Lec4_AirPassengers.csv"")"
+F062,,writes,/content/dataset/data.yaml,missing,not_registered,notebook_cell_6:2,"with open('/content/dataset/data.yaml', 'w') as f:"
+F063,,writes,/content/dataset/class_distribution_ratio.png,missing,not_registered,notebook_cell_6:142,"plt.savefig('/content/dataset/class_distribution_ratio.png', dpi=300)"
+F063,,writes,/content/dataset/data.yaml,missing,not_registered,notebook_cell_6:90,"with open('/content/dataset/data.yaml', 'w') as f:"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,PersonsData.json,ambiguous,filename_candidate,extracted_text_char:9529,'ll notice that documents look similar to JSON. There is a `PersonsData.json` file in this directory with more data that you may upload 
+F113,,mentions,TwitterData.json,ambiguous,filename_candidate,extracted_text_char:10494,"reated_at`, `id`, and `text`.
+
+## 🚀 Challenge
+
+
+There is a `TwitterData.json` file that you can upload to the SampleDB database. It's re"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F113,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:6817," the data. The [previous lesson](../05-relational-databases/README.md) on SQL covers the basics of the language, and we'll be abl"
+F115,,mentions,CocaColaCo.xlsx,ambiguous,filename_candidate,extracted_text_char:64,"da Profits
+
+## Instructions
+
+The [Coca Cola Co spreadsheet](CocaColaCo.xlsx) is missing some calculations. Your task is to: 
+
+1. Calcul"
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,notebook-covidspread.ipynb,ambiguous,filename_candidate,extracted_text_char:14352," demonstrate how to deal with data, we invite you to open [`notebook-covidspread.ipynb`](notebook-covidspread.ipynb) and read it from top to botto"
+F116,,mentions,notebook-papers.ipynb,ambiguous,filename_candidate,extracted_text_char:16723,"nclude all full texts in addition to metadata file.
+
+Open [`notebook-papers.ipynb`](notebook-papers.ipynb) and read it from top to bottom. Yo"
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, "
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi"
+F119,,reads,https://datascience4beginners.blob.core.windows.net/cord/metadata.csv.zip,missing,not_registered,notebook_cell_4:1,"df = pd.read_csv(""https://datascience4beginners.blob.core.windows.net/cord/metadata.csv.zip"",compression='zip')"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data"
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+"
+F123,,mentions,assignment.ipynb,ambiguous,filename_candidate,extracted_text_char:603,"solve them. You can explore it in the [assignment notebook](assignment.ipynb).
+
+## Instructions
+
+Use the techniques in this lesson to ma"
+F123,,mentions,form.csv,ambiguous,filename_candidate,extracted_text_char:356,ou have been provided a [dataset of csv records](../../data/form.csv) that contain entries from the form as well as some basic v
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F125,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:770,"# Topics
+
+1. [Relational databases](05-relational-databases/README.md)
+2. [Non-relational databases](06-non-relational/README.md)"
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> "
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+"
+F126,,mentions,birds.csv,ambiguous,filename_candidate,extracted_text_char:2206,"rt matplotlib.pyplot as plt
+birds = pd.read_csv('../../data/birds.csv')
+birds.head()
+```
+This data is a mix of text and numbers:
+"
+F129,F155,reads,../../../data/birds.csv,resolved,exact_path,notebook_cell_4:3,birds = pd.read_csv('../../../data/birds.csv')
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+"
+F130,,mentions,birds.csv,ambiguous,filename_candidate,extracted_text_char:1129,"rt matplotlib.pyplot as plt
+birds = pd.read_csv('../../data/birds.csv')
+birds.head()
+```
+
+|      | Name                         |"
+F133,F155,reads,../../../data/birds.csv,resolved,exact_path,notebook_cell_3:3,birds = pd.read_csv('../../../data/birds.csv')
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+"
+F134,,mentions,mushrooms.csv,ambiguous,filename_candidate,extracted_text_char:1328,"atplotlib.pyplot as plt
+mushrooms = pd.read_csv('../../data/mushrooms.csv')
+mushrooms.head()
+```
+A table is printed out with some gre"
+F137,F160,reads,../../../data/mushrooms.csv,resolved,exact_path,notebook_cell_3:3,mushrooms = pd.read_csv('../../../data/mushrooms.csv')
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+"
+F138,,mentions,honey.csv,ambiguous,filename_candidate,extracted_text_char:2178,"s plt
+import seaborn as sns
+honey = pd.read_csv('../../data/honey.csv')
+honey.head()
+```
+You notice that the honey data has sever"
+F141,F159,reads,../../../data/honey.csv,resolved,exact_path,notebook_cell_2:4,honey = pd.read_csv('../../../data/honey.csv')
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a"
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<
+F149,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:981,quantities | <ul> <li> [Python](09-visualization-quantities/README.md)</li>  <li>[R](R/09-visualization-quantities) </li> </ul>|<

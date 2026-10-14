@@ -1,0 +1,204 @@
+{
+  "pdf_checks": [
+    {
+      "file_id": "F001",
+      "filename": "Cross-Validation_Decoded.pdf",
+      "pages": 13,
+      "local_text_chars": 0,
+      "stored_status": "empty_text",
+      "stored_matches_local": false,
+      "first_page_images": 1
+    },
+    {
+      "file_id": "F002",
+      "filename": "MLP(다층퍼셉트론)(강의).pdf",
+      "pages": 72,
+      "local_text_chars": 7447,
+      "stored_status": "success",
+      "stored_matches_local": true,
+      "first_page_images": 0
+    },
+    {
+      "file_id": "F003",
+      "filename": "Transformer_강의자료.pdf",
+      "pages": 43,
+      "local_text_chars": 7813,
+      "stored_status": "success",
+      "stored_matches_local": true,
+      "first_page_images": 0
+    },
+    {
+      "file_id": "F088",
+      "filename": "한성도시개조사업.pdf",
+      "pages": 18,
+      "local_text_chars": 0,
+      "stored_status": "empty_text",
+      "stored_matches_local": false,
+      "first_page_images": 1
+    },
+    {
+      "file_id": "F095",
+      "filename": "해외 인력 송출의 역사와 파독 광부 간호사.pdf",
+      "pages": 16,
+      "local_text_chars": 0,
+      "stored_status": "empty_text",
+      "stored_matches_local": false,
+      "first_page_images": 0
+    },
+    {
+      "file_id": "F104",
+      "filename": "제주 4·3의 진실과 역사적 의미_박찬식.pdf",
+      "pages": 12,
+      "local_text_chars": 0,
+      "stored_status": "empty_text",
+      "stored_matches_local": false,
+      "first_page_images": 6
+    },
+    {
+      "file_id": "F105",
+      "filename": "파월기술자의 전쟁경험.pdf",
+      "pages": 20,
+      "local_text_chars": 0,
+      "stored_status": "empty_text",
+      "stored_matches_local": false,
+      "first_page_images": 3
+    },
+    {
+      "file_id": "F108",
+      "filename": "해방이전 제주의 사회와 경제_양정필.pdf",
+      "pages": 12,
+      "local_text_chars": 0,
+      "stored_status": "empty_text",
+      "stored_matches_local": false,
+      "first_page_images": 16
+    }
+  ],
+  "plain_text_checks": [
+    {
+      "file_id": "F013",
+      "filename": "time_series_analysis10_1.R",
+      "local_bytes": 386,
+      "stored_status": "success",
+      "stored_matches_local": true
+    },
+    {
+      "file_id": "F014",
+      "filename": "time_series_analysis11_1.R",
+      "local_bytes": 739,
+      "stored_status": "success",
+      "stored_matches_local": true
+    },
+    {
+      "file_id": "F015",
+      "filename": "time_series_analysis12_1.R",
+      "local_bytes": 1286,
+      "stored_status": "success",
+      "stored_matches_local": true
+    },
+    {
+      "file_id": "F016",
+      "filename": "time_series_analysis13_1.R",
+      "local_bytes": 0,
+      "stored_status": "empty_text",
+      "stored_matches_local": true
+    },
+    {
+      "file_id": "F017",
+      "filename": "time_series_analysis14_1.R",
+      "local_bytes": 2288,
+      "stored_status": "success",
+      "stored_matches_local": true
+    },
+    {
+      "file_id": "F018",
+      "filename": "time_series_analysis2_1.R",
+      "local_bytes": 741,
+      "stored_status": "success",
+      "stored_matches_local": true
+    },
+    {
+      "file_id": "F019",
+      "filename": "time_series_analysis2_2.R",
+      "local_bytes": 1991,
+      "stored_status": "success",
+      "stored_matches_local": true
+    },
+    {
+      "file_id": "F020",
+      "filename": "time_series_analysis3_1.R",
+      "local_bytes": 2414,
+      "stored_status": "success",
+      "stored_matches_local": true
+    }
+  ],
+  "source_sha256": {
+    "F013": "68aa8b1093112107a4bfb54fed675b09c8706800e96e8b352f432426220e7ffc",
+    "F014": "6a31ad5cf094dc1cff7a7afa6e85c42034348ca088092a2e8648d1c51227283c",
+    "F015": "02874c2bd79a3cb2902b6e3fba1ae1c629c69e5f21a5ff035c88c38cfed453d8",
+    "F016": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "F017": "7a37cd68c004e8d975a5c9bc945d2c6e88c4e216dacb57b19902101db44a58fa",
+    "F018": "2208f04e66eb73bc098d8d3e3b8f02333f337663e9740b700966154d779ae698",
+    "F019": "694d377796bd5986205a65369f009f7210d9a05b20596c4887b75bddc935eeb1",
+    "F020": "9492d0bc0ec6dd7d7b4bbb71bfe91e5ae27ce8e5f92540649521ecdea976308c",
+    "F021": "6c2eda76b26bcca5eecda5c2676e31aa9b8514de9152753fa15f2d7c0238780e",
+    "F022": "180d7e0b1f834c1effede6cfff27714f1f1b481f83de1debea8756a91be8d8ae",
+    "F023": "46b2e637fa0e6f8dbb0dd509d367d54832f3b31ab527bffd54d119e51537c80d",
+    "F024": "6ac49056f722f95faecfc3d808bf6e7a29f91edf6f8a109e1201154e8827e1d4",
+    "F025": "ff71bb8adf9b7530d436aeeb019fbf15fbf1c8dd94a5c1c6725f4559f89cb312",
+    "F026": "b011f5b054b58d628fc3252b012170f1a37e76e6f33cfe6f8c94bd9dc67f3847",
+    "F027": "e2adec7dd11efdaf6bd386c1a65416bf5d0ce38335076089a2f3a19a226b60c1",
+    "F028": "1a224141ac6d51a52734ebb4b86fd3a33d5e2edf18423b59154c550cb0a66785",
+    "F029": "bbdf88a1c55c9b41eb48e2d0f0121a1d24baf597b039e3ae7da609f4379ae6a3",
+    "F030": "2b685d0d8d06215437e6c4eaebbf0fa617bf6004315d2282858c1099d2ac878d",
+    "F031": "61e2d053c3c3ba8b85c72b2cb942230b7c19c1737eaac68d01dfaf874748c2af",
+    "F032": "15aa31f7aefa479b721b1690ae38422d31e917dc61c382cca114596cf290bdf8",
+    "F033": "c32fa2f9c9cd6ec609559fd0684ddc6062ddae8a2fe80f32bd97d4293763ac34",
+    "F034": "c73e18a8ab62d135112e4e25253ccbe548b948744427205d2da481cd1b7dcd2f",
+    "F035": "8ebae756b8fa46359326f4ec5c19a273c0a27c3289a44317f80d2c25c475df92",
+    "F036": "fc35a686aa40a07fbeb60bcc07fe434b50ef99f11f21a1abcdc42240df024424",
+    "F037": "9c6c2f5892f0f7e6f6b6deefe70f16a5e3fd01e8f714e6dc9f0cfd3c0f025644",
+    "F038": "139904a496676c3433e3853dfca0832797eb1b45ea2fc11413bd752f1c80a33f",
+    "F039": "35c79d6c7ff50b1b4d4953515045dd3df5aef3d48ff7273acf9915b5a6001cc1",
+    "F040": "8fc9fb559672c3313b435ae187033a3b72f609e92cd153c9fc73ed376477a11f",
+    "F041": "e8e1c50cfa7726ad8c52c2f9f331256d3e172fff6fb2ebf3d82759b901fc4cc4",
+    "F042": "28f7f8dcc0098bf03bc48e8d488e772f1f4051f1ea1b15af7b18ac683021df4b",
+    "F043": "c510c9ecfda66b7a09f836fea2898af89a54484447c458e033195c2e6b329edb",
+    "F044": "02f4186183edbc414bccf6c1df92aaaf8cfe1b94baace28373173bb84b291c6a",
+    "F045": "1b11cc022dd1c3efed96d2a93935e11502d8a8767cf9f644f8b0d0f0bb9e83c7",
+    "F046": "1a856dd26908654fcd17a59c9f05e7de7015e0282d1aeef6abcf0e59f5db07c3",
+    "F047": "008d012250a73491fbc99de27bfc2afef7991de47bac8d9fcc3b4a47c573f02b",
+    "F048": "0efe5d49a803cf74163ade2e08919a9516c810d8a3a7df9b4904d62683ab0ba6",
+    "F049": "96da12abea86844c3d7afd80c2596ff3249be5287d1fe0500091bdc56bb2768d",
+    "F050": "8675d9292f2d38a05c9bf2e0a6e9e0f209c6f1511379a99cda19398685e28179",
+    "F051": "e559153d5f74fc97e13ea855b85e8c2dea276da19595b14a4dfbe8ddffa8a746",
+    "F052": "beb0f5e9056aae1db920cb2cb4bc86bb6fc885179b93b694d01f860c68fc5d41",
+    "F053": "fd26cc212b8f8add806b0643c0190fccf13c9eda990a7a05b1e16ed46de8b4bf",
+    "F054": "c7222932bfad812fb9e8c318cc25c0ba2e9a94a55f437f4a28b2c584d6b56c2d",
+    "F055": "e97ae7a320005a757f72bc6a111add7a4a1836e49148af5ffd850c0c64485943",
+    "F056": "6ba34ae7c432aaf6c69885c41e0e6c7c97ea51325b44361b4c2245b2eb0afb26",
+    "F057": "284fbe7518d15f6f3fbc0f890b5e3259610d6e9accea705e553447e712aab324",
+    "F058": "e0d9728d6c479b9ab2cc612d985a7e52c6f25dfc44f0478038d93318a179fd7f",
+    "F059": "88f3b9a08aa54f56fc6227a8a3d40ef16fbfd6e9ab2aaca187487a43dafd4e53",
+    "F060": "f12b9c5b2286bd60d3bf09a33b5283d48b6472f1a4bae5316090c23233a0ede5",
+    "F061": "330715c59910f0510f73c57febea65bba7d71b771f3185345173ec23bf0cfb26",
+    "F062": "8e9a8f441e8159574dc7a413d9b16c2e5d07e3636aaa25bdd98bfe7e2fcbfa0f",
+    "F063": "2240a187b73ed227b14fc1472f7533c22755502d0238ea1f2ef8cb86aa2ec42f",
+    "F064": "a4737aab4d55afc4cf34202d57fff676b035d54be12577d13f4f3cd4e3656bfc",
+    "F065": "daac25e9201eabd40a5c1c8c262fb9c42f09fcf43bd02e5ba35ced801a105a4c",
+    "F066": "02bb02678cf5b5571f48738da20a54165e2e5eba942d0bb878b40c4e6f555f0f",
+    "F118": "356d97168cf8a14601387513b70427eea089b5d469647ca47fa6d17adb66e883",
+    "F119": "cbd7d63544993ac629750987f93b8bcce2f731c0505a4ab494e3e752a549630e",
+    "F120": "bf39e32719912a7b8f7188a0331ed4279198f4ddc07fbf1434a1f8c3fee04563",
+    "F122": "6c5e48f0ce1765e0f7f37bc935eb17d705511775fc11f757a0588efe745a1fa3",
+    "F124": "88a56e26a506fd37b7f38083debd5568b1cb3eef3e7c75ede7d95fd5b87d7323",
+    "F128": "f24676e5367079931599aaff73617488ca78778896c1a55228f305f5f05875dc",
+    "F129": "f1ab872573ec46988abda91694ee9c993d408965bd56c637de421eb822a94365",
+    "F132": "0e645fbb3559a3c22e68fec49151b5fb98d8152657a3651a5240ee0577fe103f",
+    "F133": "8119204897081353cc4e1e54bbe2f57bd27aad2520260c4808ec0c02306cbc40",
+    "F136": "20239bec7ccfd709ead35014d38cc8aa528e17272e3c3f810b625a77ab61c8d7",
+    "F137": "2130bad60face18f7ac7660e6bd6072181b32006a32ed47452c6c76a46090315",
+    "F140": "dcc650315d1b86c421213fdabf87e61aa0edb1b47a567e0c6a570d72532f3a9a",
+    "F141": "50c4c34343d2c047fdc27e39daa255b0449c7429402eaa8e18c169b6a7d50f8c",
+    "F144": "6038b8e603025a3eaa84bf9cc5484c1f88f19b21e8534c974ebe5a0891790676"
+  }
+}

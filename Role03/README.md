@@ -31,3 +31,42 @@
 - **AI·검색**에 파일 ID, 내용·시간·참조 근거와 변경 정보를 제공합니다. 임베딩과 검색 순위 계산은 AI·검색이 담당합니다.
 - **데이터·평가**와 추출 내용을 검수하고, **GUI·사용성**에 등록 진행 상태와 오류 내용을 제공합니다.
 - 사용자가 지정한 파일만 처리하고 원본을 자동 수정하거나 실행하지 않습니다. 코드의 저장 구문은 참조 근거이며 실행 사실을 의미하지 않습니다.
+
+## 6주차 구현 및 실행
+
+Role01의 코드·CSV·README는 수정하지 않았습니다. 최신 원격 CSV의 읽기 전용 사본을 `input/`에 보관하며, 원본 커밋은 `input/source.json`에 기록했습니다. 검색 모델·임베딩·검색 순위는 Role01 담당 그대로 유지합니다.
+
+Python 3.10 이상, 추가 라이브러리 없이 저장소 최상위에서 실행합니다.
+
+```sh
+python3 Role03/file_db.py
+python3 Role03/query_example.py
+python3 -m unittest discover -s Role03 -p 'test_*.py' -v
+```
+
+최신 CSV를 다른 위치에서 받았을 때:
+
+```sh
+python3 Role03/file_db.py --metadata Role01/metadata.csv --texts Role01/extracted_text.csv
+```
+
+이 명령은 CSV를 읽기만 합니다. 기존 ID를 유지하며 Role03 DB와 보고서만 갱신합니다. CSV에 빈 ID·중복 ID·파일 식별 불일치가 있으면 DB 갱신 전에 중단합니다. 원본 파일을 실행하거나 수정하지 않습니다.
+
+### 산출물
+
+- `output/files.sqlite3`: 파일 161개와 관계 근거 저장. GitHub에 함께 제공하며 재실행으로 갱신할 수 있습니다.
+- `output/audit.csv`: 원본 경로·로컬 경로·파일 존재 여부·크기 비교·원본 SHA256·추출 상태.
+- `output/relations.csv`: 참조 원문, 파일 ID, 종류, 근거 위치, 연결 상태.
+- `output/summary.json`: 처리 결과 요약.
+- `output/source_checks.json`: 대표 원본과 CSV 추출 내용 대조 결과 및 코드 원본 해시.
+- `WEEK06_REPORT.md`: 이번 주 완료 결과와 미해결 항목.
+
+### 추출 범위
+
+R: `read.csv`, `read.csv2`, `read.table`, `readRDS`, `fread`, `scan`, `load`, `write.csv`, `write.csv2`, `write.table`, `saveRDS`, `fwrite`의 한 줄 리터럴 경로.
+
+Python·노트북: `read_csv`, `read_table`, `read_excel`, `read_json`, `read_parquet`, `loadtxt`, `genfromtxt`, `imread`, `to_csv`, `to_excel`, `to_json`, `to_parquet`, `savefig`, `savetxt`, `imwrite`, `open`의 리터럴 경로. 노트북은 코드 셀별로 분석합니다. 문법 분석이 불가능한 셀은 건너뜁니다.
+
+문서: 등록된 다른 파일의 이름이 추출 본문에 명시된 경우 `mentions` 근거를 기록합니다. 파일명만으로 확정 연결하지 않습니다.
+
+동적 경로·변수·여러 줄 R 호출·작업 폴더 변경 추적은 현재 지원하지 않습니다. 상대경로 연결은 소스 파일 폴더를 기준으로 한 정적 해석이며 실제 실행·사용 관계를 증명하지 않습니다.
