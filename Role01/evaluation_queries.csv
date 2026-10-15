@@ -1,10 +1,15 @@
-query,relevant_files
-"640 크기로 이미지를 학습시킨 YOLO 코드 찾아줘","yolo_learn.ipynb;yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb"
-"YOLO 모델의 성능을 평가하거나 정확도를 확인한 파일 찾아줘","yolo_learn.ipynb;yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb"
-"역전파 알고리즘에 관한 강의자료를 찾아줘","MLP(다층퍼셉트론)(강의).pdf"
-"제주 4.3사건에 관련된 강의자료를 찾아줘","제주 4·3의 진실과 역사적 의미_박찬식.pdf;4.3history.pdf"
-"SARIMA 모형에 대해 작성했던 코드 파일 찾아줘","week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R"
-"데이터를 트레인,검증,테스트셋으로 나누어서 YOLO를 학습시켰던 코드를 찾아줘","yolo_learning5 (1).ipynb"
-"시계열 분석 시간때 작성했던 12주차 코드 찾아줘","time_series_analysis12_1.R;week12_cheating.R;week12.R"
-"조선이 개항을 하게된 역사적 배경에 관한 강의자료를 찾아줘","4주차_강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;강화도조약과 개항.pdf"
-"다중라벨 계층 분할을 통해 데이터를 분리했던 YOLO코드를 찾아줘","yolo_learning5 (1).ipynb"
+query	relevant_files
+640 크기로 이미지를 학습시킨 YOLO 코드 찾아줘	yolo_learn.ipynb;yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb
+YOLO 모델의 성능을 평가하거나 정확도를 확인한 파일 찾아줘	yolo_learn.ipynb;yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb
+역전파 알고리즘에 관한 강의자료를 찾아줘	MLP(다층퍼셉트론)(강의).pdf
+제주 4.3사건에 관련된 강의자료를 찾아줘	제주 4·3의 진실과 역사적 의미_박찬식.pdf;4.3history.pdf
+SARIMA 모형에 대해 작성했던 코드 파일 찾아줘	week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R
+데이터를 트레인,검증,테스트셋으로 나누어서 YOLO를 학습시켰던 코드를 찾아줘	yolo_learning5 (1).ipynb
+시계열 분석 시간때 작성했던 12주차 코드 찾아줘	time_series_analysis12_1.R;week12_cheating.R;week12.R
+조선이 개항을 하게된 역사적 배경에 관한 강의자료를 찾아줘	4주차_강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;강화도조약과 개항.pdf
+다중라벨 계층 분할을 통해 데이터를 분리했던 YOLO코드를 찾아줘	yolo_learning5 (1).ipynb
+유관순 관련 강의자료 찾아줘	유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;한국 근현대 인물사 연구방법론.pdf
+옛날 보건이나 위생에 관한 강의자료 찾아줘	세균설과 근대의 보건_위생_ppt.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf
+갑오개혁 관련 강의자료 찾아줘	읽기자료_갑오개혁의 전개와 성과.pdf;읽기자료_갑오개혁의 한계.pdf;청일전쟁과 갑오개혁_ppt.pdf;청일전쟁과 갑오개혁_요약.pdf
+독일에 간 광부랑 간호사에 관한 자료 찾아줘	해외 인력 송출의 역사와 파독 광부 간호사.pdf;한국현대사와 영화 ‘국제시장＇.pdf
+우리나라에 근대 법이 들어온 내용의 자료 찾아줘	근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;근대의 법과 제도는 어떻게 이식되었는가.pdf
