@@ -49,14 +49,59 @@ def extract_ipynb(file_path):
         if isinstance(source, list):
             source = "".join(source)
 
-        if not source.strip():
-            continue
+        # 코드 셀과 마크다운 셀의 원본 텍스트 추출
+        if source.strip():
+            if cell_type == "code":
+                texts.append(f"[코드 셀 {cell_num}]\n{source}")
 
+            elif cell_type == "markdown":
+                texts.append(f"[설명 셀 {cell_num}]\n{source}")
+
+        # 코드 셀의 실행 결과(outputs) 추출
         if cell_type == "code":
-            texts.append(f"[코드 셀 {cell_num}]\n{source}")
+            for output in cell.get("outputs", []):
+                output_type = output.get("output_type", "")
 
-        elif cell_type == "markdown":
-            texts.append(f"[설명 셀 {cell_num}]\n{source}")
+                # 일반 텍스트 출력 및 print() 결과
+                if output_type == "stream":
+                    output_text = output.get("text", [])
+                    if isinstance(output_text, list):
+                        output_text = "".join(output_text)
+
+                    if output_text.strip():
+                        texts.append(
+                            f"[실행 결과 셀 {cell_num}]\n{output_text}"
+                        )
+
+                # 실행 결과가 텍스트 또는 HTML 표로 저장된 경우
+                elif output_type in ("execute_result", "display_data"):
+                    data = output.get("data", {})
+
+                    # 일반 텍스트 표현이 있으면 우선 추출
+                    output_text = data.get("text/plain", [])
+                    if isinstance(output_text, list):
+                        output_text = "".join(output_text)
+
+                    if output_text.strip():
+                        texts.append(
+                            f"[실행 결과 셀 {cell_num}]\n{output_text}"
+                        )
+
+                    # text/plain이 없으면 HTML 표현을 추출
+                    elif "text/html" in data:
+                        html_text = data["text/html"]
+                        if isinstance(html_text, list):
+                            html_text = "".join(html_text)
+
+                        from bs4 import BeautifulSoup
+                        plain_text = BeautifulSoup(
+                            html_text, "html.parser"
+                        ).get_text(" ", strip=True)
+
+                        if plain_text:
+                            texts.append(
+                                f"[실행 결과 셀 {cell_num}]\n{plain_text}"
+                            )
 
     return "\n\n".join(texts)
 
