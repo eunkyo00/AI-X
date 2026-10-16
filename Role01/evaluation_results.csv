@@ -1,117 +1,159 @@
 ﻿query,relevant_files,top5_files,matched_files,hit_at_5,status
-640 크기로 이미지를 학습시킨 YOLO 코드 찾아줘,yolo_learn.ipynb;yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb,YOLO(test)_picture.ipynb;yolo_learning5 (1).ipynb;YOLO(test) (1).ipynb;YOLO(test)_picture(light_ver) (1).ipynb;yolo_learn.ipynb,yolo_learning5 (1).ipynb;yolo_learn.ipynb,1,성공
-YOLO 모델의 성능을 평가하거나 정확도를 확인한 파일 찾아줘,yolo_learn.ipynb;yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb,stream_yolo.py;YOLO(test)_picture.ipynb;YOLO(test)_picture(light_ver) (1).ipynb;python3_voice_alert.py;YOLO(test) (1).ipynb,,0,실패
-역전파 알고리즘에 관한 강의자료를 찾아줘,MLP(다층퍼셉트론)(강의).pdf,MLP(다층퍼셉트론)(강의).pdf;제11장 순환신경망(강의).pdf;케라스 라이브러리.pdf;Transformer_강의자료.pdf;머신러닝(내용추가).pdf,MLP(다층퍼셉트론)(강의).pdf,1,성공
-제주 4.3사건에 관련된 강의자료를 찾아줘,제주 4·3의 진실과 역사적 의미_박찬식.pdf;4.3history.pdf,4.3history.pdf;해방전후의 한국 정치와 사회_제주.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;4주차_강화도조약과 개항.pdf;근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,4.3history.pdf,1,성공
-SARIMA 모형에 대해 작성했던 코드 파일 찾아줘,week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R,week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026_1.R;week7_cheating.R;week5_cheating.R,week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026_1.R,1,성공
-"데이터를 트레인,검증,테스트셋으로 나누어서 YOLO를 학습시켰던 코드를 찾아줘",yolo_learning5 (1).ipynb,yolo_learn.ipynb;yolo_learning5 (1).ipynb;yolo_learning2 (1).ipynb;YOLO(test)_picture.ipynb;YOLO(test) (1).ipynb,yolo_learning5 (1).ipynb,1,성공
-시계열 분석 시간때 작성했던 12주차 코드 찾아줘,time_series_analysis12_1.R;week12_cheating.R;week12.R,week12.R;time_series_analysis12_1.R;week12_cheating.R;week13.R;week13_cheating.R,week12.R;time_series_analysis12_1.R;week12_cheating.R,1,성공
-조선이 개항을 하게된 역사적 배경에 관한 강의자료를 찾아줘,4주차_강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;강화도조약과 개항.pdf,4주차_강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;강화도조약과 개항.pdf;일본의 개항과 미국.pdf,4주차_강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;강화도조약과 개항.pdf,1,성공
-다중라벨 계층 분할을 통해 데이터를 분리했던 YOLO코드를 찾아줘,yolo_learning5 (1).ipynb,yolo_learning5 (1).ipynb;yolo_learn.ipynb;YOLO(test) (1).ipynb;yolo_learning2 (1).ipynb;YOLO(test)_picture.ipynb,yolo_learning5 (1).ipynb,1,성공
-유관순 관련 강의자료 찾아줘,유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;한국 근현대 인물사 연구방법론.pdf,유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;한국 근현대 인물사 연구방법론.pdf;행정개혁기구의_성공_조건.pdf;청일전쟁과 갑오개혁_요약.pdf,유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;한국 근현대 인물사 연구방법론.pdf,1,성공
-옛날 보건이나 위생에 관한 강의자료 찾아줘,세균설과 근대의 보건_위생_ppt.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,세균설과 근대의 보건_위생_ppt.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;근대 서양 문물의 도입_ppt.pdf,세균설과 근대의 보건_위생_ppt.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,1,성공
-갑오개혁 관련 강의자료 찾아줘,읽기자료_갑오개혁의 전개와 성과.pdf;읽기자료_갑오개혁의 한계.pdf;청일전쟁과 갑오개혁_ppt.pdf;청일전쟁과 갑오개혁_요약.pdf,청일전쟁과 갑오개혁_요약.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;청일전쟁과 갑오개혁_ppt.pdf;행정개혁기구의_성공_조건.pdf;읽기자료_갑오개혁의 한계.pdf,청일전쟁과 갑오개혁_요약.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;청일전쟁과 갑오개혁_ppt.pdf;읽기자료_갑오개혁의 한계.pdf,1,성공
-독일에 간 광부랑 간호사에 관한 자료 찾아줘,해외 인력 송출의 역사와 파독 광부 간호사.pdf;한국현대사와 영화 ‘국제시장＇.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;한국현대사와 영화 ‘국제시장＇.pdf;세균설과 근대의 보건_위생_ppt.pdf;개항기 조선 서양과 만나다.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,한국현대사와 영화 ‘국제시장＇.pdf,1,성공
-우리나라에 근대 법이 들어온 내용의 자료 찾아줘,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;근대의 법과 제도는 어떻게 이식되었는가.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;근대 국민국가와 왕권.pdf;근대 서양 문물의 도입_ppt.pdf;한국 근현대 인물사 연구방법론.pdf;해방전후의 한국 정치와 사회_제주.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,1,성공
-교차 검증 설명한 강의자료 찾아줘,Cross-Validation_Decoded.pdf,머신러닝(내용추가).pdf;케라스 라이브러리.pdf;심층신경망.pdf;4주차_강화도조약과 개항.pdf;제11장 순환신경망(강의).pdf,,0,실패
-트랜스포머 강의자료 찾아줘,Transformer_강의자료.pdf,Transformer_강의자료.pdf;제11장 순환신경망(강의).pdf;머신러닝(내용추가).pdf;케라스 라이브러리.pdf;심층신경망.pdf,Transformer_강의자료.pdf,1,성공
-머신러닝 기초 강의자료 찾아줘,머신러닝(내용추가).pdf,머신러닝(내용추가).pdf;제11장 순환신경망(강의).pdf;MLP(다층퍼셉트론)(강의).pdf;Transformer_강의자료.pdf;심층신경망.pdf,머신러닝(내용추가).pdf,1,성공
-선형회귀 강의자료 찾아줘,선형회귀_업데이트.pdf,선형회귀_업데이트.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;머신러닝(내용추가).pdf;4주차_강화도조약과 개항.pdf;근대 국민국가와 왕권.pdf,선형회귀_업데이트.pdf,1,성공
-심층신경망 강의자료 찾아줘,심층신경망.pdf,심층신경망.pdf;제09장 컨벌루션 신경망(강의).pdf;제11장 순환신경망(강의).pdf;MLP(다층퍼셉트론)(강의).pdf;케라스 라이브러리.pdf,심층신경망.pdf,1,성공
-딥러닝 영상인식 자료 찾아줘,영상인식과 딥러닝.pdf,영상인식과 딥러닝.pdf;제11장 순환신경망(강의).pdf;Transformer_강의자료.pdf;케라스 라이브러리.pdf;심층신경망.pdf,영상인식과 딥러닝.pdf,1,성공
-CNN 강의자료 찾아줘,제09장 컨벌루션 신경망(강의).pdf,영상인식과 딥러닝.pdf;제09장 컨벌루션 신경망(강의).pdf;README.md;README.md;README.md,제09장 컨벌루션 신경망(강의).pdf,1,성공
-RNN이나 LSTM 강의자료 찾아줘,제11장 순환신경망(강의).pdf,제11장 순환신경망(강의).pdf;Transformer_강의자료.pdf;케라스 라이브러리.pdf;심층신경망.pdf;머신러닝(내용추가).pdf,제11장 순환신경망(강의).pdf,1,성공
-케라스 사용법 강의자료 찾아줘,케라스 라이브러리.pdf,케라스 라이브러리.pdf;심층신경망.pdf;영상인식과 딥러닝.pdf;제11장 순환신경망(강의).pdf;근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,케라스 라이브러리.pdf,1,성공
-퍼셉트론 강의자료 찾아줘,퍼셉트론_추가.pdf,퍼셉트론_추가.pdf;MLP(다층퍼셉트론)(강의).pdf;심층신경망.pdf;케라스 라이브러리.pdf;영상인식과 딥러닝.pdf,퍼셉트론_추가.pdf,1,성공
-그랜저 인과관계랑 VAR 분석 코드 찾아줘,time_series_analysis10_1.R;week10.R;week10_cheating.R,week10_cheating.R;week10.R;time_series_analysis10_1.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R,week10_cheating.R;week10.R;time_series_analysis10_1.R,1,성공
-공적분이나 VECM 분석 코드 찾아줘,time_series_analysis11_1.R;week11_cheating.R,week11_cheating.R;time_series_analysis11_1.R;week13_cheating.R;week13.R;week12.R,week11_cheating.R;time_series_analysis11_1.R,1,성공
-MA 모형을 칼만 필터로 분석한 코드 찾아줘,time_series_analysis13_1.R;week13.R;week13_cheating.R,week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;time_series_analysis12_1.R;week13.R,week13.R,1,성공
-독감 데이터로 시계열 분석한 코드 찾아줘,time_series_analysis14_1.R,week13_cheating.R;week13.R;week10_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R,,0,실패
-zoo로 시계열 데이터 만든 코드 찾아줘,time_series_analysis2_1.R;week2.R,week2_cheating.R;week13.R;week13_cheating.R;week2.R;time_series_analysis2_1.R,week2.R;time_series_analysis2_1.R,1,성공
-시계열 결측치 채우는 코드 찾아줘,time_series_analysis2_2.R;week2_cheating.R,week2_cheating.R;week13_cheating.R;week13.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R,week2_cheating.R,1,성공
-시계열 데이터를 월이나 분기별로 묶는 코드 찾아줘,time_series_analysis3_1.R;week3.R;week3_cheating.R,week2_cheating.R;week13_cheating.R;week13.R;week2.R;time_series_analysis14_1.R,,0,실패
-이동평균이나 지수평활 코드 찾아줘,time_series_analysis4_1.R;week4.R;week4_cheating.R,week4_cheating.R;케라스 라이브러리.pdf;README.md;week5_cheating.R;pigpio.py,week4_cheating.R,1,성공
-홀트 윈터스로 예측한 코드 찾아줘,time_series_analysis5_1.R;week5 (1).R;week5.R;week5_cheating.R,week12.R;week12_cheating.R;week5_cheating.R;week5 (1).R;week13.R,week5_cheating.R;week5 (1).R,1,성공
-랜덤워크랑 ARIMA 실습 코드 찾아줘,time_series_analysis6_1.R;week6.R;week6_cheating.R,week5.R;week5_cheating.R;week5 (1).R;Transformer_강의자료.pdf;python3_voice_alert.py,,0,실패
-기온이나 항공 승객 데이터로 SARIMA 한 코드 찾아줘,time_series_analysis7_1.R;week7.R;week7_cheating.R,week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week7.R;README.md;time_series_covid19_confirmed_global.csv,week7.R,1,성공
-GARCH로 주가 변동성 분석한 코드 찾아줘,time_series_analysis9_1.R;week9_cheating.R,week9_cheating.R;time_series_analysis9_1.R;time_series_analysis10_1.R;week10.R;퍼셉트론_추가.pdf,week9_cheating.R;time_series_analysis9_1.R,1,성공
-초음파 센서랑 YOLO를 연결한 음성 안내 코드 찾아줘,message_hello (1).py,voice_alert1.py;voice_alert.py;message_hello (1).py;voice_test.py;rpi_gpio.py,message_hello (1).py,1,성공
-YOLO 결과를 소켓으로 받아 음성 출력하는 코드 찾아줘,pigpio.py,yolo_stream.py;voice_test.py;pigpio.py;yolo_stream_front.py;voice_alert.py,pigpio.py,1,성공
-물체 이름을 한국어 음성으로 알려주는 코드 찾아줘,python3_voice_alert.py,python3_voice_alert.py;message_hello (1).py;yolo_stream.py;Transformer_강의자료.pdf;YOLO(test)_picture(light_ver) (1).ipynb,python3_voice_alert.py,1,성공
-카메라 영상이랑 텍스트를 같이 전송하는 코드 찾아줘,rpi_gpio.py,YOLO(test)_picture(light_ver) (1).ipynb;rpi_gpio.py;message_hello (1).py;Transformer_강의자료.pdf;python3_voice_alert.py,rpi_gpio.py,1,성공
-라즈베리파이 영상을 웹으로 보여주는 YOLO 코드 찾아줘,stream_yolo.py,yolo_stream.py;yolo_stream_front.py;YOLO(test)_picture(light_ver) (1).ipynb;rpi_gpio.py;YOLO(test)_picture.ipynb,,0,실패
-낙하를 감지해서 음성으로 경고하는 코드 찾아줘,voice_alert.py;voice_alert1.py,message_hello (1).py;voice_alert1.py;voice_test.py;voice_alert.py;python3_voice_alert.py,voice_alert1.py;voice_alert.py,1,성공
-초음파 센서 거리 테스트 코드 찾아줘,voice_test.py,voice_alert1.py;voice_test.py;message_hello (1).py;voice_alert.py;rpi_gpio.py,voice_test.py,1,성공
-YOLO로 사진 객체 탐지 테스트한 노트북 찾아줘,YOLO(test) (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test)_picture.ipynb;YOLO(test) (1).ipynb;stream_yolo.py;python3_voice_alert.py,YOLO(test) (1).ipynb,1,성공
-YOLO로 학교 영상을 탐지한 노트북 찾아줘,YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test)_picture.ipynb,YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test) (1).ipynb;YOLO(test)_picture.ipynb;yolo_learning5 (1).ipynb;stream_yolo.py,YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test)_picture.ipynb,1,성공
-라즈베리파이에서 NCNN 모델 실행하는 코드 찾아줘,yolo_open.py,yolo_stream.py;yolo_stream_front.py;rpi_gpio.py;영상인식과 딥러닝.pdf;pigpio.py,,0,실패
-라즈베리파이 영상을 받아 YOLO 탐지하는 스트리밍 코드 찾아줘,yolo_stream.py;yolo_stream_front.py,yolo_stream.py;yolo_stream_front.py;rpi_gpio.py;YOLO(test)_picture(light_ver) (1).ipynb;pigpio.py,yolo_stream.py;yolo_stream_front.py,1,성공
-불평등조약이 생긴 과정 자료 찾아줘,19세기_후반_불평등조약체제의_성립_과정.pdf,19세기_후반_불평등조약체제의_성립_과정.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;서세동점 동아시아와 서양 열강2.pdf;4주차_강화도조약과 개항.pdf;해방전후의 한국 정치와 사회_제주.pdf,19세기_후반_불평등조약체제의_성립_과정.pdf,1,성공
-근대 국민국가와 왕권 자료 찾아줘,근대 국민국가와 왕권.pdf;근대 국민국가와 왕권_sum.pdf,근대 국민국가와 왕권_sum.pdf;근대 국민국가와 왕권.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;근대 서양 문물의 도입_ppt.pdf;읽기자료_갑오개혁의 전개와 성과.pdf,근대 국민국가와 왕권_sum.pdf;근대 국민국가와 왕권.pdf,1,성공
+10겹 교차 검증 설명한 강의자료 찾아줘,Cross-Validation_Decoded.pdf,머신러닝(내용추가).pdf;케라스 라이브러리.pdf;심층신경망.pdf;제11장 순환신경망(강의).pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,,0,실패
+역전파랑 다층 퍼셉트론 설명한 강의자료 찾아줘,MLP(다층퍼셉트론)(강의).pdf,MLP(다층퍼셉트론)(강의).pdf;퍼셉트론_추가.pdf;Transformer_강의자료.pdf;케라스 라이브러리.pdf;제11장 순환신경망(강의).pdf,MLP(다층퍼셉트론)(강의).pdf,1,성공
+셀프 어텐션 설명한 트랜스포머 강의자료 찾아줘,Transformer_강의자료.pdf,Transformer_강의자료.pdf;심층신경망.pdf;케라스 라이브러리.pdf;영상인식과 딥러닝.pdf;제11장 순환신경망(강의).pdf,Transformer_강의자료.pdf,1,성공
+지도학습이랑 비지도학습 설명한 머신러닝 자료 찾아줘,머신러닝(내용추가).pdf,머신러닝(내용추가).pdf;Transformer_강의자료.pdf;선형회귀_업데이트.pdf;케라스 라이브러리.pdf;제11장 순환신경망(강의).pdf,머신러닝(내용추가).pdf,1,성공
+경사하강법으로 선형회귀 설명한 자료 찾아줘,선형회귀_업데이트.pdf,선형회귀_업데이트.pdf;근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;행정개혁기구의_성공_조건.pdf;심층신경망.pdf;한국 근현대 인물사 연구방법론.pdf,선형회귀_업데이트.pdf,1,성공
+과적합 방지까지 다룬 심층신경망 자료 찾아줘,심층신경망.pdf,심층신경망.pdf;제09장 컨벌루션 신경망(강의).pdf;Transformer_강의자료.pdf;개항기 조선 서양과 만나다.pdf;제11장 순환신경망(강의).pdf,심층신경망.pdf,1,성공
+전이학습으로 이미지 인식하는 자료 찾아줘,영상인식과 딥러닝.pdf,README.md;영상인식과 딥러닝.pdf;yolo_learning2 (1).ipynb;yolo_learn.ipynb;yolo_learning5 (1).ipynb,영상인식과 딥러닝.pdf,1,성공
+컨벌루션이랑 풀링 설명한 CNN 강의자료 찾아줘,제09장 컨벌루션 신경망(강의).pdf,제09장 컨벌루션 신경망(강의).pdf;영상인식과 딥러닝.pdf;README.md;머신러닝(내용추가).pdf;README.md,제09장 컨벌루션 신경망(강의).pdf,1,성공
+RNN이랑 LSTM으로 시계열 예측한 자료 찾아줘,제11장 순환신경망(강의).pdf,제11장 순환신경망(강의).pdf;week12.R;week13.R;week14_apple_forecast_analysis_2026.R;week13_cheating.R,제11장 순환신경망(강의).pdf,1,성공
+케라스로 MNIST 모델 만드는 자료 찾아줘,케라스 라이브러리.pdf,케라스 라이브러리.pdf;심층신경망.pdf;영상인식과 딥러닝.pdf;제11장 순환신경망(강의).pdf;제09장 컨벌루션 신경망(강의).pdf,케라스 라이브러리.pdf,1,성공
+퍼셉트론으로 XOR 문제 설명한 자료 찾아줘,퍼셉트론_추가.pdf,퍼셉트론_추가.pdf;케라스 라이브러리.pdf;심층신경망.pdf;MLP(다층퍼셉트론)(강의).pdf;notebook-papers.ipynb,퍼셉트론_추가.pdf,1,성공
+DAX랑 SMI로 그랜저 인과관계를 분석한 코드 찾아줘,time_series_analysis10_1.R,week10_cheating.R;time_series_analysis10_1.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week10.R,time_series_analysis10_1.R,1,성공
+주가지수 공적분과 VECM을 분석한 코드 찾아줘,time_series_analysis11_1.R,week11_cheating.R;time_series_analysis11_1.R;week13.R;week13_cheating.R;week9_cheating.R,time_series_analysis11_1.R,1,성공
+리카티 방정식으로 정상상태 칼만 필터를 계산한 코드 찾아줘,time_series_analysis12_1.R,week13.R;week13_cheating.R;time_series_analysis12_1.R;week14_apple_forecast_analysis_2026_1.R;케라스 라이브러리.pdf,time_series_analysis12_1.R,1,성공
+13주차 시계열 분석 코드 찾아줘,time_series_analysis13_1.R,week13.R;week14_apple_forecast_analysis_2026.R;week13_cheating.R;week14_apple_forecast_analysis_2026_cheating.R;week12.R,,0,실패
+프랑스 독감 데이터로 ARIMA와 VAR를 분석한 코드 찾아줘,time_series_analysis14_1.R,week10_cheating.R;week9_cheating.R;week11_cheating.R;week14_apple_forecast_analysis_2026_cheating.R;time_series_analysis14_1.R,time_series_analysis14_1.R,1,성공
+zoo 패키지로 날짜 시계열을 만든 코드 찾아줘,time_series_analysis2_1.R,week2_cheating.R;time_series_analysis2_1.R;week2.R;time_series_analysis2_2.R;time_series_analysis7_1.R,time_series_analysis2_1.R,1,성공
+rolling join으로 시계열 결측치를 채운 코드 찾아줘,time_series_analysis2_2.R,week2_cheating.R;week4_cheating.R;week4.R;week13_cheating.R;week14_apple_forecast_analysis_2026_cheating.R,,0,실패
+월별 분기별 집계와 STL 분해를 한 코드 찾아줘,time_series_analysis3_1.R,week9_cheating.R;week13_cheating.R;week13.R;week3_cheating.R;week2_cheating.R,,0,실패
+이동평균과 단순지수평활을 비교한 코드 찾아줘,time_series_analysis4_1.R,week4_cheating.R;week5_cheating.R;케라스 라이브러리.pdf;week13.R;notebook.ipynb,,0,실패
+홀트 윈터스 예측과 잔차 검정을 한 코드 찾아줘,time_series_analysis5_1.R,week12.R;week12_cheating.R;week9_cheating.R;케라스 라이브러리.pdf;week14_apple_forecast_analysis_2026_cheating.R,,0,실패
+나일강 데이터로 ARIMA 예측한 코드 찾아줘,time_series_analysis6_1.R,week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week5_cheating.R;선형회귀_업데이트.pdf,,0,실패
+기온과 항공 승객 데이터로 SARIMA 분석한 코드 찾아줘,time_series_analysis7_1.R,week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026_1.R;week7.R;week2_cheating.R,,0,실패
+주가지수 변동성을 GARCH로 예측한 코드 찾아줘,time_series_analysis9_1.R,week9_cheating.R;time_series_analysis9_1.R;week13.R;week10.R;week13_cheating.R,time_series_analysis9_1.R,1,성공
+CAC와 FTSE로 VAR 안정성을 확인한 10주차 실습 코드 찾아줘,week10.R,week10_cheating.R;week10.R;week9_cheating.R;week11_cheating.R;time_series_analysis10_1.R,week10.R,1,성공
+VAR와 그랜저 검정을 정리한 10주차 치팅용 코드 찾아줘,week10_cheating.R,week10_cheating.R;week10.R;week9_cheating.R;week14_apple_forecast_analysis_2026_cheating.R;time_series_analysis10_1.R,week10_cheating.R,1,성공
+공적분과 VECM을 정리한 11주차 치팅용 코드 찾아줘,week11_cheating.R,week11_cheating.R;week13_cheating.R;week13.R;time_series_analysis11_1.R;week3_cheating.R,week11_cheating.R,1,성공
+칼만 필터 상태 추정을 실습한 12주차 코드 찾아줘,week12.R,week13.R;week13_cheating.R;time_series_analysis12_1.R;week12.R;week12_cheating.R,week12.R,1,성공
+칼만 필터 계산을 정리한 12주차 치팅용 코드 찾아줘,week12_cheating.R,week13_cheating.R;week13.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R,,0,실패
+MA 모형을 칼만 필터로 추정한 13주차 실습 코드 찾아줘,week13.R,week13.R;week13_cheating.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;notebook.ipynb,week13.R,1,성공
+MA 모형 상태 업데이트를 정리한 13주차 치팅용 코드 찾아줘,week13_cheating.R,week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026.R;week13_cheating.R;week13.R,week13_cheating.R,1,성공
+애플 매출을 SARIMA와 상태공간모형으로 예측한 실습 코드 찾아줘,week14_apple_forecast_analysis_2026.R,week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R;케라스 라이브러리.pdf;제11장 순환신경망(강의).pdf,week14_apple_forecast_analysis_2026.R,1,성공
+애플 매출 예측 오차를 비교한 두 번째 실습 코드 찾아줘,week14_apple_forecast_analysis_2026_1.R,week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026_1.R;MLP(다층퍼셉트론)(강의).pdf;week4_cheating.R,week14_apple_forecast_analysis_2026_1.R,1,성공
+애플 매출 예측 과정을 정리한 치팅용 코드 찾아줘,week14_apple_forecast_analysis_2026_cheating.R,week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R;time_series_analysis14_1.R;week3_cheating.R,week14_apple_forecast_analysis_2026_cheating.R,1,성공
+zoo와 data.table로 시계열을 병합한 2주차 실습 코드 찾아줘,week2.R,week2_cheating.R;time_series_analysis2_2.R;week13.R;week13_cheating.R;week2.R,week2.R,1,성공
+시계열 결측치 보간을 정리한 2주차 치팅용 코드 찾아줘,week2_cheating.R,week2_cheating.R;week13_cheating.R;week13.R;week2.R;week14_apple_forecast_analysis_2026_1.R,week2_cheating.R,1,성공
+주 월 분기 단위로 시계열을 바꾼 3주차 실습 코드 찾아줘,week3.R,week13.R;week13_cheating.R;week3.R;week3_cheating.R;time_series_analysis12_1.R,week3.R,1,성공
+기간별 집계와 요일 가중치를 정리한 3주차 치팅용 코드 찾아줘,week3_cheating.R,week3_cheating.R;심층신경망.pdf;week3.R;week4_cheating.R;time_series_covid19_deaths_global.csv,week3_cheating.R,1,성공
+이동평균과 지수평활을 비교한 4주차 실습 코드 찾아줘,week4.R,week4_cheating.R;notebook.ipynb;케라스 라이브러리.pdf;week13.R;notebook.ipynb,,0,실패
+이동평균과 정상성 검정을 정리한 4주차 치팅용 코드 찾아줘,week4_cheating.R,week4_cheating.R;notebook.ipynb;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;심층신경망.pdf,week4_cheating.R,1,성공
+홀트 윈터스로 계절성을 예측한 5주차 실습 코드 찾아줘,week5 (1).R,week5_cheating.R;week5.R;week5 (1).R;week12.R;time_series_analysis5_1.R,week5 (1).R,1,성공
+가법과 승법 계절성을 비교한 다른 5주차 코드 찾아줘,week5.R,time_series_analysis9_1.R;week9_cheating.R;week12.R;week12_cheating.R;심층신경망.pdf,,0,실패
+홀트 윈터스 진단을 정리한 5주차 치팅용 코드 찾아줘,week5_cheating.R,week5_cheating.R;week5.R;week5 (1).R;time_series_analysis5_1.R;심층신경망.pdf,week5_cheating.R,1,성공
+임의 보행과 나일강 ARIMA를 실습한 6주차 코드 찾아줘,week6.R,week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R;Transformer_강의자료.pdf;voice_test.py,,0,실패
+임의 보행과 ARIMA 진단을 정리한 6주차 치팅용 코드 찾아줘,week6_cheating.R,week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;week5_cheating.R;week14_apple_forecast_analysis_2026_1.R;week5.R,,0,실패
+기온과 항공 승객 SARIMA를 실습한 7주차 코드 찾아줘,week7.R,week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_cheating.R;week7.R;week7_cheating.R;time_series_analysis7_1.R,week7.R,1,성공
+SARIMA 예측 과정을 정리한 7주차 치팅용 코드 찾아줘,week7_cheating.R,week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R;week9_cheating.R;week13_cheating.R,,0,실패
+GARCH 분석을 정리한 9주차 치팅용 코드 찾아줘,week9_cheating.R,week9_cheating.R;time_series_analysis9_1.R;week4_cheating.R;week10_cheating.R;week13_cheating.R,week9_cheating.R,1,성공
+초음파 센서와 YOLO 결과로 음성을 재생하는 코드 찾아줘,message_hello (1).py,voice_alert1.py;voice_test.py;voice_alert.py;message_hello (1).py;rpi_gpio.py,message_hello (1).py,1,성공
+소켓으로 받은 YOLO 결과를 음성으로 알려주는 코드 찾아줘,pigpio.py,yolo_stream.py;pigpio.py;python3_voice_alert.py;voice_test.py;yolo_learning5 (1).ipynb,pigpio.py,1,성공
+물체 이름을 한국어 음성으로 합성하는 코드 찾아줘,python3_voice_alert.py,python3_voice_alert.py;yolo_stream.py;Transformer_강의자료.pdf;YOLO(test)_picture(light_ver) (1).ipynb;pigpio.py,python3_voice_alert.py,1,성공
+카메라 화면과 텍스트를 같이 받는 서버 코드 찾아줘,rpi_gpio.py,rpi_gpio.py;message_hello (1).py;pigpio.py;YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test) (1).ipynb,rpi_gpio.py,1,성공
+라즈베리파이 YOLO 영상을 웹으로 보여주는 코드 찾아줘,stream_yolo.py,yolo_stream.py;YOLO(test)_picture(light_ver) (1).ipynb;yolo_stream_front.py;YOLO(test)_picture.ipynb;rpi_gpio.py,,0,실패
+30센티 낙하를 감지하는 초기 음성 경고 코드 찾아줘,voice_alert.py,voice_alert1.py;message_hello (1).py;voice_test.py;voice_alert.py;python3_voice_alert.py,voice_alert.py,1,성공
+필터를 넣어 낙하 감지를 개선한 음성 경고 코드 찾아줘,voice_alert1.py,message_hello (1).py;voice_alert1.py;voice_test.py;voice_alert.py;pigpio.py,voice_alert1.py,1,성공
+초음파 센서 거리를 터미널에 출력하는 테스트 코드 찾아줘,voice_test.py,voice_test.py;voice_alert1.py;message_hello (1).py;voice_alert.py;rpi_gpio.py,voice_test.py,1,성공
+사진 한 장으로 YOLO 객체 탐지를 시험한 노트북 찾아줘,YOLO(test) (1).ipynb,YOLO(test) (1).ipynb;YOLO(test)_picture.ipynb;YOLO(test)_picture(light_ver) (1).ipynb;yolo_learning5 (1).ipynb;python3_voice_alert.py,YOLO(test) (1).ipynb,1,성공
+복도 영상을 가볍게 줄여 사람을 탐지한 노트북 찾아줘,YOLO(test)_picture(light_ver) (1).ipynb,README.md;notebook.ipynb;rpi_gpio.py;영상인식과 딥러닝.pdf;YOLO(test)_picture(light_ver) (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb,1,성공
+교내 사진과 영상으로 YOLO 성능을 점검한 노트북 찾아줘,YOLO(test)_picture.ipynb,YOLO(test)_picture.ipynb;YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test) (1).ipynb;stream_yolo.py;yolo_learning5 (1).ipynb,YOLO(test)_picture.ipynb,1,성공
+복도 시설물 14종을 처음 학습한 YOLO 노트북 찾아줘,yolo_learn.ipynb,yolo_learning5 (1).ipynb;yolo_learn.ipynb;YOLO(test) (1).ipynb;YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test)_picture.ipynb,yolo_learn.ipynb,1,성공
+미완성 데이터셋 일부로 YOLO를 학습한 노트북 찾아줘,yolo_learning2 (1).ipynb,yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb;YOLO(test)_picture.ipynb;YOLO(test) (1).ipynb;yolo_learn.ipynb,yolo_learning2 (1).ipynb,1,성공
+다중라벨로 데이터를 나눠 최종 YOLO를 학습한 노트북 찾아줘,yolo_learning5 (1).ipynb,yolo_learning5 (1).ipynb;yolo_learning2 (1).ipynb;notebook.ipynb;yolo_learn.ipynb;YOLO(test)_picture.ipynb,yolo_learning5 (1).ipynb,1,성공
+라즈베리파이에서 NCNN 모델을 실행하는 코드 찾아줘,yolo_open.py,yolo_stream.py;yolo_stream_front.py;rpi_gpio.py;영상인식과 딥러닝.pdf;pigpio.py,,0,실패
+파이 영상으로 시설물을 탐지해 결과를 돌려주는 스트리밍 코드 찾아줘,yolo_stream.py,rpi_gpio.py;yolo_stream.py;pigpio.py;YOLO(test)_picture(light_ver) (1).ipynb;yolo_stream_front.py,yolo_stream.py,1,성공
+높은 임계값을 쓰는 초기 YOLO 스트리밍 코드 찾아줘,yolo_stream_front.py,YOLO(test) (1).ipynb;yolo_learn.ipynb;yolo_learning2 (1).ipynb;python3_voice_alert.py;YOLO(test)_picture.ipynb,,0,실패
+동아시아 불평등조약이 만들어진 과정 자료 찾아줘,19세기_후반_불평등조약체제의_성립_과정.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf;서세동점 동아시아와 서양 열강2.pdf;19세기_후반_불평등조약체제의_성립_과정.pdf;일본의 개항과 미국.pdf;서세동점 동아시아와 서양 열강 1.pdf,19세기_후반_불평등조약체제의_성립_과정.pdf,1,성공
+강화도조약과 개항을 다룬 4주차 강의자료 찾아줘,4주차_강화도조약과 개항.pdf,4주차_강화도조약과 개항.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;일본의 개항과 미국.pdf,4주차_강화도조약과 개항.pdf,1,성공
+강화도조약 내용을 간단히 정리한 자료 찾아줘,강화도조약과 개항.pdf,4주차_강화도조약과 개항.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;강화도조약과 개항.pdf;청일전쟁과 갑오개혁_요약.pdf;근대 국민국가와 왕권.pdf,강화도조약과 개항.pdf,1,성공
+개항 뒤 제물포와 정동이 바뀐 내용 찾아줘,개항기 조선 서양과 만나다.pdf,개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;행정개혁기구의_성공_조건.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;일본의 개항과 미국.pdf,개항기 조선 서양과 만나다.pdf,1,성공
+근대 국민국가에서 왕권을 다룬 강의자료 찾아줘,근대 국민국가와 왕권.pdf,근대 국민국가와 왕권.pdf;근대 국민국가와 왕권_sum.pdf;근대 서양 문물의 도입_ppt.pdf;행정개혁기구의_성공_조건.pdf;임오군란과 갑신정변.pdf,근대 국민국가와 왕권.pdf,1,성공
+근대 국민국가와 왕권 요약 자료 찾아줘,근대 국민국가와 왕권_sum.pdf,근대 국민국가와 왕권_sum.pdf;근대 국민국가와 왕권.pdf;근대 서양 문물의 도입_ppt.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,근대 국민국가와 왕권_sum.pdf,1,성공
 19세기 후반 근대사 연표 찾아줘,근대사_연표_19세기 후반.pdf,근대사_연표_19세기 후반.pdf;4.3history.pdf;근대 국민국가와 왕권_sum.pdf;19세기_후반_불평등조약체제의_성립_과정.pdf;근대 서양 문물의 도입_ppt.pdf,근대사_연표_19세기 후반.pdf,1,성공
-동아시아에 서양 열강이 들어온 내용 찾아줘,서세동점 동아시아와 서양 열강 1.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강 1.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf,서세동점 동아시아와 서양 열강 1.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf,1,성공
-일본이 개항한 과정 자료 찾아줘,일본의 개항과 미국.pdf,일본의 개항과 미국.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;개항기 조선 서양과 만나다.pdf;4주차_강화도조약과 개항.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,일본의 개항과 미국.pdf,1,성공
-임오군란이랑 갑신정변 자료 찾아줘,임오군란과 갑신정변.pdf,임오군란과 갑신정변.pdf;개항기 조선 서양과 만나다.pdf;행정개혁기구의_성공_조건.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,임오군란과 갑신정변.pdf,1,성공
-식민지 근대 논쟁 자료 찾아줘,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;근대 국민국가와 왕권_sum.pdf;근대 서양 문물의 도입_ppt.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,1,성공
-한성 도시 개조 사업 자료 찾아줘,한성도시개조사업.pdf,근대 서양 문물의 도입_ppt.pdf;행정개혁기구의_성공_조건.pdf;개항기 조선 서양과 만나다.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,,0,실패
-통리기무아문 같은 개혁기구 자료 찾아줘,행정개혁기구의_성공_조건.pdf,행정개혁기구의_성공_조건.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;근대 국민국가와 왕권.pdf;근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,행정개혁기구의_성공_조건.pdf,1,성공
-식민지 조선의 의료와 위생 자료 찾아줘,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;세균설과 근대의 보건_위생_ppt.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;근대 서양 문물의 도입_ppt.pdf,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,1,성공
-개항 뒤 서양 문물이 들어온 내용 찾아줘,근대 서양 문물의 도입_ppt.pdf;근대 서양 문물의 도입과 일상생활.pdf,개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;근대 서양 문물의 도입_ppt.pdf;일본의 개항과 미국.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,근대 서양 문물의 도입_ppt.pdf,1,성공
-해방 뒤 제주 정치 상황 자료 찾아줘,해방전후의 한국 정치와 사회_제주.pdf,해방전후의 한국 정치와 사회_제주.pdf;4.3history.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;읽기자료_갑오개혁의 전개와 성과.pdf,해방전후의 한국 정치와 사회_제주.pdf,1,성공
-메이지 일본의 근대 위생 자료 찾아줘,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;일본의 개항과 미국.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,1,성공
-베트남전에 간 한국 기술자 자료 찾아줘,파월기술자의 전쟁경험.pdf,한국현대사와 영화 ‘국제시장＇.pdf;서세동점 동아시아와 서양 열강 1.pdf;세균설과 근대의 보건_위생_ppt.pdf;개항기 조선 서양과 만나다.pdf;유관순의 발굴과 재현.pdf,,0,실패
-한국전쟁 때 부산 피난학교 자료 찾아줘,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;한국현대사와 영화 ‘국제시장＇.pdf;4.3history.pdf;유관순의 발굴과 재현.pdf;해방전후의 한국 정치와 사회_제주.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,1,성공
-해방 전 제주 생활이나 경제 자료 찾아줘,해방이전 제주의 사회와 경제_양정필.pdf,해방전후의 한국 정치와 사회_제주.pdf;4.3history.pdf;일본의 개항과 미국.pdf;한국현대사와 영화 ‘국제시장＇.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,,0,실패
-관계형 데이터베이스 기초 자료 찾아줘,README.md,notebook-papers.ipynb;README.md;README.md;notebook.ipynb;README.md,README.md;README.md;README.md,1,성공
-도시별 공항 정보 조회하는 SQL 과제 찾아줘,assignment.md,assignment.md;README.md;UID_ISO_FIPS_LookUp_Table.csv;taxi.csv;assignment.ipynb,assignment.md,1,성공
-코카콜라 매출이 들어 있는 엑셀 파일 찾아줘,CocaColaCo.xlsx,CocaColaCo.xlsx;assignment.md;notebook-covidspread.ipynb;taxi.csv;notebook.ipynb,CocaColaCo.xlsx,1,성공
-이름이랑 나이가 들어 있는 JSON 예제 찾아줘,PersonsData.json,notebook.ipynb;PersonsData.json;letters.json;letters.json;TwitterData.json,PersonsData.json,1,성공
-엑셀이랑 NoSQL 기초 자료 찾아줘,README.md,README.md;notebook-covidspread.ipynb;README.md;notebook.ipynb;README.md,README.md;README.md;README.md,1,성공
-트위터 글이 들어 있는 JSON 데이터 찾아줘,TwitterData.json,README.md;TwitterData.json;README.md;letters.json;letters.json,TwitterData.json,1,성공
-매출총이익 계산하는 엑셀 과제 찾아줘,assignment.md,assignment.md;assignment.ipynb;CocaColaCo.xlsx;notebook.ipynb;notebook.ipynb,assignment.md,1,성공
-파이썬 판다스 기초 자료 찾아줘,README.md,README.md;README.md;notebook-papers.ipynb;notebook.ipynb;notebook.ipynb,README.md;README.md,1,성공
-코로나 데이터 분석 과제 찾아줘,assignment.md,notebook-covidspread.ipynb;assignment.md;notebook-papers.ipynb;README.md;time_series_covid19_confirmed_global.csv,assignment.md,1,성공
-코로나 확산 분석한 노트북 찾아줘,notebook-covidspread.ipynb,notebook-covidspread.ipynb;notebook-papers.ipynb;README.md;TwitterData.json;time_series_covid19_recovered_global.csv,notebook-covidspread.ipynb,1,성공
-코로나 논문 데이터 분석 노트북 찾아줘,notebook-papers.ipynb,notebook-covidspread.ipynb;notebook-papers.ipynb;README.md;time_series_covid19_confirmed_global.csv;time_series_covid19_recovered_global.csv,notebook-papers.ipynb,1,성공
-판다스 Series 연습 노트북 찾아줘,notebook.ipynb,notebook.ipynb;python3_voice_alert.py;voice_test.py;yolo_learning5 (1).ipynb;Transformer_강의자료.pdf,notebook.ipynb,1,성공
-데이터 전처리 기초 자료 찾아줘,README.md,notebook.ipynb;form.csv;README.md;notebook-covidspread.ipynb;time_series_covid19_recovered_global.csv,README.md,1,성공
-입력 폼 데이터를 점검한 과제 노트북 찾아줘,assignment.ipynb,assignment.md;assignment.md;assignment.ipynb;notebook.ipynb;assignment.md,assignment.ipynb,1,성공
-폼 데이터를 정리하는 과제 안내 찾아줘,assignment.md,assignment.md;assignment.ipynb;assignment.md;assignment.md;assignment.md,assignment.md;assignment.md;assignment.md;assignment.md,1,성공
-Iris 데이터 정제 실습 노트북 찾아줘,notebook.ipynb,notebook.ipynb;TwitterData.json;README.md;notebook.ipynb;notebook.ipynb,notebook.ipynb;notebook.ipynb;notebook.ipynb,1,성공
-데이터 처리 단원 목차 찾아줘,README.md,python3_voice_alert.py;Transformer_강의자료.pdf;README.md;notebook.ipynb;README.md,README.md;README.md,1,성공
-조류 수량 시각화 강의자료 찾아줘,README.md,README.md;README.md;케라스 라이브러리.pdf;README.md;birds.csv,README.md;README.md;README.md,1,성공
-새 특징을 그래프로 설명하는 과제 찾아줘,assignment.md,케라스 라이브러리.pdf;머신러닝(내용추가).pdf;MLP(다층퍼셉트론)(강의).pdf;심층신경망.pdf;README.md,,0,실패
-조류 수량 시각화 실습 시작 파일 찾아줘,notebook.ipynb,notebook.ipynb;notebook.ipynb;birds.csv;README.md;README.md,notebook.ipynb;notebook.ipynb,1,성공
-조류 수량 시각화 풀이 찾아줘,notebook.ipynb,notebook.ipynb;README.md;notebook.ipynb;README.md;birds.csv,notebook.ipynb;notebook.ipynb,1,성공
-히스토그램으로 분포 보는 강의자료 찾아줘,README.md,심층신경망.pdf;케라스 라이브러리.pdf;README.md;머신러닝(내용추가).pdf;README.md,README.md;README.md,1,성공
-히스토그램 만드는 과제 찾아줘,assignment.md,assignment.md;케라스 라이브러리.pdf;assignment.md;심층신경망.pdf;notebook.ipynb,assignment.md;assignment.md,1,성공
-조류 분포 시각화 시작 파일 찾아줘,notebook.ipynb,birds.csv;README.md;README.md;notebook.ipynb;mushrooms.csv,notebook.ipynb,1,성공
-조류 몸무게 히스토그램 풀이 찾아줘,notebook.ipynb,README.md;notebook.ipynb;케라스 라이브러리.pdf;README.md;심층신경망.pdf,notebook.ipynb,1,성공
-원형 차트나 도넛 차트 강의자료 찾아줘,README.md,README.md;케라스 라이브러리.pdf;머신러닝(내용추가).pdf;README.md;제11장 순환신경망(강의).pdf,README.md;README.md,1,성공
-원형 도넛 와플 차트 과제 찾아줘,assignment.md,README.md;notebook.ipynb;assignment.md;notebook-papers.ipynb;week14_apple_forecast_analysis_2026_1.R,assignment.md,1,성공
-버섯 비율 시각화 시작 파일 찾아줘,notebook.ipynb,week3_cheating.R;README.md;README.md;notebook-papers.ipynb;yolo_learning2 (1).ipynb,,0,실패
-버섯 비율 차트 실습 풀이 찾아줘,notebook.ipynb,notebook.ipynb;notebook.ipynb;notebook.ipynb;notebook.ipynb;week13_cheating.R,notebook.ipynb;notebook.ipynb;notebook.ipynb;notebook.ipynb,1,성공
-꿀 생산 데이터 관계 시각화 자료 찾아줘,README.md,README.md;honey.csv;README.md;week13.R;week13_cheating.R,README.md;README.md,1,성공
-꿀 생산 데이터로 차트 만드는 과제 찾아줘,assignment.md,week10_cheating.R;README.md;notebook.ipynb;TwitterData.json;week14_apple_forecast_analysis_2026.R,,0,실패
-꿀 생산 시각화 시작 파일 찾아줘,notebook.ipynb,mushrooms.csv;honey.csv;birds.csv;README.md;yolo_learning2 (1).ipynb,,0,실패
-꿀 생산량과 가격을 비교한 풀이 찾아줘,notebook.ipynb,README.md;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;서세동점 동아시아와 서양 열강1_ppt.pdf;week5_cheating.R,,0,실패
-보기 좋은 차트 만드는 방법 자료 찾아줘,README.md,notebook-papers.ipynb;README.md;심층신경망.pdf;README.md;week13_cheating.R,README.md;README.md,1,성공
-사람 관계를 네트워크로 그리는 과제 찾아줘,assignment.md,assignment.md;README.md;Transformer_강의자료.pdf;TwitterData.json;README.md,assignment.md,1,성공
-점수 상관관계 히트맵 노트북 찾아줘,correlation-analysis.ipynb,notebook-papers.ipynb;README.md;notebook.ipynb;README.md;notebook.ipynb,,0,실패
-관계 시각화 프로젝트 실행 방법 찾아줘,README.md,README.md;README.md;README.md;voice_alert.py;README.md,README.md;README.md;README.md;README.md,1,성공
-편지 관계 시각화에 쓴 JSON 데이터 찾아줘,letters.json,letters.json;letters.json;README.md;README.md;README.md,letters.json;letters.json,1,성공
-관계 시각화 시작 프로젝트 실행 방법 찾아줘,README.md,README.md;README.md;voice_alert.py;Transformer_강의자료.pdf;README.md,README.md;README.md;README.md,1,성공
-관계 시각화 시작용 편지 데이터 찾아줘,letters.json,README.md;letters.json;letters.json;README.md;README.md,letters.json;letters.json,1,성공
-데이터 시각화 단원 목차 찾아줘,README.md,README.md;README.md;README.md;notebook.ipynb;python3_voice_alert.py,README.md;README.md;README.md,1,성공
-나라별 코로나 확진자 데이터 찾아줘,time_series_covid19_confirmed_global.csv,notebook-covidspread.ipynb;README.md;time_series_covid19_confirmed_global.csv;time_series_covid19_deaths_global.csv;time_series_covid19_recovered_global.csv,time_series_covid19_confirmed_global.csv,1,성공
-나라별 코로나 사망자 데이터 찾아줘,time_series_covid19_deaths_global.csv,notebook-covidspread.ipynb;time_series_covid19_deaths_global.csv;README.md;time_series_covid19_recovered_global.csv;time_series_covid19_confirmed_global.csv,time_series_covid19_deaths_global.csv,1,성공
-나라별 코로나 회복자 데이터 찾아줘,time_series_covid19_recovered_global.csv,notebook-covidspread.ipynb;time_series_covid19_recovered_global.csv;time_series_covid19_confirmed_global.csv;README.md;time_series_covid19_deaths_global.csv,time_series_covid19_recovered_global.csv,1,성공
-야구 선수 키와 몸무게 데이터 찾아줘,SOCR_MLB.tsv,README.md;README.md;머신러닝(내용추가).pdf;notebook.ipynb;notebook.ipynb,,0,실패
-나라별 ISO나 FIPS 코드 데이터 찾아줘,UID_ISO_FIPS_LookUp_Table.csv,UID_ISO_FIPS_LookUp_Table.csv;notebook-covidspread.ipynb;notebook.ipynb;README.md;time_series_covid19_recovered_global.csv,UID_ISO_FIPS_LookUp_Table.csv,1,성공
-새 종류랑 날개폭이 들어 있는 데이터 찾아줘,birds.csv,README.md;케라스 라이브러리.pdf;README.md;심층신경망.pdf;README.md,,0,실패
-당뇨병 분석 데이터 찾아줘,diabetes.tsv,선형회귀_업데이트.pdf;notebook-covidspread.ipynb;notebook-papers.ipynb;week13_cheating.R;week13.R,,0,실패
-이메일 단어 빈도 데이터 찾아줘,emails.csv,README.md;week3_cheating.R;emails.csv;Transformer_강의자료.pdf;rpi_gpio.py,emails.csv,1,성공
-반려동물 응답이 들어 있는 폼 데이터 찾아줘,form.csv,assignment.ipynb;README.md;form.csv;README.md;birds.csv,form.csv,1,성공
-미국 꿀 생산 데이터 찾아줘,honey.csv,README.md;README.md;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R;notebook.ipynb,,0,실패
-버섯이 식용인지 구분한 데이터 찾아줘,mushrooms.csv,README.md;README.md;README.md;notebook-papers.ipynb;README.md,,0,실패
-택시 운행 기록 데이터 찾아줘,taxi.csv,taxi.csv;week2_cheating.R;python3_voice_alert.py;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;제11장 순환신경망(강의).pdf,taxi.csv,1,성공
+난징조약부터 강화도조약까지 개항을 비교한 자료 찾아줘,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf;4주차_강화도조약과 개항.pdf;강화도조약과 개항.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;개항기 조선 서양과 만나다.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,1,성공
+동아시아 조공질서와 서양 열강을 다룬 1부 자료 찾아줘,서세동점 동아시아와 서양 열강 1.pdf,서세동점 동아시아와 서양 열강 1.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;서세동점 동아시아와 서양 열강2.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강 1.pdf,1,성공
+아편무역까지 다룬 서세동점 1부 강의 슬라이드 찾아줘,서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf;서세동점 동아시아와 서양 열강 1.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf,서세동점 동아시아와 서양 열강1_ppt.pdf,1,성공
+아편전쟁과 중국 개항을 다룬 서세동점 2부 자료 찾아줘,서세동점 동아시아와 서양 열강2.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;개항기 조선 서양과 만나다.pdf,서세동점 동아시아와 서양 열강2.pdf,1,성공
+중국과 일본의 개항을 다룬 서세동점 2부 슬라이드 찾아줘,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf;개항기 조선 서양과 만나다.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,1,성공
+페리 함대와 일본 개항을 설명한 자료 찾아줘,일본의 개항과 미국.pdf,일본의 개항과 미국.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;4주차_강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf,일본의 개항과 미국.pdf,1,성공
+갑오개혁의 전개와 성과를 설명한 읽기자료 찾아줘,읽기자료_갑오개혁의 전개와 성과.pdf,읽기자료_갑오개혁의 전개와 성과.pdf;청일전쟁과 갑오개혁_요약.pdf;임오군란과 갑신정변.pdf;청일전쟁과 갑오개혁_ppt.pdf;읽기자료_갑오개혁의 한계.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,1,성공
+갑오개혁의 한계를 설명한 읽기자료 찾아줘,읽기자료_갑오개혁의 한계.pdf,읽기자료_갑오개혁의 한계.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;청일전쟁과 갑오개혁_요약.pdf;임오군란과 갑신정변.pdf;청일전쟁과 갑오개혁_ppt.pdf,읽기자료_갑오개혁의 한계.pdf,1,성공
+임오군란과 갑신정변을 같이 다룬 자료 찾아줘,임오군란과 갑신정변.pdf,임오군란과 갑신정변.pdf;개항기 조선 서양과 만나다.pdf;행정개혁기구의_성공_조건.pdf;청일전쟁과 갑오개혁_요약.pdf;읽기자료_갑오개혁의 전개와 성과.pdf,임오군란과 갑신정변.pdf,1,성공
+청일전쟁과 갑오개혁 강의 슬라이드 찾아줘,청일전쟁과 갑오개혁_ppt.pdf,청일전쟁과 갑오개혁_ppt.pdf;청일전쟁과 갑오개혁_요약.pdf;임오군란과 갑신정변.pdf;개항기 조선 서양과 만나다.pdf;읽기자료_갑오개혁의 전개와 성과.pdf,청일전쟁과 갑오개혁_ppt.pdf,1,성공
+청일전쟁과 갑오개혁 요약 자료 찾아줘,청일전쟁과 갑오개혁_요약.pdf,청일전쟁과 갑오개혁_요약.pdf;청일전쟁과 갑오개혁_ppt.pdf;임오군란과 갑신정변.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;개항기 조선 서양과 만나다.pdf,청일전쟁과 갑오개혁_요약.pdf,1,성공
+유관순 사례로 인물사 연구방법을 설명한 자료 찾아줘,한국 근현대 인물사 연구방법론.pdf,한국 근현대 인물사 연구방법론.pdf;유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;해방전후의 한국 정치와 사회_제주.pdf;행정개혁기구의_성공_조건.pdf,한국 근현대 인물사 연구방법론.pdf,1,성공
+식민지 근대화 논쟁을 다룬 자료 찾아줘,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf;근대 국민국가와 왕권_sum.pdf;근대 서양 문물의 도입_ppt.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,1,성공
+대한제국 한성 도시개조사업 자료 찾아줘,한성도시개조사업.pdf,근대 서양 문물의 도입_ppt.pdf;개항기 조선 서양과 만나다.pdf;근대 서양 문물의 도입과 일상생활.pdf;근대 국민국가와 왕권.pdf;행정개혁기구의_성공_조건.pdf,,0,실패
+통리기무아문 같은 개혁기구의 성공 조건 자료 찾아줘,행정개혁기구의_성공_조건.pdf,행정개혁기구의_성공_조건.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;근대 국민국가와 왕권.pdf;읽기자료_갑오개혁의 한계.pdf;근대 국민국가와 왕권_sum.pdf,행정개혁기구의_성공_조건.pdf,1,성공
+일본 군의관을 통해 식민지 조선 의료를 살펴본 자료 찾아줘,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;4주차_강화도조약과 개항.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,1,성공
+개항 뒤 들어온 서양 문물 강의 슬라이드 찾아줘,근대 서양 문물의 도입_ppt.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf;개항기 조선 서양과 만나다.pdf;근대 서양 문물의 도입_ppt.pdf;4주차_강화도조약과 개항.pdf;근대 서양 문물의 도입과 일상생활.pdf,근대 서양 문물의 도입_ppt.pdf,1,성공
+근대 법과 제도가 이식된 과정의 강의 슬라이드 찾아줘,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;근대의 법과 제도는 어떻게 이식되었는가.pdf;근대 국민국가와 왕권.pdf;임오군란과 갑신정변.pdf;근대 국민국가와 왕권_sum.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,1,성공
+세균설과 근대 보건 위생 강의 슬라이드 찾아줘,세균설과 근대의 보건_위생_ppt.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;세균설과 근대의 보건_위생_ppt.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;근대 서양 문물의 도입_ppt.pdf;행정개혁기구의_성공_조건.pdf,세균설과 근대의 보건_위생_ppt.pdf,1,성공
+해방 뒤 제주 정치와 4.3을 다룬 강의자료 찾아줘,해방전후의 한국 정치와 사회_제주.pdf,해방전후의 한국 정치와 사회_제주.pdf;4.3history.pdf;4주차_강화도조약과 개항.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;청일전쟁과 갑오개혁_ppt.pdf,해방전후의 한국 정치와 사회_제주.pdf,1,성공
+파독 광부와 간호사 자료 찾아줘,해외 인력 송출의 역사와 파독 광부 간호사.pdf,한국현대사와 영화 ‘국제시장＇.pdf;세균설과 근대의 보건_위생_ppt.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;해방전후의 한국 정치와 사회_제주.pdf;개항기 조선 서양과 만나다.pdf,,0,실패
+제주 4.3 사건 날짜별 연표 찾아줘,4.3history.pdf,해방전후의 한국 정치와 사회_제주.pdf;4.3history.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;개항기 조선 서양과 만나다.pdf;4주차_강화도조약과 개항.pdf,4.3history.pdf,1,성공
+서양 문물이 일상생활을 바꾼 읽기자료 찾아줘,근대 서양 문물의 도입과 일상생활.pdf,근대 서양 문물의 도입_ppt.pdf;근대 서양 문물의 도입과 일상생활.pdf;유관순의 발굴과 재현.pdf;개항기 조선 서양과 만나다.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,근대 서양 문물의 도입과 일상생활.pdf,1,성공
+근대 법과 제도 이식 과정을 요약한 자료 찾아줘,근대의 법과 제도는 어떻게 이식되었는가.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;근대의 법과 제도는 어떻게 이식되었는가.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;근대 국민국가와 왕권.pdf;근대 국민국가와 왕권_sum.pdf,근대의 법과 제도는 어떻게 이식되었는가.pdf,1,성공
+메이지 일본에서 근대 위생이 생긴 과정 자료 찾아줘,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;일본의 개항과 미국.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,1,성공
+세균설과 식민지 위생경찰 필기노트 찾아줘,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;세균설과 근대의 보건_위생_ppt.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;4.3history.pdf;해방전후의 한국 정치와 사회_제주.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,1,성공
+유관순이 국민 영웅으로 재현된 과정 자료 찾아줘,유관순의 발굴과 재현.pdf,유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;한국 근현대 인물사 연구방법론.pdf;행정개혁기구의_성공_조건.pdf;청일전쟁과 갑오개혁_요약.pdf,유관순의 발굴과 재현.pdf,1,성공
+유관순 표상과 기억의 정치학 필기노트 찾아줘,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;유관순의 발굴과 재현.pdf;한국 근현대 인물사 연구방법론.pdf;해방전후의 한국 정치와 사회_제주.pdf;행정개혁기구의_성공_조건.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,1,성공
+제주 4.3의 진실과 역사적 의미 읽기자료 찾아줘,제주 4·3의 진실과 역사적 의미_박찬식.pdf,4.3history.pdf;해방전후의 한국 정치와 사회_제주.pdf;유관순의 발굴과 재현.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;4주차_강화도조약과 개항.pdf,,0,실패
+베트남전에 간 한국 기술자의 경험 자료 찾아줘,파월기술자의 전쟁경험.pdf,한국현대사와 영화 ‘국제시장＇.pdf;서세동점 동아시아와 서양 열강 1.pdf;개항기 조선 서양과 만나다.pdf;행정개혁기구의_성공_조건.pdf;유관순의 발굴과 재현.pdf,,0,실패
+한국전쟁 때 부산 피난학교를 연구한 자료 찾아줘,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;한국현대사와 영화 ‘국제시장＇.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;4.3history.pdf;4주차_강화도조약과 개항.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,1,성공
+영화 국제시장으로 한국 현대사를 설명한 자료 찾아줘,한국현대사와 영화 ‘국제시장＇.pdf,한국현대사와 영화 ‘국제시장＇.pdf;근대 서양 문물의 도입과 일상생활.pdf;근대 서양 문물의 도입_ppt.pdf;일본의 개항과 미국.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf,한국현대사와 영화 ‘국제시장＇.pdf,1,성공
+해방 전 제주 사회와 경제를 다룬 자료 찾아줘,해방이전 제주의 사회와 경제_양정필.pdf,해방전후의 한국 정치와 사회_제주.pdf;4.3history.pdf;일본의 개항과 미국.pdf;한국현대사와 영화 ‘국제시장＇.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,,0,실패
+관계형 데이터베이스와 SQL 기초 자료 찾아줘,README.md,README.md;README.md;assignment.md;README.md;notebook-papers.ipynb,README.md;README.md;README.md,1,성공
+도시별 공항 정보를 조회하는 SQL 과제 찾아줘,assignment.md,assignment.md;README.md;UID_ISO_FIPS_LookUp_Table.csv;taxi.csv;assignment.ipynb,assignment.md,1,성공
+코카콜라 매출총이익을 계산하는 엑셀 파일 찾아줘,CocaColaCo.xlsx,CocaColaCo.xlsx;assignment.md;notebook-covidspread.ipynb;notebook.ipynb;notebook-papers.ipynb,CocaColaCo.xlsx,1,성공
+이름과 나이가 들어 있는 JSON 예제 찾아줘,PersonsData.json,PersonsData.json;notebook.ipynb;README.md;letters.json;letters.json,PersonsData.json,1,성공
+엑셀 수식과 NoSQL 기초 자료 찾아줘,README.md,README.md;notebook.ipynb;notebook-covidspread.ipynb;notebook-papers.ipynb;README.md,README.md;README.md,1,성공
+트윗 내용이 들어 있는 JSON 데이터 찾아줘,TwitterData.json,TwitterData.json;README.md;letters.json;letters.json;python3_voice_alert.py,TwitterData.json,1,성공
+코카콜라 매출총이익 계산 과제 안내 찾아줘,assignment.md,assignment.md;CocaColaCo.xlsx;week10.R;README.md;assignment.ipynb,assignment.md,1,성공
+파이썬 판다스로 데이터를 다루는 입문 자료 찾아줘,README.md,notebook.ipynb;README.md;README.md;notebook.ipynb;notebook-papers.ipynb,README.md;README.md,1,성공
+코로나 전파와 논문 데이터를 분석하는 과제 안내 찾아줘,assignment.md,notebook-covidspread.ipynb;notebook-papers.ipynb;assignment.md;README.md;time_series_covid19_confirmed_global.csv,assignment.md,1,성공
+나라별 코로나 확산을 분석한 노트북 찾아줘,notebook-covidspread.ipynb,notebook-covidspread.ipynb;README.md;notebook-papers.ipynb;time_series_covid19_confirmed_global.csv;time_series_covid19_recovered_global.csv,notebook-covidspread.ipynb,1,성공
+코로나 논문 초록을 분석한 노트북 찾아줘,notebook-papers.ipynb,notebook-covidspread.ipynb;notebook-papers.ipynb;README.md;README.md;time_series_covid19_confirmed_global.csv,notebook-papers.ipynb,1,성공
+판다스 Series와 날짜 인덱스 연습 노트북 찾아줘,notebook.ipynb,notebook.ipynb;README.md;notebook.ipynb;README.md;제11장 순환신경망(강의).pdf,notebook.ipynb;notebook.ipynb,1,성공
+결측값과 잘못된 데이터를 정리하는 전처리 자료 찾아줘,README.md,week2_cheating.R;week4_cheating.R;week13_cheating.R;week12_cheating.R;week12.R,,0,실패
+입력 폼의 오류를 확인하는 과제 노트북 찾아줘,assignment.ipynb,assignment.ipynb;assignment.md;assignment.md;notebook.ipynb;YOLO(test)_picture.ipynb,assignment.ipynb,1,성공
+입력 폼 데이터를 정리하는 과제 안내 찾아줘,assignment.md,assignment.md;assignment.ipynb;assignment.md;assignment.md;assignment.md,assignment.md;assignment.md;assignment.md;assignment.md,1,성공
+Iris 데이터 탐색과 정제를 연습하는 노트북 찾아줘,notebook.ipynb,notebook.ipynb;README.md;yolo_learning2 (1).ipynb;README.md;notebook-covidspread.ipynb,notebook.ipynb,1,성공
+데이터 처리 단원 전체 목차 찾아줘,README.md,python3_voice_alert.py;notebook.ipynb;Transformer_강의자료.pdf;notebook-papers.ipynb;README.md,README.md,1,성공
+조류 수량을 여러 그래프로 비교하는 강의자료 찾아줘,README.md,케라스 라이브러리.pdf;README.md;README.md;README.md;README.md,README.md;README.md;README.md;README.md,1,성공
+새 특징을 그래프로 설명하는 과제 안내 찾아줘,assignment.md,케라스 라이브러리.pdf;심층신경망.pdf;머신러닝(내용추가).pdf;assignment.md;assignment.md,assignment.md;assignment.md,1,성공
+조류 수량 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,README.md;birds.csv;README.md;notebook.ipynb;notebook.ipynb,notebook.ipynb;notebook.ipynb,1,성공
+조류 날개폭과 수량을 그린 실습 풀이 찾아줘,notebook.ipynb,notebook.ipynb;notebook.ipynb;README.md;notebook.ipynb;케라스 라이브러리.pdf,notebook.ipynb;notebook.ipynb;notebook.ipynb,1,성공
+히스토그램으로 조류 분포를 보는 강의자료 찾아줘,README.md,README.md;심층신경망.pdf;케라스 라이브러리.pdf;README.md;README.md,README.md;README.md;README.md,1,성공
+히스토그램 다섯 개를 만드는 과제 안내 찾아줘,assignment.md,assignment.md;심층신경망.pdf;assignment.md;케라스 라이브러리.pdf;notebook.ipynb,assignment.md;assignment.md,1,성공
+조류 분포 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,birds.csv;notebook.ipynb;README.md;README.md;README.md,notebook.ipynb,1,성공
+조류 몸무게 히스토그램 실습 풀이 찾아줘,notebook.ipynb,notebook.ipynb;README.md;notebook.ipynb;케라스 라이브러리.pdf;심층신경망.pdf,notebook.ipynb;notebook.ipynb,1,성공
+버섯 비율을 원형 도넛 와플 차트로 그리는 자료 찾아줘,README.md,README.md;notebook-papers.ipynb;notebook-covidspread.ipynb;notebook.ipynb;README.md,README.md;README.md,1,성공
+원형 도넛 와플 차트를 만드는 과제 안내 찾아줘,assignment.md,assignment.md;README.md;notebook.ipynb;notebook-papers.ipynb;notebook.ipynb,assignment.md,1,성공
+버섯 비율 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,notebook.ipynb;notebook.ipynb;yolo_learning2 (1).ipynb;notebook.ipynb;notebook-papers.ipynb,notebook.ipynb;notebook.ipynb;notebook.ipynb,1,성공
+식용 버섯 비율 차트 실습 풀이 찾아줘,notebook.ipynb,notebook.ipynb;notebook.ipynb;notebook-papers.ipynb;notebook.ipynb;README.md,notebook.ipynb;notebook.ipynb;notebook.ipynb,1,성공
+꿀 생산량과 가격 관계를 시각화하는 강의자료 찾아줘,README.md,README.md;README.md;README.md;README.md;README.md,README.md;README.md;README.md;README.md;README.md,1,성공
+꿀 생산 데이터로 세 가지 차트를 만드는 과제 찾아줘,assignment.md,week10_cheating.R;week10.R;week14_apple_forecast_analysis_2026.R;week13.R;week14_apple_forecast_analysis_2026_cheating.R,,0,실패
+꿀 생산 관계 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,Transformer_강의자료.pdf;notebook.ipynb;week5_cheating.R;README.md;notebook.ipynb,notebook.ipynb;notebook.ipynb,1,성공
+꿀 가격과 생산량을 비교한 실습 풀이 찾아줘,notebook.ipynb,notebook.ipynb;머신러닝(내용추가).pdf;notebook.ipynb;서세동점 동아시아와 서양 열강1_ppt.pdf;README.md,notebook.ipynb;notebook.ipynb,1,성공
+오해 없이 보기 좋은 차트를 만드는 방법 찾아줘,README.md,심층신경망.pdf;README.md;notebook.ipynb;README.md;README.md,README.md;README.md;README.md,1,성공
+사람 관계를 네트워크로 그리는 과제 안내 찾아줘,assignment.md,assignment.md;README.md;README.md;TwitterData.json;Transformer_강의자료.pdf,assignment.md,1,성공
+과목 점수 상관관계를 히트맵으로 그린 노트북 찾아줘,correlation-analysis.ipynb,README.md;notebook-papers.ipynb;README.md;notebook.ipynb;correlation-analysis.ipynb,correlation-analysis.ipynb,1,성공
+편지 관계 시각화 풀이 프로젝트 실행 방법 찾아줘,README.md,README.md;README.md;voice_alert.py;README.md;README.md,README.md;README.md;README.md;README.md,1,성공
+편지 관계 시각화 풀이에 쓰는 JSON 데이터 찾아줘,letters.json,letters.json;letters.json;README.md;README.md;README.md,letters.json;letters.json,1,성공
+편지 관계 시각화 시작 프로젝트 실행 방법 찾아줘,README.md,message_hello (1).py;README.md;voice_alert.py;README.md;pigpio.py,README.md;README.md,1,성공
+편지 관계 시각화 시작용 JSON 데이터 찾아줘,letters.json,letters.json;letters.json;README.md;README.md;README.md,letters.json;letters.json,1,성공
+데이터 시각화 단원 전체 목차 찾아줘,README.md,notebook.ipynb;python3_voice_alert.py;README.md;README.md;notebook-papers.ipynb,README.md;README.md,1,성공
+나라별 코로나 누적 확진자 데이터 찾아줘,time_series_covid19_confirmed_global.csv,notebook-covidspread.ipynb;README.md;time_series_covid19_confirmed_global.csv;time_series_covid19_deaths_global.csv;time_series_covid19_recovered_global.csv,time_series_covid19_confirmed_global.csv,1,성공
+나라별 코로나 누적 사망자 데이터 찾아줘,time_series_covid19_deaths_global.csv,notebook-covidspread.ipynb;time_series_covid19_deaths_global.csv;README.md;time_series_covid19_recovered_global.csv;time_series_covid19_confirmed_global.csv,time_series_covid19_deaths_global.csv,1,성공
+나라별 코로나 누적 회복자 데이터 찾아줘,time_series_covid19_recovered_global.csv,notebook-covidspread.ipynb;time_series_covid19_recovered_global.csv;time_series_covid19_confirmed_global.csv;README.md;time_series_covid19_deaths_global.csv,time_series_covid19_recovered_global.csv,1,성공
+야구 선수 키와 몸무게가 들어 있는 데이터 찾아줘,SOCR_MLB.tsv,README.md;README.md;notebook.ipynb;머신러닝(내용추가).pdf;notebook.ipynb,,0,실패
+나라별 ISO와 FIPS 코드 조회표 찾아줘,UID_ISO_FIPS_LookUp_Table.csv,UID_ISO_FIPS_LookUp_Table.csv;notebook-covidspread.ipynb;notebook.ipynb;notebook-papers.ipynb;YOLO(test) (1).ipynb,UID_ISO_FIPS_LookUp_Table.csv,1,성공
+새 종류와 날개폭이 들어 있는 데이터 찾아줘,birds.csv,케라스 라이브러리.pdf;README.md;README.md;README.md;심층신경망.pdf,,0,실패
+당뇨병 특성과 목표값이 들어 있는 데이터 찾아줘,diabetes.tsv,선형회귀_업데이트.pdf;notebook-papers.ipynb;README.md;notebook.ipynb;notebook-covidspread.ipynb,,0,실패
+이메일 단어 출현 횟수 데이터 찾아줘,emails.csv,week3_cheating.R;emails.csv;rpi_gpio.py;README.md;Transformer_강의자료.pdf,emails.csv,1,성공
+반려동물 응답 오류를 확인하는 입력 폼 데이터 찾아줘,form.csv,form.csv;birds.csv;README.md;assignment.ipynb;케라스 라이브러리.pdf,form.csv,1,성공
+미국 주별 꿀 생산량과 가격 데이터 찾아줘,honey.csv,README.md;README.md;README.md;week14_apple_forecast_analysis_2026_cheating.R;week14_apple_forecast_analysis_2026.R,,0,실패
+식용 여부와 버섯 특징이 들어 있는 데이터 찾아줘,mushrooms.csv,notebook-papers.ipynb;README.md;README.md;README.md;README.md,,0,실패
+택시 승하차와 요금이 들어 있는 운행 데이터 찾아줘,taxi.csv,taxi.csv;week4_cheating.R;케라스 라이브러리.pdf;python3_voice_alert.py;week2_cheating.R,taxi.csv,1,성공
