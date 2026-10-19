@@ -4,12 +4,13 @@
 
 ## 팀원 실행 방법
 
-현재 구현은 **sumin 브랜치의 Role04 폴더**에 있습니다. 저장소를 받은 뒤 해당 브랜치를 선택하세요. 웹 실행에는 Python 표준 라이브러리만 사용하며 npm이나 PySide6 설치가 필요 없습니다.
+현재 구현은 **main 브랜치의 Role04 폴더**에 있습니다. 저장소를 받은 뒤 최신 main을 사용하세요. 웹 실행에는 Python 표준 라이브러리만 사용하며 npm이나 PySide6 설치가 필요 없습니다.
 
 ```bash
 # 저장소 루트에서
 git fetch origin
-git switch sumin
+git switch main
+git pull --ff-only origin main
 cd Role04
 python3 scripts/serve_web.py --open-browser
 ```
