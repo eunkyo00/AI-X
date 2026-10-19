@@ -112,7 +112,7 @@ for file_path in sorted(DATA_DIR.rglob("*")):
         "path": absolute_path,
         "size_bytes": stat.st_size,
         "created_at": datetime.fromtimestamp(
-            stat.st_ctime
+            stat.st_birthtime
         ).strftime("%Y-%m-%d %H:%M:%S"),
         "modified_at": datetime.fromtimestamp(
             stat.st_mtime
