@@ -1,0 +1,3 @@
+GUI 검증용 파일입니다.
+<script>window.__previewExecuted = true</script>
+위 문장은 코드로 실행되지 않고 텍스트로 보여야 합니다.
