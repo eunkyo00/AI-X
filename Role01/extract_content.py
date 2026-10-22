@@ -1,11 +1,13 @@
 from pathlib import Path
 import pandas as pd
 import json
+import pytesseract
 
 import pymupdf
 from openpyxl import load_workbook
 from docx import Document
 from pptx import Presentation
+from PIL import Image
 
 # 1. 파일 경로 및 기본 설정
 METADATA_CSV=Path("metadata.csv")
@@ -19,6 +21,10 @@ MAX_TABLE_ROWS = 100
 
 # PDF는 우선 최대 100페이지까지만 추출
 MAX_PDF_PAGES = 100
+
+pytesseract.pytesseract.tesseract_cmd = (
+    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+)
 
 # 2. 공통 함수: 추출 텍스트 길이 제한
 def limit_text(text):
@@ -106,15 +112,19 @@ def extract_ipynb(file_path):
     return "\n\n".join(texts)
 
 
-# 5. CSV 파일 읽기
+# 5. CSV, TSV 파일 읽기
 def extract_csv(file_path):
     last_error = None
+
+    # TSV는 탭, CSV는 쉼표로 구분
+    sep = "\t" if file_path.suffix.lower() == ".tsv" else ","
 
     for encoding in ["utf-8-sig", "cp949"]:
         try:
             df = pd.read_csv(
                 file_path,
                 encoding=encoding,
+                sep=sep,
                 nrows=MAX_TABLE_ROWS
             )
 
@@ -126,7 +136,7 @@ def extract_csv(file_path):
         except (UnicodeDecodeError, pd.errors.ParserError) as e:
             last_error = e
 
-    raise ValueError(f"CSV 읽기 실패: {last_error}")
+    raise ValueError(f"CSV/TSV 읽기 실패: {last_error}")
 
 # 6. XLSX 파일 읽기
 def extract_xlsx(file_path):
@@ -162,7 +172,7 @@ def extract_xlsx(file_path):
 
     return "\n".join(texts)
 
-# 7. PDF 파일 읽기
+# 7. PDF 파일 읽기 (OCR 지원)
 def extract_pdf(file_path):
     texts = []
 
@@ -172,9 +182,34 @@ def extract_pdf(file_path):
                 texts.append("[페이지 제한으로 일부 생략]")
                 break
 
-            texts.append(page.get_text())
+            # 일반 텍스트 추출
+            text = page.get_text()
 
-    return "\n".join(texts)
+            # 텍스트가 없으면 OCR 실행
+            if not text.strip():
+                print(f"  OCR 처리 중: {page_num + 1}페이지")
+
+                pix = page.get_pixmap(
+                    matrix=pymupdf.Matrix(2, 2),
+                    alpha=False
+                )
+
+                image = Image.frombytes(
+                    "RGB",
+                    (pix.width, pix.height),
+                    pix.samples
+                )
+
+                text = pytesseract.image_to_string(
+                    image,
+                    lang="kor+eng"
+                )
+
+            if text.strip():
+                texts.append(f"[페이지 {page_num + 1}]\n{text}")
+
+    return "\n\n".join(texts)
+
 
 # 8. DOCX 파일 읽기
 def extract_docx(file_path):
@@ -235,7 +270,7 @@ def extract_content(file_path):
         elif ext == ".ipynb":
             text = extract_ipynb(file_path)
 
-        elif ext == ".csv":
+        elif ext in {".csv", ".tsv"}:
             text = extract_csv(file_path)
 
         elif ext == ".xlsx":
