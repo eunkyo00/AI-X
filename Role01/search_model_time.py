@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent
 TEXT_CSV = BASE_DIR / "extracted_text.csv"
 METADATA_CSV = BASE_DIR / "metadata.csv"
 EVALUATION_CSV = BASE_DIR / "evaluation_queries.csv"
-RESULTS_CSV = BASE_DIR / "evaluation_results_time.csv"
+RESULTS_CSV = BASE_DIR / "evaluation_results_time_fixed.csv"
 
 MODEL_NAME = "intfloat/multilingual-e5-small"
 CHUNK_SIZE = 500
@@ -229,9 +229,11 @@ def analyze_time_query(query, now=None):
     patterns = [
         (r"(\d{4})년\s*(\d{1,2})월\s*(\d{1,2})일", "day"),
         (r"(\d{4})[-./](\d{1,2})[-./](\d{1,2})", "day"),
-        (r"(\d{4})년\s*(\d{1,2})월", "month"),
+        (r"(\d{4})년\s*(\d{1,2})월(?:달)?", "month"),
         (r"(\d{4})[-./](\d{1,2})(?![-./]\d)", "month"),
         (r"(\d{4})년", "year"),
+        # 연도가 생략된 3월/3월달은 현재 연도로 해석한다.
+        (r"(?<!\d)([1-9]|1[0-2])월(?:달)?(?!\d)", "month_only"),
     ]
     for pattern, kind in patterns:
         match = re.search(pattern, text)
@@ -243,6 +245,9 @@ def analyze_time_query(query, now=None):
                     end = start + pd.Timedelta(days=1)
                 elif kind == "month":
                     start = pd.Timestamp(vals[0], vals[1], 1)
+                    end = start + pd.DateOffset(months=1)
+                elif kind == "month_only":
+                    start = pd.Timestamp(now.year, vals[0], 1)
                     end = start + pd.DateOffset(months=1)
                 else:
                     start = pd.Timestamp(vals[0], 1, 1)
@@ -290,12 +295,13 @@ def analyze_time_query(query, now=None):
 
     if start is None:
         # 시간 표현이 있지만 미지원이라면 일반 의미 검색으로 조용히 넘기지 않는다.
-        if re.search(r"지난|이번|최근|\d+일\s*(전|동안)|\d+주\s*전|\d+월\s*전", text):
+        if re.search(r"지난|이번|최근|\d+일\s*(전|동안)|\d+주\s*전|\d+월\s*전|\d{1,2}월달?", text):
             raise ValueError("아직 지원하지 않는 시간 표현")
         return None
 
     semantic_query = (text[:match.start()] + " " + text[match.end():]).strip()
     semantic_query = re.sub(r"생성된|생성한|만든|작성한|수정된|수정한|변경된|편집한|업데이트한|저장한|동안|이내", " ", semantic_query)
+    semantic_query = re.sub(r"^\s*(?:에|의|동안|부터|까지|중에|내에)\s*", "", semantic_query)
     semantic_query = re.sub(r"\s+", " ", semantic_query).strip()
     if not semantic_query:
         semantic_query = text
