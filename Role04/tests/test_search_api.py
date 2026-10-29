@@ -4,17 +4,22 @@ import json
 import sys
 import threading
 import unittest
+import tempfile
+import base64
 from functools import partial
 from http.server import ThreadingHTTPServer
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from serve_web import Handler
-from search_api import SearchService
+from search_api import SearchService, original_path
 
 
 class FakeService:
     catalog = {'F1': {'file_id': 'F1', 'name': 'sample.R'}}
+
+    def content(self, file_id):
+        raise FileNotFoundError('missing')
 
     def search(self, query):
         return {'files': [self.catalog['F1']] if query else [], 'relations': []}
@@ -76,6 +81,66 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(row['size'], 123)
         self.assertEqual(row['evidence'], [])
         self.assertNotIn('task_id', row)
+
+
+    def test_original_path_and_binary_delivery(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            path = original_path(root, 'F1', '한글 파일.PDF')
+            path.parent.mkdir()
+            content = b'%PDF-1.4\noriginal-bytes\x00'
+            path.write_bytes(content)
+            service = SearchService.__new__(SearchService)
+            service.original_root = path.parent.resolve()
+            service.originals = {'F1': path}
+            service.catalog = FakeService.catalog
+            handler = self.server.RequestHandlerClass.func
+            previous = handler.service
+            handler.service = service
+            try:
+                status, body = self.request('GET', '/api/files/F1/content')
+                self.assertEqual(status, 200)
+                self.assertEqual(body, content)
+                self.assertEqual(self.request('GET', '/api/files/unknown/content')[0], 404)
+                self.assertEqual(self.request('GET', '/api/files/%2e%2e%2fsecret/content')[0], 404)
+                path.unlink()
+                self.assertEqual(self.request('GET', '/api/files/F1/content')[0], 404)
+            finally:
+                handler.service = previous
+            with self.assertRaises(ValueError):
+                original_path(root, '../escape', 'x.pdf')
+            outside = root / 'outside.pdf'
+            outside.write_bytes(b'private')
+            path.symlink_to(outside)
+            with self.assertRaises(FileNotFoundError):
+                service.content('F1')
+
+
+    def test_pdf_pages_and_invalid_page(self):
+        import pymupdf
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'F1.pdf'
+            with pymupdf.open() as doc:
+                doc.new_page().insert_text((50, 50), 'Original page one')
+                doc.new_page().insert_text((50, 50), 'Original page two')
+                doc.save(path)
+            service = SearchService.__new__(SearchService)
+            service.original_root = Path(folder).resolve()
+            service.originals = {'F1': path}
+            service.catalog = FakeService.catalog
+            handler = self.server.RequestHandlerClass.func
+            previous = handler.service
+            handler.service = service
+            try:
+                status, body = self.request('GET', '/api/files/F1/preview?page=2')
+                self.assertEqual(status, 200)
+                result = json.loads(body)
+                self.assertEqual((result['page'],result['page_count']), (2,2))
+                self.assertTrue(base64.b64decode(result['image_base64']).startswith(b'\x89PNG\r\n\x1a\n'))
+                for page in ['0','3','bad']:
+                    self.assertEqual(self.request('GET', '/api/files/F1/preview?page='+page)[0],400)
+            finally:
+                handler.service = previous
 
 
 if __name__ == '__main__':

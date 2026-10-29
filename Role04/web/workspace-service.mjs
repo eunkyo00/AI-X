@@ -156,6 +156,7 @@ export class ApiWorkspace {
     return {file:{...normalizeFile(response.file),apiBase:this.base}, jobId:typeof response.job_id === 'string' ? response.job_id : null, duplicate:response.duplicate===true};
   }
   async job(id,{signal}={}) { return this.request(`/jobs/${encodeURIComponent(id)}`,{signal}); }
+  async previewPdf(id,page=1) { return this.request(`/files/${encodeURIComponent(id)}/preview?page=${page}`); }
   async blob(id) { return this.request(`/files/${encodeURIComponent(id)}/content`,{blob:true}); }
   async reveal(id) { return this.request(`/files/${encodeURIComponent(id)}/reveal`,{method:'POST'}); }
 }

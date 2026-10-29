@@ -2,12 +2,14 @@
 import argparse
 import json
 import os
+import mimetypes
+import shutil
 import threading
 import webbrowser
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, unquote, parse_qs
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -34,11 +36,48 @@ class Handler(SimpleHTTPRequestHandler):
         if path == '/api/health':
             return self.json_response(200, {'status': 'ok', 'contract_version': 'gui-v1',
                 'index_ready': self.service is not None,
-                'capabilities': {'reveal': False, 'upload': False, 'content': False}})
+                'capabilities': {'reveal': False, 'upload': False, 'content': self.service is not None}})
         if path == '/api/files':
             return self.json_response(200, {'files': list(self.service.catalog.values()) if self.service else []})
+        if path.startswith('/api/files/') and path.endswith('/preview'):
+            file_id = unquote(path[len('/api/files/'):-len('/preview')])
+            if not self.service or file_id not in self.service.catalog:
+                return self.json_response(404, {'error': '등록된 파일 ID를 찾을 수 없습니다.'})
+            try:
+                page = int(parse_qs(urlsplit(self.path).query).get('page', ['1'])[0])
+                return self.json_response(200, self.service.preview_pdf(file_id, page))
+            except FileNotFoundError:
+                return self.json_response(404, {'error': '원본 PDF가 없습니다. 데이터 준비를 다시 실행하세요.'})
+            except ValueError as error:
+                return self.json_response(400, {'error': str(error)})
+            except Exception:
+                self.log_error('PDF 미리보기 실패')
+                return self.json_response(500, {'error': 'PDF 페이지를 표시하지 못했습니다. 원본 다운로드를 이용하세요.'})
+        if path.startswith('/api/files/') and path.endswith('/content'):
+
+            file_id = unquote(path[len('/api/files/'):-len('/content')])
+            if not self.service or file_id not in self.service.catalog:
+                return self.json_response(404, {'error': '등록된 파일 ID를 찾을 수 없습니다.'})
+            try:
+                original = self.service.content(file_id)
+                stream = original.open('rb')
+            except (FileNotFoundError, ValueError):
+                return self.json_response(404, {'error': '원본 파일이 없습니다. prepare_search.py를 다시 실행하세요.'})
+            with stream:
+                self.send_response(200)
+                mime = mimetypes.guess_type(original.name)[0] or 'application/octet-stream'
+                if original.suffix.lower() in ('.r', '.py', '.txt', '.md', '.csv', '.json', '.ipynb'):
+                    mime = 'text/plain; charset=utf-8'
+                self.send_header('Content-Type', mime)
+                self.send_header('Content-Length', str(os.fstat(stream.fileno()).st_size))
+                self.send_header('Content-Disposition', 'attachment')
+                self.send_header('X-Content-Type-Options', 'nosniff')
+                self.end_headers()
+                shutil.copyfileobj(stream, self.wfile)
+            return
         if path.startswith('/api/'):
-            return self.json_response(404, {'error': '이 서버는 검색과 파일 목록을 제공합니다. 원본 파일 열기는 아직 연결되지 않았습니다.'})
+
+            return self.json_response(404, {'error': '요청한 API 경로를 찾을 수 없습니다.'})
         if path == '/runtime-config.js':
             body = ('window.CONTEXT_SEARCH_CONFIG = ' + json.dumps(
                 {'mode': 'api', 'base': '/api', 'searchOnly': True} if self.service else {}) + ';').encode()

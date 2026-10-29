@@ -284,3 +284,6 @@ select:focus-visible { outline: 3px solid #7caec6; outline-offset: 2px; }
 .detail-panel h2, .detail-panel .detail-path { overflow-wrap: anywhere; min-width: 0; }
 .result-card-body { min-width: 0; }
 .result-rank { flex-shrink: 0; }
+
+.pdf-page-image { display: block; width: 100%; height: auto; border: 1px solid #e4eaed; }
+.pdf-pages { max-height: 60vh; overflow: auto; margin-bottom: 12px; }

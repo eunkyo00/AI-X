@@ -207,7 +207,20 @@ export class WorkspaceUI {
         const pre=node('pre','code-preview',await blob.slice(0,300000).text());if(version!==this.previewVersion)return;area.append(node('p','preview-note','읽기 전용 텍스트 보기입니다. 코드를 실행하지 않습니다.'),pre);if(blob.size>300000)area.append(node('p','preview-note','큰 파일은 앞부분만 표시합니다.'));
       }else if(['png','jpg','jpeg','webp'].includes(ext)){this.objectUrl=URL.createObjectURL(blob);const image=node('img','image-preview');image.src=this.objectUrl;image.alt=file.name;image.onerror=()=>{if(version===this.previewVersion && dialog.open)area.replaceChildren(node('p','','이미지를 표시하지 못했습니다. 파일 형식과 내용을 확인하세요.'));};area.append(image);
       }else if(ext==='pdf'){
-        this.objectUrl=URL.createObjectURL(new Blob([blob],{type:'application/pdf'}));const frame=node('iframe','pdf-preview');frame.title=file.name;frame.setAttribute('sandbox','');frame.src=this.objectUrl;area.append(node('p','preview-note','브라우저 PDF 미리보기입니다. 표시되지 않으면 아래 보관본 다운로드를 이용하세요.'),frame);
+        if(source==='api' && this.base===this.bundledBase){
+          const controls=node('div','workspace-actions');const previous=node('button','outline-button','이전 페이지');const next=node('button','outline-button','다음 페이지');const label=node('span','preview-note');const pages=node('div','pdf-pages');
+          previous.type=next.type='button';area.append(node('p','preview-note','원본 PDF의 페이지를 표시합니다. 원본은 아래에서 다운로드할 수 있습니다.'),controls,pages);controls.append(previous,label,next);
+          let page=1;
+          const showPage=async(target)=>{
+            previous.disabled=next.disabled=true;label.textContent='페이지를 불러오는 중입니다…';
+            try{const result=await this.api.previewPdf(file.id,target);if(version!==this.previewVersion || !dialog.open)return;
+              page=result.page;const image=node('img','pdf-page-image');image.alt=`${file.name} · ${page}페이지`;image.src='data:image/png;base64,'+result.image_base64;pages.replaceChildren(image);label.textContent=`${page} / ${result.page_count}페이지`;previous.disabled=page<=1;next.disabled=page>=result.page_count;
+            }catch(error){if(version===this.previewVersion && dialog.open){pages.replaceChildren(node('p','preview-error',error.message));label.textContent='페이지 표시 실패';}}
+          };
+          previous.onclick=()=>showPage(page-1);next.onclick=()=>showPage(page+1);showPage(1);
+        }else{
+          this.objectUrl=URL.createObjectURL(new Blob([blob],{type:'application/pdf'}));const frame=node('iframe','pdf-preview');frame.title=file.name;frame.setAttribute('sandbox','');frame.src=this.objectUrl;area.append(node('p','preview-note','브라우저 PDF 미리보기입니다. 표시되지 않으면 아래 보관본 다운로드를 이용하세요.'),frame);
+        }
       }else area.append(node('p','preview-note','이 형식은 브라우저 내부 미리보기를 지원하지 않습니다. 보관본을 다운로드해 연결 앱에서 확인하세요.'));
       const url=URL.createObjectURL(blob);const download=node('a','outline-button','보관본 다운로드');download.href=url;download.download=file.name;area.append(download);dialog.addEventListener('close',()=>URL.revokeObjectURL(url),{once:true});
     }catch(error){if(version===this.previewVersion && dialog.open)area.replaceChildren(node('p','preview-error',`${error.message} 파일 등록 상태와 연결을 확인하세요.`));}
