@@ -69,3 +69,11 @@ test('default browser fetch keeps its global receiver',async()=>{
     assert.equal(result.index_ready,false);
   }finally{globalThis.fetch=original;}
 });
+
+test('semantic result keeps similarity and excerpt without inventing evidence', () => {
+  const file=normalizeFile({file_id:'F1',name:'sample.R',score:0.905,excerpt:'model <- sarima(data)'});
+  assert.equal(file.score,0.905);
+  assert.equal(file.excerpt,'model <- sarima(data)');
+  assert.deepEqual(file.evidence,[]);
+  assert.equal(normalizeFile({file_id:'F2',name:'x',score:'90%'}).score,null);
+});

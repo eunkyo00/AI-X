@@ -12,7 +12,9 @@ const abortableWait = (ms,signal) => new Promise((resolve,reject)=>{
 export class WorkspaceUI {
   constructor({onChange,onSearch}={}) {
     this.onChange=onChange;this.onSearch=onSearch;
-    const config=read('context-search.settings.v1',{});
+    const runtime=window.CONTEXT_SEARCH_CONFIG || {};
+    const config=runtime.mode ? {...runtime,base:new URL(runtime.base,location.href).href} : read('context-search.settings.v1',{});
+    this.bundledBase=runtime.mode ? config.base : null;
     this.mode=['demo','local','api'].includes(config.mode)?config.mode:'demo';
     try {this.base=validateBaseUrl(config.base || 'http://127.0.0.1:8000/api');}catch{this.base='http://127.0.0.1:8000/api';}
     this.previewVersion=0;this.library=new BrowserLibrary();this.queue=[];this.catalog=[];this.refreshId=0;
@@ -23,6 +25,7 @@ export class WorkspaceUI {
     this.observations=read('context-search.usability.v1',[]);
     if(!Array.isArray(this.observations))this.observations=[];
     this.observations=this.observations.filter(item=>item && typeof item.participant==='string' && typeof item.task==='string').slice(0,200);
+    this.homeCopies=[...document.querySelectorAll('.feature-card h3,.feature-card p,.suggestions button,.example-card strong,.example-card .tags,.rail-tip p')].map(el=>({el,html:el.innerHTML,query:el.closest('[data-query]')?.dataset.query}));
     this.bind();this.renderMode();this.renderObservations();
   }
   message(text) {const box=document.querySelector('#workspace-message');box.querySelector('p').textContent=text;box.hidden=false;}
@@ -77,15 +80,29 @@ export class WorkspaceUI {
     };
   }
   renderMode() {
+    const bundled=this.mode==='api' && this.base===this.bundledBase;
+    for(const {el,html,query} of this.homeCopies){el.innerHTML=html;if(query)el.closest('[data-query]').dataset.query=query;}
+    if(bundled){
+      const features=[['내용으로 검색','기억나는 주제와 내용으로 파일 찾기'],['파일 정보 확인','역할·크기·수정 날짜 살펴보기'],['본문 발췌 확인','검색어와 유사한 본문 구간 확인'],['검색 순위 비교','유사도 순으로 후보 파일 살펴보기']];
+      document.querySelectorAll('.feature-card').forEach((card,i)=>{card.querySelector('h3').textContent=features[i][0];card.querySelector('p').textContent=features[i][1];});
+      const queries=['SARIMA 예측 코드','교차 검증 방법을 설명한 강의자료','갑오개혁의 전개와 성과','신경망 역전파 강의자료'];
+      document.querySelectorAll('.suggestions button').forEach((button,i)=>{button.textContent=queries[i];button.dataset.query=queries[i];});
+      document.querySelectorAll('.example-card').forEach((button,i)=>{button.querySelector('strong').textContent=queries[i];button.querySelector('.tags').textContent=i===0?'시계열 · R 코드':'강의·읽기 자료 · PDF';button.dataset.query=queries[i];});
+      document.querySelector('.rail-tip p').textContent='“SARIMA 예측”, “교차 검증”처럼 파일 내용의 단서를 적어보세요.';
+    }
+
     document.querySelector('#home-title').textContent=this.mode==='local'?'보관한 파일을 찾아보세요':'어떤 파일을 찾으시나요?';
     document.querySelector('.hero > p').textContent=this.mode==='local'?'파일명 또는 폴더 경로의 단어로 검색합니다. AI 의미 검색은 팀원 API 연결 후 사용할 수 있습니다.':'파일 이름은 잊어도 괜찮아요. 기억나는 상황으로 다시 찾아보세요.';
     document.querySelector('.search-helper').firstChild.textContent=this.mode==='local'?'파일명 · 상대 경로로 검색합니다 ':'시기 · 작업 · 파일의 역할을 떠올려 보세요 ';
-    document.querySelector('#home-query').placeholder=this.mode==='local'?'예) 분석 코드, 학생 데이터':'예) 지난달 R 과제할 때 사용했던 데이터 찾아줘';
+    if(this.mode==='api' && this.base===this.bundledBase){
+      document.querySelector('.search-helper').firstChild.textContent='파일 내용 · 주제 · 역할로 검색합니다 ';
+    }
+    document.querySelector('#home-query').placeholder=this.mode==='local'?'예) 분석 코드, 학생 데이터':this.mode==='api' && this.base===this.bundledBase?'예) SARIMA 예측 코드':'예) 지난달 R 과제할 때 사용했던 데이터 찾아줘';
     for(const selector of ['.suggestions','.features','.examples'])document.querySelector(selector).hidden=this.mode==='local';
     const names={demo:'예시 시나리오',local:'브라우저 보관 · 이름·경로 검색',api:'팀원 API · 연결 상태는 설정에서 확인'};
     document.querySelector('#workspace-mode-label').textContent=names[this.mode];
-    document.querySelector('#registration-destination').textContent=this.mode==='api'?`선택한 파일을 팀원 서버 ${this.base} 로 전달합니다.`:'선택한 파일을 이 브라우저에 보관합니다. 원본 파일은 변경하지 않습니다.';
-    document.querySelector('.demo-search-banner p').textContent=this.mode==='demo'?'화면 확인용 샘플 데이터입니다. 실제 파일 검색과 열기는 연결되지 않았습니다.':this.mode==='local'?'브라우저에 보관한 실제 파일의 이름·경로를 검색합니다. AI 의미 검색은 수행하지 않습니다.':`팀원 API를 사용합니다: ${this.base}`;
+    document.querySelector('#registration-destination').textContent=this.mode==='api' && this.base===this.bundledBase?'현재 서버는 기존 데이터셋 검색을 지원합니다. 새 파일 등록·재인덱싱은 아직 연결되지 않았습니다.':this.mode==='api'?`선택한 파일을 팀원 서버 ${this.base} 로 전달합니다.`:'선택한 파일을 이 브라우저에 보관합니다. 원본 파일은 변경하지 않습니다.';
+    document.querySelector('.demo-search-banner p').textContent=this.mode==='demo'?'화면 확인용 샘플 데이터입니다. 실제 파일 검색과 열기는 연결되지 않았습니다.':this.mode==='local'?'브라우저에 보관한 실제 파일의 이름·경로를 검색합니다. AI 의미 검색은 수행하지 않습니다.':bundled?'파일 내용으로 찾은 상위 5개 후보입니다. 낮은 유사도 결과도 포함될 수 있습니다.':`팀원 API를 사용합니다: ${this.base}`;
     document.querySelector('.demo-search-banner .demo-badge').textContent=this.mode==='demo'?'예시 검색':this.mode==='local'?'로컬 검색':'API 검색';
     document.querySelector('.demo-response-controls').hidden=this.mode!=='demo';
     document.querySelector('#recent-tasks').closest('section').hidden=this.mode!=='demo';
@@ -150,6 +167,7 @@ export class WorkspaceUI {
     for(const id of ['choose-files','choose-folder','clear-queue'])document.querySelector(`#${id}`).disabled=busy;
   }
   async register() {
+    if(this.mode==='api' && this.base===this.bundledBase){this.message('현재 검색 서버는 파일 등록·재인덱싱을 지원하지 않습니다. 브라우저 보관 모드에서 파일을 보관할 수 있습니다.');return;}
     if(this.registration)return;
     this.registration=new AbortController();const signal=this.registration.signal;const apiMode=this.mode==='api';const api=this.api;
     this.renderQueue();

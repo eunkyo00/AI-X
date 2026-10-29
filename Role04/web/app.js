@@ -273,3 +273,5 @@ renderRecent();
 route();
 
 window.addEventListener('pagehide',()=>{searchController.cancel('navigation');workspace.registration?.abort();});
+
+if(window.CONTEXT_SEARCH_CONFIG?.mode==='api')workspace.checkIntegration();
