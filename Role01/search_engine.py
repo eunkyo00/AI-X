@@ -1,10 +1,12 @@
 """파일 단위 의미 검색 엔진.
 
-기존 search_model_modified.py의 검색 로직을 API에서 재사용할 수 있도록 분리한 버전.
-평가 및 대화형 입력은 포함하지 않는다.
+기존 search_model_modified.py의 검색 로직을 API에서 재사용하도록 분리.
+평가 및 대화형 입력은 포함하지 않으며 문서 임베딩은 디스크에 캐싱한다.
 """
 from pathlib import Path
+import hashlib
 
+import numpy as np
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 
@@ -47,7 +49,7 @@ def split_text(text, chunk_size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
 
 
 class SearchEngine:
-    """생성 시 CSV를 읽고 임베딩을 계산하며, 이후 검색 요청에 재사용한다."""
+    """최초 생성 시 CSV를 읽고 임베딩 캐시를 로딩하거나 생성한다."""
 
     def __init__(self, text_csv=TEXT_CSV, metadata_csv=METADATA_CSV,
                  model_name=MODEL_NAME):
@@ -79,7 +81,6 @@ class SearchEngine:
 
         df = df[
             df["file_id"].astype(str).str.strip().ne("")
-            
             & df["filename"].astype(str).str.strip().ne("")
             & df["extracted_text"].astype(str).str.strip().ne("")
         ].copy()
@@ -114,14 +115,37 @@ class SearchEngine:
         print(f"검색 텍스트 조각 수: {len(self.documents)}")
         print("임베딩 모델을 불러오는 중...")
         self.model = SentenceTransformer(model_name)
-        print("파일 내용을 숫자 벡터로 변환하는 중...")
-        self.document_embeddings = self.model.encode(
-            ["passage: " + text for text in self.documents],
-            normalize_embeddings=True,
-            convert_to_numpy=True,
-            show_progress_bar=True,
-        )
-        print("파일 임베딩 완료!")
+
+        # 검색 문서가 바뀌면 캐시 키도 달라지도록 실제 입력 문자열을 해시한다.
+        passages = ["passage: " + text for text in self.documents]
+        hasher = hashlib.sha256()
+        hasher.update(model_name.encode("utf-8"))
+        for passage in passages:
+            encoded = passage.encode("utf-8")
+            hasher.update(len(encoded).to_bytes(8, "big"))
+            hasher.update(encoded)
+
+        cache_key = hasher.hexdigest()[:16]
+        cache_dir = BASE_DIR / "embedding_cache"
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        cache_path = cache_dir / f"embeddings_{cache_key}.npy"
+
+        if cache_path.exists():
+            print("저장된 임베딩 불러오는 중...")
+            self.document_embeddings = np.load(cache_path, allow_pickle=False)
+            if self.document_embeddings.ndim != 2 or self.document_embeddings.shape[0] != len(passages):
+                raise ValueError("임베딩 캐시 크기가 검색 문서와 맞지 않습니다. 캐시 파일을 삭제하고 재실행하세요.")
+            print("임베딩 캐시 로딩 완료!")
+        else:
+            print("파일 내용을 숫자 벡터로 변환하는 중...")
+            self.document_embeddings = self.model.encode(
+                passages,
+                normalize_embeddings=True,
+                convert_to_numpy=True,
+                show_progress_bar=True,
+            )
+            np.save(cache_path, self.document_embeddings)
+            print("임베딩 계산 및 저장 완료!")
 
     def search_files(self, query, top_k=TOP_K):
         """검색어와 청크 유사도를 계산해 파일 단위 Top K를 반환한다."""
@@ -161,7 +185,7 @@ def get_engine():
 
 
 def search_files(query, top_k=TOP_K):
-    """백엔드에서 바로 호출할 수 있는 간단한 인터페이스."""
+    """백엔드에서 바로 호출할 수 있는 인터페이스."""
     return get_engine().search_files(query, top_k=top_k)
 
 

@@ -1,4 +1,7 @@
 from pathlib import Path
+import hashlib
+
+import numpy as np
 
 import pandas as pd
 from sentence_transformers import SentenceTransformer
@@ -148,15 +151,39 @@ print(f"검색 텍스트 조각 수: {len(documents)}")
 print("\n임베딩 모델을 불러오는 중...")
 model = SentenceTransformer(MODEL_NAME)
 
-print("\n파일 내용을 숫자 벡터로 변환하는 중...")
-document_embeddings = model.encode(
-    ["passage: " + text for text in documents],
-    normalize_embeddings=True,
-    convert_to_numpy=True,
-    show_progress_bar=True
-)
-print("파일 임베딩 완료!")
+# search_engine.py와 동일한 캐시 키/경로를 사용해 임베딩을 공유한다.
+passages = ["passage: " + text for text in documents]
+hasher = hashlib.sha256()
+hasher.update(MODEL_NAME.encode("utf-8"))
+for passage in passages:
+    encoded = passage.encode("utf-8")
+    hasher.update(len(encoded).to_bytes(8, "big"))
+    hasher.update(encoded)
 
+cache_key = hasher.hexdigest()[:16]
+cache_dir = BASE_DIR / "embedding_cache"
+cache_dir.mkdir(parents=True, exist_ok=True)
+cache_path = cache_dir / f"embeddings_{cache_key}.npy"
+
+if cache_path.exists():
+    print("\n저장된 임베딩 불러오는 중...")
+    document_embeddings = np.load(cache_path, allow_pickle=False)
+    if document_embeddings.ndim != 2 or document_embeddings.shape[0] != len(passages):
+        raise ValueError(
+            "임베딩 캐시 크기가 검색 문서와 맞지 않습니다. "
+            "캐시 파일을 삭제하고 재실행하세요."
+        )
+    print("임베딩 캐시 로딩 완료!")
+else:
+    print("\n파일 내용을 숫자 벡터로 변환하는 중...")
+    document_embeddings = model.encode(
+        passages,
+        normalize_embeddings=True,
+        convert_to_numpy=True,
+        show_progress_bar=True
+    )
+    np.save(cache_path, document_embeddings)
+    print("파일 임베딩 계산 및 저장 완료!")
 
 # 5. 검색 기능
 def search_files(query, top_k=TOP_K):
