@@ -311,7 +311,6 @@ def analyze_time_query(query, now=None):
         semantic_query = text
     return {"field": field, "start": start, "end": end, "semantic_query": semantic_query}
 
-
 def search_files(query, top_k=TOP_K, return_time_info=False):
     """전체 파일 유사도 계산 후 시간 필터 적용; 시간 없는 쿼리는 기존 검색과 동일."""
     query = str(query).strip()
