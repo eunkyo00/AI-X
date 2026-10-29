@@ -8,12 +8,12 @@
 
 기존 GUI에 `Role01/search_engine.py` 기반 의미 검색 API를 연결했습니다. 서버와 GUI는 같은 주소에서 실행되고 기본 모드는 실제 검색입니다.
 
-공유 브랜치: **`codex/gui-search-integration`**. 기존 작업 폴더와 섞이지 않도록 새 폴더에 받는 방법입니다. Git과 Python 3.13을 준비하세요. macOS에서 실행을 검증했으며 Windows 명령과 실행 파일도 제공합니다. Windows 실제 실행은 아직 미검증입니다.
+공유 브랜치: **`main`**. 기존 작업 폴더와 섞이지 않도록 새 폴더에 받는 방법입니다. Git과 Python 3.13을 준비하세요. macOS에서 실행을 검증했으며 Windows 명령과 실행 파일도 제공합니다. Windows 실제 실행은 아직 미검증입니다.
 
 ### 1. 코드 받기 · 공통
 
 ```bash
-git clone --branch codex/gui-search-integration https://github.com/eunkyo00/AI-X.git AI-X-GUI
+git clone --branch main https://github.com/eunkyo00/AI-X.git AI-X-GUI
 cd AI-X-GUI
 git fetch origin main
 ```
