@@ -87,10 +87,10 @@ class SearchEngine:
         df = df.drop_duplicates(subset=["file_id"], keep="first").reset_index(drop=True)
         if df.empty:
             raise ValueError("검색할 텍스트가 없습니다.")
-        for column in ("project", "role", "path"):
+        for column in ("project", "role","description", "path"):
             if column not in df.columns:
                 df[column] = ""
-        df[["project", "role", "path"]] = df[["project", "role", "path"]].fillna("")
+        df[["project", "role", "description", "path"]] = df[["project", "role", "description", "path"]].fillna("")
 
         self.df = df
         self.documents = []
@@ -101,6 +101,7 @@ class SearchEngine:
                     f"파일명: {row['filename']}\n"
                     f"프로젝트: {row['project']}\n"
                     f"파일 역할: {row['role']}\n"
+                    f"파일 설명: {row['description']}\n"
                     f"파일 내용:\n{chunk}"
                 )
                 self.chunk_info.append({
