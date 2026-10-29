@@ -1,18 +1,31 @@
 from pathlib import Path
 from datetime import datetime
 import pandas as pd
+import os
 import re
 import shutil
-from paths import BASE_DIR, path_key
+import struct
+import unicodedata
+import zipfile
+from paths import path_key
 
 # 1. 경로 설정
-DATA_DIR = BASE_DIR / "dataset/files"
-METADATA_CSV = BASE_DIR / "metadata.csv"
+SCRIPT_DIR = Path(__file__).resolve().parent
+DATA_DIR = SCRIPT_DIR / "dataset/files"
+RAW_DATA_DIR = SCRIPT_DIR.parent / "data/raw"
+METADATA_CSV = SCRIPT_DIR / "metadata.csv"
 
 # 이미지와 영상은 검색 대상에서 제외
 EXCLUDED_EXTENSIONS = {
     ".jpg", ".jpeg", ".png", ".gif", ".bmp",
     ".webp", ".mp4", ".avi", ".mov"
+}
+
+EXCLUDED_FILENAMES = {
+    ".DS_Store",
+    ".Rhistory",
+    "SOURCE.json",
+    "LICENSE",
 }
 
 # 기본적으로 관리할 자동 수집 항목
@@ -30,6 +43,109 @@ AUTO_COLUMNS = [
 # 2. 파일 경로 비교용 함수
 def normalize_path(path):
     return path_key(path)
+
+
+def format_timestamp(timestamp):
+    return datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d %H:%M:%S")
+
+
+def filesystem_created_at(file_path):
+    """현재 파일시스템이 실제 생성 시각을 제공할 때만 반환한다."""
+    stat = file_path.stat()
+
+    # macOS: st_birthtime이 파일 생성 시각이다.
+    if hasattr(stat, "st_birthtime"):
+        return format_timestamp(stat.st_birthtime)
+
+    # Windows: st_ctime이 파일 생성 시각이다.
+    if os.name == "nt":
+        return format_timestamp(stat.st_ctime)
+
+    # Linux 등에서는 st_ctime이 생성 시각이 아니므로 사용하지 않는다.
+    return ""
+
+
+def decode_zip_name(name, utf8_flag):
+    if utf8_flag:
+        return unicodedata.normalize("NFC", name)
+
+    raw_name = name.encode("cp437")
+    for encoding in ("cp949", "utf-8"):
+        try:
+            return unicodedata.normalize("NFC", raw_name.decode(encoding))
+        except UnicodeDecodeError:
+            continue
+    return unicodedata.normalize("NFC", name)
+
+
+def ntfs_created_at(extra):
+    """ZIP의 NTFS 확장 정보에 보존된 생성 시각을 읽는다."""
+    offset = 0
+    while offset + 4 <= len(extra):
+        field_id, field_size = struct.unpack_from("<HH", extra, offset)
+        offset += 4
+        payload = extra[offset:offset + field_size]
+        offset += field_size
+
+        if field_id != 0x000A or len(payload) < 8:
+            continue
+
+        tag_offset = 4
+        while tag_offset + 4 <= len(payload):
+            tag, tag_size = struct.unpack_from("<HH", payload, tag_offset)
+            tag_offset += 4
+            tag_payload = payload[tag_offset:tag_offset + tag_size]
+            tag_offset += tag_size
+
+            if tag == 0x0001 and len(tag_payload) >= 24:
+                _, _, created = struct.unpack_from("<QQQ", tag_payload)
+                unix_timestamp = (
+                    created - 116444736000000000
+                ) / 10_000_000
+                return format_timestamp(unix_timestamp)
+
+    return ""
+
+
+def load_raw_created_times():
+    """data/raw의 ZIP이 보존한 파일별 생성 시각을 경로별로 불러온다."""
+    created_by_key = {}
+    if not RAW_DATA_DIR.is_dir():
+        return created_by_key
+
+    groups = {unicodedata.normalize("NFC", folder.name)
+              for folder in DATA_DIR.iterdir() if folder.is_dir()}
+    for archive_path in sorted(RAW_DATA_DIR.glob("*.zip")):
+        group = unicodedata.normalize("NFC", archive_path.stem)
+        if group not in groups:
+            continue
+
+        with zipfile.ZipFile(archive_path) as archive:
+            for info in archive.infolist():
+                if info.is_dir():
+                    continue
+
+                created_at = ntfs_created_at(info.extra)
+                if not created_at:
+                    continue
+
+                member = decode_zip_name(
+                    info.filename,
+                    bool(info.flag_bits & 0x800),
+                ).replace("\\", "/")
+                parts = [part for part in member.split("/") if part]
+                if parts and unicodedata.normalize("NFC", parts[0]) == group:
+                    parts = parts[1:]
+
+                relative_path = unicodedata.normalize("NFC", "/".join(parts))
+                filename = unicodedata.normalize("NFC", Path(member).name)
+                created_by_key[(group, relative_path)] = created_at
+                created_by_key.setdefault((group, filename), created_at)
+
+    return created_by_key
+
+
+RAW_CREATED_AT = load_raw_created_times()
 
 # 3. 기존 CSV 읽기
 if not DATA_DIR.is_dir():
@@ -65,7 +181,7 @@ for record in old_df.to_dict("records"):
             raise ValueError(f"중복된 파일 경로: {record['path']}")
         old_by_path[key] = record
 
-ids = [r.get("file_id", "").strip() for r in old_df.to_dict("records")]
+ids = [str(value).strip() for value in old_df["file_id"]]
 if any(not value for value in ids) or len(ids) != len(set(ids)):
     raise ValueError("기존 metadata.csv에 빈 ID 또는 중복 ID가 있습니다.")
 
@@ -89,8 +205,11 @@ for file_path in sorted(DATA_DIR.rglob("*")):
     if not file_path.is_file():
         continue
 
+    if file_path.name in EXCLUDED_FILENAMES:
+        continue
+
     # Excel이 만드는 임시 파일 제외
-    if file_path.name.startswith("~$") or file_path.name in {".DS_Store", ".Rhistory"}:
+    if file_path.name.startswith("~$"):
         continue
 
     extension = file_path.suffix.lower()
@@ -114,16 +233,36 @@ for file_path in sorted(DATA_DIR.rglob("*")):
         new_count += 1
 
     stat = file_path.stat()
+    relative_path = file_path.relative_to(DATA_DIR)
+    group = unicodedata.normalize("NFC", relative_path.parts[0])
+    path_in_group = unicodedata.normalize(
+        "NFC",
+        "/".join(relative_path.parts[1:]),
+    )
+    filename = unicodedata.normalize("NFC", file_path.name)
+
+    raw_created_at = (
+        RAW_CREATED_AT.get((group, path_in_group))
+        or RAW_CREATED_AT.get((group, filename))
+    )
+    existing_created_at = str(record.get("created_at", "")).strip()
+    created_at = (
+        raw_created_at
+        or existing_created_at
+        or filesystem_created_at(file_path)
+    )
+
+    stored_path = record.get("path", "").strip()
+    if not stored_path:
+        stored_path = file_path.relative_to(SCRIPT_DIR).as_posix()
 
     # 자동 수집 항목만 갱신
     record.update({
         "filename": file_path.name,
         "extension": extension,
-        "path": file_path.relative_to(BASE_DIR).as_posix(),
+        "path": file_path.relative_to(SCRIPT_DIR).as_posix(),
         "size_bytes": stat.st_size,
-        "created_at": datetime.fromtimestamp(
-            getattr(stat, "st_birthtime", stat.st_ctime)
-        ).strftime("%Y-%m-%d %H:%M:%S"),
+        "created_at": created_at,
         "modified_at": datetime.fromtimestamp(
             stat.st_mtime
         ).strftime("%Y-%m-%d %H:%M:%S"),
@@ -141,12 +280,12 @@ columns = list(dict.fromkeys(
 updated_df = pd.DataFrame(records, columns=columns)
 
 if METADATA_CSV.exists():
-    backup_name = (
+    backup_name = SCRIPT_DIR / (
         "metadata_backup_"
         + datetime.now().strftime("%Y%m%d_%H%M%S")
         + ".csv"
     )
-    shutil.copy2(METADATA_CSV, BASE_DIR / backup_name)
+    shutil.copy2(METADATA_CSV, backup_name)
     print(f"기존 CSV 백업: {backup_name}")
 
 updated_df.to_csv(

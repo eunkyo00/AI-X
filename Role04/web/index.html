@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="기억하는 작업과 상황으로 파일을 다시 찾는 Context Search">
+  <title>Context Search · 상황으로 찾는 내 파일</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23728e99'/%3E%3Cpath d='M12 2a10 10 0 0 0 0 20Z' fill='%23475f6c'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=search-api-v2">
+  <script src="runtime-config.js"></script>
+  <script src="app.js?v=search-api-v2" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <div class="app">
+    <aside class="sidebar" aria-label="주 메뉴">
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">◐</span><span>Context Search</span></a>
+      <nav id="navigation">
+        <a href="#home" data-page="home" class="nav-item"><span data-icon="search"></span><span>검색</span></a>
+        <a href="#files" data-page="files" class="nav-item"><span data-icon="folder"></span><span>내 파일</span></a>
+        <a href="#tasks" data-page="tasks" class="nav-item"><span data-icon="layers"></span><span>작업 보기</span></a>
+        <a href="#history" data-page="history" class="nav-item"><span data-icon="clock"></span><span>최근 검색</span></a>
+        <a href="#favorites" data-page="favorites" class="nav-item"><span data-icon="star"></span><span>즐겨찾기</span></a>
+        <div class="nav-divider"></div>
+        <a href="#register" data-page="register" class="nav-item"><span data-icon="upload"></span><span>파일 등록</span></a>
+        <a href="#settings" data-page="settings" class="nav-item"><span data-icon="settings"></span><span>설정</span></a>
+      </nav>
+      <section class="index-status" aria-label="인덱싱 상태">
+        <div class="status-heading"><span class="status-dot"></span>인덱싱 상태</div>
+        <progress max="100" value="0" aria-label="인덱싱 진행률">0%</progress>
+        <p>아직 등록된 파일이 없습니다</p>
+      </section>
+      <div class="sidebar-footer">내 파일에서 시작되는 새로운 연결</div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div class="workspace-mode-bar"><span id="workspace-mode-label">예시 모드</span><a href="#settings">연결 설정 →</a></div>
+      <section id="home-page" class="page home-page" aria-labelledby="home-title">
+        <div class="home-content">
+          <header class="hero">
+            <div class="eyebrow"><span class="tiny-mark">✦</span> YOUR PERSONAL FILE SPACE</div>
+            <h1 id="home-title">어떤 파일을 찾으시나요?</h1>
+            <p>파일 이름은 잊어도 괜찮아요.<br class="mobile-break"> 기억나는 상황으로 다시 찾아보세요.</p>
+            <form class="search-form hero-search" id="home-search" role="search">
+              <span data-icon="search" class="search-icon"></span>
+              <label class="sr-only" for="home-query">기억나는 작업이나 상황</label>
+              <input id="home-query" name="query" placeholder="예) 지난달 R 과제할 때 사용했던 데이터 찾아줘" autocomplete="off" required maxlength="1000">
+              <button class="clear-query" type="button" aria-label="검색어 지우기" hidden>×</button>
+              <button class="search-submit" type="submit" aria-label="검색 결과 화면으로 이동"><span data-icon="arrow"></span></button>
+            </form>
+            <p class="search-helper">시기 · 작업 · 파일의 역할을 떠올려 보세요 <kbd>Enter ↵</kbd></p>
+            <div class="suggestions" aria-label="추천 검색어">
+              <button type="button" data-query="지난주 수정했던 발표자료">지난주 수정했던 발표자료</button>
+              <button type="button" data-query="Python 실습 코드와 결과 파일">Python 실습 코드와 결과 파일</button>
+              <button type="button" data-query="작년 논문 작성할 때 참고한 자료">작년 논문 작성할 때 참고한 자료</button>
+            </div>
+          </header>
+          <section class="features" aria-labelledby="features-title">
+            <div class="section-heading"><h2 id="features-title">기억의 단서를 연결해요</h2><span>HOW IT WORKS</span></div>
+            <div class="feature-grid">
+              <article class="feature-card"><span class="feature-icon green" data-icon="search"></span><h3>상황으로 검색</h3><p>이름 대신 기억나는<br>작업과 상황으로 찾기</p></article>
+              <article class="feature-card"><span class="feature-icon purple" data-icon="layers"></span><h3>작업 맥락 이해</h3><p>관련 파일들을<br>하나의 작업으로 연결</p></article>
+              <article class="feature-card"><span class="feature-icon orange" data-icon="document"></span><h3>검색 근거 확인</h3><p>왜 이 파일을 찾았는지<br>확인과 추정을 구분</p></article>
+              <article class="feature-card"><span class="feature-icon blue" data-icon="network"></span><h3>파일 관계 탐색</h3><p>데이터부터 결과까지<br>작업의 흐름 살펴보기</p></article>
+            </div>
+          </section>
+          <section class="examples" aria-labelledby="examples-title">
+            <div class="section-heading"><h2 id="examples-title">이렇게 검색해 보세요</h2><span>검색어 예시</span></div>
+            <div class="example-grid">
+              <button class="example-card" data-query="지난달 R 과제할 때 사용했던 데이터"><span data-icon="document" class="example-icon green"></span><strong>지난달 R 과제할 때<br>사용했던 데이터</strong><span class="tags"><span>데이터 분석</span><span>CSV</span></span><span class="example-arrow" data-icon="arrow"></span></button>
+              <button class="example-card" data-query="딥러닝 발표 준비했던 PPT 찾아줘"><span data-icon="document" class="example-icon orange"></span><strong>딥러닝 발표 준비했던<br>PPT 찾아줘</strong><span class="tags"><span>발표</span><span>PPTX</span></span><span class="example-arrow" data-icon="arrow"></span></button>
+              <button class="example-card" data-query="작년에 읽었던 강화학습 논문"><span data-icon="document" class="example-icon purple"></span><strong>작년에 읽었던<br>강화학습 논문</strong><span class="tags"><span>논문</span><span>PDF</span></span><span class="example-arrow" data-icon="arrow"></span></button>
+              <button class="example-card" data-query="Python 실습할 때 쓴 코드랑 결과 파일"><span data-icon="document" class="example-icon blue"></span><strong>Python 실습할 때 쓴<br>코드랑 결과 파일</strong><span class="tags"><span>코드</span><span>CSV</span></span><span class="example-arrow" data-icon="arrow"></span></button>
+            </div>
+          </section>
+          <footer class="stage-note"><span class="status-dot"></span>GUI 개발본 <span>·</span> 데이터 출처는 상단에서 확인</footer>
+        </div>
+        <aside class="activity-rail" aria-label="최근 활동">
+          <section aria-labelledby="tasks-heading">
+            <div class="section-heading"><h2 id="tasks-heading">최근 작업 <span class="demo-badge">예시</span></h2><button class="text-button" id="view-demo-tasks" type="button">더보기 <span data-icon="arrow"></span></button></div>
+            <p class="rail-caption">등록 후 보여질 작업 화면을 미리 살펴보세요.</p>
+            <div id="recent-tasks" class="task-list"></div>
+          </section>
+          <section class="recent-section" aria-labelledby="recent-heading">
+            <div class="section-heading"><h2 id="recent-heading">최근 검색</h2><a href="#history" class="text-button">전체 보기 <span data-icon="arrow"></span></a></div>
+            <div id="recent-searches"></div>
+            <p class="history-note" id="history-storage-note">이 브라우저에만 저장됩니다.</p>
+          </section>
+          <div class="rail-tip"><span data-icon="spark"></span><strong>기억나는 만큼만 입력하세요</strong><p>“지난달”, “R 과제”, “입력 데이터”처럼 단서를 함께 적어보세요.</p></div>
+        </aside>
+      </section>
+      <section id="results-page" class="page results-page" hidden aria-labelledby="results-title">
+        <header class="results-toolbar"><a href="#home" class="back-link" aria-label="홈으로 돌아가기"><span data-icon="back"></span></a><form id="results-search" class="search-form" role="search"><label class="sr-only" for="results-query">검색어 수정</label><input id="results-query" name="query" required maxlength="1000" autocomplete="off"><button class="search-submit" type="submit" aria-label="다시 검색"><span data-icon="search"></span></button></form></header>
+        <div class="demo-search-banner"><span class="demo-badge">예시 검색</span><p>화면 확인용 샘플 데이터입니다. 실제 파일 검색과 열기는 아직 연결되지 않았습니다.</p></div>
+        <details class="demo-response-controls">
+          <summary>예시 응답 설정 <span>정상 · 0건 · 오류 · 지연</span></summary>
+          <div class="demo-response-options"><label for="response-scenario">검색 응답</label><select id="response-scenario"><option value="normal">정상 응답</option><option value="empty">결과 0건</option><option value="error">응답 오류</option><option value="slow">느린 응답 (4초)</option></select><button type="button" id="run-scenario" class="outline-button">현재 검색어로 확인</button></div>
+          <p id="scenario-description">이 설정은 다음 검색부터 적용됩니다. 실제 서버에 요청하지 않습니다.</p>
+        </details>
+        <div class="results-layout">
+          <section class="results-list" aria-labelledby="results-title">
+            <div class="result-filters" role="group" aria-label="파일 형식 필터">
+              <button type="button" data-filter="all" aria-pressed="true">전체</button>
+              <button type="button" data-filter="document" aria-pressed="false">문서</button>
+              <button type="button" data-filter="data" aria-pressed="false">데이터</button>
+              <button type="button" data-filter="code" aria-pressed="false">코드</button>
+              <button type="button" data-filter="image" aria-pressed="false">이미지</button>
+              <button type="button" data-filter="presentation" aria-pressed="false">발표자료</button>
+            </div>
+            <div class="result-controls"><label>수정 날짜 <select id="date-filter" aria-label="수정 날짜"><option value="all">전체 기간</option><option value="2026-10">2026년 10월</option><option value="2026-09">2026년 9월</option><option value="2025">2025년</option></select></label><label>정렬 <select id="sort-results" aria-label="정렬"><option value="relevance">추천순</option><option value="date">최신 수정순</option><option value="name">이름순</option></select></label></div>
+            <div class="section-heading"><h1 id="results-title">검색 결과</h1><span id="result-count" role="status"></span></div>
+            <p id="query-summary" class="query-summary"></p>
+            <section id="search-feedback" class="search-feedback" hidden aria-labelledby="search-feedback-title">
+              <div class="feedback-symbol" aria-hidden="true"></div>
+              <h2 id="search-feedback-title"></h2><p id="search-feedback-description"></p>
+              <div class="feedback-actions"><button id="cancel-search" class="outline-button" type="button" hidden>검색 중단</button><button id="retry-search" class="outline-button" type="button" hidden>정상 응답으로 다시 시도</button><a class="subtle-link" href="#home">검색 홈으로 돌아가기 →</a></div>
+            </section>
+            <div id="result-cards" class="result-cards" role="group" aria-label="파일 검색 결과"></div>
+            <div id="results-empty" class="results-empty" hidden><span class="large-empty-icon" data-icon="search"></span><h2 id="empty-title"></h2><p id="empty-description"></p><button id="reset-filters" class="outline-button" type="button">필터 초기화</button><a href="#home" class="subtle-link">다른 상황으로 찾아보기 <span data-icon="arrow"></span></a></div>
+          </section>
+          <aside class="detail-panel" aria-labelledby="detail-title" tabindex="-1">
+            <div class="detail-heading"><span id="detail-icon" class="file-preview-icon" data-icon="document"></span><div class="detail-heading-text"><h2 id="detail-title">파일 상세</h2><p id="detail-path">결과에서 파일을 선택해 주세요</p></div><button id="open-selected-file" class="file-open-button" disabled>열기</button><button id="favorite-selected-file" class="outline-button" disabled aria-pressed="false">즐겨찾기</button></div>
+            <p class="detail-selection-note" id="detail-selection-note" hidden>관련 파일에서 선택한 항목입니다.</p>
+            <button id="reveal-selected-file" class="detail-text-button" disabled>저장 위치 확인</button>
+            <div role="tablist" aria-label="파일 상세 정보" class="detail-tabs"><button id="tab-overview" role="tab" aria-selected="true" aria-controls="detail-content" data-tab="overview">개요</button><button id="tab-evidence" role="tab" aria-selected="false" aria-controls="detail-content" data-tab="evidence" tabindex="-1">검색 근거</button><button id="tab-related" role="tab" aria-selected="false" aria-controls="detail-content" data-tab="related" tabindex="-1">관련 파일</button><button id="tab-context" role="tab" aria-selected="false" aria-controls="detail-content" data-tab="context" tabindex="-1">작업 맥락</button></div><div id="detail-content" class="detail-content" role="tabpanel" aria-labelledby="tab-overview" tabindex="0"></div>
+          </aside>
+        </div>
+      </section>
+      <section id="history-page" class="page history-page" hidden aria-labelledby="history-title">
+        <div class="eyebrow">YOUR SEARCH HISTORY</div>
+        <header class="history-header"><div><h1 id="history-title" tabindex="-1">최근 검색</h1><p>기억했던 상황에서 다시 시작하세요.</p></div><button id="clear-history" class="outline-button" type="button">전체 삭제</button></header>
+        <p class="history-privacy">최근 검색어 최대 8개가 이 브라우저에 저장됩니다.</p>
+        <div id="history-list"></div>
+      </section>
+      <section id="register-page" class="page workspace-page" hidden aria-labelledby="register-title">
+        <header class="workspace-header"><div><div class="eyebrow">FILE LIBRARY</div><h1 id="register-title">파일 등록</h1><p id="registration-destination"></p></div><a href="#files" class="outline-button">내 파일 보기</a></header>
+        <div class="upload-zone" id="upload-zone"><strong>필요한 파일만 골라 등록하세요</strong><p>파일을 놓거나 아래 버튼으로 선택하세요. 폴더는 폴더 선택 버튼을 이용하세요.</p><div class="workspace-actions"><button id="choose-files" class="task-search-button" type="button">파일 선택</button><button id="choose-folder" class="outline-button" type="button">폴더 선택</button></div><small>PDF · CSV · PPTX · TXT · Python · R · 이미지 등 · 파일당 25MB, 한 번에 총 100MB / 500개</small><input id="file-picker" type="file" multiple hidden><input id="folder-picker" type="file" webkitdirectory multiple hidden></div>
+        <div class="workspace-actions"><button id="start-registration" class="task-search-button" disabled>선택한 파일 등록</button><button id="stop-registration" class="outline-button" hidden>대기 중단</button><button id="clear-queue" class="outline-button">목록 비우기</button><button id="retry-registration" class="outline-button" hidden>실패 항목 재시도</button><button id="search-library" class="outline-button">보관한 파일 검색하기</button></div>
+        <section class="registration-progress" aria-label="등록 진행 상태"><p id="registration-summary" role="status">등록할 파일을 선택하세요.</p><progress id="registration-progress" value="0" max="1" aria-label="등록 완료 항목"></progress><p id="registration-note">브라우저 로컬 보관은 AI 분석·검색 인덱싱 완료를 의미하지 않습니다.</p></section>
+        <div id="registration-list" class="registration-list"></div>
+      </section>
+      <section id="files-page" class="page workspace-page" hidden aria-labelledby="files-title"><header class="workspace-header"><div><div class="eyebrow">YOUR FILES</div><h1 id="files-title">내 파일</h1><p id="library-description"></p></div><a href="#register" class="outline-button">파일 등록</a></header><div class="workspace-actions"><button id="refresh-files" class="outline-button">목록 새로고침</button><label>파일명으로 찾기 <input id="library-filter" type="search" placeholder="파일명 또는 경로"></label></div><div id="library-list"></div></section>
+      <section id="favorites-page" class="page workspace-page" hidden aria-labelledby="favorites-title"><header class="workspace-header"><div><div class="eyebrow">SAVED FILES</div><h1 id="favorites-title">즐겨찾기</h1><p>다시 찾고 싶은 파일을 이 브라우저에 저장합니다.</p></div></header><div id="favorites-list"></div></section>
+      <section id="tasks-page" class="page workspace-page" hidden aria-labelledby="tasks-title"><header class="workspace-header"><div><div class="eyebrow">WORK CONTEXT</div><h1 id="tasks-title">작업 보기</h1><p id="tasks-description"></p></div></header><div id="workspace-tasks"></div></section>
+      <section id="settings-page" class="page workspace-page" hidden aria-labelledby="settings-title"><header class="workspace-header"><div><div class="eyebrow">WORKSPACE SETTINGS</div><h1 id="settings-title">연결 설정</h1><p>현재 화면의 데이터 출처와 팀원 API를 설정합니다.</p></div></header>
+        <form id="workspace-settings" class="settings-card"><label for="workspace-mode">데이터 모드</label><select id="workspace-mode"><option value="demo">예시 시나리오</option><option value="local">브라우저 보관 파일 (이름·경로 검색)</option><option value="api">팀원 API</option></select><label for="api-base">API 기본 주소</label><input id="api-base" type="url" placeholder="http://127.0.0.1:8000/api"><p>팀원 API 모드에서는 선택한 파일과 검색어가 위 서버로 전달됩니다. 인증 없는 로컬 개발용 계약이며, 서비스 배포 전 인증을 별도로 연결해야 합니다.</p><button class="task-search-button" type="submit">설정 저장</button></form>
+        <section class="settings-card"><h2>통합 연결 점검</h2><p>실제 서버의 상태·계약 버전·파일 목록을 확인합니다. 팀원 서비스 미연결은 완료로 표시하지 않습니다.</p><button id="check-integration" class="outline-button">저장된 API 연결 확인</button><div id="integration-report" role="status">아직 확인하지 않았습니다.</div></section>
+        <section class="settings-card"><h2>사용성·시연 점검</h2><p>실제 참가자 결과를 기록하세요. 자동 테스트는 사용자 평가를 대신하지 않습니다.</p><form id="usability-form"><label>기록 유형 <select name="kind"><option value="study">실제 사용자 관찰</option><option value="qa">개발·자동 점검 (사용자 평가 제외)</option></select></label><label>참가자 코드 <input name="participant" maxlength="50" required placeholder="P01 (이름 대신 코드)"></label><label>점검 과제 <select name="task"><option>파일 등록</option><option>상황 검색</option><option>근거 구분</option><option>관련 파일 찾기</option><option>파일 열기</option><option>실패 복구</option></select></label><label>수행 결과 <select name="outcome"><option>성공</option><option>도움 후 성공</option><option>실패</option></select></label><label>소요 시간 (초) <input name="seconds" type="number" min="0" max="86400" required></label><label>막힌 위치·의견 <textarea name="notes" maxlength="1000" rows="3"></textarea></label><button class="outline-button">관찰 결과 저장</button></form><p id="usability-count"></p><button id="export-usability" class="outline-button">점검 기록 JSON 내보내기</button></section>
+      </section>
+      <section id="placeholder-page" class="page placeholder-page" hidden aria-labelledby="placeholder-title"><div class="eyebrow">CONTEXT SEARCH</div><h1 id="placeholder-title"></h1><div class="placeholder-card"><span class="large-empty-icon" data-icon="layers"></span><h2 id="placeholder-description"></h2><p>이 메뉴의 기능은 다음 구현 단계에서 연결합니다.</p><a href="#home" class="subtle-link">검색 홈으로 돌아가기 <span data-icon="arrow"></span></a></div></section>
+      <dialog id="task-dialog" aria-labelledby="task-dialog-title">
+        <header class="dialog-header"><span class="demo-badge">예시 작업 · 서비스 연결 전</span><button class="dialog-close" type="button" aria-label="예시 작업 닫기">×</button></header>
+        <div id="task-dialog-content"></div>
+      </dialog>
+      <dialog id="file-preview-dialog" aria-labelledby="preview-title"><header class="dialog-header"><h2 id="preview-title">파일 미리보기</h2><button id="close-preview" class="dialog-close" aria-label="파일 미리보기 닫기">×</button></header><div id="file-preview-content"></div></dialog>
+      <div id="workspace-message" class="workspace-message" role="status" hidden><p></p><button aria-label="안내 닫기" type="button">×</button></div>
+      <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+</body>
+</html>

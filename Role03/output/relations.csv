@@ -481,28 +481,32 @@ F149,F134,mentions,11-visualization-proportions/README.md,resolved,exact_path,ex
 F149,F138,mentions,12-visualization-relationships/README.md,resolved,exact_path,extracted_text_char:1933,"ul> |
 | 4. | Visualizing relationships | <ul> <li> [Python](12-visualization-relationships/README.md)</li>  <li>[R]() </li> </ul>|<ul> <li> [Jen Looper](https:/"
 F149,F142,mentions,13-meaningful-visualizations/README.md,resolved,exact_path,extracted_text_char:2249, 5. | Making Meaningful Visualizations | <ul> <li> [Python](13-meaningful-visualizations/README.md)</li>  <li>[R]() </li> </ul>|<ul> <li> [Jen Looper](https:/
-F006,,mentions,train.csv,missing,not_registered,extracted_text_char:10472,"rflow as tf
+F006,,mentions,train.csv,missing,not_registered,extracted_text_char:11142,"f
 
+
+[페이지 68]
 학습데이터다운로드
 # 데이터세트를읽어들인다. 
 train = pd.read_csv(""train.csv"", sep=',')
 test = pd.read_csv(""test.csv"", sep=',')
 # 필요없는컬럼"
-F006,,mentions,test.csv,missing,not_registered,extracted_text_char:10513,"ain = pd.read_csv(""train.csv"", sep=',')
+F006,,mentions,test.csv,missing,not_registered,extracted_text_char:11183,"ain = pd.read_csv(""train.csv"", sep=',')
 test = pd.read_csv(""test.csv"", sep=',')
 # 필요없는컬럼을삭제한다. 
 train.drop(['SibSp', 'Parch', 'T"
-F007,,mentions,dog.jpg,missing,not_registered,extracted_text_char:255,"ssing.image import load_img, img_to_array
+F007,,mentions,dog.jpg,missing,not_registered,extracted_text_char:272,"ssing.image import load_img, img_to_array
 image = load_img(""dog.jpg"")
 array = img_to_array(image)
 sample = expand_dims(array, a"
-F007,,mentions,dog.jpg,missing,not_registered,extracted_text_char:3031,"umpy as np
+F007,,mentions,dog.jpg,missing,not_registered,extracted_text_char:3171,"umpy as np
 model = ResNet50(weights='imagenet')
 img_path = 'dog.jpg'
 img = image.load_img(img_path, target_size=(224, 224))
 # 영"
-F010,,mentions,test.png,missing,not_registered,extracted_text_char:4523,"plt.show()
+F010,,mentions,test.png,missing,not_registered,extracted_text_char:4773,"
 
+
+[페이지 26]
 실제이미지로테스트하기
 import cv2 as cv
 image = cv.imread('test.png', cv.IMREAD_GRAYSCALE)

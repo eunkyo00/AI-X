@@ -63,7 +63,7 @@ Windows에서는 `.venv\Scripts\python.exe update_data.py`를 사용합니다.
 검색 실행:
 
 ```sh
-.venv/bin/python Role01/search_model.py
+.venv/bin/python Role01/refresh_search.py
 ```
 
 첫 임베딩 모델 다운로드에는 인터넷이 필요합니다. 매번 전체 파일을 재추출·재임베딩합니다.
@@ -71,10 +71,11 @@ Role03의 과거 품질 점검 보고서와 `*_issues.csv`는 갱신하지 않�
 새 처리 집계는 `Role03/output/summary.json`을 기준으로 확인합니다.
 GUI 버튼과 변경 파일만 처리하는 최적화는 포함하지 않습니다.
 
-원격 main의 평가 기능도 유지하며, 자동 평가만 실행하려면 다음 명령을 사용합니다.
+기존 `search_model.py` 및 시간·설명·재정렬 평가 스크립트는 원격 main의 기능을 유지합니다.
 
-```sh
-.venv/bin/python Role01/search_model.py --evaluate
-```
-
-`evaluation_queries.csv`의 질문으로 평가하고 `evaluation_results.csv`에 저장합니다.
+최신 GUI의 의미 검색도 통합 인덱스를 읽고 다음 검색 요청에서 파일 목록을 갱신합니다.
+시스템·기록 파일과 LICENSE, SOURCE.json 제외, ZIP에 보존된 생성 시각, TSV·PDF OCR 등
+원격 main의 기능을 유지합니다. OCR에는 별도 Tesseract 설치 및 kor/eng 언어 데이터가 필요합니다.
+실행 파일은 PATH 또는 `TESSERACT_CMD` 환경 변수로 지정할 수 있습니다.
+OCR 도구가 없는 환경에서도 원본 SHA256이 동일하고 이전 추출이 성공했다면 기존 OCR 결과를 재사용합니다.
+변경되거나 새로 추가된 이미지형 PDF에 OCR 도구가 없으면 갱신을 중단하고 기존 결과를 유지합니다.

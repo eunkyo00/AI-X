@@ -14,7 +14,8 @@ ARTIFACTS = ["Role01/metadata.csv", "Role01/extracted_text.csv", "Role01/search_
 
 
 def run_step(script, *args):
-    subprocess.run([sys.executable, str(script), *map(str, args)], check=True)
+    subprocess.run([sys.executable, str(script), *map(str, args)], check=True,
+                   env=dict(os.environ, PYTHONUNBUFFERED="1"))
 
 
 def update(root=ROOT, runner=run_step):
@@ -30,12 +31,20 @@ def update(root=ROOT, runner=run_step):
             stage = Path(temporary)
             one, three = stage/'Role01', stage/'Role03'
             one.mkdir(); three.mkdir()
-            for name in ('paths.py', 'file_reload_code.py', 'extract_content.py', 'search_model.py'):
+            for name in ('paths.py', 'file_reload_code.py', 'extract_content.py', 'refresh_search.py'):
                 shutil.copy2(root/'Role01'/name, one/name)
             shutil.copy2(root/'Role03/file_db.py', three/'file_db.py')
             (one/'dataset').symlink_to(root/'Role01/dataset', target_is_directory=True)
+            if (root/'Role01/embedding_cache').is_dir():
+                (one/'embedding_cache').symlink_to(root/'Role01/embedding_cache', target_is_directory=True)
+            if (root/'data').is_dir():
+                (stage/'data').symlink_to(root/'data', target_is_directory=True)
             if (root/'Role01/metadata.csv').exists():
                 shutil.copy2(root/'Role01/metadata.csv', one/'metadata.csv')
+            for source, name in ((root/'Role01/extracted_text.csv', '.previous_extracted_text.csv'),
+                                 (root/'Role03/output/audit.csv', '.previous_audit.csv')):
+                if source.is_file():
+                    shutil.copy2(source, one/name)
             print('[1/4] 파일 목록과 메타데이터 갱신', flush=True)
             runner(one/'file_reload_code.py')
             print('[2/4] 전체 파일 본문 추출', flush=True)
@@ -50,7 +59,7 @@ def update(root=ROOT, runner=run_step):
             print('[3/4] DB와 파일 관계 갱신', flush=True)
             runner(three/'file_db.py', '--metadata', one/'metadata.csv', '--texts', one/'extracted_text.csv')
             print('[4/4] 검색 임베딩과 인덱스 갱신', flush=True)
-            runner(one/'search_model.py', '--build-index')
+            runner(one/'refresh_search.py', '--build-index')
             publish(root, stage)
             print('갱신 완료. 실행 중인 검색은 다음 검색부터 새 데이터를 사용합니다.', flush=True)
     finally:

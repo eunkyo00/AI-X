@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Context Search 웹 실행",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/serve_web.py",
+      "cwd": "${workspaceFolder}",
+      "args": ["--open-browser"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

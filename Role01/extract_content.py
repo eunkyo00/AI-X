@@ -2,11 +2,19 @@ from pathlib import Path
 from paths import BASE_DIR, resolve_path
 import pandas as pd
 import json
+import hashlib
+import os
+import shutil
+try:
+    import pytesseract
+except ImportError:
+    pytesseract = None
 
 import pymupdf
 from openpyxl import load_workbook
 from docx import Document
 from pptx import Presentation
+from PIL import Image
 
 # 1. 파일 경로 및 기본 설정
 METADATA_CSV=BASE_DIR / "metadata.csv"
@@ -20,6 +28,18 @@ MAX_TABLE_ROWS = 100
 
 # PDF는 우선 최대 100페이지까지만 추출
 MAX_PDF_PAGES = 100
+
+# Use PATH or an explicit override; retain the standard Windows installation.
+OCR_COMMAND = os.environ.get("TESSERACT_CMD") or shutil.which("tesseract")
+if not OCR_COMMAND and Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe").is_file():
+    OCR_COMMAND = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+if pytesseract is not None and OCR_COMMAND:
+    pytesseract.pytesseract.tesseract_cmd = OCR_COMMAND
+
+
+class OCRUnavailable(RuntimeError):
+    pass
+
 
 # 2. 공통 함수: 추출 텍스트 길이 제한
 def limit_text(text):
@@ -50,27 +70,76 @@ def extract_ipynb(file_path):
         if isinstance(source, list):
             source = "".join(source)
 
-        if not source.strip():
-            continue
+        # 코드 셀과 마크다운 셀의 원본 텍스트 추출
+        if source.strip():
+            if cell_type == "code":
+                texts.append(f"[코드 셀 {cell_num}]\n{source}")
 
+            elif cell_type == "markdown":
+                texts.append(f"[설명 셀 {cell_num}]\n{source}")
+
+        # 코드 셀의 실행 결과(outputs) 추출
         if cell_type == "code":
-            texts.append(f"[코드 셀 {cell_num}]\n{source}")
+            for output in cell.get("outputs", []):
+                output_type = output.get("output_type", "")
 
-        elif cell_type == "markdown":
-            texts.append(f"[설명 셀 {cell_num}]\n{source}")
+                # 일반 텍스트 출력 및 print() 결과
+                if output_type == "stream":
+                    output_text = output.get("text", [])
+                    if isinstance(output_text, list):
+                        output_text = "".join(output_text)
+
+                    if output_text.strip():
+                        texts.append(
+                            f"[실행 결과 셀 {cell_num}]\n{output_text}"
+                        )
+
+                # 실행 결과가 텍스트 또는 HTML 표로 저장된 경우
+                elif output_type in ("execute_result", "display_data"):
+                    data = output.get("data", {})
+
+                    # 일반 텍스트 표현이 있으면 우선 추출
+                    output_text = data.get("text/plain", [])
+                    if isinstance(output_text, list):
+                        output_text = "".join(output_text)
+
+                    if output_text.strip():
+                        texts.append(
+                            f"[실행 결과 셀 {cell_num}]\n{output_text}"
+                        )
+
+                    # text/plain이 없으면 HTML 표현을 추출
+                    elif "text/html" in data:
+                        html_text = data["text/html"]
+                        if isinstance(html_text, list):
+                            html_text = "".join(html_text)
+
+                        from bs4 import BeautifulSoup
+                        plain_text = BeautifulSoup(
+                            html_text, "html.parser"
+                        ).get_text(" ", strip=True)
+
+                        if plain_text:
+                            texts.append(
+                                f"[실행 결과 셀 {cell_num}]\n{plain_text}"
+                            )
 
     return "\n\n".join(texts)
 
 
-# 5. CSV 파일 읽기
+# 5. CSV, TSV 파일 읽기
 def extract_csv(file_path):
     last_error = None
+
+    # TSV는 탭, CSV는 쉼표로 구분
+    sep = "\t" if file_path.suffix.lower() == ".tsv" else ","
 
     for encoding in ["utf-8-sig", "cp949"]:
         try:
             df = pd.read_csv(
                 file_path,
                 encoding=encoding,
+                sep=sep,
                 nrows=MAX_TABLE_ROWS
             )
 
@@ -82,7 +151,7 @@ def extract_csv(file_path):
         except (UnicodeDecodeError, pd.errors.ParserError) as e:
             last_error = e
 
-    raise ValueError(f"CSV 읽기 실패: {last_error}")
+    raise ValueError(f"CSV/TSV 읽기 실패: {last_error}")
 
 # 6. XLSX 파일 읽기
 def extract_xlsx(file_path):
@@ -118,7 +187,7 @@ def extract_xlsx(file_path):
 
     return "\n".join(texts)
 
-# 7. PDF 파일 읽기
+# 7. PDF 파일 읽기 (OCR 지원)
 def extract_pdf(file_path):
     texts = []
 
@@ -128,9 +197,36 @@ def extract_pdf(file_path):
                 texts.append("[페이지 제한으로 일부 생략]")
                 break
 
-            texts.append(page.get_text())
+            # 일반 텍스트 추출
+            text = page.get_text()
 
-    return "\n".join(texts)
+            # 텍스트가 없으면 OCR 실행
+            if not text.strip():
+                if pytesseract is None or not OCR_COMMAND:
+                    raise OCRUnavailable("Tesseract와 kor/eng 언어 데이터가 필요합니다.")
+                print(f"  OCR 처리 중: {page_num + 1}페이지")
+
+                pix = page.get_pixmap(
+                    matrix=pymupdf.Matrix(2, 2),
+                    alpha=False
+                )
+
+                image = Image.frombytes(
+                    "RGB",
+                    (pix.width, pix.height),
+                    pix.samples
+                )
+
+                text = pytesseract.image_to_string(
+                    image,
+                    lang="kor+eng"
+                )
+
+            if text.strip():
+                texts.append(f"[페이지 {page_num + 1}]\n{text}")
+
+    return "\n\n".join(texts)
+
 
 # 8. DOCX 파일 읽기
 def extract_docx(file_path):
@@ -191,7 +287,7 @@ def extract_content(file_path):
         elif ext == ".ipynb":
             text = extract_ipynb(file_path)
 
-        elif ext == ".csv":
+        elif ext in {".csv", ".tsv"}:
             text = extract_csv(file_path)
 
         elif ext == ".xlsx":
@@ -235,6 +331,15 @@ if not required_columns.issubset(metadata.columns):
         f"현재 열: {list(metadata.columns)}"
     )
 
+# Reuse previous successful OCR only when the original file hash is unchanged.
+previous_texts, previous_audit = {}, {}
+for name, target in ((".previous_extracted_text.csv", previous_texts),
+                     (".previous_audit.csv", previous_audit)):
+    candidate = BASE_DIR / name
+    if candidate.is_file():
+        frame = pd.read_csv(candidate, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        target.update({row["file_id"]: row for row in frame.to_dict("records")})
+
 # 12. 각 파일의 내용 추출
 results = []
 
@@ -246,6 +351,14 @@ for _, row in metadata.iterrows():
     print(f"처리 중: {file_path.name}")
 
     text, status = extract_content(file_path)
+    if status.startswith("error: OCRUnavailable"):
+        old = previous_texts.get(str(file_id), {})
+        audit = previous_audit.get(str(file_id), {})
+        if (old.get("extraction_status") == "success"
+                and old.get("filename") == file_path.name
+                and audit.get("source_sha256") == hashlib.sha256(file_path.read_bytes()).hexdigest()):
+            text, status = old["extracted_text"], "success"
+            print("  원본 해시가 동일한 기존 OCR 결과 재사용")
 
     results.append({
         "file_id": file_id,

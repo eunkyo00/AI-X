@@ -1,0 +1,195 @@
+﻿query,relevant_files,file_id
+10겹 교차 검증 설명한 강의자료 찾아줘,Cross-Validation_Decoded.pdf,F001
+역전파랑 다층 퍼셉트론 설명한 강의자료 찾아줘,MLP(다층퍼셉트론)(강의).pdf,F002
+셀프 어텐션 설명한 트랜스포머 강의자료 찾아줘,Transformer_강의자료.pdf,F003
+지도학습이랑 비지도학습 설명한 머신러닝 자료 찾아줘,머신러닝(내용추가).pdf,F004
+경사하강법으로 선형회귀 설명한 자료 찾아줘,선형회귀_업데이트.pdf,F005
+과적합 방지까지 다룬 심층신경망 자료 찾아줘,심층신경망.pdf,F006
+전이학습으로 이미지 인식하는 자료 찾아줘,영상인식과 딥러닝.pdf,F007
+컨벌루션이랑 풀링 설명한 CNN 강의자료 찾아줘,제09장 컨벌루션 신경망(강의).pdf,F008
+RNN이랑 LSTM으로 시계열 예측한 자료 찾아줘,제11장 순환신경망(강의).pdf,F009
+케라스로 MNIST 모델 만드는 자료 찾아줘,케라스 라이브러리.pdf,F010
+퍼셉트론으로 XOR 문제 설명한 자료 찾아줘,퍼셉트론_추가.pdf,F011
+DAX랑 SMI로 그랜저 인과관계를 분석한 코드 찾아줘,time_series_analysis10_1.R,F013
+주가지수 공적분과 VECM을 분석한 코드 찾아줘,time_series_analysis11_1.R,F014
+리카티 방정식으로 정상상태 칼만 필터를 계산한 코드 찾아줘,time_series_analysis12_1.R,F015
+13주차 시계열 분석 코드 찾아줘,time_series_analysis13_1.R,F016
+프랑스 독감 데이터로 ARIMA와 VAR를 분석한 코드 찾아줘,time_series_analysis14_1.R,F017
+zoo 패키지로 날짜 시계열을 만든 코드 찾아줘,time_series_analysis2_1.R,F018
+rolling join으로 시계열 결측치를 채운 코드 찾아줘,time_series_analysis2_2.R,F019
+월별 분기별 집계와 STL 분해를 한 코드 찾아줘,time_series_analysis3_1.R,F020
+이동평균과 단순지수평활을 비교한 코드 찾아줘,time_series_analysis4_1.R,F021
+홀트 윈터스 예측과 잔차 검정을 한 코드 찾아줘,time_series_analysis5_1.R,F022
+나일강 데이터로 ARIMA 예측한 코드 찾아줘,time_series_analysis6_1.R,F023
+기온과 항공 승객 데이터로 SARIMA 분석한 코드 찾아줘,time_series_analysis7_1.R,F024
+주가지수 변동성을 GARCH로 예측한 코드 찾아줘,time_series_analysis9_1.R,F025
+CAC와 FTSE로 VAR 안정성을 확인한 10주차 실습 코드 찾아줘,week10.R,F026
+VAR와 그랜저 검정을 정리한 10주차 치팅용 코드 찾아줘,week10_cheating.R,F027
+공적분과 VECM을 정리한 11주차 치팅용 코드 찾아줘,week11_cheating.R,F028
+칼만 필터 상태 추정을 실습한 12주차 코드 찾아줘,week12.R,F029
+칼만 필터 계산을 정리한 12주차 치팅용 코드 찾아줘,week12_cheating.R,F030
+MA 모형을 칼만 필터로 추정한 13주차 실습 코드 찾아줘,week13.R,F031
+MA 모형 상태 업데이트를 정리한 13주차 치팅용 코드 찾아줘,week13_cheating.R,F032
+애플 매출을 SARIMA와 상태공간모형으로 예측한 실습 코드 찾아줘,week14_apple_forecast_analysis_2026.R,F033
+애플 매출 예측 오차를 비교한 두 번째 실습 코드 찾아줘,week14_apple_forecast_analysis_2026_1.R,F034
+애플 매출 예측 과정을 정리한 치팅용 코드 찾아줘,week14_apple_forecast_analysis_2026_cheating.R,F035
+zoo와 data.table로 시계열을 병합한 2주차 실습 코드 찾아줘,week2.R,F036
+시계열 결측치 보간을 정리한 2주차 치팅용 코드 찾아줘,week2_cheating.R,F037
+주 월 분기 단위로 시계열을 바꾼 3주차 실습 코드 찾아줘,week3.R,F038
+기간별 집계와 요일 가중치를 정리한 3주차 치팅용 코드 찾아줘,week3_cheating.R,F039
+이동평균과 지수평활을 비교한 4주차 실습 코드 찾아줘,week4.R,F040
+이동평균과 정상성 검정을 정리한 4주차 치팅용 코드 찾아줘,week4_cheating.R,F041
+홀트 윈터스로 계절성을 예측한 5주차 실습 코드 찾아줘,week5 (1).R,F042
+가법과 승법 계절성을 비교한 다른 5주차 코드 찾아줘,week5.R,F043
+홀트 윈터스 진단을 정리한 5주차 치팅용 코드 찾아줘,week5_cheating.R,F044
+임의 보행과 나일강 ARIMA를 실습한 6주차 코드 찾아줘,week6.R,F045
+임의 보행과 ARIMA 진단을 정리한 6주차 치팅용 코드 찾아줘,week6_cheating.R,F046
+기온과 항공 승객 SARIMA를 실습한 7주차 코드 찾아줘,week7.R,F047
+SARIMA 예측 과정을 정리한 7주차 치팅용 코드 찾아줘,week7_cheating.R,F048
+GARCH 분석을 정리한 9주차 치팅용 코드 찾아줘,week9_cheating.R,F049
+초음파 센서와 YOLO 결과로 음성을 재생하는 코드 찾아줘,message_hello (1).py,F050
+소켓으로 받은 YOLO 결과를 음성으로 알려주는 코드 찾아줘,pigpio.py,F051
+물체 이름을 한국어 음성으로 합성하는 코드 찾아줘,python3_voice_alert.py,F052
+카메라 화면과 텍스트를 같이 받는 서버 코드 찾아줘,rpi_gpio.py,F053
+라즈베리파이 YOLO 영상을 웹으로 보여주는 코드 찾아줘,stream_yolo.py,F054
+30센티 낙하를 감지하는 초기 음성 경고 코드 찾아줘,voice_alert.py,F055
+필터를 넣어 낙하 감지를 개선한 음성 경고 코드 찾아줘,voice_alert1.py,F056
+초음파 센서 거리를 터미널에 출력하는 테스트 코드 찾아줘,voice_test.py,F057
+사진 한 장으로 YOLO 객체 탐지를 시험한 노트북 찾아줘,YOLO(test) (1).ipynb,F058
+복도 영상을 가볍게 줄여 사람을 탐지한 노트북 찾아줘,YOLO(test)_picture(light_ver) (1).ipynb,F059
+교내 사진과 영상으로 YOLO 성능을 점검한 노트북 찾아줘,YOLO(test)_picture.ipynb,F060
+복도 시설물 14종을 처음 학습한 YOLO 노트북 찾아줘,yolo_learn.ipynb,F061
+미완성 데이터셋 일부로 YOLO를 학습한 노트북 찾아줘,yolo_learning2 (1).ipynb,F062
+다중라벨로 데이터를 나눠 최종 YOLO를 학습한 노트북 찾아줘,yolo_learning5 (1).ipynb,F063
+라즈베리파이에서 NCNN 모델을 실행하는 코드 찾아줘,yolo_open.py,F064
+파이 영상으로 시설물을 탐지해 결과를 돌려주는 스트리밍 코드 찾아줘,yolo_stream.py,F065
+높은 임계값을 쓰는 초기 YOLO 스트리밍 코드 찾아줘,yolo_stream_front.py,F066
+동아시아 불평등조약이 만들어진 과정 자료 찾아줘,19세기_후반_불평등조약체제의_성립_과정.pdf,F068
+강화도조약과 개항을 다룬 4주차 강의자료 찾아줘,4주차_강화도조약과 개항.pdf,F069
+강화도조약 내용을 간단히 정리한 자료 찾아줘,강화도조약과 개항.pdf,F070
+개항 뒤 제물포와 정동이 바뀐 내용 찾아줘,개항기 조선 서양과 만나다.pdf,F071
+근대 국민국가에서 왕권을 다룬 강의자료 찾아줘,근대 국민국가와 왕권.pdf,F072
+근대 국민국가와 왕권 요약 자료 찾아줘,근대 국민국가와 왕권_sum.pdf,F073
+19세기 후반 근대사 연표 찾아줘,근대사_연표_19세기 후반.pdf,F074
+난징조약부터 강화도조약까지 개항을 비교한 자료 찾아줘,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,F075
+동아시아 조공질서와 서양 열강을 다룬 1부 자료 찾아줘,서세동점 동아시아와 서양 열강 1.pdf,F076
+아편무역까지 다룬 서세동점 1부 강의 슬라이드 찾아줘,서세동점 동아시아와 서양 열강1_ppt.pdf,F077
+아편전쟁과 중국 개항을 다룬 서세동점 2부 자료 찾아줘,서세동점 동아시아와 서양 열강2.pdf,F078
+중국과 일본의 개항을 다룬 서세동점 2부 슬라이드 찾아줘,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,F079
+페리 함대와 일본 개항을 설명한 자료 찾아줘,일본의 개항과 미국.pdf,F080
+갑오개혁의 전개와 성과를 설명한 읽기자료 찾아줘,읽기자료_갑오개혁의 전개와 성과.pdf,F081
+갑오개혁의 한계를 설명한 읽기자료 찾아줘,읽기자료_갑오개혁의 한계.pdf,F082
+임오군란과 갑신정변을 같이 다룬 자료 찾아줘,임오군란과 갑신정변.pdf,F083
+청일전쟁과 갑오개혁 강의 슬라이드 찾아줘,청일전쟁과 갑오개혁_ppt.pdf,F084
+청일전쟁과 갑오개혁 요약 자료 찾아줘,청일전쟁과 갑오개혁_요약.pdf,F085
+유관순 사례로 인물사 연구방법을 설명한 자료 찾아줘,한국 근현대 인물사 연구방법론.pdf,F086
+식민지 근대화 논쟁을 다룬 자료 찾아줘,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,F087
+대한제국 한성 도시개조사업 자료 찾아줘,한성도시개조사업.pdf,F088
+통리기무아문 같은 개혁기구의 성공 조건 자료 찾아줘,행정개혁기구의_성공_조건.pdf,F089
+일본 군의관을 통해 식민지 조선 의료를 살펴본 자료 찾아줘,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,F090
+개항 뒤 들어온 서양 문물 강의 슬라이드 찾아줘,근대 서양 문물의 도입_ppt.pdf,F091
+근대 법과 제도가 이식된 과정의 강의 슬라이드 찾아줘,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,F092
+세균설과 근대 보건 위생 강의 슬라이드 찾아줘,세균설과 근대의 보건_위생_ppt.pdf,F093
+해방 뒤 제주 정치와 4.3을 다룬 강의자료 찾아줘,해방전후의 한국 정치와 사회_제주.pdf,F094
+파독 광부와 간호사 자료 찾아줘,해외 인력 송출의 역사와 파독 광부 간호사.pdf,F095
+제주 4.3 사건 날짜별 연표 찾아줘,4.3history.pdf,F097
+서양 문물이 일상생활을 바꾼 읽기자료 찾아줘,근대 서양 문물의 도입과 일상생활.pdf,F098
+근대 법과 제도 이식 과정을 요약한 자료 찾아줘,근대의 법과 제도는 어떻게 이식되었는가.pdf,F099
+메이지 일본에서 근대 위생이 생긴 과정 자료 찾아줘,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,F100
+세균설과 식민지 위생경찰 필기노트 찾아줘,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,F101
+유관순이 국민 영웅으로 재현된 과정 자료 찾아줘,유관순의 발굴과 재현.pdf,F102
+유관순 표상과 기억의 정치학 필기노트 찾아줘,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,F103
+제주 4.3의 진실과 역사적 의미 읽기자료 찾아줘,제주 4·3의 진실과 역사적 의미_박찬식.pdf,F104
+베트남전에 간 한국 기술자의 경험 자료 찾아줘,파월기술자의 전쟁경험.pdf,F105
+한국전쟁 때 부산 피난학교를 연구한 자료 찾아줘,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,F106
+영화 국제시장으로 한국 현대사를 설명한 자료 찾아줘,한국현대사와 영화 ‘국제시장＇.pdf,F107
+해방 전 제주 사회와 경제를 다룬 자료 찾아줘,해방이전 제주의 사회와 경제_양정필.pdf,F108
+관계형 데이터베이스와 SQL 기초 자료 찾아줘,README.md,F109
+도시별 공항 정보를 조회하는 SQL 과제 찾아줘,assignment.md,F110
+코카콜라 매출총이익을 계산하는 엑셀 파일 찾아줘,CocaColaCo.xlsx,F111
+이름과 나이가 들어 있는 JSON 예제 찾아줘,PersonsData.json,F112
+엑셀 수식과 NoSQL 기초 자료 찾아줘,README.md,F113
+트윗 내용이 들어 있는 JSON 데이터 찾아줘,TwitterData.json,F114
+코카콜라 매출총이익 계산 과제 안내 찾아줘,assignment.md,F115
+파이썬 판다스로 데이터를 다루는 입문 자료 찾아줘,README.md,F116
+코로나 전파와 논문 데이터를 분석하는 과제 안내 찾아줘,assignment.md,F117
+나라별 코로나 확산을 분석한 노트북 찾아줘,notebook-covidspread.ipynb,F118
+코로나 논문 초록을 분석한 노트북 찾아줘,notebook-papers.ipynb,F119
+판다스 Series와 날짜 인덱스 연습 노트북 찾아줘,notebook.ipynb,F120
+결측값과 잘못된 데이터를 정리하는 전처리 자료 찾아줘,README.md,F121
+입력 폼의 오류를 확인하는 과제 노트북 찾아줘,assignment.ipynb,F122
+입력 폼 데이터를 정리하는 과제 안내 찾아줘,assignment.md,F123
+Iris 데이터 탐색과 정제를 연습하는 노트북 찾아줘,notebook.ipynb,F124
+데이터 처리 단원 전체 목차 찾아줘,README.md,F125
+조류 수량을 여러 그래프로 비교하는 강의자료 찾아줘,README.md,F126
+새 특징을 그래프로 설명하는 과제 안내 찾아줘,assignment.md,F127
+조류 수량 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,F128
+조류 날개폭과 수량을 그린 실습 풀이 찾아줘,notebook.ipynb,F129
+히스토그램으로 조류 분포를 보는 강의자료 찾아줘,README.md,F130
+히스토그램 다섯 개를 만드는 과제 안내 찾아줘,assignment.md,F131
+조류 분포 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,F132
+조류 몸무게 히스토그램 실습 풀이 찾아줘,notebook.ipynb,F133
+버섯 비율을 원형 도넛 와플 차트로 그리는 자료 찾아줘,README.md,F134
+원형 도넛 와플 차트를 만드는 과제 안내 찾아줘,assignment.md,F135
+버섯 비율 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,F136
+식용 버섯 비율 차트 실습 풀이 찾아줘,notebook.ipynb,F137
+꿀 생산량과 가격 관계를 시각화하는 강의자료 찾아줘,README.md,F138
+꿀 생산 데이터로 세 가지 차트를 만드는 과제 찾아줘,assignment.md,F139
+꿀 생산 관계 시각화의 비어 있는 시작 노트북 찾아줘,notebook.ipynb,F140
+꿀 가격과 생산량을 비교한 실습 풀이 찾아줘,notebook.ipynb,F141
+오해 없이 보기 좋은 차트를 만드는 방법 찾아줘,README.md,F142
+사람 관계를 네트워크로 그리는 과제 안내 찾아줘,assignment.md,F143
+과목 점수 상관관계를 히트맵으로 그린 노트북 찾아줘,correlation-analysis.ipynb,F144
+편지 관계 시각화 풀이 프로젝트 실행 방법 찾아줘,README.md,F145
+편지 관계 시각화 풀이에 쓰는 JSON 데이터 찾아줘,letters.json,F146
+편지 관계 시각화 시작 프로젝트 실행 방법 찾아줘,README.md,F147
+편지 관계 시각화 시작용 JSON 데이터 찾아줘,letters.json,F148
+데이터 시각화 단원 전체 목차 찾아줘,README.md,F149
+나라별 코로나 누적 확진자 데이터 찾아줘,time_series_covid19_confirmed_global.csv,F150
+나라별 코로나 누적 사망자 데이터 찾아줘,time_series_covid19_deaths_global.csv,F151
+나라별 코로나 누적 회복자 데이터 찾아줘,time_series_covid19_recovered_global.csv,F152
+야구 선수 키와 몸무게가 들어 있는 데이터 찾아줘,SOCR_MLB.tsv,F153
+나라별 ISO와 FIPS 코드 조회표 찾아줘,UID_ISO_FIPS_LookUp_Table.csv,F154
+새 종류와 날개폭이 들어 있는 데이터 찾아줘,birds.csv,F155
+당뇨병 특성과 목표값이 들어 있는 데이터 찾아줘,diabetes.tsv,F156
+이메일 단어 출현 횟수 데이터 찾아줘,emails.csv,F157
+반려동물 응답 오류를 확인하는 입력 폼 데이터 찾아줘,form.csv,F158
+미국 주별 꿀 생산량과 가격 데이터 찾아줘,honey.csv,F159
+식용 여부와 버섯 특징이 들어 있는 데이터 찾아줘,mushrooms.csv,F160
+택시 승하차와 요금이 들어 있는 운행 데이터 찾아줘,taxi.csv,F161
+시계열 13주차 코드 찾아줘,time_series_analysis13_1.R;week13.R;week13_cheating.R,F016;F031;F032
+시계열 10주차 코드 찾아줘,week10.R;week10_cheating.R,F026;F027
+시계열 11주차 코드 찾아줘,week11_cheating.R,F028
+시계열 12주차 코드 찾아줘,week12.R;week12_cheating.R,F029;F030
+시계열 14주차 코드 찾아줘,week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026_cheating.R,F033;F034;F035
+시계열 2주차 코드 찾아줘,week2.R;week2_cheating.R,F036;F037
+시계열 3주차 코드 찾아줘,week3.R;week3_cheating.R,F038;F039
+시계열 4주차 코드 찾아줘,week4.R;week4_cheating.R,F040;F041
+시계열 5주차 코드 찾아줘,week5 (1).R;week5.R;week5_cheating.R,F042;F043;F044
+시계열 6주차 코드 찾아줘,week6.R;week6_cheating.R,F045;F046
+시계열 7주차 코드 찾아줘,week7.R;week7_cheating.R,F047;F048
+시계열 9주차 코드 찾아줘,week9_cheating.R,F049
+근현대사 4주차 강의자료 찾아줘,4주차_강화도조약과 개항.pdf,F069
+4월달에 진행한 딥러닝 파일 찾아줘,Cross-Validation_Decoded.pdf;MLP(다층퍼셉트론)(강의).pdf;케라스 라이브러리.pdf;퍼셉트론_추가.pdf,F001;F002;F010;F011
+6월달에 진행한 딥러닝 파일 찾아줘,Transformer_강의자료.pdf;제11장 순환신경망(강의).pdf,F003;F009
+3월달에 진행한 딥러닝 파일 찾아줘,머신러닝(내용추가).pdf;선형회귀_업데이트.pdf,F004;F005
+5월달에 진행한 딥러닝 파일 찾아줘,심층신경망.pdf;영상인식과 딥러닝.pdf;제09장 컨벌루션 신경망(강의).pdf,F006;F007;F008
+5월달에 진행한 시계열 파일 찾아줘,time_series_analysis10_1.R;time_series_analysis11_1.R;time_series_analysis12_1.R;time_series_analysis13_1.R,F013;F014;F015;F016
+6월달에 진행한 시계열 파일 찾아줘,time_series_analysis14_1.R;time_series_analysis9_1.R;week10.R;week10_cheating.R;week11_cheating.R;week12.R;week12_cheating.R;week13.R;week13_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026_cheating.R;week9_cheating.R,F017;F025;F026;F027;F028;F029;F030;F031;F032;F033;F034;F035;F049
+3월달에 진행한 시계열 파일 찾아줘,time_series_analysis2_1.R;time_series_analysis2_2.R;time_series_analysis4_1.R,F018;F019;F021
+4월달에 진행한 시계열 파일 찾아줘,time_series_analysis3_1.R;time_series_analysis5_1.R;time_series_analysis6_1.R;time_series_analysis7_1.R;week2.R;week2_cheating.R;week3.R;week3_cheating.R;week4.R;week4_cheating.R;week5 (1).R;week5.R;week5_cheating.R;week6.R;week6_cheating.R;week7.R;week7_cheating.R,F020;F022;F023;F024;F036;F037;F038;F039;F040;F041;F042;F043;F044;F045;F046;F047;F048
+9월달에 진행한 캡스톤 파일 찾아줘,message_hello (1).py;pigpio.py;python3_voice_alert.py;rpi_gpio.py;stream_yolo.py;voice_alert.py;voice_alert1.py;voice_test.py;YOLO(test) (1).ipynb;YOLO(test)_picture(light_ver) (1).ipynb;YOLO(test)_picture.ipynb;yolo_learn.ipynb;yolo_learning2 (1).ipynb;yolo_learning5 (1).ipynb;yolo_open.py;yolo_stream.py;yolo_stream_front.py,F050;F051;F052;F053;F054;F055;F056;F057;F058;F059;F060;F061;F062;F063;F064;F065;F066
+9월달에 진행한 근현대사 파일 찾아줘,19세기_후반_불평등조약체제의_성립_과정.pdf;4주차_강화도조약과 개항.pdf;강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;근대 국민국가와 왕권.pdf;근대 국민국가와 왕권_sum.pdf;근대사_연표_19세기 후반.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;서세동점 동아시아와 서양 열강 1.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;일본의 개항과 미국.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;읽기자료_갑오개혁의 한계.pdf;임오군란과 갑신정변.pdf;청일전쟁과 갑오개혁_ppt.pdf;청일전쟁과 갑오개혁_요약.pdf;한국 근현대 인물사 연구방법론.pdf;한국의 식민지 근대는 어떠한 성격의 사회였나.pdf;한성도시개조사업.pdf;행정개혁기구의_성공_조건.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;근대 서양 문물의 도입_ppt.pdf;근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;세균설과 근대의 보건_위생_ppt.pdf;해방전후의 한국 정치와 사회_제주.pdf;해외 인력 송출의 역사와 파독 광부 간호사.pdf;4.3history.pdf;근대 서양 문물의 도입과 일상생활.pdf;근대의 법과 제도는 어떻게 이식되었는가.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;제주 4·3의 진실과 역사적 의미_박찬식.pdf;파월기술자의 전쟁경험.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;한국현대사와 영화 ‘국제시장＇.pdf;해방이전 제주의 사회와 경제_양정필.pdf,F068;F069;F070;F071;F072;F073;F074;F075;F076;F077;F078;F079;F080;F081;F082;F083;F084;F085;F086;F087;F088;F089;F090;F091;F092;F093;F094;F095;F097;F098;F099;F100;F101;F102;F103;F104;F105;F106;F107;F108
+10월달에 진행한 데이터사이언스 파일 찾아줘,README.md;assignment.md;CocaColaCo.xlsx;PersonsData.json;README.md;TwitterData.json;assignment.md;README.md;assignment.md;notebook-covidspread.ipynb;notebook-papers.ipynb;notebook.ipynb;README.md;assignment.ipynb;assignment.md;notebook.ipynb;README.md;README.md;assignment.md;notebook.ipynb;notebook.ipynb;README.md;assignment.md;notebook.ipynb;notebook.ipynb;README.md;assignment.md;notebook.ipynb;notebook.ipynb;README.md;assignment.md;notebook.ipynb;notebook.ipynb;README.md;assignment.md;correlation-analysis.ipynb;README.md;letters.json;README.md;letters.json;README.md;time_series_covid19_confirmed_global.csv;time_series_covid19_deaths_global.csv;time_series_covid19_recovered_global.csv;SOCR_MLB.tsv;UID_ISO_FIPS_LookUp_Table.csv;birds.csv;diabetes.tsv;emails.csv;form.csv;honey.csv;mushrooms.csv;taxi.csv,F109;F110;F111;F112;F113;F114;F115;F116;F117;F118;F119;F120;F121;F122;F123;F124;F125;F126;F127;F128;F129;F130;F131;F132;F133;F134;F135;F136;F137;F138;F139;F140;F141;F142;F143;F144;F145;F146;F147;F148;F149;F150;F151;F152;F153;F154;F155;F156;F157;F158;F159;F160;F161
+4월달에 수정한 딥러닝 강의자료 찾아줘,Cross-Validation_Decoded.pdf;MLP(다층퍼셉트론)(강의).pdf;케라스 라이브러리.pdf;퍼셉트론_추가.pdf,F001;F002;F010;F011
+6월달에 수정한 딥러닝 강의자료 찾아줘,Transformer_강의자료.pdf;제11장 순환신경망(강의).pdf,F003;F009
+3월달에 수정한 딥러닝 강의자료 찾아줘,머신러닝(내용추가).pdf;선형회귀_업데이트.pdf,F004;F005
+5월달에 수정한 딥러닝 강의자료 찾아줘,심층신경망.pdf;영상인식과 딥러닝.pdf;제09장 컨벌루션 신경망(강의).pdf,F006;F007;F008
+5월달에 수정한 시계열 코드 찾아줘,time_series_analysis10_1.R;time_series_analysis11_1.R;time_series_analysis12_1.R;time_series_analysis13_1.R,F013;F014;F015;F016
+3월달에 수정한 시계열 코드 찾아줘,time_series_analysis2_1.R;time_series_analysis2_2.R;time_series_analysis4_1.R,F018;F019;F021
+10월달에 수정한 데이터사이언스 강의자료 찾아줘,README.md;README.md;README.md;README.md;README.md;README.md;README.md;README.md;README.md;README.md;README.md,F109;F113;F116;F121;F125;F126;F130;F134;F138;F142;F149
+10월달에 수정한 데이터사이언스 과제 찾아줘,assignment.md;assignment.md;assignment.md;assignment.ipynb;assignment.md;assignment.md;assignment.md;assignment.md;assignment.md;assignment.md,F110;F115;F117;F122;F123;F127;F131;F135;F139;F143
+10월달에 수정한 데이터사이언스 자료 찾아줘,README.md;README.md,F145;F147
+10월달에 추가한 딥러닝 파일 찾아줘,Cross-Validation_Decoded.pdf;MLP(다층퍼셉트론)(강의).pdf,F001;F002
+10월달에 추가한 시계열 파일 찾아줘,time_series_analysis10_1.R;time_series_analysis11_1.R;time_series_analysis12_1.R;time_series_analysis13_1.R;time_series_analysis14_1.R;time_series_analysis2_1.R;time_series_analysis2_2.R;time_series_analysis3_1.R;time_series_analysis4_1.R;time_series_analysis5_1.R;time_series_analysis6_1.R;time_series_analysis7_1.R;time_series_analysis9_1.R;week10.R;week10_cheating.R;week11_cheating.R;week12.R;week12_cheating.R;week13.R;week13_cheating.R;week14_apple_forecast_analysis_2026.R;week14_apple_forecast_analysis_2026_1.R;week14_apple_forecast_analysis_2026_cheating.R;week2.R;week2_cheating.R;week3.R;week3_cheating.R;week4.R;week4_cheating.R;week5 (1).R;week5.R;week5_cheating.R;week6.R;week6_cheating.R;week7.R;week7_cheating.R;week9_cheating.R,F013;F014;F015;F016;F017;F018;F019;F020;F021;F022;F023;F024;F025;F026;F027;F028;F029;F030;F031;F032;F033;F034;F035;F036;F037;F038;F039;F040;F041;F042;F043;F044;F045;F046;F047;F048;F049
+10월달에 추가한 근현대사 파일 찾아줘,19세기_후반_불평등조약체제의_성립_과정.pdf;4주차_강화도조약과 개항.pdf;강화도조약과 개항.pdf;개항기 조선 서양과 만나다.pdf;근대 국민국가와 왕권.pdf;근대 국민국가와 왕권_sum.pdf;근대사_연표_19세기 후반.pdf;동아시아의 개항 난징조약에서 강화도 조약까지.pdf;서세동점 동아시아와 서양 열강 1.pdf;서세동점 동아시아와 서양 열강1_ppt.pdf;서세동점 동아시아와 서양 열강2.pdf;서세동점 동아시아와 서양 열강2＿ppt_2026.pdf;일본의 개항과 미국.pdf;읽기자료_갑오개혁의 전개와 성과.pdf;읽기자료_갑오개혁의 한계.pdf;임오군란과 갑신정변.pdf;청일전쟁과 갑오개혁_ppt.pdf;청일전쟁과 갑오개혁_요약.pdf;한국 근현대 인물사 연구방법론.pdf;한국의 식민지 근대는 어떠한 성격의 사회였나.pdf;한성도시개조사업.pdf;행정개혁기구의_성공_조건.pdf;후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf;근대 서양 문물의 도입_ppt.pdf;근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf;세균설과 근대의 보건_위생_ppt.pdf;해방전후의 한국 정치와 사회_제주.pdf;해외 인력 송출의 역사와 파독 광부 간호사.pdf;4.3history.pdf;근대 서양 문물의 도입과 일상생활.pdf;근대의 법과 제도는 어떻게 이식되었는가.pdf;메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf;세균설과 식민지 근대의 보건ㆍ위생_노트.pdf;유관순의 발굴과 재현.pdf;유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf;제주 4·3의 진실과 역사적 의미_박찬식.pdf;파월기술자의 전쟁경험.pdf;한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf;한국현대사와 영화 ‘국제시장＇.pdf;해방이전 제주의 사회와 경제_양정필.pdf,F068;F069;F070;F071;F072;F073;F074;F075;F076;F077;F078;F079;F080;F081;F082;F083;F084;F085;F086;F087;F088;F089;F090;F091;F092;F093;F094;F095;F097;F098;F099;F100;F101;F102;F103;F104;F105;F106;F107;F108
