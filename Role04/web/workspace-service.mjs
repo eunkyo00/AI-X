@@ -28,6 +28,9 @@ export function normalizeFile(raw, index = 0, source = 'api') {
     size: typeof raw.size === 'number' ? formatSize(raw.size) : text(raw.size, '알 수 없음'),
     task: text(raw.task_id || raw.task) || null, taskName: text(raw.task_name),
     rank: Number.isFinite(raw.rank) && raw.rank > 0 ? raw.rank : index + 1,
+    contentAvailable: typeof (raw.content_available ?? raw.contentAvailable)==='boolean' ? (raw.content_available ?? raw.contentAvailable) : null,
+    relationsAvailable: typeof (raw.relations_available ?? raw.relationsAvailable)==='boolean' ? (raw.relations_available ?? raw.relationsAvailable) : null,
+    score: Number.isFinite(raw.score) ? raw.score : null, excerpt: text(raw.excerpt),
     summary: text(raw.summary, '제공된 요약이 없습니다.'),
     evidence: Array.isArray(raw.evidence) ? raw.evidence.filter(item => item && typeof item.text === 'string').map(item => ({text: item.text, certainty: ['confirmed','inferred'].includes(item.certainty) ? item.certainty : 'unknown'})) : [],
     indexStatus: text(raw.index_status, 'unknown'),
@@ -118,7 +121,11 @@ export class ApiWorkspace {
     const timer = setTimeout(abort,timeoutMs);
     try {
       const response = await this.fetcher(`${this.base}${path}`, {...options,signal:controller.signal,credentials:'omit',redirect:'error'});
-      if (!response.ok) throw Error(response.status === 404 ? '파일 또는 API 경로를 찾지 못했습니다.' : `서버 요청 실패 (${response.status})`);
+      if (!response.ok) {
+        let message;
+        try {const body=await response.json();if(typeof body.error==='string')message=body.error;}catch{}
+        throw Error(message || (response.status === 404 ? '파일 또는 API 경로를 찾지 못했습니다.' : `서버 요청 실패 (${response.status})`));
+      }
       return blob ? await response.blob() : await response.json();
     } catch(error) {
       if (controller.signal.aborted) {

@@ -1,18 +1,12 @@
 # Context Search 웹 개발
 
-사용자 요청에 따라 GUI를 브라우저 기반으로 전환했다. 현재 파일 등록·보관·열기·API 연결 설정·사용성 기록까지 GUI를 확장했다. 실제 팀원 API는 아직 없으므로 실제 통합과 외부 사용자 평가는 미완료다. 최신 범위와 검증 상태는 [GUI 인수인계](gui-handoff.md), 연결 규격은 [API 계약 초안](api-contract.md)을 참고한다.
+사용자 요청에 따라 GUI를 브라우저 기반으로 전환했다. 현재 파일 등록·보관·열기·API 연결 설정·사용성 기록까지 GUI를 확장했다. 2026-10-29부터 Role01 검색 엔진을 내장 API와 연결했다. 실제 의미 검색은 검증했고, 원본 열기·등록·DB·외부 사용자 평가는 대기다. 최신 범위와 검증 상태는 [GUI 인수인계](gui-handoff.md), 연결 규격은 [API 계약 초안](api-contract.md)을 참고한다.
 
 ## 실행
 
-Mac에서는 프로젝트의 `Context Search 실행.command`를 더블클릭한다. 아래 터미널 명령도 사용할 수 있다.
+최신 설치·실행 명령과 Mac/Windows 안내는 [Role04 README](../README.md)를 따른다. 검색 모드에는 Python 가상환경·검색 패키지·데이터 준비가 필요하다.
 
-```bash
-cd AI-X/Role04
-python3 scripts/serve_web.py
-```
-
-브라우저에서 http://127.0.0.1:5173 을 연다. VS Code F5의 **Context Search 웹 실행**으로도 시작할 수 있다. 종료는 서버 터미널에서 Ctrl+C다.
-포트를 사용 중이면 `--port 5174`로 실행한다. 로컬 서버는 `web/` 폴더만 제공한다.
+예전 화면 전용 실행은 `python3 scripts/serve_web.py --demo`다. 검색 모드는 저장소 루트의 `.venv` Python으로 `Role04/scripts/serve_web.py`를 실행한다. 기본 주소는 `http://127.0.0.1:5173`, 종료는 Ctrl+C다. 포트가 사용 중이면 `--port 5175`를 추가한다.
 
 ## 구성
 
@@ -27,7 +21,7 @@ python3 scripts/serve_web.py
 - `web/search-service.mjs`: 비동기 MockSearchService, 요청 순서·취소·시간 초과를 관리하는 SearchController
 - `scripts/serve_web.py`: Python 표준 라이브러리 로컬 웹 서버
 
-프런트엔드는 HTML·CSS·JavaScript로 동작하며 Node 패키지 설치나 빌드가 필요 없다. Python은 현재 정적 화면 제공에만 사용한다. 1번·3번 팀원의 Python 서비스와 연결할 때 API 서버를 추가할 수 있다.
+프런트엔드는 HTML·CSS·JavaScript로 동작하며 Node 패키지 설치나 빌드가 필요 없다. Python 서버는 정적 화면과 `/api/health`, `/api/files`, `/api/search`를 제공한다. `scripts/search_api.py`가 Role01 엔진 응답을 GUI 형식으로 변환한다. 엔진은 검증한 커밋에서 `scripts/prepare_search.py`로 준비하며 원본은 수정하지 않는다.
 
 ## 현재 확인할 동작
 

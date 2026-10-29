@@ -4,25 +4,62 @@
 
 ## 팀원 실행 방법
 
-현재 구현은 **main 브랜치의 Role04 폴더**에 있습니다. 저장소를 받은 뒤 최신 main을 사용하세요. 웹 실행에는 Python 표준 라이브러리만 사용하며 npm이나 PySide6 설치가 필요 없습니다.
+설치 후 실행 파일은 **[GUI 실행 폴더](GUI%20실행/README.md)**에 모여 있습니다.
+
+기존 GUI에 `Role01/search_engine.py` 기반 의미 검색 API를 연결했습니다. 서버와 GUI는 같은 주소에서 실행되고 기본 모드는 실제 검색입니다.
+
+공유 브랜치: **`main`**. 기존 작업 폴더와 섞이지 않도록 새 폴더에 받는 방법입니다. Git과 Python 3.13을 준비하세요. macOS에서 실행을 검증했으며 Windows 명령과 실행 파일도 제공합니다. Windows 실제 실행은 아직 미검증입니다.
+
+### 1. 코드 받기 · 공통
 
 ```bash
-# 저장소 루트에서
-git fetch origin
-git switch main
-git pull --ff-only origin main
-cd Role04
-python3 scripts/serve_web.py --open-browser
+git clone --branch main https://github.com/eunkyo00/AI-X.git AI-X-GUI
+cd AI-X-GUI
+git fetch origin main
 ```
 
-브라우저가 자동으로 열리지 않으면 [http://127.0.0.1:5173](http://127.0.0.1:5173)을 여세요. 실행하는 동안 터미널을 유지하고 종료는 Ctrl+C입니다.
+GitHub 저장소 접근 권한이 필요합니다. ZIP 다운로드는 Git 이력이 없어 데이터 준비 스크립트를 실행할 수 없으므로 위 `git clone`을 사용하세요.
 
-- macOS: `Role04/Context Search 실행.command` 더블클릭으로도 실행합니다.
-- Windows: `py scripts/serve_web.py --open-browser`를 사용합니다.
-- 포트 사용 중: `--port 5174`를 추가하고 5174 주소로 접속합니다.
-- VS Code: Role04 폴더를 열고 F5의 **Context Search 웹 실행**을 선택합니다.
+### 2. 설치·첫 실행 · macOS/Linux
 
-Python 3.10 이상이 필요합니다. 공유 저장소는 팀원이 접근할 수 있는 GitHub 계정으로 받아야 합니다. `127.0.0.1`은 각자 컴퓨터의 주소이며, GitHub에 올렸다고 웹사이트가 공개 배포되는 것은 아닙니다.
+저장소 루트(`AI-X-GUI`)에서 실행합니다.
+
+```bash
+python3.13 -m venv .venv
+.venv/bin/python -m pip install -r Role04/requirements-search.txt
+.venv/bin/python Role04/scripts/prepare_search.py
+.venv/bin/python Role04/scripts/serve_web.py --open-browser
+```
+
+### 2. 설치·첫 실행 · Windows PowerShell
+
+```powershell
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r Role04/requirements-search.txt
+.\.venv\Scripts\python.exe Role04/scripts/prepare_search.py
+.\.venv\Scripts\python.exe Role04/scripts/serve_web.py --open-browser
+```
+
+모델과 패키지는 첫 준비 시 인터넷으로 다운로드됩니다. 준비 완료까지 기다리면 브라우저가 열립니다. 이후 각자의 로컬 캐시를 재사용합니다. 코드·질문·문서는 외부 추론 API로 전송하지 않으며 검색은 자기 컴퓨터에서 실행합니다. 모델 로더가 온라인 업데이트 여부를 확인할 수 있습니다. 모델을 한 번 받은 뒤 오프라인 실행하려면 macOS/Linux에서 `HF_HUB_OFFLINE=1`을, PowerShell에서 `$env:HF_HUB_OFFLINE="1"`을 설정합니다.
+
+`prepare_search.py`는 검증한 main 커밋 `97a4cc8`의 엔진·CSV·임베딩을 `Role04/runtime/search/`에 복사합니다. 팀원 원본과 기존 로컬 작업을 변경하지 않습니다. 갱신 시에는 검증 후 스크립트의 커밋을 변경합니다. 런타임 데이터·모델은 Git에서 제외됩니다.
+
+기본 주소는 [http://127.0.0.1:5173](http://127.0.0.1:5173)입니다. 준비 완료 후 브라우저가 열리며 터미널을 유지하고 종료는 Ctrl+C입니다. `--port 5175`로 포트를 바꿀 수 있습니다.
+
+- macOS: 준비 후 `Role04/GUI 실행/Context Search 실행.command`를 더블클릭합니다. 저장소 `.venv`를 우선 사용합니다.
+- Windows: 준비 후 `Role04/GUI 실행/Context Search 실행.cmd`를 더블클릭합니다.
+- 모델 없이 예전 예시·브라우저 보관 화면만 실행: `python3 Role04/scripts/serve_web.py --demo --open-browser`.
+- 다른 API 서버 사용: 설정에서 데이터 모드와 API 주소를 변경합니다. 내장 API는 동일 출처 전용입니다.
+
+### 현재 통합 범위
+
+실제 검색·파일 목록·메타데이터·유사도 점수·검색 본문 발췌를 제공합니다. 검색 엔진의 결과 순서를 유지하고 점수는 정확도 백분율로 변환하지 않습니다.
+
+현재 대상 데이터는 **158개 파일**이며 검색 예시는 `SARIMA 예측 코드`, `교차 검증 방법을 설명한 강의자료`, `갑오개혁의 전개와 성과`입니다.
+
+현재 API는 새 파일 등록·재인덱싱·원본 파일 열기·저장 폴더 열기·관련 파일 관계를 제공하지 않습니다. 브라우저 보관 모드는 별도로 사용할 수 있습니다. 내용이 있는 검색어에는 관련성이 낮아도 최대 5개가 반환될 수 있습니다.
+
+검색 엔진 준비 후에는 `/api/health`, `/api/files`, `POST /api/search`를 제공합니다. [실행 검증 기록](docs/search-engine-validation.md)을 참고하세요.
 
 ## 데이터 모드
 
@@ -30,7 +67,7 @@ Python 3.10 이상이 필요합니다. 공유 저장소는 팀원이 접근할 �
 | --- | --- |
 | 예시 시나리오 | R/Python/발표 예시 결과, 근거와 관계, 정상·0건·오류·지연 상태 확인 |
 | 브라우저 보관 | 선택한 실제 파일을 IndexedDB에 보관하고 이름·상대 경로로 검색. 코드·텍스트는 실행 없이 읽기 전용 보기 |
-| 팀원 API | 설정한 서버에 등록·검색·내용 요청. 서버 부재 시 오류 표시. 실제 서비스 통합 검증은 대기 |
+| 팀원 API | 내장 서버에서 실제 의미 검색·파일 목록 조회. 외부 서버는 제공 기능에 따라 등록·내용 요청 가능 |
 
 파일·검색 기록·즐겨찾기는 각자 브라우저에 저장되며 GitHub에 올라가거나 팀원끼리 자동 공유되지 않습니다. 로컬 보관 완료와 AI 인덱싱 완료를 구분합니다.
 
@@ -42,7 +79,7 @@ Python 3.10 이상이 필요합니다. 공유 저장소는 팀원이 접근할 �
 - API 모드·상태/계약 점검·응답 정규화·오래된 검색 응답 차단
 - 실제 관찰과 개발 점검을 구분한 사용성 기록·JSON 내보내기
 
-실제 검색·DB 연결, OS 저장 폴더 열기, 형식별/브라우저별 확인, 외부 사용자 평가는 아직 대기 상태입니다. [인수인계 및 검증 상태](docs/gui-handoff.md)를 확인하세요.
+Role01 검색 엔진 연결을 완료했습니다. DB 연결, 원본·OS 저장 폴더 열기, 외부 사용자 평가는 대기 상태입니다. [인수인계 및 검증 상태](docs/gui-handoff.md)를 확인하세요.
 
 ## 구조
 
@@ -52,18 +89,19 @@ Role04/
 ├── scripts/serve_web.py     # 로컬 서버
 ├── tests/                  # Node 내장 테스트와 검증용 파일
 ├── docs/                   # 실행·API·사용성 인수인계
-└── Context Search 실행.command
+└── GUI 실행/               # Mac·Windows 실행 파일과 실행 안내
 ```
 
 ## 테스트
 
-Node.js 20 이상에서 실행합니다. 별도 npm 패키지는 필요 없습니다.
+프런트엔드는 Node.js 20 이상에서 실행합니다. 별도 npm 패키지는 필요 없습니다. API 테스트는 검색 패키지가 설치된 가상환경에서 실행합니다.
 
 ```bash
 node --test tests/test_web_history.mjs tests/test_web_search.mjs tests/test_web_service.mjs tests/test_workspace_service.mjs
+../.venv/bin/python tests/test_search_api.py
 ```
 
-19개 자동 테스트와 브라우저 실제 파일 보관·검색·미리보기를 확인했습니다. 자동 테스트는 실제 팀원 API 통합이나 외부 사용자 평가를 대신하지 않습니다.
+프런트엔드 20개와 API 3개 자동 테스트가 통과했고, 실제 의미 검색·결과·발췌 표시를 브라우저에서 확인했습니다. 브라우저 보관 모드의 파일 보관·미리보기는 별도 기능입니다. 자동 테스트는 실제 팀원 API 통합이나 외부 사용자 평가를 대신하지 않습니다.
 
 ## 팀원 연결 문서
 

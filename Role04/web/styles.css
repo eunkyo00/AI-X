@@ -277,3 +277,10 @@ select:focus-visible { outline: 3px solid #7caec6; outline-offset: 2px; }
 .certainty.unknown { background:#f0f1ef; color:#9a9c91; }
 @media(max-width:900px) { .library-row { align-items:flex-start; flex-direction:column; gap:12px; } }
 @media(max-width:540px) { .workspace-page { padding:25px 18px; } .workspace-header h1 { font-size:26px; } .workspace-header { flex-wrap:wrap; } .upload-zone { padding:25px 15px; } .upload-zone strong { font-size:17px; } .settings-card { padding:18px; } .workspace-mode-bar { padding:10px 16px; } .registration-row { gap:10px; } }
+
+.result-excerpt { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.7; padding: 12px; background: #f5f8f8; border-radius: 8px; }
+
+.capability-note { color: #596f7a; font-size: 12px; line-height: 1.7; padding: 10px 12px; border: 1px solid #e0e8ec; border-radius: 8px; background: #f7fafb; margin: 0 0 16px; }
+.detail-panel h2, .detail-panel .detail-path { overflow-wrap: anywhere; min-width: 0; }
+.result-card-body { min-width: 0; }
+.result-rank { flex-shrink: 0; }
