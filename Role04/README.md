@@ -4,6 +4,8 @@
 
 ## 팀원 실행 방법
 
+설치 후 실행 파일은 **[GUI 실행 폴더](GUI%20실행/README.md)**에 모여 있습니다.
+
 기존 GUI에 `Role01/search_engine.py` 기반 의미 검색 API를 연결했습니다. 서버와 GUI는 같은 주소에서 실행되고 기본 모드는 실제 검색입니다.
 
 공유 브랜치: **`codex/gui-search-integration`**. 기존 작업 폴더와 섞이지 않도록 새 폴더에 받는 방법입니다. Git과 Python 3.13을 준비하세요. macOS에서 실행을 검증했으며 Windows 명령과 실행 파일도 제공합니다. Windows 실제 실행은 아직 미검증입니다.
@@ -44,8 +46,8 @@ py -3.13 -m venv .venv
 
 기본 주소는 [http://127.0.0.1:5173](http://127.0.0.1:5173)입니다. 준비 완료 후 브라우저가 열리며 터미널을 유지하고 종료는 Ctrl+C입니다. `--port 5175`로 포트를 바꿀 수 있습니다.
 
-- macOS: 준비 후 `Role04/Context Search 실행.command`를 더블클릭합니다. 저장소 `.venv`를 우선 사용합니다.
-- Windows: 준비 후 `Role04/Context Search 실행.cmd`를 더블클릭합니다.
+- macOS: 준비 후 `Role04/GUI 실행/Context Search 실행.command`를 더블클릭합니다. 저장소 `.venv`를 우선 사용합니다.
+- Windows: 준비 후 `Role04/GUI 실행/Context Search 실행.cmd`를 더블클릭합니다.
 - 모델 없이 예전 예시·브라우저 보관 화면만 실행: `python3 Role04/scripts/serve_web.py --demo --open-browser`.
 - 다른 API 서버 사용: 설정에서 데이터 모드와 API 주소를 변경합니다. 내장 API는 동일 출처 전용입니다.
 
@@ -87,7 +89,7 @@ Role04/
 ├── scripts/serve_web.py     # 로컬 서버
 ├── tests/                  # Node 내장 테스트와 검증용 파일
 ├── docs/                   # 실행·API·사용성 인수인계
-└── Context Search 실행.command
+└── GUI 실행/               # Mac·Windows 실행 파일과 실행 안내
 ```
 
 ## 테스트

@@ -1,5 +1,5 @@
 #!/bin/zsh
-cd -- "$(dirname -- "$0")" || exit 1
+cd -- "$(dirname -- "$0")/.." || exit 1
 if [[ -x ../.venv/bin/python ]]; then
   ../.venv/bin/python scripts/serve_web.py --open-browser
 elif command -v python3 >/dev/null 2>&1; then
