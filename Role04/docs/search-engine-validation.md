@@ -70,3 +70,14 @@ HF_HOME="$PWD/tmp/search-engine-validation/hf-cache" HF_HUB_OFFLINE=1 .venv/bin/
 - 브라우저 점검: SARIMA 검색 → 문서 필터로 0건 → 필터 초기화로 5건 복구 → 최신 수정순 정렬 → 추천순 복구 → 검색 근거 탭의 본문 발췌 확인.
 - 프런트엔드 20개 및 API 3개 회귀 테스트 통과. 외부 사용자 평가는 수행하지 않았다.
 - 캡처: `tmp/search-engine-validation/gui-usability-improved.png`.
+
+## 원본 파일 열기 연결 · 2026-10-29
+
+- 데이터 준비 스크립트에서 동일한 Git 커밋의 원본 158개를 준비한다. 파일 ID와 확장자로 런타임 원본을 저장하며 Git blob 해시 158개가 모두 일치함을 확인했다.
+- ID 기반 content API를 추가했고 미등록 ID·원본 누락·폴더 밖 심볼릭 링크 접근을 거절한다.
+- 서버에서 원본 존재 여부를 응답해 검색 결과의 열기를 활성화한다. 내 파일 목록에서도 같은 API로 연다.
+- R 코드 원본의 전체 미리보기와 브라우저 다운로드를 검증했고 다운로드 바이트가 원본과 일치했다.
+- 앱 내 브라우저의 PDF 기본 뷰어는 빈 화면이므로 PyMuPDF 페이지 렌더링 API를 추가했다. 실제 Cross-Validation_Decoded.pdf의 1/13, 2/13 페이지 표시와 다음 페이지 이동을 확인했다. 원본 다운로드는 별도로 유지한다.
+- API 테스트 5개 및 프런트엔드 테스트 20개 통과. pip check 통과.
+- 기존 설치자는 requirements-search.txt 설치와 prepare_search.py 실행 후 서버를 재시작한다.
+- 원본 PDF·코드 캡처는 tmp/search-engine-validation/original-pdf-preview.png 및 original-code-preview.png에 저장했다.

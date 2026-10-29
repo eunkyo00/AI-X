@@ -1,5 +1,9 @@
 """Prepare an unmodified, pinned Role01 engine and its data from local Git objects."""
+import csv
+import io
 import subprocess
+import unicodedata
+from search_api import original_path
 from pathlib import Path
 
 REVISION = '97a4cc8e6ac5889ede16ff21ec48eaf48a3d1cf6'
@@ -19,6 +23,18 @@ def main():
         destination = TARGET / name
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes(content)
+    tree = subprocess.check_output(['git', 'ls-tree', '-r', '-z', '--name-only', REVISION, 'Role01/dataset/files'], cwd=ROOT).decode().split('\0')
+    source_paths = {unicodedata.normalize('NFC', name): name for name in tree if name}
+    rows = list(csv.DictReader(io.StringIO(dict(contents)['metadata.csv'].decode('utf-8-sig'))))
+    for row in rows:
+        source = unicodedata.normalize('NFC', 'Role01/' + row['path'].replace('\\', '/'))
+        if source not in source_paths:
+            raise SystemExit(f'원본이 Git에 없습니다: {source}')
+        destination = original_path(TARGET, row['file_id'], row['filename'])
+        content = subprocess.check_output(['git', 'show', f'{REVISION}:{source_paths[source]}'], cwd=ROOT)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(content)
+    print(f'원본 파일 준비 완료: {len(rows)}개')
     (TARGET / 'SOURCE_COMMIT').write_text(REVISION + '\n')
     print(f'검색 엔진 준비 완료: {TARGET}')
 
