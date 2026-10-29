@@ -219,9 +219,9 @@ def analyze_time_query(query, now=None):
     """
     now = pd.Timestamp.now().normalize() if now is None else pd.Timestamp(now).normalize()
     text = str(query).strip()
-    field = "created_at" if re.search(r"생성|만든|작성|저장한|생긴", text) else "modified_at"
+    field = "created_at" if re.search(r"생성|만든|작성|저장한|생긴|추가한|추가된", text) else "modified_at"
     # 수정과 생성이 동시에 나오면 어느 날짜 기준인지 모호하므로 제외한다.
-    if re.search(r"생성|만든|작성|저장한|생긴", text) and re.search(r"수정|변경|편집|업데이트", text):
+    if re.search(r"생성|만든|작성|저장한|생긴|추가한|추가된", text) and re.search(r"수정|변경|편집|업데이트", text):
         raise ValueError("생성일과 수정일이 동시에 지정됨")
 
     match = None
@@ -300,7 +300,11 @@ def analyze_time_query(query, now=None):
         return None
 
     semantic_query = (text[:match.start()] + " " + text[match.end():]).strip()
-    semantic_query = re.sub(r"생성된|생성한|만든|작성한|수정된|수정한|변경된|편집한|업데이트한|저장한|동안|이내", " ", semantic_query)
+    semantic_query = re.sub(
+        r"생성된|생성한|만든|작성한|추가한|추가된|수정된|수정한|변경된|편집한|업데이트한|저장한|동안|이내",
+        " ",
+    semantic_query
+    )
     semantic_query = re.sub(r"^\s*(?:에|의|동안|부터|까지|중에|내에)\s*", "", semantic_query)
     semantic_query = re.sub(r"\s+", " ", semantic_query).strip()
     if not semantic_query:
