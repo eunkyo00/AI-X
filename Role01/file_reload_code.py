@@ -7,6 +7,7 @@ import shutil
 import struct
 import unicodedata
 import zipfile
+from paths import path_key
 
 # 1. 경로 설정
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -41,11 +42,7 @@ AUTO_COLUMNS = [
 
 # 2. 파일 경로 비교용 함수
 def normalize_path(path):
-    normalized = str(path).replace("\\", os.sep)
-    normalized_path = Path(normalized).expanduser()
-    if not normalized_path.is_absolute():
-        normalized_path = SCRIPT_DIR / normalized_path
-    return str(normalized_path.resolve())
+    return path_key(path)
 
 
 def format_timestamp(timestamp):
@@ -116,8 +113,12 @@ def load_raw_created_times():
     if not RAW_DATA_DIR.is_dir():
         return created_by_key
 
+    groups = {unicodedata.normalize("NFC", folder.name)
+              for folder in DATA_DIR.iterdir() if folder.is_dir()}
     for archive_path in sorted(RAW_DATA_DIR.glob("*.zip")):
         group = unicodedata.normalize("NFC", archive_path.stem)
+        if group not in groups:
+            continue
 
         with zipfile.ZipFile(archive_path) as archive:
             for info in archive.infolist():
@@ -160,10 +161,10 @@ if METADATA_CSV.exists():
         encoding="utf-8-sig"
     )
 else:
-    old_df = pd.DataFrame(columns=AUTO_COLUMNS + ["project", "role"])
+    old_df = pd.DataFrame(columns=AUTO_COLUMNS + ["project", "role", "description"])
 
 # 기존 CSV에 필수 열이 없으면 추가
-for column in AUTO_COLUMNS:
+for column in AUTO_COLUMNS + ["project", "role", "description"]:
     if column not in old_df.columns:
         old_df[column] = ""
 
@@ -175,7 +176,14 @@ old_by_path = {}
 
 for record in old_df.to_dict("records"):
     if record.get("path", "").strip():
-        old_by_path[normalize_path(record["path"])] = record
+        key = normalize_path(record["path"])
+        if key in old_by_path:
+            raise ValueError(f"중복된 파일 경로: {record['path']}")
+        old_by_path[key] = record
+
+ids = [str(value).strip() for value in old_df["file_id"]]
+if any(not value for value in ids) or len(ids) != len(set(ids)):
+    raise ValueError("기존 metadata.csv에 빈 ID 또는 중복 ID가 있습니다.")
 
 # 4. 다음에 사용할 파일 ID 결정
 existing_numbers = []
@@ -215,6 +223,8 @@ for file_path in sorted(DATA_DIR.rglob("*")):
     # 파일 경로를 기준으로 기존 정보 확인
     old_record = old_by_path.get(absolute_path, {})
     record = old_record.copy()
+    for column in old_df.columns:
+        record.setdefault(column, "")
 
     # 기존 ID가 있으면 유지, 새 파일이면 ID 부여
     if not record.get("file_id", "").strip():
@@ -250,7 +260,7 @@ for file_path in sorted(DATA_DIR.rglob("*")):
     record.update({
         "filename": file_path.name,
         "extension": extension,
-        "path": stored_path,
+        "path": file_path.relative_to(SCRIPT_DIR).as_posix(),
         "size_bytes": stat.st_size,
         "created_at": created_at,
         "modified_at": datetime.fromtimestamp(

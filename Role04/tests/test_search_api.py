@@ -73,6 +73,22 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(self.request('POST', '/api/files', '{}')[0], 501)
         self.assertEqual(self.request('GET', '/api/files/F1/content')[0], 404)
 
+    def test_catalog_refreshes_after_engine_reload(self):
+        class Frame:
+            def to_dict(self, orient):
+                return [{'file_id': 'NEW', 'filename': 'new.txt'}]
+        class Engine:
+            df = Frame()
+            def search_files(self, query, top_k):
+                return [{'file_id': 'NEW', 'score': 1.0, 'chunk_text': 'new content'}]
+        service = SearchService.__new__(SearchService)
+        service.lock = threading.Lock()
+        service.engine = Engine()
+        service.catalog = {'OLD': {'file_id': 'OLD'}}
+        result = service.search('new')
+        self.assertEqual(result['files'][0]['file_id'], 'NEW')
+        self.assertEqual(set(service.catalog), {'NEW'})
+
     def test_bootstrap_and_metadata(self):
         self.assertIn(b'"base": "/api"', self.request('GET', '/runtime-config.js')[1])
         row = SearchService.file({'file_id': 'F1', 'filename': 'sample.R', 'path': 'dataset\\sample.R', 'modified_at': '2026.4.10 18:31', 'size_bytes': '123'})

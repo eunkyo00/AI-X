@@ -6,6 +6,7 @@ import argparse
 import ast
 import csv
 import hashlib
+from itertools import islice
 import json
 import posixpath
 import re
@@ -48,6 +49,23 @@ def validate(metadata, texts):
             raise ValueError(f"CSV identity mismatch: {row['file_id']}")
 
 
+def recover_tsv(text, local):
+    """Recover unsupported TSV text locally without changing the input CSV."""
+    if (not local or local.suffix.lower() != '.tsv'
+            or text['extraction_status'] not in {'unsupported_extension', 'empty_text'}):
+        return text
+    try:
+        with local.open(encoding='utf-8-sig', newline='') as stream:
+            rows = list(islice(csv.reader(stream, delimiter='\t'), 101))
+        content = '\n'.join(' | '.join(row) for row in rows[:100])
+        if len(rows) > 100:
+            content += '\n[행 제한으로 일부 생략]'
+        return dict(text, extracted_text=content[:100_000],
+                    extraction_status='success' if content.strip() else 'empty_text')
+    except (OSError, UnicodeError, csv.Error) as error:
+        return dict(text, extraction_status=f'error: {type(error).__name__}: {error}')
+
+
 def code_references(text, extension):
     """Only literal paths in supported static calls; never infer execution."""
     if extension in {'.py', '.ipynb'}:
@@ -62,7 +80,7 @@ def code_references(text, extension):
             if not isinstance(node, ast.Call):
                 continue
             name = node.func.attr if isinstance(node.func, ast.Attribute) else node.func.id if isinstance(node.func, ast.Name) else ''
-            values = list(node.args[:1]) or [kw.value for kw in node.keywords if kw.arg in {'filepath_or_buffer', 'path', 'fname', 'file', 'io'}]
+            values = list(node.args[:1]) or [kw.value for kw in node.keywords if kw.arg in {'filepath_or_buffer', 'path_or_buf', 'path', 'fname', 'file', 'io'}]
             if not values or not isinstance(values[0], ast.Constant) or not isinstance(values[0].value, str):
                 continue
             kind = 'reads' if name in read else 'writes' if name in write else None
@@ -72,7 +90,7 @@ def code_references(text, extension):
                     continue
                 kind = 'writes' if any(c in mode.value for c in 'wax+') else 'reads'
             if kind:
-                yield values[0].value, kind, node.lineno, lines[node.lineno - 1].strip()
+                yield values[0].value, kind, node.lineno, '\n'.join(lines[node.lineno - 1:node.end_lineno]).strip()
     elif extension == '.r':
         # A supported call must be on one line; # comments outside quotes are removed.
         pattern = re.compile(r'''(?<![\w.])(?P<call>read\.csv2?|read\.table|readRDS|fread|scan|load|write\.csv2?|write\.table|saveRDS|fwrite)\s*\(\s*(?:(?:file|input)\s*=\s*)?(?P<quote>["'])(?P<path>.*?)(?P=quote)''')
@@ -95,12 +113,54 @@ def code_references(text, extension):
                 yield match['path'], 'writes', number, line.strip()
 
 
-def resolve_reference(source, reference, files):
+def document_references(text, files):
+    """Extract explicit filenames even when the target is not registered.
+
+    Locations are offsets in extracted text, not original PDF page numbers.
+    Quoted names and Markdown destinations can contain spaces.
+    """
+    extensions = {'csv', 'tsv', 'xlsx', 'xls', 'json', 'parquet', 'txt',
+                  'pdf', 'docx', 'pptx', 'md', 'py', 'r', 'ipynb', 'png',
+                  'jpg', 'jpeg', 'svg', 'rds', 'rdata', 'zip'}
+    extensions.update(f['filename'].rsplit('.', 1)[-1].lower()
+                      for f in files if '.' in f['filename'])
+    suffix = r'\.(?:' + '|'.join(re.escape(e) for e in sorted(extensions)) + r')'
+    patterns = [
+        re.compile(r'(?P<quote>[`\"\'])(?P<path>[^\n`\"\']+?' + suffix + r')(?P=quote)', re.I),
+        re.compile(r'\]\((?P<path>[^\n)]+?' + suffix + r')(?:#[^\s)]*)?\)', re.I),
+        re.compile(r'(?<![\w.])(?P<path>(?:[A-Za-z]:)?[\w./\\-]+?' + suffix + r')(?![\w.])', re.I),
+    ]
+    matches = []
+    external_links = [match.span() for match in re.finditer(
+        r'(?<!!)\[[^\[\]\n]*\]\(\s*https?://[^)\n]*\)', text, re.I)]
+    for pattern in patterns:
+        for match in pattern.finditer(text):
+            start, end = match.span('path')
+            if not any(start < b and end > a for a, b, _ in matches):
+                matches.append((start, end, match['path']))
+    # Preserve exact registered names with spaces in unquoted prose, too.
+    for name in sorted({f['filename'] for f in files}, key=len, reverse=True):
+        for match in re.finditer(r'(?<![\w.])' + re.escape(name) + r'(?![\w.])', text):
+            start, end = match.span()
+            if not any(start < b and end > a for a, b, _ in matches):
+                matches.append((start, end, name))
+    for start, end, reference in sorted(matches):
+        if any(start < b and end > a for a, b in external_links):
+            continue
+        prefix = text[:start].rsplit(None, 1)[-1] if text[:start].strip() else ''
+        if '://' in prefix + reference:
+            continue
+        yield reference, start, text[max(0, start-60):end+60]
+
+
+def resolve_reference(source, reference, files, *, filename_only=False):
     ref = normalize(reference)
     source_path = normalize(source['path'])
-    expected = {normalize(posixpath.join(posixpath.dirname(source_path), ref)), ref}
+    expected = {normalize(posixpath.join(posixpath.dirname(source_path), ref))}
+    if posixpath.isabs(ref) or re.match(r'^[A-Za-z]:/', ref):
+        expected = {ref}
     exact = [f for f in files if normalize(f['path']) in expected and f['file_id'] != source['file_id']]
-    if len(exact) == 1:
+    if len(exact) == 1 and not filename_only:
         return exact[0]['file_id'], 'resolved', 'exact_path'
     # A filename alone does not prove the directory, especially with setwd/chdir.
     candidates = [f for f in files if f['filename'] == posixpath.basename(ref) and f['file_id'] != source['file_id']]
@@ -136,6 +196,9 @@ def build(metadata_path, text_path, output):
         text = by_id[row['file_id']]
         local = local_path(row['path'])
         exists = bool(local and local.is_file())
+        if exists:
+            text = recover_tsv(text, local)
+            by_id[row['file_id']] = text
         audit.append({'file_id': row['file_id'], 'filename': row['filename'], 'extraction_status': text['extraction_status'], 'local_exists': exists, 'local_path': str(local) if local else '', 'text_length': len(text['extracted_text']), 'source_sha256': hashlib.sha256(local.read_bytes()).hexdigest() if exists else '', 'size_matches': local.stat().st_size == int(row['size_bytes']) if exists else False})
         sources = []
         extension = row['extension'].lower()
@@ -149,13 +212,9 @@ def build(metadata_path, text_path, output):
                 target, status, method = resolve_reference(row, reference, metadata)
                 relations.append({'source_id': row['file_id'], 'target_id': target, 'relation_type': kind, 'reference_path': reference, 'status': status, 'match_method': method, 'evidence_location': f'{location}:{line}', 'evidence': evidence})
         if extension in {'.pdf', '.docx', '.pptx', '.md', '.txt'}:
-            for candidate in metadata:
-                name = candidate['filename']
-                if candidate['file_id'] == row['file_id']:
-                    continue
-                match = re.search(r'(?<![\w.])' + re.escape(name) + r'(?![\w.])', text['extracted_text'])
-                if match:
-                    relations.append({'source_id': row['file_id'], 'target_id': None, 'relation_type': 'mentions', 'reference_path': name, 'status': 'ambiguous', 'match_method': 'filename_candidate', 'evidence_location': f'extracted_text_char:{match.start()}', 'evidence': text['extracted_text'][max(0,match.start()-60):match.end()+60]})
+            for reference, offset, evidence in document_references(text['extracted_text'], metadata):
+                target, status, method = resolve_reference(row, reference, metadata, filename_only='/' not in reference and '\\' not in reference)
+                relations.append({'source_id': row['file_id'], 'target_id': target, 'relation_type': 'mentions', 'reference_path': reference, 'status': status, 'match_method': method, 'evidence_location': f'extracted_text_char:{offset}', 'evidence': evidence})
     db = output / 'files.sqlite3'
     with connect(db) as connection:
         connection.executescript('''CREATE TABLE IF NOT EXISTS files(file_id TEXT PRIMARY KEY, filename TEXT NOT NULL, path TEXT NOT NULL, local_path TEXT, extension TEXT, size_bytes INTEGER, created_at TEXT, modified_at TEXT, project TEXT, role TEXT, description TEXT, extracted_text TEXT, extraction_status TEXT);
@@ -173,12 +232,15 @@ def build(metadata_path, text_path, output):
             path = Path(path)
             connection.execute('INSERT OR REPLACE INTO provenance VALUES(?,?)', (path.name, hashlib.sha256(path.read_bytes()).hexdigest()))
     for filename, rows in [('audit.csv', audit), ('relations.csv', relations)]:
-        if rows:
-            with (output / filename).open('w', encoding='utf-8-sig', newline='') as stream:
-                writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
-                writer.writeheader()
-                writer.writerows(rows)
-    summary = {'files': len(metadata), 'extraction_success': sum(t['extraction_status']=='success' for t in texts), 'local_files_found': sum(a['local_exists'] for a in audit), 'size_mismatches': sum(a['local_exists'] and not a['size_matches'] for a in audit), 'references': len(relations), 'resolved': sum(r['status']=='resolved' for r in relations), 'ambiguous': sum(r['status']=='ambiguous' for r in relations), 'missing': sum(r['status']=='missing' for r in relations)}
+        columns = (list(rows[0]) if rows else
+                   ['file_id', 'filename', 'extraction_status', 'local_exists', 'local_path', 'text_length', 'source_sha256', 'size_matches']
+                   if filename == 'audit.csv' else
+                   ['source_id', 'target_id', 'relation_type', 'reference_path', 'status', 'match_method', 'evidence_location', 'evidence'])
+        with (output / filename).open('w', encoding='utf-8-sig', newline='') as stream:
+            writer = csv.DictWriter(stream, fieldnames=columns)
+            writer.writeheader()
+            writer.writerows(rows)
+    summary = {'files': len(metadata), 'extraction_success': sum(t['extraction_status']=='success' for t in by_id.values()), 'local_files_found': sum(a['local_exists'] for a in audit), 'size_mismatches': sum(a['local_exists'] and not a['size_matches'] for a in audit), 'references': len(relations), 'resolved': sum(r['status']=='resolved' for r in relations), 'ambiguous': sum(r['status']=='ambiguous' for r in relations), 'missing': sum(r['status']=='missing' for r in relations)}
     (output / 'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n')
     return summary
 

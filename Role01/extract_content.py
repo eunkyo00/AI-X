@@ -1,7 +1,14 @@
 from pathlib import Path
+from paths import BASE_DIR, resolve_path
 import pandas as pd
 import json
-import pytesseract
+import hashlib
+import os
+import shutil
+try:
+    import pytesseract
+except ImportError:
+    pytesseract = None
 
 import pymupdf
 from openpyxl import load_workbook
@@ -10,8 +17,8 @@ from pptx import Presentation
 from PIL import Image
 
 # 1. 파일 경로 및 기본 설정
-METADATA_CSV=Path("metadata.csv")
-OUTPUT_CSV=Path("extracted_text.csv")
+METADATA_CSV=BASE_DIR / "metadata.csv"
+OUTPUT_CSV=BASE_DIR / "extracted_text.csv"
 
 # 한 파일에서 추출할 최대 글자 수
 MAX_TEXT_CHARS = 100_000
@@ -22,9 +29,17 @@ MAX_TABLE_ROWS = 100
 # PDF는 우선 최대 100페이지까지만 추출
 MAX_PDF_PAGES = 100
 
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-)
+# Use PATH or an explicit override; retain the standard Windows installation.
+OCR_COMMAND = os.environ.get("TESSERACT_CMD") or shutil.which("tesseract")
+if not OCR_COMMAND and Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe").is_file():
+    OCR_COMMAND = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+if pytesseract is not None and OCR_COMMAND:
+    pytesseract.pytesseract.tesseract_cmd = OCR_COMMAND
+
+
+class OCRUnavailable(RuntimeError):
+    pass
+
 
 # 2. 공통 함수: 추출 텍스트 길이 제한
 def limit_text(text):
@@ -187,6 +202,8 @@ def extract_pdf(file_path):
 
             # 텍스트가 없으면 OCR 실행
             if not text.strip():
+                if pytesseract is None or not OCR_COMMAND:
+                    raise OCRUnavailable("Tesseract와 kor/eng 언어 데이터가 필요합니다.")
                 print(f"  OCR 처리 중: {page_num + 1}페이지")
 
                 pix = page.get_pixmap(
@@ -314,30 +331,47 @@ if not required_columns.issubset(metadata.columns):
         f"현재 열: {list(metadata.columns)}"
     )
 
+# Reuse previous successful OCR only when the original file hash is unchanged.
+previous_texts, previous_audit = {}, {}
+for name, target in ((".previous_extracted_text.csv", previous_texts),
+                     (".previous_audit.csv", previous_audit)):
+    candidate = BASE_DIR / name
+    if candidate.is_file():
+        frame = pd.read_csv(candidate, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        target.update({row["file_id"]: row for row in frame.to_dict("records")})
+
 # 12. 각 파일의 내용 추출
 results = []
 
 for _, row in metadata.iterrows():
 
     file_id = row["file_id"]
-    file_path = Path(str(row["path"]))
+    file_path = resolve_path(row["path"])
 
     print(f"처리 중: {file_path.name}")
 
     text, status = extract_content(file_path)
+    if status.startswith("error: OCRUnavailable"):
+        old = previous_texts.get(str(file_id), {})
+        audit = previous_audit.get(str(file_id), {})
+        if (old.get("extraction_status") == "success"
+                and old.get("filename") == file_path.name
+                and audit.get("source_sha256") == hashlib.sha256(file_path.read_bytes()).hexdigest()):
+            text, status = old["extracted_text"], "success"
+            print("  원본 해시가 동일한 기존 OCR 결과 재사용")
 
     results.append({
         "file_id": file_id,
         "filename": file_path.name,
         "extension": file_path.suffix.lower(),
-        "path": str(file_path),
+        "path": str(row["path"]).replace("\\", "/"),
         "extracted_text": text,
         "char_count": len(text),
         "extraction_status": status
     })
 
 # 13. 결과 저장
-result_df = pd.DataFrame(results)
+result_df = pd.DataFrame(results, columns=["file_id", "filename", "extension", "path", "extracted_text", "char_count", "extraction_status"])
 
 # metadata.csv에만 있는 추가 정보 가져오기
 extra_columns = [

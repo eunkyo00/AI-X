@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.update-data.lock
+.update-*/
+update_backups/
+Role01/search_index/
+Role01/metadata_backup_*.csv
+Role01/embedding_cache/

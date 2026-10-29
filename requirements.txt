@@ -1,0 +1,8 @@
+pandas
+pymupdf
+openpyxl
+python-docx
+python-pptx
+sentence-transformers
+pytesseract
+Pillow

@@ -1,0 +1,498 @@
+﻿source_id,target_id,relation_type,reference_path,status,match_method,evidence_location,evidence,category,detail
+F006,,mentions,train.csv,missing,not_registered,extracted_text_char:10472,"rflow as tf
+
+학습데이터다운로드
+# 데이터세트를읽어들인다. 
+train = pd.read_csv(""train.csv"", sep=',')
+test = pd.read_csv(""test.csv"", sep=',')
+# 필요없는컬럼",document_reference_not_in_corpus,Explicit document reference; target absent from the supplied corpus and ZIPs.
+F006,,mentions,test.csv,missing,not_registered,extracted_text_char:10513,"ain = pd.read_csv(""train.csv"", sep=',')
+test = pd.read_csv(""test.csv"", sep=',')
+# 필요없는컬럼을삭제한다. 
+train.drop(['SibSp', 'Parch', 'T",document_reference_not_in_corpus,Explicit document reference; target absent from the supplied corpus and ZIPs.
+F007,,mentions,dog.jpg,missing,not_registered,extracted_text_char:255,"ssing.image import load_img, img_to_array
+image = load_img(""dog.jpg"")
+array = img_to_array(image)
+sample = expand_dims(array, a",document_reference_not_in_corpus,Explicit document reference; target absent from the supplied corpus and ZIPs.
+F007,,mentions,dog.jpg,missing,not_registered,extracted_text_char:3031,"umpy as np
+model = ResNet50(weights='imagenet')
+img_path = 'dog.jpg'
+img = image.load_img(img_path, target_size=(224, 224))
+# 영",document_reference_not_in_corpus,Explicit document reference; target absent from the supplied corpus and ZIPs.
+F010,,mentions,test.png,missing,not_registered,extracted_text_char:4523,"plt.show()
+
+실제이미지로테스트하기
+import cv2 as cv
+image = cv.imread('test.png', cv.IMREAD_GRAYSCALE)
+image = cv.resize(image, (28, 28))
+i",document_reference_not_in_corpus,Explicit document reference; target absent from the supplied corpus and ZIPs.
+F017,,reads,Lec14_french_flu.csv,missing,not_registered,source_line:9,"flu <- read.csv(""Lec14_french_flu.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F017,,reads,apple.csv,missing,not_registered,source_line:69,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F017,,reads,apple.csv,missing,not_registered,source_line:72,"apple<-read.csv(""apple.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F019,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:37,"unemp<-fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F019,,reads,Lec2_sample.txt,missing,not_registered,source_line:40,"missing_sample<-scan(""Lec2_sample.txt"", what=integer())",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F019,,reads,Lec2_sample_high.txt,missing,not_registered,source_line:42,"missing_sample_high<-scan(""Lec2_sample_high.txt"", what=integer())",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F020,,reads,Lec3_emails.csv,missing,not_registered,source_line:7,"emails<-fread(""Lec3_emails.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F020,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:46,"unemp<-fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F020,,reads,Lec3_donations.csv,missing,not_registered,source_line:52,"donations<-fread(""Lec3_donations.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F020,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:71,"unemp<-fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F021,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:12,"air <-fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F021,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:56,"unemp<-fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F022,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:8,"air <-fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F023,,reads,Lec6_Nile.csv,missing,not_registered,source_line:73,"nile<-fread(""Lec6_Nile.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F024,,reads,Lec7_global_temps.csv,missing,not_registered,source_line:6,"temps<-fread(""Lec7_global_temps.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F024,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:17,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F033,,reads,apple.csv,missing,not_registered,source_line:8,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F034,,reads,apple.csv,missing,not_registered,source_line:8,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F035,,reads,apple.csv,missing,not_registered,source_line:8,"apple <- read.csv(""apple.csv"", stringsAsFactors = FALSE)",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F036,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:65,"unemp <- fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F036,,reads,Lec2_sample.txt,missing,not_registered,source_line:68,"missing_sample <- scan(""Lec2_sample.txt"", what=integer())",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F036,,reads,Lec2_sample_high.txt,missing,not_registered,source_line:70,"missing_sample_high <- scan(""Lec2_sample_high.txt"", what=integer())",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F037,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:73,"unemp<-fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F037,,reads,Lec2_sample.txt,missing,not_registered,source_line:77,"missing_sample<-scan(""Lec2_sample.txt"", what=integer()) # 정수(integer)형태의 벡터로 저장",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F037,,reads,Lec2_sample_high.txt,missing,not_registered,source_line:79,"missing_sample_high<-scan(""Lec2_sample_high.txt"", what=integer())",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F038,,reads,Lec3_emails.csv,missing,not_registered,source_line:6,"emails <- fread(""Lec3_emails.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F038,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:46,"unemp <- fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F038,,reads,Lec3_donations.csv,missing,not_registered,source_line:52,"donations <- fread(""Lec3_donations.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F038,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:72,"unemp <- fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F039,,reads,Lec3_emails.csv,missing,not_registered,source_line:7,"emails<-fread(""Lec3_emails.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F039,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:63,"unemp<-fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F039,,reads,Lec3_donations.csv,missing,not_registered,source_line:74,"donations <- fread(""Lec3_donations.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F039,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:102,"unemp <- fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F040,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:9,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F040,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:49,"unemp <- fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F040,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:87,"unrate <- fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F041,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:9,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F041,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:79,"unemp<-fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F041,,reads,Lec2_UNRATE.csv,missing,not_registered,source_line:115,"unrate <- fread(""Lec2_UNRATE.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F042,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:8,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F043,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:8,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F044,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:9,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F045,,reads,Lec6_Nile.csv,missing,not_registered,source_line:8,"nile <- fread(""Lec6_Nile.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F046,,reads,Lec6_Nile.csv,missing,not_registered,source_line:91,"nile<-fread(""Lec6_Nile.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F047,,reads,Lec7_global_temps.csv,missing,not_registered,source_line:8,"temps <- fread(""Lec7_global_temps.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F047,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:23,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F048,,reads,Lec7_global_temps.csv,missing,not_registered,source_line:8,"temps <- fread(""Lec7_global_temps.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F048,,reads,Lec4_AirPassengers.csv,missing,not_registered,source_line:30,"air <- fread(""Lec4_AirPassengers.csv"")",code_input_not_in_corpus,No filename candidate in the local corpus or supplied ZIPs.
+F062,,writes,/content/dataset/data.yaml,missing,not_registered,notebook_cell_6:2,"with open('/content/dataset/data.yaml', 'w') as f:",output_reference,A static output path; execution and file creation are unverified.
+F063,,writes,/content/dataset/class_distribution_ratio.png,missing,not_registered,notebook_cell_6:142,"plt.savefig('/content/dataset/class_distribution_ratio.png', dpi=300)",output_reference,A static output path; execution and file creation are unverified.
+F063,,writes,/content/dataset/data.yaml,missing,not_registered,notebook_cell_6:90,"with open('/content/dataset/data.yaml', 'w') as f:",output_reference,A static output path; execution and file creation are unverified.
+F109,,mentions,../../sketchnotes/05-RelationalData.png,missing,not_registered,extracted_text_char:109,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/05-RelationalData.png)|
+|:---:|
+| Working With Data: Relational Databases - _Sket",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F109,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10128,"958-bethanycheum)
+
+## Assignment
+
+[Displaying airport data](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F113,,mentions,../../sketchnotes/06-NoSQL.png,missing,not_registered,extracted_text_char:108,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/06-NoSQL.png)|
+|:---:|
+|Working with NoSQL Data - _Sketchnote by [@nitya",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/parts-of-spreadsheet.png,missing,not_registered,extracted_text_char:900," 
+
+![An empty Microsoft Excel workbook with two worksheets](images/parts-of-spreadsheet.png)
+
+A spreadsheet is a file and will be accessible in the fil",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/formula-excel.png,missing,not_registered,extracted_text_char:2351," formula from an example inventory list in Microsoft Excel](images/formula-excel.png)
+
+There are instances where a cell is dependent on the valu",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/function-excel.png,missing,not_registered,extracted_text_char:3281,"function from an example inventory list in Microsoft Excel](images/function-excel.png)
+
+We can use another formula to add all the values of Inven",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/kv-db.png,missing,not_registered,extracted_text_char:4468,"e numerical keys that are associated with 4 various values](images/kv-db.png)
+> Source from [Michał Białecki Blog](https://www.michalbia",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/graph-db.png,missing,not_registered,extracted_text_char:5122,"elationships between people, their interests and locations](images/graph-db.png)
+> Source from [Microsoft](https://docs.microsoft.com/en-us",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/columnar-db.png,missing,not_registered,extracted_text_char:5886,"e with two column families named Identity and Contact Info](images/columnar-db.png)
+
+[Columnar](https://docs.microsoft.com/en-us/azure/archite",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/cosmosdb-emulator-explorer.png,missing,not_registered,extracted_text_char:8316," documents.
+
+![The Explorer view of the Cosmos DB Emulator](images/cosmosdb-emulator-explorer.png)
+
+If you're following along, click on ""Start with Sample"" t",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/cosmosdb-emulator-persons.png,missing,not_registered,extracted_text_char:8751,"tems`. 
+
+![Exploring sample data in the Cosmos DB Emulator](images/cosmosdb-emulator-persons.png)
+
+#### Querying Document Data with the Cosmos DB Emulator
+
+",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,images/cosmosdb-emulator-persons-query.png,missing,not_registered,extracted_text_char:9248,"ocuments that have an age field value that is less than 40](images/cosmosdb-emulator-persons-query.png)
+
+The query returns two documents, notice the age value for",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F113,,mentions,PersonsData.json,ambiguous,filename_candidate,extracted_text_char:9529,'ll notice that documents look similar to JSON. There is a `PersonsData.json` file in this directory with more data that you may upload ,uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F113,,mentions,TwitterData.json,ambiguous,filename_candidate,extracted_text_char:10494,"reated_at`, `id`, and `text`.
+
+## 🚀 Challenge
+
+
+There is a `TwitterData.json` file that you can upload to the SampleDB database. It's re",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F113,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:12185,"ql-data-in-azure-cosmos-db/)
+
+## Assignment
+
+[Soda Profits](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F115,,mentions,CocaColaCo.xlsx,ambiguous,filename_candidate,extracted_text_char:64,"da Profits
+
+## Instructions
+
+The [Coca Cola Co spreadsheet](CocaColaCo.xlsx) is missing some calculations. Your task is to: 
+
+1. Calcul",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F116,,mentions,../../sketchnotes/07-WorkWithPython.png,missing,not_registered,extracted_text_char:119,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/07-WorkWithPython.png) |
+| :-----------------------------------------------------",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F116,,mentions,images/video-ds-python.png,missing,not_registered,extracted_text_char:399,"ps://twitter.com/nitya)_                 |
+
+[![Intro Video](images/video-ds-python.png)](https://youtu.be/dZjWOGbsN4Y)
+
+While databases offer very",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5739,"ome introductory Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, ",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F116,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:5756,"Pandas code in the accompanying notebook [`notebook.ipynb`](notebook.ipynb). We only outline some the examples here, and you are defin",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F116,,mentions,images/timeseries-1.png,missing,not_registered,extracted_text_char:6301,"(idx)),index=idx)
+items_sold.plot()
+```
+![Time Series Plot](images/timeseries-1.png)
+
+Now suppose that each week we are organizing a party for ",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F116,,mentions,images/timeseries-2.png,missing,not_registered,extracted_text_char:6783,"ms,fill_value=0)
+total_items.plot()
+```
+![Time Series Plot](images/timeseries-2.png)
+
+> **Note** that we are not using simple syntax `total_ite",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F116,,mentions,images/timeseries-3.png,missing,not_registered,extracted_text_char:7504,"onthly.plot(kind='bar')
+```
+![Monthly Time Series Averages](images/timeseries-3.png)
+
+### DataFrame
+
+A DataFrame is essentially a collection of",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F116,,mentions,file.csv,missing,not_registered,extracted_text_char:12753," CSV file is as simple as this:
+```python
+df = pd.read_csv('file.csv')
+```
+We will see more examples of loading data, including ",document_reference_not_in_corpus,Explicit document reference; target absent from the supplied corpus and ZIPs.
+F116,,mentions,notebook-covidspread.ipynb,ambiguous,filename_candidate,extracted_text_char:14352," demonstrate how to deal with data, we invite you to open [`notebook-covidspread.ipynb`](notebook-covidspread.ipynb) and read it from top to botto",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F116,,mentions,notebook-covidspread.ipynb,ambiguous,filename_candidate,extracted_text_char:14381," data, we invite you to open [`notebook-covidspread.ipynb`](notebook-covidspread.ipynb) and read it from top to bottom. You can also execute cells",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F116,,mentions,images/covidspread.png,missing,not_registered,extracted_text_char:14547,"nges that we have left for you at the end.
+
+![COVID Spread](images/covidspread.png)
+
+> If you do not know how to run code in Jupyter Notebook,",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F116,,mentions,notebook-papers.ipynb,ambiguous,filename_candidate,extracted_text_char:16723,"nclude all full texts in addition to metadata file.
+
+Open [`notebook-papers.ipynb`](notebook-papers.ipynb) and read it from top to bottom. Yo",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F116,,mentions,notebook-papers.ipynb,ambiguous,filename_candidate,extracted_text_char:16747," addition to metadata file.
+
+Open [`notebook-papers.ipynb`](notebook-papers.ipynb) and read it from top to bottom. You can also execute cells",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F116,,mentions,images/covidtreat.png,missing,not_registered,extracted_text_char:16919,"e have left for you at the end.
+
+![Covid Medical Treatment](images/covidtreat.png)
+
+## Processing Image Data
+
+Recently, very powerful AI mode",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F116,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:20758,"[Perform more detailed data study for the challenges above](assignment.md)
+
+## Credits
+
+This lesson has been authored with ♥️ by [Dmi",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F119,,reads,https://datascience4beginners.blob.core.windows.net/cord/metadata.csv.zip,missing,not_registered,notebook_cell_4:1,"df = pd.read_csv(""https://datascience4beginners.blob.core.windows.net/cord/metadata.csv.zip"",compression='zip')",external_url,External resource; not evidence of a missing local file.
+F121,,mentions,../../sketchnotes/08-DataPreparation.png,missing,not_registered,extracted_text_char:105,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/08-DataPreparation.png)|
+|:---:|
+|Data Preparation - _Sketchnote by [@nitya](https",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F121,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:764,"e Pandas library and will be [demonstrated in the notebook](notebook.ipynb) within this directory.
+
+## The importance of cleaning data",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F121,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:17435,"malize-data)
+
+
+## Assignment
+
+[Evaluating Data from a Form](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F123,,mentions,assignment.ipynb,ambiguous,filename_candidate,extracted_text_char:603,"solve them. You can explore it in the [assignment notebook](assignment.ipynb).
+
+## Instructions
+
+Use the techniques in this lesson to ma",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F125,,mentions,images/data-love.jpg,missing,not_registered,extracted_text_char:34,"# Working with Data
+
+![data love](images/data-love.jpg)
+> Photo by <a href=""https://unsplash.com/@swimstaralex?utm",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,../../sketchnotes/09-Visualizing-Quantities.png,missing,not_registered,extracted_text_char:92,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/09-Visualizing-Quantities.png)|
+|:---:|
+| Visualizing Quantities - _Sketchnote by [@nitya",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,notebook.ipynb,ambiguous,filename_candidate,extracted_text_char:1964,"
+## Build a line plot about bird wingspan values
+
+Open the `notebook.ipynb` file at the root of this lesson folder and add a cell.
+
+> ",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F126,,mentions,images/max-wingspan-02.png,missing,not_registered,extracted_text_char:4121,"= birds['MaxWingspan'] 
+wingspan.plot()
+```
+![Max Wingspan](images/max-wingspan-02.png)
+
+What do you notice immediately? There seems to be at leas",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,images/max-wingspan-labels-02.png,missing,not_registered,extracted_text_char:4804,"n']
+
+plt.plot(x, y)
+
+plt.show()
+```
+![wingspan with labels](images/max-wingspan-labels-02.png)
+
+Even with the rotation of the labels set to 45 degrees, t",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,images/labeled-wingspan-02.png,missing,not_registered,extracted_text_char:5896," bird name as a label.
+
+What did you discover?
+
+![outliers](images/labeled-wingspan-02.png)
+## Filter your data
+
+Both the Bald Eagle and the Prairie F",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,images/scatterplot-wingspan-02.png,missing,not_registered,extracted_text_char:6735,"e cohesive and understandable.
+
+![scatterplot of wingspans](images/scatterplot-wingspan-02.png)
+
+Now that we have a cleaner dataset at least in terms of w",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,images/full-data-bar-02.png,missing,not_registered,extracted_text_char:8047,"itle='Birds of Minnesota')
+
+```
+![full data as a bar chart](images/full-data-bar-02.png)
+
+This bar chart, however, is unreadable because there is t",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,images/category-counts-02.png,missing,not_registered,extracted_text_char:8727,", 12]
+category_count.plot.barh()
+```
+![category and length](images/category-counts-02.png)
+
+This bar chart shows a good view of the number of birds i",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,images/category-length-02.png,missing,not_registered,extracted_text_char:9413,"figure.figsize'] = [6, 12]
+plt.show()
+```
+![comparing data](images/category-length-02.png)
+
+Nothing is surprising here: hummingbirds have the least M",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,images/superimposed-02.png,missing,not_registered,extracted_text_char:10143,"rger its length range. Fascinating!
+
+![superimposed values](images/superimposed-02.png)
+
+## 🚀 Challenge
+
+This bird dataset offers a wealth of info",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F126,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10917,"at it can offer.
+## Assignment
+
+[Lines, Scatters, and Bars](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F130,,mentions,../../sketchnotes/10-Visualizing-Distributions.png,missing,not_registered,extracted_text_char:95,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/10-Visualizing-Distributions.png)|
+|:---:|
+| Visualizing Distributions - _Sketchnote by [@ni",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/scatter-wb.png,missing,not_registered,extracted_text_char:3090,"label('Max Length')
+
+plt.show()
+```
+![max length per order](images/scatter-wb.png)
+
+This gives an overview of the general distribution of bod",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/dist1-wb.png,missing,not_registered,extracted_text_char:4008,"12))
+plt.show()
+```
+![distribution over the entire dataset](images/dist1-wb.png)
+
+As you can see, most of the 400+ birds in this dataset fa",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/dist2-wb.png,missing,not_registered,extracted_text_char:4407,"istribution over the entire dataset with larger bins param](images/dist2-wb.png)
+
+This chart shows the distribution in a bit more granular ",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/dist3-wb.png,missing,not_registered,extracted_text_char:4911,"igsize = (12,12))
+plt.show()     
+```
+![filtered histogram](images/dist3-wb.png)
+
+✅ Try some other filters and data points. To see the full",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/2D-wb.png,missing,not_registered,extracted_text_char:5666,"h one particularly strong point of convergence:
+
+![2D plot](images/2D-wb.png)
+
+Histograms work well by default for numeric data. What if",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/histogram-conservation-wb.png,missing,not_registered,extracted_text_char:7673,")
+plt.legend();
+```
+
+![wingspan and conservation collation](images/histogram-conservation-wb.png)
+
+There doesn't seem to be a good correlation between minim",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/density1.png,missing,not_registered,extracted_text_char:8457,"ilteredBirds['MinWingspan'])
+plt.show()
+```
+![Density plot](images/density1.png)
+
+You can see how the plot echoes the previous one for Mini",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/density2.png,missing,not_registered,extracted_text_char:9370,"irds['MaxBodyMass'])
+plt.show()
+```
+![smooth bodymass line](images/density2.png)
+
+If you wanted a smooth, but not too smooth line, edit the",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/density3.png,missing,not_registered,extracted_text_char:9585,", bw_adjust=.2)
+plt.show()
+```
+![less smooth bodymass line](images/density3.png)
+
+✅ Read about the parameters available for this type of pl",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/density4.png,missing,not_registered,extracted_text_char:10026,"st"",
+   alpha=.5, linewidth=0,
+)
+```
+
+![bodymass per order](images/density4.png)
+
+You can also map the density of several variables in one ",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,images/multi.png,missing,not_registered,extracted_text_char:10334,"nservationStatus"")
+```
+
+![multiple densities, superimposed](images/multi.png)
+
+Perhaps it's worth researching whether the cluster of 'Vu",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F130,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:11248,"nderstand how it works.
+
+## Assignment
+
+[Apply your skills](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F134,,mentions,../../sketchnotes/11-Visualizing-Proportions.png,missing,not_registered,extracted_text_char:93,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/11-Visualizing-Proportions.png)|
+|:---:|
+|Visualizing Proportions - _Sketchnote by [@nitya",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F134,,mentions,images/pie1-wb.png,missing,not_registered,extracted_text_char:6777,"he order with which the label array is built!
+
+![pie chart](images/pie1-wb.png)
+
+## Donuts!
+
+A somewhat more visually interesting pie char",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F134,,mentions,images/donut-wb.png,missing,not_registered,extracted_text_char:7548,"itle('Mushroom Habitats')
+  
+plt.show()
+```
+
+![donut chart](images/donut-wb.png)
+
+This code draws a chart and a center circle, then adds th",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F134,,mentions,images/waffle.png,missing,not_registered,extracted_text_char:9383,"ly, there are many green-capped mushrooms!
+
+![waffle chart](images/waffle.png)
+
+✅ Pywaffle supports icons within the charts that use any ",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F134,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10649,"n on this sticky decision.
+## Assignment
+
+[Try it in Excel](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F138,,mentions,../../sketchnotes/12-Visualizing-Relationships.png,missing,not_registered,extracted_text_char:114,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/12-Visualizing-Relationships.png)|
+|:---:|
+|Visualizing Relationships - _Sketchnote by [@nit",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,images/scatter1.png,missing,not_registered,extracted_text_char:3256,"e"", data=honey, height=15, aspect=.5);
+```
+![scatterplot 1](images/scatter1.png)
+
+Now, show the same data with a honey color scheme to show",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,images/scatter2.png,missing,not_registered,extracted_text_char:3753,"r"", data=honey, height=15, aspect=.5);
+```
+![scatterplot 2](images/scatter2.png)
+
+With this color scheme change, you can see that there's o",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,images/scatter3.png,missing,not_registered,extracted_text_char:5967,"he size of the dots gradually increasing.
+
+![scatterplot 3](images/scatter3.png)
+
+Is this a simple case of supply and demand? Due to factor",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,images/line1.png,missing,not_registered,extracted_text_char:6599,"with some exceptions around the year 2003:
+
+![line chart 1](images/line1.png)
+
+✅ Because Seaborn is aggregating data around one line, it",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,images/line2.png,missing,not_registered,extracted_text_char:7146,"""totalprod"", kind=""line"", data=honey);
+```
+
+![line chart 2](images/line2.png)
+
+Answer: Not really. If you look at total production, it a",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,images/facet.png,missing,not_registered,extracted_text_char:8327,"y side with a wrap set at 3 for the columns:
+
+![facet grid](images/facet.png)
+
+For this dataset, nothing particularly stands out with re",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,images/dual-line.png,missing,not_registered,extracted_text_char:9543,"olony yield')
+ax.figure.legend();
+```
+![superimposed plots](images/dual-line.png)
+
+While nothing jumps out to the eye around the year 2003, ",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F138,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10634," listed in the docs.
+## Assignment
+
+[Dive into the beehive](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F142,,mentions,../../sketchnotes/13-MeaningfulViz.png,missing,not_registered,extracted_text_char:102,"etchnote by [(@sketchthedocs)](https://sketchthedocs.dev) ](../../sketchnotes/13-MeaningfulViz.png)|
+|:---:|
+| Meaningful Visualizations - _Sketchnote by [@ni",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,./images/tornado.png,missing,not_registered,extracted_text_char:2362,"arts and infographics!
+
+[![How Charts Lie by Alberto Cairo](./images/tornado.png)](https://www.youtube.com/watch?v=oX74Nge8Wkw ""How charts l",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,images/bad-chart-1.png,missing,not_registered,extracted_text_char:2617,"w the opposite of the truth, based on date:
+
+![bad chart 1](images/bad-chart-1.png)
+
+[This chart](https://media.firstcoastnews.com/assets/WTLV",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,images/bad-chart-2.jpg,missing,not_registered,extracted_text_char:3070,"nged to give that deceptive downward trend.
+
+![bad chart 2](images/bad-chart-2.jpg)
+
+This notorious example uses color AND a flipped Y axis to",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,images/bad-chart-3.jpg,missing,not_registered,extracted_text_char:3332," fooled to think that the opposite is true:
+
+![bad chart 3](images/bad-chart-3.jpg)
+
+This strange chart shows how proportion can be manipulate",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,images/bad-chart-4.jpg,missing,not_registered,extracted_text_char:3454,"on can be manipulated, to hilarious effect:
+
+![bad chart 4](images/bad-chart-4.jpg)
+
+Comparing the incomparable is yet another shady trick. Th",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,images/3d.png,missing,not_registered,extracted_text_char:6378," can be produced using `mpl_toolkits.mplot3d`.
+
+![3d plots](images/3d.png)
+
+## Animation and 3D chart display
+
+Some of the best data ",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,images/busing.png,missing,not_registered,extracted_text_char:6918,"eless problem by bussing people out of the city.
+
+![busing](images/busing.png)
+
+> ""Bussed Out: How America Moves its Homeless"" from [the ",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,images/liaisons.png,missing,not_registered,extracted_text_char:8412,"ound on the screen to shuffle the data around.
+
+![liaisons](images/liaisons.png)
+
+## Project: Build a chart to show a network using D3.js
+
+",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.
+F142,,mentions,README.md,ambiguous,filename_candidate,extracted_text_char:8638,"ect, for your reference.
+
+1. Follow the instructions in the README.md file in the starter folder's root. Make sure you have NPM a",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F142,,mentions,assignment.md,ambiguous,filename_candidate,extracted_text_char:10661,"82ad4
+
+## Assignment
+
+[Build your own custom visualization](assignment.md)
+",uncertain_registered_candidate,Confirm the directory; do not link by filename alone.
+F149,,mentions,./images/bee.jpg,missing,not_registered,extracted_text_char:48,"# Visualizations
+
+![a bee on a lavender flower](./images/bee.jpg)
+> Photo by <a href=""https://unsplash.com/@jenna2980?utm_so",sample_image_not_in_corpus,Sample document image reference; absent from the supplied corpus and ZIPs.

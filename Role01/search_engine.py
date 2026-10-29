@@ -5,6 +5,7 @@
 """
 from pathlib import Path
 import hashlib
+import json
 
 import numpy as np
 import pandas as pd
@@ -53,7 +54,10 @@ class SearchEngine:
 
     def __init__(self, text_csv=TEXT_CSV, metadata_csv=METADATA_CSV,
                  model_name=MODEL_NAME):
-        text_csv = Path(text_csv)
+        self.text_csv = text_csv = Path(text_csv)
+        self.metadata_csv = Path(metadata_csv)
+        self.model_name = model_name
+        self._input_signature = self.input_signature()
         metadata_csv = Path(metadata_csv)
         if not text_csv.exists():
             raise FileNotFoundError(f"텍스트 추출 파일을 찾을 수 없습니다: {text_csv}")
@@ -84,7 +88,7 @@ class SearchEngine:
             & df["filename"].astype(str).str.strip().ne("")
             & df["extracted_text"].astype(str).str.strip().ne("")
         ].copy()
-        df = df.drop_duplicates(subset=["file_id"], keep="first").reset_index(drop=True)
+        df = df.drop_duplicates(subset=["file_id"], keep="first").sort_values("file_id").reset_index(drop=True)
         if df.empty:
             raise ValueError("검색할 텍스트가 없습니다.")
         for column in ("project", "role","description", "path"):
@@ -131,7 +135,20 @@ class SearchEngine:
         cache_dir.mkdir(parents=True, exist_ok=True)
         cache_path = cache_dir / f"embeddings_{cache_key}.npy"
 
-        if cache_path.exists():
+        shared_dir = BASE_DIR / "search_index"
+        shared_info = shared_dir / "index.json"
+        shared_valid = False
+        if shared_info.is_file():
+            info = json.loads(shared_info.read_text(encoding="utf-8"))
+            shared_valid = (info.get("signature") == self._input_signature
+                            and info.get("model") == model_name)
+        if shared_valid:
+            with np.load(shared_dir / "embeddings.npz", allow_pickle=False) as data:
+                self.document_embeddings = data["embeddings"].copy()
+            if self.document_embeddings.shape[0] != len(passages):
+                raise ValueError("통합 갱신 인덱스와 검색 본문의 수가 다릅니다.")
+            print("통합 갱신 검색 인덱스 로딩 완료!")
+        elif cache_path.exists():
             print("저장된 임베딩 불러오는 중...")
             self.document_embeddings = np.load(cache_path, allow_pickle=False)
             if self.document_embeddings.ndim != 2 or self.document_embeddings.shape[0] != len(passages):
@@ -148,8 +165,23 @@ class SearchEngine:
             np.save(cache_path, self.document_embeddings)
             print("임베딩 계산 및 저장 완료!")
 
+    def input_signature(self):
+        digest = hashlib.sha256(self.model_name.encode())
+        for path in (self.text_csv, self.metadata_csv):
+            if path.exists():
+                digest.update(path.read_bytes())
+        return digest.hexdigest()
+
+    def refresh(self):
+        if (BASE_DIR.parent / ".update-data.lock").exists():
+            raise RuntimeError("데이터 갱신 중입니다. 완료 후 다시 검색하세요.")
+        if self.input_signature() != self._input_signature:
+            replacement = type(self)(self.text_csv, self.metadata_csv, self.model_name)
+            self.__dict__.update(replacement.__dict__)
+
     def search_files(self, query, top_k=TOP_K):
         """검색어와 청크 유사도를 계산해 파일 단위 Top K를 반환한다."""
+        self.refresh()
         query = str(query).strip()
         if not query or top_k <= 0:
             return []

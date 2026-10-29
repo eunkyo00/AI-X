@@ -81,6 +81,8 @@ class SearchService:
         # A single model instance is shared by HTTP worker threads.
         with self.lock:
             results = self.engine.search_files(query, top_k=5)
+            self.catalog = {str(row["file_id"]): self.file(row)
+                            for row in self.engine.df.to_dict("records")}
         return {'files': [{**self.catalog[result['file_id']],
                            'score': result['score'], 'excerpt': result['chunk_text']}
                           for result in results], 'relations': []}
