@@ -67,6 +67,22 @@ R: `read.csv`, `read.csv2`, `read.table`, `readRDS`, `fread`, `scan`, `load`, `w
 
 Python·노트북: `read_csv`, `read_table`, `read_excel`, `read_json`, `read_parquet`, `loadtxt`, `genfromtxt`, `imread`, `to_csv`, `to_excel`, `to_json`, `to_parquet`, `savefig`, `savetxt`, `imwrite`, `open`의 리터럴 경로. 노트북은 코드 셀별로 분석합니다. 문법 분석이 불가능한 셀은 건너뜁니다.
 
-문서: 등록된 다른 파일의 이름이 추출 본문에 명시된 경우 `mentions` 근거를 기록합니다. 파일명만으로 확정 연결하지 않습니다.
+문서: 추출 본문의 명시적 파일명, 따옴표·백틱 경로, Markdown 파일 링크를 `mentions`로 기록합니다. 미등록 대상과 반복 등장 위치도 저장합니다. 상대·절대 경로가 등록 경로와 일치할 때 파일 ID로 연결하며, 파일명만 있으면 확정 연결하지 않습니다. 웹 URL은 로컬 파일 참조에서 제외합니다. 공백이 있는 미등록 파일명은 따옴표·백틱 또는 Markdown 링크가 필요합니다. 근거 위치는 추출 텍스트의 문자 오프셋이며 원본 PDF 쪽 번호는 아닙니다.
+
+### Python 구현 확인 및 상태 구분
+
+기존 등록·저장·조회·참조 추출과 이번 보완은 모두 Python입니다. `sqlite3`, `ast`, `csv`, `pathlib`, `re` 등 기본 라이브러리만 사용합니다. R 코드는 실행하지 않고 Python에서 텍스트로 분석합니다.
+
+- `resolved`: 경로가 유일한 등록 파일과 일치하며 `target_id` 저장.
+- `ambiguous`: 동일 파일명 후보 또는 중복 경로가 있어 확정 불가. `target_id`는 비워 둠.
+- `missing`: 등록 대상이 없음. `target_id`는 비워 둠. 디스크에 파일이 없다는 뜻은 아님.
+
+2026-10-19 점검 보고서는 `REFERENCE_CHECK_REPORT.md`를 참고합니다.
+
+### 품질 점검 후 보완
+
+최신 원인 분석과 수정 결과는 `QUALITY_CHECK_REPORT.md`를 참고합니다. TSV 미지원·빈 본문은 원본의 첫 100행을 읽어 DB에서 보완합니다. 원래 입력 CSV는 수정하지 않습니다. 외부 Markdown 링크 표시 이름은 로컬 참조에서 제외합니다.
+
+`python3 Role03/audit_results.py`로 크기 차이·추출 미성공·미확정 참조를 분류하여 `output/*_issues.csv`와 `quality_summary.json`에 저장합니다. 먼저 `file_db.py`를 실행해야 합니다. PDF 재검사에는 선택적으로 PyMuPDF가 필요하며, 없으면 확인 불가 상태를 기록합니다. DB 생성과 테스트에는 외부 라이브러리가 필요하지 않습니다.
 
 동적 경로·변수·여러 줄 R 호출·작업 폴더 변경 추적은 현재 지원하지 않습니다. 상대경로 연결은 소스 파일 폴더를 기준으로 한 정적 해석이며 실제 실행·사용 관계를 증명하지 않습니다.

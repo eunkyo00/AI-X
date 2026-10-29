@@ -1,0 +1,22 @@
+{
+  "size_categories": {
+    "line_endings_only": 36
+  },
+  "extraction_categories": {
+    "image_pdf_needs_ocr": 6,
+    "system_or_history_file": 3,
+    "empty_source_file": 1,
+    "recovered_tsv": 2
+  },
+  "reference_categories": {
+    "document_reference_not_in_corpus": 6,
+    "code_input_not_in_corpus": 48,
+    "output_reference": 3,
+    "sample_image_not_in_corpus": 63,
+    "uncertain_registered_candidate": 22,
+    "external_url": 1
+  },
+  "missing_references": 121,
+  "ambiguous_references": 22,
+  "archive_errors": []
+}

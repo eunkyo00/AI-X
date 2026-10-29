@@ -3,10 +3,11 @@ from datetime import datetime
 import pandas as pd
 import re
 import shutil
+from paths import BASE_DIR, path_key
 
 # 1. 경로 설정
-DATA_DIR = Path("dataset/files")
-METADATA_CSV = Path("metadata.csv")
+DATA_DIR = BASE_DIR / "dataset/files"
+METADATA_CSV = BASE_DIR / "metadata.csv"
 
 # 이미지와 영상은 검색 대상에서 제외
 EXCLUDED_EXTENSIONS = {
@@ -28,7 +29,7 @@ AUTO_COLUMNS = [
 
 # 2. 파일 경로 비교용 함수
 def normalize_path(path):
-    return str(Path(str(path)).expanduser().resolve())
+    return path_key(path)
 
 # 3. 기존 CSV 읽기
 if not DATA_DIR.is_dir():
@@ -44,10 +45,10 @@ if METADATA_CSV.exists():
         encoding="utf-8-sig"
     )
 else:
-    old_df = pd.DataFrame(columns=AUTO_COLUMNS + ["project", "role"])
+    old_df = pd.DataFrame(columns=AUTO_COLUMNS + ["project", "role", "description"])
 
 # 기존 CSV에 필수 열이 없으면 추가
-for column in AUTO_COLUMNS:
+for column in AUTO_COLUMNS + ["project", "role", "description"]:
     if column not in old_df.columns:
         old_df[column] = ""
 
@@ -59,7 +60,14 @@ old_by_path = {}
 
 for record in old_df.to_dict("records"):
     if record.get("path", "").strip():
-        old_by_path[normalize_path(record["path"])] = record
+        key = normalize_path(record["path"])
+        if key in old_by_path:
+            raise ValueError(f"중복된 파일 경로: {record['path']}")
+        old_by_path[key] = record
+
+ids = [r.get("file_id", "").strip() for r in old_df.to_dict("records")]
+if any(not value for value in ids) or len(ids) != len(set(ids)):
+    raise ValueError("기존 metadata.csv에 빈 ID 또는 중복 ID가 있습니다.")
 
 # 4. 다음에 사용할 파일 ID 결정
 existing_numbers = []
@@ -82,7 +90,7 @@ for file_path in sorted(DATA_DIR.rglob("*")):
         continue
 
     # Excel이 만드는 임시 파일 제외
-    if file_path.name.startswith("~$"):
+    if file_path.name.startswith("~$") or file_path.name in {".DS_Store", ".Rhistory"}:
         continue
 
     extension = file_path.suffix.lower()
@@ -96,6 +104,8 @@ for file_path in sorted(DATA_DIR.rglob("*")):
     # 파일 경로를 기준으로 기존 정보 확인
     old_record = old_by_path.get(absolute_path, {})
     record = old_record.copy()
+    for column in old_df.columns:
+        record.setdefault(column, "")
 
     # 기존 ID가 있으면 유지, 새 파일이면 ID 부여
     if not record.get("file_id", "").strip():
@@ -109,10 +119,10 @@ for file_path in sorted(DATA_DIR.rglob("*")):
     record.update({
         "filename": file_path.name,
         "extension": extension,
-        "path": absolute_path,
+        "path": file_path.relative_to(BASE_DIR).as_posix(),
         "size_bytes": stat.st_size,
         "created_at": datetime.fromtimestamp(
-            stat.st_ctime
+            getattr(stat, "st_birthtime", stat.st_ctime)
         ).strftime("%Y-%m-%d %H:%M:%S"),
         "modified_at": datetime.fromtimestamp(
             stat.st_mtime
@@ -136,7 +146,7 @@ if METADATA_CSV.exists():
         + datetime.now().strftime("%Y%m%d_%H%M%S")
         + ".csv"
     )
-    shutil.copy2(METADATA_CSV, backup_name)
+    shutil.copy2(METADATA_CSV, BASE_DIR / backup_name)
     print(f"기존 CSV 백업: {backup_name}")
 
 updated_df.to_csv(

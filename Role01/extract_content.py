@@ -1,4 +1,5 @@
 from pathlib import Path
+from paths import BASE_DIR, resolve_path
 import pandas as pd
 import json
 
@@ -8,8 +9,8 @@ from docx import Document
 from pptx import Presentation
 
 # 1. 파일 경로 및 기본 설정
-METADATA_CSV=Path("metadata.csv")
-OUTPUT_CSV=Path("extracted_text.csv")
+METADATA_CSV=BASE_DIR / "metadata.csv"
+OUTPUT_CSV=BASE_DIR / "extracted_text.csv"
 
 # 한 파일에서 추출할 최대 글자 수
 MAX_TEXT_CHARS = 100_000
@@ -240,7 +241,7 @@ results = []
 for _, row in metadata.iterrows():
 
     file_id = row["file_id"]
-    file_path = Path(str(row["path"]))
+    file_path = resolve_path(row["path"])
 
     print(f"처리 중: {file_path.name}")
 
@@ -250,14 +251,14 @@ for _, row in metadata.iterrows():
         "file_id": file_id,
         "filename": file_path.name,
         "extension": file_path.suffix.lower(),
-        "path": str(file_path),
+        "path": str(row["path"]).replace("\\", "/"),
         "extracted_text": text,
         "char_count": len(text),
         "extraction_status": status
     })
 
 # 13. 결과 저장
-result_df = pd.DataFrame(results)
+result_df = pd.DataFrame(results, columns=["file_id", "filename", "extension", "path", "extracted_text", "char_count", "extraction_status"])
 
 # metadata.csv에만 있는 추가 정보 가져오기
 extra_columns = [

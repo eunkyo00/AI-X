@@ -1,0 +1,13 @@
+﻿file_id,filename,imported_status,db_status,category,detail
+F001,Cross-Validation_Decoded.pdf,empty_text,empty_text,image_pdf_needs_ocr,"pages=13, text_chars=0, image_pages=13"
+F012,.Rhistory,unsupported_extension,unsupported_extension,system_or_history_file,Retained ID; exclude from content search if appropriate.
+F016,time_series_analysis13_1.R,empty_text,empty_text,empty_source_file,Original file contains zero bytes.
+F067,.DS_Store,unsupported_extension,unsupported_extension,system_or_history_file,Retained ID; exclude from content search if appropriate.
+F088,한성도시개조사업.pdf,empty_text,empty_text,image_pdf_needs_ocr,"pages=18, text_chars=0, image_pages=18"
+F095,해외 인력 송출의 역사와 파독 광부 간호사.pdf,empty_text,empty_text,image_pdf_needs_ocr,"pages=16, text_chars=0, image_pages=1"
+F096,.DS_Store,unsupported_extension,unsupported_extension,system_or_history_file,Retained ID; exclude from content search if appropriate.
+F104,제주 4·3의 진실과 역사적 의미_박찬식.pdf,empty_text,empty_text,image_pdf_needs_ocr,"pages=12, text_chars=0, image_pages=1"
+F105,파월기술자의 전쟁경험.pdf,empty_text,empty_text,image_pdf_needs_ocr,"pages=20, text_chars=0, image_pages=20"
+F108,해방이전 제주의 사회와 경제_양정필.pdf,empty_text,empty_text,image_pdf_needs_ocr,"pages=12, text_chars=0, image_pages=12"
+F153,SOCR_MLB.tsv,unsupported_extension,success,recovered_tsv,Recovered into DB; original CSV retained.
+F156,diabetes.tsv,unsupported_extension,success,recovered_tsv,Recovered into DB; original CSV retained.
