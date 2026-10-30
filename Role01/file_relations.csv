@@ -19,6 +19,8 @@ F095,F091,same_folder,0.2,동일 폴더: dataset/files/한국근현대사역사�
 F095,F092,same_folder,0.2,동일 폴더: dataset/files/한국근현대사역사기행02
 F095,F093,same_folder,0.2,동일 폴더: dataset/files/한국근현대사역사기행02
 F095,F094,same_folder,0.2,동일 폴더: dataset/files/한국근현대사역사기행02
+F109,F124,content_similar,0.4,파일명·설명·추출본문 TF-IDF 유사도: 0.400
+F109,F110,references,1.0,파일 경로 참조: assignment.md
 F109,F110,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/05-relational-databases
 F110,F109,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/05-relational-databases
 F111,F112,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
@@ -29,6 +31,11 @@ F112,F111,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F112,F113,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F112,F114,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F112,F115,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
+F113,F119,content_similar,0.36,파일명·설명·추출본문 TF-IDF 유사도: 0.360
+F113,F124,content_similar,0.398,파일명·설명·추출본문 TF-IDF 유사도: 0.398
+F113,F109,references,1.0,파일 경로 참조: ../05-relational-databases/README.md
+F113,F114,references,1.0,파일 경로 참조: TwitterData.json
+F113,F115,references,1.0,파일 경로 참조: assignment.md
 F113,F111,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F113,F112,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F113,F114,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
@@ -37,10 +44,17 @@ F114,F111,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F114,F112,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F114,F113,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F114,F115,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
+F115,F111,references,1.0,파일 경로 참조: CocaColaCo.xlsx
 F115,F111,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F115,F112,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F115,F113,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
 F115,F114,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/06-non-relational
+F116,F119,content_similar,0.4,파일명·설명·추출본문 TF-IDF 유사도: 0.400
+F116,F124,content_similar,0.424,파일명·설명·추출본문 TF-IDF 유사도: 0.424
+F116,F117,references,1.0,파일 경로 참조: assignment.md
+F116,F118,references,1.0,파일 경로 참조: notebook-covidspread.ipynb
+F116,F119,references,1.0,파일 경로 참조: notebook-papers.ipynb
+F116,F120,references,1.0,파일 경로 참조: notebook.ipynb
 F116,F117,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F116,F118,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F116,F119,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
@@ -49,10 +63,16 @@ F117,F116,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F117,F118,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F117,F119,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F117,F120,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
+F118,F150,reference_candidate,0.5,파일명 언급(경로 미확인): time_series_covid19_confirmed_global.csv
+F118,F151,reference_candidate,0.5,파일명 언급(경로 미확인): time_series_covid19_deaths_global.csv
+F118,F152,reference_candidate,0.5,파일명 언급(경로 미확인): time_series_covid19_recovered_global.csv
 F118,F116,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F118,F117,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F118,F119,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F118,F120,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
+F119,F116,content_similar,0.4,파일명·설명·추출본문 TF-IDF 유사도: 0.400
+F119,F121,content_similar,0.378,파일명·설명·추출본문 TF-IDF 유사도: 0.378
+F119,F142,content_similar,0.37,파일명·설명·추출본문 TF-IDF 유사도: 0.370
 F119,F116,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F119,F117,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F119,F118,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
@@ -61,48 +81,103 @@ F120,F116,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F120,F117,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F120,F118,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
 F120,F119,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/07-python
+F121,F119,content_similar,0.378,파일명·설명·추출본문 TF-IDF 유사도: 0.378
+F121,F124,content_similar,0.546,파일명·설명·추출본문 TF-IDF 유사도: 0.546
+F121,F123,references,1.0,파일 경로 참조: assignment.md
+F121,F124,references,1.0,파일 경로 참조: notebook.ipynb
 F121,F122,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F121,F123,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F121,F124,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
+F122,F123,content_similar,0.675,파일명·설명·추출본문 TF-IDF 유사도: 0.675
+F122,F158,references,1.0,파일 경로 참조: ../../data/form.csv
 F122,F121,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F122,F123,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F122,F124,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
+F123,F122,content_similar,0.675,파일명·설명·추출본문 TF-IDF 유사도: 0.675
+F123,F122,references,1.0,파일 경로 참조: assignment.ipynb
+F123,F158,references,1.0,파일 경로 참조: ../../data/form.csv
 F123,F121,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F123,F122,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F123,F124,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
+F124,F109,content_similar,0.4,파일명·설명·추출본문 TF-IDF 유사도: 0.400
+F124,F116,content_similar,0.424,파일명·설명·추출본문 TF-IDF 유사도: 0.424
+F124,F121,content_similar,0.546,파일명·설명·추출본문 TF-IDF 유사도: 0.546
 F124,F121,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F124,F122,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
 F124,F123,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/2-working-with-data/08-data-preparation
+F125,F109,references,1.0,파일 경로 참조: 05-relational-databases/README.md
+F125,F113,references,1.0,파일 경로 참조: 06-non-relational/README.md
+F125,F116,references,1.0,파일 경로 참조: 07-python/README.md
+F125,F121,references,1.0,파일 경로 참조: 08-data-preparation/README.md
+F126,F129,content_similar,0.483,파일명·설명·추출본문 TF-IDF 유사도: 0.483
+F126,F133,content_similar,0.408,파일명·설명·추출본문 TF-IDF 유사도: 0.408
+F126,F155,content_similar,0.391,파일명·설명·추출본문 TF-IDF 유사도: 0.391
+F126,F127,references,1.0,파일 경로 참조: assignment.md
+F126,F128,references,1.0,파일 경로 참조: notebook.ipynb
+F126,F155,references,1.0,파일 경로 참조: ../../data/birds.csv
 F126,F127,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/09-visualization-quantities
 F126,F128,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/09-visualization-quantities
 F127,F126,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/09-visualization-quantities
 F127,F128,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/09-visualization-quantities
 F128,F126,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/09-visualization-quantities
 F128,F127,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/09-visualization-quantities
+F129,F126,content_similar,0.483,파일명·설명·추출본문 TF-IDF 유사도: 0.483
+F129,F130,content_similar,0.439,파일명·설명·추출본문 TF-IDF 유사도: 0.439
+F129,F155,content_similar,0.44,파일명·설명·추출본문 TF-IDF 유사도: 0.440
+F129,F155,references,1.0,파일 경로 참조: ../../../data/birds.csv
+F130,F129,content_similar,0.439,파일명·설명·추출본문 TF-IDF 유사도: 0.439
+F130,F133,content_similar,0.486,파일명·설명·추출본문 TF-IDF 유사도: 0.486
+F130,F155,content_similar,0.392,파일명·설명·추출본문 TF-IDF 유사도: 0.392
+F130,F131,references,1.0,파일 경로 참조: assignment.md
+F130,F155,references,1.0,파일 경로 참조: ../../data/birds.csv
 F130,F131,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/10-visualization-distributions
 F130,F132,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/10-visualization-distributions
 F131,F130,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/10-visualization-distributions
 F131,F132,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/10-visualization-distributions
 F132,F130,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/10-visualization-distributions
 F132,F131,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/10-visualization-distributions
+F133,F126,content_similar,0.408,파일명·설명·추출본문 TF-IDF 유사도: 0.408
+F133,F130,content_similar,0.486,파일명·설명·추출본문 TF-IDF 유사도: 0.486
+F133,F155,content_similar,0.437,파일명·설명·추출본문 TF-IDF 유사도: 0.437
+F133,F155,references,1.0,파일 경로 참조: ../../../data/birds.csv
+F134,F137,content_similar,0.635,파일명·설명·추출본문 TF-IDF 유사도: 0.635
+F134,F160,content_similar,0.568,파일명·설명·추출본문 TF-IDF 유사도: 0.568
+F134,F135,references,1.0,파일 경로 참조: assignment.md
+F134,F160,references,1.0,파일 경로 참조: ../../data/mushrooms.csv
 F134,F135,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/11-visualization-proportions
 F134,F136,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/11-visualization-proportions
 F135,F134,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/11-visualization-proportions
 F135,F136,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/11-visualization-proportions
 F136,F134,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/11-visualization-proportions
 F136,F135,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/11-visualization-proportions
+F137,F134,content_similar,0.635,파일명·설명·추출본문 TF-IDF 유사도: 0.635
+F137,F160,content_similar,0.667,파일명·설명·추출본문 TF-IDF 유사도: 0.667
+F137,F160,references,1.0,파일 경로 참조: ../../../data/mushrooms.csv
+F138,F141,content_similar,0.48,파일명·설명·추출본문 TF-IDF 유사도: 0.480
+F138,F139,references,1.0,파일 경로 참조: assignment.md
+F138,F159,references,1.0,파일 경로 참조: ../../data/honey.csv
 F138,F139,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/12-visualization-relationships
 F138,F140,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/12-visualization-relationships
 F139,F138,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/12-visualization-relationships
 F139,F140,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/12-visualization-relationships
 F140,F138,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/12-visualization-relationships
 F140,F139,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/12-visualization-relationships
+F141,F138,content_similar,0.48,파일명·설명·추출본문 TF-IDF 유사도: 0.480
+F141,F159,references,1.0,파일 경로 참조: ../../../data/honey.csv
+F142,F119,content_similar,0.37,파일명·설명·추출본문 TF-IDF 유사도: 0.370
+F142,F124,content_similar,0.379,파일명·설명·추출본문 TF-IDF 유사도: 0.379
+F142,F143,references,1.0,파일 경로 참조: assignment.md
 F142,F143,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/13-meaningful-visualizations
 F142,F144,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/13-meaningful-visualizations
 F143,F142,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/13-meaningful-visualizations
 F143,F144,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/13-meaningful-visualizations
 F144,F142,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/13-meaningful-visualizations
 F144,F143,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/3-data-visualization/13-meaningful-visualizations
+F149,F126,references,1.0,파일 경로 참조: 09-visualization-quantities/README.md
+F149,F130,references,1.0,파일 경로 참조: 10-visualization-distributions/README.md
+F149,F134,references,1.0,파일 경로 참조: 11-visualization-proportions/README.md
+F149,F138,references,1.0,파일 경로 참조: 12-visualization-relationships/README.md
+F149,F142,references,1.0,파일 경로 참조: 13-meaningful-visualizations/README.md
 F150,F151,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data/covid
 F150,F152,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data/covid
 F151,F150,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data/covid
@@ -125,6 +200,9 @@ F154,F158,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F154,F159,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F154,F160,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F154,F161,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
+F155,F129,content_similar,0.44,파일명·설명·추출본문 TF-IDF 유사도: 0.440
+F155,F130,content_similar,0.392,파일명·설명·추출본문 TF-IDF 유사도: 0.392
+F155,F133,content_similar,0.437,파일명·설명·추출본문 TF-IDF 유사도: 0.437
 F155,F153,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F155,F154,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F155,F156,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
@@ -133,6 +211,8 @@ F155,F158,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F155,F159,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F155,F160,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F155,F161,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
+F156,F157,content_similar,0.407,파일명·설명·추출본문 TF-IDF 유사도: 0.407
+F156,F159,content_similar,0.417,파일명·설명·추출본문 TF-IDF 유사도: 0.417
 F156,F153,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F156,F154,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F156,F155,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
@@ -141,6 +221,7 @@ F156,F158,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F156,F159,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F156,F160,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F156,F161,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
+F157,F156,content_similar,0.407,파일명·설명·추출본문 TF-IDF 유사도: 0.407
 F157,F153,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F157,F154,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F157,F155,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
@@ -157,6 +238,7 @@ F158,F157,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F158,F159,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F158,F160,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F158,F161,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
+F159,F156,content_similar,0.417,파일명·설명·추출본문 TF-IDF 유사도: 0.417
 F159,F153,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F159,F154,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F159,F155,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
@@ -165,6 +247,8 @@ F159,F157,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-fo
 F159,F158,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F159,F160,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F159,F161,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
+F160,F134,content_similar,0.568,파일명·설명·추출본문 TF-IDF 유사도: 0.568
+F160,F137,content_similar,0.667,파일명·설명·추출본문 TF-IDF 유사도: 0.667
 F160,F153,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F160,F154,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
 F160,F155,same_folder,0.2,동일 폴더: dataset/files/microsoft-data-science-for-beginners/data
