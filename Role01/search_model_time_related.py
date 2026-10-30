@@ -213,7 +213,6 @@ for _, row in df.iterrows():
         "modified_at": parse_metadata_date(row["modified_at"]),
     }
 
-
 def analyze_time_query(query, now=None):
     """시간 범위 [start, end) 및 기준 열을 분석한다.
 
@@ -412,6 +411,21 @@ def print_related_files(file_id, top_n=3):
         if item["evidence"]:
             print(f"    근거: {item['evidence'][:160]}")
 
+print("\n========== 날짜 진단 ==========")
+print("실행 파일:", Path(__file__).resolve())
+print("메타데이터 경로:", METADATA_CSV.resolve())
+
+for file_id in ["F001", "F002", "F003"]:
+    print(file_id, file_dates.get(file_id))
+
+print("4월 수정 파일 수:", sum(
+    pd.notna(d["modified_at"])
+    and d["modified_at"].year == 2026
+    and d["modified_at"].month == 4
+    for d in file_dates.values()
+))
+
+print("========== 진단 끝 ==========\n")
 
 # 6. 평가용 CSV 읽기
 if not EVALUATION_CSV.exists():
