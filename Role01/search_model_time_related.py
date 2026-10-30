@@ -41,7 +41,8 @@ if not required_columns.issubset(df.columns):
         f"필요한 열: {required_columns}\n현재 열: {list(df.columns)}"
     )
 
-# metadata.csv에만 있는 열을 file_id 기준으로 추가한다.
+# metadata.csv를 메타데이터의 기준으로 사용한다.
+# extracted_text.csv에도 같은 열이 있을 수 있으므로, 기존 열을 제거한 뒤 병합한다.
 if METADATA_CSV.exists():
     metadata = pd.read_csv(
         METADATA_CSV,
@@ -49,20 +50,21 @@ if METADATA_CSV.exists():
         keep_default_na=False,
         encoding="utf-8-sig"
     )
+    if "file_id" not in metadata.columns:
+        raise ValueError("metadata.csv에 file_id 열이 없습니다.")
 
-    if "file_id" in metadata.columns:
-        metadata = metadata.drop_duplicates(subset=["file_id"], keep="first")
-        extra_columns = [
-            col for col in metadata.columns
-            if col not in df.columns and col != "file_id"
-        ]
-
-        if extra_columns:
-            df = df.merge(
-                metadata[["file_id"] + extra_columns],
-                on="file_id",
-                how="left"
-            )
+    metadata = metadata.drop_duplicates(subset=["file_id"], keep="first")
+    metadata_columns = [col for col in metadata.columns if col != "file_id"]
+    # 파일명은 추출 데이터의 값을 유지하고, 나머지 메타데이터는 metadata.csv를 우선한다.
+    replace_columns = [col for col in metadata_columns if col != "filename"]
+    df = df.drop(columns=replace_columns, errors="ignore")
+    df = df.merge(
+        metadata[["file_id"] + replace_columns],
+        on="file_id",
+        how="left"
+    )
+    for col in replace_columns:
+        df[col] = df[col].fillna("")
 
 # 파일 ID와 파일명이 없거나 텍스트 추출 결과가 빈 행은 제외한다.
 df = df[
