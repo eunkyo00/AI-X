@@ -38,3 +38,10 @@
 `Role01/extracted_text.csv`의 파일명·설명·추출 본문을 E5 임베딩으로 변환하고,
 로지스틱 회귀로 프로젝트를 분류합니다. 학습·평가·새 파일 예측 방법은
 [PROJECT_CLASSIFIER.md](PROJECT_CLASSIFIER.md)에 정리되어 있습니다.
+
+## 시간·자료 유형 분류기
+
+파일의 수정 시각을 우선 사용해 연도·월·분기·상/하반기를 만들고, E5
+임베딩과 로지스틱 회귀로 자료 유형을 `강의자료·실습자료·코드·과제·데이터·안내자료`
+중 하나로 분류합니다. 실행 방법과 라벨 통합 기준은
+[FILE_METADATA_CLASSIFIERS.md](FILE_METADATA_CLASSIFIERS.md)에 정리되어 있습니다.
