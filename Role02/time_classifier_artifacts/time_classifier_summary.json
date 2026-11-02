@@ -1,0 +1,10 @@
+{
+  "file_count": 199,
+  "classified_count": 199,
+  "unclassified_count": 0,
+  "classification_coverage": 1.0,
+  "source_counts": {
+    "modified_at": 199
+  },
+  "rule": "activity_at > modified_at > created_at"
+}
