@@ -1,0 +1,159 @@
+﻿file_id,filename,original_role,actual_role,predicted_role,confidence,method,correct
+F109,README.md,강의자료,강의자료,안내자료,0.2286,embedding_classifier,False
+F110,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F111,CocaColaCo.xlsx,실습 데이터,데이터,데이터,0.99,extension:.xlsx,True
+F112,PersonsData.json,실습 데이터,데이터,데이터,0.99,extension:.json,True
+F113,README.md,강의자료,강의자료,안내자료,0.2186,embedding_classifier,False
+F114,TwitterData.json,실습 데이터,데이터,데이터,0.99,extension:.json,True
+F115,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F116,README.md,강의자료,강의자료,안내자료,0.2152,embedding_classifier,False
+F117,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F118,notebook-covidspread.ipynb,분석 예제,실습자료,실습자료,0.2277,embedding_classifier,True
+F119,notebook-papers.ipynb,분석 예제,실습자료,실습자료,0.2293,embedding_classifier,True
+F120,notebook.ipynb,실습 예제,실습자료,실습자료,0.2605,embedding_classifier,True
+F121,README.md,강의자료,강의자료,과제,0.2077,embedding_classifier,False
+F122,assignment.ipynb,과제 실습,과제,과제,0.99,filename:assignment,True
+F123,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F124,notebook.ipynb,실습 예제,실습자료,실습자료,0.2466,embedding_classifier,True
+F125,README.md,단원 안내,안내자료,과제,0.2089,embedding_classifier,False
+F126,README.md,강의자료,강의자료,과제,0.2155,embedding_classifier,False
+F127,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F128,notebook.ipynb,실습 시작 틀,실습자료,실습자료,0.3241,embedding_classifier,True
+F129,notebook.ipynb,실습 풀이,실습자료,실습자료,0.2583,embedding_classifier,True
+F130,README.md,강의자료,강의자료,과제,0.2216,embedding_classifier,False
+F131,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F132,notebook.ipynb,실습 시작 틀,실습자료,실습자료,0.3176,embedding_classifier,True
+F133,notebook.ipynb,실습 풀이,실습자료,실습자료,0.2627,embedding_classifier,True
+F134,README.md,강의자료,강의자료,과제,0.2091,embedding_classifier,False
+F135,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F136,notebook.ipynb,실습 시작 틀,실습자료,실습자료,0.3577,embedding_classifier,True
+F137,notebook.ipynb,실습 풀이,실습자료,실습자료,0.2701,embedding_classifier,True
+F138,README.md,강의자료,강의자료,과제,0.2081,embedding_classifier,False
+F139,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F140,notebook.ipynb,실습 시작 틀,실습자료,실습자료,0.344,embedding_classifier,True
+F141,notebook.ipynb,실습 풀이,실습자료,실습자료,0.2344,embedding_classifier,True
+F142,README.md,강의자료,강의자료,안내자료,0.2317,embedding_classifier,False
+F143,assignment.md,과제 안내,과제,과제,0.99,filename:assignment,True
+F144,correlation-analysis.ipynb,분석 예제,실습자료,실습자료,0.2204,embedding_classifier,True
+F145,README.md,실행 안내,안내자료,안내자료,0.3504,embedding_classifier,True
+F146,letters.json,시각화 입력 데이터,데이터,데이터,0.99,extension:.json,True
+F147,README.md,실행 안내,안내자료,안내자료,0.3472,embedding_classifier,True
+F148,letters.json,시각화 입력 데이터,데이터,데이터,0.99,extension:.json,True
+F149,README.md,단원 안내,안내자료,안내자료,0.1946,embedding_classifier,True
+F150,time_series_covid19_confirmed_global.csv,분석 입력 데이터,데이터,데이터,0.99,extension:.csv,True
+F151,time_series_covid19_deaths_global.csv,분석 입력 데이터,데이터,데이터,0.99,extension:.csv,True
+F152,time_series_covid19_recovered_global.csv,분석 입력 데이터,데이터,데이터,0.99,extension:.csv,True
+F153,SOCR_MLB.tsv,실습 데이터,데이터,데이터,0.99,extension:.tsv,True
+F154,UID_ISO_FIPS_LookUp_Table.csv,지역 조회 데이터,데이터,데이터,0.99,extension:.csv,True
+F155,birds.csv,시각화 입력 데이터,데이터,데이터,0.99,extension:.csv,True
+F156,diabetes.tsv,실습 데이터,데이터,데이터,0.99,extension:.tsv,True
+F157,emails.csv,실습 데이터,데이터,데이터,0.99,extension:.csv,True
+F158,form.csv,전처리 입력 데이터,데이터,데이터,0.99,extension:.csv,True
+F159,honey.csv,시각화 입력 데이터,데이터,데이터,0.99,extension:.csv,True
+F160,mushrooms.csv,시각화 입력 데이터,데이터,데이터,0.99,extension:.csv,True
+F161,taxi.csv,실습 데이터,데이터,데이터,0.99,extension:.csv,True
+F001,Cross-Validation_Decoded.pdf,강의자료,강의자료,코드,0.2122,embedding_classifier,False
+F002,MLP(다층퍼셉트론)(강의).pdf,강의자료,강의자료,강의자료,0.2327,embedding_classifier,True
+F003,Transformer_강의자료.pdf,강의자료,강의자료,강의자료,0.99,filename:lecture,True
+F004,머신러닝(내용추가).pdf,강의자료,강의자료,강의자료,0.2414,embedding_classifier,True
+F005,선형회귀_업데이트.pdf,강의자료,강의자료,코드,0.2185,embedding_classifier,False
+F006,심층신경망.pdf,강의자료,강의자료,강의자료,0.2423,embedding_classifier,True
+F007,영상인식과 딥러닝.pdf,강의자료,강의자료,강의자료,0.2298,embedding_classifier,True
+F008,제09장 컨벌루션 신경망(강의).pdf,강의자료,강의자료,강의자료,0.2396,embedding_classifier,True
+F009,제11장 순환신경망(강의).pdf,강의자료,강의자료,강의자료,0.2409,embedding_classifier,True
+F010,케라스 라이브러리.pdf,강의자료,강의자료,강의자료,0.2257,embedding_classifier,True
+F011,퍼셉트론_추가.pdf,강의자료,강의자료,강의자료,0.236,embedding_classifier,True
+F013,time_series_analysis10_1.R,코드,코드,코드,0.99,extension:.r,True
+F014,time_series_analysis11_1.R,코드,코드,코드,0.99,extension:.r,True
+F015,time_series_analysis12_1.R,코드,코드,코드,0.99,extension:.r,True
+F016,time_series_analysis13_1.R,코드,코드,코드,0.99,extension:.r,True
+F017,time_series_analysis14_1.R,코드,코드,코드,0.99,extension:.r,True
+F018,time_series_analysis2_1.R,코드,코드,코드,0.99,extension:.r,True
+F019,time_series_analysis2_2.R,코드,코드,코드,0.99,extension:.r,True
+F020,time_series_analysis3_1.R,코드,코드,코드,0.99,extension:.r,True
+F021,time_series_analysis4_1.R,코드,코드,코드,0.99,extension:.r,True
+F022,time_series_analysis5_1.R,코드,코드,코드,0.99,extension:.r,True
+F023,time_series_analysis6_1.R,코드,코드,코드,0.99,extension:.r,True
+F024,time_series_analysis7_1.R,코드,코드,코드,0.99,extension:.r,True
+F025,time_series_analysis9_1.R,코드,코드,코드,0.99,extension:.r,True
+F026,week10.R,코드,코드,코드,0.99,extension:.r,True
+F027,week10_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F028,week11_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F029,week12.R,코드,코드,코드,0.99,extension:.r,True
+F030,week12_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F031,week13.R,코드,코드,코드,0.99,extension:.r,True
+F032,week13_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F033,week14_apple_forecast_analysis_2026.R,코드,코드,코드,0.99,extension:.r,True
+F034,week14_apple_forecast_analysis_2026_1.R,코드,코드,코드,0.99,extension:.r,True
+F035,week14_apple_forecast_analysis_2026_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F036,week2.R,코드,코드,코드,0.99,extension:.r,True
+F037,week2_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F038,week3.R,코드,코드,코드,0.99,extension:.r,True
+F039,week3_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F040,week4.R,코드,코드,코드,0.99,extension:.r,True
+F041,week4_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F042,week5 (1).R,코드,코드,코드,0.99,extension:.r,True
+F043,week5.R,코드,코드,코드,0.99,extension:.r,True
+F044,week5_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F045,week6.R,코드,코드,코드,0.99,extension:.r,True
+F046,week6_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F047,week7.R,코드,코드,코드,0.99,extension:.r,True
+F048,week7_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F049,week9_cheating.R,코드,코드,코드,0.99,extension:.r,True
+F058,YOLO(test) (1).ipynb,코드,코드,코드,0.2287,embedding_classifier,True
+F059,YOLO(test)_picture(light_ver) (1).ipynb,코드,코드,코드,0.2324,embedding_classifier,True
+F060,YOLO(test)_picture.ipynb,코드,코드,코드,0.2101,embedding_classifier,True
+F050,message_hello (1).py,코드,코드,코드,0.99,extension:.py,True
+F051,pigpio.py,코드,코드,코드,0.99,extension:.py,True
+F052,python3_voice_alert.py,코드,코드,코드,0.99,extension:.py,True
+F053,rpi_gpio.py,코드,코드,코드,0.99,extension:.py,True
+F054,stream_yolo.py,코드,코드,코드,0.99,extension:.py,True
+F055,voice_alert.py,코드,코드,코드,0.99,extension:.py,True
+F056,voice_alert1.py,코드,코드,코드,0.99,extension:.py,True
+F057,voice_test.py,코드,코드,코드,0.99,extension:.py,True
+F061,yolo_learn.ipynb,코드,코드,실습자료,0.2169,embedding_classifier,False
+F062,yolo_learning2 (1).ipynb,코드,코드,실습자료,0.2167,embedding_classifier,False
+F063,yolo_learning5 (1).ipynb,코드,코드,코드,0.2174,embedding_classifier,True
+F064,yolo_open.py,코드,코드,코드,0.99,extension:.py,True
+F065,yolo_stream.py,코드,코드,코드,0.99,extension:.py,True
+F066,yolo_stream_front.py,코드,코드,코드,0.99,extension:.py,True
+F068,19세기_후반_불평등조약체제의_성립_과정.pdf,강의자료,강의자료,강의자료,0.2441,embedding_classifier,True
+F069,4주차_강화도조약과 개항.pdf,강의자료,강의자료,강의자료,0.3374,embedding_classifier,True
+F070,강화도조약과 개항.pdf,강의자료,강의자료,강의자료,0.3705,embedding_classifier,True
+F071,개항기 조선 서양과 만나다.pdf,강의자료,강의자료,강의자료,0.3701,embedding_classifier,True
+F072,근대 국민국가와 왕권.pdf,강의자료,강의자료,강의자료,0.3464,embedding_classifier,True
+F073,근대 국민국가와 왕권_sum.pdf,강의자료,강의자료,강의자료,0.3777,embedding_classifier,True
+F074,근대사_연표_19세기 후반.pdf,강의자료,강의자료,강의자료,0.32,embedding_classifier,True
+F075,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,강의자료,강의자료,강의자료,0.3519,embedding_classifier,True
+F076,서세동점 동아시아와 서양 열강 1.pdf,강의자료,강의자료,강의자료,0.3678,embedding_classifier,True
+F077,서세동점 동아시아와 서양 열강1_ppt.pdf,강의자료,강의자료,강의자료,0.3426,embedding_classifier,True
+F078,서세동점 동아시아와 서양 열강2.pdf,강의자료,강의자료,강의자료,0.3374,embedding_classifier,True
+F079,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,강의자료,강의자료,강의자료,0.3407,embedding_classifier,True
+F080,일본의 개항과 미국.pdf,강의자료,강의자료,강의자료,0.3489,embedding_classifier,True
+F081,읽기자료_갑오개혁의 전개와 성과.pdf,강의자료,강의자료,강의자료,0.3923,embedding_classifier,True
+F082,읽기자료_갑오개혁의 한계.pdf,강의자료,강의자료,강의자료,0.3923,embedding_classifier,True
+F083,임오군란과 갑신정변.pdf,강의자료,강의자료,강의자료,0.39,embedding_classifier,True
+F084,청일전쟁과 갑오개혁_ppt.pdf,강의자료,강의자료,강의자료,0.3778,embedding_classifier,True
+F085,청일전쟁과 갑오개혁_요약.pdf,강의자료,강의자료,강의자료,0.3969,embedding_classifier,True
+F086,한국 근현대 인물사 연구방법론.pdf,강의자료,강의자료,강의자료,0.336,embedding_classifier,True
+F087,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,강의자료,강의자료,강의자료,0.3512,embedding_classifier,True
+F088,한성도시개조사업.pdf,강의자료,강의자료,강의자료,0.2838,embedding_classifier,True
+F089,행정개혁기구의_성공_조건.pdf,강의자료,강의자료,강의자료,0.3212,embedding_classifier,True
+F090,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,강의자료,강의자료,강의자료,0.3467,embedding_classifier,True
+F091,근대 서양 문물의 도입_ppt.pdf,강의자료,강의자료,강의자료,0.3635,embedding_classifier,True
+F092,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,강의자료,강의자료,강의자료,0.3855,embedding_classifier,True
+F093,세균설과 근대의 보건_위생_ppt.pdf,강의자료,강의자료,강의자료,0.3344,embedding_classifier,True
+F094,해방전후의 한국 정치와 사회_제주.pdf,강의자료,강의자료,강의자료,0.3578,embedding_classifier,True
+F095,해외 인력 송출의 역사와 파독 광부 간호사.pdf,강의자료,강의자료,강의자료,0.3268,embedding_classifier,True
+F097,4.3history.pdf,강의자료,강의자료,강의자료,0.3279,embedding_classifier,True
+F098,근대 서양 문물의 도입과 일상생활.pdf,강의자료,강의자료,강의자료,0.3493,embedding_classifier,True
+F099,근대의 법과 제도는 어떻게 이식되었는가.pdf,강의자료,강의자료,강의자료,0.3859,embedding_classifier,True
+F100,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,강의자료,강의자료,강의자료,0.3055,embedding_classifier,True
+F101,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,강의자료,강의자료,강의자료,0.3256,embedding_classifier,True
+F102,유관순의 발굴과 재현.pdf,강의자료,강의자료,강의자료,0.3281,embedding_classifier,True
+F103,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,강의자료,강의자료,강의자료,0.3537,embedding_classifier,True
+F104,제주 4·3의 진실과 역사적 의미_박찬식.pdf,강의자료,강의자료,강의자료,0.3022,embedding_classifier,True
+F105,파월기술자의 전쟁경험.pdf,강의자료,강의자료,강의자료,0.3111,embedding_classifier,True
+F106,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,강의자료,강의자료,강의자료,0.3192,embedding_classifier,True
+F107,한국현대사와 영화 ‘국제시장＇.pdf,강의자료,강의자료,강의자료,0.342,embedding_classifier,True
+F108,해방이전 제주의 사회와 경제_양정필.pdf,강의자료,강의자료,강의자료,0.3151,embedding_classifier,True
