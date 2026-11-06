@@ -1,0 +1,42 @@
+﻿file_id,filename,project,role,project_confidence,role_confidence,needs_confirmation
+F167,14주차_종합과제-2.ipynb,새 과목,과제,0.2436,0.99,True
+F168,customers.csv,새 과목,데이터,0.2389,0.99,True
+F169,orders_202401.csv,데이터사이언스,데이터,0.2904,0.99,False
+F170,orders_202402.csv,데이터사이언스,데이터,0.2883,0.99,False
+F171,orders_202403.csv,데이터사이언스,데이터,0.2856,0.99,False
+F172,products.csv,새 과목,데이터,0.2693,0.99,True
+F173,reviews.csv,새 과목,데이터,0.258,0.99,True
+F174,student_performance.csv,데이터사이언스,데이터,0.3326,0.99,False
+F175,week10_example.csv,새 과목,데이터,0.2449,0.99,True
+F176,week10_homework.ipynb,새 과목,과제,0.268,0.99,True
+F177,week10_hospital_raw.csv,새 과목,데이터,0.2473,0.99,True
+F178,week11_home.ipynb,데이터사이언스,과제,0.2861,0.99,False
+F179,week11_item.csv,새 과목,데이터,0.2532,0.99,True
+F180,week11_shop.csv,새 과목,데이터,0.2554,0.99,True
+F181,week12.ipynb,새 과목,미분류,0.2634,0.233,True
+F182,week12_data.csv,데이터사이언스,데이터,0.2808,0.99,False
+F183,week13_assignment-2.ipynb,새 과목,과제,0.2529,0.99,True
+F184,week13_health.csv,새 과목,데이터,0.2783,0.99,True
+F185,week14_assignment.ipynb,새 과목,과제,0.2534,0.99,True
+F186,week14_data.csv,데이터사이언스,데이터,0.2926,0.99,False
+F187,Week4_Assignment.ipynb,새 과목,과제,0.2609,0.99,True
+F188,week5.ipynb,새 과목,미분류,0.2564,0.2463,True
+F189,Week6_share.ipynb,새 과목,미분류,0.2406,0.2101,True
+F190,week7_2.ipynb,데이터사이언스,실습자료,0.2893,0.2514,False
+F191,week_7_convenience_store.csv,새 과목,데이터,0.2641,0.99,True
+F192,데이터사이언스_강의자료1.pdf,새 과목,강의자료,0.2695,0.99,True
+F193,데이터사이언스_강의자료10.pdf,새 과목,강의자료,0.2428,0.99,True
+F194,데이터사이언스_강의자료11.pdf,새 과목,강의자료,0.2342,0.99,True
+F195,데이터사이언스_강의자료12.pdf,새 과목,강의자료,0.229,0.99,True
+F196,데이터사이언스_강의자료13.pdf,새 과목,강의자료,0.2515,0.99,True
+F197,데이터사이언스_강의자료14.pdf,새 과목,강의자료,0.2585,0.99,True
+F198,데이터사이언스_강의자료2.pdf,새 과목,강의자료,0.2533,0.99,True
+F199,데이터사이언스_강의자료3.pdf,딥러닝,강의자료,0.2835,0.99,False
+F200,데이터사이언스_강의자료4.pdf,딥러닝,강의자료,0.2817,0.99,False
+F201,데이터사이언스_강의자료5.pdf,새 과목,강의자료,0.2569,0.99,True
+F202,데이터사이언스_강의자료6.pdf,새 과목,강의자료,0.28,0.99,True
+F203,데이터사이언스_강의자료7.pdf,새 과목,강의자료,0.2584,0.99,True
+F204,데이터사이언스_강의자료9.pdf,새 과목,강의자료,0.2343,0.99,True
+F164,01. 금융의역할과주요금융지표.pdf,새 과목,강의자료,0.2679,0.2792,True
+F165,02. 금융상품과금융시장.pdf,새 과목,강의자료,0.2757,0.2733,True
+F166,03. 저축의이해.pdf,새 과목,강의자료,0.2699,0.2705,True

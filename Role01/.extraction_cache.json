@@ -1,4 +1,368 @@
 {
+  "F122": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/assignment.md",
+    "sha256": "a836747a80e63ec7e588670ab53eab69f4a167cdb7b64a23874e14f03e15d1b7"
+  },
+  "F123": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/README.md",
+    "sha256": "c9cce931c932d42ea85ef515445c6c717590c7624d3a4065e89ca4c67cf754ad"
+  },
+  "F124": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/assignment.md",
+    "sha256": "9a9041d4a187c74506c4246d5a6978189d2023c9d99ab8df37d2d2a06cb0c397"
+  },
+  "F125": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/CocaColaCo.xlsx",
+    "sha256": "7423ca18a5cf2b37ce265de6497ac83b42ba3fff89bf39af1332deec008d6ca0"
+  },
+  "F126": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/PersonsData.json",
+    "sha256": "bb23275bdd6e7dc1b2bee9648bcdbbbafbe62467ac693917e21631bf0354ea3b"
+  },
+  "F127": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/README.md",
+    "sha256": "76e8146334b6b1736672f235a6c4f1a3fa134661fea9e51cda0668305e3631b6"
+  },
+  "F128": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/TwitterData.json",
+    "sha256": "f6a76bc7bb09c6691d4474cc094f2b460a14be492048fdf8b1a87e44de8e7d95"
+  },
+  "F129": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/assignment.md",
+    "sha256": "fd45e6b63919fc7febd621d4774f184076058b8a7748c1c33882960858b0ed8e"
+  },
+  "F130": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-covidspread.ipynb",
+    "sha256": "60d26e1feb51a59bb4bc2b5ef533f08dba81b1412f8ddb6c87f6b9543dcbcca9"
+  },
+  "F131": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-papers.ipynb",
+    "sha256": "3b0b33d49bca57f25a2c7d50e8b86be3970ca962e100347697e7945304d3ffab"
+  },
+  "F132": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook.ipynb",
+    "sha256": "d384538c502059082369f4f0cbbed42eb384d11db02f7f4ef9ba863a6ed8f43c"
+  },
+  "F133": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/README.md",
+    "sha256": "5750f1ae5c038b818f7351f2f153c43ad168d57332a890167d0a51a5c354bee0"
+  },
+  "F134": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.ipynb",
+    "sha256": "d77a1ca8cf8c3b11a8ad7c534ce9c263eff0a12ee38ca5bb28265a7504d1ea46"
+  },
+  "F135": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.md",
+    "sha256": "33cc20695fd9834ab83ac0f477c55fd6f51b16cf6de78f170f5c241004d47df1"
+  },
+  "F136": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/notebook.ipynb",
+    "sha256": "3e63f136780a726566c608dda829bf5fb9a7e3aed5c904d40bf8b254e16343bc"
+  },
+  "F137": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/README.md",
+    "sha256": "3d87a6ffc65e9f9118777bc8c952fdc36a8d1bc752e5ec1ec4bf6e368148c0c3"
+  },
+  "F111": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/README.md",
+    "sha256": "83b87be2207030799d8d91b3ed76044eb6fd6f351983d892b1bc66979ba4f3f7"
+  },
+  "F138": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/assignment.md",
+    "sha256": "3da5374dcfccd26c8aa9e323cd93e6256c1d47ab129ffa2e051fc01e7a826767"
+  },
+  "F139": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/notebook.ipynb",
+    "sha256": "ce7543dbe2882e00e70853b6eca233de2836529cfbb7ede4616d788276f48f71"
+  },
+  "F140": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/README.md",
+    "sha256": "59361af0858a0eb241a8152d8b3a5eee9cf9d9915cecff955570bd16335f3737"
+  },
+  "F153": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/solution/notebook.ipynb",
+    "sha256": "ca5f14e8979262cf2d3a9cf1355336fd259710dfbb04eaf5e58b0b2d35a13400"
+  },
+  "F141": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/assignment.md",
+    "sha256": "c3de16bcd2769868c466b2d00a1eea53ccbe240dc8aea2b40de3c7bb4c396465"
+  },
+  "F142": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/notebook.ipynb",
+    "sha256": "3050fa4ef74fb412af797db5ab1da550f8996d1d388cd83b01fc0b26beeb36a0"
+  },
+  "F143": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/README.md",
+    "sha256": "7023d4020ba82599a36a441537f7250ef0316c628b12134e4226e8165908cd2e"
+  },
+  "F154": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/solution/notebook.ipynb",
+    "sha256": "fcfb2853836c61a44e417be469a7b630c13c99dbd1a0f64ea862baa2647b2402"
+  },
+  "F144": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/assignment.md",
+    "sha256": "38d66a54b74c332bd1e3e9e8777f5c3a3e2d0cc7ed39e2d26fa4a3f649651e0e"
+  },
+  "F145": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/notebook.ipynb",
+    "sha256": "a4a1d8ce6cc3c390ebfc015cbb773fd20d1d9f6fc57f9b37b244c52e92dff78c"
+  },
+  "F146": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/README.md",
+    "sha256": "a75aca9a9be35b5612b431c856c1303f6a945ac593d9309e97e356fbef157ec6"
+  },
+  "F155": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/solution/notebook.ipynb",
+    "sha256": "0ed093a585983b9b335eed427b252a6ece9874a78cce7fa7404380f61e350683"
+  },
+  "F147": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/assignment.md",
+    "sha256": "8bcd1d3a2a7030454a994ab853e956467280abd98776de22b25fc03369602ede"
+  },
+  "F148": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/notebook.ipynb",
+    "sha256": "338e6d754dfa21ac12dbc7b468280e0ef60b2298331490774617909835983a4d"
+  },
+  "F149": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/README.md",
+    "sha256": "db8a8a7703b5fabfc99edb190451831817b4b89214978e4ecec9c55dda6df358"
+  },
+  "F156": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/solution/notebook.ipynb",
+    "sha256": "ed68f051813ac1f35c4b4694d4b667b9428f620b26b59fa67605f2ea40bbc2f0"
+  },
+  "F150": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/assignment.md",
+    "sha256": "178b71b911183770a5eb9789002a5b4d123038929ada6245df6f786f4fea72e9"
+  },
+  "F151": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/correlation-analysis.ipynb",
+    "sha256": "fdc71c2f73c7f1a4ea80a467d7a8c64f482df058d3aae2265e55775daf7323b7"
+  },
+  "F152": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/README.md",
+    "sha256": "0f2199e2be42259fe66c80df36119f3e7481f7fe19f205f2a125521d1b044a68"
+  },
+  "F157": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/README.md",
+    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
+  },
+  "F159": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/src/assets/letters.json",
+    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
+  },
+  "F158": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/README.md",
+    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
+  },
+  "F160": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/src/assets/letters.json",
+    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
+  },
+  "F112": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/README.md",
+    "sha256": "36edbab85127686ec62ddb3b2fcaad3779b8ba223f8e2452f1d584b4a0bd5c42"
+  },
+  "F113": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/birds.csv",
+    "sha256": "c508f9e8a597535d5955b1574745d902697e8677e67a768f0dd3db6a9dab6147"
+  },
+  "F161": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_confirmed_global.csv",
+    "sha256": "53001eb4d44358447e50a683405b2e41f0a755c14e0a9fbe69832b40b9fbd737"
+  },
+  "F162": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_deaths_global.csv",
+    "sha256": "996dd3583b45e96f829e3cd72f518ead379a6dcf69505a978e842a96671457fd"
+  },
+  "F163": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_recovered_global.csv",
+    "sha256": "6fa4079b6cd3a5f3ae6ef5348aae5430854e8a7592d2509e875d30d8286ebdd5"
+  },
+  "F114": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/diabetes.tsv",
+    "sha256": "6845b179f73b32c67ae82a81a77159efd2b594ed3b5b0d09ec7bb9ef0cfdd33b"
+  },
+  "F115": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/emails.csv",
+    "sha256": "94c79d13fe130ed14203ce3808017db31ff589dddfcb3e484a1e7a32529d9b9e"
+  },
+  "F116": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/form.csv",
+    "sha256": "25127a0dbe879c3d3c4d1443e777c38cde3dbe19e57af6046b2914571a9e83ab"
+  },
+  "F117": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/honey.csv",
+    "sha256": "4355c10367800ae69650f23d9c1de706001dea2f6cef8edc73c1f7f11cd799d6"
+  },
+  "F118": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/mushrooms.csv",
+    "sha256": "d767bda21ca437e812761c4eb499e7344c074adea724c3347bc82423ee5d47cd"
+  },
+  "F119": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/SOCR_MLB.tsv",
+    "sha256": "5ee14f1fd6f3eb45ea4bc8b904c4083e9116a7a8f1eed71443550c29f80d4e6b"
+  },
+  "F120": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/taxi.csv",
+    "sha256": "46c9ac10f26975029efcf2b8cffce70db68dfa1d7f1f1c09b8d7313e4d3cd9d7"
+  },
+  "F121": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/UID_ISO_FIPS_LookUp_Table.csv",
+    "sha256": "2862a955b6cd64fb6f34a743b87e030ca05a587546c9be52d6beb924912e95b0"
+  },
+  "F167": {
+    "path": "dataset/files/데이터사이언스/14주차_종합과제-2.ipynb",
+    "sha256": "430b9997b09f3d0a44deb019e952747f7f8e14160badeb5680a291898ffd155a"
+  },
+  "F168": {
+    "path": "dataset/files/데이터사이언스/customers.csv",
+    "sha256": "5ef8388c03660ba0075aa3237746ddb8f7fb6887a9e57d1e9e6258dac56ffec8"
+  },
+  "F169": {
+    "path": "dataset/files/데이터사이언스/orders_202401.csv",
+    "sha256": "bbaa18a81d435b09f7d8d0e58a22984a88e205f80cd1d6ec796d0fbadb48104e"
+  },
+  "F170": {
+    "path": "dataset/files/데이터사이언스/orders_202402.csv",
+    "sha256": "13e9760f4547cace3dbb60ae71fafd1183308f8e41011e8865c2f91244c6ef9a"
+  },
+  "F171": {
+    "path": "dataset/files/데이터사이언스/orders_202403.csv",
+    "sha256": "01b28053dbe7c2bd205633da1ba660fa1b6dffe98dfb348b84c2a0710e337135"
+  },
+  "F172": {
+    "path": "dataset/files/데이터사이언스/products.csv",
+    "sha256": "0127bdc92fd244f92f52d3b595685c092557b1ee61082c649cf59dea5012c34b"
+  },
+  "F173": {
+    "path": "dataset/files/데이터사이언스/reviews.csv",
+    "sha256": "9af6afe8ab2adbef63bdd1ea688c940c54eb019271da8e25604e188c887acad0"
+  },
+  "F174": {
+    "path": "dataset/files/데이터사이언스/student_performance.csv",
+    "sha256": "e5de9820e4651c8b9d383388741f88e3780bf62c9e2534df1e3bc8328b18a30f"
+  },
+  "F175": {
+    "path": "dataset/files/데이터사이언스/week10_example.csv",
+    "sha256": "af2b75d4614159f62df308ee3b62c5282c2a194041a6cb3f8f5bae60f66c4f00"
+  },
+  "F176": {
+    "path": "dataset/files/데이터사이언스/week10_homework.ipynb",
+    "sha256": "2b2ae879c520ebb6f712c532565183b3710c02f5d55eb76a48bfaab54e3f9f7a"
+  },
+  "F177": {
+    "path": "dataset/files/데이터사이언스/week10_hospital_raw.csv",
+    "sha256": "6960755dc5e1daed90f9b26e079cd0bd8a1eda44653403d2c7dd1ca0972fc1cd"
+  },
+  "F178": {
+    "path": "dataset/files/데이터사이언스/week11_home.ipynb",
+    "sha256": "3b7df19734d9176299ca5bc66affec162aa7498ff52276a08549f601af2cdd46"
+  },
+  "F179": {
+    "path": "dataset/files/데이터사이언스/week11_item.csv",
+    "sha256": "5761ff9feaff5b0e3c848a59b7ac5c497171f1f1ab34699a297dc8cb5db2e58b"
+  },
+  "F180": {
+    "path": "dataset/files/데이터사이언스/week11_shop.csv",
+    "sha256": "694160352f216af9d26da152c7e78b2978cefac84cf331121d790b44d918f479"
+  },
+  "F181": {
+    "path": "dataset/files/데이터사이언스/week12.ipynb",
+    "sha256": "0ea9652d42ec132a6423df5aaac0c4ffe377116c01ff51c9f8ffacdb2bb72784"
+  },
+  "F182": {
+    "path": "dataset/files/데이터사이언스/week12_data.csv",
+    "sha256": "a0bdeab7338d426a7178eebd8c28f332a794a994bb9c6b6b6ce56d740592e65b"
+  },
+  "F183": {
+    "path": "dataset/files/데이터사이언스/week13_assignment-2.ipynb",
+    "sha256": "03c87995111d5004d9489786a3e86736ce0b5a55165a4553378c0183a1fc704d"
+  },
+  "F184": {
+    "path": "dataset/files/데이터사이언스/week13_health.csv",
+    "sha256": "8bfd52a2bb56df40c3389d2ef53590dddada90a551986dcf73f35c9178706a5c"
+  },
+  "F185": {
+    "path": "dataset/files/데이터사이언스/week14_assignment.ipynb",
+    "sha256": "c3809c7a2db3808cbda4f2894f639dc823b7ded766a778ba47f8b52185bab18b"
+  },
+  "F186": {
+    "path": "dataset/files/데이터사이언스/week14_data.csv",
+    "sha256": "e56fdd79b008b7a7b5489d9f067324d5df87b5ec7502a0232c070fbec23196e1"
+  },
+  "F187": {
+    "path": "dataset/files/데이터사이언스/Week4_Assignment.ipynb",
+    "sha256": "bdaefd9e39496fbea32f2e3361622974a0f5552a86f227f9f7afa7c4b206abb6"
+  },
+  "F188": {
+    "path": "dataset/files/데이터사이언스/week5.ipynb",
+    "sha256": "cb74463c44d9b05738ba321e6377c67306b436db0c504489521aa9251708bf72"
+  },
+  "F189": {
+    "path": "dataset/files/데이터사이언스/Week6_share.ipynb",
+    "sha256": "5d1357b9a75144ae84d25c89b24a59a8fb42a49b1588f23dd5f01699fffcee6a"
+  },
+  "F190": {
+    "path": "dataset/files/데이터사이언스/week7_2.ipynb",
+    "sha256": "358d3394f4a9779041e73d04560bc3e9899f9984bee676aec508f99597a41e2a"
+  },
+  "F191": {
+    "path": "dataset/files/데이터사이언스/week_7_convenience_store.csv",
+    "sha256": "27c2f7542a1e8ab574c7933339bf64df2ab1313aa1f8b810f0418cb88e8b65f1"
+  },
+  "F192": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료1.pdf",
+    "sha256": "2bc3dd7cfabb96a92e5ab8e88a46644601221c8bfd981fd415d7b9ec5b071ef9"
+  },
+  "F193": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료10.pdf",
+    "sha256": "5442953b0159203f0f8a0ca9487dbcb95a308f2b03eb55b95ba4b1870a1ffe44"
+  },
+  "F194": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료11.pdf",
+    "sha256": "bcf8370aaeeae4d8cb6ca27b066aa379788ae384e7151d51f5db20fec05b90f9"
+  },
+  "F195": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료12.pdf",
+    "sha256": "032024b686c65bb0255947d9b900520d9ac29f0ce70b4fe388b50b07db021ed6"
+  },
+  "F196": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료13.pdf",
+    "sha256": "0ccae3039559df0c7b3e725f59392853314713ab6ac02c4659a1bd0d90f64567"
+  },
+  "F197": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료14.pdf",
+    "sha256": "9b206781d653c98e0ef90dfca55d96b957f33f15ad274b03e2d1e99d86380214"
+  },
+  "F198": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료2.pdf",
+    "sha256": "f17ffdfd359e79e5a1b158483864885a5ab64f0bf13041e5600e4528588edda2"
+  },
+  "F199": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료3.pdf",
+    "sha256": "be48de1028e75fc73ea1d987a3b64101d096fe29313890c6bc56916c541adfa8"
+  },
+  "F200": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료4.pdf",
+    "sha256": "3e2dd76fcbc31de4300e66edf1b6045a2253aed5af0b8e72518721e984380161"
+  },
+  "F201": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료5.pdf",
+    "sha256": "a07528c1040083428b925ca5118bf8db20a7959759b78c50e2dd3d3ae3c9bc5b"
+  },
+  "F202": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료6.pdf",
+    "sha256": "9668437f3ab759f7acc01dc313657c9feb1d528b0d59855afb591be5cb614f6b"
+  },
+  "F203": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료7.pdf",
+    "sha256": "efe542d4f76aa903840bf9887c0feb7ed9a3ef46e3e3046475b4f84be4cb441a"
+  },
+  "F204": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료9.pdf",
+    "sha256": "5797fb7f3dbd31688f9432a2ae9e4a5162241f55396f24400906e07e5a40a7ac"
+  },
   "F003": {
     "path": "dataset/files/딥러닝_수업자료/Cross-Validation_Decoded.pdf",
     "sha256": "6d52c3b11e38e1da20b07e28043eae0758b7377ee2886de0e45e83aadc6ff700"
@@ -42,6 +406,18 @@
   "F013": {
     "path": "dataset/files/딥러닝_수업자료/퍼셉트론_추가.pdf",
     "sha256": "4a4aa249bebabc2f54f2cc58fd12401e12a4f13c6275759a735a98f13d52a478"
+  },
+  "F164": {
+    "path": "dataset/files/생활속의금융/01. 금융의역할과주요금융지표.pdf",
+    "sha256": "b1e65f33f5f4c010586c142ac0bd8262680537b31318d3f61c62f3049904e424"
+  },
+  "F165": {
+    "path": "dataset/files/생활속의금융/02. 금융상품과금융시장.pdf",
+    "sha256": "8f19077a44a27419b499cc018139b45a993d6c716bf3f7222d6de5cb4d723bb4"
+  },
+  "F166": {
+    "path": "dataset/files/생활속의금융/03. 저축의이해.pdf",
+    "sha256": "8e646d7df97d285d04a87684224071ff3dd454972ac14d4045618a47f0feb81e"
   },
   "F015": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis10_1.R",
@@ -418,381 +794,5 @@
   "F110": {
     "path": "dataset/files/한국근현대사역사기행03/해방이전 제주의 사회와 경제_양정필.pdf",
     "sha256": "5593a5c3eac898af16929f2f86506ea7aa06ff4146cfbd60be36d9905940e43c"
-  },
-  "F111": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/README.md",
-    "sha256": "83b87be2207030799d8d91b3ed76044eb6fd6f351983d892b1bc66979ba4f3f7"
-  },
-  "F112": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/README.md",
-    "sha256": "36edbab85127686ec62ddb3b2fcaad3779b8ba223f8e2452f1d584b4a0bd5c42"
-  },
-  "F113": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/birds.csv",
-    "sha256": "c508f9e8a597535d5955b1574745d902697e8677e67a768f0dd3db6a9dab6147"
-  },
-  "F114": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/diabetes.tsv",
-    "sha256": "6845b179f73b32c67ae82a81a77159efd2b594ed3b5b0d09ec7bb9ef0cfdd33b"
-  },
-  "F115": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/emails.csv",
-    "sha256": "94c79d13fe130ed14203ce3808017db31ff589dddfcb3e484a1e7a32529d9b9e"
-  },
-  "F116": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/form.csv",
-    "sha256": "25127a0dbe879c3d3c4d1443e777c38cde3dbe19e57af6046b2914571a9e83ab"
-  },
-  "F117": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/honey.csv",
-    "sha256": "4355c10367800ae69650f23d9c1de706001dea2f6cef8edc73c1f7f11cd799d6"
-  },
-  "F118": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/mushrooms.csv",
-    "sha256": "d767bda21ca437e812761c4eb499e7344c074adea724c3347bc82423ee5d47cd"
-  },
-  "F119": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/SOCR_MLB.tsv",
-    "sha256": "5ee14f1fd6f3eb45ea4bc8b904c4083e9116a7a8f1eed71443550c29f80d4e6b"
-  },
-  "F120": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/taxi.csv",
-    "sha256": "46c9ac10f26975029efcf2b8cffce70db68dfa1d7f1f1c09b8d7313e4d3cd9d7"
-  },
-  "F121": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/UID_ISO_FIPS_LookUp_Table.csv",
-    "sha256": "2862a955b6cd64fb6f34a743b87e030ca05a587546c9be52d6beb924912e95b0"
-  },
-  "F122": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/assignment.md",
-    "sha256": "a836747a80e63ec7e588670ab53eab69f4a167cdb7b64a23874e14f03e15d1b7"
-  },
-  "F123": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/README.md",
-    "sha256": "c9cce931c932d42ea85ef515445c6c717590c7624d3a4065e89ca4c67cf754ad"
-  },
-  "F124": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/assignment.md",
-    "sha256": "9a9041d4a187c74506c4246d5a6978189d2023c9d99ab8df37d2d2a06cb0c397"
-  },
-  "F125": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/CocaColaCo.xlsx",
-    "sha256": "7423ca18a5cf2b37ce265de6497ac83b42ba3fff89bf39af1332deec008d6ca0"
-  },
-  "F126": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/PersonsData.json",
-    "sha256": "bb23275bdd6e7dc1b2bee9648bcdbbbafbe62467ac693917e21631bf0354ea3b"
-  },
-  "F127": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/README.md",
-    "sha256": "76e8146334b6b1736672f235a6c4f1a3fa134661fea9e51cda0668305e3631b6"
-  },
-  "F128": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/TwitterData.json",
-    "sha256": "f6a76bc7bb09c6691d4474cc094f2b460a14be492048fdf8b1a87e44de8e7d95"
-  },
-  "F129": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/assignment.md",
-    "sha256": "fd45e6b63919fc7febd621d4774f184076058b8a7748c1c33882960858b0ed8e"
-  },
-  "F130": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-covidspread.ipynb",
-    "sha256": "60d26e1feb51a59bb4bc2b5ef533f08dba81b1412f8ddb6c87f6b9543dcbcca9"
-  },
-  "F131": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-papers.ipynb",
-    "sha256": "3b0b33d49bca57f25a2c7d50e8b86be3970ca962e100347697e7945304d3ffab"
-  },
-  "F132": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook.ipynb",
-    "sha256": "d384538c502059082369f4f0cbbed42eb384d11db02f7f4ef9ba863a6ed8f43c"
-  },
-  "F133": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/README.md",
-    "sha256": "5750f1ae5c038b818f7351f2f153c43ad168d57332a890167d0a51a5c354bee0"
-  },
-  "F134": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.ipynb",
-    "sha256": "d77a1ca8cf8c3b11a8ad7c534ce9c263eff0a12ee38ca5bb28265a7504d1ea46"
-  },
-  "F135": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.md",
-    "sha256": "33cc20695fd9834ab83ac0f477c55fd6f51b16cf6de78f170f5c241004d47df1"
-  },
-  "F136": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/notebook.ipynb",
-    "sha256": "3e63f136780a726566c608dda829bf5fb9a7e3aed5c904d40bf8b254e16343bc"
-  },
-  "F137": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/README.md",
-    "sha256": "3d87a6ffc65e9f9118777bc8c952fdc36a8d1bc752e5ec1ec4bf6e368148c0c3"
-  },
-  "F138": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/assignment.md",
-    "sha256": "3da5374dcfccd26c8aa9e323cd93e6256c1d47ab129ffa2e051fc01e7a826767"
-  },
-  "F139": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/notebook.ipynb",
-    "sha256": "ce7543dbe2882e00e70853b6eca233de2836529cfbb7ede4616d788276f48f71"
-  },
-  "F140": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/README.md",
-    "sha256": "59361af0858a0eb241a8152d8b3a5eee9cf9d9915cecff955570bd16335f3737"
-  },
-  "F141": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/assignment.md",
-    "sha256": "c3de16bcd2769868c466b2d00a1eea53ccbe240dc8aea2b40de3c7bb4c396465"
-  },
-  "F142": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/notebook.ipynb",
-    "sha256": "3050fa4ef74fb412af797db5ab1da550f8996d1d388cd83b01fc0b26beeb36a0"
-  },
-  "F143": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/README.md",
-    "sha256": "7023d4020ba82599a36a441537f7250ef0316c628b12134e4226e8165908cd2e"
-  },
-  "F144": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/assignment.md",
-    "sha256": "38d66a54b74c332bd1e3e9e8777f5c3a3e2d0cc7ed39e2d26fa4a3f649651e0e"
-  },
-  "F145": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/notebook.ipynb",
-    "sha256": "a4a1d8ce6cc3c390ebfc015cbb773fd20d1d9f6fc57f9b37b244c52e92dff78c"
-  },
-  "F146": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/README.md",
-    "sha256": "a75aca9a9be35b5612b431c856c1303f6a945ac593d9309e97e356fbef157ec6"
-  },
-  "F147": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/assignment.md",
-    "sha256": "8bcd1d3a2a7030454a994ab853e956467280abd98776de22b25fc03369602ede"
-  },
-  "F148": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/notebook.ipynb",
-    "sha256": "338e6d754dfa21ac12dbc7b468280e0ef60b2298331490774617909835983a4d"
-  },
-  "F149": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/README.md",
-    "sha256": "db8a8a7703b5fabfc99edb190451831817b4b89214978e4ecec9c55dda6df358"
-  },
-  "F150": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/assignment.md",
-    "sha256": "178b71b911183770a5eb9789002a5b4d123038929ada6245df6f786f4fea72e9"
-  },
-  "F151": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/correlation-analysis.ipynb",
-    "sha256": "fdc71c2f73c7f1a4ea80a467d7a8c64f482df058d3aae2265e55775daf7323b7"
-  },
-  "F152": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/README.md",
-    "sha256": "0f2199e2be42259fe66c80df36119f3e7481f7fe19f205f2a125521d1b044a68"
-  },
-  "F153": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/solution/notebook.ipynb",
-    "sha256": "ca5f14e8979262cf2d3a9cf1355336fd259710dfbb04eaf5e58b0b2d35a13400"
-  },
-  "F154": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/solution/notebook.ipynb",
-    "sha256": "fcfb2853836c61a44e417be469a7b630c13c99dbd1a0f64ea862baa2647b2402"
-  },
-  "F155": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/solution/notebook.ipynb",
-    "sha256": "0ed093a585983b9b335eed427b252a6ece9874a78cce7fa7404380f61e350683"
-  },
-  "F156": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/solution/notebook.ipynb",
-    "sha256": "ed68f051813ac1f35c4b4694d4b667b9428f620b26b59fa67605f2ea40bbc2f0"
-  },
-  "F157": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/README.md",
-    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
-  },
-  "F158": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/README.md",
-    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
-  },
-  "F159": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/src/assets/letters.json",
-    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
-  },
-  "F160": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/src/assets/letters.json",
-    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
-  },
-  "F161": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_confirmed_global.csv",
-    "sha256": "53001eb4d44358447e50a683405b2e41f0a755c14e0a9fbe69832b40b9fbd737"
-  },
-  "F162": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_deaths_global.csv",
-    "sha256": "996dd3583b45e96f829e3cd72f518ead379a6dcf69505a978e842a96671457fd"
-  },
-  "F163": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_recovered_global.csv",
-    "sha256": "6fa4079b6cd3a5f3ae6ef5348aae5430854e8a7592d2509e875d30d8286ebdd5"
-  },
-  "F164": {
-    "path": "dataset/files/생활속의금융/01. 금융의역할과주요금융지표.pdf",
-    "sha256": "b1e65f33f5f4c010586c142ac0bd8262680537b31318d3f61c62f3049904e424"
-  },
-  "F165": {
-    "path": "dataset/files/생활속의금융/02. 금융상품과금융시장.pdf",
-    "sha256": "8f19077a44a27419b499cc018139b45a993d6c716bf3f7222d6de5cb4d723bb4"
-  },
-  "F166": {
-    "path": "dataset/files/생활속의금융/03. 저축의이해.pdf",
-    "sha256": "8e646d7df97d285d04a87684224071ff3dd454972ac14d4045618a47f0feb81e"
-  },
-  "F167": {
-    "path": "dataset/files/데이터사이언스/14주차_종합과제-2.ipynb",
-    "sha256": "430b9997b09f3d0a44deb019e952747f7f8e14160badeb5680a291898ffd155a"
-  },
-  "F168": {
-    "path": "dataset/files/데이터사이언스/customers.csv",
-    "sha256": "5ef8388c03660ba0075aa3237746ddb8f7fb6887a9e57d1e9e6258dac56ffec8"
-  },
-  "F169": {
-    "path": "dataset/files/데이터사이언스/orders_202401.csv",
-    "sha256": "bbaa18a81d435b09f7d8d0e58a22984a88e205f80cd1d6ec796d0fbadb48104e"
-  },
-  "F170": {
-    "path": "dataset/files/데이터사이언스/orders_202402.csv",
-    "sha256": "13e9760f4547cace3dbb60ae71fafd1183308f8e41011e8865c2f91244c6ef9a"
-  },
-  "F171": {
-    "path": "dataset/files/데이터사이언스/orders_202403.csv",
-    "sha256": "01b28053dbe7c2bd205633da1ba660fa1b6dffe98dfb348b84c2a0710e337135"
-  },
-  "F172": {
-    "path": "dataset/files/데이터사이언스/products.csv",
-    "sha256": "0127bdc92fd244f92f52d3b595685c092557b1ee61082c649cf59dea5012c34b"
-  },
-  "F173": {
-    "path": "dataset/files/데이터사이언스/reviews.csv",
-    "sha256": "9af6afe8ab2adbef63bdd1ea688c940c54eb019271da8e25604e188c887acad0"
-  },
-  "F174": {
-    "path": "dataset/files/데이터사이언스/student_performance.csv",
-    "sha256": "e5de9820e4651c8b9d383388741f88e3780bf62c9e2534df1e3bc8328b18a30f"
-  },
-  "F175": {
-    "path": "dataset/files/데이터사이언스/week10_example.csv",
-    "sha256": "af2b75d4614159f62df308ee3b62c5282c2a194041a6cb3f8f5bae60f66c4f00"
-  },
-  "F176": {
-    "path": "dataset/files/데이터사이언스/week10_homework.ipynb",
-    "sha256": "2b2ae879c520ebb6f712c532565183b3710c02f5d55eb76a48bfaab54e3f9f7a"
-  },
-  "F177": {
-    "path": "dataset/files/데이터사이언스/week10_hospital_raw.csv",
-    "sha256": "6960755dc5e1daed90f9b26e079cd0bd8a1eda44653403d2c7dd1ca0972fc1cd"
-  },
-  "F178": {
-    "path": "dataset/files/데이터사이언스/week11_home.ipynb",
-    "sha256": "3b7df19734d9176299ca5bc66affec162aa7498ff52276a08549f601af2cdd46"
-  },
-  "F179": {
-    "path": "dataset/files/데이터사이언스/week11_item.csv",
-    "sha256": "5761ff9feaff5b0e3c848a59b7ac5c497171f1f1ab34699a297dc8cb5db2e58b"
-  },
-  "F180": {
-    "path": "dataset/files/데이터사이언스/week11_shop.csv",
-    "sha256": "694160352f216af9d26da152c7e78b2978cefac84cf331121d790b44d918f479"
-  },
-  "F181": {
-    "path": "dataset/files/데이터사이언스/week12.ipynb",
-    "sha256": "0ea9652d42ec132a6423df5aaac0c4ffe377116c01ff51c9f8ffacdb2bb72784"
-  },
-  "F182": {
-    "path": "dataset/files/데이터사이언스/week12_data.csv",
-    "sha256": "a0bdeab7338d426a7178eebd8c28f332a794a994bb9c6b6b6ce56d740592e65b"
-  },
-  "F183": {
-    "path": "dataset/files/데이터사이언스/week13_assignment-2.ipynb",
-    "sha256": "03c87995111d5004d9489786a3e86736ce0b5a55165a4553378c0183a1fc704d"
-  },
-  "F184": {
-    "path": "dataset/files/데이터사이언스/week13_health.csv",
-    "sha256": "8bfd52a2bb56df40c3389d2ef53590dddada90a551986dcf73f35c9178706a5c"
-  },
-  "F185": {
-    "path": "dataset/files/데이터사이언스/week14_assignment.ipynb",
-    "sha256": "c3809c7a2db3808cbda4f2894f639dc823b7ded766a778ba47f8b52185bab18b"
-  },
-  "F186": {
-    "path": "dataset/files/데이터사이언스/week14_data.csv",
-    "sha256": "e56fdd79b008b7a7b5489d9f067324d5df87b5ec7502a0232c070fbec23196e1"
-  },
-  "F187": {
-    "path": "dataset/files/데이터사이언스/Week4_Assignment.ipynb",
-    "sha256": "bdaefd9e39496fbea32f2e3361622974a0f5552a86f227f9f7afa7c4b206abb6"
-  },
-  "F188": {
-    "path": "dataset/files/데이터사이언스/week5.ipynb",
-    "sha256": "cb74463c44d9b05738ba321e6377c67306b436db0c504489521aa9251708bf72"
-  },
-  "F189": {
-    "path": "dataset/files/데이터사이언스/Week6_share.ipynb",
-    "sha256": "5d1357b9a75144ae84d25c89b24a59a8fb42a49b1588f23dd5f01699fffcee6a"
-  },
-  "F190": {
-    "path": "dataset/files/데이터사이언스/week7_2.ipynb",
-    "sha256": "358d3394f4a9779041e73d04560bc3e9899f9984bee676aec508f99597a41e2a"
-  },
-  "F191": {
-    "path": "dataset/files/데이터사이언스/week_7_convenience_store.csv",
-    "sha256": "27c2f7542a1e8ab574c7933339bf64df2ab1313aa1f8b810f0418cb88e8b65f1"
-  },
-  "F192": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료1.pdf",
-    "sha256": "2bc3dd7cfabb96a92e5ab8e88a46644601221c8bfd981fd415d7b9ec5b071ef9"
-  },
-  "F193": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료10.pdf",
-    "sha256": "5442953b0159203f0f8a0ca9487dbcb95a308f2b03eb55b95ba4b1870a1ffe44"
-  },
-  "F194": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료11.pdf",
-    "sha256": "bcf8370aaeeae4d8cb6ca27b066aa379788ae384e7151d51f5db20fec05b90f9"
-  },
-  "F195": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료12.pdf",
-    "sha256": "032024b686c65bb0255947d9b900520d9ac29f0ce70b4fe388b50b07db021ed6"
-  },
-  "F196": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료13.pdf",
-    "sha256": "0ccae3039559df0c7b3e725f59392853314713ab6ac02c4659a1bd0d90f64567"
-  },
-  "F197": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료14.pdf",
-    "sha256": "9b206781d653c98e0ef90dfca55d96b957f33f15ad274b03e2d1e99d86380214"
-  },
-  "F198": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료2.pdf",
-    "sha256": "f17ffdfd359e79e5a1b158483864885a5ab64f0bf13041e5600e4528588edda2"
-  },
-  "F199": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료3.pdf",
-    "sha256": "be48de1028e75fc73ea1d987a3b64101d096fe29313890c6bc56916c541adfa8"
-  },
-  "F200": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료4.pdf",
-    "sha256": "3e2dd76fcbc31de4300e66edf1b6045a2253aed5af0b8e72518721e984380161"
-  },
-  "F201": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료5.pdf",
-    "sha256": "a07528c1040083428b925ca5118bf8db20a7959759b78c50e2dd3d3ae3c9bc5b"
-  },
-  "F202": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료6.pdf",
-    "sha256": "9668437f3ab759f7acc01dc313657c9feb1d528b0d59855afb591be5cb614f6b"
-  },
-  "F203": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료7.pdf",
-    "sha256": "efe542d4f76aa903840bf9887c0feb7ed9a3ef46e3e3046475b4f84be4cb441a"
-  },
-  "F204": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료9.pdf",
-    "sha256": "5797fb7f3dbd31688f9432a2ae9e4a5162241f55396f24400906e07e5a40a7ac"
   }
 }
