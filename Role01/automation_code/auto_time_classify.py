@@ -1,13 +1,20 @@
-
 from pathlib import Path
+import sys
 import pandas as pd
 
+# 1. 경로 설정
+BASE_DIR = Path(__file__).resolve().parent
+ROLE01_DIR = BASE_DIR.parent
+PROJECT_DIR = ROLE01_DIR.parent
+ROLE02_DIR = PROJECT_DIR / "Role02"
+
+# 2. Role02의 time_classifier.py 불러오기
+sys.path.insert(0, str(ROLE02_DIR))
 from time_classifier import classify_time
 
-# 1. 파일 경로 설정
-BASE_DIR = Path(__file__).resolve().parent
-METADATA_CSV = BASE_DIR.parent / "Role01" / "metadata.csv"
-OUTPUT_CSV = BASE_DIR.parent / "Role01" / "auto_time_results.csv"
+# 3. CSV 경로
+METADATA_CSV = ROLE01_DIR / "metadata.csv"
+OUTPUT_CSV = ROLE01_DIR / "auto_time_results.csv"
 
 # 2. 메타데이터 읽기
 df = pd.read_csv(
