@@ -1,0 +1,62 @@
+{
+  "file_count": 158,
+  "project_count": 5,
+  "folds": 5,
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "unknown_threshold": 0.2784,
+  "known_validation_acceptance_rate": 0.949367,
+  "unknown_threshold_note": "실제 새 과목 검증 데이터가 없어, 정답을 맞힌 교차검증 신뢰도의 하위 5%를 초기 기준으로 사용함",
+  "class_counts": {
+    "데이터사이언스": 53,
+    "딥러닝": 11,
+    "시계열분석": 37,
+    "졸업작품": 17,
+    "한국근현대사역사기행": 40
+  },
+  "classification_report": {
+    "데이터사이언스": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 53.0
+    },
+    "딥러닝": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 11.0
+    },
+    "시계열분석": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 37.0
+    },
+    "졸업작품": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 17.0
+    },
+    "한국근현대사역사기행": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 158.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 158.0
+    }
+  }
+}

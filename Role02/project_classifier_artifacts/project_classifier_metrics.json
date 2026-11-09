@@ -4,7 +4,7 @@
   "folds": 5,
   "accuracy": 1.0,
   "macro_f1": 1.0,
-  "unknown_threshold": 0.2803,
+  "unknown_threshold": 0.2784,
   "known_validation_acceptance_rate": 0.949367,
   "unknown_threshold_note": "실제 새 과목 검증 데이터가 없어, 정답을 맞힌 교차검증 신뢰도의 하위 5%를 초기 기준으로 사용함",
   "class_counts": {

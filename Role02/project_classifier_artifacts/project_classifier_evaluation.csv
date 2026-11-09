@@ -1,159 +1,159 @@
 ﻿file_id,filename,actual_project,predicted_project,confidence,correct
-F001,Cross-Validation_Decoded.pdf,딥러닝,딥러닝,0.2279,True
-F002,MLP(다층퍼셉트론)(강의).pdf,딥러닝,딥러닝,0.33,True
-F003,Transformer_강의자료.pdf,딥러닝,딥러닝,0.2971,True
-F004,머신러닝(내용추가).pdf,딥러닝,딥러닝,0.3089,True
-F005,선형회귀_업데이트.pdf,딥러닝,딥러닝,0.2663,True
-F006,심층신경망.pdf,딥러닝,딥러닝,0.367,True
-F007,영상인식과 딥러닝.pdf,딥러닝,딥러닝,0.3314,True
-F008,제09장 컨벌루션 신경망(강의).pdf,딥러닝,딥러닝,0.3249,True
-F009,제11장 순환신경망(강의).pdf,딥러닝,딥러닝,0.3302,True
-F010,케라스 라이브러리.pdf,딥러닝,딥러닝,0.3561,True
-F011,퍼셉트론_추가.pdf,딥러닝,딥러닝,0.3358,True
-F013,time_series_analysis10_1.R,시계열분석,시계열분석,0.3504,True
-F014,time_series_analysis11_1.R,시계열분석,시계열분석,0.3301,True
-F015,time_series_analysis12_1.R,시계열분석,시계열분석,0.3502,True
-F016,time_series_analysis13_1.R,시계열분석,시계열분석,0.3129,True
-F017,time_series_analysis14_1.R,시계열분석,시계열분석,0.3377,True
-F018,time_series_analysis2_1.R,시계열분석,시계열분석,0.3369,True
-F019,time_series_analysis2_2.R,시계열분석,시계열분석,0.3132,True
-F020,time_series_analysis3_1.R,시계열분석,시계열분석,0.3216,True
-F021,time_series_analysis4_1.R,시계열분석,시계열분석,0.335,True
-F022,time_series_analysis5_1.R,시계열분석,시계열분석,0.3614,True
-F023,time_series_analysis6_1.R,시계열분석,시계열분석,0.3507,True
-F024,time_series_analysis7_1.R,시계열분석,시계열분석,0.344,True
-F025,time_series_analysis9_1.R,시계열분석,시계열분석,0.3556,True
-F026,week10.R,시계열분석,시계열분석,0.3447,True
-F027,week10_cheating.R,시계열분석,시계열분석,0.3569,True
-F028,week11_cheating.R,시계열분석,시계열분석,0.3098,True
-F029,week12.R,시계열분석,시계열분석,0.3291,True
-F030,week12_cheating.R,시계열분석,시계열분석,0.3262,True
-F031,week13.R,시계열분석,시계열분석,0.3266,True
-F032,week13_cheating.R,시계열분석,시계열분석,0.325,True
-F033,week14_apple_forecast_analysis_2026.R,시계열분석,시계열분석,0.3346,True
-F034,week14_apple_forecast_analysis_2026_1.R,시계열분석,시계열분석,0.3408,True
-F035,week14_apple_forecast_analysis_2026_cheating.R,시계열분석,시계열분석,0.3383,True
-F036,week2.R,시계열분석,시계열분석,0.3461,True
-F037,week2_cheating.R,시계열분석,시계열분석,0.3353,True
-F038,week3.R,시계열분석,시계열분석,0.3047,True
-F039,week3_cheating.R,시계열분석,시계열분석,0.313,True
-F040,week4.R,시계열분석,시계열분석,0.31,True
-F041,week4_cheating.R,시계열분석,시계열분석,0.3342,True
-F042,week5 (1).R,시계열분석,시계열분석,0.3594,True
-F043,week5.R,시계열분석,시계열분석,0.3501,True
-F044,week5_cheating.R,시계열분석,시계열분석,0.356,True
-F045,week6.R,시계열분석,시계열분석,0.3542,True
-F046,week6_cheating.R,시계열분석,시계열분석,0.3453,True
-F047,week7.R,시계열분석,시계열분석,0.3673,True
-F048,week7_cheating.R,시계열분석,시계열분석,0.3701,True
-F049,week9_cheating.R,시계열분석,시계열분석,0.3518,True
-F050,message_hello (1).py,졸업작품,졸업작품,0.4121,True
-F051,pigpio.py,졸업작품,졸업작품,0.418,True
-F052,python3_voice_alert.py,졸업작품,졸업작품,0.3143,True
-F053,rpi_gpio.py,졸업작품,졸업작품,0.3735,True
-F054,stream_yolo.py,졸업작품,졸업작품,0.3515,True
-F055,voice_alert.py,졸업작품,졸업작품,0.4003,True
-F056,voice_alert1.py,졸업작품,졸업작품,0.3375,True
-F057,voice_test.py,졸업작품,졸업작품,0.3581,True
-F058,YOLO(test) (1).ipynb,졸업작품,졸업작품,0.323,True
-F059,YOLO(test)_picture(light_ver) (1).ipynb,졸업작품,졸업작품,0.3378,True
-F060,YOLO(test)_picture.ipynb,졸업작품,졸업작품,0.313,True
-F061,yolo_learn.ipynb,졸업작품,졸업작품,0.2786,True
-F062,yolo_learning2 (1).ipynb,졸업작품,졸업작품,0.2885,True
-F063,yolo_learning5 (1).ipynb,졸업작품,졸업작품,0.2955,True
-F064,yolo_open.py,졸업작품,졸업작품,0.3108,True
-F065,yolo_stream.py,졸업작품,졸업작품,0.3704,True
-F066,yolo_stream_front.py,졸업작품,졸업작품,0.3785,True
-F068,19세기_후반_불평등조약체제의_성립_과정.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3005,True
-F069,4주차_강화도조약과 개항.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4594,True
-F070,강화도조약과 개항.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4741,True
-F071,개항기 조선 서양과 만나다.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4588,True
-F072,근대 국민국가와 왕권.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4724,True
-F073,근대 국민국가와 왕권_sum.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4886,True
-F074,근대사_연표_19세기 후반.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4765,True
-F075,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4818,True
-F076,서세동점 동아시아와 서양 열강 1.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4682,True
-F077,서세동점 동아시아와 서양 열강1_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4326,True
-F078,서세동점 동아시아와 서양 열강2.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4391,True
-F079,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4392,True
-F080,일본의 개항과 미국.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4613,True
-F081,읽기자료_갑오개혁의 전개와 성과.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4884,True
-F082,읽기자료_갑오개혁의 한계.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4777,True
-F083,임오군란과 갑신정변.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4928,True
-F084,청일전쟁과 갑오개혁_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4709,True
-F085,청일전쟁과 갑오개혁_요약.pdf,한국근현대사역사기행,한국근현대사역사기행,0.5302,True
-F086,한국 근현대 인물사 연구방법론.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3795,True
-F087,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4658,True
-F088,한성도시개조사업.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3548,True
-F089,행정개혁기구의_성공_조건.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3747,True
-F090,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4596,True
-F091,근대 서양 문물의 도입_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4298,True
-F092,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4714,True
-F093,세균설과 근대의 보건_위생_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3912,True
-F094,해방전후의 한국 정치와 사회_제주.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4589,True
-F095,해외 인력 송출의 역사와 파독 광부 간호사.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4033,True
-F097,4.3history.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4085,True
-F098,근대 서양 문물의 도입과 일상생활.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4395,True
-F099,근대의 법과 제도는 어떻게 이식되었는가.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4843,True
-F100,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,한국근현대사역사기행,한국근현대사역사기행,0.373,True
-F101,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3868,True
-F102,유관순의 발굴과 재현.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4458,True
-F103,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4373,True
-F104,제주 4·3의 진실과 역사적 의미_박찬식.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3716,True
-F105,파월기술자의 전쟁경험.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3586,True
-F106,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3803,True
-F107,한국현대사와 영화 ‘국제시장＇.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4045,True
-F108,해방이전 제주의 사회와 경제_양정필.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3891,True
-F109,README.md,데이터사이언스,데이터사이언스,0.3548,True
-F110,assignment.md,데이터사이언스,데이터사이언스,0.3209,True
-F111,CocaColaCo.xlsx,데이터사이언스,데이터사이언스,0.2903,True
-F112,PersonsData.json,데이터사이언스,데이터사이언스,0.298,True
-F113,README.md,데이터사이언스,데이터사이언스,0.3694,True
-F114,TwitterData.json,데이터사이언스,데이터사이언스,0.2854,True
-F115,assignment.md,데이터사이언스,데이터사이언스,0.3133,True
-F116,README.md,데이터사이언스,데이터사이언스,0.3547,True
-F117,assignment.md,데이터사이언스,데이터사이언스,0.3254,True
-F118,notebook-covidspread.ipynb,데이터사이언스,데이터사이언스,0.3132,True
-F119,notebook-papers.ipynb,데이터사이언스,데이터사이언스,0.34,True
-F120,notebook.ipynb,데이터사이언스,데이터사이언스,0.3227,True
-F121,README.md,데이터사이언스,데이터사이언스,0.3429,True
-F122,assignment.ipynb,데이터사이언스,데이터사이언스,0.3383,True
-F123,assignment.md,데이터사이언스,데이터사이언스,0.3599,True
-F124,notebook.ipynb,데이터사이언스,데이터사이언스,0.3441,True
-F125,README.md,데이터사이언스,데이터사이언스,0.3386,True
-F126,README.md,데이터사이언스,데이터사이언스,0.3494,True
-F127,assignment.md,데이터사이언스,데이터사이언스,0.3572,True
-F128,notebook.ipynb,데이터사이언스,데이터사이언스,0.3709,True
-F129,notebook.ipynb,데이터사이언스,데이터사이언스,0.2948,True
-F130,README.md,데이터사이언스,데이터사이언스,0.3196,True
-F131,assignment.md,데이터사이언스,데이터사이언스,0.354,True
-F132,notebook.ipynb,데이터사이언스,데이터사이언스,0.3485,True
-F133,notebook.ipynb,데이터사이언스,데이터사이언스,0.2998,True
-F134,README.md,데이터사이언스,데이터사이언스,0.3481,True
-F135,assignment.md,데이터사이언스,데이터사이언스,0.3421,True
-F136,notebook.ipynb,데이터사이언스,데이터사이언스,0.3713,True
-F137,notebook.ipynb,데이터사이언스,데이터사이언스,0.3175,True
-F138,README.md,데이터사이언스,데이터사이언스,0.3372,True
-F139,assignment.md,데이터사이언스,데이터사이언스,0.3408,True
-F140,notebook.ipynb,데이터사이언스,데이터사이언스,0.3739,True
-F141,notebook.ipynb,데이터사이언스,데이터사이언스,0.299,True
-F142,README.md,데이터사이언스,데이터사이언스,0.3305,True
-F143,assignment.md,데이터사이언스,데이터사이언스,0.3182,True
-F144,correlation-analysis.ipynb,데이터사이언스,데이터사이언스,0.3145,True
-F145,README.md,데이터사이언스,데이터사이언스,0.3176,True
-F146,letters.json,데이터사이언스,데이터사이언스,0.2695,True
-F147,README.md,데이터사이언스,데이터사이언스,0.3078,True
-F148,letters.json,데이터사이언스,데이터사이언스,0.2748,True
-F149,README.md,데이터사이언스,데이터사이언스,0.3252,True
-F150,time_series_covid19_confirmed_global.csv,데이터사이언스,데이터사이언스,0.3074,True
-F151,time_series_covid19_deaths_global.csv,데이터사이언스,데이터사이언스,0.303,True
-F152,time_series_covid19_recovered_global.csv,데이터사이언스,데이터사이언스,0.2835,True
-F153,SOCR_MLB.tsv,데이터사이언스,데이터사이언스,0.2536,True
-F154,UID_ISO_FIPS_LookUp_Table.csv,데이터사이언스,데이터사이언스,0.2905,True
-F155,birds.csv,데이터사이언스,데이터사이언스,0.2962,True
-F156,diabetes.tsv,데이터사이언스,데이터사이언스,0.2481,True
-F157,emails.csv,데이터사이언스,데이터사이언스,0.2832,True
-F158,form.csv,데이터사이언스,데이터사이언스,0.3142,True
-F159,honey.csv,데이터사이언스,데이터사이언스,0.2806,True
-F160,mushrooms.csv,데이터사이언스,데이터사이언스,0.3101,True
-F161,taxi.csv,데이터사이언스,데이터사이언스,0.2676,True
+F001,Cross-Validation_Decoded.pdf,딥러닝,딥러닝,0.2443,True
+F002,MLP(다층퍼셉트론)(강의).pdf,딥러닝,딥러닝,0.3372,True
+F003,Transformer_강의자료.pdf,딥러닝,딥러닝,0.3079,True
+F004,머신러닝(내용추가).pdf,딥러닝,딥러닝,0.3198,True
+F005,선형회귀_업데이트.pdf,딥러닝,딥러닝,0.2801,True
+F006,심층신경망.pdf,딥러닝,딥러닝,0.368,True
+F007,영상인식과 딥러닝.pdf,딥러닝,딥러닝,0.3429,True
+F008,제09장 컨벌루션 신경망(강의).pdf,딥러닝,딥러닝,0.3277,True
+F009,제11장 순환신경망(강의).pdf,딥러닝,딥러닝,0.3355,True
+F010,케라스 라이브러리.pdf,딥러닝,딥러닝,0.3564,True
+F011,퍼셉트론_추가.pdf,딥러닝,딥러닝,0.3278,True
+F012,time_series_analysis10_1.R,시계열분석,시계열분석,0.3495,True
+F013,time_series_analysis11_1.R,시계열분석,시계열분석,0.3293,True
+F014,time_series_analysis12_1.R,시계열분석,시계열분석,0.3374,True
+F015,time_series_analysis13_1.R,시계열분석,시계열분석,0.3111,True
+F016,time_series_analysis14_1.R,시계열분석,시계열분석,0.3321,True
+F017,time_series_analysis2_1.R,시계열분석,시계열분석,0.3412,True
+F018,time_series_analysis2_2.R,시계열분석,시계열분석,0.324,True
+F019,time_series_analysis3_1.R,시계열분석,시계열분석,0.3102,True
+F020,time_series_analysis4_1.R,시계열분석,시계열분석,0.3277,True
+F021,time_series_analysis5_1.R,시계열분석,시계열분석,0.3486,True
+F022,time_series_analysis6_1.R,시계열분석,시계열분석,0.3539,True
+F023,time_series_analysis7_1.R,시계열분석,시계열분석,0.3585,True
+F024,time_series_analysis9_1.R,시계열분석,시계열분석,0.3305,True
+F025,week10.R,시계열분석,시계열분석,0.3231,True
+F026,week10_cheating.R,시계열분석,시계열분석,0.3431,True
+F027,week11_cheating.R,시계열분석,시계열분석,0.34,True
+F028,week12.R,시계열분석,시계열분석,0.3112,True
+F029,week12_cheating.R,시계열분석,시계열분석,0.3065,True
+F030,week13.R,시계열분석,시계열분석,0.321,True
+F031,week13_cheating.R,시계열분석,시계열분석,0.3182,True
+F032,week14_apple_forecast_analysis_2026.R,시계열분석,시계열분석,0.3284,True
+F033,week14_apple_forecast_analysis_2026_1.R,시계열분석,시계열분석,0.3336,True
+F034,week14_apple_forecast_analysis_2026_cheating.R,시계열분석,시계열분석,0.3273,True
+F035,week2.R,시계열분석,시계열분석,0.3529,True
+F036,week2_cheating.R,시계열분석,시계열분석,0.3339,True
+F037,week3.R,시계열분석,시계열분석,0.2988,True
+F038,week3_cheating.R,시계열분석,시계열분석,0.3074,True
+F039,week4.R,시계열분석,시계열분석,0.3302,True
+F040,week4_cheating.R,시계열분석,시계열분석,0.344,True
+F041,week5 (1).R,시계열분석,시계열분석,0.3485,True
+F042,week5.R,시계열분석,시계열분석,0.349,True
+F043,week5_cheating.R,시계열분석,시계열분석,0.3617,True
+F044,week6.R,시계열분석,시계열분석,0.3609,True
+F045,week6_cheating.R,시계열분석,시계열분석,0.3353,True
+F046,week7.R,시계열분석,시계열분석,0.3711,True
+F047,week7_cheating.R,시계열분석,시계열분석,0.3792,True
+F048,week9_cheating.R,시계열분석,시계열분석,0.3324,True
+F049,message_hello (1).py,졸업작품,졸업작품,0.393,True
+F050,pigpio.py,졸업작품,졸업작품,0.3657,True
+F051,python3_voice_alert.py,졸업작품,졸업작품,0.3125,True
+F052,rpi_gpio.py,졸업작품,졸업작품,0.3621,True
+F053,stream_yolo.py,졸업작품,졸업작품,0.3415,True
+F054,voice_alert.py,졸업작품,졸업작품,0.3944,True
+F055,voice_alert1.py,졸업작품,졸업작품,0.3495,True
+F056,voice_test.py,졸업작품,졸업작품,0.3677,True
+F057,YOLO(test) (1).ipynb,졸업작품,졸업작품,0.3265,True
+F058,YOLO(test)_picture(light_ver) (1).ipynb,졸업작품,졸업작품,0.3356,True
+F059,YOLO(test)_picture.ipynb,졸업작품,졸업작품,0.3225,True
+F060,yolo_learn.ipynb,졸업작품,졸업작품,0.2972,True
+F061,yolo_learning2 (1).ipynb,졸업작품,졸업작품,0.2968,True
+F062,yolo_learning5 (1).ipynb,졸업작품,졸업작품,0.2944,True
+F063,yolo_open.py,졸업작품,졸업작품,0.3041,True
+F064,yolo_stream.py,졸업작품,졸업작품,0.35,True
+F065,yolo_stream_front.py,졸업작품,졸업작품,0.3625,True
+F066,19세기_후반_불평등조약체제의_성립_과정.pdf,한국근현대사역사기행,한국근현대사역사기행,0.2791,True
+F067,4주차_강화도조약과 개항.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4539,True
+F068,강화도조약과 개항.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4777,True
+F069,개항기 조선 서양과 만나다.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4591,True
+F070,근대 국민국가와 왕권.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4707,True
+F071,근대 국민국가와 왕권_sum.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4762,True
+F072,근대사_연표_19세기 후반.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4489,True
+F073,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4709,True
+F074,서세동점 동아시아와 서양 열강 1.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4705,True
+F075,서세동점 동아시아와 서양 열강1_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4264,True
+F076,서세동점 동아시아와 서양 열강2.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4424,True
+F077,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,한국근현대사역사기행,한국근현대사역사기행,0.444,True
+F078,일본의 개항과 미국.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4682,True
+F079,읽기자료_갑오개혁의 전개와 성과.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4848,True
+F080,읽기자료_갑오개혁의 한계.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4869,True
+F081,임오군란과 갑신정변.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4926,True
+F082,청일전쟁과 갑오개혁_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4817,True
+F083,청일전쟁과 갑오개혁_요약.pdf,한국근현대사역사기행,한국근현대사역사기행,0.5339,True
+F084,한국 근현대 인물사 연구방법론.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3652,True
+F085,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4642,True
+F086,한성도시개조사업.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3276,True
+F087,행정개혁기구의_성공_조건.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3889,True
+F088,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4547,True
+F089,근대 서양 문물의 도입_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4365,True
+F090,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4588,True
+F091,세균설과 근대의 보건_위생_ppt.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3876,True
+F092,해방전후의 한국 정치와 사회_제주.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4564,True
+F093,해외 인력 송출의 역사와 파독 광부 간호사.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4076,True
+F094,4.3history.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4099,True
+F095,근대 서양 문물의 도입과 일상생활.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4303,True
+F096,근대의 법과 제도는 어떻게 이식되었는가.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4905,True
+F097,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3593,True
+F098,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3886,True
+F099,유관순의 발굴과 재현.pdf,한국근현대사역사기행,한국근현대사역사기행,0.424,True
+F100,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,한국근현대사역사기행,한국근현대사역사기행,0.44,True
+F101,제주 4·3의 진실과 역사적 의미_박찬식.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3718,True
+F102,파월기술자의 전쟁경험.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3657,True
+F103,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3788,True
+F104,한국현대사와 영화 ‘국제시장＇.pdf,한국근현대사역사기행,한국근현대사역사기행,0.4109,True
+F105,해방이전 제주의 사회와 경제_양정필.pdf,한국근현대사역사기행,한국근현대사역사기행,0.3783,True
+F106,README.md,데이터사이언스,데이터사이언스,0.3865,True
+F107,README.md,데이터사이언스,데이터사이언스,0.3266,True
+F108,birds.csv,데이터사이언스,데이터사이언스,0.2844,True
+F109,diabetes.tsv,데이터사이언스,데이터사이언스,0.2613,True
+F110,emails.csv,데이터사이언스,데이터사이언스,0.2938,True
+F111,form.csv,데이터사이언스,데이터사이언스,0.3336,True
+F112,honey.csv,데이터사이언스,데이터사이언스,0.2798,True
+F113,mushrooms.csv,데이터사이언스,데이터사이언스,0.2883,True
+F114,SOCR_MLB.tsv,데이터사이언스,데이터사이언스,0.2278,True
+F115,taxi.csv,데이터사이언스,데이터사이언스,0.2816,True
+F116,UID_ISO_FIPS_LookUp_Table.csv,데이터사이언스,데이터사이언스,0.2836,True
+F117,assignment.md,데이터사이언스,데이터사이언스,0.351,True
+F118,README.md,데이터사이언스,데이터사이언스,0.379,True
+F119,assignment.md,데이터사이언스,데이터사이언스,0.3329,True
+F120,CocaColaCo.xlsx,데이터사이언스,데이터사이언스,0.2925,True
+F121,PersonsData.json,데이터사이언스,데이터사이언스,0.2914,True
+F122,README.md,데이터사이언스,데이터사이언스,0.3702,True
+F123,TwitterData.json,데이터사이언스,데이터사이언스,0.2937,True
+F124,assignment.md,데이터사이언스,데이터사이언스,0.3494,True
+F125,notebook-covidspread.ipynb,데이터사이언스,데이터사이언스,0.3325,True
+F126,notebook-papers.ipynb,데이터사이언스,데이터사이언스,0.3485,True
+F127,notebook.ipynb,데이터사이언스,데이터사이언스,0.3147,True
+F128,README.md,데이터사이언스,데이터사이언스,0.3922,True
+F129,assignment.ipynb,데이터사이언스,데이터사이언스,0.3388,True
+F130,assignment.md,데이터사이언스,데이터사이언스,0.3592,True
+F131,notebook.ipynb,데이터사이언스,데이터사이언스,0.3684,True
+F132,README.md,데이터사이언스,데이터사이언스,0.3679,True
+F133,assignment.md,데이터사이언스,데이터사이언스,0.3569,True
+F134,notebook.ipynb,데이터사이언스,데이터사이언스,0.4023,True
+F135,README.md,데이터사이언스,데이터사이언스,0.3756,True
+F136,assignment.md,데이터사이언스,데이터사이언스,0.3832,True
+F137,notebook.ipynb,데이터사이언스,데이터사이언스,0.3482,True
+F138,README.md,데이터사이언스,데이터사이언스,0.344,True
+F139,assignment.md,데이터사이언스,데이터사이언스,0.3706,True
+F140,notebook.ipynb,데이터사이언스,데이터사이언스,0.3606,True
+F141,README.md,데이터사이언스,데이터사이언스,0.3648,True
+F142,assignment.md,데이터사이언스,데이터사이언스,0.3551,True
+F143,notebook.ipynb,데이터사이언스,데이터사이언스,0.3677,True
+F144,README.md,데이터사이언스,데이터사이언스,0.3594,True
+F145,assignment.md,데이터사이언스,데이터사이언스,0.3265,True
+F146,correlation-analysis.ipynb,데이터사이언스,데이터사이언스,0.3038,True
+F147,README.md,데이터사이언스,데이터사이언스,0.3505,True
+F148,notebook.ipynb,데이터사이언스,데이터사이언스,0.2806,True
+F149,notebook.ipynb,데이터사이언스,데이터사이언스,0.274,True
+F150,notebook.ipynb,데이터사이언스,데이터사이언스,0.283,True
+F151,notebook.ipynb,데이터사이언스,데이터사이언스,0.2694,True
+F152,README.md,데이터사이언스,데이터사이언스,0.3327,True
+F153,README.md,데이터사이언스,데이터사이언스,0.3329,True
+F154,letters.json,데이터사이언스,데이터사이언스,0.2566,True
+F155,letters.json,데이터사이언스,데이터사이언스,0.2566,True
+F156,time_series_covid19_confirmed_global.csv,데이터사이언스,데이터사이언스,0.2813,True
+F157,time_series_covid19_deaths_global.csv,데이터사이언스,데이터사이언스,0.2901,True
+F158,time_series_covid19_recovered_global.csv,데이터사이언스,데이터사이언스,0.2726,True
