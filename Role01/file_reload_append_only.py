@@ -1,6 +1,6 @@
 """Role01/dataset/files -> Role01/metadata.csv 동기화.
 
-실행: python update_metadata_fixed.py
+실행: python file_reload_append_only.py.py
 기존 메타데이터의 수동 라벨과 file_id를 경로 기준으로 보존합니다.
 """
 from __future__ import annotations

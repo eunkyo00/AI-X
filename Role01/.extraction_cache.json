@@ -1,798 +1,798 @@
 {
-  "F122": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/assignment.md",
-    "sha256": "a836747a80e63ec7e588670ab53eab69f4a167cdb7b64a23874e14f03e15d1b7"
-  },
-  "F123": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/README.md",
-    "sha256": "c9cce931c932d42ea85ef515445c6c717590c7624d3a4065e89ca4c67cf754ad"
-  },
-  "F124": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/assignment.md",
-    "sha256": "9a9041d4a187c74506c4246d5a6978189d2023c9d99ab8df37d2d2a06cb0c397"
-  },
-  "F125": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/CocaColaCo.xlsx",
-    "sha256": "7423ca18a5cf2b37ce265de6497ac83b42ba3fff89bf39af1332deec008d6ca0"
-  },
-  "F126": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/PersonsData.json",
-    "sha256": "bb23275bdd6e7dc1b2bee9648bcdbbbafbe62467ac693917e21631bf0354ea3b"
-  },
-  "F127": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/README.md",
-    "sha256": "76e8146334b6b1736672f235a6c4f1a3fa134661fea9e51cda0668305e3631b6"
-  },
-  "F128": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/TwitterData.json",
-    "sha256": "f6a76bc7bb09c6691d4474cc094f2b460a14be492048fdf8b1a87e44de8e7d95"
-  },
-  "F129": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/assignment.md",
-    "sha256": "fd45e6b63919fc7febd621d4774f184076058b8a7748c1c33882960858b0ed8e"
-  },
-  "F130": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-covidspread.ipynb",
-    "sha256": "60d26e1feb51a59bb4bc2b5ef533f08dba81b1412f8ddb6c87f6b9543dcbcca9"
-  },
-  "F131": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-papers.ipynb",
-    "sha256": "3b0b33d49bca57f25a2c7d50e8b86be3970ca962e100347697e7945304d3ffab"
-  },
-  "F132": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook.ipynb",
-    "sha256": "d384538c502059082369f4f0cbbed42eb384d11db02f7f4ef9ba863a6ed8f43c"
-  },
-  "F133": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/README.md",
-    "sha256": "5750f1ae5c038b818f7351f2f153c43ad168d57332a890167d0a51a5c354bee0"
-  },
-  "F134": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.ipynb",
-    "sha256": "d77a1ca8cf8c3b11a8ad7c534ce9c263eff0a12ee38ca5bb28265a7504d1ea46"
-  },
-  "F135": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.md",
-    "sha256": "33cc20695fd9834ab83ac0f477c55fd6f51b16cf6de78f170f5c241004d47df1"
-  },
-  "F136": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/notebook.ipynb",
-    "sha256": "3e63f136780a726566c608dda829bf5fb9a7e3aed5c904d40bf8b254e16343bc"
-  },
-  "F137": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/README.md",
-    "sha256": "3d87a6ffc65e9f9118777bc8c952fdc36a8d1bc752e5ec1ec4bf6e368148c0c3"
-  },
-  "F111": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/README.md",
-    "sha256": "83b87be2207030799d8d91b3ed76044eb6fd6f351983d892b1bc66979ba4f3f7"
-  },
-  "F138": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/assignment.md",
-    "sha256": "3da5374dcfccd26c8aa9e323cd93e6256c1d47ab129ffa2e051fc01e7a826767"
-  },
-  "F139": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/notebook.ipynb",
-    "sha256": "ce7543dbe2882e00e70853b6eca233de2836529cfbb7ede4616d788276f48f71"
-  },
-  "F140": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/README.md",
-    "sha256": "59361af0858a0eb241a8152d8b3a5eee9cf9d9915cecff955570bd16335f3737"
-  },
-  "F153": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/solution/notebook.ipynb",
-    "sha256": "ca5f14e8979262cf2d3a9cf1355336fd259710dfbb04eaf5e58b0b2d35a13400"
-  },
-  "F141": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/assignment.md",
-    "sha256": "c3de16bcd2769868c466b2d00a1eea53ccbe240dc8aea2b40de3c7bb4c396465"
-  },
-  "F142": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/notebook.ipynb",
-    "sha256": "3050fa4ef74fb412af797db5ab1da550f8996d1d388cd83b01fc0b26beeb36a0"
-  },
-  "F143": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/README.md",
-    "sha256": "7023d4020ba82599a36a441537f7250ef0316c628b12134e4226e8165908cd2e"
-  },
-  "F154": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/solution/notebook.ipynb",
-    "sha256": "fcfb2853836c61a44e417be469a7b630c13c99dbd1a0f64ea862baa2647b2402"
-  },
-  "F144": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/assignment.md",
-    "sha256": "38d66a54b74c332bd1e3e9e8777f5c3a3e2d0cc7ed39e2d26fa4a3f649651e0e"
-  },
-  "F145": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/notebook.ipynb",
-    "sha256": "a4a1d8ce6cc3c390ebfc015cbb773fd20d1d9f6fc57f9b37b244c52e92dff78c"
-  },
-  "F146": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/README.md",
-    "sha256": "a75aca9a9be35b5612b431c856c1303f6a945ac593d9309e97e356fbef157ec6"
-  },
-  "F155": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/solution/notebook.ipynb",
-    "sha256": "0ed093a585983b9b335eed427b252a6ece9874a78cce7fa7404380f61e350683"
-  },
-  "F147": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/assignment.md",
-    "sha256": "8bcd1d3a2a7030454a994ab853e956467280abd98776de22b25fc03369602ede"
-  },
-  "F148": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/notebook.ipynb",
-    "sha256": "338e6d754dfa21ac12dbc7b468280e0ef60b2298331490774617909835983a4d"
-  },
-  "F149": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/README.md",
-    "sha256": "db8a8a7703b5fabfc99edb190451831817b4b89214978e4ecec9c55dda6df358"
-  },
-  "F156": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/solution/notebook.ipynb",
-    "sha256": "ed68f051813ac1f35c4b4694d4b667b9428f620b26b59fa67605f2ea40bbc2f0"
-  },
-  "F150": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/assignment.md",
-    "sha256": "178b71b911183770a5eb9789002a5b4d123038929ada6245df6f786f4fea72e9"
-  },
-  "F151": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/correlation-analysis.ipynb",
-    "sha256": "fdc71c2f73c7f1a4ea80a467d7a8c64f482df058d3aae2265e55775daf7323b7"
-  },
-  "F152": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/README.md",
-    "sha256": "0f2199e2be42259fe66c80df36119f3e7481f7fe19f205f2a125521d1b044a68"
-  },
-  "F157": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/README.md",
-    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
-  },
-  "F159": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/src/assets/letters.json",
-    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
-  },
-  "F158": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/README.md",
-    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
-  },
-  "F160": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/src/assets/letters.json",
-    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
-  },
-  "F112": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/README.md",
-    "sha256": "36edbab85127686ec62ddb3b2fcaad3779b8ba223f8e2452f1d584b4a0bd5c42"
-  },
-  "F113": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/birds.csv",
-    "sha256": "c508f9e8a597535d5955b1574745d902697e8677e67a768f0dd3db6a9dab6147"
-  },
-  "F161": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_confirmed_global.csv",
-    "sha256": "53001eb4d44358447e50a683405b2e41f0a755c14e0a9fbe69832b40b9fbd737"
-  },
-  "F162": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_deaths_global.csv",
-    "sha256": "996dd3583b45e96f829e3cd72f518ead379a6dcf69505a978e842a96671457fd"
-  },
-  "F163": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_recovered_global.csv",
-    "sha256": "6fa4079b6cd3a5f3ae6ef5348aae5430854e8a7592d2509e875d30d8286ebdd5"
-  },
-  "F114": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/diabetes.tsv",
-    "sha256": "6845b179f73b32c67ae82a81a77159efd2b594ed3b5b0d09ec7bb9ef0cfdd33b"
-  },
-  "F115": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/emails.csv",
-    "sha256": "94c79d13fe130ed14203ce3808017db31ff589dddfcb3e484a1e7a32529d9b9e"
-  },
-  "F116": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/form.csv",
-    "sha256": "25127a0dbe879c3d3c4d1443e777c38cde3dbe19e57af6046b2914571a9e83ab"
-  },
-  "F117": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/honey.csv",
-    "sha256": "4355c10367800ae69650f23d9c1de706001dea2f6cef8edc73c1f7f11cd799d6"
-  },
-  "F118": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/mushrooms.csv",
-    "sha256": "d767bda21ca437e812761c4eb499e7344c074adea724c3347bc82423ee5d47cd"
-  },
-  "F119": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/SOCR_MLB.tsv",
-    "sha256": "5ee14f1fd6f3eb45ea4bc8b904c4083e9116a7a8f1eed71443550c29f80d4e6b"
-  },
-  "F120": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/taxi.csv",
-    "sha256": "46c9ac10f26975029efcf2b8cffce70db68dfa1d7f1f1c09b8d7313e4d3cd9d7"
-  },
-  "F121": {
-    "path": "dataset/files/microsoft-data-science-for-beginners/data/UID_ISO_FIPS_LookUp_Table.csv",
-    "sha256": "2862a955b6cd64fb6f34a743b87e030ca05a587546c9be52d6beb924912e95b0"
-  },
-  "F167": {
-    "path": "dataset/files/데이터사이언스/14주차_종합과제-2.ipynb",
-    "sha256": "430b9997b09f3d0a44deb019e952747f7f8e14160badeb5680a291898ffd155a"
-  },
-  "F168": {
-    "path": "dataset/files/데이터사이언스/customers.csv",
-    "sha256": "5ef8388c03660ba0075aa3237746ddb8f7fb6887a9e57d1e9e6258dac56ffec8"
-  },
-  "F169": {
-    "path": "dataset/files/데이터사이언스/orders_202401.csv",
-    "sha256": "bbaa18a81d435b09f7d8d0e58a22984a88e205f80cd1d6ec796d0fbadb48104e"
-  },
-  "F170": {
-    "path": "dataset/files/데이터사이언스/orders_202402.csv",
-    "sha256": "13e9760f4547cace3dbb60ae71fafd1183308f8e41011e8865c2f91244c6ef9a"
-  },
-  "F171": {
-    "path": "dataset/files/데이터사이언스/orders_202403.csv",
-    "sha256": "01b28053dbe7c2bd205633da1ba660fa1b6dffe98dfb348b84c2a0710e337135"
-  },
-  "F172": {
-    "path": "dataset/files/데이터사이언스/products.csv",
-    "sha256": "0127bdc92fd244f92f52d3b595685c092557b1ee61082c649cf59dea5012c34b"
-  },
-  "F173": {
-    "path": "dataset/files/데이터사이언스/reviews.csv",
-    "sha256": "9af6afe8ab2adbef63bdd1ea688c940c54eb019271da8e25604e188c887acad0"
-  },
-  "F174": {
-    "path": "dataset/files/데이터사이언스/student_performance.csv",
-    "sha256": "e5de9820e4651c8b9d383388741f88e3780bf62c9e2534df1e3bc8328b18a30f"
-  },
-  "F175": {
-    "path": "dataset/files/데이터사이언스/week10_example.csv",
-    "sha256": "af2b75d4614159f62df308ee3b62c5282c2a194041a6cb3f8f5bae60f66c4f00"
-  },
-  "F176": {
-    "path": "dataset/files/데이터사이언스/week10_homework.ipynb",
-    "sha256": "2b2ae879c520ebb6f712c532565183b3710c02f5d55eb76a48bfaab54e3f9f7a"
-  },
-  "F177": {
-    "path": "dataset/files/데이터사이언스/week10_hospital_raw.csv",
-    "sha256": "6960755dc5e1daed90f9b26e079cd0bd8a1eda44653403d2c7dd1ca0972fc1cd"
-  },
-  "F178": {
-    "path": "dataset/files/데이터사이언스/week11_home.ipynb",
-    "sha256": "3b7df19734d9176299ca5bc66affec162aa7498ff52276a08549f601af2cdd46"
-  },
-  "F179": {
-    "path": "dataset/files/데이터사이언스/week11_item.csv",
-    "sha256": "5761ff9feaff5b0e3c848a59b7ac5c497171f1f1ab34699a297dc8cb5db2e58b"
-  },
-  "F180": {
-    "path": "dataset/files/데이터사이언스/week11_shop.csv",
-    "sha256": "694160352f216af9d26da152c7e78b2978cefac84cf331121d790b44d918f479"
-  },
-  "F181": {
-    "path": "dataset/files/데이터사이언스/week12.ipynb",
-    "sha256": "0ea9652d42ec132a6423df5aaac0c4ffe377116c01ff51c9f8ffacdb2bb72784"
-  },
-  "F182": {
-    "path": "dataset/files/데이터사이언스/week12_data.csv",
-    "sha256": "a0bdeab7338d426a7178eebd8c28f332a794a994bb9c6b6b6ce56d740592e65b"
-  },
-  "F183": {
-    "path": "dataset/files/데이터사이언스/week13_assignment-2.ipynb",
-    "sha256": "03c87995111d5004d9489786a3e86736ce0b5a55165a4553378c0183a1fc704d"
-  },
-  "F184": {
-    "path": "dataset/files/데이터사이언스/week13_health.csv",
-    "sha256": "8bfd52a2bb56df40c3389d2ef53590dddada90a551986dcf73f35c9178706a5c"
-  },
-  "F185": {
-    "path": "dataset/files/데이터사이언스/week14_assignment.ipynb",
-    "sha256": "c3809c7a2db3808cbda4f2894f639dc823b7ded766a778ba47f8b52185bab18b"
-  },
-  "F186": {
-    "path": "dataset/files/데이터사이언스/week14_data.csv",
-    "sha256": "e56fdd79b008b7a7b5489d9f067324d5df87b5ec7502a0232c070fbec23196e1"
-  },
-  "F187": {
-    "path": "dataset/files/데이터사이언스/Week4_Assignment.ipynb",
-    "sha256": "bdaefd9e39496fbea32f2e3361622974a0f5552a86f227f9f7afa7c4b206abb6"
-  },
-  "F188": {
-    "path": "dataset/files/데이터사이언스/week5.ipynb",
-    "sha256": "cb74463c44d9b05738ba321e6377c67306b436db0c504489521aa9251708bf72"
-  },
-  "F189": {
-    "path": "dataset/files/데이터사이언스/Week6_share.ipynb",
-    "sha256": "5d1357b9a75144ae84d25c89b24a59a8fb42a49b1588f23dd5f01699fffcee6a"
-  },
-  "F190": {
-    "path": "dataset/files/데이터사이언스/week7_2.ipynb",
-    "sha256": "358d3394f4a9779041e73d04560bc3e9899f9984bee676aec508f99597a41e2a"
-  },
-  "F191": {
-    "path": "dataset/files/데이터사이언스/week_7_convenience_store.csv",
-    "sha256": "27c2f7542a1e8ab574c7933339bf64df2ab1313aa1f8b810f0418cb88e8b65f1"
-  },
-  "F192": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료1.pdf",
-    "sha256": "2bc3dd7cfabb96a92e5ab8e88a46644601221c8bfd981fd415d7b9ec5b071ef9"
-  },
-  "F193": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료10.pdf",
-    "sha256": "5442953b0159203f0f8a0ca9487dbcb95a308f2b03eb55b95ba4b1870a1ffe44"
-  },
-  "F194": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료11.pdf",
-    "sha256": "bcf8370aaeeae4d8cb6ca27b066aa379788ae384e7151d51f5db20fec05b90f9"
-  },
-  "F195": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료12.pdf",
-    "sha256": "032024b686c65bb0255947d9b900520d9ac29f0ce70b4fe388b50b07db021ed6"
-  },
-  "F196": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료13.pdf",
-    "sha256": "0ccae3039559df0c7b3e725f59392853314713ab6ac02c4659a1bd0d90f64567"
-  },
-  "F197": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료14.pdf",
-    "sha256": "9b206781d653c98e0ef90dfca55d96b957f33f15ad274b03e2d1e99d86380214"
-  },
-  "F198": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료2.pdf",
-    "sha256": "f17ffdfd359e79e5a1b158483864885a5ab64f0bf13041e5600e4528588edda2"
-  },
-  "F199": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료3.pdf",
-    "sha256": "be48de1028e75fc73ea1d987a3b64101d096fe29313890c6bc56916c541adfa8"
-  },
-  "F200": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료4.pdf",
-    "sha256": "3e2dd76fcbc31de4300e66edf1b6045a2253aed5af0b8e72518721e984380161"
-  },
-  "F201": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료5.pdf",
-    "sha256": "a07528c1040083428b925ca5118bf8db20a7959759b78c50e2dd3d3ae3c9bc5b"
-  },
-  "F202": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료6.pdf",
-    "sha256": "9668437f3ab759f7acc01dc313657c9feb1d528b0d59855afb591be5cb614f6b"
-  },
-  "F203": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료7.pdf",
-    "sha256": "efe542d4f76aa903840bf9887c0feb7ed9a3ef46e3e3046475b4f84be4cb441a"
-  },
-  "F204": {
-    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료9.pdf",
-    "sha256": "5797fb7f3dbd31688f9432a2ae9e4a5162241f55396f24400906e07e5a40a7ac"
-  },
-  "F003": {
+  "F001": {
     "path": "dataset/files/딥러닝_수업자료/Cross-Validation_Decoded.pdf",
     "sha256": "6d52c3b11e38e1da20b07e28043eae0758b7377ee2886de0e45e83aadc6ff700"
   },
-  "F004": {
+  "F002": {
     "path": "dataset/files/딥러닝_수업자료/MLP(다층퍼셉트론)(강의).pdf",
     "sha256": "850bc2c626c353d8c340909ab2d404190c9dc33da6ff77ff85f1260542ca4871"
   },
-  "F005": {
+  "F003": {
     "path": "dataset/files/딥러닝_수업자료/Transformer_강의자료.pdf",
     "sha256": "0e3837555c8863f70ae4d41f2fd4c990fa5099be1abb7c48a28009d58183e885"
   },
-  "F006": {
+  "F004": {
     "path": "dataset/files/딥러닝_수업자료/머신러닝(내용추가).pdf",
     "sha256": "0f7195ae472c3e5ed66a4034789c7272c872fef71128964f6902f0f3aad7bd53"
   },
-  "F007": {
+  "F005": {
     "path": "dataset/files/딥러닝_수업자료/선형회귀_업데이트.pdf",
     "sha256": "f1bdfac0db639c344c57a3a680974ce10fca98f9226951680651c91ad0ac4031"
   },
-  "F008": {
+  "F006": {
     "path": "dataset/files/딥러닝_수업자료/심층신경망.pdf",
     "sha256": "06ac81b49b19e3dde228e2e81b72b76ec0aafd5c8480c76d9721256c39e3701f"
   },
-  "F009": {
+  "F007": {
     "path": "dataset/files/딥러닝_수업자료/영상인식과 딥러닝.pdf",
     "sha256": "e14fa283d4863966a26f834e341adbec7d36d9c373f77693175d22f31bed5470"
   },
-  "F010": {
+  "F008": {
     "path": "dataset/files/딥러닝_수업자료/제09장 컨벌루션 신경망(강의).pdf",
     "sha256": "e790fc501cf208471f71efed9b0cd6643a8fb393bb0f643010bd65b2f6f55ce1"
   },
-  "F011": {
+  "F009": {
     "path": "dataset/files/딥러닝_수업자료/제11장 순환신경망(강의).pdf",
     "sha256": "f0596d18bc8f4cc24a39c0ff89aa60941fd6583a61dc07bb1cf9cfc37d735497"
   },
-  "F012": {
+  "F010": {
     "path": "dataset/files/딥러닝_수업자료/케라스 라이브러리.pdf",
     "sha256": "4fcfd167c32839d32919057f03baff0bcfbb5321c0b3f892173e4e09b1eaed83"
   },
-  "F013": {
+  "F011": {
     "path": "dataset/files/딥러닝_수업자료/퍼셉트론_추가.pdf",
     "sha256": "4a4aa249bebabc2f54f2cc58fd12401e12a4f13c6275759a735a98f13d52a478"
   },
-  "F164": {
-    "path": "dataset/files/생활속의금융/01. 금융의역할과주요금융지표.pdf",
-    "sha256": "b1e65f33f5f4c010586c142ac0bd8262680537b31318d3f61c62f3049904e424"
-  },
-  "F165": {
-    "path": "dataset/files/생활속의금융/02. 금융상품과금융시장.pdf",
-    "sha256": "8f19077a44a27419b499cc018139b45a993d6c716bf3f7222d6de5cb4d723bb4"
-  },
-  "F166": {
-    "path": "dataset/files/생활속의금융/03. 저축의이해.pdf",
-    "sha256": "8e646d7df97d285d04a87684224071ff3dd454972ac14d4045618a47f0feb81e"
-  },
-  "F015": {
+  "F012": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis10_1.R",
     "sha256": "6db4c88cc58293f4fc520ad645d46dbbea7debdcd1e0bb1f5d93c2b2e15ded8c"
   },
-  "F016": {
+  "F013": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis11_1.R",
     "sha256": "ac1546e067b122755d1291694fa95f285e32b07b553d7a668dcb50e03254e55c"
   },
-  "F017": {
+  "F014": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis12_1.R",
     "sha256": "5a21a12ea83412c7a0ad8e263ab876a077abd1702b504b133b2ccb88d5b72c7c"
   },
-  "F018": {
+  "F015": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis13_1.R",
     "sha256": "dcf159e358ce1a3d86cdaf9ae2429b0376c0d716d8f08058724d98852093e4d5"
   },
-  "F019": {
+  "F016": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis14_1.R",
     "sha256": "dd2808d5a5360abc0070918dd708f8e6b518449e1d2784e1cb6520a972cf19ed"
   },
-  "F020": {
+  "F017": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis2_1.R",
     "sha256": "e5dc89c6275c2bf9e0b6b03a2ce95a79bc82649f5918b54abd0c8e40fb4f00fa"
   },
-  "F021": {
+  "F018": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis2_2.R",
     "sha256": "8cc1931b78312d0110c085c1ce941196112e63312f56a0ded24d0bde753c1cb1"
   },
-  "F022": {
+  "F019": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis3_1.R",
     "sha256": "eb6e4961192e300310b2c253d87c9df3c1001db036c5c9b6ecac6f1308825dfb"
   },
-  "F023": {
+  "F020": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis4_1.R",
     "sha256": "6ae28fba9a7225d479a0f9806ff1da00473619ebf9b33ed9f15b8f15d5ed6357"
   },
-  "F024": {
+  "F021": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis5_1.R",
     "sha256": "90b757377da968f8f829b6ddbb064edc594d4947510879e4256d3585c4fde5f2"
   },
-  "F025": {
+  "F022": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis6_1.R",
     "sha256": "c8b50229fa4368835070217193fb2b8cd2cc4b2f7436f1817edf4cba9ea2a6ee"
   },
-  "F026": {
+  "F023": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis7_1.R",
     "sha256": "962ca9bd151bf5c58e5fce627f2cbaccd5ef47405ff9588bfb68a38687dd9eb3"
   },
-  "F027": {
+  "F024": {
     "path": "dataset/files/시계열 분석_code/time_series_analysis9_1.R",
     "sha256": "d5d727f094b97035add5a18ca38b2d9d8ea48f45198d29abcc8ab965ea497f97"
   },
-  "F028": {
+  "F025": {
     "path": "dataset/files/시계열 분석_code/week10.R",
     "sha256": "07611002d1d4b0df2c71f47e39819282cd7409506427000c95b103cf23f573ae"
   },
-  "F029": {
+  "F026": {
     "path": "dataset/files/시계열 분석_code/week10_cheating.R",
     "sha256": "219cd8c055ac2efa837ea43afce0a97bb5be2f1c35b68dcd033782bb61d72430"
   },
-  "F030": {
+  "F027": {
     "path": "dataset/files/시계열 분석_code/week11_cheating.R",
     "sha256": "fb0314968d39bf18d9d232fc8eb4c03ad5817af1101920f1f08af853d48e34aa"
   },
-  "F031": {
+  "F028": {
     "path": "dataset/files/시계열 분석_code/week12.R",
     "sha256": "66ef2173dce9d41420080f529ea55ccd07ecf1a42d166a169478f1118b7be79b"
   },
-  "F032": {
+  "F029": {
     "path": "dataset/files/시계열 분석_code/week12_cheating.R",
     "sha256": "26e73d71feb7ac8805c0c09349aaa84aded0d1976d84733aebe80a288027f45c"
   },
-  "F033": {
+  "F030": {
     "path": "dataset/files/시계열 분석_code/week13.R",
     "sha256": "7f154021f9a9464d154470ea6da950c9ebb6a3d54d36c7d424fc6bf3499b511d"
   },
-  "F034": {
+  "F031": {
     "path": "dataset/files/시계열 분석_code/week13_cheating.R",
     "sha256": "5c69eb9e9c345fd81a325d3d66f77c4a5064cb59399f539b5ed052990aeababe"
   },
-  "F035": {
+  "F032": {
     "path": "dataset/files/시계열 분석_code/week14_apple_forecast_analysis_2026.R",
     "sha256": "a3d3e3b6e6221793e4e1ab67261975e0d64a8780037d15ec05390b481e849466"
   },
-  "F036": {
+  "F033": {
     "path": "dataset/files/시계열 분석_code/week14_apple_forecast_analysis_2026_1.R",
     "sha256": "ce3b9e8d587d19e6880722d51bad51207b2e7dd0bf5cdcc855410f7d9c64c49e"
   },
-  "F037": {
+  "F034": {
     "path": "dataset/files/시계열 분석_code/week14_apple_forecast_analysis_2026_cheating.R",
     "sha256": "bb97b77c3b9505cc858aa8ead7d14a64dad8f34c66707ad6256749ba6f030a43"
   },
-  "F038": {
+  "F035": {
     "path": "dataset/files/시계열 분석_code/week2.R",
     "sha256": "a20313157bafb648ef08a2a29048d1d101388c379ace93b3190bb17057602c5d"
   },
-  "F039": {
+  "F036": {
     "path": "dataset/files/시계열 분석_code/week2_cheating.R",
     "sha256": "329bf231c5c5fc51f94ca2ed62498bd782181709438a3712d98768f997b3cd1e"
   },
-  "F040": {
+  "F037": {
     "path": "dataset/files/시계열 분석_code/week3.R",
     "sha256": "83296afccb417b44082bb88231a5119536aa4a51550dccd39c72336874185ca6"
   },
-  "F041": {
+  "F038": {
     "path": "dataset/files/시계열 분석_code/week3_cheating.R",
     "sha256": "ad04c3ca04fd063321ebe48fb61d873c7a5587d4aec77ac24db85982a3371110"
   },
-  "F042": {
+  "F039": {
     "path": "dataset/files/시계열 분석_code/week4.R",
     "sha256": "fb9a27ff8314a5f659efc6c7abeca6451f4beb6d5f498a615d058722c0ca5837"
   },
-  "F043": {
+  "F040": {
     "path": "dataset/files/시계열 분석_code/week4_cheating.R",
     "sha256": "33508e13c3ffad4cbfc4551d71b5948e73d42b61ac3bab62662b53e81c30a9db"
   },
-  "F044": {
+  "F041": {
     "path": "dataset/files/시계열 분석_code/week5 (1).R",
     "sha256": "4abd58d8e8292ee4d5593b3e20c8d598e649fae6331c4190a6854df2f8eeb8f9"
   },
-  "F045": {
+  "F042": {
     "path": "dataset/files/시계열 분석_code/week5.R",
     "sha256": "9a4edd7c1e5ae06573e12ba68dcbe7e6caeb6cfa37b80f0514f9719b692500f8"
   },
-  "F046": {
+  "F043": {
     "path": "dataset/files/시계열 분석_code/week5_cheating.R",
     "sha256": "80e9e7c48f59de73b714818b708e7f66255330992925435e24409ecd522b707f"
   },
-  "F047": {
+  "F044": {
     "path": "dataset/files/시계열 분석_code/week6.R",
     "sha256": "c35c68a33140c956eb63585ec034e7b9796d01ef83e7ee66aa88e36d51e00f29"
   },
-  "F048": {
+  "F045": {
     "path": "dataset/files/시계열 분석_code/week6_cheating.R",
     "sha256": "0418b8cb0d059572c36066c9fbf1d5b576523ca11e20cf34a78810284816f693"
   },
-  "F049": {
+  "F046": {
     "path": "dataset/files/시계열 분석_code/week7.R",
     "sha256": "68e53c381cebc8b4d1a091b0fcc25e33400ef367c0531745420b2273c51ebcad"
   },
-  "F050": {
+  "F047": {
     "path": "dataset/files/시계열 분석_code/week7_cheating.R",
     "sha256": "2b06c69129c4cb4c2fa7ad5b8dce63e236298eb2fb9b84fb1ff45bb4707332d6"
   },
-  "F051": {
+  "F048": {
     "path": "dataset/files/시계열 분석_code/week9_cheating.R",
     "sha256": "2578c5e708ab2f52d9c20bedefc963f2d08d259db6d83b369f05734b1583f545"
   },
-  "F052": {
+  "F049": {
     "path": "dataset/files/캡스톤디자인/message_hello (1).py",
     "sha256": "8675d9292f2d38a05c9bf2e0a6e9e0f209c6f1511379a99cda19398685e28179"
   },
-  "F053": {
+  "F050": {
     "path": "dataset/files/캡스톤디자인/pigpio.py",
     "sha256": "e559153d5f74fc97e13ea855b85e8c2dea276da19595b14a4dfbe8ddffa8a746"
   },
-  "F054": {
+  "F051": {
     "path": "dataset/files/캡스톤디자인/python3_voice_alert.py",
     "sha256": "beb0f5e9056aae1db920cb2cb4bc86bb6fc885179b93b694d01f860c68fc5d41"
   },
-  "F055": {
+  "F052": {
     "path": "dataset/files/캡스톤디자인/rpi_gpio.py",
     "sha256": "fd26cc212b8f8add806b0643c0190fccf13c9eda990a7a05b1e16ed46de8b4bf"
   },
-  "F056": {
+  "F053": {
     "path": "dataset/files/캡스톤디자인/stream_yolo.py",
     "sha256": "c7222932bfad812fb9e8c318cc25c0ba2e9a94a55f437f4a28b2c584d6b56c2d"
   },
-  "F057": {
+  "F054": {
     "path": "dataset/files/캡스톤디자인/voice_alert.py",
     "sha256": "e97ae7a320005a757f72bc6a111add7a4a1836e49148af5ffd850c0c64485943"
   },
-  "F058": {
+  "F055": {
     "path": "dataset/files/캡스톤디자인/voice_alert1.py",
     "sha256": "6ba34ae7c432aaf6c69885c41e0e6c7c97ea51325b44361b4c2245b2eb0afb26"
   },
-  "F059": {
+  "F056": {
     "path": "dataset/files/캡스톤디자인/voice_test.py",
     "sha256": "284fbe7518d15f6f3fbc0f890b5e3259610d6e9accea705e553447e712aab324"
   },
-  "F060": {
+  "F057": {
     "path": "dataset/files/캡스톤디자인/YOLO(test) (1).ipynb",
     "sha256": "e0d9728d6c479b9ab2cc612d985a7e52c6f25dfc44f0478038d93318a179fd7f"
   },
-  "F061": {
+  "F058": {
     "path": "dataset/files/캡스톤디자인/YOLO(test)_picture(light_ver) (1).ipynb",
     "sha256": "88f3b9a08aa54f56fc6227a8a3d40ef16fbfd6e9ab2aaca187487a43dafd4e53"
   },
-  "F062": {
+  "F059": {
     "path": "dataset/files/캡스톤디자인/YOLO(test)_picture.ipynb",
     "sha256": "f12b9c5b2286bd60d3bf09a33b5283d48b6472f1a4bae5316090c23233a0ede5"
   },
-  "F063": {
+  "F060": {
     "path": "dataset/files/캡스톤디자인/yolo_learn.ipynb",
     "sha256": "330715c59910f0510f73c57febea65bba7d71b771f3185345173ec23bf0cfb26"
   },
-  "F064": {
+  "F061": {
     "path": "dataset/files/캡스톤디자인/yolo_learning2 (1).ipynb",
     "sha256": "8e9a8f441e8159574dc7a413d9b16c2e5d07e3636aaa25bdd98bfe7e2fcbfa0f"
   },
-  "F065": {
+  "F062": {
     "path": "dataset/files/캡스톤디자인/yolo_learning5 (1).ipynb",
     "sha256": "2240a187b73ed227b14fc1472f7533c22755502d0238ea1f2ef8cb86aa2ec42f"
   },
-  "F066": {
+  "F063": {
     "path": "dataset/files/캡스톤디자인/yolo_open.py",
     "sha256": "a4737aab4d55afc4cf34202d57fff676b035d54be12577d13f4f3cd4e3656bfc"
   },
-  "F067": {
+  "F064": {
     "path": "dataset/files/캡스톤디자인/yolo_stream.py",
     "sha256": "daac25e9201eabd40a5c1c8c262fb9c42f09fcf43bd02e5ba35ced801a105a4c"
   },
-  "F068": {
+  "F065": {
     "path": "dataset/files/캡스톤디자인/yolo_stream_front.py",
     "sha256": "02bb02678cf5b5571f48738da20a54165e2e5eba942d0bb878b40c4e6f555f0f"
   },
-  "F070": {
+  "F066": {
     "path": "dataset/files/한국근현대사역사기행01/19세기_후반_불평등조약체제의_성립_과정.pdf",
     "sha256": "f9b7aef4e19e515e478324590187977a4e769e677aa840de599b45374d00aab1"
   },
-  "F071": {
+  "F067": {
     "path": "dataset/files/한국근현대사역사기행01/4주차_강화도조약과 개항.pdf",
     "sha256": "957d50f30593f42358dcc64ef52efe8298277c9aa54c97ff9f5b556834e93bb2"
   },
-  "F072": {
+  "F068": {
     "path": "dataset/files/한국근현대사역사기행01/강화도조약과 개항.pdf",
     "sha256": "e54617739e292539cbc915ade90ee6167104bbf561e2ed56255407e211378d76"
   },
-  "F073": {
+  "F069": {
     "path": "dataset/files/한국근현대사역사기행01/개항기 조선 서양과 만나다.pdf",
     "sha256": "67a1c0611216007eadb65a8111e0949ce769964dadf5de900f25b494513a1ff1"
   },
-  "F074": {
+  "F070": {
     "path": "dataset/files/한국근현대사역사기행01/근대 국민국가와 왕권.pdf",
     "sha256": "261aa119298a8dcd37ac9c9e205615c749c75469282fb02ae67e3a1519749fb1"
   },
-  "F075": {
+  "F071": {
     "path": "dataset/files/한국근현대사역사기행01/근대 국민국가와 왕권_sum.pdf",
     "sha256": "895a9230e37f6c7bd9d5c8a3fafab11c4acfa880b3741d72a614f7bbd8ed8566"
   },
-  "F076": {
+  "F072": {
     "path": "dataset/files/한국근현대사역사기행01/근대사_연표_19세기 후반.pdf",
     "sha256": "520645ef976ff0abd0b73831a51534612a3dd237bbbb56de134987e96cb87352"
   },
-  "F077": {
+  "F073": {
     "path": "dataset/files/한국근현대사역사기행01/동아시아의 개항 난징조약에서 강화도 조약까지.pdf",
     "sha256": "45fa407163e1b4aaa3a2fecd847521f7b1065d9309808c5a000a7ad1e09ed7d1"
   },
-  "F078": {
+  "F074": {
     "path": "dataset/files/한국근현대사역사기행01/서세동점 동아시아와 서양 열강 1.pdf",
     "sha256": "7103f8199fa6fb5857a818b56fb5fb26afeaa6fc76796b03a84c6195ef39cd80"
   },
-  "F079": {
+  "F075": {
     "path": "dataset/files/한국근현대사역사기행01/서세동점 동아시아와 서양 열강1_ppt.pdf",
     "sha256": "df82960e36384cf61d7a105a483fa43fb68935b49e1d6f7936c80a2368829eae"
   },
-  "F080": {
+  "F076": {
     "path": "dataset/files/한국근현대사역사기행01/서세동점 동아시아와 서양 열강2.pdf",
     "sha256": "4646833022e6aa3aff036ca0688890105a583010e0152ef36d477b8299a3f48e"
   },
-  "F081": {
+  "F077": {
     "path": "dataset/files/한국근현대사역사기행01/서세동점 동아시아와 서양 열강2＿ppt_2026.pdf",
     "sha256": "2c24ca11eca7ecb9339ff328d9db4002ac87ce321aa52f78445cb7685ff1a507"
   },
-  "F082": {
+  "F078": {
     "path": "dataset/files/한국근현대사역사기행01/일본의 개항과 미국.pdf",
     "sha256": "1fcddda434e796bc47a98e9c5473319627f600712f08012b88df2dbbb6dca5c2"
   },
-  "F083": {
+  "F079": {
     "path": "dataset/files/한국근현대사역사기행01/읽기자료_갑오개혁의 전개와 성과.pdf",
     "sha256": "7ad3ea6a2024d735f87b0bb4a7d5e35e4e2aaae09d9486c29c7325baea857e00"
   },
-  "F084": {
+  "F080": {
     "path": "dataset/files/한국근현대사역사기행01/읽기자료_갑오개혁의 한계.pdf",
     "sha256": "8e0910fa4dab093bdbbc8d08e0a7a4063a74a44a87fc5149ac33e2a738f81fd5"
   },
-  "F085": {
+  "F081": {
     "path": "dataset/files/한국근현대사역사기행01/임오군란과 갑신정변.pdf",
     "sha256": "8bdec0e3875916da416399521cacdaf1c980371bbcd09f0ef5f99dab689fb52d"
   },
-  "F086": {
+  "F082": {
     "path": "dataset/files/한국근현대사역사기행01/청일전쟁과 갑오개혁_ppt.pdf",
     "sha256": "ad56386b18e27185767b08ccd559186e2f064cecc5931e8e8b8b57ef8503d53e"
   },
-  "F087": {
+  "F083": {
     "path": "dataset/files/한국근현대사역사기행01/청일전쟁과 갑오개혁_요약.pdf",
     "sha256": "ac93a1a56bf94c7d374cd57672173df2ff3aeb720d7c710bb1341204370b6501"
   },
-  "F088": {
+  "F084": {
     "path": "dataset/files/한국근현대사역사기행01/한국 근현대 인물사 연구방법론.pdf",
     "sha256": "e9d3fcaa0a0aeebee35fa7d765b39301a71ddf809140c640c4804c3234f7c7a4"
   },
-  "F089": {
+  "F085": {
     "path": "dataset/files/한국근현대사역사기행01/한국의 식민지 근대는 어떠한 성격의 사회였나.pdf",
     "sha256": "dd27baa78f52dbfd24e6345932db3b93614529ada4bec42b2323909ceb4ab208"
   },
-  "F090": {
+  "F086": {
     "path": "dataset/files/한국근현대사역사기행01/한성도시개조사업.pdf",
     "sha256": "1c8003f7dd1a79b089481b05e3e3e9ed03f0d39a31423770fcc6523b8b631b3d"
   },
-  "F091": {
+  "F087": {
     "path": "dataset/files/한국근현대사역사기행01/행정개혁기구의_성공_조건.pdf",
     "sha256": "5202f11a247be474e1a920ec1444aa0c0b06e322838851798a4718263080dd09"
   },
-  "F092": {
+  "F088": {
     "path": "dataset/files/한국근현대사역사기행01/후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf",
     "sha256": "a2d003b78878a263a10ed4635baeeecee2585b18f592b5ea9cf556f0051e83ad"
   },
-  "F093": {
+  "F089": {
     "path": "dataset/files/한국근현대사역사기행02/근대 서양 문물의 도입_ppt.pdf",
     "sha256": "26f75784a0023a9eea63aa8d3246f11ae3f6ea909a504fb0fd87432c7d6867da"
   },
-  "F094": {
+  "F090": {
     "path": "dataset/files/한국근현대사역사기행02/근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf",
     "sha256": "86b6b739e8d5ebbb323138029cf0d6c5557e33978de991da68ae81a556050c92"
   },
-  "F095": {
+  "F091": {
     "path": "dataset/files/한국근현대사역사기행02/세균설과 근대의 보건_위생_ppt.pdf",
     "sha256": "a9abc011b6538c4a4c3d378bed879bddf13eda3cebd80bba2520e7f1551b8031"
   },
-  "F096": {
+  "F092": {
     "path": "dataset/files/한국근현대사역사기행02/해방전후의 한국 정치와 사회_제주.pdf",
     "sha256": "bc35988a52daee2e5b12288e8d0e7ab77b8d56559d827017e1dd86c1a652f3b3"
   },
-  "F097": {
+  "F093": {
     "path": "dataset/files/한국근현대사역사기행02/해외 인력 송출의 역사와 파독 광부 간호사.pdf",
     "sha256": "e6269827ab2aae24dc80410bdcb73a48b9a496e89ee8158d03de4656fac73be3"
   },
-  "F099": {
+  "F094": {
     "path": "dataset/files/한국근현대사역사기행03/4.3history.pdf",
     "sha256": "3478ccba8f3946acf12ca179211dd50716d1e6d7f4ac900b78230fd5aeacdc76"
   },
-  "F100": {
+  "F095": {
     "path": "dataset/files/한국근현대사역사기행03/근대 서양 문물의 도입과 일상생활.pdf",
     "sha256": "905dd2b4c8ea105bc79e3a7082bd131f59c13b56279cd091dbc77165a065d608"
   },
-  "F101": {
+  "F096": {
     "path": "dataset/files/한국근현대사역사기행03/근대의 법과 제도는 어떻게 이식되었는가.pdf",
     "sha256": "a36ba4f817ae5ffa2eec1c264339b91ff3abccedda55b0c4ea98fff117564269"
   },
-  "F102": {
+  "F097": {
     "path": "dataset/files/한국근현대사역사기행03/메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf",
     "sha256": "0a5b2cb1e49df875911e448378faf5c2e4a8a1022af7ac7df264e65bd12fd84e"
   },
-  "F103": {
+  "F098": {
     "path": "dataset/files/한국근현대사역사기행03/세균설과 식민지 근대의 보건ㆍ위생_노트.pdf",
     "sha256": "e2253a29cafd25869a421604a5e6dedce34e81c210ac25021f2ee6e4a5cc6832"
   },
-  "F104": {
+  "F099": {
     "path": "dataset/files/한국근현대사역사기행03/유관순의 발굴과 재현.pdf",
     "sha256": "d3966d40d717532488a14e6f9b769c28393fb5d8b249b8a5c13767a37586f402"
   },
-  "F105": {
+  "F100": {
     "path": "dataset/files/한국근현대사역사기행03/유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf",
     "sha256": "89d9bc2ca31c837b872af7fcb31e8354b3418dc86432180c8b32391fd0f176f9"
   },
-  "F106": {
+  "F101": {
     "path": "dataset/files/한국근현대사역사기행03/제주 4·3의 진실과 역사적 의미_박찬식.pdf",
     "sha256": "d7a4e5c5149a3efd8c752bb930709e318527169811b8664ce902cf3f624bbe40"
   },
-  "F107": {
+  "F102": {
     "path": "dataset/files/한국근현대사역사기행03/파월기술자의 전쟁경험.pdf",
     "sha256": "2cf58f645aa70896e3dc85ab08dc3341ec641134c56abf20d435f566325ccb76"
   },
-  "F108": {
+  "F103": {
     "path": "dataset/files/한국근현대사역사기행03/한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf",
     "sha256": "fd2a43489d584bf1da1c2ebe8c774f98e6409093c0e4d99b6baec76846492083"
   },
-  "F109": {
+  "F104": {
     "path": "dataset/files/한국근현대사역사기행03/한국현대사와 영화 ‘국제시장＇.pdf",
     "sha256": "2642f01697f6d9c880aff61ccec994fe69ed2fde3960f7a066001a6d6c0ab71a"
   },
-  "F110": {
+  "F105": {
     "path": "dataset/files/한국근현대사역사기행03/해방이전 제주의 사회와 경제_양정필.pdf",
     "sha256": "5593a5c3eac898af16929f2f86506ea7aa06ff4146cfbd60be36d9905940e43c"
+  },
+  "F106": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/README.md",
+    "sha256": "83b87be2207030799d8d91b3ed76044eb6fd6f351983d892b1bc66979ba4f3f7"
+  },
+  "F107": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/README.md",
+    "sha256": "36edbab85127686ec62ddb3b2fcaad3779b8ba223f8e2452f1d584b4a0bd5c42"
+  },
+  "F108": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/birds.csv",
+    "sha256": "c508f9e8a597535d5955b1574745d902697e8677e67a768f0dd3db6a9dab6147"
+  },
+  "F109": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/diabetes.tsv",
+    "sha256": "6845b179f73b32c67ae82a81a77159efd2b594ed3b5b0d09ec7bb9ef0cfdd33b"
+  },
+  "F110": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/emails.csv",
+    "sha256": "94c79d13fe130ed14203ce3808017db31ff589dddfcb3e484a1e7a32529d9b9e"
+  },
+  "F111": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/form.csv",
+    "sha256": "25127a0dbe879c3d3c4d1443e777c38cde3dbe19e57af6046b2914571a9e83ab"
+  },
+  "F112": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/honey.csv",
+    "sha256": "4355c10367800ae69650f23d9c1de706001dea2f6cef8edc73c1f7f11cd799d6"
+  },
+  "F113": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/mushrooms.csv",
+    "sha256": "d767bda21ca437e812761c4eb499e7344c074adea724c3347bc82423ee5d47cd"
+  },
+  "F114": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/SOCR_MLB.tsv",
+    "sha256": "5ee14f1fd6f3eb45ea4bc8b904c4083e9116a7a8f1eed71443550c29f80d4e6b"
+  },
+  "F115": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/taxi.csv",
+    "sha256": "46c9ac10f26975029efcf2b8cffce70db68dfa1d7f1f1c09b8d7313e4d3cd9d7"
+  },
+  "F116": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/UID_ISO_FIPS_LookUp_Table.csv",
+    "sha256": "2862a955b6cd64fb6f34a743b87e030ca05a587546c9be52d6beb924912e95b0"
+  },
+  "F117": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/assignment.md",
+    "sha256": "a836747a80e63ec7e588670ab53eab69f4a167cdb7b64a23874e14f03e15d1b7"
+  },
+  "F118": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/05-relational-databases/README.md",
+    "sha256": "c9cce931c932d42ea85ef515445c6c717590c7624d3a4065e89ca4c67cf754ad"
+  },
+  "F119": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/assignment.md",
+    "sha256": "9a9041d4a187c74506c4246d5a6978189d2023c9d99ab8df37d2d2a06cb0c397"
+  },
+  "F120": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/CocaColaCo.xlsx",
+    "sha256": "7423ca18a5cf2b37ce265de6497ac83b42ba3fff89bf39af1332deec008d6ca0"
+  },
+  "F121": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/PersonsData.json",
+    "sha256": "bb23275bdd6e7dc1b2bee9648bcdbbbafbe62467ac693917e21631bf0354ea3b"
+  },
+  "F122": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/README.md",
+    "sha256": "76e8146334b6b1736672f235a6c4f1a3fa134661fea9e51cda0668305e3631b6"
+  },
+  "F123": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/06-non-relational/TwitterData.json",
+    "sha256": "f6a76bc7bb09c6691d4474cc094f2b460a14be492048fdf8b1a87e44de8e7d95"
+  },
+  "F124": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/assignment.md",
+    "sha256": "fd45e6b63919fc7febd621d4774f184076058b8a7748c1c33882960858b0ed8e"
+  },
+  "F125": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-covidspread.ipynb",
+    "sha256": "60d26e1feb51a59bb4bc2b5ef533f08dba81b1412f8ddb6c87f6b9543dcbcca9"
+  },
+  "F126": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook-papers.ipynb",
+    "sha256": "3b0b33d49bca57f25a2c7d50e8b86be3970ca962e100347697e7945304d3ffab"
+  },
+  "F127": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/notebook.ipynb",
+    "sha256": "d384538c502059082369f4f0cbbed42eb384d11db02f7f4ef9ba863a6ed8f43c"
+  },
+  "F128": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/07-python/README.md",
+    "sha256": "5750f1ae5c038b818f7351f2f153c43ad168d57332a890167d0a51a5c354bee0"
+  },
+  "F129": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.ipynb",
+    "sha256": "d77a1ca8cf8c3b11a8ad7c534ce9c263eff0a12ee38ca5bb28265a7504d1ea46"
+  },
+  "F130": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/assignment.md",
+    "sha256": "33cc20695fd9834ab83ac0f477c55fd6f51b16cf6de78f170f5c241004d47df1"
+  },
+  "F131": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/notebook.ipynb",
+    "sha256": "3e63f136780a726566c608dda829bf5fb9a7e3aed5c904d40bf8b254e16343bc"
+  },
+  "F132": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/2-Working-With-Data/08-data-preparation/README.md",
+    "sha256": "3d87a6ffc65e9f9118777bc8c952fdc36a8d1bc752e5ec1ec4bf6e368148c0c3"
+  },
+  "F133": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/assignment.md",
+    "sha256": "3da5374dcfccd26c8aa9e323cd93e6256c1d47ab129ffa2e051fc01e7a826767"
+  },
+  "F134": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/notebook.ipynb",
+    "sha256": "ce7543dbe2882e00e70853b6eca233de2836529cfbb7ede4616d788276f48f71"
+  },
+  "F135": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/README.md",
+    "sha256": "59361af0858a0eb241a8152d8b3a5eee9cf9d9915cecff955570bd16335f3737"
+  },
+  "F136": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/assignment.md",
+    "sha256": "c3de16bcd2769868c466b2d00a1eea53ccbe240dc8aea2b40de3c7bb4c396465"
+  },
+  "F137": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/notebook.ipynb",
+    "sha256": "3050fa4ef74fb412af797db5ab1da550f8996d1d388cd83b01fc0b26beeb36a0"
+  },
+  "F138": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/README.md",
+    "sha256": "7023d4020ba82599a36a441537f7250ef0316c628b12134e4226e8165908cd2e"
+  },
+  "F139": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/assignment.md",
+    "sha256": "38d66a54b74c332bd1e3e9e8777f5c3a3e2d0cc7ed39e2d26fa4a3f649651e0e"
+  },
+  "F140": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/notebook.ipynb",
+    "sha256": "a4a1d8ce6cc3c390ebfc015cbb773fd20d1d9f6fc57f9b37b244c52e92dff78c"
+  },
+  "F141": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/README.md",
+    "sha256": "a75aca9a9be35b5612b431c856c1303f6a945ac593d9309e97e356fbef157ec6"
+  },
+  "F142": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/assignment.md",
+    "sha256": "8bcd1d3a2a7030454a994ab853e956467280abd98776de22b25fc03369602ede"
+  },
+  "F143": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/notebook.ipynb",
+    "sha256": "338e6d754dfa21ac12dbc7b468280e0ef60b2298331490774617909835983a4d"
+  },
+  "F144": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/README.md",
+    "sha256": "db8a8a7703b5fabfc99edb190451831817b4b89214978e4ecec9c55dda6df358"
+  },
+  "F145": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/assignment.md",
+    "sha256": "178b71b911183770a5eb9789002a5b4d123038929ada6245df6f786f4fea72e9"
+  },
+  "F146": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/correlation-analysis.ipynb",
+    "sha256": "fdc71c2f73c7f1a4ea80a467d7a8c64f482df058d3aae2265e55775daf7323b7"
+  },
+  "F147": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/README.md",
+    "sha256": "0f2199e2be42259fe66c80df36119f3e7481f7fe19f205f2a125521d1b044a68"
+  },
+  "F148": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/09-visualization-quantities/solution/notebook.ipynb",
+    "sha256": "ca5f14e8979262cf2d3a9cf1355336fd259710dfbb04eaf5e58b0b2d35a13400"
+  },
+  "F149": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/10-visualization-distributions/solution/notebook.ipynb",
+    "sha256": "fcfb2853836c61a44e417be469a7b630c13c99dbd1a0f64ea862baa2647b2402"
+  },
+  "F150": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/11-visualization-proportions/solution/notebook.ipynb",
+    "sha256": "0ed093a585983b9b335eed427b252a6ece9874a78cce7fa7404380f61e350683"
+  },
+  "F151": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/12-visualization-relationships/solution/notebook.ipynb",
+    "sha256": "ed68f051813ac1f35c4b4694d4b667b9428f620b26b59fa67605f2ea40bbc2f0"
+  },
+  "F152": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/README.md",
+    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
+  },
+  "F153": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/README.md",
+    "sha256": "0577349bcc53e24ced75c6b5de2a501458723448bfe1ff686a4d68106aec90d2"
+  },
+  "F154": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/solution/src/assets/letters.json",
+    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
+  },
+  "F155": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/3-Data-Visualization/13-meaningful-visualizations/starter/src/assets/letters.json",
+    "sha256": "ec936388b805284618027039ad9c918e779a945016471f45fecd916206b01d79"
+  },
+  "F156": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_confirmed_global.csv",
+    "sha256": "53001eb4d44358447e50a683405b2e41f0a755c14e0a9fbe69832b40b9fbd737"
+  },
+  "F157": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_deaths_global.csv",
+    "sha256": "996dd3583b45e96f829e3cd72f518ead379a6dcf69505a978e842a96671457fd"
+  },
+  "F158": {
+    "path": "dataset/files/microsoft-data-science-for-beginners/data/COVID/time_series_covid19_recovered_global.csv",
+    "sha256": "6fa4079b6cd3a5f3ae6ef5348aae5430854e8a7592d2509e875d30d8286ebdd5"
+  },
+  "F159": {
+    "path": "dataset/files/생활속의금융/01. 금융의역할과주요금융지표.pdf",
+    "sha256": "b1e65f33f5f4c010586c142ac0bd8262680537b31318d3f61c62f3049904e424"
+  },
+  "F160": {
+    "path": "dataset/files/생활속의금융/02. 금융상품과금융시장.pdf",
+    "sha256": "8f19077a44a27419b499cc018139b45a993d6c716bf3f7222d6de5cb4d723bb4"
+  },
+  "F161": {
+    "path": "dataset/files/생활속의금융/03. 저축의이해.pdf",
+    "sha256": "8e646d7df97d285d04a87684224071ff3dd454972ac14d4045618a47f0feb81e"
+  },
+  "F162": {
+    "path": "dataset/files/데이터사이언스/14주차_종합과제-2.ipynb",
+    "sha256": "430b9997b09f3d0a44deb019e952747f7f8e14160badeb5680a291898ffd155a"
+  },
+  "F163": {
+    "path": "dataset/files/데이터사이언스/customers.csv",
+    "sha256": "5ef8388c03660ba0075aa3237746ddb8f7fb6887a9e57d1e9e6258dac56ffec8"
+  },
+  "F164": {
+    "path": "dataset/files/데이터사이언스/orders_202401.csv",
+    "sha256": "bbaa18a81d435b09f7d8d0e58a22984a88e205f80cd1d6ec796d0fbadb48104e"
+  },
+  "F165": {
+    "path": "dataset/files/데이터사이언스/orders_202402.csv",
+    "sha256": "13e9760f4547cace3dbb60ae71fafd1183308f8e41011e8865c2f91244c6ef9a"
+  },
+  "F166": {
+    "path": "dataset/files/데이터사이언스/orders_202403.csv",
+    "sha256": "01b28053dbe7c2bd205633da1ba660fa1b6dffe98dfb348b84c2a0710e337135"
+  },
+  "F167": {
+    "path": "dataset/files/데이터사이언스/products.csv",
+    "sha256": "0127bdc92fd244f92f52d3b595685c092557b1ee61082c649cf59dea5012c34b"
+  },
+  "F168": {
+    "path": "dataset/files/데이터사이언스/reviews.csv",
+    "sha256": "9af6afe8ab2adbef63bdd1ea688c940c54eb019271da8e25604e188c887acad0"
+  },
+  "F169": {
+    "path": "dataset/files/데이터사이언스/student_performance.csv",
+    "sha256": "e5de9820e4651c8b9d383388741f88e3780bf62c9e2534df1e3bc8328b18a30f"
+  },
+  "F170": {
+    "path": "dataset/files/데이터사이언스/week10_example.csv",
+    "sha256": "af2b75d4614159f62df308ee3b62c5282c2a194041a6cb3f8f5bae60f66c4f00"
+  },
+  "F171": {
+    "path": "dataset/files/데이터사이언스/week10_homework.ipynb",
+    "sha256": "2b2ae879c520ebb6f712c532565183b3710c02f5d55eb76a48bfaab54e3f9f7a"
+  },
+  "F172": {
+    "path": "dataset/files/데이터사이언스/week10_hospital_raw.csv",
+    "sha256": "6960755dc5e1daed90f9b26e079cd0bd8a1eda44653403d2c7dd1ca0972fc1cd"
+  },
+  "F173": {
+    "path": "dataset/files/데이터사이언스/week11_home.ipynb",
+    "sha256": "3b7df19734d9176299ca5bc66affec162aa7498ff52276a08549f601af2cdd46"
+  },
+  "F174": {
+    "path": "dataset/files/데이터사이언스/week11_item.csv",
+    "sha256": "5761ff9feaff5b0e3c848a59b7ac5c497171f1f1ab34699a297dc8cb5db2e58b"
+  },
+  "F175": {
+    "path": "dataset/files/데이터사이언스/week11_shop.csv",
+    "sha256": "694160352f216af9d26da152c7e78b2978cefac84cf331121d790b44d918f479"
+  },
+  "F176": {
+    "path": "dataset/files/데이터사이언스/week12.ipynb",
+    "sha256": "0ea9652d42ec132a6423df5aaac0c4ffe377116c01ff51c9f8ffacdb2bb72784"
+  },
+  "F177": {
+    "path": "dataset/files/데이터사이언스/week12_data.csv",
+    "sha256": "a0bdeab7338d426a7178eebd8c28f332a794a994bb9c6b6b6ce56d740592e65b"
+  },
+  "F178": {
+    "path": "dataset/files/데이터사이언스/week13_assignment-2.ipynb",
+    "sha256": "03c87995111d5004d9489786a3e86736ce0b5a55165a4553378c0183a1fc704d"
+  },
+  "F179": {
+    "path": "dataset/files/데이터사이언스/week13_health.csv",
+    "sha256": "8bfd52a2bb56df40c3389d2ef53590dddada90a551986dcf73f35c9178706a5c"
+  },
+  "F180": {
+    "path": "dataset/files/데이터사이언스/week14_assignment.ipynb",
+    "sha256": "c3809c7a2db3808cbda4f2894f639dc823b7ded766a778ba47f8b52185bab18b"
+  },
+  "F181": {
+    "path": "dataset/files/데이터사이언스/week14_data.csv",
+    "sha256": "e56fdd79b008b7a7b5489d9f067324d5df87b5ec7502a0232c070fbec23196e1"
+  },
+  "F182": {
+    "path": "dataset/files/데이터사이언스/Week4_Assignment.ipynb",
+    "sha256": "bdaefd9e39496fbea32f2e3361622974a0f5552a86f227f9f7afa7c4b206abb6"
+  },
+  "F183": {
+    "path": "dataset/files/데이터사이언스/week5.ipynb",
+    "sha256": "cb74463c44d9b05738ba321e6377c67306b436db0c504489521aa9251708bf72"
+  },
+  "F184": {
+    "path": "dataset/files/데이터사이언스/Week6_share.ipynb",
+    "sha256": "5d1357b9a75144ae84d25c89b24a59a8fb42a49b1588f23dd5f01699fffcee6a"
+  },
+  "F185": {
+    "path": "dataset/files/데이터사이언스/week7_2.ipynb",
+    "sha256": "358d3394f4a9779041e73d04560bc3e9899f9984bee676aec508f99597a41e2a"
+  },
+  "F186": {
+    "path": "dataset/files/데이터사이언스/week_7_convenience_store.csv",
+    "sha256": "27c2f7542a1e8ab574c7933339bf64df2ab1313aa1f8b810f0418cb88e8b65f1"
+  },
+  "F187": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료1.pdf",
+    "sha256": "2bc3dd7cfabb96a92e5ab8e88a46644601221c8bfd981fd415d7b9ec5b071ef9"
+  },
+  "F188": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료10.pdf",
+    "sha256": "5442953b0159203f0f8a0ca9487dbcb95a308f2b03eb55b95ba4b1870a1ffe44"
+  },
+  "F189": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료11.pdf",
+    "sha256": "bcf8370aaeeae4d8cb6ca27b066aa379788ae384e7151d51f5db20fec05b90f9"
+  },
+  "F190": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료12.pdf",
+    "sha256": "032024b686c65bb0255947d9b900520d9ac29f0ce70b4fe388b50b07db021ed6"
+  },
+  "F191": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료13.pdf",
+    "sha256": "0ccae3039559df0c7b3e725f59392853314713ab6ac02c4659a1bd0d90f64567"
+  },
+  "F192": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료14.pdf",
+    "sha256": "9b206781d653c98e0ef90dfca55d96b957f33f15ad274b03e2d1e99d86380214"
+  },
+  "F193": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료2.pdf",
+    "sha256": "f17ffdfd359e79e5a1b158483864885a5ab64f0bf13041e5600e4528588edda2"
+  },
+  "F194": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료3.pdf",
+    "sha256": "be48de1028e75fc73ea1d987a3b64101d096fe29313890c6bc56916c541adfa8"
+  },
+  "F195": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료4.pdf",
+    "sha256": "3e2dd76fcbc31de4300e66edf1b6045a2253aed5af0b8e72518721e984380161"
+  },
+  "F196": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료5.pdf",
+    "sha256": "a07528c1040083428b925ca5118bf8db20a7959759b78c50e2dd3d3ae3c9bc5b"
+  },
+  "F197": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료6.pdf",
+    "sha256": "9668437f3ab759f7acc01dc313657c9feb1d528b0d59855afb591be5cb614f6b"
+  },
+  "F198": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료7.pdf",
+    "sha256": "efe542d4f76aa903840bf9887c0feb7ed9a3ef46e3e3046475b4f84be4cb441a"
+  },
+  "F199": {
+    "path": "dataset/files/데이터사이언스/데이터사이언스_강의자료9.pdf",
+    "sha256": "5797fb7f3dbd31688f9432a2ae9e4a5162241f55396f24400906e07e5a40a7ac"
   }
 }
