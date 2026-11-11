@@ -1,4 +1,4 @@
-﻿file_id,filename,data_type,source_project,expected_project,project,closest_existing_project,project_confidence,probability_margin,centroid_similarity,centroid_margin,is_new_project,correct,classification_result
+﻿file_id,filename,data_type,source_project,actual_project,predicted_project,closest_existing_project,project_confidence,probability_margin,centroid_similarity,centroid_margin,is_new_project,correct,classification_result
 F001,Cross-Validation_Decoded.pdf,기존 프로젝트,딥러닝,딥러닝,새 과목,딥러닝,0.2342,0.0313,0.9397,0.0065,True,False,기존→새 과목 오분류
 F002,MLP(다층퍼셉트론)(강의).pdf,기존 프로젝트,딥러닝,딥러닝,딥러닝,딥러닝,0.2851,0.0948,0.9563,0.0281,False,True,정상 분류
 F003,Transformer_강의자료.pdf,기존 프로젝트,딥러닝,딥러닝,딥러닝,딥러닝,0.2747,0.0758,0.9515,0.0273,False,True,정상 분류
