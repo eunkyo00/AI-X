@@ -56318,3 +56318,25 @@ reviews.csv – 상품리뷰
 Eclass에9주차과제를푸세요. 
 9주차과제
 ",7812,success,4291808,2026-11-02 16:51:54,2026-11-02 16:51:54,,,
+F200,test_new_file.py,.py,dataset/files/test_new_file.py,"score = 92
+
+if score >= 90:
+    grade = ""A""
+elif score >= 80:
+    grade = ""B""
+else:
+    grade = ""C""
+
+print(""학생의 학점:"", grade)
+
+def embedding_update_test():
+    return  ""수정된 파일의 임베딩만 다시 생성하는지 확인""
+",194,success,255,2026-11-12 13:31:52,2026-11-12 15:27:21,,,
+F201,test_penguin_ai.py,.py,dataset/files/test_penguin_ai.py,"project_name = ""펭귄 이미지 분류""
+
+def classify_penguin(image):
+
+    species = [""Adelie"", ""Chinstrap"", ""Gentoo""]
+    return species[0]
+
+# 자동 감시 기능 테스트",143,success,182,2026-11-12 15:53:00,2026-11-12 16:09:48,,,

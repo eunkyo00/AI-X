@@ -1,11 +1,22 @@
+"""파일별 임베딩 캐시를 사용해 검색 인덱스를 증분 갱신한다.
+
+실행: python refresh_search.py --build-index
+기존 search_index/index.json 및 embeddings.npz 출력 형식 유지.
+"""
 from pathlib import Path
+import argparse
 import hashlib
 import json
+import os
+import tempfile
+
 import numpy as np
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_NAME = "intfloat/multilingual-e5-small"
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 80
 
 
 def load_model():
@@ -14,189 +25,164 @@ def load_model():
 
 
 def signature(text_csv, metadata_csv):
+    """기존 검색 인덱스와 호환되는 입력 해시."""
     digest = hashlib.sha256(MODEL_NAME.encode())
     for path in (text_csv, metadata_csv):
         digest.update(Path(path).read_bytes())
     return digest.hexdigest()
 
 
+def split_text(text, chunk_size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
+    text = str(text).strip()
+    if not text:
+        return []
+    chunks = []
+    start = 0
+    while start < len(text):
+        end = start + chunk_size
+        chunks.append(text[start:end])
+        if end >= len(text):
+            break
+        start = end - overlap
+    return chunks
+
+
+def read_documents(text_csv, metadata_csv):
+    df = pd.read_csv(text_csv, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+    required = {"file_id", "filename", "extracted_text"}
+    if not required.issubset(df.columns):
+        raise ValueError(f"extracted_text.csv 누락 열: {required - set(df.columns)}")
+
+    # 메타데이터가 있으면 해당 값으로 갱신한다. 파일명과 본문은 추출 CSV 기준.
+    if Path(metadata_csv).exists():
+        metadata = pd.read_csv(metadata_csv, dtype=str, keep_default_na=False,
+                               encoding="utf-8-sig")
+        if "file_id" not in metadata.columns:
+            raise ValueError("metadata.csv에 file_id 열이 없습니다.")
+        metadata = metadata.drop_duplicates("file_id", keep="first")
+        columns = [c for c in metadata.columns
+                   if c not in ("file_id", "filename", "extracted_text")]
+        df = df.drop(columns=columns, errors="ignore")
+        df = df.merge(metadata[["file_id"] + columns], on="file_id", how="left")
+        for column in columns:
+            df[column] = df[column].fillna("")
+
+    # Role02의 생성 설명을 우선 반영한다. 수동 설명도 이 CSV에 보존되어 있다.
+    generated = Path(metadata_csv).parent.parent / "Role02" / "metadata_description_generated.csv"
+    if generated.is_file():
+        descriptions = pd.read_csv(generated, dtype=str, keep_default_na=False,
+                                   encoding="utf-8-sig")
+        if {"file_id", "description"}.issubset(descriptions.columns):
+            lookup = descriptions.drop_duplicates("file_id").set_index("file_id")["description"]
+            if "description" not in df.columns:
+                df["description"] = ""
+            proposed = df["file_id"].map(lookup).fillna("")
+            df["description"] = proposed.where(proposed.str.strip().ne(""), df["description"])
+
+    df = df[df["file_id"].str.strip().ne("") &
+            df["filename"].str.strip().ne("") &
+            df["extracted_text"].str.strip().ne("")].copy()
+    df = df.drop_duplicates("file_id").sort_values("file_id").reset_index(drop=True)
+    for column in ("project", "role", "description", "path"):
+        if column not in df.columns:
+            df[column] = ""
+        df[column] = df[column].fillna("")
+    return df
+
+
 def build_index(text_csv, metadata_csv, output, encoder=None):
-    TEXT_CSV, METADATA_CSV = Path(text_csv), Path(metadata_csv)
-    # 2. CSV 읽기
-    if not TEXT_CSV.exists():
-        raise FileNotFoundError(
-            f"텍스트 추출 파일을 찾을 수 없습니다: {TEXT_CSV}"
-        )
+    text_csv, metadata_csv, output = map(Path, (text_csv, metadata_csv, output))
+    if not text_csv.is_file():
+        raise FileNotFoundError(text_csv)
+    df = read_documents(text_csv, metadata_csv)
 
-    df = pd.read_csv(
-        TEXT_CSV,
-        dtype=str,
-        keep_default_na=False,
-        encoding="utf-8-sig"
-    )
-
-    required_columns = {
-        "file_id",
-        "filename",
-        "extracted_text"
-    }
-
-    if not required_columns.issubset(df.columns):
-        raise ValueError(
-            f"필요한 열: {required_columns}\n"
-            f"현재 열: {list(df.columns)}"
-        )
-
-
-    # metadata.csv에만 있는 정보도 가져오기
-    if METADATA_CSV.exists():
-
-        metadata = pd.read_csv(
-            METADATA_CSV,
-            dtype=str,
-            keep_default_na=False,
-            encoding="utf-8-sig"
-        )
-
-        if "file_id" in metadata.columns:
-
-            extra_columns = [
-                col for col in metadata.columns
-                if col not in df.columns and col != "file_id"
-            ]
-
-            if extra_columns:
-                df = df.merge(
-                    metadata[["file_id"] + extra_columns],
-                    on="file_id",
-                    how="left"
-                )
-
-
-    # 추출에 성공한 텍스트가 있는 파일만 사용
-    df = df[
-        df["extracted_text"].astype(str).str.strip().ne("")
-    ].copy()
-
-    df = df.sort_values("file_id").reset_index(drop=True)
-
-
-
-    # 3. 긴 파일을 작은 조각으로 나누기
-    def split_text(text, chunk_size=500, overlap=80):
-        """
-        긴 텍스트를 여러 조각으로 나눈다.
-        overlap은 앞뒤 조각이 조금씩 겹치도록 하는 길이다.
-        """
-
-        text = str(text).strip()
-
-        if not text:
-            return []
-
-        if len(text) <= chunk_size:
-            return [text]
-
-        chunks = []
-        start = 0
-
-        while start < len(text):
-
-            end = start + chunk_size
-            chunks.append(text[start:end])
-
-            if end >= len(text):
-                break
-
-            start = end - overlap
-
-        return chunks
-
-
-    # 파일별 텍스트와 메타데이터 준비
-    documents = []
+    # 파일 단위로 청크를 모아 두면 파일 하나만 바뀌어도 나머지는 재사용 가능.
+    groups = []
     chunk_info = []
-
     for _, row in df.iterrows():
-
-        filename = row["filename"]
-        file_id = row["file_id"]
-        content = row["extracted_text"]
-
-        project = row.get("project", "")
-        role = row.get("role", "")
-        description = row.get("description", "")
-        path = row.get("path", "")
-
-        chunks = split_text(content)
-
-        for chunk_number, chunk in enumerate(chunks):
-
-            # 파일 정보와 내부 내용을 함께 검색 대상으로 구성
-            document_text = (
-                f"파일명: {filename}\n"
-                f"프로젝트: {project}\n"
-                f"파일 역할: {role}\n"
-                f"파일 설명: {description}\n"
-                f"파일 내용:\n{chunk}"
-            )
-
-            documents.append(document_text)
-
-            chunk_info.append({
-                "file_id": file_id,
-                "filename": filename,
-                "path": path,
-                "chunk_number": chunk_number,
-                "chunk_text": chunk
-            })
-
+        passages = []
+        for number, chunk in enumerate(split_text(row["extracted_text"])):
+            document = (f"파일명: {row['filename']}\n"
+                        f"프로젝트: {row['project']}\n"
+                        f"파일 역할: {row['role']}\n"
+                        f"파일 설명: {row['description']}\n"
+                        f"파일 내용:\n{chunk}")
+            passages.append("passage: " + document)
+            chunk_info.append({"file_id": row["file_id"],
+                               "filename": row["filename"], "path": row["path"],
+                               "chunk_number": number, "chunk_text": chunk})
+        if passages:
+            groups.append((row["file_id"], passages))
 
     print(f"검색 대상 파일 수: {len(df)}")
-    print(f"검색 텍스트 조각 수: {len(documents)}")
+    print(f"검색 텍스트 조각 수: {len(chunk_info)}")
 
-    # 4. 임베딩 모델 불러오기
-    print("\n임베딩 모델을 불러오는 중...")
-
+    # 모델명과 파일별 실제 임베딩 입력으로 캐시를 구분한다.
+    # 파일 ID를 포함하므로 다른 파일의 캐시와 섞이지 않는다.
+    cache_dir = BASE_DIR / "embedding_cache" / "per_file"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    vectors = []
+    reused = updated = 0
     model = encoder
-
-
-    # 5. 파일 내용 임베딩
-    print("\n파일 내용을 숫자 벡터로 변환하는 중...")
-
-    passages = ["passage: " + text for text in documents]
-    legacy_digest = hashlib.sha256(MODEL_NAME.encode())
-    for passage in passages:
-        encoded = passage.encode("utf-8")
-        legacy_digest.update(len(encoded).to_bytes(8, "big"))
-        legacy_digest.update(encoded)
-    legacy_cache = BASE_DIR / "embedding_cache" / f"embeddings_{legacy_digest.hexdigest()[:16]}.npy"
-    if legacy_cache.is_file():
-        print("기존 검색 캐시 재사용")
-        document_embeddings = np.load(legacy_cache, allow_pickle=False)
-        if document_embeddings.ndim != 2 or len(document_embeddings) != len(documents):
-            raise ValueError("기존 검색 캐시와 본문 수가 다릅니다.")
-    else:
-        if model is None and documents:
+    for file_id, passages in groups:
+        digest = hashlib.sha256()
+        digest.update(MODEL_NAME.encode("utf-8"))
+        digest.update(file_id.encode("utf-8"))
+        for passage in passages:
+            raw = passage.encode("utf-8")
+            digest.update(len(raw).to_bytes(8, "big"))
+            digest.update(raw)
+        key = digest.hexdigest()
+        # 파일 ID가 변경되더라도 파일명에 특수문자가 들어가지 않게 해시만 사용.
+        cache_file = cache_dir / f"{key}.npy"
+        cached = None
+        if cache_file.exists():
+            try:
+                cached = np.load(cache_file, allow_pickle=False)
+                if cached.ndim != 2 or cached.shape[0] != len(passages):
+                    cached = None
+            except (OSError, ValueError):
+                cached = None
+        if cached is not None:
+            vectors.append(cached)
+            reused += 1
+            continue
+        if model is None:
+            print("임베딩 모델을 불러오는 중...")
             model = load_model()
-        document_embeddings = (model.encode(
-            ["passage: " + text for text in documents],
-            normalize_embeddings=True,
-            convert_to_numpy=True,
-            show_progress_bar=True
-        ) if documents else np.empty((0, 0)))
+        print(f"{file_id}: 임베딩 생성 ({len(passages)}개 청크)", flush=True)
+        embedded = np.asarray(model.encode(passages, normalize_embeddings=True,
+                                           convert_to_numpy=True,
+                                           show_progress_bar=False))
+        if embedded.ndim != 2 or embedded.shape[0] != len(passages):
+            raise ValueError(f"{file_id}: 모델 출력의 차원이 올바르지 않습니다.")
+        # 계산 중 종료되어도 깨진 캐시를 남기지 않도록 임시 파일로 저장.
+        with tempfile.NamedTemporaryFile(dir=cache_dir, suffix=".npy", delete=False) as tmp:
+            temporary = Path(tmp.name)
+        try:
+            np.save(temporary, embedded)
+            os.replace(temporary, cache_file)
+        finally:
+            temporary.unlink(missing_ok=True)
+        vectors.append(embedded)
+        updated += 1
 
-    print("파일 임베딩 완료!")
+    if not vectors:
+        raise ValueError("임베딩할 문서가 없습니다.")
+    document_embeddings = np.concatenate(vectors, axis=0)
+    if len(document_embeddings) != len(chunk_info):
+        raise ValueError("청크와 임베딩 개수가 일치하지 않습니다.")
 
-
-
-    output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(output / "embeddings.npz", embeddings=document_embeddings)
     (output / "index.json").write_text(json.dumps({
-        "signature": signature(TEXT_CSV, METADATA_CSV),
-        "model": MODEL_NAME, "chunks": chunk_info,
+        "signature": signature(text_csv, metadata_csv),
+        "model": MODEL_NAME,
+        "chunks": chunk_info,
     }, ensure_ascii=False), encoding="utf-8")
+    print(f"기존 임베딩 재사용: {reused}개 파일")
+    print(f"새로 임베딩: {updated}개 파일")
+    print(f"검색 인덱스 저장 완료: {output}")
 
 
 def load_index(directory):
@@ -210,6 +196,7 @@ def load_index(directory):
 
 
 class SearchEngine:
+    """기존 refresh_search.py의 간단한 검색 인터페이스."""
     def __init__(self):
         self.model = load_model()
         self.loaded_signature = None
@@ -224,7 +211,7 @@ class SearchEngine:
         if self.loaded_signature != current:
             try:
                 info, embeddings = load_index(directory)
-            except (FileNotFoundError, ValueError):
+            except (FileNotFoundError, ValueError, KeyError):
                 info = {}
             if info.get("signature") != current:
                 build_index(text_csv, metadata_csv, directory, encoder=self.model)
@@ -233,7 +220,8 @@ class SearchEngine:
             self.loaded_signature = current
         if not self.info["chunks"]:
             return []
-        query_embedding = self.model.encode(["query: " + query], normalize_embeddings=True,
+        query_embedding = self.model.encode(["query: " + query],
+                                            normalize_embeddings=True,
                                             convert_to_numpy=True)[0]
         scores = self.embeddings @ query_embedding
         best = {}
@@ -269,15 +257,15 @@ def main():
         for rank, result in enumerate(results, 1):
             print(f"\n[{rank}위] {result['filename']} ({result['file_id']}) — {result['score']:.4f}")
             print(f"경로: {result['path']}")
-            print(result['chunk_text'].replace("\n", " ")[:200])
+            print(result["chunk_text"].replace("\n", " ")[:200])
 
 
 if __name__ == "__main__":
-    import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--build-index", action="store_true")
     args = parser.parse_args()
     if args.build_index:
-        build_index(BASE_DIR / "extracted_text.csv", BASE_DIR / "metadata.csv", BASE_DIR / "search_index")
+        build_index(BASE_DIR / "extracted_text.csv", BASE_DIR / "metadata.csv",
+                    BASE_DIR / "search_index")
     else:
         main()

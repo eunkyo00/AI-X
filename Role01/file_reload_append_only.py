@@ -1,6 +1,6 @@
 """Role01/dataset/files -> Role01/metadata.csv 동기화.
 
-실행: python file_reload_append_only.py.py
+실행: python file_reload_append_only.py
 기존 메타데이터의 수동 라벨과 file_id를 경로 기준으로 보존합니다.
 """
 from __future__ import annotations
@@ -37,7 +37,6 @@ def path_key(value):
     pos = path.rfind(marker)
     if pos >= 0:
         return path[pos + len(marker):]
-    # dataset/files 바깥 경로는 매칭하지 않음
     return path.lstrip("./")
 
 
@@ -196,6 +195,14 @@ def main():
 
     all_columns = list(dict.fromkeys(list(old_df.columns) + COLUMNS))
     updated = pd.DataFrame(records, columns=all_columns)
+
+    # 기존 ID는 유지하고 CSV 행 순서만 F001, F002, ... 순서로 정렬
+    id_numbers = updated["file_id"].str.extract(r"^F(\d+)$")[0]
+    if id_numbers.isna().any():
+        raise ValueError("F001 형식이 아닌 file_id가 있습니다. 저장을 중단합니다.")
+    updated["_sort_id"] = id_numbers.astype(int)
+    updated = updated.sort_values("_sort_id").drop(columns=["_sort_id"]).reset_index(drop=True)
+
     if updated["file_id"].duplicated().any():
         raise ValueError("생성 결과에 중복 file_id가 있습니다. 저장을 중단합니다.")
 

@@ -11,6 +11,7 @@ import re
 import numpy as np
 import pandas as pd
 from sentence_transformers import SentenceTransformer
+from refresh_search import read_documents, signature as index_signature
 
 BASE_DIR = Path(__file__).resolve().parent
 TEXT_CSV = BASE_DIR / "extracted_text.csv"
@@ -171,51 +172,15 @@ class SearchEngine:
         if not text_csv.exists():
             raise FileNotFoundError(f"텍스트 추출 파일을 찾을 수 없습니다: {text_csv}")
 
-        df = pd.read_csv(text_csv, dtype=str, keep_default_na=False,
-                         encoding="utf-8-sig")
-        required_columns = {"file_id", "filename", "extracted_text"}
-        if not required_columns.issubset(df.columns):
-            raise ValueError(
-                f"필요한 열: {required_columns}\n현재 열: {list(df.columns)}"
-            )
-
-        if metadata_csv.exists():
-            metadata = pd.read_csv(metadata_csv, dtype=str,
-                                   keep_default_na=False, encoding="utf-8-sig")
-            if "file_id" not in metadata.columns:
-                raise ValueError("metadata.csv에 file_id 열이 없습니다.")
-            metadata = metadata.drop_duplicates(subset=["file_id"], keep="first")
-            # filename과 추출 본문은 extracted_text.csv에서 유지한다.
-            # 나머지 메타데이터는 metadata.csv의 값을 우선한다.
-            replace_columns = [c for c in metadata.columns
-                               if c not in ("file_id", "filename", "extracted_text")]
-            df = df.drop(columns=replace_columns, errors="ignore")
-            df = df.merge(metadata[["file_id"] + replace_columns],
-                          on="file_id", how="left")
-            for col in replace_columns:
-                df[col] = df[col].fillna("")
-            # ID가 달라져 잘못된 파일에 메타데이터가 연결되는 상황을 방지한다.
-            if "path" in metadata.columns and "path" in df.columns:
-                check = df.merge(metadata[["file_id", "filename"]].rename(
-                    columns={"filename": "metadata_filename"}), on="file_id", how="left")
-                mismatch = check[check["metadata_filename"].notna() &
-                                 (check["metadata_filename"].map(normalize_filename) !=
-                                  check["filename"].map(normalize_filename))]
-                if not mismatch.empty:
-                    raise ValueError(f"metadata.csv와 extracted_text.csv의 file_id/파일명 불일치: {len(mismatch)}개")
-
-        df = df[
-            df["file_id"].astype(str).str.strip().ne("")
-            & df["filename"].astype(str).str.strip().ne("")
-            & df["extracted_text"].astype(str).str.strip().ne("")
-        ].copy()
-        df = df.drop_duplicates(subset=["file_id"], keep="first").sort_values("file_id").reset_index(drop=True)
+        # 인덱스 생성기와 동일한 방식으로 AI 설명을 포함한 문서를 읽는다.
+        df = read_documents(text_csv, metadata_csv)
         if df.empty:
             raise ValueError("검색할 텍스트가 없습니다.")
-        for column in ("project", "role", "description", "path", "created_at", "modified_at"):
+        for column in ("created_at", "modified_at"):
             if column not in df.columns:
                 df[column] = ""
-        df[["project", "role", "description", "path", "created_at", "modified_at"]] = df[["project", "role", "description", "path", "created_at", "modified_at"]].fillna("")
+            df[column] = df[column].fillna("")
+
         self.file_dates = {row["file_id"]: {
             "created_at": parse_metadata_date(row["created_at"]),
             "modified_at": parse_metadata_date(row["modified_at"]),
@@ -272,53 +237,33 @@ class SearchEngine:
         print("임베딩 모델을 불러오는 중...")
         self.model = SentenceTransformer(model_name)
 
-        # 검색 문서가 바뀌면 캐시 키도 달라지도록 실제 입력 문자열을 해시한다.
-        passages = ["passage: " + text for text in self.documents]
-        hasher = hashlib.sha256()
-        hasher.update(model_name.encode("utf-8"))
-        for passage in passages:
-            encoded = passage.encode("utf-8")
-            hasher.update(len(encoded).to_bytes(8, "big"))
-            hasher.update(encoded)
-
-        cache_key = hasher.hexdigest()[:16]
-        cache_dir = BASE_DIR / "embedding_cache"
-        cache_dir.mkdir(parents=True, exist_ok=True)
-        cache_path = cache_dir / f"embeddings_{cache_key}.npy"
-
-        shared_dir = BASE_DIR / "search_index"
-        shared_info = shared_dir / "index.json"
-        shared_valid = False
-        if shared_info.is_file():
-            info = json.loads(shared_info.read_text(encoding="utf-8"))
-            shared_valid = (info.get("signature") == self._input_signature
-                            and info.get("model") == model_name)
-        if shared_valid:
-            with np.load(shared_dir / "embeddings.npz", allow_pickle=False) as data:
-                self.document_embeddings = data["embeddings"].copy()
-            if self.document_embeddings.shape[0] != len(passages):
-                raise ValueError("통합 갱신 인덱스와 검색 본문의 수가 다릅니다.")
-            print("통합 갱신 검색 인덱스 로딩 완료!")
-        elif cache_path.exists():
-            print("저장된 임베딩 불러오는 중...")
-            self.document_embeddings = np.load(cache_path, allow_pickle=False)
-            if self.document_embeddings.ndim != 2 or self.document_embeddings.shape[0] != len(passages):
-                raise ValueError("임베딩 캐시 크기가 검색 문서와 맞지 않습니다. 캐시 파일을 삭제하고 재실행하세요.")
-            print("임베딩 캐시 로딩 완료!")
-        else:
-            print("파일 내용을 숫자 벡터로 변환하는 중...")
-            self.document_embeddings = self.model.encode(
-                passages,
-                normalize_embeddings=True,
-                convert_to_numpy=True,
-                show_progress_bar=True,
+        # 증분 인덱스와 모델/입력/청크 순서를 모두 확인한다.
+        shared_dir = self.text_csv.parent / "search_index"
+        info_path = shared_dir / "index.json"
+        vectors_path = shared_dir / "embeddings.npz"
+        if not info_path.is_file() or not vectors_path.is_file():
+            raise FileNotFoundError(
+                "검색 인덱스가 없습니다. 먼저 python update_pipeline.py를 실행하세요."
             )
-            np.save(cache_path, self.document_embeddings)
-            print("임베딩 계산 및 저장 완료!")
+        info = json.loads(info_path.read_text(encoding="utf-8"))
+        expected_signature = index_signature(self.text_csv, self.metadata_csv)
+        if info.get("signature") != expected_signature or info.get("model") != model_name:
+            raise ValueError("검색 인덱스가 오래되었습니다. python update_pipeline.py를 실행하세요.")
+        if info.get("chunks") != self.chunk_info:
+            raise ValueError("검색 청크 정보가 인덱스와 다릅니다. 인덱스를 다시 생성하세요.")
+        with np.load(vectors_path, allow_pickle=False) as data:
+            self.document_embeddings = data["embeddings"].copy()
+        if self.document_embeddings.ndim != 2 or self.document_embeddings.shape[0] != len(self.chunk_info):
+            raise ValueError("검색 인덱스의 임베딩 개수가 올바르지 않습니다.")
+        print("통합 갱신 검색 인덱스 로딩 완료!")
 
     def input_signature(self):
-        digest = hashlib.sha256(self.model_name.encode())
-        for path in (self.text_csv, self.metadata_csv, self.text_csv.parent / "file_relations.csv"):
+        # AI 설명 또는 파일 관계만 변경되어도 검색 엔진을 새로 읽는다.
+        digest = hashlib.sha256(self.model_name.encode("utf-8"))
+        paths = (self.text_csv, self.metadata_csv,
+                 self.metadata_csv.parent.parent / "Role02" / "metadata_description_generated.csv",
+                 self.text_csv.parent / "file_relations.csv")
+        for path in paths:
             if path.exists():
                 digest.update(path.read_bytes())
         return digest.hexdigest()
