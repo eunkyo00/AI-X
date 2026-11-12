@@ -1,0 +1,40 @@
+{
+  "classifier_version": "3.1",
+  "evaluation_method": "5-fold file-level cross-validation",
+  "classifier_c": 10.0,
+  "dataset": {
+    "total_files": 199,
+    "known_project_files": 158,
+    "new_project_files": 41,
+    "blank_generated_descriptions": 0,
+    "excluded_files": [
+      "TEST_NEW_001"
+    ]
+  },
+  "without_description": {
+    "closed_set_accuracy": 1.0,
+    "mean_known_project_confidence": 0.6561087060578262,
+    "known_project_acceptance_rate": 0.9430379746835443,
+    "known_project_accepted_count": 149,
+    "new_project_recall": 0.8292682926829268,
+    "new_project_detected_count": 34,
+    "false_existing_assignments": 7,
+    "f001_production_confidence": 0.6404535174369812
+  },
+  "generated_description": {
+    "closed_set_accuracy": 1.0,
+    "mean_known_project_confidence": 0.7216235995292664,
+    "known_project_acceptance_rate": 0.9367088607594937,
+    "known_project_accepted_count": 148,
+    "new_project_recall": 0.9512195121951219,
+    "new_project_detected_count": 39,
+    "false_existing_assignments": 2,
+    "f001_production_confidence": 0.6667124032974243
+  },
+  "difference": {
+    "mean_known_project_confidence": 0.0655148934714402,
+    "known_project_acceptance_rate": -0.0063291139240506,
+    "new_project_recall": 0.1219512195121951,
+    "false_existing_assignments": -5
+  }
+}

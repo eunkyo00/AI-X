@@ -1,0 +1,42 @@
+﻿file_id,filename,path,predicted_project,closest_existing_project,centroid_project,confidence,probability_margin,centroid_similarity,centroid_margin,accepted_as_existing,check_model_agreement,check_confidence,check_probability_margin,check_centroid_similarity,check_centroid_margin
+F159,01. 금융의역할과주요금융지표.pdf,dataset/files/생활속의금융/01. 금융의역할과주요금융지표.pdf,새 과목,한국근현대사역사기행,데이터사이언스,0.30235183,0.042614162,0.9211312,4.8935413e-05,False,False,False,False,True,False
+F160,02. 금융상품과금융시장.pdf,dataset/files/생활속의금융/02. 금융상품과금융시장.pdf,새 과목,한국근현대사역사기행,한국근현대사역사기행,0.36751348,0.13959101,0.91920435,0.002154529,False,True,False,False,True,False
+F161,03. 저축의이해.pdf,dataset/files/생활속의금융/03. 저축의이해.pdf,새 과목,한국근현대사역사기행,한국근현대사역사기행,0.32985944,0.07087913,0.9183098,0.0006788373,False,True,False,False,True,False
+F162,14주차_종합과제-2.ipynb,dataset/files/데이터사이언스/14주차_종합과제-2.ipynb,새 과목,데이터사이언스,데이터사이언스,0.3558947,0.103930384,0.94946355,0.005425334,False,True,False,False,True,False
+F163,customers.csv,dataset/files/데이터사이언스/customers.csv,새 과목,데이터사이언스,데이터사이언스,0.4938137,0.34278747,0.9177753,0.012499869,False,True,False,False,True,True
+F164,orders_202401.csv,dataset/files/데이터사이언스/orders_202401.csv,데이터사이언스,데이터사이언스,데이터사이언스,0.5805634,0.42787325,0.9279681,0.013590455,True,True,True,True,True,True
+F165,orders_202402.csv,dataset/files/데이터사이언스/orders_202402.csv,새 과목,데이터사이언스,데이터사이언스,0.5643468,0.39514387,0.9290382,0.012886941,False,True,False,True,True,True
+F166,orders_202403.csv,dataset/files/데이터사이언스/orders_202403.csv,새 과목,데이터사이언스,데이터사이언스,0.5516329,0.37900904,0.92709196,0.012367487,False,True,False,True,True,True
+F167,products.csv,dataset/files/데이터사이언스/products.csv,새 과목,데이터사이언스,데이터사이언스,0.5226268,0.33270785,0.92213756,0.011222541,False,True,False,False,True,True
+F168,reviews.csv,dataset/files/데이터사이언스/reviews.csv,새 과목,데이터사이언스,데이터사이언스,0.4918305,0.32639152,0.9154566,0.011811376,False,True,False,False,True,True
+F169,student_performance.csv,dataset/files/데이터사이언스/student_performance.csv,데이터사이언스,데이터사이언스,데이터사이언스,0.6298082,0.5094421,0.9415275,0.019708931,True,True,True,True,True,True
+F170,week10_example.csv,dataset/files/데이터사이언스/week10_example.csv,새 과목,데이터사이언스,데이터사이언스,0.46153328,0.26803112,0.9208828,0.008874238,False,True,False,False,True,True
+F171,week10_homework.ipynb,dataset/files/데이터사이언스/week10_homework.ipynb,새 과목,데이터사이언스,데이터사이언스,0.36981794,0.09536365,0.93864536,0.0038132071,False,True,False,False,True,False
+F172,week10_hospital_raw.csv,dataset/files/데이터사이언스/week10_hospital_raw.csv,새 과목,데이터사이언스,데이터사이언스,0.44875973,0.22173087,0.9257121,0.0058870316,False,True,False,False,True,False
+F173,week11_home.ipynb,dataset/files/데이터사이언스/week11_home.ipynb,새 과목,데이터사이언스,데이터사이언스,0.4595669,0.23666522,0.9439277,0.009098828,False,True,False,False,True,True
+F174,week11_item.csv,dataset/files/데이터사이언스/week11_item.csv,새 과목,데이터사이언스,데이터사이언스,0.46287107,0.26658982,0.9293687,0.00917995,False,True,False,False,True,True
+F175,week11_shop.csv,dataset/files/데이터사이언스/week11_shop.csv,새 과목,데이터사이언스,데이터사이언스,0.52137846,0.36272633,0.93059415,0.0123285055,False,True,False,False,True,True
+F176,week12.ipynb,dataset/files/데이터사이언스/week12.ipynb,새 과목,데이터사이언스,데이터사이언스,0.40963516,0.14939132,0.948878,0.0047153234,False,True,False,False,True,False
+F177,week12_data.csv,dataset/files/데이터사이언스/week12_data.csv,새 과목,데이터사이언스,데이터사이언스,0.5015249,0.24624097,0.92906594,0.00472188,False,True,False,False,True,False
+F178,week13_assignment-2.ipynb,dataset/files/데이터사이언스/week13_assignment-2.ipynb,새 과목,데이터사이언스,데이터사이언스,0.3622828,0.05696401,0.9370232,0.0010393262,False,True,False,False,True,False
+F179,week13_health.csv,dataset/files/데이터사이언스/week13_health.csv,새 과목,데이터사이언스,데이터사이언스,0.5586602,0.35657597,0.93478197,0.009433806,False,True,False,False,True,True
+F180,week14_assignment.ipynb,dataset/files/데이터사이언스/week14_assignment.ipynb,새 과목,데이터사이언스,데이터사이언스,0.35818088,0.13122088,0.93801075,0.0067971945,False,True,False,False,True,True
+F181,week14_data.csv,dataset/files/데이터사이언스/week14_data.csv,새 과목,데이터사이언스,데이터사이언스,0.50327593,0.32344216,0.936341,0.012688398,False,True,False,False,True,True
+F182,Week4_Assignment.ipynb,dataset/files/데이터사이언스/Week4_Assignment.ipynb,새 과목,데이터사이언스,데이터사이언스,0.40798068,0.17432134,0.9240036,0.0075758696,False,True,False,False,True,True
+F183,week5.ipynb,dataset/files/데이터사이언스/week5.ipynb,새 과목,졸업작품,졸업작품,0.37268737,0.09007156,0.9380109,0.0043973923,False,True,False,False,True,False
+F184,Week6_share.ipynb,dataset/files/데이터사이언스/Week6_share.ipynb,새 과목,졸업작품,데이터사이언스,0.29970565,0.013153017,0.94013846,0.0005712509,False,False,False,False,True,False
+F185,week7_2.ipynb,dataset/files/데이터사이언스/week7_2.ipynb,새 과목,데이터사이언스,데이터사이언스,0.5576662,0.3654337,0.94242144,0.01310426,False,True,False,False,True,True
+F186,week_7_convenience_store.csv,dataset/files/데이터사이언스/week_7_convenience_store.csv,새 과목,데이터사이언스,데이터사이언스,0.4598293,0.2677322,0.90893877,0.009506226,False,True,False,False,False,True
+F187,데이터사이언스_강의자료1.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료1.pdf,새 과목,딥러닝,딥러닝,0.48551986,0.27919957,0.935903,0.012286842,False,True,False,False,True,True
+F188,데이터사이언스_강의자료10.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료10.pdf,새 과목,딥러닝,딥러닝,0.49200273,0.26702285,0.947778,0.010941148,False,True,False,False,True,True
+F189,데이터사이언스_강의자료11.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료11.pdf,새 과목,딥러닝,딥러닝,0.37949336,0.14894025,0.9406421,0.0058428645,False,True,False,False,True,False
+F190,데이터사이언스_강의자료12.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료12.pdf,새 과목,딥러닝,딥러닝,0.34306133,0.09575233,0.94240874,0.00455004,False,True,False,False,True,False
+F191,데이터사이언스_강의자료13.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료13.pdf,새 과목,딥러닝,딥러닝,0.42894113,0.15302238,0.93904,0.006247461,False,True,False,False,True,False
+F192,데이터사이언스_강의자료14.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료14.pdf,새 과목,딥러닝,딥러닝,0.47435895,0.26824155,0.94544524,0.012544572,False,True,False,False,True,True
+F193,데이터사이언스_강의자료2.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료2.pdf,새 과목,딥러닝,딥러닝,0.47191393,0.2430452,0.9411203,0.00970757,False,True,False,False,True,True
+F194,데이터사이언스_강의자료3.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료3.pdf,새 과목,딥러닝,딥러닝,0.528065,0.35021284,0.9431444,0.015924275,False,True,False,False,True,True
+F195,데이터사이언스_강의자료4.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료4.pdf,새 과목,딥러닝,딥러닝,0.48295435,0.29721212,0.9439911,0.016376913,False,True,False,False,True,True
+F196,데이터사이언스_강의자료5.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료5.pdf,새 과목,딥러닝,딥러닝,0.4636222,0.26460496,0.94506055,0.011543632,False,True,False,False,True,True
+F197,데이터사이언스_강의자료6.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료6.pdf,새 과목,딥러닝,딥러닝,0.54154813,0.39377123,0.94894576,0.017106235,False,True,False,True,True,True
+F198,데이터사이언스_강의자료7.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료7.pdf,새 과목,딥러닝,딥러닝,0.451582,0.19972762,0.9421738,0.008179665,False,True,False,False,True,True
+F199,데이터사이언스_강의자료9.pdf,dataset/files/데이터사이언스/데이터사이언스_강의자료9.pdf,새 과목,딥러닝,딥러닝,0.37711588,0.14312896,0.9435577,0.005471289,False,True,False,False,True,False
