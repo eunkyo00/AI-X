@@ -1,75 +1,32 @@
-
-import time
-import subprocess
-import sys
+"""Use one file watcher and integrated refresh queue for the GUI and CLI."""
+from functools import partial
 from pathlib import Path
+import sys
+import time
 
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
-
-# 1. 기본 경로 설정
 PROJECT_DIR = Path(__file__).resolve().parents[2]
-WATCH_DIR = PROJECT_DIR / "Role01" / "dataset" / "files"
 
-# 2. 통합 파이프라인 실행
-def update_files():
-    print("\n파일 갱신 시작!", flush=True)
 
-    result = subprocess.run(
-        # 변경: 자동 분류가 포함된 5단계 파이프라인 실행
-        [sys.executable, str(PROJECT_DIR / "update_pipeline_integrated.py")],
-        cwd=PROJECT_DIR
-    )
+def create_watcher(root=PROJECT_DIR):
+    # Importing this module must not start threads or execute the pipeline.
+    from auto_refresh import AutoRefresh
+    from update_data import update
+    watcher = AutoRefresh(root, updater=partial(update, integrated=True))
+    watcher.request('서버 시작 · 설명·분류·검색 인덱스 확인')
+    return watcher
 
-    if result.returncode == 0:
-        print("\n파일 자동 갱신 완료!")
-    else:
-        print("\n파일 갱신 실패! 종료 코드:", result.returncode)
 
-# 3. 파일 변경 감지
-class FileHandler(FileSystemEventHandler):
+def main():
+    sys.path.insert(0, str(PROJECT_DIR))
+    watcher = create_watcher().start()
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        watcher.close()
 
-    def __init__(self):
-        self.last_change = 0
 
-    def on_any_event(self, event):
-        if event.is_directory:
-            return
-
-        if event.event_type not in ("created", "modified", "moved", "deleted"):
-            return
-
-        self.last_change = time.monotonic()
-        print("파일 변경 감지:", event.src_path)
-
-# 4. 감시 시작
-WATCH_DIR.mkdir(parents=True, exist_ok=True)
-
-handler = FileHandler()
-observer = Observer()
-observer.schedule(handler, str(WATCH_DIR), recursive=True)
-observer.start()
-
-print("파일 자동 감시 시작!")
-print("감시 폴더:", WATCH_DIR)
-
-try:
-    # 시작할 때 기존 파일도 확인
-    update_files()
-
-    while True:
-        time.sleep(1)
-
-        # 마지막 변경 후 3초 동안 이벤트가 없으면 갱신
-        if handler.last_change:
-            if time.monotonic() - handler.last_change >= 3:
-                handler.last_change = 0
-                update_files()
-
-except KeyboardInterrupt:
-    print("\n파일 감시 종료")
-
-finally:
-    observer.stop()
-    observer.join()
-
+if __name__ == '__main__':
+    main()

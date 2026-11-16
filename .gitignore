@@ -8,3 +8,12 @@ update_backups/
 Role01/search_index/
 Role01/metadata_backup_*.csv
 Role01/embedding_cache/
+
+# Local backend state and uploads
+.auto-refresh/
+.update-*/
+.update-data.lock
+Role01/dataset/files/uploads/
+Role01/dataset/files/watched/
+Role01/.file_id_state.json
+Role01/.extraction_cache.json

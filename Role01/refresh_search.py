@@ -167,9 +167,7 @@ def build_index(text_csv, metadata_csv, output, encoder=None):
         vectors.append(embedded)
         updated += 1
 
-    if not vectors:
-        raise ValueError("임베딩할 문서가 없습니다.")
-    document_embeddings = np.concatenate(vectors, axis=0)
+    document_embeddings = np.concatenate(vectors, axis=0) if vectors else np.empty((0, 0))
     if len(document_embeddings) != len(chunk_info):
         raise ValueError("청크와 임베딩 개수가 일치하지 않습니다.")
 

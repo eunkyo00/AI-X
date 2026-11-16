@@ -291,8 +291,9 @@ if not required_columns.issubset(metadata.columns):
 # 처음 실행 시 해시 캐시가 없으면 안전을 위해 한 번 전체 추출한다.
 CACHE_JSON = BASE_DIR / ".extraction_cache.json"
 previous_texts = {}
-if OUTPUT_CSV.is_file():
-    old_df = pd.read_csv(OUTPUT_CSV, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+previous_path = OUTPUT_CSV if OUTPUT_CSV.is_file() else BASE_DIR / '.previous_extracted_text.csv'
+if previous_path.is_file():
+    old_df = pd.read_csv(previous_path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
     if {"file_id", "extracted_text", "extraction_status"}.issubset(old_df.columns):
         previous_texts = {str(row["file_id"]): row for row in old_df.to_dict("records")}
 try:
