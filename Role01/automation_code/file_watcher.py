@@ -16,7 +16,8 @@ def update_files():
     print("\n파일 갱신 시작!", flush=True)
 
     result = subprocess.run(
-        [sys.executable, str(PROJECT_DIR / "update_pipeline.py")],
+        # 변경: 자동 분류가 포함된 5단계 파이프라인 실행
+        [sys.executable, str(PROJECT_DIR / "update_pipeline_integrated.py")],
         cwd=PROJECT_DIR
     )
 
@@ -71,3 +72,4 @@ except KeyboardInterrupt:
 finally:
     observer.stop()
     observer.join()
+

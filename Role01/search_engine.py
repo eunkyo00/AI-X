@@ -20,6 +20,40 @@ MODEL_NAME = "intfloat/multilingual-e5-small"
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 80
 TOP_K = 5
+CLASSIFICATION_CSV = BASE_DIR.parent / "Role02" / "metadata_classification_generated.csv"
+
+# 자동 예측은 수동 라벨이 없고 확인이 필요하지 않을 때만 사용한다.
+def load_classifications(path=CLASSIFICATION_CSV):
+    if not Path(path).is_file():
+        return {}
+    data = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+    if "file_id" not in data.columns or data["file_id"].duplicated().any():
+        raise ValueError("자동 분류 CSV에 file_id가 없거나 중복되어 있습니다.")
+    return data.set_index("file_id").to_dict("index")
+
+
+def is_confirmed(value):
+    return str(value).strip().lower() in ("false", "0", "no")
+
+
+def parse_search_filters(query, projects, roles):
+    """'데이터사이언스 코드'처럼 명시된 라벨만 필터링한다.
+
+    분류 조건을 제거한 나머지 텍스트는 기존 의미 검색에 사용한다.
+    """
+    remaining = query
+    filters = {"project": None, "role": None}
+    # 가장 긴 라벨부터 확인해 부분 문자열 충돌을 줄인다.
+    for field, labels in (("project", projects), ("role", roles)):
+        for label in sorted(labels, key=len, reverse=True):
+            if not label or label in ("새 과목", "미분류"):
+                continue
+            match = re.search(re.escape(label), remaining, flags=re.IGNORECASE)
+            if match:
+                filters[field] = label
+                remaining = (remaining[:match.start()] + " " + remaining[match.end():]).strip()
+                break
+    return filters, re.sub(r"\s+", " ", remaining).strip()
 
 
 def normalize_filename(filename):
@@ -186,6 +220,22 @@ class SearchEngine:
             "modified_at": parse_metadata_date(row["modified_at"]),
         } for _, row in df.iterrows()}
 
+        # 수동 라벨을 우선하고, 승인된 자동 예측만 검색용 메타데이터에 반영한다.
+        predicted = load_classifications()
+        self.file_labels = {}
+        for _, row in df.iterrows():
+            fid = str(row["file_id"])
+            extra = predicted.get(fid, {})
+            project = str(row.get("project", "")).strip()
+            role = str(row.get("role", "")).strip()
+            if not project and is_confirmed(extra.get("project_needs_confirmation", "")):
+                project = str(extra.get("predicted_project", "")).strip()
+            if not role and is_confirmed(extra.get("role_needs_confirmation", "")):
+                role = str(extra.get("predicted_role", "")).strip()
+            self.file_labels[fid] = {"project": project, "role": role}
+        self.known_projects = {v["project"] for v in self.file_labels.values() if v["project"]}
+        self.known_roles = {v["role"] for v in self.file_labels.values() if v["role"]}
+
         self.df = df
         self.documents = []
         self.chunk_info = []
@@ -284,6 +334,12 @@ class SearchEngine:
 
         time_info = analyze_time_query(query)
         semantic_query = time_info["semantic_query"] if time_info else query
+        filters, semantic_query = parse_search_filters(
+            semantic_query, self.known_projects, self.known_roles
+        )
+        # 라벨만으로 검색하는 경우 빈 임베딩 질의 대신 원래 문장을 사용한다.
+        if not semantic_query:
+            semantic_query = query
         query_embedding = self.model.encode(
             ["query: " + semantic_query],
             normalize_embeddings=True,
@@ -295,12 +351,19 @@ class SearchEngine:
         for index, score in enumerate(scores):
             info = self.chunk_info[index]
             file_id = info["file_id"]
+            labels = self.file_labels.get(file_id, {})
+            if any(value and labels.get(field) != value for field, value in filters.items()):
+                continue
             if time_info is not None:
                 date = self.file_dates[file_id][time_info["field"]]
                 if pd.isna(date) or not (time_info["start"] <= date < time_info["end"]):
                     continue
             if file_id not in best_results or score > best_results[file_id]["score"]:
-                best_results[file_id] = {**info, "score": float(score)}
+                best_results[file_id] = {
+                    **info, "score": float(score),
+                    "project": labels.get("project", ""),
+                    "role": labels.get("role", ""),
+                }
 
         ranked_results = sorted(
             best_results.values(), key=lambda result: result["score"], reverse=True
@@ -352,4 +415,3 @@ if __name__ == "__main__":
     results = search_files("SARIMA 예측 코드", top_k=5)
     for rank, result in enumerate(results, 1):
         print(f"{rank}. {result['filename']} ({result['file_id']}): {result['score']:.4f}")
-
