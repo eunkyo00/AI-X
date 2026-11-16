@@ -37,6 +37,14 @@ class UpdateTests(unittest.TestCase):
                 self.assertEqual(rows['new.txt']['file_id'], 'F162')
                 self.assertEqual(set(rows), {'new.txt', 'old.txt'})
                 self.assertEqual(rows['old.txt']['path'], 'dataset/files/sample/old.txt')
+            (folder/'new.txt').unlink()
+            subprocess.run([sys.executable,str(root/'file_reload_code.py')],check=True,capture_output=True)
+            (folder/'later.txt').write_text('later file')
+            subprocess.run([sys.executable,str(root/'file_reload_code.py')],check=True,capture_output=True)
+            with (root/'metadata.csv').open(encoding='utf-8-sig',newline='') as stream:
+                after={row['filename']:row for row in csv.DictReader(stream)}
+            self.assertEqual(after['later.txt']['file_id'],'F163')
+            self.assertEqual(after['old.txt']['file_id'],'F161')
 
     def test_extraction_uses_portable_paths_outside_project(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -167,6 +175,42 @@ class UpdateTests(unittest.TestCase):
             with sqlite3.connect(root/'Role03/output/files.sqlite3') as db:
                 self.assertEqual(db.execute('SELECT COUNT(*) FROM files').fetchone()[0], 0)
             self.assertTrue((root/'Role03/output/relations.csv').is_file())
+
+    def test_snapshot_is_consistent_and_restores_live_database_paths(self):
+        import numpy as np
+        import sqlite3
+        sys.path.insert(0, str(ROOT/'Role01'))
+        from refresh_search import build_index
+        from update_data import run_step
+        class Encoder:
+            def encode(self, documents, **kwargs):
+                return np.ones((len(documents), 3))
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory).resolve()
+            for role in ('Role01','Role03'):
+                (root/role).mkdir()
+            for name in ('paths.py','file_reload_code.py','extract_content.py','refresh_search.py'):
+                shutil.copy2(ROOT/'Role01'/name,root/'Role01'/name)
+            shutil.copy2(ROOT/'Role03/file_db.py',root/'Role03/file_db.py')
+            folder=root/'Role01/dataset/files'; folder.mkdir(parents=True)
+            original=folder/'sample.txt'; original.write_text('stable snapshot')
+            phases=[]
+            def runner(script,*args):
+                if script.name=='extract_content.py':
+                    original.write_text('changed while processing')
+                if script.name=='refresh_search.py':
+                    build_index(script.parent/'extracted_text.csv',script.parent/'metadata.csv',
+                                script.parent/'search_index',encoder=Encoder())
+                else:
+                    run_step(script,*args)
+            update(root,runner=runner,snapshot=True,progress=phases.append)
+            self.assertEqual(len(phases),4)
+            with sqlite3.connect(root/'Role03/output/files.sqlite3') as db:
+                row=db.execute('SELECT extracted_text,local_path FROM files').fetchone()
+            self.assertEqual(row,('stable snapshot',str(original)))
+            with (root/'Role03/output/audit.csv').open(encoding='utf-8-sig',newline='') as stream:
+                self.assertEqual(next(csv.DictReader(stream))['local_path'],str(original))
+            self.assertEqual(original.read_text(),'changed while processing')
 
     def test_search_reloads_published_index(self):
         import numpy as np

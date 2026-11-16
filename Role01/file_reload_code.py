@@ -1,477 +1,310 @@
-
-"""Role01/dataset/files -> Role01/metadata.csv 동기화.
-
-실행: python file_reload_code.py
-
-기능:
-- 기존 파일의 file_id와 수동 라벨 보존
-- 새 파일에만 새로운 file_id 부여
-- 기존 파일 누락 시 저장 중단
-- 변경 사항이 없으면 CSV 저장 생략
-- 자동 백업 파일 생성하지 않음
-"""
-
-from __future__ import annotations
-
-from datetime import datetime
 from pathlib import Path
+from datetime import datetime
+import pandas as pd
 import os
 import re
+import shutil
 import struct
 import unicodedata
 import zipfile
+import json
+from paths import path_key
 
-import pandas as pd
+# 1. 경로 설정
+SCRIPT_DIR = Path(__file__).resolve().parent
+DATA_DIR = SCRIPT_DIR / "dataset/files"
+RAW_DATA_DIR = SCRIPT_DIR.parent / "data/raw"
+METADATA_CSV = SCRIPT_DIR / "metadata.csv"
 
-
-# 1. 기본 경로 설정
-BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "dataset" / "files"
-RAW_DATA_DIR = BASE_DIR.parent / "data" / "raw"
-METADATA_CSV = BASE_DIR / "metadata.csv"
-
+# 이미지와 영상은 검색 대상에서 제외
 EXCLUDED_EXTENSIONS = {
     ".jpg", ".jpeg", ".png", ".gif", ".bmp",
     ".webp", ".mp4", ".avi", ".mov"
 }
 
 EXCLUDED_FILENAMES = {
-    ".DS_Store", ".Rhistory", "SOURCE.json", "LICENSE"
+    ".DS_Store",
+    ".Rhistory",
+    "SOURCE.json",
+    "LICENSE",
 }
 
-COLUMNS = [
-    "file_id", "filename", "extension", "path",
-    "size_bytes", "created_at", "modified_at",
-    "project", "role", "description"
+# 기본적으로 관리할 자동 수집 항목
+AUTO_COLUMNS = [
+    "file_id",
+    "filename",
+    "extension",
+    "path",
+    "size_bytes",
+    "created_at",
+    "modified_at",
 ]
 
 
-# 2. 경로 정규화
-def norm(value):
-    return (
-        unicodedata.normalize("NFC", str(value))
-        .replace("\\", "/")
-        .strip()
-        .casefold()
-    )
+# 2. 파일 경로 비교용 함수
+def normalize_path(path):
+    return path_key(path)
 
 
-def path_key(value):
-    """기존 CSV의 경로를 dataset/files 기준으로 변환."""
-    path = norm(value)
-    marker = "dataset/files/"
-
-    pos = path.rfind(marker)
-
-    if pos >= 0:
-        return path[pos + len(marker):]
-
-    return path.lstrip("./")
-
-
-# 3. 파일 생성일 및 수정일
-def timestamp(value):
-    return datetime.fromtimestamp(value).strftime(
-        "%Y-%m-%d %H:%M:%S"
-    )
+def format_timestamp(timestamp):
+    return datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d %H:%M:%S")
 
 
 def filesystem_created_at(file_path):
+    """현재 파일시스템이 실제 생성 시각을 제공할 때만 반환한다."""
     stat = file_path.stat()
 
+    # macOS: st_birthtime이 파일 생성 시각이다.
     if hasattr(stat, "st_birthtime"):
-        return timestamp(stat.st_birthtime)
+        return format_timestamp(stat.st_birthtime)
 
+    # Windows: st_ctime이 파일 생성 시각이다.
     if os.name == "nt":
-        return timestamp(stat.st_ctime)
+        return format_timestamp(stat.st_ctime)
 
+    # Linux 등에서는 st_ctime이 생성 시각이 아니므로 사용하지 않는다.
     return ""
 
 
-# 4. ZIP 파일 내부의 NTFS 생성일 추출
+def decode_zip_name(name, utf8_flag):
+    if utf8_flag:
+        return unicodedata.normalize("NFC", name)
+
+    raw_name = name.encode("cp437")
+    for encoding in ("cp949", "utf-8"):
+        try:
+            return unicodedata.normalize("NFC", raw_name.decode(encoding))
+        except UnicodeDecodeError:
+            continue
+    return unicodedata.normalize("NFC", name)
+
+
 def ntfs_created_at(extra):
+    """ZIP의 NTFS 확장 정보에 보존된 생성 시각을 읽는다."""
     offset = 0
-
     while offset + 4 <= len(extra):
-        field_id, size = struct.unpack_from(
-            "<HH", extra, offset
-        )
+        field_id, field_size = struct.unpack_from("<HH", extra, offset)
         offset += 4
-
-        payload = extra[offset:offset + size]
-        offset += size
+        payload = extra[offset:offset + field_size]
+        offset += field_size
 
         if field_id != 0x000A or len(payload) < 8:
             continue
 
         tag_offset = 4
-
         while tag_offset + 4 <= len(payload):
-            tag, tag_size = struct.unpack_from(
-                "<HH", payload, tag_offset
-            )
+            tag, tag_size = struct.unpack_from("<HH", payload, tag_offset)
             tag_offset += 4
-
-            tag_payload = payload[
-                tag_offset:tag_offset + tag_size
-            ]
+            tag_payload = payload[tag_offset:tag_offset + tag_size]
             tag_offset += tag_size
 
             if tag == 0x0001 and len(tag_payload) >= 24:
-                created = struct.unpack_from(
-                    "<Q", tag_payload, 16
-                )[0]
-
-                unix_seconds = (
+                _, _, created = struct.unpack_from("<QQQ", tag_payload)
+                unix_timestamp = (
                     created - 116444736000000000
                 ) / 10_000_000
-
-                try:
-                    return timestamp(unix_seconds)
-                except (
-                    ValueError,
-                    OverflowError,
-                    OSError
-                ):
-                    return ""
+                return format_timestamp(unix_timestamp)
 
     return ""
 
 
-def zip_member_name(info):
-    name = info.filename
-
-    if not (info.flag_bits & 0x800):
-        raw = name.encode("cp437", errors="replace")
-
-        for encoding in ("cp949", "utf-8"):
-            try:
-                name = raw.decode(encoding)
-                break
-            except UnicodeDecodeError:
-                continue
-
-    return (
-        unicodedata.normalize("NFC", name)
-        .replace("\\", "/")
-    )
-
-
-def load_zip_creation_times():
-    times = {}
-
+def load_raw_created_times():
+    """data/raw의 ZIP이 보존한 파일별 생성 시각을 경로별로 불러온다."""
+    created_by_key = {}
     if not RAW_DATA_DIR.is_dir():
-        return times
+        return created_by_key
 
+    groups = {unicodedata.normalize("NFC", folder.name)
+              for folder in DATA_DIR.iterdir() if folder.is_dir()}
     for archive_path in sorted(RAW_DATA_DIR.glob("*.zip")):
-        group = norm(archive_path.stem)
-
-        try:
-            with zipfile.ZipFile(archive_path) as archive:
-                for info in archive.infolist():
-                    if info.is_dir():
-                        continue
-
-                    created = ntfs_created_at(info.extra)
-
-                    if not created:
-                        continue
-
-                    member = norm(
-                        zip_member_name(info)
-                    ).strip("/")
-
-                    if member.startswith(group + "/"):
-                        member = member[len(group) + 1:]
-
-                    key = group + "/" + member
-                    times[key] = created
-
-        except (OSError, zipfile.BadZipFile) as exc:
-            print(
-                f"[경고] ZIP 읽기 실패: "
-                f"{archive_path.name}: {exc}"
-            )
-
-    return times
-
-
-# 5. 메타데이터 동기화
-def main():
-    print("실행 스크립트:", Path(__file__).resolve())
-    print("탐색 폴더:", DATA_DIR.resolve())
-    print("저장 CSV:", METADATA_CSV.resolve())
-
-    if not DATA_DIR.is_dir():
-        raise FileNotFoundError(
-            f"탐색 폴더가 없습니다: {DATA_DIR}"
-        )
-
-    # 기존 메타데이터 읽기
-    if METADATA_CSV.exists():
-        old_df = pd.read_csv(
-            METADATA_CSV,
-            dtype=str,
-            keep_default_na=False,
-            encoding="utf-8-sig"
-        )
-    else:
-        old_df = pd.DataFrame(columns=COLUMNS)
-
-    for col in COLUMNS:
-        if col not in old_df.columns:
-            old_df[col] = ""
-
-    # 기존 경로와 파일 ID 연결
-    old_by_path = {}
-
-    for record in old_df.to_dict("records"):
-        key = path_key(record.get("path", ""))
-
-        if not key:
+        group = unicodedata.normalize("NFC", archive_path.stem)
+        if group not in groups:
             continue
 
-        if key in old_by_path:
-            raise ValueError(
-                f"metadata.csv 중복 경로: {record['path']}"
-            )
+        with zipfile.ZipFile(archive_path) as archive:
+            for info in archive.infolist():
+                if info.is_dir():
+                    continue
 
+                created_at = ntfs_created_at(info.extra)
+                if not created_at:
+                    continue
+
+                member = decode_zip_name(
+                    info.filename,
+                    bool(info.flag_bits & 0x800),
+                ).replace("\\", "/")
+                parts = [part for part in member.split("/") if part]
+                if parts and unicodedata.normalize("NFC", parts[0]) == group:
+                    parts = parts[1:]
+
+                relative_path = unicodedata.normalize("NFC", "/".join(parts))
+                filename = unicodedata.normalize("NFC", Path(member).name)
+                created_by_key[(group, relative_path)] = created_at
+                created_by_key.setdefault((group, filename), created_at)
+
+    return created_by_key
+
+
+RAW_CREATED_AT = load_raw_created_times()
+
+# 3. 기존 CSV 읽기
+if not DATA_DIR.is_dir():
+    raise FileNotFoundError(
+        f"검색 대상 폴더를 찾을 수 없어: {DATA_DIR.resolve()}"
+    )
+
+if METADATA_CSV.exists():
+    old_df = pd.read_csv(
+        METADATA_CSV,
+        dtype=str,
+        keep_default_na=False,
+        encoding="utf-8-sig"
+    )
+else:
+    old_df = pd.DataFrame(columns=AUTO_COLUMNS + ["project", "role", "description"])
+
+# 기존 CSV에 필수 열이 없으면 추가
+for column in AUTO_COLUMNS + ["project", "role", "description"]:
+    if column not in old_df.columns:
+        old_df[column] = ""
+
+if "path" not in old_df.columns:
+    old_df["path"] = ""
+
+# 기존 파일 경로로 기존 정보를 찾을 수 있게 준비
+old_by_path = {}
+
+for record in old_df.to_dict("records"):
+    if record.get("path", "").strip():
+        key = normalize_path(record["path"])
+        if key in old_by_path:
+            raise ValueError(f"중복된 파일 경로: {record['path']}")
         old_by_path[key] = record
 
-    # 기존 파일 ID 검사
-    ids = [
-        str(x).strip()
-        for x in old_df["file_id"]
-    ]
+ids = [str(value).strip() for value in old_df["file_id"]]
+if any(not value for value in ids) or len(ids) != len(set(ids)):
+    raise ValueError("기존 metadata.csv에 빈 ID 또는 중복 ID가 있습니다.")
 
-    if any(not x for x in ids):
-        raise ValueError(
-            "metadata.csv에 빈 file_id가 있습니다."
-        )
+# 4. 다음에 사용할 파일 ID 결정
+existing_numbers = []
 
-    if len(ids) != len(set(ids)):
-        raise ValueError(
-            "metadata.csv에 중복 file_id가 있습니다."
-        )
+for file_id in old_df["file_id"]:
+    match = re.fullmatch(r"F(\d+)", str(file_id).strip())
+    if match:
+        existing_numbers.append(int(match.group(1)))
 
-    # 기존 최대 번호 다음부터 신규 ID 부여
-    numbers = []
+next_id = max(existing_numbers, default=0) + 1
+id_state = SCRIPT_DIR / '.file_id_state.json'
+if id_state.exists():
+    saved_next = json.loads(id_state.read_text(encoding='utf-8'))['next_file_number']
+    if type(saved_next) is not int or saved_next < 1:
+        raise ValueError('파일 ID 번호 기록이 올바르지 않습니다.')
+    next_id = max(next_id, saved_next)
 
-    for file_id in ids:
-        match = re.fullmatch(r"F(\d+)", file_id)
 
-        if not match:
-            raise ValueError(
-                f"잘못된 file_id 형식: {file_id}"
-            )
+# 5. 폴더를 다시 확인하고 정보 갱신
+records = []
+new_count = 0
 
-        numbers.append(int(match.group(1)))
+for file_path in sorted(DATA_DIR.rglob("*")):
 
-    next_id = max(numbers, default=0) + 1
+    if not file_path.is_file():
+        continue
 
-    # ZIP 생성일 정보
-    zip_times = load_zip_creation_times()
+    if file_path.name in EXCLUDED_FILENAMES:
+        continue
 
-    # 실제 파일 목록
-    files = sorted(
-        (
-            p for p in DATA_DIR.rglob("*")
-            if p.is_file()
-        ),
-        key=lambda p: norm(
-            p.relative_to(DATA_DIR).as_posix()
-        )
+    # Excel이 만드는 임시 파일 제외
+    if file_path.name.startswith("~$"):
+        continue
+
+    extension = file_path.suffix.lower()
+
+    # 이미지/영상 제외
+    if extension in EXCLUDED_EXTENSIONS:
+        continue
+
+    absolute_path = normalize_path(file_path)
+
+    # 파일 경로를 기준으로 기존 정보 확인
+    old_record = old_by_path.get(absolute_path, {})
+    record = old_record.copy()
+    for column in old_df.columns:
+        record.setdefault(column, "")
+
+    # 기존 ID가 있으면 유지, 새 파일이면 ID 부여
+    if not record.get("file_id", "").strip():
+        record["file_id"] = f"F{next_id:03d}"
+        next_id += 1
+        new_count += 1
+
+    stat = file_path.stat()
+    relative_path = file_path.relative_to(DATA_DIR)
+    group = unicodedata.normalize("NFC", relative_path.parts[0])
+    path_in_group = unicodedata.normalize(
+        "NFC",
+        "/".join(relative_path.parts[1:]),
+    )
+    filename = unicodedata.normalize("NFC", file_path.name)
+
+    raw_created_at = (
+        RAW_CREATED_AT.get((group, path_in_group))
+        or RAW_CREATED_AT.get((group, filename))
+    )
+    existing_created_at = str(record.get("created_at", "")).strip()
+    created_at = (
+        raw_created_at
+        or existing_created_at
+        or filesystem_created_at(file_path)
     )
 
-    print(f"발견한 전체 파일: {len(files)}개")
+    stored_path = record.get("path", "").strip()
+    if not stored_path:
+        stored_path = file_path.relative_to(SCRIPT_DIR).as_posix()
 
-    records = []
-    new_count = 0
-    changed_count = 0
-    excluded_count = 0
-    seen_keys = set()
+    # 자동 수집 항목만 갱신
+    record.update({
+        "filename": file_path.name,
+        "extension": extension,
+        "path": file_path.relative_to(SCRIPT_DIR).as_posix(),
+        "size_bytes": stat.st_size,
+        "created_at": created_at,
+        "modified_at": datetime.fromtimestamp(
+            stat.st_mtime
+        ).strftime("%Y-%m-%d %H:%M:%S"),
+    })
 
-    # 6. 파일별 메타데이터 생성
-    for file_path in files:
+    # 직접 입력한 project, role 등은 기존 값 유지
+    records.append(record)
 
-        if (
-            file_path.name in EXCLUDED_FILENAMES
-            or file_path.name.startswith("~$")
-            or file_path.suffix.lower()
-            in EXCLUDED_EXTENSIONS
-        ):
-            excluded_count += 1
-            continue
 
-        rel = file_path.relative_to(
-            DATA_DIR
-        ).as_posix()
+# 6. 기존 정보를 백업하고 저장
+columns = list(dict.fromkeys(
+    list(old_df.columns) + AUTO_COLUMNS
+))
 
-        key = norm(rel)
+updated_df = pd.DataFrame(records, columns=columns)
 
-        if key in seen_keys:
-            raise ValueError(
-                f"정규화 후 중복 파일 경로: {rel}"
-            )
-
-        seen_keys.add(key)
-
-        # 기존 파일이면 기존 데이터 사용
-        old = old_by_path.get(key)
-
-        if old:
-            record = dict(old)
-        else:
-            record = {
-                col: ""
-                for col in old_df.columns
-            }
-
-            record["file_id"] = f"F{next_id:03d}"
-            next_id += 1
-            new_count += 1
-
-            print(
-                f"[신규] {record['file_id']} {rel}"
-            )
-
-        # 자동으로 갱신할 항목
-        stat = file_path.stat()
-
-        created = (
-            zip_times.get(key)
-            or str(
-                record.get("created_at", "")
-            ).strip()
-            or filesystem_created_at(file_path)
-        )
-
-        new_data = {
-            "filename": file_path.name,
-            "extension": file_path.suffix.lower(),
-            "path": file_path.relative_to(
-                BASE_DIR
-            ).as_posix(),
-            "size_bytes": str(stat.st_size),
-            "created_at": created,
-            "modified_at": timestamp(stat.st_mtime),
-        }
-
-        # 기존 파일의 자동 항목 변경 확인
-        if old and any(
-            str(record.get(k, "")) != str(v)
-            for k, v in new_data.items()
-        ):
-            changed_count += 1
-
-        record.update(new_data)
-
-        # 수동 라벨과 기존 file_id는 유지
-        records.append(record)
-
-    # 7. 기존 파일 누락 검사
-    missing_keys = (
-        set(old_by_path.keys()) - seen_keys
+if METADATA_CSV.exists():
+    backup_name = SCRIPT_DIR / (
+        "metadata_backup_"
+        + datetime.now().strftime("%Y%m%d_%H%M%S")
+        + ".csv"
     )
+    shutil.copy2(METADATA_CSV, backup_name)
+    print(f"기존 CSV 백업: {backup_name}")
 
-    if missing_keys:
-        print(
-            "\n[경고] 기존 메타데이터에서 "
-            "누락될 파일:"
-        )
+updated_df.to_csv(
+    METADATA_CSV,
+    index=False,
+    encoding="utf-8-sig"
+)
 
-        for key in sorted(missing_keys):
-            old = old_by_path[key]
+temporary_state = id_state.with_suffix('.tmp')
+temporary_state.write_text(json.dumps({'next_file_number': next_id}), encoding='utf-8')
+temporary_state.replace(id_state)
 
-            print(
-                old["file_id"],
-                old["filename"],
-                old["path"]
-            )
-
-        raise RuntimeError(
-            "기존 파일이 누락되어 CSV 저장을 중단합니다."
-        )
-
-    if not records:
-        raise RuntimeError(
-            "저장할 파일이 0개입니다. "
-            "기존 CSV를 보호하기 위해 저장하지 않습니다."
-        )
-
-    # 8. 최종 데이터프레임 생성
-    all_columns = list(
-        dict.fromkeys(
-            list(old_df.columns) + COLUMNS
-        )
-    )
-
-    updated = pd.DataFrame(
-        records,
-        columns=all_columns
-    )
-
-    if updated["file_id"].duplicated().any():
-        raise ValueError(
-            "생성 결과에 중복 file_id가 있습니다."
-        )
-
-    # ID 숫자 기준 정렬 (ID 자체는 변경하지 않음)
-    updated = updated.sort_values(
-        by="file_id",
-        key=lambda col: col.str.extract(
-            r"(\d+)", expand=False
-        ).astype(int)
-    ).reset_index(drop=True)
-
-    # 9. 변경 사항 확인
-    # 기존 데이터와 완전히 같으면 저장하지 않음
-    old_compare = old_df.reindex(
-        columns=all_columns,
-        fill_value=""
-    ).reset_index(drop=True)
-
-    if old_compare.equals(updated):
-        print("\n[안내] 변경 사항이 없습니다.")
-        print("metadata.csv를 다시 저장하지 않습니다.")
-        print("백업 파일도 생성하지 않습니다.")
-        return
-
-    # 10. 원자적 저장
-    # 임시 파일에 먼저 저장하고 교체
-    temp_path = METADATA_CSV.with_name(
-        METADATA_CSV.name + ".tmp"
-    )
-
-    try:
-        updated.to_csv(
-            temp_path,
-            index=False,
-            encoding="utf-8-sig"
-        )
-
-        os.replace(temp_path, METADATA_CSV)
-
-    finally:
-        if temp_path.exists():
-            temp_path.unlink()
-
-    # 11. 결과 출력
-    print("\n=== 갱신 결과 ===")
-    print("기존 CSV 행 수:", len(old_df))
-    print("제외한 파일:", excluded_count)
-    print("새로 등록한 파일:", new_count)
-    print("기존 파일의 자동 항목 변경:", changed_count)
-    print("최종 CSV 행 수:", len(updated))
-    print("저장 완료:", METADATA_CSV.resolve())
-    print("자동 백업 생성: 없음")
-
-    if new_count == 0:
-        print(
-            "[안내] 새 파일이 0개입니다."
-        )
-
-
-if __name__ == "__main__":
-    main()
-
+print(f"\n총 파일 수: {len(updated_df)}")
+print(f"새로 추가한 파일 수: {new_count}")
+print(f"저장 완료: {METADATA_CSV.resolve()}")

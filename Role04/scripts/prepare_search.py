@@ -1,42 +1,22 @@
-"""Prepare an unmodified, pinned Role01 engine and its data from local Git objects."""
-import csv
-import io
-import subprocess
-import unicodedata
-from search_api import original_path
+"""Validate the live Role01 engine used by automatic file registration."""
 from pathlib import Path
 
-REVISION = '97a4cc8e6ac5889ede16ff21ec48eaf48a3d1cf6'
 ROOT = Path(__file__).resolve().parents[2]
-TARGET = ROOT / 'Role04' / 'runtime' / 'search'
+TARGET = ROOT / 'Role01'
 
 
 def main():
-    names = ['search_engine.py', 'extracted_text.csv', 'metadata.csv',
-             'embedding_cache/embeddings_73579b9955af12ca.npy']
-    try:
-        subprocess.run(['git', 'cat-file', '-e', f'{REVISION}:Role01/search_engine.py'], cwd=ROOT, check=True, capture_output=True)
-    except (FileNotFoundError, subprocess.CalledProcessError):
-        raise SystemExit('Git 이력이 필요합니다. Git 설치 후 저장소를 clone하고 git fetch origin main을 실행하세요.')
-    contents = [(name, subprocess.check_output(['git', 'show', f'{REVISION}:Role01/{name}'], cwd=ROOT)) for name in names]
-    for name, content in contents:
-        destination = TARGET / name
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_bytes(content)
-    tree = subprocess.check_output(['git', 'ls-tree', '-r', '-z', '--name-only', REVISION, 'Role01/dataset/files'], cwd=ROOT).decode().split('\0')
-    source_paths = {unicodedata.normalize('NFC', name): name for name in tree if name}
-    rows = list(csv.DictReader(io.StringIO(dict(contents)['metadata.csv'].decode('utf-8-sig'))))
-    for row in rows:
-        source = unicodedata.normalize('NFC', 'Role01/' + row['path'].replace('\\', '/'))
-        if source not in source_paths:
-            raise SystemExit(f'원본이 Git에 없습니다: {source}')
-        destination = original_path(TARGET, row['file_id'], row['filename'])
-        content = subprocess.check_output(['git', 'show', f'{REVISION}:{source_paths[source]}'], cwd=ROOT)
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        destination.write_bytes(content)
-    print(f'원본 파일 준비 완료: {len(rows)}개')
-    (TARGET / 'SOURCE_COMMIT').write_text(REVISION + '\n')
-    print(f'검색 엔진 준비 완료: {TARGET}')
+    required = ['Role01/search_engine.py', 'Role01/refresh_search.py',
+                'Role01/file_reload_append_only.py', 'Role01/extract_content.py',
+                'Role01/automation_code/file_watcher.py', 'update_pipeline_integrated.py',
+                'Role02/description_generator.py', 'Role02/classify_metadata.py',
+                'Role02/project_classifier_artifacts_v3/project_classifier_v3.joblib',
+                'Role02/role_classifier_artifacts/role_classifier.joblib']
+    missing = [name for name in required if not (ROOT/name).is_file()]
+    if missing:
+        raise SystemExit('최신 저장소 전체가 필요합니다. 누락된 파일: '+', '.join(missing))
+    print(f'검색·자동 갱신 엔진 준비 완료: {TARGET}')
+    print('등록 파일과 감시 폴더는 GUI 서버가 켜져 있는 동안 자동 갱신됩니다.')
 
 
 if __name__ == '__main__':

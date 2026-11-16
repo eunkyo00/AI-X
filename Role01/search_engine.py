@@ -10,7 +10,9 @@ import re
 
 import numpy as np
 import pandas as pd
-from sentence_transformers import SentenceTransformer
+def SentenceTransformer(*args, **kwargs):
+    from sentence_transformers import SentenceTransformer as Model
+    return Model(*args, **kwargs)
 from refresh_search import read_documents, signature as index_signature
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -312,6 +314,7 @@ class SearchEngine:
         digest = hashlib.sha256(self.model_name.encode("utf-8"))
         paths = (self.text_csv, self.metadata_csv,
                  self.metadata_csv.parent.parent / "Role02" / "metadata_description_generated.csv",
+                 self.metadata_csv.parent.parent / "Role02" / "metadata_classification_generated.csv",
                  self.text_csv.parent / "file_relations.csv")
         for path in paths:
             if path.exists():
