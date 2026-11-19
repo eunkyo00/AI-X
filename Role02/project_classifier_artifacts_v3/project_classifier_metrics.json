@@ -4,8 +4,8 @@
   "folds": 5,
   "closed_set_accuracy": 1.0,
   "closed_set_macro_f1": 1.0,
-  "mean_known_project_confidence": 0.7216235995292664,
-  "median_known_project_confidence": 0.7211711406707764,
+  "mean_known_project_confidence": 0.7216116786003113,
+  "median_known_project_confidence": 0.7211705446243286,
   "known_project_acceptance_rate": 0.9367088607594937,
   "classifier_c": 10.0,
   "open_set_quantiles": {
@@ -13,10 +13,10 @@
     "centroid": 0.0
   },
   "open_set_thresholds": {
-    "confidence": 0.5684450596570969,
-    "probability_margin": 0.37473814785480497,
+    "confidence": 0.5684438943862915,
+    "probability_margin": 0.3747378885746002,
     "centroid_similarity": 0.9124165177345276,
-    "centroid_margin": 0.006537675857543945
+    "centroid_margin": 0.0065375566482543945
   },
   "class_counts": {
     "데이터사이언스": 53,
@@ -69,11 +69,5 @@
       "f1-score": 1.0,
       "support": 158.0
     }
-  },
-  "unlabeled_evaluation": {
-    "assumption": "project가 빈 모든 행은 기존 학습 프로젝트와 다른 새 프로젝트",
-    "file_count": 41,
-    "new_project_recall": 0.9512195121951219,
-    "false_existing_assignments": 2
   }
 }

@@ -1,0 +1,1016 @@
+﻿source_file_id,target_file_id,source_filename,target_filename,relation_type,weight,semantic_score,project_score,role_score,time_score,folder_score,filename_score,direct_reference,evidence
+F001,F010,Cross-Validation_Decoded.pdf,케라스 라이브러리.pdf,context_related,0.7881,0.9219,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9219 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F001,F002,Cross-Validation_Decoded.pdf,MLP(다층퍼셉트론)(강의).pdf,context_related,0.7865,0.9192,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9192 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F001,F004,Cross-Validation_Decoded.pdf,머신러닝(내용추가).pdf,context_related,0.7701,0.9252,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9252 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F001,F005,Cross-Validation_Decoded.pdf,선형회귀_업데이트.pdf,context_related,0.7662,0.9186,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9186 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F001,F011,Cross-Validation_Decoded.pdf,퍼셉트론_추가.pdf,context_related,0.7646,0.9161,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9161 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F002,F010,MLP(다층퍼셉트론)(강의).pdf,케라스 라이브러리.pdf,context_related,0.8171,0.9452,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9452 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F002,F006,MLP(다층퍼셉트론)(강의).pdf,심층신경망.pdf,context_related,0.7877,0.9545,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9545 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F002,F011,MLP(다층퍼셉트론)(강의).pdf,퍼셉트론_추가.pdf,context_related,0.7874,0.954,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9540 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F002,F001,MLP(다층퍼셉트론)(강의).pdf,Cross-Validation_Decoded.pdf,context_related,0.7865,0.9192,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9192 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F002,F004,MLP(다층퍼셉트론)(강의).pdf,머신러닝(내용추가).pdf,context_related,0.7826,0.9461,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9461 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F003,F009,Transformer_강의자료.pdf,제11장 순환신경망(강의).pdf,context_related,0.8025,0.9459,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9459 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F003,F007,Transformer_강의자료.pdf,영상인식과 딥러닝.pdf,context_related,0.7817,0.9445,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9445 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F003,F006,Transformer_강의자료.pdf,심층신경망.pdf,context_related,0.7807,0.9428,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9428 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F003,F008,Transformer_강의자료.pdf,제09장 컨벌루션 신경망(강의).pdf,context_related,0.7711,0.9268,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9268 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F003,F004,Transformer_강의자료.pdf,머신러닝(내용추가).pdf,context_related,0.7659,0.9432,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9432 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F004,F005,머신러닝(내용추가).pdf,선형회귀_업데이트.pdf,context_related,0.7879,0.9549,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9549 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F004,F010,머신러닝(내용추가).pdf,케라스 라이브러리.pdf,context_related,0.7853,0.9504,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9504 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F004,F002,머신러닝(내용추가).pdf,MLP(다층퍼셉트론)(강의).pdf,context_related,0.7826,0.9461,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9461 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F004,F011,머신러닝(내용추가).pdf,퍼셉트론_추가.pdf,context_related,0.7791,0.9402,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9402 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F004,F007,머신러닝(내용추가).pdf,영상인식과 딥러닝.pdf,context_related,0.771,0.9516,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9516 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F005,F011,선형회귀_업데이트.pdf,퍼셉트론_추가.pdf,context_related,0.7945,0.9325,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9325 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F005,F004,선형회귀_업데이트.pdf,머신러닝(내용추가).pdf,context_related,0.7879,0.9549,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9549 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F005,F002,선형회귀_업데이트.pdf,MLP(다층퍼셉트론)(강의).pdf,context_related,0.7826,0.946,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9460 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F005,F010,선형회귀_업데이트.pdf,케라스 라이브러리.pdf,context_related,0.7734,0.9307,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9307 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F005,F001,선형회귀_업데이트.pdf,Cross-Validation_Decoded.pdf,context_related,0.7662,0.9186,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9186 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F006,F008,심층신경망.pdf,제09장 컨벌루션 신경망(강의).pdf,context_related,0.8051,0.9502,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9502 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F006,F010,심층신경망.pdf,케라스 라이브러리.pdf,context_related,0.7954,0.9673,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9673 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F006,F007,심층신경망.pdf,영상인식과 딥러닝.pdf,context_related,0.7926,0.9627,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9627 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F006,F002,심층신경망.pdf,MLP(다층퍼셉트론)(강의).pdf,context_related,0.7877,0.9545,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9545 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F006,F003,심층신경망.pdf,Transformer_강의자료.pdf,context_related,0.7807,0.9428,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9428 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F007,F008,영상인식과 딥러닝.pdf,제09장 컨벌루션 신경망(강의).pdf,context_related,0.8005,0.9425,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9425 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F007,F006,영상인식과 딥러닝.pdf,심층신경망.pdf,context_related,0.7926,0.9627,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9627 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F007,F009,영상인식과 딥러닝.pdf,제11장 순환신경망(강의).pdf,context_related,0.7884,0.9556,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9556 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F007,F003,영상인식과 딥러닝.pdf,Transformer_강의자료.pdf,context_related,0.7817,0.9445,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9445 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F007,F010,영상인식과 딥러닝.pdf,케라스 라이브러리.pdf,context_related,0.7789,0.9649,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9649 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F008,F006,제09장 컨벌루션 신경망(강의).pdf,심층신경망.pdf,context_related,0.8051,0.9502,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9502 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F008,F007,제09장 컨벌루션 신경망(강의).pdf,영상인식과 딥러닝.pdf,context_related,0.8005,0.9425,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9425 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F008,F009,제09장 컨벌루션 신경망(강의).pdf,제11장 순환신경망(강의).pdf,context_related,0.7779,0.9382,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9382 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F008,F010,제09장 컨벌루션 신경망(강의).pdf,케라스 라이브러리.pdf,context_related,0.7716,0.9527,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9527 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F008,F003,제09장 컨벌루션 신경망(강의).pdf,Transformer_강의자료.pdf,context_related,0.7711,0.9268,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9268 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F009,F003,제11장 순환신경망(강의).pdf,Transformer_강의자료.pdf,context_related,0.8025,0.9459,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9459 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F009,F007,제11장 순환신경망(강의).pdf,영상인식과 딥러닝.pdf,context_related,0.7884,0.9556,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9556 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F009,F008,제11장 순환신경망(강의).pdf,제09장 컨벌루션 신경망(강의).pdf,context_related,0.7779,0.9382,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9382 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F009,F006,제11장 순환신경망(강의).pdf,심층신경망.pdf,context_related,0.7763,0.9606,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9606 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F009,F010,제11장 순환신경망(강의).pdf,케라스 라이브러리.pdf,context_related,0.775,0.9583,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9583 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F010,F002,케라스 라이브러리.pdf,MLP(다층퍼셉트론)(강의).pdf,context_related,0.8171,0.9452,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9452 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F010,F006,케라스 라이브러리.pdf,심층신경망.pdf,context_related,0.7954,0.9673,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9673 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F010,F001,케라스 라이브러리.pdf,Cross-Validation_Decoded.pdf,context_related,0.7881,0.9219,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9219 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F010,F004,케라스 라이브러리.pdf,머신러닝(내용추가).pdf,context_related,0.7853,0.9504,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9504 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F010,F011,케라스 라이브러리.pdf,퍼셉트론_추가.pdf,context_related,0.7795,0.9409,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9409 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F011,F005,퍼셉트론_추가.pdf,선형회귀_업데이트.pdf,context_related,0.7945,0.9325,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9325 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F011,F002,퍼셉트론_추가.pdf,MLP(다층퍼셉트론)(강의).pdf,context_related,0.7874,0.954,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9540 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F011,F010,퍼셉트론_추가.pdf,케라스 라이브러리.pdf,context_related,0.7795,0.9409,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9409 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F011,F004,퍼셉트론_추가.pdf,머신러닝(내용추가).pdf,context_related,0.7791,0.9402,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9402 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F011,F006,퍼셉트론_추가.pdf,심층신경망.pdf,context_related,0.7708,0.9513,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9513 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F012,F026,time_series_analysis10_1.R,week10_cheating.R,context_related,0.8831,0.9718,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9718 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F012,F025,time_series_analysis10_1.R,week10.R,context_related,0.877,0.9617,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9617 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F012,F024,time_series_analysis10_1.R,time_series_analysis9_1.R,context_related,0.7744,0.9323,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9323 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F012,F013,time_series_analysis10_1.R,time_series_analysis11_1.R,context_related,0.7719,0.9282,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9282 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F012,F048,time_series_analysis10_1.R,week9_cheating.R,context_related,0.7643,0.9406,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9406 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F013,F027,time_series_analysis11_1.R,week11_cheating.R,context_related,0.8906,0.9594,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9594 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F013,F025,time_series_analysis11_1.R,week10.R,context_related,0.7725,0.9292,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9292 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F013,F012,time_series_analysis11_1.R,time_series_analysis10_1.R,context_related,0.7719,0.9282,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9282 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F013,F024,time_series_analysis11_1.R,time_series_analysis9_1.R,context_related,0.7704,0.9256,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9256 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F013,F026,time_series_analysis11_1.R,week10_cheating.R,context_related,0.77,0.9251,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9251 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F014,F028,time_series_analysis12_1.R,week12.R,context_related,0.9045,0.9825,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9825 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F014,F029,time_series_analysis12_1.R,week12_cheating.R,context_related,0.9029,0.9798,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9798 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F014,F030,time_series_analysis12_1.R,week13.R,context_related,0.7908,0.9597,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9597 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F014,F031,time_series_analysis12_1.R,week13_cheating.R,context_related,0.7897,0.9578,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9578 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F014,F015,time_series_analysis12_1.R,time_series_analysis13_1.R,context_related,0.7797,0.9661,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9661 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F015,F030,time_series_analysis13_1.R,week13.R,context_related,0.8834,0.9724,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9724 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F015,F031,time_series_analysis13_1.R,week13_cheating.R,context_related,0.8816,0.9693,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9693 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F015,F014,time_series_analysis13_1.R,time_series_analysis12_1.R,context_related,0.7797,0.9661,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9661 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F015,F028,time_series_analysis13_1.R,week12.R,context_related,0.7757,0.9594,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9594 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F015,F029,time_series_analysis13_1.R,week12_cheating.R,context_related,0.7743,0.9572,1.0,0.5,0.0,1.0,0.0,False,E5 유사도 0.9572 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F016,F033,time_series_analysis14_1.R,week14_apple_forecast_analysis_2026_1.R,context_related,0.9142,0.9403,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9403 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F016,F032,time_series_analysis14_1.R,week14_apple_forecast_analysis_2026.R,context_related,0.8981,0.9386,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9386 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F016,F034,time_series_analysis14_1.R,week14_apple_forecast_analysis_2026_cheating.R,context_related,0.8972,0.9371,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9371 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F016,F048,time_series_analysis14_1.R,week9_cheating.R,context_related,0.8124,0.9374,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9374 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F016,F031,time_series_analysis14_1.R,week13_cheating.R,context_related,0.8001,0.9418,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9418 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F017,F018,time_series_analysis2_1.R,time_series_analysis2_2.R,context_related,0.9003,0.9422,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9422 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F017,F035,time_series_analysis2_1.R,week2.R,context_related,0.8924,0.9623,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9623 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F017,F036,time_series_analysis2_1.R,week2_cheating.R,context_related,0.8655,0.9425,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9425 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F017,F020,time_series_analysis2_1.R,time_series_analysis4_1.R,context_related,0.7774,0.9373,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9373 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F017,F021,time_series_analysis2_1.R,time_series_analysis5_1.R,context_related,0.7764,0.9357,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9357 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F018,F017,time_series_analysis2_2.R,time_series_analysis2_1.R,context_related,0.9003,0.9422,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9422 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F018,F035,time_series_analysis2_2.R,week2.R,context_related,0.8991,0.9735,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9735 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F018,F036,time_series_analysis2_2.R,week2_cheating.R,context_related,0.8814,0.9691,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9691 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F018,F020,time_series_analysis2_2.R,time_series_analysis4_1.R,context_related,0.7778,0.938,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9380 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F018,F021,time_series_analysis2_2.R,time_series_analysis5_1.R,context_related,0.7755,0.9341,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9341 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F019,F037,time_series_analysis3_1.R,week3.R,context_related,0.9417,0.9861,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9861 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F019,F038,time_series_analysis3_1.R,week3_cheating.R,context_related,0.8996,0.9744,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9744 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F019,F035,time_series_analysis3_1.R,week2.R,context_related,0.8057,0.9511,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9511 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F019,F039,time_series_analysis3_1.R,week4.R,context_related,0.7994,0.9407,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9407 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F019,F022,time_series_analysis3_1.R,time_series_analysis6_1.R,context_related,0.7939,0.9314,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9314 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F020,F040,time_series_analysis4_1.R,week4_cheating.R,context_related,0.8987,0.9728,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9728 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F020,F039,time_series_analysis4_1.R,week4.R,context_related,0.8959,0.9681,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9681 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F020,F021,time_series_analysis4_1.R,time_series_analysis5_1.R,context_related,0.7891,0.9568,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9568 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F020,F041,time_series_analysis4_1.R,week5 (1).R,context_related,0.7831,0.9468,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9468 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F020,F022,time_series_analysis4_1.R,time_series_analysis6_1.R,context_related,0.783,0.9467,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9467 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F021,F041,time_series_analysis5_1.R,week5 (1).R,context_related,0.9045,0.9824,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9824 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F021,F042,time_series_analysis5_1.R,week5.R,context_related,0.9001,0.9752,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9752 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F021,F043,time_series_analysis5_1.R,week5_cheating.R,context_related,0.8993,0.9738,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9738 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F021,F035,time_series_analysis5_1.R,week2.R,context_related,0.7968,0.9364,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9364 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F021,F020,time_series_analysis5_1.R,time_series_analysis4_1.R,context_related,0.7891,0.9568,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9568 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F022,F045,time_series_analysis6_1.R,week6_cheating.R,context_related,0.8966,0.9693,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9693 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F022,F044,time_series_analysis6_1.R,week6.R,context_related,0.8925,0.9624,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9624 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F022,F023,time_series_analysis6_1.R,time_series_analysis7_1.R,context_related,0.7997,0.9412,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9412 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F022,F035,time_series_analysis6_1.R,week2.R,context_related,0.7953,0.9338,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9338 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F022,F019,time_series_analysis6_1.R,time_series_analysis3_1.R,context_related,0.7939,0.9314,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9314 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F023,F046,time_series_analysis7_1.R,week7.R,context_related,0.9211,0.9768,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9768 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F023,F047,time_series_analysis7_1.R,week7_cheating.R,context_related,0.9165,0.9692,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9692 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F023,F022,time_series_analysis7_1.R,time_series_analysis6_1.R,context_related,0.7997,0.9412,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9412 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F023,F041,time_series_analysis7_1.R,week5 (1).R,context_related,0.7988,0.9397,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9397 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F023,F043,time_series_analysis7_1.R,week5_cheating.R,context_related,0.7955,0.9342,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9342 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F024,F048,time_series_analysis9_1.R,week9_cheating.R,context_related,0.9253,0.9838,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9838 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F024,F016,time_series_analysis9_1.R,time_series_analysis14_1.R,context_related,0.7986,0.9393,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9393 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F024,F033,time_series_analysis9_1.R,week14_apple_forecast_analysis_2026_1.R,context_related,0.788,0.9217,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9217 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F024,F025,time_series_analysis9_1.R,week10.R,context_related,0.7764,0.9357,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9357 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F024,F026,time_series_analysis9_1.R,week10_cheating.R,context_related,0.7761,0.9352,1.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.9352 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더
+F025,F026,week10.R,week10_cheating.R,context_related,0.9261,0.9852,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9852 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F025,F012,week10.R,time_series_analysis10_1.R,context_related,0.877,0.9617,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9617 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F025,F048,week10.R,week9_cheating.R,context_related,0.8002,0.942,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9420 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F025,F031,week10.R,week13_cheating.R,context_related,0.7927,0.9295,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9295 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F025,F030,week10.R,week13.R,context_related,0.7917,0.9278,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9278 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F026,F025,week10_cheating.R,week10.R,context_related,0.9261,0.9852,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9852 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F026,F012,week10_cheating.R,time_series_analysis10_1.R,context_related,0.8831,0.9718,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9718 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F026,F048,week10_cheating.R,week9_cheating.R,context_related,0.8053,0.9504,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9504 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F026,F031,week10_cheating.R,week13_cheating.R,context_related,0.7962,0.9353,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9353 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F026,F016,week10_cheating.R,time_series_analysis14_1.R,context_related,0.791,0.9267,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9267 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F027,F013,week11_cheating.R,time_series_analysis11_1.R,context_related,0.8906,0.9594,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9594 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F027,F030,week11_cheating.R,week13.R,context_related,0.7989,0.9148,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9148 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F027,F028,week11_cheating.R,week12.R,context_related,0.7954,0.909,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9090 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F027,F032,week11_cheating.R,week14_apple_forecast_analysis_2026.R,context_related,0.7942,0.907,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9070 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F027,F026,week11_cheating.R,week10_cheating.R,context_related,0.7906,0.926,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9260 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F028,F029,week12.R,week12_cheating.R,context_related,0.9477,0.9961,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9961 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F028,F014,week12.R,time_series_analysis12_1.R,context_related,0.9045,0.9825,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9825 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F028,F030,week12.R,week13.R,context_related,0.8279,0.9631,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9631 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F028,F031,week12.R,week13_cheating.R,context_related,0.8264,0.9607,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9607 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F028,F034,week12.R,week14_apple_forecast_analysis_2026_cheating.R,context_related,0.8003,0.9171,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9171 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F029,F028,week12_cheating.R,week12.R,context_related,0.9477,0.9961,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9961 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F029,F014,week12_cheating.R,time_series_analysis12_1.R,context_related,0.9029,0.9798,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9798 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F029,F031,week12_cheating.R,week13_cheating.R,context_related,0.8304,0.9673,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9673 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F029,F030,week12_cheating.R,week13.R,context_related,0.8266,0.961,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9610 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F029,F034,week12_cheating.R,week14_apple_forecast_analysis_2026_cheating.R,context_related,0.8054,0.9257,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9257 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F030,F031,week13.R,week13_cheating.R,context_related,0.9462,0.9937,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9937 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F030,F015,week13.R,time_series_analysis13_1.R,context_related,0.8834,0.9724,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9724 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F030,F028,week13.R,week12.R,context_related,0.8279,0.9631,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9631 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F030,F029,week13.R,week12_cheating.R,context_related,0.8266,0.961,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9610 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F030,F032,week13.R,week14_apple_forecast_analysis_2026.R,context_related,0.8126,0.9377,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9377 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F031,F030,week13_cheating.R,week13.R,context_related,0.9462,0.9937,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9937 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F031,F015,week13_cheating.R,time_series_analysis13_1.R,context_related,0.8816,0.9693,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9693 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F031,F029,week13_cheating.R,week12_cheating.R,context_related,0.8304,0.9673,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9673 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F031,F028,week13_cheating.R,week12.R,context_related,0.8264,0.9607,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9607 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F031,F034,week13_cheating.R,week14_apple_forecast_analysis_2026_cheating.R,context_related,0.8177,0.9462,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9462 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F032,F034,week14_apple_forecast_analysis_2026.R,week14_apple_forecast_analysis_2026_cheating.R,context_related,0.9437,0.9895,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9895 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F032,F033,week14_apple_forecast_analysis_2026.R,week14_apple_forecast_analysis_2026_1.R,context_related,0.9343,0.9989,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9989 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F032,F016,week14_apple_forecast_analysis_2026.R,time_series_analysis14_1.R,context_related,0.8981,0.9386,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9386 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F032,F030,week14_apple_forecast_analysis_2026.R,week13.R,context_related,0.8126,0.9377,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9377 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F032,F031,week14_apple_forecast_analysis_2026.R,week13_cheating.R,context_related,0.8124,0.9373,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9373 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F033,F032,week14_apple_forecast_analysis_2026_1.R,week14_apple_forecast_analysis_2026.R,context_related,0.9343,0.9989,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9989 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F033,F034,week14_apple_forecast_analysis_2026_1.R,week14_apple_forecast_analysis_2026_cheating.R,context_related,0.9291,0.9902,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9902 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F033,F016,week14_apple_forecast_analysis_2026_1.R,time_series_analysis14_1.R,context_related,0.9142,0.9403,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9403 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F033,F048,week14_apple_forecast_analysis_2026_1.R,week9_cheating.R,context_related,0.8044,0.924,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9240 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F033,F030,week14_apple_forecast_analysis_2026_1.R,week13.R,context_related,0.7992,0.9403,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9403 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F034,F032,week14_apple_forecast_analysis_2026_cheating.R,week14_apple_forecast_analysis_2026.R,context_related,0.9437,0.9895,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9895 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F034,F033,week14_apple_forecast_analysis_2026_cheating.R,week14_apple_forecast_analysis_2026_1.R,context_related,0.9291,0.9902,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9902 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F034,F016,week14_apple_forecast_analysis_2026_cheating.R,time_series_analysis14_1.R,context_related,0.8972,0.9371,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9371 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F034,F031,week14_apple_forecast_analysis_2026_cheating.R,week13_cheating.R,context_related,0.8177,0.9462,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9462 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F034,F030,week14_apple_forecast_analysis_2026_cheating.R,week13.R,context_related,0.812,0.9367,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9367 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F035,F036,week2.R,week2_cheating.R,context_related,0.9008,0.9763,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9763 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F035,F018,week2.R,time_series_analysis2_2.R,context_related,0.8991,0.9735,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9735 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F035,F017,week2.R,time_series_analysis2_1.R,context_related,0.8924,0.9623,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9623 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F035,F019,week2.R,time_series_analysis3_1.R,context_related,0.8057,0.9511,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9511 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F035,F037,week2.R,week3.R,context_related,0.8022,0.9453,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9453 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F036,F035,week2_cheating.R,week2.R,context_related,0.9008,0.9763,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9763 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F036,F018,week2_cheating.R,time_series_analysis2_2.R,context_related,0.8814,0.9691,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9691 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F036,F017,week2_cheating.R,time_series_analysis2_1.R,context_related,0.8655,0.9425,1.0,0.5,0.0,1.0,1.0,False,E5 유사도 0.9425 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F036,F038,week2_cheating.R,week3_cheating.R,context_related,0.8275,0.9625,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9625 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F036,F045,week2_cheating.R,week6_cheating.R,context_related,0.8196,0.9494,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9494 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F037,F019,week3.R,time_series_analysis3_1.R,context_related,0.9417,0.9861,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9861 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F037,F038,week3.R,week3_cheating.R,context_related,0.8979,0.9715,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9715 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F037,F035,week3.R,week2.R,context_related,0.8022,0.9453,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9453 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F037,F039,week3.R,week4.R,context_related,0.7984,0.939,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9390 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F037,F022,week3.R,time_series_analysis6_1.R,context_related,0.7855,0.9176,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9176 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F038,F019,week3_cheating.R,time_series_analysis3_1.R,context_related,0.8996,0.9744,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9744 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F038,F037,week3_cheating.R,week3.R,context_related,0.8979,0.9715,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9715 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F038,F036,week3_cheating.R,week2_cheating.R,context_related,0.8275,0.9625,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9625 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F038,F045,week3_cheating.R,week6_cheating.R,context_related,0.8179,0.9465,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9465 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F038,F047,week3_cheating.R,week7_cheating.R,context_related,0.8138,0.9396,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9396 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F039,F040,week4.R,week4_cheating.R,context_related,0.9315,0.9691,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9691 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F039,F020,week4.R,time_series_analysis4_1.R,context_related,0.8959,0.9681,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9681 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F039,F041,week4.R,week5 (1).R,context_related,0.8074,0.9539,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9539 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F039,F043,week4.R,week5_cheating.R,context_related,0.8016,0.9443,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9443 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F039,F042,week4.R,week5.R,context_related,0.8003,0.9421,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9421 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F040,F039,week4_cheating.R,week4.R,context_related,0.9315,0.9691,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9691 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F040,F020,week4_cheating.R,time_series_analysis4_1.R,context_related,0.8987,0.9728,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9728 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F040,F041,week4_cheating.R,week5 (1).R,context_related,0.8206,0.951,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9510 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F040,F043,week4_cheating.R,week5_cheating.R,context_related,0.819,0.9484,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9484 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F040,F042,week4_cheating.R,week5.R,context_related,0.8135,0.9391,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9391 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F041,F042,week5 (1).R,week5.R,context_related,0.9387,0.9811,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9811 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F041,F043,week5 (1).R,week5_cheating.R,context_related,0.9373,0.9789,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9789 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F041,F021,week5 (1).R,time_series_analysis5_1.R,context_related,0.9045,0.9824,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9824 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F041,F046,week5 (1).R,week7.R,context_related,0.8234,0.9556,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9556 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F041,F040,week5 (1).R,week4_cheating.R,context_related,0.8206,0.951,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9510 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F042,F041,week5.R,week5 (1).R,context_related,0.9387,0.9811,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9811 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F042,F043,week5.R,week5_cheating.R,context_related,0.9371,0.9785,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9785 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F042,F021,week5.R,time_series_analysis5_1.R,context_related,0.9001,0.9752,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9752 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F042,F046,week5.R,week7.R,context_related,0.8213,0.9522,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9522 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F042,F047,week5.R,week7_cheating.R,context_related,0.8189,0.9481,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9481 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F043,F041,week5_cheating.R,week5 (1).R,context_related,0.9373,0.9789,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9789 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F043,F042,week5_cheating.R,week5.R,context_related,0.9371,0.9785,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9785 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F043,F021,week5_cheating.R,time_series_analysis5_1.R,context_related,0.8993,0.9738,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9738 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F043,F047,week5_cheating.R,week7_cheating.R,context_related,0.8228,0.9547,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9547 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F043,F046,week5_cheating.R,week7.R,context_related,0.8203,0.9505,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9505 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F044,F045,week6.R,week6_cheating.R,context_related,0.9192,0.9736,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9736 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F044,F022,week6.R,time_series_analysis6_1.R,context_related,0.8925,0.9624,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9624 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F044,F046,week6.R,week7.R,context_related,0.8205,0.9508,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9508 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F044,F043,week6.R,week5_cheating.R,context_related,0.8171,0.9451,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9451 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F044,F041,week6.R,week5 (1).R,context_related,0.8164,0.9441,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9441 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F045,F044,week6_cheating.R,week6.R,context_related,0.9192,0.9736,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9736 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F045,F022,week6_cheating.R,time_series_analysis6_1.R,context_related,0.8966,0.9693,1.0,0.5,0.3,1.0,1.0,False,E5 유사도 0.9693 / 동일 프로젝트 / 동일 파일 역할 / 동일 폴더 / 동일 주차 파일
+F045,F047,week6_cheating.R,week7_cheating.R,context_related,0.8234,0.9557,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9557 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F045,F036,week6_cheating.R,week2_cheating.R,context_related,0.8196,0.9494,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9494 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F045,F038,week6_cheating.R,week3_cheating.R,context_related,0.8179,0.9465,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9465 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F046,F047,week7.R,week7_cheating.R,context_related,0.9448,0.9914,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9914 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F046,F023,week7.R,time_series_analysis7_1.R,context_related,0.9211,0.9768,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9768 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F046,F041,week7.R,week5 (1).R,context_related,0.8234,0.9556,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9556 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F046,F042,week7.R,week5.R,context_related,0.8213,0.9522,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9522 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F046,F044,week7.R,week6.R,context_related,0.8205,0.9508,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9508 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F047,F046,week7_cheating.R,week7.R,context_related,0.9448,0.9914,1.0,0.5,1.0,1.0,1.0,False,E5 유사도 0.9914 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F047,F023,week7_cheating.R,time_series_analysis7_1.R,context_related,0.9165,0.9692,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9692 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F047,F045,week7_cheating.R,week6_cheating.R,context_related,0.8234,0.9557,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9557 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F047,F043,week7_cheating.R,week5_cheating.R,context_related,0.8228,0.9547,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9547 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F047,F041,week7_cheating.R,week5 (1).R,context_related,0.8205,0.9508,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9508 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F048,F024,week9_cheating.R,time_series_analysis9_1.R,context_related,0.9253,0.9838,1.0,0.5,0.7,1.0,1.0,False,E5 유사도 0.9838 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더 / 동일 주차 파일
+F048,F016,week9_cheating.R,time_series_analysis14_1.R,context_related,0.8124,0.9374,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9374 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F048,F026,week9_cheating.R,week10_cheating.R,context_related,0.8053,0.9504,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9504 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F048,F033,week9_cheating.R,week14_apple_forecast_analysis_2026_1.R,context_related,0.8044,0.924,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9240 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F048,F025,week9_cheating.R,week10.R,context_related,0.8002,0.942,1.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.9420 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F049,F050,message_hello (1).py,pigpio.py,context_related,0.8236,0.9559,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9559 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F049,F056,message_hello (1).py,voice_test.py,context_related,0.814,0.94,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9400 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F049,F054,message_hello (1).py,voice_alert.py,context_related,0.8134,0.939,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9390 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F049,F051,message_hello (1).py,python3_voice_alert.py,context_related,0.813,0.9384,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9384 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F049,F057,message_hello (1).py,YOLO(test) (1).ipynb,context_related,0.8071,0.9285,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9285 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F050,F049,pigpio.py,message_hello (1).py,context_related,0.8236,0.9559,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9559 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F050,F056,pigpio.py,voice_test.py,context_related,0.816,0.9434,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9434 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F050,F065,pigpio.py,yolo_stream_front.py,context_related,0.8134,0.939,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9390 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F050,F052,pigpio.py,rpi_gpio.py,context_related,0.8126,0.9377,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9377 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F050,F064,pigpio.py,yolo_stream.py,context_related,0.8126,0.9377,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9377 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F051,F054,python3_voice_alert.py,voice_alert.py,context_related,0.8194,0.9491,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9491 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F051,F055,python3_voice_alert.py,voice_alert1.py,context_related,0.8139,0.9399,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9399 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F051,F056,python3_voice_alert.py,voice_test.py,context_related,0.8133,0.9389,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9389 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F051,F049,python3_voice_alert.py,message_hello (1).py,context_related,0.813,0.9384,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9384 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F051,F050,python3_voice_alert.py,pigpio.py,context_related,0.8108,0.9347,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9347 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F052,F064,rpi_gpio.py,yolo_stream.py,context_related,0.8164,0.944,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9440 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F052,F050,rpi_gpio.py,pigpio.py,context_related,0.8126,0.9377,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9377 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F052,F049,rpi_gpio.py,message_hello (1).py,context_related,0.8045,0.9242,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9242 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F052,F065,rpi_gpio.py,yolo_stream_front.py,context_related,0.8043,0.9238,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9238 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F052,F053,rpi_gpio.py,stream_yolo.py,context_related,0.8028,0.9214,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9214 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F053,F064,stream_yolo.py,yolo_stream.py,context_related,0.8158,0.943,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9430 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F053,F063,stream_yolo.py,yolo_open.py,context_related,0.8102,0.9337,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9337 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F053,F065,stream_yolo.py,yolo_stream_front.py,context_related,0.8042,0.9236,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9236 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F053,F052,stream_yolo.py,rpi_gpio.py,context_related,0.8028,0.9214,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9214 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F053,F050,stream_yolo.py,pigpio.py,context_related,0.8019,0.9198,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9198 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F054,F055,voice_alert.py,voice_alert1.py,context_related,0.8342,0.9736,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9736 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F054,F051,voice_alert.py,python3_voice_alert.py,context_related,0.8194,0.9491,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9491 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F054,F056,voice_alert.py,voice_test.py,context_related,0.8191,0.9484,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9484 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F054,F049,voice_alert.py,message_hello (1).py,context_related,0.8134,0.939,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9390 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F054,F050,voice_alert.py,pigpio.py,context_related,0.8108,0.9346,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9346 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F055,F054,voice_alert1.py,voice_alert.py,context_related,0.8342,0.9736,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9736 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F055,F056,voice_alert1.py,voice_test.py,context_related,0.8204,0.9507,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9507 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F055,F051,voice_alert1.py,python3_voice_alert.py,context_related,0.8139,0.9399,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9399 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F055,F050,voice_alert1.py,pigpio.py,context_related,0.8065,0.9276,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9276 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F055,F049,voice_alert1.py,message_hello (1).py,context_related,0.8044,0.924,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9240 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F056,F055,voice_test.py,voice_alert1.py,context_related,0.8204,0.9507,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9507 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F056,F054,voice_test.py,voice_alert.py,context_related,0.8191,0.9484,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9484 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F056,F050,voice_test.py,pigpio.py,context_related,0.816,0.9434,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9434 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F056,F049,voice_test.py,message_hello (1).py,context_related,0.814,0.94,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9400 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F056,F051,voice_test.py,python3_voice_alert.py,context_related,0.8133,0.9389,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9389 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F057,F058,YOLO(test) (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb,context_related,0.8325,0.9708,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9708 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F057,F059,YOLO(test) (1).ipynb,YOLO(test)_picture.ipynb,context_related,0.8246,0.9577,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9577 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F057,F062,YOLO(test) (1).ipynb,yolo_learning5 (1).ipynb,context_related,0.8227,0.9545,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9545 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F057,F061,YOLO(test) (1).ipynb,yolo_learning2 (1).ipynb,context_related,0.8195,0.9492,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9492 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F057,F060,YOLO(test) (1).ipynb,yolo_learn.ipynb,context_related,0.8177,0.9462,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9462 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F058,F057,YOLO(test)_picture(light_ver) (1).ipynb,YOLO(test) (1).ipynb,context_related,0.8325,0.9708,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9708 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F058,F059,YOLO(test)_picture(light_ver) (1).ipynb,YOLO(test)_picture.ipynb,context_related,0.8306,0.9677,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9677 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F058,F060,YOLO(test)_picture(light_ver) (1).ipynb,yolo_learn.ipynb,context_related,0.8193,0.9488,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9488 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F058,F062,YOLO(test)_picture(light_ver) (1).ipynb,yolo_learning5 (1).ipynb,context_related,0.8183,0.9472,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9472 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F058,F061,YOLO(test)_picture(light_ver) (1).ipynb,yolo_learning2 (1).ipynb,context_related,0.8159,0.9432,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9432 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F059,F058,YOLO(test)_picture.ipynb,YOLO(test)_picture(light_ver) (1).ipynb,context_related,0.8306,0.9677,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9677 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F059,F057,YOLO(test)_picture.ipynb,YOLO(test) (1).ipynb,context_related,0.8246,0.9577,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9577 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F059,F061,YOLO(test)_picture.ipynb,yolo_learning2 (1).ipynb,context_related,0.822,0.9533,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9533 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F059,F060,YOLO(test)_picture.ipynb,yolo_learn.ipynb,context_related,0.8213,0.9521,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9521 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F059,F062,YOLO(test)_picture.ipynb,yolo_learning5 (1).ipynb,context_related,0.8179,0.9465,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9465 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F060,F062,yolo_learn.ipynb,yolo_learning5 (1).ipynb,context_related,0.8311,0.9685,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9685 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F060,F061,yolo_learn.ipynb,yolo_learning2 (1).ipynb,context_related,0.8297,0.9662,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9662 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F060,F059,yolo_learn.ipynb,YOLO(test)_picture.ipynb,context_related,0.8213,0.9521,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9521 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F060,F058,yolo_learn.ipynb,YOLO(test)_picture(light_ver) (1).ipynb,context_related,0.8193,0.9488,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9488 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F060,F057,yolo_learn.ipynb,YOLO(test) (1).ipynb,context_related,0.8177,0.9462,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9462 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F061,F062,yolo_learning2 (1).ipynb,yolo_learning5 (1).ipynb,context_related,0.8319,0.9698,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9698 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F061,F060,yolo_learning2 (1).ipynb,yolo_learn.ipynb,context_related,0.8297,0.9662,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9662 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F061,F059,yolo_learning2 (1).ipynb,YOLO(test)_picture.ipynb,context_related,0.822,0.9533,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9533 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F061,F057,yolo_learning2 (1).ipynb,YOLO(test) (1).ipynb,context_related,0.8195,0.9492,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9492 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F061,F058,yolo_learning2 (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb,context_related,0.8159,0.9432,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9432 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F062,F061,yolo_learning5 (1).ipynb,yolo_learning2 (1).ipynb,context_related,0.8319,0.9698,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9698 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F062,F060,yolo_learning5 (1).ipynb,yolo_learn.ipynb,context_related,0.8311,0.9685,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9685 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F062,F057,yolo_learning5 (1).ipynb,YOLO(test) (1).ipynb,context_related,0.8227,0.9545,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9545 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F062,F058,yolo_learning5 (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb,context_related,0.8183,0.9472,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9472 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F062,F059,yolo_learning5 (1).ipynb,YOLO(test)_picture.ipynb,context_related,0.8179,0.9465,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9465 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F063,F053,yolo_open.py,stream_yolo.py,context_related,0.8102,0.9337,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9337 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F063,F064,yolo_open.py,yolo_stream.py,context_related,0.8036,0.9227,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9227 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F063,F065,yolo_open.py,yolo_stream_front.py,context_related,0.7986,0.9143,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9143 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F063,F050,yolo_open.py,pigpio.py,context_related,0.7932,0.9054,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9054 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F063,F061,yolo_open.py,yolo_learning2 (1).ipynb,context_related,0.7916,0.9026,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9026 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F064,F065,yolo_stream.py,yolo_stream_front.py,context_related,0.8275,0.9625,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9625 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F064,F052,yolo_stream.py,rpi_gpio.py,context_related,0.8164,0.944,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9440 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F064,F053,yolo_stream.py,stream_yolo.py,context_related,0.8158,0.943,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9430 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F064,F050,yolo_stream.py,pigpio.py,context_related,0.8126,0.9377,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9377 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F064,F059,yolo_stream.py,YOLO(test)_picture.ipynb,context_related,0.8044,0.9241,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9241 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F065,F064,yolo_stream_front.py,yolo_stream.py,context_related,0.8275,0.9625,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9625 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F065,F050,yolo_stream_front.py,pigpio.py,context_related,0.8134,0.939,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9390 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F065,F054,yolo_stream_front.py,voice_alert.py,context_related,0.8094,0.9324,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9324 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F065,F059,yolo_stream_front.py,YOLO(test)_picture.ipynb,context_related,0.808,0.9301,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9301 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F065,F061,yolo_stream_front.py,yolo_learning2 (1).ipynb,context_related,0.8076,0.9293,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9293 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F066,F073,19세기_후반_불평등조약체제의_성립_과정.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8019,0.9198,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9198 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F066,F067,19세기_후반_불평등조약체제의_성립_과정.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8016,0.9194,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9194 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F066,F069,19세기_후반_불평등조약체제의_성립_과정.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.8014,0.9191,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9191 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F066,F077,19세기_후반_불평등조약체제의_성립_과정.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,context_related,0.8009,0.9181,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9181 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F066,F070,19세기_후반_불평등조약체제의_성립_과정.pdf,근대 국민국가와 왕권.pdf,context_related,0.8006,0.9176,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9176 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F067,F068,4주차_강화도조약과 개항.pdf,강화도조약과 개항.pdf,context_related,0.8348,0.9747,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9747 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F067,F073,4주차_강화도조약과 개항.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8262,0.9603,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9603 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F067,F069,4주차_강화도조약과 개항.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.8247,0.9578,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9578 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F067,F070,4주차_강화도조약과 개항.pdf,근대 국민국가와 왕권.pdf,context_related,0.8228,0.9546,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9546 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F067,F076,4주차_강화도조약과 개항.pdf,서세동점 동아시아와 서양 열강2.pdf,context_related,0.8197,0.9496,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9496 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F068,F067,강화도조약과 개항.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8348,0.9747,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9747 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F068,F073,강화도조약과 개항.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.833,0.9717,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9717 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F068,F078,강화도조약과 개항.pdf,일본의 개항과 미국.pdf,context_related,0.8199,0.9498,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9498 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F068,F069,강화도조약과 개항.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.8182,0.947,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9470 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F068,F083,강화도조약과 개항.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8172,0.9453,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9453 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F069,F067,개항기 조선 서양과 만나다.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8247,0.9578,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9578 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F069,F077,개항기 조선 서양과 만나다.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,context_related,0.8233,0.9554,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9554 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F069,F076,개항기 조선 서양과 만나다.pdf,서세동점 동아시아와 서양 열강2.pdf,context_related,0.821,0.9516,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9516 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F069,F073,개항기 조선 서양과 만나다.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8208,0.9513,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9513 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F069,F068,개항기 조선 서양과 만나다.pdf,강화도조약과 개항.pdf,context_related,0.8182,0.947,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9470 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F070,F071,근대 국민국가와 왕권.pdf,근대 국민국가와 왕권_sum.pdf,context_related,0.8263,0.9605,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9605 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F070,F067,근대 국민국가와 왕권.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8228,0.9546,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9546 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F070,F082,근대 국민국가와 왕권.pdf,청일전쟁과 갑오개혁_ppt.pdf,context_related,0.8198,0.9497,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9497 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F070,F083,근대 국민국가와 왕권.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8176,0.946,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9460 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F070,F087,근대 국민국가와 왕권.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.817,0.9451,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9451 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F071,F070,근대 국민국가와 왕권_sum.pdf,근대 국민국가와 왕권.pdf,context_related,0.8263,0.9605,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9605 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F071,F079,근대 국민국가와 왕권_sum.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8199,0.9499,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9499 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F071,F087,근대 국민국가와 왕권_sum.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.816,0.9434,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9434 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F071,F083,근대 국민국가와 왕권_sum.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8139,0.9398,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9398 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F071,F080,근대 국민국가와 왕권_sum.pdf,읽기자료_갑오개혁의 한계.pdf,context_related,0.8134,0.939,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9390 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F072,F083,근대사_연표_19세기 후반.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8095,0.9325,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9325 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F072,F067,근대사_연표_19세기 후반.pdf,4주차_강화도조약과 개항.pdf,context_related,0.803,0.9217,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9217 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F072,F079,근대사_연표_19세기 후반.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8027,0.9211,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9211 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F072,F081,근대사_연표_19세기 후반.pdf,임오군란과 갑신정변.pdf,context_related,0.8019,0.9199,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9199 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F072,F082,근대사_연표_19세기 후반.pdf,청일전쟁과 갑오개혁_ppt.pdf,context_related,0.8008,0.918,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9180 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F073,F078,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,일본의 개항과 미국.pdf,context_related,0.8333,0.9722,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9722 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F073,F068,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,강화도조약과 개항.pdf,context_related,0.833,0.9717,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9717 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F073,F077,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,context_related,0.8266,0.961,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9610 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F073,F067,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8262,0.9603,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9603 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F073,F074,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,서세동점 동아시아와 서양 열강 1.pdf,context_related,0.8243,0.9572,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9572 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F074,F075,서세동점 동아시아와 서양 열강 1.pdf,서세동점 동아시아와 서양 열강1_ppt.pdf,context_related,0.8319,0.9699,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9699 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F074,F076,서세동점 동아시아와 서양 열강 1.pdf,서세동점 동아시아와 서양 열강2.pdf,context_related,0.8265,0.9608,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9608 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F074,F077,서세동점 동아시아와 서양 열강 1.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,context_related,0.8256,0.9593,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9593 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F074,F073,서세동점 동아시아와 서양 열강 1.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8243,0.9572,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9572 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F074,F069,서세동점 동아시아와 서양 열강 1.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.8161,0.9434,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9434 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F075,F074,서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강 1.pdf,context_related,0.8319,0.9699,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9699 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F075,F077,서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,context_related,0.8286,0.9643,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9643 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F075,F076,서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강2.pdf,context_related,0.8276,0.9627,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9627 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F075,F069,서세동점 동아시아와 서양 열강1_ppt.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.8173,0.9455,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9455 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F075,F073,서세동점 동아시아와 서양 열강1_ppt.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8139,0.9398,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9398 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F076,F077,서세동점 동아시아와 서양 열강2.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,context_related,0.8327,0.9711,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9711 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F076,F075,서세동점 동아시아와 서양 열강2.pdf,서세동점 동아시아와 서양 열강1_ppt.pdf,context_related,0.8276,0.9627,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9627 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F076,F074,서세동점 동아시아와 서양 열강2.pdf,서세동점 동아시아와 서양 열강 1.pdf,context_related,0.8265,0.9608,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9608 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F076,F073,서세동점 동아시아와 서양 열강2.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8242,0.9571,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9571 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F076,F069,서세동점 동아시아와 서양 열강2.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.821,0.9516,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9516 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F077,F076,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강2.pdf,context_related,0.8327,0.9711,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9711 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F077,F075,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강1_ppt.pdf,context_related,0.8286,0.9643,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9643 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F077,F073,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8266,0.961,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9610 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F077,F078,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,일본의 개항과 미국.pdf,context_related,0.8259,0.9598,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9598 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F077,F074,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강 1.pdf,context_related,0.8256,0.9593,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9593 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F078,F073,일본의 개항과 미국.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8333,0.9722,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9722 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F078,F077,일본의 개항과 미국.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,context_related,0.8259,0.9598,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9598 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F078,F068,일본의 개항과 미국.pdf,강화도조약과 개항.pdf,context_related,0.8199,0.9498,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9498 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F078,F074,일본의 개항과 미국.pdf,서세동점 동아시아와 서양 열강 1.pdf,context_related,0.816,0.9433,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9433 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F078,F067,일본의 개항과 미국.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8155,0.9424,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9424 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F079,F080,읽기자료_갑오개혁의 전개와 성과.pdf,읽기자료_갑오개혁의 한계.pdf,context_related,0.8353,0.9755,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9755 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F079,F087,읽기자료_갑오개혁의 전개와 성과.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.8297,0.9662,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9662 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F079,F083,읽기자료_갑오개혁의 전개와 성과.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8269,0.9614,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9614 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F079,F081,읽기자료_갑오개혁의 전개와 성과.pdf,임오군란과 갑신정변.pdf,context_related,0.8218,0.953,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9530 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F079,F073,읽기자료_갑오개혁의 전개와 성과.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8206,0.9509,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9509 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F080,F079,읽기자료_갑오개혁의 한계.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8353,0.9755,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9755 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F080,F087,읽기자료_갑오개혁의 한계.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.8218,0.953,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9530 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F080,F083,읽기자료_갑오개혁의 한계.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8215,0.9525,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9525 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F080,F073,읽기자료_갑오개혁의 한계.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8186,0.9477,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9477 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F080,F081,읽기자료_갑오개혁의 한계.pdf,임오군란과 갑신정변.pdf,context_related,0.8149,0.9416,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9416 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F081,F083,임오군란과 갑신정변.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8279,0.9632,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9632 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F081,F079,임오군란과 갑신정변.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8218,0.953,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9530 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F081,F082,임오군란과 갑신정변.pdf,청일전쟁과 갑오개혁_ppt.pdf,context_related,0.8194,0.9491,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9491 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F081,F073,임오군란과 갑신정변.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8175,0.9458,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9458 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F081,F087,임오군란과 갑신정변.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.8162,0.9437,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9437 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F082,F083,청일전쟁과 갑오개혁_ppt.pdf,청일전쟁과 갑오개혁_요약.pdf,context_related,0.8372,0.9787,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9787 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F082,F070,청일전쟁과 갑오개혁_ppt.pdf,근대 국민국가와 왕권.pdf,context_related,0.8198,0.9497,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9497 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F082,F081,청일전쟁과 갑오개혁_ppt.pdf,임오군란과 갑신정변.pdf,context_related,0.8194,0.9491,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9491 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F082,F079,청일전쟁과 갑오개혁_ppt.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8178,0.9464,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9464 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F082,F067,청일전쟁과 갑오개혁_ppt.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8164,0.9439,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9439 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F083,F082,청일전쟁과 갑오개혁_요약.pdf,청일전쟁과 갑오개혁_ppt.pdf,context_related,0.8372,0.9787,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9787 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F083,F081,청일전쟁과 갑오개혁_요약.pdf,임오군란과 갑신정변.pdf,context_related,0.8279,0.9632,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9632 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F083,F079,청일전쟁과 갑오개혁_요약.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8269,0.9614,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9614 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F083,F080,청일전쟁과 갑오개혁_요약.pdf,읽기자료_갑오개혁의 한계.pdf,context_related,0.8215,0.9525,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9525 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F083,F073,청일전쟁과 갑오개혁_요약.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8198,0.9497,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9497 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F084,F070,한국 근현대 인물사 연구방법론.pdf,근대 국민국가와 왕권.pdf,context_related,0.8118,0.9363,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9363 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F084,F087,한국 근현대 인물사 연구방법론.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.8091,0.9319,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9319 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F084,F079,한국 근현대 인물사 연구방법론.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8072,0.9286,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9286 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F084,F067,한국 근현대 인물사 연구방법론.pdf,4주차_강화도조약과 개항.pdf,context_related,0.806,0.9267,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9267 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F084,F069,한국 근현대 인물사 연구방법론.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.8048,0.9246,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9246 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F085,F073,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8149,0.9414,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9414 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F085,F071,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,근대 국민국가와 왕권_sum.pdf,context_related,0.8129,0.9381,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9381 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F085,F080,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,읽기자료_갑오개혁의 한계.pdf,context_related,0.8126,0.9377,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9377 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F085,F079,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8111,0.9352,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9352 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F085,F087,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.8104,0.934,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9340 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F086,F069,한성도시개조사업.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.8163,0.9438,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9438 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F086,F087,한성도시개조사업.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.8131,0.9386,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9386 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F086,F079,한성도시개조사업.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8125,0.9375,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9375 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F086,F073,한성도시개조사업.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8117,0.9362,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9362 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F086,F067,한성도시개조사업.pdf,4주차_강화도조약과 개항.pdf,context_related,0.8092,0.932,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9320 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F087,F079,행정개혁기구의_성공_조건.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8297,0.9662,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9662 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F087,F080,행정개혁기구의_성공_조건.pdf,읽기자료_갑오개혁의 한계.pdf,context_related,0.8218,0.953,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9530 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F087,F073,행정개혁기구의_성공_조건.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8189,0.9482,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9482 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F087,F070,행정개혁기구의_성공_조건.pdf,근대 국민국가와 왕권.pdf,context_related,0.817,0.9451,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9451 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F087,F067,행정개혁기구의_성공_조건.pdf,4주차_강화도조약과 개항.pdf,context_related,0.817,0.945,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9450 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F088,F087,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,행정개혁기구의_성공_조건.pdf,context_related,0.8159,0.9432,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9432 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F088,F079,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,context_related,0.8123,0.9372,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9372 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F088,F073,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,context_related,0.8056,0.9261,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9261 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F088,F080,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,읽기자료_갑오개혁의 한계.pdf,context_related,0.8051,0.9251,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9251 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F088,F085,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,context_related,0.8044,0.924,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9240 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F089,F091,근대 서양 문물의 도입_ppt.pdf,세균설과 근대의 보건_위생_ppt.pdf,context_related,0.8216,0.9526,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9526 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F089,F090,근대 서양 문물의 도입_ppt.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,context_related,0.8171,0.9452,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9452 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F089,F093,근대 서양 문물의 도입_ppt.pdf,해외 인력 송출의 역사와 파독 광부 간호사.pdf,context_related,0.8134,0.9389,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9389 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F089,F092,근대 서양 문물의 도입_ppt.pdf,해방전후의 한국 정치와 사회_제주.pdf,context_related,0.8106,0.9343,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9343 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F089,F069,근대 서양 문물의 도입_ppt.pdf,개항기 조선 서양과 만나다.pdf,context_related,0.7808,0.9679,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9679 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F090,F091,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,세균설과 근대의 보건_위생_ppt.pdf,context_related,0.8197,0.9496,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9496 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F090,F089,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,근대 서양 문물의 도입_ppt.pdf,context_related,0.8171,0.9452,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9452 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F090,F092,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,해방전후의 한국 정치와 사회_제주.pdf,context_related,0.8115,0.9358,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9358 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F090,F093,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,해외 인력 송출의 역사와 파독 광부 간호사.pdf,context_related,0.803,0.9217,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9217 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F090,F096,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,근대의 법과 제도는 어떻게 이식되었는가.pdf,context_related,0.7788,0.9647,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9647 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F091,F089,세균설과 근대의 보건_위생_ppt.pdf,근대 서양 문물의 도입_ppt.pdf,context_related,0.8216,0.9526,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9526 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F091,F090,세균설과 근대의 보건_위생_ppt.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,context_related,0.8197,0.9496,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9496 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F091,F092,세균설과 근대의 보건_위생_ppt.pdf,해방전후의 한국 정치와 사회_제주.pdf,context_related,0.8136,0.9394,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9394 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F091,F093,세균설과 근대의 보건_위생_ppt.pdf,해외 인력 송출의 역사와 파독 광부 간호사.pdf,context_related,0.8117,0.9361,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9361 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F091,F098,세균설과 근대의 보건_위생_ppt.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,context_related,0.7803,0.9671,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9671 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F092,F091,해방전후의 한국 정치와 사회_제주.pdf,세균설과 근대의 보건_위생_ppt.pdf,context_related,0.8136,0.9394,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9394 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F092,F090,해방전후의 한국 정치와 사회_제주.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,context_related,0.8115,0.9358,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9358 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F092,F089,해방전후의 한국 정치와 사회_제주.pdf,근대 서양 문물의 도입_ppt.pdf,context_related,0.8106,0.9343,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9343 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F092,F093,해방전후의 한국 정치와 사회_제주.pdf,해외 인력 송출의 역사와 파독 광부 간호사.pdf,context_related,0.8014,0.919,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9190 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F092,F094,해방전후의 한국 정치와 사회_제주.pdf,4.3history.pdf,context_related,0.7837,0.9729,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9729 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F093,F089,해외 인력 송출의 역사와 파독 광부 간호사.pdf,근대 서양 문물의 도입_ppt.pdf,context_related,0.8134,0.9389,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9389 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F093,F091,해외 인력 송출의 역사와 파독 광부 간호사.pdf,세균설과 근대의 보건_위생_ppt.pdf,context_related,0.8117,0.9361,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9361 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F093,F090,해외 인력 송출의 역사와 파독 광부 간호사.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,context_related,0.803,0.9217,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9217 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F093,F092,해외 인력 송출의 역사와 파독 광부 간호사.pdf,해방전후의 한국 정치와 사회_제주.pdf,context_related,0.8014,0.919,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9190 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F093,F102,해외 인력 송출의 역사와 파독 광부 간호사.pdf,파월기술자의 전쟁경험.pdf,context_related,0.7721,0.9534,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9534 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F094,F101,4.3history.pdf,제주 4·3의 진실과 역사적 의미_박찬식.pdf,context_related,0.8318,0.9697,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9697 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F094,F104,4.3history.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8159,0.9432,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9432 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F094,F105,4.3history.pdf,해방이전 제주의 사회와 경제_양정필.pdf,context_related,0.8157,0.9429,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9429 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F094,F099,4.3history.pdf,유관순의 발굴과 재현.pdf,context_related,0.8115,0.9358,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9358 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F094,F095,4.3history.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.8097,0.9328,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9328 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F095,F104,근대 서양 문물의 도입과 일상생활.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.816,0.9433,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9433 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F095,F100,근대 서양 문물의 도입과 일상생활.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,context_related,0.8113,0.9355,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9355 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F095,F102,근대 서양 문물의 도입과 일상생활.pdf,파월기술자의 전쟁경험.pdf,context_related,0.8111,0.9352,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9352 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F095,F094,근대 서양 문물의 도입과 일상생활.pdf,4.3history.pdf,context_related,0.8097,0.9328,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9328 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F095,F103,근대 서양 문물의 도입과 일상생활.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,context_related,0.809,0.9316,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9316 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F096,F095,근대의 법과 제도는 어떻게 이식되었는가.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.7976,0.9126,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9126 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F096,F094,근대의 법과 제도는 어떻게 이식되었는가.pdf,4.3history.pdf,context_related,0.7973,0.9122,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9122 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F096,F098,근대의 법과 제도는 어떻게 이식되었는가.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,context_related,0.7966,0.911,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9110 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F096,F097,근대의 법과 제도는 어떻게 이식되었는가.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,context_related,0.7965,0.9108,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9108 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F096,F104,근대의 법과 제도는 어떻게 이식되었는가.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.7928,0.9047,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9047 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F097,F098,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,context_related,0.8223,0.9539,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9539 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F097,F094,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,4.3history.pdf,context_related,0.8073,0.9289,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9289 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F097,F103,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,context_related,0.8065,0.9274,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9274 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F097,F095,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.8054,0.9257,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9257 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F097,F104,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8052,0.9253,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9253 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F098,F097,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,context_related,0.8223,0.9539,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9539 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F098,F095,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.8074,0.9289,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9289 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F098,F104,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8051,0.9251,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9251 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F098,F100,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,context_related,0.8029,0.9215,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9215 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F098,F094,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,4.3history.pdf,context_related,0.8012,0.9186,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9186 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F099,F100,유관순의 발굴과 재현.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,context_related,0.8292,0.9653,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9653 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F099,F103,유관순의 발굴과 재현.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,context_related,0.8143,0.9405,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9405 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F099,F104,유관순의 발굴과 재현.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8137,0.9395,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9395 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F099,F094,유관순의 발굴과 재현.pdf,4.3history.pdf,context_related,0.8115,0.9358,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9358 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F099,F095,유관순의 발굴과 재현.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.8085,0.9308,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9308 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F100,F099,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,유관순의 발굴과 재현.pdf,context_related,0.8292,0.9653,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9653 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F100,F095,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.8113,0.9355,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9355 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F100,F104,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8092,0.932,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9320 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F100,F103,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,context_related,0.8077,0.9296,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9296 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F100,F094,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,4.3history.pdf,context_related,0.8069,0.9282,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9282 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F101,F094,제주 4·3의 진실과 역사적 의미_박찬식.pdf,4.3history.pdf,context_related,0.8318,0.9697,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9697 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F101,F105,제주 4·3의 진실과 역사적 의미_박찬식.pdf,해방이전 제주의 사회와 경제_양정필.pdf,context_related,0.8193,0.9489,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9489 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F101,F097,제주 4·3의 진실과 역사적 의미_박찬식.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,context_related,0.8049,0.9248,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9248 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F101,F103,제주 4·3의 진실과 역사적 의미_박찬식.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,context_related,0.8044,0.924,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9240 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F101,F099,제주 4·3의 진실과 역사적 의미_박찬식.pdf,유관순의 발굴과 재현.pdf,context_related,0.8043,0.9239,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9239 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F102,F104,파월기술자의 전쟁경험.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8208,0.9514,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9514 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F102,F095,파월기술자의 전쟁경험.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.8111,0.9352,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9352 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F102,F103,파월기술자의 전쟁경험.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,context_related,0.8056,0.926,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9260 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F102,F094,파월기술자의 전쟁경험.pdf,4.3history.pdf,context_related,0.8054,0.9257,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9257 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F102,F100,파월기술자의 전쟁경험.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,context_related,0.8017,0.9196,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9196 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F103,F104,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8223,0.9538,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9538 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F103,F099,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,유관순의 발굴과 재현.pdf,context_related,0.8143,0.9405,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9405 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F103,F094,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,4.3history.pdf,context_related,0.8092,0.932,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9320 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F103,F095,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.809,0.9316,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9316 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F103,F100,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,context_related,0.8077,0.9296,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9296 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F104,F103,한국현대사와 영화 ‘국제시장＇.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,context_related,0.8223,0.9538,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9538 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F104,F102,한국현대사와 영화 ‘국제시장＇.pdf,파월기술자의 전쟁경험.pdf,context_related,0.8208,0.9514,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9514 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F104,F095,한국현대사와 영화 ‘국제시장＇.pdf,근대 서양 문물의 도입과 일상생활.pdf,context_related,0.816,0.9433,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9433 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F104,F094,한국현대사와 영화 ‘국제시장＇.pdf,4.3history.pdf,context_related,0.8159,0.9432,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9432 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F104,F099,한국현대사와 영화 ‘국제시장＇.pdf,유관순의 발굴과 재현.pdf,context_related,0.8137,0.9395,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9395 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F105,F101,해방이전 제주의 사회와 경제_양정필.pdf,제주 4·3의 진실과 역사적 의미_박찬식.pdf,context_related,0.8193,0.9489,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9489 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F105,F094,해방이전 제주의 사회와 경제_양정필.pdf,4.3history.pdf,context_related,0.8157,0.9429,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9429 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F105,F097,해방이전 제주의 사회와 경제_양정필.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,context_related,0.804,0.9233,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9233 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F105,F104,해방이전 제주의 사회와 경제_양정필.pdf,한국현대사와 영화 ‘국제시장＇.pdf,context_related,0.8034,0.9223,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9223 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F105,F099,해방이전 제주의 사회와 경제_양정필.pdf,유관순의 발굴과 재현.pdf,context_related,0.8033,0.9222,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9222 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F106,F128,README.md,README.md,direct_reference,0.8238,0.9564,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 07-python/README.md / E5 유사도 0.9564 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F106,F118,README.md,README.md,direct_reference,0.8215,0.9525,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 05-relational-databases/README.md / E5 유사도 0.9525 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F106,F122,README.md,README.md,direct_reference,0.819,0.9484,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 06-non-relational/README.md / E5 유사도 0.9484 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F106,F132,README.md,README.md,direct_reference,0.816,0.9433,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 08-data-preparation/README.md / E5 유사도 0.9433 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F106,F147,README.md,README.md,context_related,0.8178,0.9464,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9464 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F107,F147,README.md,README.md,direct_reference,0.8263,0.9605,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 13-meaningful-visualizations/README.md / E5 유사도 0.9605 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F107,F141,README.md,README.md,direct_reference,0.8188,0.9481,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 11-visualization-proportions/README.md / E5 유사도 0.9481 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F107,F135,README.md,README.md,direct_reference,0.8185,0.9475,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 09-visualization-quantities/README.md / E5 유사도 0.9475 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F107,F138,README.md,README.md,direct_reference,0.8171,0.9451,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 10-visualization-distributions/README.md / E5 유사도 0.9451 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F107,F144,README.md,README.md,direct_reference,0.8142,0.9404,1.0,1.0,1.0,0.0,0.0,True,파일 참조: 12-visualization-relationships/README.md / E5 유사도 0.9404 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F108,F135,birds.csv,README.md,direct_reference,0.7204,0.9506,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../data/birds.csv / E5 유사도 0.9506 / 동일 프로젝트 / 작업 시기가 가까움
+F108,F148,birds.csv,notebook.ipynb,direct_reference,0.7184,0.9473,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../../data/birds.csv / E5 유사도 0.9473 / 동일 프로젝트 / 작업 시기가 가까움
+F108,F138,birds.csv,README.md,direct_reference,0.7181,0.9469,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../data/birds.csv / E5 유사도 0.9469 / 동일 프로젝트 / 작업 시기가 가까움
+F108,F149,birds.csv,notebook.ipynb,direct_reference,0.7102,0.9337,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../../data/birds.csv / E5 유사도 0.9337 / 동일 프로젝트 / 작업 시기가 가까움
+F108,F111,birds.csv,form.csv,context_related,0.8422,0.9037,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9037 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F109,F116,diabetes.tsv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8323,0.8871,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8871 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F109,F108,diabetes.tsv,birds.csv,context_related,0.8318,0.8863,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8863 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F109,F112,diabetes.tsv,honey.csv,context_related,0.8267,0.8778,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8778 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F109,F113,diabetes.tsv,mushrooms.csv,context_related,0.8246,0.8743,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8743 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F109,F111,diabetes.tsv,form.csv,context_related,0.8235,0.8725,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8725 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F110,F113,emails.csv,mushrooms.csv,context_related,0.8312,0.8853,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8853 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F110,F108,emails.csv,birds.csv,context_related,0.8297,0.8828,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8828 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F110,F112,emails.csv,honey.csv,context_related,0.8267,0.8779,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8779 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F110,F116,emails.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8193,0.8655,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8655 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F110,F111,emails.csv,form.csv,context_related,0.8181,0.8635,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8635 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F111,F130,form.csv,assignment.md,direct_reference,0.6925,0.9042,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../data/form.csv / E5 유사도 0.9042 / 동일 프로젝트 / 작업 시기가 가까움
+F111,F108,form.csv,birds.csv,context_related,0.8422,0.9037,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9037 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F111,F112,form.csv,honey.csv,context_related,0.8289,0.8815,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8815 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F111,F116,form.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.824,0.8734,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8734 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F111,F109,form.csv,diabetes.tsv,context_related,0.8235,0.8725,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8725 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F112,F144,honey.csv,README.md,direct_reference,0.7152,0.942,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../data/honey.csv / E5 유사도 0.9420 / 동일 프로젝트 / 작업 시기가 가까움
+F112,F151,honey.csv,notebook.ipynb,direct_reference,0.7116,0.9361,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../../data/honey.csv / E5 유사도 0.9361 / 동일 프로젝트 / 작업 시기가 가까움
+F112,F116,honey.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8348,0.8914,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8914 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F112,F111,honey.csv,form.csv,context_related,0.8289,0.8815,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8815 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F112,F115,honey.csv,taxi.csv,context_related,0.8281,0.8802,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8802 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F113,F141,mushrooms.csv,README.md,direct_reference,0.7253,0.9588,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../data/mushrooms.csv / E5 유사도 0.9588 / 동일 프로젝트 / 작업 시기가 가까움
+F113,F150,mushrooms.csv,notebook.ipynb,direct_reference,0.723,0.955,1.0,0.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../../../data/mushrooms.csv / E5 유사도 0.9550 / 동일 프로젝트 / 작업 시기가 가까움
+F113,F110,mushrooms.csv,emails.csv,context_related,0.8312,0.8853,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8853 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F113,F116,mushrooms.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8277,0.8796,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8796 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F113,F109,mushrooms.csv,diabetes.tsv,context_related,0.8246,0.8743,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8743 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F114,F108,SOCR_MLB.tsv,birds.csv,context_related,0.8397,0.8995,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8995 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F114,F116,SOCR_MLB.tsv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8325,0.8875,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8875 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F114,F112,SOCR_MLB.tsv,honey.csv,context_related,0.8267,0.8779,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8779 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F114,F113,SOCR_MLB.tsv,mushrooms.csv,context_related,0.8237,0.8728,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8728 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F114,F111,SOCR_MLB.tsv,form.csv,context_related,0.8175,0.8625,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8625 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F115,F108,taxi.csv,birds.csv,context_related,0.8367,0.8945,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8945 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F115,F116,taxi.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8299,0.8831,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8831 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F115,F112,taxi.csv,honey.csv,context_related,0.8281,0.8802,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8802 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F115,F113,taxi.csv,mushrooms.csv,context_related,0.8234,0.8724,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8724 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F115,F111,taxi.csv,form.csv,context_related,0.8228,0.8713,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8713 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F116,F108,UID_ISO_FIPS_LookUp_Table.csv,birds.csv,context_related,0.8383,0.8971,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8971 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F116,F112,UID_ISO_FIPS_LookUp_Table.csv,honey.csv,context_related,0.8348,0.8914,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8914 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F116,F114,UID_ISO_FIPS_LookUp_Table.csv,SOCR_MLB.tsv,context_related,0.8325,0.8875,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8875 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F116,F109,UID_ISO_FIPS_LookUp_Table.csv,diabetes.tsv,context_related,0.8323,0.8871,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8871 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F116,F115,UID_ISO_FIPS_LookUp_Table.csv,taxi.csv,context_related,0.8299,0.8831,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.8831 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F117,F129,assignment.md,assignment.ipynb,context_related,0.7922,0.9037,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9037 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F117,F149,assignment.md,notebook.ipynb,context_related,0.7816,0.8859,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8859 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F117,F150,assignment.md,notebook.ipynb,context_related,0.78,0.8834,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8834 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F117,F148,assignment.md,notebook.ipynb,context_related,0.7796,0.8826,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8826 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F117,F151,assignment.md,notebook.ipynb,context_related,0.7714,0.869,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8690 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F118,F106,README.md,README.md,direct_reference,0.8215,0.9525,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 05-relational-databases/README.md / E5 유사도 0.9525 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F118,F122,README.md,README.md,direct_reference,0.7732,0.9553,1.0,0.5,1.0,0.0,0.0,True,이 파일을 참조하는 자료: ../05-relational-databases/README.md / E5 유사도 0.9553 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F118,F107,README.md,README.md,context_related,0.8105,0.9342,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9342 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F118,F126,README.md,notebook-papers.ipynb,context_related,0.8033,0.9222,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9222 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F118,F131,README.md,notebook.ipynb,context_related,0.7997,0.9161,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9161 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F119,F151,assignment.md,notebook.ipynb,context_related,0.7825,0.8876,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8876 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F119,F129,assignment.md,assignment.ipynb,context_related,0.7819,0.8865,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8865 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F119,F148,assignment.md,notebook.ipynb,context_related,0.7813,0.8855,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8855 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F119,F149,assignment.md,notebook.ipynb,context_related,0.7808,0.8846,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8846 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F119,F150,assignment.md,notebook.ipynb,context_related,0.7746,0.8743,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8743 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F120,F151,CocaColaCo.xlsx,notebook.ipynb,context_related,0.7842,0.8904,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8904 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F120,F148,CocaColaCo.xlsx,notebook.ipynb,context_related,0.7799,0.8832,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8832 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F120,F127,CocaColaCo.xlsx,notebook.ipynb,context_related,0.7782,0.8803,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8803 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F120,F131,CocaColaCo.xlsx,notebook.ipynb,context_related,0.7764,0.8774,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8774 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F120,F134,CocaColaCo.xlsx,notebook.ipynb,context_related,0.7751,0.8752,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8752 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F121,F123,PersonsData.json,TwitterData.json,context_related,0.7964,0.9107,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9107 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F121,F155,PersonsData.json,letters.json,context_related,0.7837,0.8895,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8895 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F121,F131,PersonsData.json,notebook.ipynb,context_related,0.783,0.8883,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8883 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F121,F154,PersonsData.json,letters.json,context_related,0.7816,0.886,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8860 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F121,F143,PersonsData.json,notebook.ipynb,context_related,0.7742,0.8737,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8737 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F122,F106,README.md,README.md,direct_reference,0.819,0.9484,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 06-non-relational/README.md / E5 유사도 0.9484 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F122,F118,README.md,README.md,direct_reference,0.7732,0.9553,1.0,0.5,1.0,0.0,0.0,True,파일 참조: ../05-relational-databases/README.md / E5 유사도 0.9553 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F122,F107,README.md,README.md,context_related,0.8139,0.9398,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9398 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F122,F131,README.md,notebook.ipynb,context_related,0.806,0.9266,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9266 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F122,F126,README.md,notebook-papers.ipynb,context_related,0.8059,0.9266,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9266 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F123,F121,TwitterData.json,PersonsData.json,context_related,0.7964,0.9107,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9107 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F123,F131,TwitterData.json,notebook.ipynb,context_related,0.7954,0.9091,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9091 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F123,F154,TwitterData.json,letters.json,context_related,0.7924,0.904,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9040 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F123,F155,TwitterData.json,letters.json,context_related,0.792,0.9033,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9033 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F123,F134,TwitterData.json,notebook.ipynb,context_related,0.7909,0.9014,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9014 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F124,F129,assignment.md,assignment.ipynb,context_related,0.7974,0.9124,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9124 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F124,F149,assignment.md,notebook.ipynb,context_related,0.7918,0.9029,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9029 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F124,F151,assignment.md,notebook.ipynb,context_related,0.7892,0.8987,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8987 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F124,F150,assignment.md,notebook.ipynb,context_related,0.7886,0.8976,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8976 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F124,F148,assignment.md,notebook.ipynb,context_related,0.7872,0.8954,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8954 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F125,F128,notebook-covidspread.ipynb,README.md,context_related,0.8639,0.9398,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9398 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F125,F127,notebook-covidspread.ipynb,notebook.ipynb,context_related,0.8512,0.9187,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9187 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F125,F156,notebook-covidspread.ipynb,time_series_covid19_confirmed_global.csv,context_related,0.8238,0.9563,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9563 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F125,F126,notebook-covidspread.ipynb,notebook-papers.ipynb,context_related,0.8226,0.9543,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9543 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F125,F158,notebook-covidspread.ipynb,time_series_covid19_recovered_global.csv,context_related,0.8214,0.9523,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9523 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F126,F128,notebook-papers.ipynb,README.md,context_related,0.8709,0.9515,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9515 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F126,F127,notebook-papers.ipynb,notebook.ipynb,context_related,0.8592,0.932,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9320 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F126,F125,notebook-papers.ipynb,notebook-covidspread.ipynb,context_related,0.8226,0.9543,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9543 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F126,F131,notebook-papers.ipynb,notebook.ipynb,context_related,0.8176,0.946,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9460 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F126,F132,notebook-papers.ipynb,README.md,context_related,0.8095,0.9325,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9325 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F127,F128,notebook.ipynb,README.md,context_related,0.8646,0.9409,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9409 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F127,F126,notebook.ipynb,notebook-papers.ipynb,context_related,0.8592,0.932,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9320 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F127,F125,notebook.ipynb,notebook-covidspread.ipynb,context_related,0.8512,0.9187,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9187 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F127,F132,notebook.ipynb,README.md,context_related,0.8056,0.9259,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9259 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F127,F135,notebook.ipynb,README.md,context_related,0.8004,0.9173,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9173 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F128,F106,README.md,README.md,direct_reference,0.8238,0.9564,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 07-python/README.md / E5 유사도 0.9564 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F128,F126,README.md,notebook-papers.ipynb,context_related,0.8709,0.9515,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9515 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F128,F127,README.md,notebook.ipynb,context_related,0.8646,0.9409,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9409 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F128,F125,README.md,notebook-covidspread.ipynb,context_related,0.8639,0.9398,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9398 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F128,F107,README.md,README.md,context_related,0.8219,0.9531,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9531 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F129,F130,assignment.ipynb,assignment.md,context_related,0.8701,0.9502,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9502 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F129,F149,assignment.ipynb,notebook.ipynb,context_related,0.8082,0.9303,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9303 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F129,F148,assignment.ipynb,notebook.ipynb,context_related,0.8061,0.9268,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9268 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F129,F133,assignment.ipynb,assignment.md,context_related,0.8052,0.9253,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9253 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F129,F136,assignment.ipynb,assignment.md,context_related,0.8034,0.9223,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9223 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F130,F111,assignment.md,form.csv,direct_reference,0.6925,0.9042,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../data/form.csv / E5 유사도 0.9042 / 동일 프로젝트 / 작업 시기가 가까움
+F130,F129,assignment.md,assignment.ipynb,context_related,0.8701,0.9502,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9502 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F130,F149,assignment.md,notebook.ipynb,context_related,0.7885,0.8975,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8975 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F130,F150,assignment.md,notebook.ipynb,context_related,0.7869,0.8949,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8949 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F130,F148,assignment.md,notebook.ipynb,context_related,0.785,0.8917,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8917 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F131,F132,notebook.ipynb,README.md,context_related,0.865,0.9417,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9417 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F131,F126,notebook.ipynb,notebook-papers.ipynb,context_related,0.8176,0.946,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9460 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F131,F128,notebook.ipynb,README.md,context_related,0.8132,0.9386,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9386 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F131,F125,notebook.ipynb,notebook-covidspread.ipynb,context_related,0.8074,0.929,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9290 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F131,F122,notebook.ipynb,README.md,context_related,0.806,0.9266,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9266 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F132,F106,README.md,README.md,direct_reference,0.816,0.9433,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 08-data-preparation/README.md / E5 유사도 0.9433 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F132,F131,README.md,notebook.ipynb,context_related,0.865,0.9417,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9417 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F132,F107,README.md,README.md,context_related,0.8148,0.9413,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9413 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F132,F126,README.md,notebook-papers.ipynb,context_related,0.8095,0.9325,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9325 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F132,F127,README.md,notebook.ipynb,context_related,0.8056,0.9259,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9259 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F133,F129,assignment.md,assignment.ipynb,context_related,0.8052,0.9253,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9253 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F133,F148,assignment.md,notebook.ipynb,context_related,0.7984,0.9139,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9139 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F133,F149,assignment.md,notebook.ipynb,context_related,0.7982,0.9137,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9137 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F133,F151,assignment.md,notebook.ipynb,context_related,0.7964,0.9106,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9106 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F133,F150,assignment.md,notebook.ipynb,context_related,0.7933,0.9056,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9056 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F134,F148,notebook.ipynb,notebook.ipynb,context_related,0.8112,0.9353,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9353 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F134,F149,notebook.ipynb,notebook.ipynb,context_related,0.8038,0.9229,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9229 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F134,F150,notebook.ipynb,notebook.ipynb,context_related,0.7974,0.9124,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9124 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F134,F151,notebook.ipynb,notebook.ipynb,context_related,0.7954,0.9091,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9091 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F134,F123,notebook.ipynb,TwitterData.json,context_related,0.7909,0.9014,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9014 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F135,F107,README.md,README.md,direct_reference,0.8185,0.9475,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 09-visualization-quantities/README.md / E5 유사도 0.9475 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F135,F108,README.md,birds.csv,direct_reference,0.7204,0.9506,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../data/birds.csv / E5 유사도 0.9506 / 동일 프로젝트 / 작업 시기가 가까움
+F135,F126,README.md,notebook-papers.ipynb,context_related,0.8023,0.9204,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9204 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F135,F106,README.md,README.md,context_related,0.8019,0.9199,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9199 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F135,F146,README.md,correlation-analysis.ipynb,context_related,0.8006,0.9176,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9176 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F136,F149,assignment.md,notebook.ipynb,context_related,0.8059,0.9264,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9264 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F136,F129,assignment.md,assignment.ipynb,context_related,0.8034,0.9223,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9223 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F136,F150,assignment.md,notebook.ipynb,context_related,0.793,0.905,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9050 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F136,F148,assignment.md,notebook.ipynb,context_related,0.792,0.9034,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9034 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F136,F151,assignment.md,notebook.ipynb,context_related,0.7889,0.8982,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8982 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F137,F148,notebook.ipynb,notebook.ipynb,context_related,0.8082,0.9304,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9304 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F137,F149,notebook.ipynb,notebook.ipynb,context_related,0.8004,0.9173,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9173 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F137,F150,notebook.ipynb,notebook.ipynb,context_related,0.7967,0.9111,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9111 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F137,F134,notebook.ipynb,notebook.ipynb,context_related,0.7896,0.9826,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9826 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F137,F151,notebook.ipynb,notebook.ipynb,context_related,0.7893,0.8988,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8988 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F138,F107,README.md,README.md,direct_reference,0.8171,0.9451,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 10-visualization-distributions/README.md / E5 유사도 0.9451 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F138,F108,README.md,birds.csv,direct_reference,0.7181,0.9469,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../data/birds.csv / E5 유사도 0.9469 / 동일 프로젝트 / 작업 시기가 가까움
+F138,F146,README.md,correlation-analysis.ipynb,context_related,0.8016,0.9193,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9193 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F138,F126,README.md,notebook-papers.ipynb,context_related,0.8,0.9166,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9166 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F138,F131,README.md,notebook.ipynb,context_related,0.7992,0.9154,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9154 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F139,F129,assignment.md,assignment.ipynb,context_related,0.7951,0.9085,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9085 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F139,F150,assignment.md,notebook.ipynb,context_related,0.7941,0.9068,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9068 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F139,F151,assignment.md,notebook.ipynb,context_related,0.7818,0.8863,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8863 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F139,F149,assignment.md,notebook.ipynb,context_related,0.778,0.8799,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8799 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F139,F148,assignment.md,notebook.ipynb,context_related,0.7764,0.8773,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8773 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F140,F150,notebook.ipynb,notebook.ipynb,context_related,0.8136,0.9393,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9393 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F140,F149,notebook.ipynb,notebook.ipynb,context_related,0.7939,0.9064,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9064 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F140,F148,notebook.ipynb,notebook.ipynb,context_related,0.7898,0.8996,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8996 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F140,F151,notebook.ipynb,notebook.ipynb,context_related,0.7879,0.8966,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8966 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F140,F123,notebook.ipynb,TwitterData.json,context_related,0.7855,0.8925,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8925 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F141,F107,README.md,README.md,direct_reference,0.8188,0.9481,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 11-visualization-proportions/README.md / E5 유사도 0.9481 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F141,F113,README.md,mushrooms.csv,direct_reference,0.7253,0.9588,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../data/mushrooms.csv / E5 유사도 0.9588 / 동일 프로젝트 / 작업 시기가 가까움
+F141,F126,README.md,notebook-papers.ipynb,context_related,0.8093,0.9322,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9322 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F141,F106,README.md,README.md,context_related,0.8025,0.9208,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9208 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F141,F146,README.md,correlation-analysis.ipynb,context_related,0.8004,0.9173,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9173 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F142,F129,assignment.md,assignment.ipynb,context_related,0.8007,0.9178,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9178 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F142,F151,assignment.md,notebook.ipynb,context_related,0.8004,0.9173,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9173 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F142,F150,assignment.md,notebook.ipynb,context_related,0.7953,0.9089,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9089 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F142,F149,assignment.md,notebook.ipynb,context_related,0.7911,0.9018,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9018 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F142,F148,assignment.md,notebook.ipynb,context_related,0.7902,0.9003,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9003 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F143,F151,notebook.ipynb,notebook.ipynb,context_related,0.8017,0.9195,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9195 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F143,F150,notebook.ipynb,notebook.ipynb,context_related,0.797,0.9117,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9117 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F143,F149,notebook.ipynb,notebook.ipynb,context_related,0.7922,0.9037,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9037 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F143,F148,notebook.ipynb,notebook.ipynb,context_related,0.7888,0.8981,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8981 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F143,F123,notebook.ipynb,TwitterData.json,context_related,0.7887,0.8979,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8979 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F144,F107,README.md,README.md,direct_reference,0.8142,0.9404,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 12-visualization-relationships/README.md / E5 유사도 0.9404 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F144,F112,README.md,honey.csv,direct_reference,0.7152,0.942,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../data/honey.csv / E5 유사도 0.9420 / 동일 프로젝트 / 작업 시기가 가까움
+F144,F146,README.md,correlation-analysis.ipynb,context_related,0.8013,0.9188,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9188 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F144,F126,README.md,notebook-papers.ipynb,context_related,0.7987,0.9145,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9145 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F144,F106,README.md,README.md,context_related,0.7984,0.914,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9140 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F145,F129,assignment.md,assignment.ipynb,context_related,0.7994,0.9157,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9157 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F145,F150,assignment.md,notebook.ipynb,context_related,0.7822,0.8871,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8871 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F145,F149,assignment.md,notebook.ipynb,context_related,0.7806,0.8844,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8844 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F145,F151,assignment.md,notebook.ipynb,context_related,0.7772,0.8787,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8787 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F145,F148,assignment.md,notebook.ipynb,context_related,0.7752,0.8753,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8753 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F146,F147,correlation-analysis.ipynb,README.md,context_related,0.8543,0.9238,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9238 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F146,F128,correlation-analysis.ipynb,README.md,context_related,0.8059,0.9265,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9265 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F146,F138,correlation-analysis.ipynb,README.md,context_related,0.8016,0.9193,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9193 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F146,F144,correlation-analysis.ipynb,README.md,context_related,0.8013,0.9188,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9188 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F146,F135,correlation-analysis.ipynb,README.md,context_related,0.8006,0.9176,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9176 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F147,F107,README.md,README.md,direct_reference,0.8263,0.9605,1.0,1.0,1.0,0.0,0.0,True,이 파일을 참조하는 자료: 13-meaningful-visualizations/README.md / E5 유사도 0.9605 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F147,F146,README.md,correlation-analysis.ipynb,context_related,0.8543,0.9238,1.0,1.0,1.0,1.0,0.0,False,E5 유사도 0.9238 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F147,F106,README.md,README.md,context_related,0.8178,0.9464,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9464 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F147,F126,README.md,notebook-papers.ipynb,context_related,0.8068,0.928,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9280 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F147,F131,README.md,notebook.ipynb,context_related,0.7996,0.9161,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9161 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F148,F108,notebook.ipynb,birds.csv,direct_reference,0.7184,0.9473,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../../data/birds.csv / E5 유사도 0.9473 / 동일 프로젝트 / 작업 시기가 가까움
+F148,F134,notebook.ipynb,notebook.ipynb,context_related,0.8112,0.9353,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9353 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F148,F137,notebook.ipynb,notebook.ipynb,context_related,0.8082,0.9304,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9304 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F148,F129,notebook.ipynb,assignment.ipynb,context_related,0.8061,0.9268,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9268 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F148,F133,notebook.ipynb,assignment.md,context_related,0.7984,0.9139,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9139 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F149,F108,notebook.ipynb,birds.csv,direct_reference,0.7102,0.9337,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../../data/birds.csv / E5 유사도 0.9337 / 동일 프로젝트 / 작업 시기가 가까움
+F149,F129,notebook.ipynb,assignment.ipynb,context_related,0.8082,0.9303,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9303 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F149,F136,notebook.ipynb,assignment.md,context_related,0.8059,0.9264,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9264 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F149,F134,notebook.ipynb,notebook.ipynb,context_related,0.8038,0.9229,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9229 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F149,F137,notebook.ipynb,notebook.ipynb,context_related,0.8004,0.9173,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9173 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F150,F113,notebook.ipynb,mushrooms.csv,direct_reference,0.723,0.955,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../../data/mushrooms.csv / E5 유사도 0.9550 / 동일 프로젝트 / 작업 시기가 가까움
+F150,F140,notebook.ipynb,notebook.ipynb,context_related,0.8136,0.9393,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9393 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F150,F129,notebook.ipynb,assignment.ipynb,context_related,0.8011,0.9184,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9184 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F150,F134,notebook.ipynb,notebook.ipynb,context_related,0.7974,0.9124,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9124 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F150,F143,notebook.ipynb,notebook.ipynb,context_related,0.797,0.9117,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9117 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F151,F112,notebook.ipynb,honey.csv,direct_reference,0.7116,0.9361,1.0,0.0,1.0,0.0,0.0,True,파일 참조: ../../../data/honey.csv / E5 유사도 0.9361 / 동일 프로젝트 / 작업 시기가 가까움
+F151,F129,notebook.ipynb,assignment.ipynb,context_related,0.8018,0.9197,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9197 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F151,F143,notebook.ipynb,notebook.ipynb,context_related,0.8017,0.9195,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9195 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F151,F142,notebook.ipynb,assignment.md,context_related,0.8004,0.9173,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9173 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F151,F133,notebook.ipynb,assignment.md,context_related,0.7964,0.9106,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9106 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F152,F153,README.md,README.md,context_related,0.799,0.9984,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9984 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F152,F155,README.md,letters.json,context_related,0.7968,0.9113,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9113 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F152,F154,README.md,letters.json,context_related,0.7942,0.907,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9070 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F152,F134,README.md,notebook.ipynb,context_related,0.7862,0.8936,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8936 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F152,F143,README.md,notebook.ipynb,context_related,0.7858,0.8931,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8931 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F153,F152,README.md,README.md,context_related,0.799,0.9984,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9984 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F153,F155,README.md,letters.json,context_related,0.7961,0.9102,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9102 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F153,F154,README.md,letters.json,context_related,0.7923,0.9039,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9039 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F153,F134,README.md,notebook.ipynb,context_related,0.7869,0.8949,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8949 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F153,F143,README.md,notebook.ipynb,context_related,0.7865,0.8942,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8942 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F154,F155,letters.json,letters.json,context_related,0.7944,0.9907,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9907 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F154,F152,letters.json,README.md,context_related,0.7942,0.907,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9070 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F154,F123,letters.json,TwitterData.json,context_related,0.7924,0.904,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9040 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F154,F153,letters.json,README.md,context_related,0.7923,0.9039,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9039 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F154,F157,letters.json,time_series_covid19_deaths_global.csv,context_related,0.7842,0.8903,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8903 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F155,F152,letters.json,README.md,context_related,0.7968,0.9113,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9113 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F155,F153,letters.json,README.md,context_related,0.7961,0.9102,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9102 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F155,F154,letters.json,letters.json,context_related,0.7944,0.9907,1.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9907 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움
+F155,F123,letters.json,TwitterData.json,context_related,0.792,0.9033,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9033 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F155,F157,letters.json,time_series_covid19_deaths_global.csv,context_related,0.7849,0.8916,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.8916 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F156,F158,time_series_covid19_confirmed_global.csv,time_series_covid19_recovered_global.csv,context_related,0.839,0.9817,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9817 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F156,F157,time_series_covid19_confirmed_global.csv,time_series_covid19_deaths_global.csv,context_related,0.8366,0.9776,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9776 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F156,F125,time_series_covid19_confirmed_global.csv,notebook-covidspread.ipynb,context_related,0.8238,0.9563,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9563 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F156,F116,time_series_covid19_confirmed_global.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8072,0.9287,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9287 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F156,F126,time_series_covid19_confirmed_global.csv,notebook-papers.ipynb,context_related,0.8048,0.9247,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9247 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F157,F158,time_series_covid19_deaths_global.csv,time_series_covid19_recovered_global.csv,context_related,0.838,0.9799,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9799 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F157,F156,time_series_covid19_deaths_global.csv,time_series_covid19_confirmed_global.csv,context_related,0.8366,0.9776,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9776 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F157,F125,time_series_covid19_deaths_global.csv,notebook-covidspread.ipynb,context_related,0.8187,0.9479,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9479 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F157,F116,time_series_covid19_deaths_global.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8062,0.927,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9270 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F157,F126,time_series_covid19_deaths_global.csv,notebook-papers.ipynb,context_related,0.8023,0.9205,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9205 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F158,F156,time_series_covid19_recovered_global.csv,time_series_covid19_confirmed_global.csv,context_related,0.839,0.9817,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9817 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F158,F157,time_series_covid19_recovered_global.csv,time_series_covid19_deaths_global.csv,context_related,0.838,0.9799,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9799 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F158,F125,time_series_covid19_recovered_global.csv,notebook-covidspread.ipynb,context_related,0.8214,0.9523,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9523 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F158,F116,time_series_covid19_recovered_global.csv,UID_ISO_FIPS_LookUp_Table.csv,context_related,0.8077,0.9295,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9295 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F158,F126,time_series_covid19_recovered_global.csv,notebook-papers.ipynb,context_related,0.8021,0.9202,1.0,1.0,1.0,0.0,0.0,False,E5 유사도 0.9202 / 동일 프로젝트 / 상호 보완적인 파일 역할 / 작업 시기가 가까움
+F159,F160,01. 금융의역할과주요금융지표.pdf,02. 금융상품과금융시장.pdf,context_related,0.7273,0.9621,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9621 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F159,F161,01. 금융의역할과주요금융지표.pdf,03. 저축의이해.pdf,context_related,0.722,0.9533,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9533 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F159,F107,01. 금융의역할과주요금융지표.pdf,README.md,context_related,0.6594,0.9073,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.9073 / 상호 보완적인 파일 역할
+F159,F195,01. 금융의역할과주요금융지표.pdf,데이터사이언스_강의자료4.pdf,context_related,0.6574,0.929,0.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9290 / 동일 파일 역할 / 작업 시기가 가까움
+F159,F189,01. 금융의역할과주요금융지표.pdf,데이터사이언스_강의자료11.pdf,context_related,0.6569,0.9282,0.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9282 / 동일 파일 역할 / 작업 시기가 가까움
+F160,F159,02. 금융상품과금융시장.pdf,01. 금융의역할과주요금융지표.pdf,context_related,0.7273,0.9621,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9621 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F160,F161,02. 금융상품과금융시장.pdf,03. 저축의이해.pdf,context_related,0.7224,0.954,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9540 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F160,F107,02. 금융상품과금융시장.pdf,README.md,context_related,0.6566,0.9026,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.9026 / 상호 보완적인 파일 역할
+F160,F195,02. 금융상품과금융시장.pdf,데이터사이언스_강의자료4.pdf,context_related,0.6563,0.9272,0.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9272 / 동일 파일 역할 / 작업 시기가 가까움
+F160,F194,02. 금융상품과금융시장.pdf,데이터사이언스_강의자료3.pdf,context_related,0.6512,0.9186,0.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9186 / 동일 파일 역할 / 작업 시기가 가까움
+F161,F160,03. 저축의이해.pdf,02. 금융상품과금융시장.pdf,context_related,0.7224,0.954,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9540 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F161,F159,03. 저축의이해.pdf,01. 금융의역할과주요금융지표.pdf,context_related,0.722,0.9533,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9533 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F161,F195,03. 저축의이해.pdf,데이터사이언스_강의자료4.pdf,context_related,0.6544,0.924,0.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9240 / 동일 파일 역할 / 작업 시기가 가까움
+F161,F107,03. 저축의이해.pdf,README.md,context_related,0.6528,0.8964,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8964 / 상호 보완적인 파일 역할
+F161,F189,03. 저축의이해.pdf,데이터사이언스_강의자료11.pdf,context_related,0.6507,0.9178,0.0,0.5,1.0,0.0,0.0,False,E5 유사도 0.9178 / 동일 파일 역할 / 작업 시기가 가까움
+F162,F169,14주차_종합과제-2.ipynb,student_performance.csv,direct_reference,0.6539,0.9232,0.0,0.0,1.0,1.0,0.0,True,파일 참조: student_performance.csv / E5 유사도 0.9232 / 작업 시기가 가까움 / 동일 폴더
+F162,F180,14주차_종합과제-2.ipynb,week14_assignment.ipynb,context_related,0.72,0.95,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9500 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F162,F173,14주차_종합과제-2.ipynb,week11_home.ipynb,context_related,0.7148,0.9413,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9413 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F162,F171,14주차_종합과제-2.ipynb,week10_homework.ipynb,context_related,0.7117,0.9362,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9362 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F162,F178,14주차_종합과제-2.ipynb,week13_assignment-2.ipynb,context_related,0.7108,0.9346,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9346 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F163,F175,customers.csv,week11_shop.csv,context_related,0.7234,0.9556,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9556 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F163,F170,customers.csv,week10_example.csv,context_related,0.7061,0.9268,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9268 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F163,F172,customers.csv,week10_hospital_raw.csv,context_related,0.7,0.9167,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9167 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F163,F166,customers.csv,orders_202403.csv,context_related,0.6959,0.9099,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9099 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F163,F165,customers.csv,orders_202402.csv,context_related,0.6938,0.9064,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9064 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F164,F169,orders_202401.csv,student_performance.csv,context_related,0.773,0.8717,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.8717 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F164,F165,orders_202401.csv,orders_202402.csv,context_related,0.7443,0.9904,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9904 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F164,F166,orders_202401.csv,orders_202403.csv,context_related,0.7436,0.9893,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9893 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F164,F174,orders_202401.csv,week11_item.csv,context_related,0.7035,0.9225,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9225 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F164,F168,orders_202401.csv,reviews.csv,context_related,0.703,0.9216,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9216 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F165,F164,orders_202402.csv,orders_202401.csv,context_related,0.7443,0.9904,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9904 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F165,F166,orders_202402.csv,orders_202403.csv,context_related,0.7431,0.9885,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9885 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F165,F186,orders_202402.csv,week_7_convenience_store.csv,context_related,0.7028,0.9213,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9213 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F165,F168,orders_202402.csv,reviews.csv,context_related,0.7025,0.9208,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9208 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F165,F174,orders_202402.csv,week11_item.csv,context_related,0.7009,0.9181,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9181 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F166,F164,orders_202403.csv,orders_202401.csv,context_related,0.7436,0.9893,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9893 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F166,F165,orders_202403.csv,orders_202402.csv,context_related,0.7431,0.9885,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9885 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F166,F168,orders_202403.csv,reviews.csv,context_related,0.7078,0.9297,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9297 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F166,F174,orders_202403.csv,week11_item.csv,context_related,0.7041,0.9235,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9235 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F166,F167,orders_202403.csv,products.csv,context_related,0.7032,0.922,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9220 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F167,F174,products.csv,week11_item.csv,context_related,0.7137,0.9394,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9394 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F167,F168,products.csv,reviews.csv,context_related,0.7054,0.9257,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9257 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F167,F166,products.csv,orders_202403.csv,context_related,0.7032,0.922,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9220 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F167,F164,products.csv,orders_202401.csv,context_related,0.6999,0.9166,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9166 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F167,F186,products.csv,week_7_convenience_store.csv,context_related,0.6999,0.9166,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9166 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F168,F166,reviews.csv,orders_202403.csv,context_related,0.7078,0.9297,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9297 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F168,F174,reviews.csv,week11_item.csv,context_related,0.707,0.9284,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9284 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F168,F167,reviews.csv,products.csv,context_related,0.7054,0.9257,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9257 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F168,F164,reviews.csv,orders_202401.csv,context_related,0.703,0.9216,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9216 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F168,F165,reviews.csv,orders_202402.csv,context_related,0.7025,0.9208,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9208 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F169,F162,student_performance.csv,14주차_종합과제-2.ipynb,direct_reference,0.6539,0.9232,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: student_performance.csv / E5 유사도 0.9232 / 작업 시기가 가까움 / 동일 폴더
+F169,F164,student_performance.csv,orders_202401.csv,context_related,0.773,0.8717,1.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.8717 / 동일 프로젝트 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F169,F181,student_performance.csv,week14_data.csv,context_related,0.71,0.9333,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9333 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F169,F179,student_performance.csv,week13_health.csv,context_related,0.6912,0.902,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9020 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F169,F168,student_performance.csv,reviews.csv,context_related,0.6783,0.8806,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.8806 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F170,F172,week10_example.csv,week10_hospital_raw.csv,context_related,0.7349,0.9748,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9748 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F170,F175,week10_example.csv,week11_shop.csv,context_related,0.7125,0.9374,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9374 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F170,F179,week10_example.csv,week13_health.csv,context_related,0.7087,0.9312,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9312 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F170,F177,week10_example.csv,week12_data.csv,context_related,0.7086,0.931,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9310 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F170,F163,week10_example.csv,customers.csv,context_related,0.7061,0.9268,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9268 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F171,F172,week10_homework.ipynb,week10_hospital_raw.csv,direct_reference,0.6722,0.9536,0.0,0.0,1.0,1.0,0.0,True,파일 참조: week10_hospital_raw.csv / E5 유사도 0.9536 / 작업 시기가 가까움 / 동일 폴더
+F171,F173,week10_homework.ipynb,week11_home.ipynb,context_related,0.7166,0.9443,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9443 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F171,F162,week10_homework.ipynb,14주차_종합과제-2.ipynb,context_related,0.7117,0.9362,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9362 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F171,F178,week10_homework.ipynb,week13_assignment-2.ipynb,context_related,0.711,0.935,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9350 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F171,F180,week10_homework.ipynb,week14_assignment.ipynb,context_related,0.7063,0.9271,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9271 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F172,F171,week10_hospital_raw.csv,week10_homework.ipynb,direct_reference,0.6722,0.9536,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: week10_hospital_raw.csv / E5 유사도 0.9536 / 작업 시기가 가까움 / 동일 폴더
+F172,F170,week10_hospital_raw.csv,week10_example.csv,context_related,0.7349,0.9748,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9748 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F172,F179,week10_hospital_raw.csv,week13_health.csv,context_related,0.7142,0.9403,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9403 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F172,F177,week10_hospital_raw.csv,week12_data.csv,context_related,0.7123,0.9371,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9371 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F172,F175,week10_hospital_raw.csv,week11_shop.csv,context_related,0.7088,0.9313,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9313 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F173,F175,week11_home.ipynb,week11_shop.csv,direct_reference,0.6665,0.9442,0.0,0.0,1.0,1.0,0.0,True,파일 참조: week11_shop.csv / E5 유사도 0.9442 / 작업 시기가 가까움 / 동일 폴더
+F173,F174,week11_home.ipynb,week11_item.csv,direct_reference,0.6451,0.9086,0.0,0.0,1.0,1.0,0.0,True,파일 참조: week11_item.csv / E5 유사도 0.9086 / 작업 시기가 가까움 / 동일 폴더
+F173,F171,week11_home.ipynb,week10_homework.ipynb,context_related,0.7166,0.9443,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9443 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F173,F162,week11_home.ipynb,14주차_종합과제-2.ipynb,context_related,0.7148,0.9413,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9413 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F173,F180,week11_home.ipynb,week14_assignment.ipynb,context_related,0.7104,0.934,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9340 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F174,F173,week11_item.csv,week11_home.ipynb,direct_reference,0.6451,0.9086,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: week11_item.csv / E5 유사도 0.9086 / 작업 시기가 가까움 / 동일 폴더
+F174,F167,week11_item.csv,products.csv,context_related,0.7137,0.9394,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9394 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F174,F175,week11_item.csv,week11_shop.csv,context_related,0.7082,0.9304,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9304 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F174,F168,week11_item.csv,reviews.csv,context_related,0.707,0.9284,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9284 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F174,F166,week11_item.csv,orders_202403.csv,context_related,0.7041,0.9235,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9235 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F175,F173,week11_shop.csv,week11_home.ipynb,direct_reference,0.6665,0.9442,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: week11_shop.csv / E5 유사도 0.9442 / 작업 시기가 가까움 / 동일 폴더
+F175,F176,week11_shop.csv,week12.ipynb,direct_reference,0.6455,0.9092,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: week11_shop.csv / E5 유사도 0.9092 / 작업 시기가 가까움 / 동일 폴더
+F175,F163,week11_shop.csv,customers.csv,context_related,0.7234,0.9556,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9556 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F175,F170,week11_shop.csv,week10_example.csv,context_related,0.7125,0.9374,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9374 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F175,F172,week11_shop.csv,week10_hospital_raw.csv,context_related,0.7088,0.9313,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9313 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F176,F177,week12.ipynb,week12_data.csv,direct_reference,0.6679,0.9465,0.0,0.0,1.0,1.0,0.0,True,파일 참조: week12_data.csv / E5 유사도 0.9465 / 작업 시기가 가까움 / 동일 폴더
+F176,F175,week12.ipynb,week11_shop.csv,direct_reference,0.6455,0.9092,0.0,0.0,1.0,1.0,0.0,True,파일 참조: week11_shop.csv / E5 유사도 0.9092 / 작업 시기가 가까움 / 동일 폴더
+F176,F178,week12.ipynb,week13_assignment-2.ipynb,context_related,0.6852,0.9753,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9753 / 작업 시기가 가까움 / 동일 폴더
+F176,F190,week12.ipynb,데이터사이언스_강의자료12.pdf,context_related,0.675,0.9583,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9583 / 작업 시기가 가까움 / 동일 폴더
+F176,F171,week12.ipynb,week10_homework.ipynb,context_related,0.6726,0.9543,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9543 / 작업 시기가 가까움 / 동일 폴더
+F177,F176,week12_data.csv,week12.ipynb,direct_reference,0.6679,0.9465,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: week12_data.csv / E5 유사도 0.9465 / 작업 시기가 가까움 / 동일 폴더
+F177,F179,week12_data.csv,week13_health.csv,context_related,0.7206,0.951,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9510 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F177,F172,week12_data.csv,week10_hospital_raw.csv,context_related,0.7123,0.9371,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9371 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F177,F170,week12_data.csv,week10_example.csv,context_related,0.7086,0.931,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9310 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F177,F175,week12_data.csv,week11_shop.csv,context_related,0.6915,0.9025,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9025 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F178,F179,week13_assignment-2.ipynb,week13_health.csv,direct_reference,0.6586,0.9309,0.0,0.0,1.0,1.0,0.0,True,파일 참조: week13_health.csv / E5 유사도 0.9309 / 작업 시기가 가까움 / 동일 폴더
+F178,F180,week13_assignment-2.ipynb,week14_assignment.ipynb,context_related,0.7111,0.9352,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9352 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F178,F171,week13_assignment-2.ipynb,week10_homework.ipynb,context_related,0.711,0.935,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9350 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F178,F162,week13_assignment-2.ipynb,14주차_종합과제-2.ipynb,context_related,0.7108,0.9346,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9346 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F178,F173,week13_assignment-2.ipynb,week11_home.ipynb,context_related,0.7073,0.9288,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9288 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F179,F178,week13_health.csv,week13_assignment-2.ipynb,direct_reference,0.6586,0.9309,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: week13_health.csv / E5 유사도 0.9309 / 작업 시기가 가까움 / 동일 폴더
+F179,F177,week13_health.csv,week12_data.csv,context_related,0.7206,0.951,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9510 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F179,F172,week13_health.csv,week10_hospital_raw.csv,context_related,0.7142,0.9403,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9403 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F179,F170,week13_health.csv,week10_example.csv,context_related,0.7087,0.9312,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9312 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F179,F181,week13_health.csv,week14_data.csv,context_related,0.7015,0.9192,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9192 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F180,F181,week14_assignment.ipynb,week14_data.csv,direct_reference,0.6557,0.9262,0.0,0.0,1.0,1.0,0.0,True,파일 참조: week14_data.csv / E5 유사도 0.9262 / 작업 시기가 가까움 / 동일 폴더
+F180,F162,week14_assignment.ipynb,14주차_종합과제-2.ipynb,context_related,0.72,0.95,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9500 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F180,F178,week14_assignment.ipynb,week13_assignment-2.ipynb,context_related,0.7111,0.9352,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9352 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F180,F173,week14_assignment.ipynb,week11_home.ipynb,context_related,0.7104,0.934,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9340 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F180,F171,week14_assignment.ipynb,week10_homework.ipynb,context_related,0.7063,0.9271,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9271 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F181,F180,week14_data.csv,week14_assignment.ipynb,direct_reference,0.6557,0.9262,0.0,0.0,1.0,1.0,0.0,True,이 파일을 참조하는 자료: week14_data.csv / E5 유사도 0.9262 / 작업 시기가 가까움 / 동일 폴더
+F181,F169,week14_data.csv,student_performance.csv,context_related,0.71,0.9333,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9333 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F181,F179,week14_data.csv,week13_health.csv,context_related,0.7015,0.9192,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9192 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F181,F170,week14_data.csv,week10_example.csv,context_related,0.692,0.9033,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9033 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F181,F175,week14_data.csv,week11_shop.csv,context_related,0.6919,0.9032,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9032 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F182,F173,Week4_Assignment.ipynb,week11_home.ipynb,context_related,0.7021,0.9201,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9201 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F182,F162,Week4_Assignment.ipynb,14주차_종합과제-2.ipynb,context_related,0.6958,0.9096,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9096 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F182,F180,Week4_Assignment.ipynb,week14_assignment.ipynb,context_related,0.6941,0.9068,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9068 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F182,F171,Week4_Assignment.ipynb,week10_homework.ipynb,context_related,0.6896,0.8994,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.8994 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F182,F178,Week4_Assignment.ipynb,week13_assignment-2.ipynb,context_related,0.6858,0.893,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.8930 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F183,F184,week5.ipynb,Week6_share.ipynb,context_related,0.6578,0.9297,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9297 / 작업 시기가 가까움 / 동일 폴더
+F183,F185,week5.ipynb,week7_2.ipynb,context_related,0.6515,0.9192,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9192 / 작업 시기가 가까움 / 동일 폴더
+F183,F162,week5.ipynb,14주차_종합과제-2.ipynb,context_related,0.6512,0.9186,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9186 / 작업 시기가 가까움 / 동일 폴더
+F183,F173,week5.ipynb,week11_home.ipynb,context_related,0.6509,0.9181,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9181 / 작업 시기가 가까움 / 동일 폴더
+F183,F176,week5.ipynb,week12.ipynb,context_related,0.65,0.9167,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9167 / 작업 시기가 가까움 / 동일 폴더
+F184,F171,Week6_share.ipynb,week10_homework.ipynb,context_related,0.672,0.9533,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9533 / 작업 시기가 가까움 / 동일 폴더
+F184,F176,Week6_share.ipynb,week12.ipynb,context_related,0.6653,0.9422,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9422 / 작업 시기가 가까움 / 동일 폴더
+F184,F197,Week6_share.ipynb,데이터사이언스_강의자료6.pdf,context_related,0.6618,0.9364,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9364 / 작업 시기가 가까움 / 동일 폴더
+F184,F185,Week6_share.ipynb,week7_2.ipynb,context_related,0.6617,0.9361,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9361 / 작업 시기가 가까움 / 동일 폴더
+F184,F199,Week6_share.ipynb,데이터사이언스_강의자료9.pdf,context_related,0.6612,0.9354,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9354 / 작업 시기가 가까움 / 동일 폴더
+F185,F186,week7_2.ipynb,week_7_convenience_store.csv,context_related,0.6648,0.9413,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9413 / 작업 시기가 가까움 / 동일 폴더
+F185,F173,week7_2.ipynb,week11_home.ipynb,context_related,0.6641,0.9401,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9401 / 작업 시기가 가까움 / 동일 폴더
+F185,F184,week7_2.ipynb,Week6_share.ipynb,context_related,0.6617,0.9361,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9361 / 작업 시기가 가까움 / 동일 폴더
+F185,F182,week7_2.ipynb,Week4_Assignment.ipynb,context_related,0.6606,0.9343,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9343 / 작업 시기가 가까움 / 동일 폴더
+F185,F180,week7_2.ipynb,week14_assignment.ipynb,context_related,0.6593,0.9321,0.0,0.0,1.0,1.0,0.0,False,E5 유사도 0.9321 / 작업 시기가 가까움 / 동일 폴더
+F186,F165,week_7_convenience_store.csv,orders_202402.csv,context_related,0.7028,0.9213,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9213 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F186,F164,week_7_convenience_store.csv,orders_202401.csv,context_related,0.7026,0.9209,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9209 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F186,F166,week_7_convenience_store.csv,orders_202403.csv,context_related,0.7024,0.9207,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9207 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F186,F167,week_7_convenience_store.csv,products.csv,context_related,0.6999,0.9166,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9166 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F186,F174,week_7_convenience_store.csv,week11_item.csv,context_related,0.6998,0.9164,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9164 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F187,F194,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료3.pdf,context_related,0.7309,0.9682,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9682 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F187,F196,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료5.pdf,context_related,0.7282,0.9637,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9637 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F187,F199,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7199,0.9498,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9498 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F187,F195,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료4.pdf,context_related,0.7197,0.9495,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9495 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F187,F192,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료14.pdf,context_related,0.7193,0.9488,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9488 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F188,F199,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7311,0.9685,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9685 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F188,F189,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료11.pdf,context_related,0.7283,0.9638,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9638 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F188,F190,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료12.pdf,context_related,0.7262,0.9603,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9603 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F188,F192,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료14.pdf,context_related,0.7244,0.9573,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9573 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F188,F191,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료13.pdf,context_related,0.7206,0.9511,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9511 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F189,F199,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7341,0.9735,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9735 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F189,F188,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료10.pdf,context_related,0.7283,0.9638,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9638 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F189,F190,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료12.pdf,context_related,0.7276,0.9626,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9626 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F189,F198,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료7.pdf,context_related,0.7254,0.959,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9590 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F189,F192,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료14.pdf,context_related,0.725,0.9584,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9584 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F190,F191,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료13.pdf,context_related,0.7332,0.972,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9720 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F190,F192,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료14.pdf,context_related,0.7328,0.9714,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9714 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F190,F189,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료11.pdf,context_related,0.7276,0.9626,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9626 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F190,F188,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료10.pdf,context_related,0.7262,0.9603,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9603 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F190,F199,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7237,0.9561,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9561 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F191,F190,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료12.pdf,context_related,0.7332,0.972,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9720 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F191,F192,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료14.pdf,context_related,0.729,0.9651,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9651 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F191,F189,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료11.pdf,context_related,0.721,0.9517,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9517 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F191,F188,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료10.pdf,context_related,0.7206,0.9511,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9511 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F191,F199,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7176,0.946,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9460 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F192,F190,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료12.pdf,context_related,0.7328,0.9714,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9714 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F192,F191,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료13.pdf,context_related,0.729,0.9651,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9651 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F192,F189,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료11.pdf,context_related,0.725,0.9584,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9584 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F192,F188,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료10.pdf,context_related,0.7244,0.9573,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9573 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F192,F199,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7234,0.9557,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9557 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F193,F194,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료3.pdf,context_related,0.7257,0.9595,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9595 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F193,F196,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료5.pdf,context_related,0.7251,0.9584,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9584 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F193,F198,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료7.pdf,context_related,0.7239,0.9566,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9566 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F193,F199,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7218,0.953,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9530 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F193,F197,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료6.pdf,context_related,0.7207,0.9511,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9511 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F194,F196,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료5.pdf,context_related,0.7319,0.9698,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9698 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F194,F187,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료1.pdf,context_related,0.7309,0.9682,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9682 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F194,F195,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료4.pdf,context_related,0.7301,0.9669,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9669 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F194,F197,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료6.pdf,context_related,0.7263,0.9605,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9605 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F194,F193,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료2.pdf,context_related,0.7257,0.9595,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9595 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F195,F194,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료3.pdf,context_related,0.7301,0.9669,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9669 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F195,F196,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료5.pdf,context_related,0.7292,0.9654,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9654 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F195,F197,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료6.pdf,context_related,0.7256,0.9593,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9593 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F195,F193,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료2.pdf,context_related,0.72,0.9501,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9501 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F195,F187,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료1.pdf,context_related,0.7197,0.9495,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9495 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F196,F194,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료3.pdf,context_related,0.7319,0.9698,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9698 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F196,F197,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료6.pdf,context_related,0.731,0.9684,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9684 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F196,F195,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료4.pdf,context_related,0.7292,0.9654,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9654 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F196,F187,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료1.pdf,context_related,0.7282,0.9637,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9637 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F196,F199,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7256,0.9593,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9593 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F197,F196,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료5.pdf,context_related,0.731,0.9684,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9684 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F197,F194,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료3.pdf,context_related,0.7263,0.9605,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9605 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F197,F195,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료4.pdf,context_related,0.7256,0.9593,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9593 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F197,F199,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7255,0.9592,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9592 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F197,F198,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료7.pdf,context_related,0.7231,0.9552,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9552 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F198,F199,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료9.pdf,context_related,0.7328,0.9714,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9714 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F198,F189,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료11.pdf,context_related,0.7254,0.959,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9590 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F198,F193,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료2.pdf,context_related,0.7239,0.9566,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9566 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F198,F196,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료5.pdf,context_related,0.7233,0.9556,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9556 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F198,F197,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료6.pdf,context_related,0.7231,0.9552,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9552 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F199,F189,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료11.pdf,context_related,0.7341,0.9735,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9735 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F199,F198,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료7.pdf,context_related,0.7328,0.9714,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9714 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F199,F188,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료10.pdf,context_related,0.7311,0.9685,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9685 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F199,F196,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료5.pdf,context_related,0.7256,0.9593,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9593 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F199,F197,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료6.pdf,context_related,0.7255,0.9592,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.9592 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F200,F201,test_new_file.py,test_penguin_ai.py,context_related,0.671,0.8684,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.8684 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F200,F203,test_new_file.py,test_yolo_detection.py,context_related,0.6584,0.8724,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8724 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F200,F202,test_new_file.py,op.py,context_related,0.6494,0.8573,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8573 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F200,F190,test_new_file.py,데이터사이언스_강의자료12.pdf,context_related,0.6464,0.8857,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8857 / 상호 보완적인 파일 역할
+F200,F188,test_new_file.py,데이터사이언스_강의자료10.pdf,context_related,0.6422,0.8787,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8787 / 상호 보완적인 파일 역할
+F201,F200,test_penguin_ai.py,test_new_file.py,context_related,0.671,0.8684,0.0,0.5,1.0,1.0,0.0,False,E5 유사도 0.8684 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F201,F203,test_penguin_ai.py,test_yolo_detection.py,context_related,0.6567,0.8696,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8696 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F201,F202,test_penguin_ai.py,op.py,context_related,0.6517,0.8611,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8611 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F201,F190,test_penguin_ai.py,데이터사이언스_강의자료12.pdf,context_related,0.6335,0.8642,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8642 / 상호 보완적인 파일 역할
+F201,F188,test_penguin_ai.py,데이터사이언스_강의자료10.pdf,context_related,0.6301,0.8584,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8584 / 상호 보완적인 파일 역할
+F202,F203,op.py,test_yolo_detection.py,context_related,0.6546,0.8659,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8659 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F202,F201,op.py,test_penguin_ai.py,context_related,0.6517,0.8611,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8611 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F202,F200,op.py,test_new_file.py,context_related,0.6494,0.8573,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8573 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F202,F193,op.py,데이터사이언스_강의자료2.pdf,context_related,0.6283,0.8555,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8555 / 상호 보완적인 파일 역할
+F202,F196,op.py,데이터사이언스_강의자료5.pdf,context_related,0.6271,0.8535,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8535 / 상호 보완적인 파일 역할
+F203,F200,test_yolo_detection.py,test_new_file.py,context_related,0.6584,0.8724,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8724 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F203,F201,test_yolo_detection.py,test_penguin_ai.py,context_related,0.6567,0.8696,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8696 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F203,F202,test_yolo_detection.py,op.py,context_related,0.6546,0.8659,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8659 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F203,F188,test_yolo_detection.py,데이터사이언스_강의자료10.pdf,context_related,0.6365,0.8691,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8691 / 상호 보완적인 파일 역할
+F203,F190,test_yolo_detection.py,데이터사이언스_강의자료12.pdf,context_related,0.6361,0.8685,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8685 / 상호 보완적인 파일 역할

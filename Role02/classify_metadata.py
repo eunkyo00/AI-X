@@ -12,7 +12,6 @@ from pathlib import Path
 
 import joblib
 import pandas as pd
-from sentence_transformers import SentenceTransformer
 
 BASE = Path(__file__).resolve().parent
 ROOT = BASE.parent
@@ -72,7 +71,12 @@ def main():
 
     def get_model(name):
         if name not in models:
-            models[name] = SentenceTransformer(name)
+            from sentence_transformers import SentenceTransformer
+
+            models[name] = SentenceTransformer(
+                name,
+                local_files_only=True
+            )
         return models[name]
 
     results = []

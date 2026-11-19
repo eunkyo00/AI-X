@@ -21,7 +21,10 @@ CHUNK_OVERLAP = 80
 
 def load_model():
     from sentence_transformers import SentenceTransformer
-    return SentenceTransformer(MODEL_NAME)
+    return SentenceTransformer(
+        MODEL_NAME,
+        local_files_only=True
+    )
 
 
 def signature(text_csv, metadata_csv):

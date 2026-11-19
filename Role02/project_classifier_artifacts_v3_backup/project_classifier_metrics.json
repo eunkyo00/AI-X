@@ -1,0 +1,79 @@
+{
+  "file_count": 158,
+  "project_count": 5,
+  "folds": 5,
+  "closed_set_accuracy": 1.0,
+  "closed_set_macro_f1": 1.0,
+  "mean_known_project_confidence": 0.7216235995292664,
+  "median_known_project_confidence": 0.7211711406707764,
+  "known_project_acceptance_rate": 0.9367088607594937,
+  "classifier_c": 10.0,
+  "open_set_quantiles": {
+    "probability": 0.05,
+    "centroid": 0.0
+  },
+  "open_set_thresholds": {
+    "confidence": 0.5684450596570969,
+    "probability_margin": 0.37473814785480497,
+    "centroid_similarity": 0.9124165177345276,
+    "centroid_margin": 0.006537675857543945
+  },
+  "class_counts": {
+    "데이터사이언스": 53,
+    "딥러닝": 11,
+    "시계열분석": 37,
+    "졸업작품": 17,
+    "한국근현대사역사기행": 40
+  },
+  "classification_report": {
+    "데이터사이언스": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 53.0
+    },
+    "딥러닝": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 11.0
+    },
+    "시계열분석": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 37.0
+    },
+    "졸업작품": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 17.0
+    },
+    "한국근현대사역사기행": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 158.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 158.0
+    }
+  },
+  "unlabeled_evaluation": {
+    "assumption": "project가 빈 모든 행은 기존 학습 프로젝트와 다른 새 프로젝트",
+    "file_count": 41,
+    "new_project_recall": 0.9512195121951219,
+    "false_existing_assignments": 2
+  }
+}

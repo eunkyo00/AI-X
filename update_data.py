@@ -6,6 +6,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 
 ROOT = Path(__file__).resolve().parent
 ARTIFACTS = ["Role01/metadata.csv", "Role01/extracted_text.csv", "Role01/search_index",
@@ -15,8 +16,17 @@ ARTIFACTS = ["Role01/metadata.csv", "Role01/extracted_text.csv", "Role01/search_
 
 
 def run_step(script, *args):
-    subprocess.run([sys.executable, str(script), *map(str, args)], check=True,
-                   env=dict(os.environ, PYTHONUNBUFFERED="1"))
+    start = time.perf_counter()
+
+    try:
+        subprocess.run(
+            [sys.executable, str(script), *map(str, args)],
+            check=True,
+            env=dict(os.environ, PYTHONUNBUFFERED="1")
+        )
+    finally:
+        elapsed = time.perf_counter() - start
+        print(f"[TIME] {Path(script).name}: {elapsed:.2f}초", flush=True)
 
 
 class UpdateInProgress(RuntimeError):
@@ -72,6 +82,7 @@ def update(root=ROOT, runner=run_step, progress=None, snapshot=False, integrated
             if integrated:
                 shutil.copy2(root/'update_pipeline_integrated.py', stage/'update_pipeline_integrated.py')
                 shutil.copy2(root/'Role01/file_reload_append_only.py', one/'file_reload_append_only.py')
+                shutil.copy2(root/'Role01/file_relations_v5.py', one/'file_relations_v5.py')
                 two = stage/'Role02'
                 two.mkdir()
                 for name in ('description_generator.py', 'classify_metadata.py',
@@ -115,27 +126,56 @@ def update(root=ROOT, runner=run_step, progress=None, snapshot=False, integrated
             print('[4/4] 검색 임베딩과 인덱스 갱신', flush=True)
             if not integrated:
                 runner(one/'refresh_search.py', '--build-index')
+            if integrated:
+                if progress:
+                    progress('AI 관련 파일 추천 갱신')
+                print('[5/5] AI 관련 파일 추천 갱신', flush=True)
+                runner(one/'file_relations_v5.py')
+            print(f'integrated={integrated}, snapshot={snapshot}', flush=True)
+            print('[DEBUG] DB 경로 수정 시작', flush=True)
+
             if snapshot:
                 import sqlite3
                 old, live = str(one/'dataset/files'), str(root/'Role01/dataset/files')
-                with sqlite3.connect(three/'output/files.sqlite3') as connection:
+
+                connection = sqlite3.connect(three/'output/files.sqlite3')
+                try:
                     connection.execute('UPDATE files SET local_path=REPLACE(local_path,?,?)', (old, live))
+                    connection.commit()
+                finally:
+                    connection.close()
+
+                print('[DEBUG] SQLite 경로 수정 완료', flush=True)
+
                 audit_path = three/'output/audit.csv'
                 with audit_path.open(encoding='utf-8-sig', newline='') as stream:
                     reader = csv.DictReader(stream)
                     columns, rows = reader.fieldnames, list(reader)
+
                 for row in rows:
                     row['local_path'] = row['local_path'].replace(old, live)
+
                 with audit_path.open('w', encoding='utf-8-sig', newline='') as stream:
                     writer = csv.DictWriter(stream, fieldnames=columns)
                     writer.writeheader(); writer.writerows(rows)
+
+                print('[DEBUG] audit.csv 경로 수정 완료', flush=True)
+
+            print('[DEBUG] DB 경로 수정 단계 종료', flush=True)
+
             artifacts = None
             if integrated:
                 artifacts = [name for name in ARTIFACTS if name != 'Role01/.file_id_state.json']
                 artifacts += ['Role02/metadata_description_generated.csv',
                               'Role02/metadata_classification_generated.csv',
-                              'Role02/description_hashes.json', 'Role01/.extraction_cache.json']
+                              'Role02/description_hashes.json', 
+                              'Role01/.extraction_cache.json',
+                              'Role01/file_relations_v5.csv']
+
+            print('[DEBUG] 결과 파일 교체 시작', flush=True)
             publish(root, stage, artifacts)
+            print('[DEBUG] 결과 파일 교체 완료', flush=True)
+
             print('갱신 완료. 실행 중인 검색은 다음 검색부터 새 데이터를 사용합니다.', flush=True)
     finally:
         lock.unlink(missing_ok=True)
@@ -148,6 +188,7 @@ def publish(root, stage, artifacts=None):
     published = []
     try:
         for relative in (ARTIFACTS if artifacts is None else artifacts):
+            print(f'[DEBUG] 파일 교체 시작: {relative}', flush=True)
             source, destination, saved = stage/relative, root/relative, backup/relative
             if not source.exists():
                 raise FileNotFoundError(source)
@@ -165,7 +206,10 @@ def publish(root, stage, artifacts=None):
             elif destination.exists():
                 destination.unlink()
             if existed:
+                print(f'[DEBUG] 기존 파일 백업 시작: {relative}', flush=True)
                 os.replace(saved, destination)
+                print(f'[DEBUG] 기존 파일 백업 완료: {relative}', flush=True)
+
         raise
     print(f'기존 데이터 백업: {backup}', flush=True)
 

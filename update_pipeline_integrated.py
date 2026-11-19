@@ -3,6 +3,7 @@
 from pathlib import Path
 import subprocess
 import sys
+import time
 
 PROJECT_DIR = Path(__file__).resolve().parent
 
@@ -16,6 +17,9 @@ STEPS = [
 
 
 def main():
+    total_start = time.perf_counter()
+    timings = []
+
     for number, (name, script, args) in enumerate(STEPS, 1):
         print(f"\n[{number}/{len(STEPS)}] {name}", flush=True)
 
@@ -23,10 +27,17 @@ def main():
             print(f"오류: 스크립트를 찾을 수 없습니다: {script}", file=sys.stderr)
             sys.exit(1)
 
+        # 단계별 실행 시간 측정
+        start = time.perf_counter()
+
         result = subprocess.run(
             [sys.executable, str(script), *args],
             cwd=script.parent
         )
+
+        elapsed = time.perf_counter() - start
+        timings.append((name, elapsed))
+        print(f"[TIME] {name}: {elapsed:.2f}초", flush=True)
 
         if result.returncode != 0:
             print(
@@ -34,6 +45,15 @@ def main():
                 file=sys.stderr
             )
             sys.exit(result.returncode)
+
+    # 실행 시간 요약
+    print("\n========== 실행 시간 요약 ==========")
+
+    for name, elapsed in timings:
+        print(f"{name}: {elapsed:.2f}초")
+
+    print(f"전체 실행 시간: {time.perf_counter() - total_start:.2f}초")
+    print("====================================")
 
     print("\n완료! 파일, 설명, 분류 결과, 검색 인덱스 갱신 성공.")
     print("자동 분류 결과:", PROJECT_DIR / "Role02" / "metadata_classification_generated.csv")

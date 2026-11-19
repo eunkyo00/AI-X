@@ -1,0 +1,1011 @@
+﻿source_file_id,target_file_id,source_filename,target_filename,relation_type,weight,evidence
+F001,F006,Cross-Validation_Decoded.pdf,심층신경망.pdf,semantic_related,0.9261,E5 임베딩 유사도: 0.9261
+F001,F004,Cross-Validation_Decoded.pdf,머신러닝(내용추가).pdf,semantic_related,0.9252,E5 임베딩 유사도: 0.9252
+F001,F010,Cross-Validation_Decoded.pdf,케라스 라이브러리.pdf,semantic_related,0.9219,E5 임베딩 유사도: 0.9219
+F001,F002,Cross-Validation_Decoded.pdf,MLP(다층퍼셉트론)(강의).pdf,semantic_related,0.9192,E5 임베딩 유사도: 0.9192
+F001,F188,Cross-Validation_Decoded.pdf,데이터사이언스_강의자료10.pdf,semantic_related,0.919,E5 임베딩 유사도: 0.9190
+F002,F006,MLP(다층퍼셉트론)(강의).pdf,심층신경망.pdf,semantic_related,0.9545,E5 임베딩 유사도: 0.9545
+F002,F011,MLP(다층퍼셉트론)(강의).pdf,퍼셉트론_추가.pdf,semantic_related,0.954,E5 임베딩 유사도: 0.9540
+F002,F009,MLP(다층퍼셉트론)(강의).pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9473,E5 임베딩 유사도: 0.9473
+F002,F004,MLP(다층퍼셉트론)(강의).pdf,머신러닝(내용추가).pdf,semantic_related,0.9461,E5 임베딩 유사도: 0.9461
+F002,F005,MLP(다층퍼셉트론)(강의).pdf,선형회귀_업데이트.pdf,semantic_related,0.946,E5 임베딩 유사도: 0.9460
+F003,F009,Transformer_강의자료.pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9459,E5 임베딩 유사도: 0.9459
+F003,F007,Transformer_강의자료.pdf,영상인식과 딥러닝.pdf,semantic_related,0.9445,E5 임베딩 유사도: 0.9445
+F003,F004,Transformer_강의자료.pdf,머신러닝(내용추가).pdf,semantic_related,0.9432,E5 임베딩 유사도: 0.9432
+F003,F006,Transformer_강의자료.pdf,심층신경망.pdf,semantic_related,0.9428,E5 임베딩 유사도: 0.9428
+F003,F010,Transformer_강의자료.pdf,케라스 라이브러리.pdf,semantic_related,0.9394,E5 임베딩 유사도: 0.9394
+F004,F005,머신러닝(내용추가).pdf,선형회귀_업데이트.pdf,semantic_related,0.9549,E5 임베딩 유사도: 0.9549
+F004,F007,머신러닝(내용추가).pdf,영상인식과 딥러닝.pdf,semantic_related,0.9516,E5 임베딩 유사도: 0.9516
+F004,F009,머신러닝(내용추가).pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9511,E5 임베딩 유사도: 0.9511
+F004,F194,머신러닝(내용추가).pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.951,E5 임베딩 유사도: 0.9510
+F004,F010,머신러닝(내용추가).pdf,케라스 라이브러리.pdf,semantic_related,0.9504,E5 임베딩 유사도: 0.9504
+F005,F191,선형회귀_업데이트.pdf,데이터사이언스_강의자료13.pdf,semantic_related,0.9564,E5 임베딩 유사도: 0.9564
+F005,F004,선형회귀_업데이트.pdf,머신러닝(내용추가).pdf,semantic_related,0.9549,E5 임베딩 유사도: 0.9549
+F005,F002,선형회귀_업데이트.pdf,MLP(다층퍼셉트론)(강의).pdf,semantic_related,0.946,E5 임베딩 유사도: 0.9460
+F005,F188,선형회귀_업데이트.pdf,데이터사이언스_강의자료10.pdf,semantic_related,0.9436,E5 임베딩 유사도: 0.9436
+F005,F190,선형회귀_업데이트.pdf,데이터사이언스_강의자료12.pdf,semantic_related,0.9434,E5 임베딩 유사도: 0.9434
+F006,F010,심층신경망.pdf,케라스 라이브러리.pdf,semantic_related,0.9673,E5 임베딩 유사도: 0.9673
+F006,F007,심층신경망.pdf,영상인식과 딥러닝.pdf,semantic_related,0.9627,E5 임베딩 유사도: 0.9627
+F006,F009,심층신경망.pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9606,E5 임베딩 유사도: 0.9606
+F006,F002,심층신경망.pdf,MLP(다층퍼셉트론)(강의).pdf,semantic_related,0.9545,E5 임베딩 유사도: 0.9545
+F006,F011,심층신경망.pdf,퍼셉트론_추가.pdf,semantic_related,0.9513,E5 임베딩 유사도: 0.9513
+F007,F010,영상인식과 딥러닝.pdf,케라스 라이브러리.pdf,semantic_related,0.9649,E5 임베딩 유사도: 0.9649
+F007,F006,영상인식과 딥러닝.pdf,심층신경망.pdf,semantic_related,0.9627,E5 임베딩 유사도: 0.9627
+F007,F009,영상인식과 딥러닝.pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9556,E5 임베딩 유사도: 0.9556
+F007,F004,영상인식과 딥러닝.pdf,머신러닝(내용추가).pdf,semantic_related,0.9516,E5 임베딩 유사도: 0.9516
+F007,F011,영상인식과 딥러닝.pdf,퍼셉트론_추가.pdf,semantic_related,0.9447,E5 임베딩 유사도: 0.9447
+F008,F010,제09장 컨벌루션 신경망(강의).pdf,케라스 라이브러리.pdf,semantic_related,0.9527,E5 임베딩 유사도: 0.9527
+F008,F006,제09장 컨벌루션 신경망(강의).pdf,심층신경망.pdf,semantic_related,0.9502,E5 임베딩 유사도: 0.9502
+F008,F007,제09장 컨벌루션 신경망(강의).pdf,영상인식과 딥러닝.pdf,semantic_related,0.9425,E5 임베딩 유사도: 0.9425
+F008,F004,제09장 컨벌루션 신경망(강의).pdf,머신러닝(내용추가).pdf,semantic_related,0.9384,E5 임베딩 유사도: 0.9384
+F008,F009,제09장 컨벌루션 신경망(강의).pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9382,E5 임베딩 유사도: 0.9382
+F009,F006,제11장 순환신경망(강의).pdf,심층신경망.pdf,semantic_related,0.9606,E5 임베딩 유사도: 0.9606
+F009,F010,제11장 순환신경망(강의).pdf,케라스 라이브러리.pdf,semantic_related,0.9583,E5 임베딩 유사도: 0.9583
+F009,F007,제11장 순환신경망(강의).pdf,영상인식과 딥러닝.pdf,semantic_related,0.9556,E5 임베딩 유사도: 0.9556
+F009,F004,제11장 순환신경망(강의).pdf,머신러닝(내용추가).pdf,semantic_related,0.9511,E5 임베딩 유사도: 0.9511
+F009,F002,제11장 순환신경망(강의).pdf,MLP(다층퍼셉트론)(강의).pdf,semantic_related,0.9473,E5 임베딩 유사도: 0.9473
+F010,F006,케라스 라이브러리.pdf,심층신경망.pdf,semantic_related,0.9673,E5 임베딩 유사도: 0.9673
+F010,F007,케라스 라이브러리.pdf,영상인식과 딥러닝.pdf,semantic_related,0.9649,E5 임베딩 유사도: 0.9649
+F010,F009,케라스 라이브러리.pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9583,E5 임베딩 유사도: 0.9583
+F010,F008,케라스 라이브러리.pdf,제09장 컨벌루션 신경망(강의).pdf,semantic_related,0.9527,E5 임베딩 유사도: 0.9527
+F010,F004,케라스 라이브러리.pdf,머신러닝(내용추가).pdf,semantic_related,0.9504,E5 임베딩 유사도: 0.9504
+F011,F002,퍼셉트론_추가.pdf,MLP(다층퍼셉트론)(강의).pdf,semantic_related,0.954,E5 임베딩 유사도: 0.9540
+F011,F006,퍼셉트론_추가.pdf,심층신경망.pdf,semantic_related,0.9513,E5 임베딩 유사도: 0.9513
+F011,F009,퍼셉트론_추가.pdf,제11장 순환신경망(강의).pdf,semantic_related,0.9451,E5 임베딩 유사도: 0.9451
+F011,F007,퍼셉트론_추가.pdf,영상인식과 딥러닝.pdf,semantic_related,0.9447,E5 임베딩 유사도: 0.9447
+F011,F010,퍼셉트론_추가.pdf,케라스 라이브러리.pdf,semantic_related,0.9409,E5 임베딩 유사도: 0.9409
+F012,F026,time_series_analysis10_1.R,week10_cheating.R,semantic_related,0.9718,E5 임베딩 유사도: 0.9718
+F012,F025,time_series_analysis10_1.R,week10.R,semantic_related,0.9617,E5 임베딩 유사도: 0.9617
+F012,F048,time_series_analysis10_1.R,week9_cheating.R,semantic_related,0.9406,E5 임베딩 유사도: 0.9406
+F012,F024,time_series_analysis10_1.R,time_series_analysis9_1.R,semantic_related,0.9323,E5 임베딩 유사도: 0.9323
+F012,F013,time_series_analysis10_1.R,time_series_analysis11_1.R,semantic_related,0.9282,E5 임베딩 유사도: 0.9282
+F013,F027,time_series_analysis11_1.R,week11_cheating.R,semantic_related,0.9594,E5 임베딩 유사도: 0.9594
+F013,F025,time_series_analysis11_1.R,week10.R,semantic_related,0.9292,E5 임베딩 유사도: 0.9292
+F013,F012,time_series_analysis11_1.R,time_series_analysis10_1.R,semantic_related,0.9282,E5 임베딩 유사도: 0.9282
+F013,F024,time_series_analysis11_1.R,time_series_analysis9_1.R,semantic_related,0.9256,E5 임베딩 유사도: 0.9256
+F013,F026,time_series_analysis11_1.R,week10_cheating.R,semantic_related,0.9251,E5 임베딩 유사도: 0.9251
+F014,F028,time_series_analysis12_1.R,week12.R,semantic_related,0.9825,E5 임베딩 유사도: 0.9825
+F014,F029,time_series_analysis12_1.R,week12_cheating.R,semantic_related,0.9798,E5 임베딩 유사도: 0.9798
+F014,F015,time_series_analysis12_1.R,time_series_analysis13_1.R,semantic_related,0.9661,E5 임베딩 유사도: 0.9661
+F014,F030,time_series_analysis12_1.R,week13.R,semantic_related,0.9597,E5 임베딩 유사도: 0.9597
+F014,F031,time_series_analysis12_1.R,week13_cheating.R,semantic_related,0.9578,E5 임베딩 유사도: 0.9578
+F015,F030,time_series_analysis13_1.R,week13.R,semantic_related,0.9724,E5 임베딩 유사도: 0.9724
+F015,F031,time_series_analysis13_1.R,week13_cheating.R,semantic_related,0.9693,E5 임베딩 유사도: 0.9693
+F015,F014,time_series_analysis13_1.R,time_series_analysis12_1.R,semantic_related,0.9661,E5 임베딩 유사도: 0.9661
+F015,F028,time_series_analysis13_1.R,week12.R,semantic_related,0.9594,E5 임베딩 유사도: 0.9594
+F015,F029,time_series_analysis13_1.R,week12_cheating.R,semantic_related,0.9572,E5 임베딩 유사도: 0.9572
+F016,F035,time_series_analysis14_1.R,week2.R,semantic_related,0.9467,E5 임베딩 유사도: 0.9467
+F016,F046,time_series_analysis14_1.R,week7.R,semantic_related,0.9446,E5 임베딩 유사도: 0.9446
+F016,F043,time_series_analysis14_1.R,week5_cheating.R,semantic_related,0.944,E5 임베딩 유사도: 0.9440
+F016,F031,time_series_analysis14_1.R,week13_cheating.R,semantic_related,0.9418,E5 임베딩 유사도: 0.9418
+F016,F047,time_series_analysis14_1.R,week7_cheating.R,semantic_related,0.9417,E5 임베딩 유사도: 0.9417
+F017,F035,time_series_analysis2_1.R,week2.R,semantic_related,0.9623,E5 임베딩 유사도: 0.9623
+F017,F036,time_series_analysis2_1.R,week2_cheating.R,semantic_related,0.9425,E5 임베딩 유사도: 0.9425
+F017,F018,time_series_analysis2_1.R,time_series_analysis2_2.R,semantic_related,0.9422,E5 임베딩 유사도: 0.9422
+F017,F023,time_series_analysis2_1.R,time_series_analysis7_1.R,semantic_related,0.94,E5 임베딩 유사도: 0.9400
+F017,F046,time_series_analysis2_1.R,week7.R,semantic_related,0.9388,E5 임베딩 유사도: 0.9388
+F018,F035,time_series_analysis2_2.R,week2.R,semantic_related,0.9735,E5 임베딩 유사도: 0.9735
+F018,F036,time_series_analysis2_2.R,week2_cheating.R,semantic_related,0.9691,E5 임베딩 유사도: 0.9691
+F018,F019,time_series_analysis2_2.R,time_series_analysis3_1.R,semantic_related,0.9563,E5 임베딩 유사도: 0.9563
+F018,F038,time_series_analysis2_2.R,week3_cheating.R,semantic_related,0.9474,E5 임베딩 유사도: 0.9474
+F018,F017,time_series_analysis2_2.R,time_series_analysis2_1.R,semantic_related,0.9422,E5 임베딩 유사도: 0.9422
+F019,F037,time_series_analysis3_1.R,week3.R,semantic_related,0.9861,E5 임베딩 유사도: 0.9861
+F019,F038,time_series_analysis3_1.R,week3_cheating.R,semantic_related,0.9744,E5 임베딩 유사도: 0.9744
+F019,F018,time_series_analysis3_1.R,time_series_analysis2_2.R,semantic_related,0.9563,E5 임베딩 유사도: 0.9563
+F019,F036,time_series_analysis3_1.R,week2_cheating.R,semantic_related,0.9515,E5 임베딩 유사도: 0.9515
+F019,F035,time_series_analysis3_1.R,week2.R,semantic_related,0.9511,E5 임베딩 유사도: 0.9511
+F020,F040,time_series_analysis4_1.R,week4_cheating.R,semantic_related,0.9728,E5 임베딩 유사도: 0.9728
+F020,F039,time_series_analysis4_1.R,week4.R,semantic_related,0.9681,E5 임베딩 유사도: 0.9681
+F020,F021,time_series_analysis4_1.R,time_series_analysis5_1.R,semantic_related,0.9568,E5 임베딩 유사도: 0.9568
+F020,F041,time_series_analysis4_1.R,week5 (1).R,semantic_related,0.9468,E5 임베딩 유사도: 0.9468
+F020,F022,time_series_analysis4_1.R,time_series_analysis6_1.R,semantic_related,0.9467,E5 임베딩 유사도: 0.9467
+F021,F041,time_series_analysis5_1.R,week5 (1).R,semantic_related,0.9824,E5 임베딩 유사도: 0.9824
+F021,F042,time_series_analysis5_1.R,week5.R,semantic_related,0.9752,E5 임베딩 유사도: 0.9752
+F021,F043,time_series_analysis5_1.R,week5_cheating.R,semantic_related,0.9738,E5 임베딩 유사도: 0.9738
+F021,F020,time_series_analysis5_1.R,time_series_analysis4_1.R,semantic_related,0.9568,E5 임베딩 유사도: 0.9568
+F021,F022,time_series_analysis5_1.R,time_series_analysis6_1.R,semantic_related,0.952,E5 임베딩 유사도: 0.9520
+F022,F045,time_series_analysis6_1.R,week6_cheating.R,semantic_related,0.9693,E5 임베딩 유사도: 0.9693
+F022,F044,time_series_analysis6_1.R,week6.R,semantic_related,0.9624,E5 임베딩 유사도: 0.9624
+F022,F021,time_series_analysis6_1.R,time_series_analysis5_1.R,semantic_related,0.952,E5 임베딩 유사도: 0.9520
+F022,F046,time_series_analysis6_1.R,week7.R,semantic_related,0.9476,E5 임베딩 유사도: 0.9476
+F022,F041,time_series_analysis6_1.R,week5 (1).R,semantic_related,0.9472,E5 임베딩 유사도: 0.9472
+F023,F046,time_series_analysis7_1.R,week7.R,semantic_related,0.9768,E5 임베딩 유사도: 0.9768
+F023,F047,time_series_analysis7_1.R,week7_cheating.R,semantic_related,0.9692,E5 임베딩 유사도: 0.9692
+F023,F021,time_series_analysis7_1.R,time_series_analysis5_1.R,semantic_related,0.9429,E5 임베딩 유사도: 0.9429
+F023,F022,time_series_analysis7_1.R,time_series_analysis6_1.R,semantic_related,0.9412,E5 임베딩 유사도: 0.9412
+F023,F015,time_series_analysis7_1.R,time_series_analysis13_1.R,semantic_related,0.9406,E5 임베딩 유사도: 0.9406
+F024,F048,time_series_analysis9_1.R,week9_cheating.R,semantic_related,0.9838,E5 임베딩 유사도: 0.9838
+F024,F021,time_series_analysis9_1.R,time_series_analysis5_1.R,semantic_related,0.9429,E5 임베딩 유사도: 0.9429
+F024,F041,time_series_analysis9_1.R,week5 (1).R,semantic_related,0.9395,E5 임베딩 유사도: 0.9395
+F024,F016,time_series_analysis9_1.R,time_series_analysis14_1.R,semantic_related,0.9393,E5 임베딩 유사도: 0.9393
+F024,F042,time_series_analysis9_1.R,week5.R,semantic_related,0.9384,E5 임베딩 유사도: 0.9384
+F025,F026,week10.R,week10_cheating.R,semantic_related,0.9852,E5 임베딩 유사도: 0.9852
+F025,F012,week10.R,time_series_analysis10_1.R,semantic_related,0.9617,E5 임베딩 유사도: 0.9617
+F025,F048,week10.R,week9_cheating.R,semantic_related,0.942,E5 임베딩 유사도: 0.9420
+F025,F024,week10.R,time_series_analysis9_1.R,semantic_related,0.9357,E5 임베딩 유사도: 0.9357
+F025,F045,week10.R,week6_cheating.R,semantic_related,0.9342,E5 임베딩 유사도: 0.9342
+F026,F025,week10_cheating.R,week10.R,semantic_related,0.9852,E5 임베딩 유사도: 0.9852
+F026,F012,week10_cheating.R,time_series_analysis10_1.R,semantic_related,0.9718,E5 임베딩 유사도: 0.9718
+F026,F048,week10_cheating.R,week9_cheating.R,semantic_related,0.9504,E5 임베딩 유사도: 0.9504
+F026,F040,week10_cheating.R,week4_cheating.R,semantic_related,0.9382,E5 임베딩 유사도: 0.9382
+F026,F045,week10_cheating.R,week6_cheating.R,semantic_related,0.9367,E5 임베딩 유사도: 0.9367
+F027,F013,week11_cheating.R,time_series_analysis11_1.R,semantic_related,0.9594,E5 임베딩 유사도: 0.9594
+F027,F026,week11_cheating.R,week10_cheating.R,semantic_related,0.926,E5 임베딩 유사도: 0.9260
+F027,F038,week11_cheating.R,week3_cheating.R,semantic_related,0.9235,E5 임베딩 유사도: 0.9235
+F027,F031,week11_cheating.R,week13_cheating.R,semantic_related,0.9232,E5 임베딩 유사도: 0.9232
+F027,F040,week11_cheating.R,week4_cheating.R,semantic_related,0.9232,E5 임베딩 유사도: 0.9232
+F028,F029,week12.R,week12_cheating.R,semantic_related,0.9961,E5 임베딩 유사도: 0.9961
+F028,F014,week12.R,time_series_analysis12_1.R,semantic_related,0.9825,E5 임베딩 유사도: 0.9825
+F028,F030,week12.R,week13.R,semantic_related,0.9631,E5 임베딩 유사도: 0.9631
+F028,F031,week12.R,week13_cheating.R,semantic_related,0.9607,E5 임베딩 유사도: 0.9607
+F028,F015,week12.R,time_series_analysis13_1.R,semantic_related,0.9594,E5 임베딩 유사도: 0.9594
+F029,F028,week12_cheating.R,week12.R,semantic_related,0.9961,E5 임베딩 유사도: 0.9961
+F029,F014,week12_cheating.R,time_series_analysis12_1.R,semantic_related,0.9798,E5 임베딩 유사도: 0.9798
+F029,F031,week12_cheating.R,week13_cheating.R,semantic_related,0.9673,E5 임베딩 유사도: 0.9673
+F029,F030,week12_cheating.R,week13.R,semantic_related,0.961,E5 임베딩 유사도: 0.9610
+F029,F015,week12_cheating.R,time_series_analysis13_1.R,semantic_related,0.9572,E5 임베딩 유사도: 0.9572
+F030,F031,week13.R,week13_cheating.R,semantic_related,0.9937,E5 임베딩 유사도: 0.9937
+F030,F015,week13.R,time_series_analysis13_1.R,semantic_related,0.9724,E5 임베딩 유사도: 0.9724
+F030,F028,week13.R,week12.R,semantic_related,0.9631,E5 임베딩 유사도: 0.9631
+F030,F029,week13.R,week12_cheating.R,semantic_related,0.961,E5 임베딩 유사도: 0.9610
+F030,F014,week13.R,time_series_analysis12_1.R,semantic_related,0.9597,E5 임베딩 유사도: 0.9597
+F031,F030,week13_cheating.R,week13.R,semantic_related,0.9937,E5 임베딩 유사도: 0.9937
+F031,F015,week13_cheating.R,time_series_analysis13_1.R,semantic_related,0.9693,E5 임베딩 유사도: 0.9693
+F031,F029,week13_cheating.R,week12_cheating.R,semantic_related,0.9673,E5 임베딩 유사도: 0.9673
+F031,F028,week13_cheating.R,week12.R,semantic_related,0.9607,E5 임베딩 유사도: 0.9607
+F031,F014,week13_cheating.R,time_series_analysis12_1.R,semantic_related,0.9578,E5 임베딩 유사도: 0.9578
+F032,F033,week14_apple_forecast_analysis_2026.R,week14_apple_forecast_analysis_2026_1.R,semantic_related,0.9989,E5 임베딩 유사도: 0.9989
+F032,F034,week14_apple_forecast_analysis_2026.R,week14_apple_forecast_analysis_2026_cheating.R,semantic_related,0.9895,E5 임베딩 유사도: 0.9895
+F032,F046,week14_apple_forecast_analysis_2026.R,week7.R,semantic_related,0.9418,E5 임베딩 유사도: 0.9418
+F032,F043,week14_apple_forecast_analysis_2026.R,week5_cheating.R,semantic_related,0.9395,E5 임베딩 유사도: 0.9395
+F032,F020,week14_apple_forecast_analysis_2026.R,time_series_analysis4_1.R,semantic_related,0.9395,E5 임베딩 유사도: 0.9395
+F033,F032,week14_apple_forecast_analysis_2026_1.R,week14_apple_forecast_analysis_2026.R,semantic_related,0.9989,E5 임베딩 유사도: 0.9989
+F033,F034,week14_apple_forecast_analysis_2026_1.R,week14_apple_forecast_analysis_2026_cheating.R,semantic_related,0.9902,E5 임베딩 유사도: 0.9902
+F033,F046,week14_apple_forecast_analysis_2026_1.R,week7.R,semantic_related,0.944,E5 임베딩 유사도: 0.9440
+F033,F043,week14_apple_forecast_analysis_2026_1.R,week5_cheating.R,semantic_related,0.9417,E5 임베딩 유사도: 0.9417
+F033,F020,week14_apple_forecast_analysis_2026_1.R,time_series_analysis4_1.R,semantic_related,0.9416,E5 임베딩 유사도: 0.9416
+F034,F033,week14_apple_forecast_analysis_2026_cheating.R,week14_apple_forecast_analysis_2026_1.R,semantic_related,0.9902,E5 임베딩 유사도: 0.9902
+F034,F032,week14_apple_forecast_analysis_2026_cheating.R,week14_apple_forecast_analysis_2026.R,semantic_related,0.9895,E5 임베딩 유사도: 0.9895
+F034,F047,week14_apple_forecast_analysis_2026_cheating.R,week7_cheating.R,semantic_related,0.9525,E5 임베딩 유사도: 0.9525
+F034,F043,week14_apple_forecast_analysis_2026_cheating.R,week5_cheating.R,semantic_related,0.948,E5 임베딩 유사도: 0.9480
+F034,F031,week14_apple_forecast_analysis_2026_cheating.R,week13_cheating.R,semantic_related,0.9462,E5 임베딩 유사도: 0.9462
+F035,F036,week2.R,week2_cheating.R,semantic_related,0.9763,E5 임베딩 유사도: 0.9763
+F035,F018,week2.R,time_series_analysis2_2.R,semantic_related,0.9735,E5 임베딩 유사도: 0.9735
+F035,F017,week2.R,time_series_analysis2_1.R,semantic_related,0.9623,E5 임베딩 유사도: 0.9623
+F035,F038,week2.R,week3_cheating.R,semantic_related,0.9523,E5 임베딩 유사도: 0.9523
+F035,F019,week2.R,time_series_analysis3_1.R,semantic_related,0.9511,E5 임베딩 유사도: 0.9511
+F036,F035,week2_cheating.R,week2.R,semantic_related,0.9763,E5 임베딩 유사도: 0.9763
+F036,F018,week2_cheating.R,time_series_analysis2_2.R,semantic_related,0.9691,E5 임베딩 유사도: 0.9691
+F036,F038,week2_cheating.R,week3_cheating.R,semantic_related,0.9625,E5 임베딩 유사도: 0.9625
+F036,F019,week2_cheating.R,time_series_analysis3_1.R,semantic_related,0.9515,E5 임베딩 유사도: 0.9515
+F036,F045,week2_cheating.R,week6_cheating.R,semantic_related,0.9494,E5 임베딩 유사도: 0.9494
+F037,F019,week3.R,time_series_analysis3_1.R,semantic_related,0.9861,E5 임베딩 유사도: 0.9861
+F037,F038,week3.R,week3_cheating.R,semantic_related,0.9715,E5 임베딩 유사도: 0.9715
+F037,F035,week3.R,week2.R,semantic_related,0.9453,E5 임베딩 유사도: 0.9453
+F037,F036,week3.R,week2_cheating.R,semantic_related,0.9439,E5 임베딩 유사도: 0.9439
+F037,F039,week3.R,week4.R,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F038,F019,week3_cheating.R,time_series_analysis3_1.R,semantic_related,0.9744,E5 임베딩 유사도: 0.9744
+F038,F037,week3_cheating.R,week3.R,semantic_related,0.9715,E5 임베딩 유사도: 0.9715
+F038,F036,week3_cheating.R,week2_cheating.R,semantic_related,0.9625,E5 임베딩 유사도: 0.9625
+F038,F035,week3_cheating.R,week2.R,semantic_related,0.9523,E5 임베딩 유사도: 0.9523
+F038,F018,week3_cheating.R,time_series_analysis2_2.R,semantic_related,0.9474,E5 임베딩 유사도: 0.9474
+F039,F040,week4.R,week4_cheating.R,semantic_related,0.9691,E5 임베딩 유사도: 0.9691
+F039,F020,week4.R,time_series_analysis4_1.R,semantic_related,0.9681,E5 임베딩 유사도: 0.9681
+F039,F041,week4.R,week5 (1).R,semantic_related,0.9539,E5 임베딩 유사도: 0.9539
+F039,F021,week4.R,time_series_analysis5_1.R,semantic_related,0.9463,E5 임베딩 유사도: 0.9463
+F039,F043,week4.R,week5_cheating.R,semantic_related,0.9443,E5 임베딩 유사도: 0.9443
+F040,F020,week4_cheating.R,time_series_analysis4_1.R,semantic_related,0.9728,E5 임베딩 유사도: 0.9728
+F040,F039,week4_cheating.R,week4.R,semantic_related,0.9691,E5 임베딩 유사도: 0.9691
+F040,F041,week4_cheating.R,week5 (1).R,semantic_related,0.951,E5 임베딩 유사도: 0.9510
+F040,F036,week4_cheating.R,week2_cheating.R,semantic_related,0.9494,E5 임베딩 유사도: 0.9494
+F040,F031,week4_cheating.R,week13_cheating.R,semantic_related,0.9486,E5 임베딩 유사도: 0.9486
+F041,F021,week5 (1).R,time_series_analysis5_1.R,semantic_related,0.9824,E5 임베딩 유사도: 0.9824
+F041,F042,week5 (1).R,week5.R,semantic_related,0.9811,E5 임베딩 유사도: 0.9811
+F041,F043,week5 (1).R,week5_cheating.R,semantic_related,0.9789,E5 임베딩 유사도: 0.9789
+F041,F046,week5 (1).R,week7.R,semantic_related,0.9556,E5 임베딩 유사도: 0.9556
+F041,F039,week5 (1).R,week4.R,semantic_related,0.9539,E5 임베딩 유사도: 0.9539
+F042,F041,week5.R,week5 (1).R,semantic_related,0.9811,E5 임베딩 유사도: 0.9811
+F042,F043,week5.R,week5_cheating.R,semantic_related,0.9785,E5 임베딩 유사도: 0.9785
+F042,F021,week5.R,time_series_analysis5_1.R,semantic_related,0.9752,E5 임베딩 유사도: 0.9752
+F042,F046,week5.R,week7.R,semantic_related,0.9522,E5 임베딩 유사도: 0.9522
+F042,F047,week5.R,week7_cheating.R,semantic_related,0.9481,E5 임베딩 유사도: 0.9481
+F043,F041,week5_cheating.R,week5 (1).R,semantic_related,0.9789,E5 임베딩 유사도: 0.9789
+F043,F042,week5_cheating.R,week5.R,semantic_related,0.9785,E5 임베딩 유사도: 0.9785
+F043,F021,week5_cheating.R,time_series_analysis5_1.R,semantic_related,0.9738,E5 임베딩 유사도: 0.9738
+F043,F045,week5_cheating.R,week6_cheating.R,semantic_related,0.9589,E5 임베딩 유사도: 0.9589
+F043,F047,week5_cheating.R,week7_cheating.R,semantic_related,0.9547,E5 임베딩 유사도: 0.9547
+F044,F045,week6.R,week6_cheating.R,semantic_related,0.9736,E5 임베딩 유사도: 0.9736
+F044,F022,week6.R,time_series_analysis6_1.R,semantic_related,0.9624,E5 임베딩 유사도: 0.9624
+F044,F046,week6.R,week7.R,semantic_related,0.9508,E5 임베딩 유사도: 0.9508
+F044,F047,week6.R,week7_cheating.R,semantic_related,0.9472,E5 임베딩 유사도: 0.9472
+F044,F043,week6.R,week5_cheating.R,semantic_related,0.9451,E5 임베딩 유사도: 0.9451
+F045,F044,week6_cheating.R,week6.R,semantic_related,0.9736,E5 임베딩 유사도: 0.9736
+F045,F022,week6_cheating.R,time_series_analysis6_1.R,semantic_related,0.9693,E5 임베딩 유사도: 0.9693
+F045,F043,week6_cheating.R,week5_cheating.R,semantic_related,0.9589,E5 임베딩 유사도: 0.9589
+F045,F047,week6_cheating.R,week7_cheating.R,semantic_related,0.9557,E5 임베딩 유사도: 0.9557
+F045,F041,week6_cheating.R,week5 (1).R,semantic_related,0.9494,E5 임베딩 유사도: 0.9494
+F046,F047,week7.R,week7_cheating.R,semantic_related,0.9914,E5 임베딩 유사도: 0.9914
+F046,F023,week7.R,time_series_analysis7_1.R,semantic_related,0.9768,E5 임베딩 유사도: 0.9768
+F046,F041,week7.R,week5 (1).R,semantic_related,0.9556,E5 임베딩 유사도: 0.9556
+F046,F042,week7.R,week5.R,semantic_related,0.9522,E5 임베딩 유사도: 0.9522
+F046,F044,week7.R,week6.R,semantic_related,0.9508,E5 임베딩 유사도: 0.9508
+F047,F046,week7_cheating.R,week7.R,semantic_related,0.9914,E5 임베딩 유사도: 0.9914
+F047,F023,week7_cheating.R,time_series_analysis7_1.R,semantic_related,0.9692,E5 임베딩 유사도: 0.9692
+F047,F045,week7_cheating.R,week6_cheating.R,semantic_related,0.9557,E5 임베딩 유사도: 0.9557
+F047,F043,week7_cheating.R,week5_cheating.R,semantic_related,0.9547,E5 임베딩 유사도: 0.9547
+F047,F034,week7_cheating.R,week14_apple_forecast_analysis_2026_cheating.R,semantic_related,0.9525,E5 임베딩 유사도: 0.9525
+F048,F024,week9_cheating.R,time_series_analysis9_1.R,semantic_related,0.9838,E5 임베딩 유사도: 0.9838
+F048,F026,week9_cheating.R,week10_cheating.R,semantic_related,0.9504,E5 임베딩 유사도: 0.9504
+F048,F043,week9_cheating.R,week5_cheating.R,semantic_related,0.9435,E5 임베딩 유사도: 0.9435
+F048,F025,week9_cheating.R,week10.R,semantic_related,0.942,E5 임베딩 유사도: 0.9420
+F048,F031,week9_cheating.R,week13_cheating.R,semantic_related,0.9414,E5 임베딩 유사도: 0.9414
+F049,F050,message_hello (1).py,pigpio.py,semantic_related,0.9559,E5 임베딩 유사도: 0.9559
+F049,F056,message_hello (1).py,voice_test.py,semantic_related,0.94,E5 임베딩 유사도: 0.9400
+F049,F054,message_hello (1).py,voice_alert.py,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F049,F051,message_hello (1).py,python3_voice_alert.py,semantic_related,0.9384,E5 임베딩 유사도: 0.9384
+F049,F057,message_hello (1).py,YOLO(test) (1).ipynb,semantic_related,0.9285,E5 임베딩 유사도: 0.9285
+F050,F049,pigpio.py,message_hello (1).py,semantic_related,0.9559,E5 임베딩 유사도: 0.9559
+F050,F056,pigpio.py,voice_test.py,semantic_related,0.9434,E5 임베딩 유사도: 0.9434
+F050,F065,pigpio.py,yolo_stream_front.py,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F050,F052,pigpio.py,rpi_gpio.py,semantic_related,0.9377,E5 임베딩 유사도: 0.9377
+F050,F064,pigpio.py,yolo_stream.py,semantic_related,0.9377,E5 임베딩 유사도: 0.9377
+F051,F054,python3_voice_alert.py,voice_alert.py,semantic_related,0.9491,E5 임베딩 유사도: 0.9491
+F051,F055,python3_voice_alert.py,voice_alert1.py,semantic_related,0.9399,E5 임베딩 유사도: 0.9399
+F051,F056,python3_voice_alert.py,voice_test.py,semantic_related,0.9389,E5 임베딩 유사도: 0.9389
+F051,F049,python3_voice_alert.py,message_hello (1).py,semantic_related,0.9384,E5 임베딩 유사도: 0.9384
+F051,F050,python3_voice_alert.py,pigpio.py,semantic_related,0.9347,E5 임베딩 유사도: 0.9347
+F052,F064,rpi_gpio.py,yolo_stream.py,semantic_related,0.944,E5 임베딩 유사도: 0.9440
+F052,F050,rpi_gpio.py,pigpio.py,semantic_related,0.9377,E5 임베딩 유사도: 0.9377
+F052,F049,rpi_gpio.py,message_hello (1).py,semantic_related,0.9242,E5 임베딩 유사도: 0.9242
+F052,F065,rpi_gpio.py,yolo_stream_front.py,semantic_related,0.9238,E5 임베딩 유사도: 0.9238
+F052,F053,rpi_gpio.py,stream_yolo.py,semantic_related,0.9214,E5 임베딩 유사도: 0.9214
+F053,F064,stream_yolo.py,yolo_stream.py,semantic_related,0.943,E5 임베딩 유사도: 0.9430
+F053,F063,stream_yolo.py,yolo_open.py,semantic_related,0.9337,E5 임베딩 유사도: 0.9337
+F053,F065,stream_yolo.py,yolo_stream_front.py,semantic_related,0.9236,E5 임베딩 유사도: 0.9236
+F053,F052,stream_yolo.py,rpi_gpio.py,semantic_related,0.9214,E5 임베딩 유사도: 0.9214
+F053,F050,stream_yolo.py,pigpio.py,semantic_related,0.9198,E5 임베딩 유사도: 0.9198
+F054,F055,voice_alert.py,voice_alert1.py,semantic_related,0.9736,E5 임베딩 유사도: 0.9736
+F054,F051,voice_alert.py,python3_voice_alert.py,semantic_related,0.9491,E5 임베딩 유사도: 0.9491
+F054,F056,voice_alert.py,voice_test.py,semantic_related,0.9484,E5 임베딩 유사도: 0.9484
+F054,F049,voice_alert.py,message_hello (1).py,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F054,F050,voice_alert.py,pigpio.py,semantic_related,0.9346,E5 임베딩 유사도: 0.9346
+F055,F054,voice_alert1.py,voice_alert.py,semantic_related,0.9736,E5 임베딩 유사도: 0.9736
+F055,F056,voice_alert1.py,voice_test.py,semantic_related,0.9507,E5 임베딩 유사도: 0.9507
+F055,F051,voice_alert1.py,python3_voice_alert.py,semantic_related,0.9399,E5 임베딩 유사도: 0.9399
+F055,F050,voice_alert1.py,pigpio.py,semantic_related,0.9276,E5 임베딩 유사도: 0.9276
+F055,F049,voice_alert1.py,message_hello (1).py,semantic_related,0.924,E5 임베딩 유사도: 0.9240
+F056,F055,voice_test.py,voice_alert1.py,semantic_related,0.9507,E5 임베딩 유사도: 0.9507
+F056,F054,voice_test.py,voice_alert.py,semantic_related,0.9484,E5 임베딩 유사도: 0.9484
+F056,F050,voice_test.py,pigpio.py,semantic_related,0.9434,E5 임베딩 유사도: 0.9434
+F056,F049,voice_test.py,message_hello (1).py,semantic_related,0.94,E5 임베딩 유사도: 0.9400
+F056,F051,voice_test.py,python3_voice_alert.py,semantic_related,0.9389,E5 임베딩 유사도: 0.9389
+F057,F058,YOLO(test) (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb,semantic_related,0.9708,E5 임베딩 유사도: 0.9708
+F057,F059,YOLO(test) (1).ipynb,YOLO(test)_picture.ipynb,semantic_related,0.9577,E5 임베딩 유사도: 0.9577
+F057,F062,YOLO(test) (1).ipynb,yolo_learning5 (1).ipynb,semantic_related,0.9545,E5 임베딩 유사도: 0.9545
+F057,F061,YOLO(test) (1).ipynb,yolo_learning2 (1).ipynb,semantic_related,0.9492,E5 임베딩 유사도: 0.9492
+F057,F060,YOLO(test) (1).ipynb,yolo_learn.ipynb,semantic_related,0.9462,E5 임베딩 유사도: 0.9462
+F058,F057,YOLO(test)_picture(light_ver) (1).ipynb,YOLO(test) (1).ipynb,semantic_related,0.9708,E5 임베딩 유사도: 0.9708
+F058,F059,YOLO(test)_picture(light_ver) (1).ipynb,YOLO(test)_picture.ipynb,semantic_related,0.9677,E5 임베딩 유사도: 0.9677
+F058,F060,YOLO(test)_picture(light_ver) (1).ipynb,yolo_learn.ipynb,semantic_related,0.9488,E5 임베딩 유사도: 0.9488
+F058,F062,YOLO(test)_picture(light_ver) (1).ipynb,yolo_learning5 (1).ipynb,semantic_related,0.9472,E5 임베딩 유사도: 0.9472
+F058,F061,YOLO(test)_picture(light_ver) (1).ipynb,yolo_learning2 (1).ipynb,semantic_related,0.9432,E5 임베딩 유사도: 0.9432
+F059,F058,YOLO(test)_picture.ipynb,YOLO(test)_picture(light_ver) (1).ipynb,semantic_related,0.9677,E5 임베딩 유사도: 0.9677
+F059,F057,YOLO(test)_picture.ipynb,YOLO(test) (1).ipynb,semantic_related,0.9577,E5 임베딩 유사도: 0.9577
+F059,F061,YOLO(test)_picture.ipynb,yolo_learning2 (1).ipynb,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F059,F060,YOLO(test)_picture.ipynb,yolo_learn.ipynb,semantic_related,0.9521,E5 임베딩 유사도: 0.9521
+F059,F062,YOLO(test)_picture.ipynb,yolo_learning5 (1).ipynb,semantic_related,0.9465,E5 임베딩 유사도: 0.9465
+F060,F062,yolo_learn.ipynb,yolo_learning5 (1).ipynb,semantic_related,0.9685,E5 임베딩 유사도: 0.9685
+F060,F061,yolo_learn.ipynb,yolo_learning2 (1).ipynb,semantic_related,0.9662,E5 임베딩 유사도: 0.9662
+F060,F059,yolo_learn.ipynb,YOLO(test)_picture.ipynb,semantic_related,0.9521,E5 임베딩 유사도: 0.9521
+F060,F058,yolo_learn.ipynb,YOLO(test)_picture(light_ver) (1).ipynb,semantic_related,0.9488,E5 임베딩 유사도: 0.9488
+F060,F057,yolo_learn.ipynb,YOLO(test) (1).ipynb,semantic_related,0.9462,E5 임베딩 유사도: 0.9462
+F061,F062,yolo_learning2 (1).ipynb,yolo_learning5 (1).ipynb,semantic_related,0.9698,E5 임베딩 유사도: 0.9698
+F061,F060,yolo_learning2 (1).ipynb,yolo_learn.ipynb,semantic_related,0.9662,E5 임베딩 유사도: 0.9662
+F061,F059,yolo_learning2 (1).ipynb,YOLO(test)_picture.ipynb,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F061,F057,yolo_learning2 (1).ipynb,YOLO(test) (1).ipynb,semantic_related,0.9492,E5 임베딩 유사도: 0.9492
+F061,F058,yolo_learning2 (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb,semantic_related,0.9432,E5 임베딩 유사도: 0.9432
+F062,F061,yolo_learning5 (1).ipynb,yolo_learning2 (1).ipynb,semantic_related,0.9698,E5 임베딩 유사도: 0.9698
+F062,F060,yolo_learning5 (1).ipynb,yolo_learn.ipynb,semantic_related,0.9685,E5 임베딩 유사도: 0.9685
+F062,F057,yolo_learning5 (1).ipynb,YOLO(test) (1).ipynb,semantic_related,0.9545,E5 임베딩 유사도: 0.9545
+F062,F058,yolo_learning5 (1).ipynb,YOLO(test)_picture(light_ver) (1).ipynb,semantic_related,0.9472,E5 임베딩 유사도: 0.9472
+F062,F059,yolo_learning5 (1).ipynb,YOLO(test)_picture.ipynb,semantic_related,0.9465,E5 임베딩 유사도: 0.9465
+F063,F053,yolo_open.py,stream_yolo.py,semantic_related,0.9337,E5 임베딩 유사도: 0.9337
+F063,F064,yolo_open.py,yolo_stream.py,semantic_related,0.9227,E5 임베딩 유사도: 0.9227
+F063,F065,yolo_open.py,yolo_stream_front.py,semantic_related,0.9143,E5 임베딩 유사도: 0.9143
+F063,F050,yolo_open.py,pigpio.py,semantic_related,0.9054,E5 임베딩 유사도: 0.9054
+F063,F061,yolo_open.py,yolo_learning2 (1).ipynb,semantic_related,0.9026,E5 임베딩 유사도: 0.9026
+F064,F065,yolo_stream.py,yolo_stream_front.py,semantic_related,0.9625,E5 임베딩 유사도: 0.9625
+F064,F052,yolo_stream.py,rpi_gpio.py,semantic_related,0.944,E5 임베딩 유사도: 0.9440
+F064,F053,yolo_stream.py,stream_yolo.py,semantic_related,0.943,E5 임베딩 유사도: 0.9430
+F064,F050,yolo_stream.py,pigpio.py,semantic_related,0.9377,E5 임베딩 유사도: 0.9377
+F064,F059,yolo_stream.py,YOLO(test)_picture.ipynb,semantic_related,0.9241,E5 임베딩 유사도: 0.9241
+F065,F064,yolo_stream_front.py,yolo_stream.py,semantic_related,0.9625,E5 임베딩 유사도: 0.9625
+F065,F050,yolo_stream_front.py,pigpio.py,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F065,F054,yolo_stream_front.py,voice_alert.py,semantic_related,0.9324,E5 임베딩 유사도: 0.9324
+F065,F059,yolo_stream_front.py,YOLO(test)_picture.ipynb,semantic_related,0.9301,E5 임베딩 유사도: 0.9301
+F065,F061,yolo_stream_front.py,yolo_learning2 (1).ipynb,semantic_related,0.9293,E5 임베딩 유사도: 0.9293
+F066,F073,19세기_후반_불평등조약체제의_성립_과정.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9198,E5 임베딩 유사도: 0.9198
+F066,F067,19세기_후반_불평등조약체제의_성립_과정.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9194,E5 임베딩 유사도: 0.9194
+F066,F069,19세기_후반_불평등조약체제의_성립_과정.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9191,E5 임베딩 유사도: 0.9191
+F066,F077,19세기_후반_불평등조약체제의_성립_과정.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,semantic_related,0.9181,E5 임베딩 유사도: 0.9181
+F066,F070,19세기_후반_불평등조약체제의_성립_과정.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9176,E5 임베딩 유사도: 0.9176
+F067,F068,4주차_강화도조약과 개항.pdf,강화도조약과 개항.pdf,semantic_related,0.9747,E5 임베딩 유사도: 0.9747
+F067,F073,4주차_강화도조약과 개항.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9603,E5 임베딩 유사도: 0.9603
+F067,F069,4주차_강화도조약과 개항.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9578,E5 임베딩 유사도: 0.9578
+F067,F089,4주차_강화도조약과 개항.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9574,E5 임베딩 유사도: 0.9574
+F067,F070,4주차_강화도조약과 개항.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9546,E5 임베딩 유사도: 0.9546
+F068,F067,강화도조약과 개항.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9747,E5 임베딩 유사도: 0.9747
+F068,F073,강화도조약과 개항.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9717,E5 임베딩 유사도: 0.9717
+F068,F078,강화도조약과 개항.pdf,일본의 개항과 미국.pdf,semantic_related,0.9498,E5 임베딩 유사도: 0.9498
+F068,F095,강화도조약과 개항.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9471,E5 임베딩 유사도: 0.9471
+F068,F069,강화도조약과 개항.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.947,E5 임베딩 유사도: 0.9470
+F069,F089,개항기 조선 서양과 만나다.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9679,E5 임베딩 유사도: 0.9679
+F069,F067,개항기 조선 서양과 만나다.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9578,E5 임베딩 유사도: 0.9578
+F069,F077,개항기 조선 서양과 만나다.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,semantic_related,0.9554,E5 임베딩 유사도: 0.9554
+F069,F095,개항기 조선 서양과 만나다.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F069,F076,개항기 조선 서양과 만나다.pdf,서세동점 동아시아와 서양 열강2.pdf,semantic_related,0.9516,E5 임베딩 유사도: 0.9516
+F070,F071,근대 국민국가와 왕권.pdf,근대 국민국가와 왕권_sum.pdf,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F070,F067,근대 국민국가와 왕권.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9546,E5 임베딩 유사도: 0.9546
+F070,F090,근대 국민국가와 왕권.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,semantic_related,0.9534,E5 임베딩 유사도: 0.9534
+F070,F089,근대 국민국가와 왕권.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9519,E5 임베딩 유사도: 0.9519
+F070,F082,근대 국민국가와 왕권.pdf,청일전쟁과 갑오개혁_ppt.pdf,semantic_related,0.9497,E5 임베딩 유사도: 0.9497
+F071,F070,근대 국민국가와 왕권_sum.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F071,F079,근대 국민국가와 왕권_sum.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9499,E5 임베딩 유사도: 0.9499
+F071,F087,근대 국민국가와 왕권_sum.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9434,E5 임베딩 유사도: 0.9434
+F071,F083,근대 국민국가와 왕권_sum.pdf,청일전쟁과 갑오개혁_요약.pdf,semantic_related,0.9398,E5 임베딩 유사도: 0.9398
+F071,F080,근대 국민국가와 왕권_sum.pdf,읽기자료_갑오개혁의 한계.pdf,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F072,F083,근대사_연표_19세기 후반.pdf,청일전쟁과 갑오개혁_요약.pdf,semantic_related,0.9325,E5 임베딩 유사도: 0.9325
+F072,F067,근대사_연표_19세기 후반.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9217,E5 임베딩 유사도: 0.9217
+F072,F079,근대사_연표_19세기 후반.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9211,E5 임베딩 유사도: 0.9211
+F072,F094,근대사_연표_19세기 후반.pdf,4.3history.pdf,semantic_related,0.9205,E5 임베딩 유사도: 0.9205
+F072,F081,근대사_연표_19세기 후반.pdf,임오군란과 갑신정변.pdf,semantic_related,0.9199,E5 임베딩 유사도: 0.9199
+F073,F078,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,일본의 개항과 미국.pdf,semantic_related,0.9722,E5 임베딩 유사도: 0.9722
+F073,F068,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,강화도조약과 개항.pdf,semantic_related,0.9717,E5 임베딩 유사도: 0.9717
+F073,F077,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,semantic_related,0.961,E5 임베딩 유사도: 0.9610
+F073,F067,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9603,E5 임베딩 유사도: 0.9603
+F073,F074,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,서세동점 동아시아와 서양 열강 1.pdf,semantic_related,0.9572,E5 임베딩 유사도: 0.9572
+F074,F075,서세동점 동아시아와 서양 열강 1.pdf,서세동점 동아시아와 서양 열강1_ppt.pdf,semantic_related,0.9699,E5 임베딩 유사도: 0.9699
+F074,F076,서세동점 동아시아와 서양 열강 1.pdf,서세동점 동아시아와 서양 열강2.pdf,semantic_related,0.9608,E5 임베딩 유사도: 0.9608
+F074,F077,서세동점 동아시아와 서양 열강 1.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,semantic_related,0.9593,E5 임베딩 유사도: 0.9593
+F074,F073,서세동점 동아시아와 서양 열강 1.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9572,E5 임베딩 유사도: 0.9572
+F074,F089,서세동점 동아시아와 서양 열강 1.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9449,E5 임베딩 유사도: 0.9449
+F075,F074,서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강 1.pdf,semantic_related,0.9699,E5 임베딩 유사도: 0.9699
+F075,F077,서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,semantic_related,0.9643,E5 임베딩 유사도: 0.9643
+F075,F076,서세동점 동아시아와 서양 열강1_ppt.pdf,서세동점 동아시아와 서양 열강2.pdf,semantic_related,0.9627,E5 임베딩 유사도: 0.9627
+F075,F089,서세동점 동아시아와 서양 열강1_ppt.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9461,E5 임베딩 유사도: 0.9461
+F075,F069,서세동점 동아시아와 서양 열강1_ppt.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9455,E5 임베딩 유사도: 0.9455
+F076,F077,서세동점 동아시아와 서양 열강2.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,semantic_related,0.9711,E5 임베딩 유사도: 0.9711
+F076,F075,서세동점 동아시아와 서양 열강2.pdf,서세동점 동아시아와 서양 열강1_ppt.pdf,semantic_related,0.9627,E5 임베딩 유사도: 0.9627
+F076,F074,서세동점 동아시아와 서양 열강2.pdf,서세동점 동아시아와 서양 열강 1.pdf,semantic_related,0.9608,E5 임베딩 유사도: 0.9608
+F076,F073,서세동점 동아시아와 서양 열강2.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9571,E5 임베딩 유사도: 0.9571
+F076,F069,서세동점 동아시아와 서양 열강2.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9516,E5 임베딩 유사도: 0.9516
+F077,F076,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강2.pdf,semantic_related,0.9711,E5 임베딩 유사도: 0.9711
+F077,F075,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강1_ppt.pdf,semantic_related,0.9643,E5 임베딩 유사도: 0.9643
+F077,F073,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.961,E5 임베딩 유사도: 0.9610
+F077,F078,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,일본의 개항과 미국.pdf,semantic_related,0.9598,E5 임베딩 유사도: 0.9598
+F077,F074,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,서세동점 동아시아와 서양 열강 1.pdf,semantic_related,0.9593,E5 임베딩 유사도: 0.9593
+F078,F073,일본의 개항과 미국.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9722,E5 임베딩 유사도: 0.9722
+F078,F077,일본의 개항과 미국.pdf,서세동점 동아시아와 서양 열강2＿ppt_2026.pdf,semantic_related,0.9598,E5 임베딩 유사도: 0.9598
+F078,F068,일본의 개항과 미국.pdf,강화도조약과 개항.pdf,semantic_related,0.9498,E5 임베딩 유사도: 0.9498
+F078,F074,일본의 개항과 미국.pdf,서세동점 동아시아와 서양 열강 1.pdf,semantic_related,0.9433,E5 임베딩 유사도: 0.9433
+F078,F067,일본의 개항과 미국.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9424,E5 임베딩 유사도: 0.9424
+F079,F080,읽기자료_갑오개혁의 전개와 성과.pdf,읽기자료_갑오개혁의 한계.pdf,semantic_related,0.9755,E5 임베딩 유사도: 0.9755
+F079,F087,읽기자료_갑오개혁의 전개와 성과.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9662,E5 임베딩 유사도: 0.9662
+F079,F083,읽기자료_갑오개혁의 전개와 성과.pdf,청일전쟁과 갑오개혁_요약.pdf,semantic_related,0.9614,E5 임베딩 유사도: 0.9614
+F079,F081,읽기자료_갑오개혁의 전개와 성과.pdf,임오군란과 갑신정변.pdf,semantic_related,0.953,E5 임베딩 유사도: 0.9530
+F079,F095,읽기자료_갑오개혁의 전개와 성과.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9513,E5 임베딩 유사도: 0.9513
+F080,F079,읽기자료_갑오개혁의 한계.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9755,E5 임베딩 유사도: 0.9755
+F080,F087,읽기자료_갑오개혁의 한계.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.953,E5 임베딩 유사도: 0.9530
+F080,F083,읽기자료_갑오개혁의 한계.pdf,청일전쟁과 갑오개혁_요약.pdf,semantic_related,0.9525,E5 임베딩 유사도: 0.9525
+F080,F073,읽기자료_갑오개혁의 한계.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9477,E5 임베딩 유사도: 0.9477
+F080,F095,읽기자료_갑오개혁의 한계.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9424,E5 임베딩 유사도: 0.9424
+F081,F083,임오군란과 갑신정변.pdf,청일전쟁과 갑오개혁_요약.pdf,semantic_related,0.9632,E5 임베딩 유사도: 0.9632
+F081,F079,임오군란과 갑신정변.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.953,E5 임베딩 유사도: 0.9530
+F081,F082,임오군란과 갑신정변.pdf,청일전쟁과 갑오개혁_ppt.pdf,semantic_related,0.9491,E5 임베딩 유사도: 0.9491
+F081,F073,임오군란과 갑신정변.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9458,E5 임베딩 유사도: 0.9458
+F081,F087,임오군란과 갑신정변.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9437,E5 임베딩 유사도: 0.9437
+F082,F083,청일전쟁과 갑오개혁_ppt.pdf,청일전쟁과 갑오개혁_요약.pdf,semantic_related,0.9787,E5 임베딩 유사도: 0.9787
+F082,F070,청일전쟁과 갑오개혁_ppt.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9497,E5 임베딩 유사도: 0.9497
+F082,F081,청일전쟁과 갑오개혁_ppt.pdf,임오군란과 갑신정변.pdf,semantic_related,0.9491,E5 임베딩 유사도: 0.9491
+F082,F079,청일전쟁과 갑오개혁_ppt.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9464,E5 임베딩 유사도: 0.9464
+F082,F067,청일전쟁과 갑오개혁_ppt.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9439,E5 임베딩 유사도: 0.9439
+F083,F082,청일전쟁과 갑오개혁_요약.pdf,청일전쟁과 갑오개혁_ppt.pdf,semantic_related,0.9787,E5 임베딩 유사도: 0.9787
+F083,F081,청일전쟁과 갑오개혁_요약.pdf,임오군란과 갑신정변.pdf,semantic_related,0.9632,E5 임베딩 유사도: 0.9632
+F083,F079,청일전쟁과 갑오개혁_요약.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9614,E5 임베딩 유사도: 0.9614
+F083,F080,청일전쟁과 갑오개혁_요약.pdf,읽기자료_갑오개혁의 한계.pdf,semantic_related,0.9525,E5 임베딩 유사도: 0.9525
+F083,F073,청일전쟁과 갑오개혁_요약.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9497,E5 임베딩 유사도: 0.9497
+F084,F099,한국 근현대 인물사 연구방법론.pdf,유관순의 발굴과 재현.pdf,semantic_related,0.9564,E5 임베딩 유사도: 0.9564
+F084,F100,한국 근현대 인물사 연구방법론.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,semantic_related,0.9446,E5 임베딩 유사도: 0.9446
+F084,F090,한국 근현대 인물사 연구방법론.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,semantic_related,0.9397,E5 임베딩 유사도: 0.9397
+F084,F070,한국 근현대 인물사 연구방법론.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9363,E5 임베딩 유사도: 0.9363
+F084,F091,한국 근현대 인물사 연구방법론.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9362,E5 임베딩 유사도: 0.9362
+F085,F073,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9414,E5 임베딩 유사도: 0.9414
+F085,F098,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F085,F071,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,근대 국민국가와 왕권_sum.pdf,semantic_related,0.9381,E5 임베딩 유사도: 0.9381
+F085,F080,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,읽기자료_갑오개혁의 한계.pdf,semantic_related,0.9377,E5 임베딩 유사도: 0.9377
+F085,F090,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,semantic_related,0.9354,E5 임베딩 유사도: 0.9354
+F086,F089,한성도시개조사업.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9463,E5 임베딩 유사도: 0.9463
+F086,F069,한성도시개조사업.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9438,E5 임베딩 유사도: 0.9438
+F086,F095,한성도시개조사업.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9414,E5 임베딩 유사도: 0.9414
+F086,F087,한성도시개조사업.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9386,E5 임베딩 유사도: 0.9386
+F086,F079,한성도시개조사업.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9375,E5 임베딩 유사도: 0.9375
+F087,F079,행정개혁기구의_성공_조건.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9662,E5 임베딩 유사도: 0.9662
+F087,F080,행정개혁기구의_성공_조건.pdf,읽기자료_갑오개혁의 한계.pdf,semantic_related,0.953,E5 임베딩 유사도: 0.9530
+F087,F089,행정개혁기구의_성공_조건.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.949,E5 임베딩 유사도: 0.9490
+F087,F073,행정개혁기구의_성공_조건.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9482,E5 임베딩 유사도: 0.9482
+F087,F095,행정개혁기구의_성공_조건.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9473,E5 임베딩 유사도: 0.9473
+F088,F097,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,semantic_related,0.9454,E5 임베딩 유사도: 0.9454
+F088,F087,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9432,E5 임베딩 유사도: 0.9432
+F088,F091,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9382,E5 임베딩 유사도: 0.9382
+F088,F079,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9372,E5 임베딩 유사도: 0.9372
+F088,F098,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,semantic_related,0.9327,E5 임베딩 유사도: 0.9327
+F089,F069,근대 서양 문물의 도입_ppt.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9679,E5 임베딩 유사도: 0.9679
+F089,F095,근대 서양 문물의 도입_ppt.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9657,E5 임베딩 유사도: 0.9657
+F089,F067,근대 서양 문물의 도입_ppt.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9574,E5 임베딩 유사도: 0.9574
+F089,F091,근대 서양 문물의 도입_ppt.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9526,E5 임베딩 유사도: 0.9526
+F089,F070,근대 서양 문물의 도입_ppt.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9519,E5 임베딩 유사도: 0.9519
+F090,F096,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,근대의 법과 제도는 어떻게 이식되었는가.pdf,semantic_related,0.9647,E5 임베딩 유사도: 0.9647
+F090,F070,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9534,E5 임베딩 유사도: 0.9534
+F090,F091,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9496,E5 임베딩 유사도: 0.9496
+F090,F089,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9452,E5 임베딩 유사도: 0.9452
+F090,F067,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9412,E5 임베딩 유사도: 0.9412
+F091,F098,세균설과 근대의 보건_위생_ppt.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,semantic_related,0.9671,E5 임베딩 유사도: 0.9671
+F091,F097,세균설과 근대의 보건_위생_ppt.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,semantic_related,0.9611,E5 임베딩 유사도: 0.9611
+F091,F089,세균설과 근대의 보건_위생_ppt.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9526,E5 임베딩 유사도: 0.9526
+F091,F090,세균설과 근대의 보건_위생_ppt.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,semantic_related,0.9496,E5 임베딩 유사도: 0.9496
+F091,F070,세균설과 근대의 보건_위생_ppt.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9455,E5 임베딩 유사도: 0.9455
+F092,F094,해방전후의 한국 정치와 사회_제주.pdf,4.3history.pdf,semantic_related,0.9729,E5 임베딩 유사도: 0.9729
+F092,F101,해방전후의 한국 정치와 사회_제주.pdf,제주 4·3의 진실과 역사적 의미_박찬식.pdf,semantic_related,0.9645,E5 임베딩 유사도: 0.9645
+F092,F105,해방전후의 한국 정치와 사회_제주.pdf,해방이전 제주의 사회와 경제_양정필.pdf,semantic_related,0.9502,E5 임베딩 유사도: 0.9502
+F092,F099,해방전후의 한국 정치와 사회_제주.pdf,유관순의 발굴과 재현.pdf,semantic_related,0.9422,E5 임베딩 유사도: 0.9422
+F092,F067,해방전후의 한국 정치와 사회_제주.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.94,E5 임베딩 유사도: 0.9400
+F093,F102,해외 인력 송출의 역사와 파독 광부 간호사.pdf,파월기술자의 전쟁경험.pdf,semantic_related,0.9534,E5 임베딩 유사도: 0.9534
+F093,F104,해외 인력 송출의 역사와 파독 광부 간호사.pdf,한국현대사와 영화 ‘국제시장＇.pdf,semantic_related,0.9531,E5 임베딩 유사도: 0.9531
+F093,F087,해외 인력 송출의 역사와 파독 광부 간호사.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F093,F089,해외 인력 송출의 역사와 파독 광부 간호사.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9389,E5 임베딩 유사도: 0.9389
+F093,F091,해외 인력 송출의 역사와 파독 광부 간호사.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9361,E5 임베딩 유사도: 0.9361
+F094,F092,4.3history.pdf,해방전후의 한국 정치와 사회_제주.pdf,semantic_related,0.9729,E5 임베딩 유사도: 0.9729
+F094,F101,4.3history.pdf,제주 4·3의 진실과 역사적 의미_박찬식.pdf,semantic_related,0.9697,E5 임베딩 유사도: 0.9697
+F094,F104,4.3history.pdf,한국현대사와 영화 ‘국제시장＇.pdf,semantic_related,0.9432,E5 임베딩 유사도: 0.9432
+F094,F105,4.3history.pdf,해방이전 제주의 사회와 경제_양정필.pdf,semantic_related,0.9429,E5 임베딩 유사도: 0.9429
+F094,F087,4.3history.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9405,E5 임베딩 유사도: 0.9405
+F095,F089,근대 서양 문물의 도입과 일상생활.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9657,E5 임베딩 유사도: 0.9657
+F095,F073,근대 서양 문물의 도입과 일상생활.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9549,E5 임베딩 유사도: 0.9549
+F095,F069,근대 서양 문물의 도입과 일상생활.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F095,F079,근대 서양 문물의 도입과 일상생활.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9513,E5 임베딩 유사도: 0.9513
+F095,F087,근대 서양 문물의 도입과 일상생활.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9473,E5 임베딩 유사도: 0.9473
+F096,F090,근대의 법과 제도는 어떻게 이식되었는가.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,semantic_related,0.9647,E5 임베딩 유사도: 0.9647
+F096,F085,근대의 법과 제도는 어떻게 이식되었는가.pdf,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,semantic_related,0.9313,E5 임베딩 유사도: 0.9313
+F096,F071,근대의 법과 제도는 어떻게 이식되었는가.pdf,근대 국민국가와 왕권_sum.pdf,semantic_related,0.9311,E5 임베딩 유사도: 0.9311
+F096,F070,근대의 법과 제도는 어떻게 이식되었는가.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9275,E5 임베딩 유사도: 0.9275
+F096,F079,근대의 법과 제도는 어떻게 이식되었는가.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9255,E5 임베딩 유사도: 0.9255
+F097,F091,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9611,E5 임베딩 유사도: 0.9611
+F097,F098,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,semantic_related,0.9539,E5 임베딩 유사도: 0.9539
+F097,F088,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,semantic_related,0.9454,E5 임베딩 유사도: 0.9454
+F097,F090,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,semantic_related,0.9398,E5 임베딩 유사도: 0.9398
+F097,F087,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9389,E5 임베딩 유사도: 0.9389
+F098,F091,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9671,E5 임베딩 유사도: 0.9671
+F098,F097,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf,semantic_related,0.9539,E5 임베딩 유사도: 0.9539
+F098,F085,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,한국의 식민지 근대는 어떠한 성격의 사회였나.pdf,semantic_related,0.939,E5 임베딩 유사도: 0.9390
+F098,F089,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9332,E5 임베딩 유사도: 0.9332
+F098,F088,세균설과 식민지 근대의 보건ㆍ위생_노트.pdf,후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf,semantic_related,0.9327,E5 임베딩 유사도: 0.9327
+F099,F100,유관순의 발굴과 재현.pdf,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,semantic_related,0.9653,E5 임베딩 유사도: 0.9653
+F099,F084,유관순의 발굴과 재현.pdf,한국 근현대 인물사 연구방법론.pdf,semantic_related,0.9564,E5 임베딩 유사도: 0.9564
+F099,F091,유관순의 발굴과 재현.pdf,세균설과 근대의 보건_위생_ppt.pdf,semantic_related,0.9443,E5 임베딩 유사도: 0.9443
+F099,F070,유관순의 발굴과 재현.pdf,근대 국민국가와 왕권.pdf,semantic_related,0.9436,E5 임베딩 유사도: 0.9436
+F099,F069,유관순의 발굴과 재현.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9429,E5 임베딩 유사도: 0.9429
+F100,F099,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,유관순의 발굴과 재현.pdf,semantic_related,0.9653,E5 임베딩 유사도: 0.9653
+F100,F084,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,한국 근현대 인물사 연구방법론.pdf,semantic_related,0.9446,E5 임베딩 유사도: 0.9446
+F100,F079,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,읽기자료_갑오개혁의 전개와 성과.pdf,semantic_related,0.9418,E5 임베딩 유사도: 0.9418
+F100,F080,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,읽기자료_갑오개혁의 한계.pdf,semantic_related,0.9397,E5 임베딩 유사도: 0.9397
+F100,F087,유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9366,E5 임베딩 유사도: 0.9366
+F101,F094,제주 4·3의 진실과 역사적 의미_박찬식.pdf,4.3history.pdf,semantic_related,0.9697,E5 임베딩 유사도: 0.9697
+F101,F092,제주 4·3의 진실과 역사적 의미_박찬식.pdf,해방전후의 한국 정치와 사회_제주.pdf,semantic_related,0.9645,E5 임베딩 유사도: 0.9645
+F101,F105,제주 4·3의 진실과 역사적 의미_박찬식.pdf,해방이전 제주의 사회와 경제_양정필.pdf,semantic_related,0.9489,E5 임베딩 유사도: 0.9489
+F101,F067,제주 4·3의 진실과 역사적 의미_박찬식.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.9291,E5 임베딩 유사도: 0.9291
+F101,F090,제주 4·3의 진실과 역사적 의미_박찬식.pdf,근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf,semantic_related,0.9269,E5 임베딩 유사도: 0.9269
+F102,F093,파월기술자의 전쟁경험.pdf,해외 인력 송출의 역사와 파독 광부 간호사.pdf,semantic_related,0.9534,E5 임베딩 유사도: 0.9534
+F102,F104,파월기술자의 전쟁경험.pdf,한국현대사와 영화 ‘국제시장＇.pdf,semantic_related,0.9514,E5 임베딩 유사도: 0.9514
+F102,F095,파월기술자의 전쟁경험.pdf,근대 서양 문물의 도입과 일상생활.pdf,semantic_related,0.9352,E5 임베딩 유사도: 0.9352
+F102,F087,파월기술자의 전쟁경험.pdf,행정개혁기구의_성공_조건.pdf,semantic_related,0.9345,E5 임베딩 유사도: 0.9345
+F102,F073,파월기술자의 전쟁경험.pdf,동아시아의 개항 난징조약에서 강화도 조약까지.pdf,semantic_related,0.9287,E5 임베딩 유사도: 0.9287
+F103,F104,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,한국현대사와 영화 ‘국제시장＇.pdf,semantic_related,0.9538,E5 임베딩 유사도: 0.9538
+F103,F067,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,4주차_강화도조약과 개항.pdf,semantic_related,0.944,E5 임베딩 유사도: 0.9440
+F103,F089,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.942,E5 임베딩 유사도: 0.9420
+F103,F069,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9405,E5 임베딩 유사도: 0.9405
+F103,F099,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,유관순의 발굴과 재현.pdf,semantic_related,0.9405,E5 임베딩 유사도: 0.9405
+F104,F103,한국현대사와 영화 ‘국제시장＇.pdf,한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf,semantic_related,0.9538,E5 임베딩 유사도: 0.9538
+F104,F093,한국현대사와 영화 ‘국제시장＇.pdf,해외 인력 송출의 역사와 파독 광부 간호사.pdf,semantic_related,0.9531,E5 임베딩 유사도: 0.9531
+F104,F102,한국현대사와 영화 ‘국제시장＇.pdf,파월기술자의 전쟁경험.pdf,semantic_related,0.9514,E5 임베딩 유사도: 0.9514
+F104,F089,한국현대사와 영화 ‘국제시장＇.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9503,E5 임베딩 유사도: 0.9503
+F104,F069,한국현대사와 영화 ‘국제시장＇.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9463,E5 임베딩 유사도: 0.9463
+F105,F092,해방이전 제주의 사회와 경제_양정필.pdf,해방전후의 한국 정치와 사회_제주.pdf,semantic_related,0.9502,E5 임베딩 유사도: 0.9502
+F105,F101,해방이전 제주의 사회와 경제_양정필.pdf,제주 4·3의 진실과 역사적 의미_박찬식.pdf,semantic_related,0.9489,E5 임베딩 유사도: 0.9489
+F105,F094,해방이전 제주의 사회와 경제_양정필.pdf,4.3history.pdf,semantic_related,0.9429,E5 임베딩 유사도: 0.9429
+F105,F089,해방이전 제주의 사회와 경제_양정필.pdf,근대 서양 문물의 도입_ppt.pdf,semantic_related,0.9318,E5 임베딩 유사도: 0.9318
+F105,F069,해방이전 제주의 사회와 경제_양정필.pdf,개항기 조선 서양과 만나다.pdf,semantic_related,0.9278,E5 임베딩 유사도: 0.9278
+F106,F128,README.md,README.md,semantic_related,0.9564,E5 임베딩 유사도: 0.9564
+F106,F107,README.md,README.md,semantic_related,0.9558,E5 임베딩 유사도: 0.9558
+F106,F118,README.md,README.md,semantic_related,0.9525,E5 임베딩 유사도: 0.9525
+F106,F122,README.md,README.md,semantic_related,0.9484,E5 임베딩 유사도: 0.9484
+F106,F147,README.md,README.md,semantic_related,0.9464,E5 임베딩 유사도: 0.9464
+F107,F147,README.md,README.md,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F107,F106,README.md,README.md,semantic_related,0.9558,E5 임베딩 유사도: 0.9558
+F107,F128,README.md,README.md,semantic_related,0.9531,E5 임베딩 유사도: 0.9531
+F107,F141,README.md,README.md,semantic_related,0.9481,E5 임베딩 유사도: 0.9481
+F107,F135,README.md,README.md,semantic_related,0.9475,E5 임베딩 유사도: 0.9475
+F108,F135,birds.csv,README.md,semantic_related,0.9506,E5 임베딩 유사도: 0.9506
+F108,F148,birds.csv,notebook.ipynb,semantic_related,0.9473,E5 임베딩 유사도: 0.9473
+F108,F138,birds.csv,README.md,semantic_related,0.9469,E5 임베딩 유사도: 0.9469
+F108,F149,birds.csv,notebook.ipynb,semantic_related,0.9337,E5 임베딩 유사도: 0.9337
+F108,F134,birds.csv,notebook.ipynb,semantic_related,0.9328,E5 임베딩 유사도: 0.9328
+F109,F176,diabetes.tsv,week12.ipynb,semantic_related,0.9262,E5 임베딩 유사도: 0.9262
+F109,F188,diabetes.tsv,데이터사이언스_강의자료10.pdf,semantic_related,0.9187,E5 임베딩 유사도: 0.9187
+F109,F190,diabetes.tsv,데이터사이언스_강의자료12.pdf,semantic_related,0.9177,E5 임베딩 유사도: 0.9177
+F109,F177,diabetes.tsv,week12_data.csv,semantic_related,0.915,E5 임베딩 유사도: 0.9150
+F109,F162,diabetes.tsv,14주차_종합과제-2.ipynb,semantic_related,0.914,E5 임베딩 유사도: 0.9140
+F110,F162,emails.csv,14주차_종합과제-2.ipynb,semantic_related,0.9015,E5 임베딩 유사도: 0.9015
+F110,F126,emails.csv,notebook-papers.ipynb,semantic_related,0.9001,E5 임베딩 유사도: 0.9001
+F110,F181,emails.csv,week14_data.csv,semantic_related,0.9,E5 임베딩 유사도: 0.9000
+F110,F199,emails.csv,데이터사이언스_강의자료9.pdf,semantic_related,0.8998,E5 임베딩 유사도: 0.8998
+F110,F128,emails.csv,README.md,semantic_related,0.8995,E5 임베딩 유사도: 0.8995
+F111,F129,form.csv,assignment.ipynb,semantic_related,0.9339,E5 임베딩 유사도: 0.9339
+F111,F130,form.csv,assignment.md,semantic_related,0.9042,E5 임베딩 유사도: 0.9042
+F111,F108,form.csv,birds.csv,semantic_related,0.9037,E5 임베딩 유사도: 0.9037
+F111,F188,form.csv,데이터사이언스_강의자료10.pdf,semantic_related,0.9027,E5 임베딩 유사도: 0.9027
+F111,F132,form.csv,README.md,semantic_related,0.8976,E5 임베딩 유사도: 0.8976
+F112,F144,honey.csv,README.md,semantic_related,0.942,E5 임베딩 유사도: 0.9420
+F112,F151,honey.csv,notebook.ipynb,semantic_related,0.9361,E5 임베딩 유사도: 0.9361
+F112,F142,honey.csv,assignment.md,semantic_related,0.9296,E5 임베딩 유사도: 0.9296
+F112,F108,honey.csv,birds.csv,semantic_related,0.9205,E5 임베딩 유사도: 0.9205
+F112,F143,honey.csv,notebook.ipynb,semantic_related,0.9101,E5 임베딩 유사도: 0.9101
+F113,F141,mushrooms.csv,README.md,semantic_related,0.9588,E5 임베딩 유사도: 0.9588
+F113,F150,mushrooms.csv,notebook.ipynb,semantic_related,0.955,E5 임베딩 유사도: 0.9550
+F113,F140,mushrooms.csv,notebook.ipynb,semantic_related,0.9191,E5 임베딩 유사도: 0.9191
+F113,F107,mushrooms.csv,README.md,semantic_related,0.9097,E5 임베딩 유사도: 0.9097
+F113,F147,mushrooms.csv,README.md,semantic_related,0.9095,E5 임베딩 유사도: 0.9095
+F114,F188,SOCR_MLB.tsv,데이터사이언스_강의자료10.pdf,semantic_related,0.9043,E5 임베딩 유사도: 0.9043
+F114,F123,SOCR_MLB.tsv,TwitterData.json,semantic_related,0.9012,E5 임베딩 유사도: 0.9012
+F114,F128,SOCR_MLB.tsv,README.md,semantic_related,0.8996,E5 임베딩 유사도: 0.8996
+F114,F108,SOCR_MLB.tsv,birds.csv,semantic_related,0.8995,E5 임베딩 유사도: 0.8995
+F114,F109,SOCR_MLB.tsv,diabetes.tsv,semantic_related,0.8995,E5 임베딩 유사도: 0.8995
+F115,F181,taxi.csv,week14_data.csv,semantic_related,0.9011,E5 임베딩 유사도: 0.9011
+F115,F157,taxi.csv,time_series_covid19_deaths_global.csv,semantic_related,0.8995,E5 임베딩 유사도: 0.8995
+F115,F187,taxi.csv,데이터사이언스_강의자료1.pdf,semantic_related,0.8985,E5 임베딩 유사도: 0.8985
+F115,F123,taxi.csv,TwitterData.json,semantic_related,0.8985,E5 임베딩 유사도: 0.8985
+F115,F147,taxi.csv,README.md,semantic_related,0.8974,E5 임베딩 유사도: 0.8974
+F116,F125,UID_ISO_FIPS_LookUp_Table.csv,notebook-covidspread.ipynb,semantic_related,0.9391,E5 임베딩 유사도: 0.9391
+F116,F158,UID_ISO_FIPS_LookUp_Table.csv,time_series_covid19_recovered_global.csv,semantic_related,0.9295,E5 임베딩 유사도: 0.9295
+F116,F156,UID_ISO_FIPS_LookUp_Table.csv,time_series_covid19_confirmed_global.csv,semantic_related,0.9287,E5 임베딩 유사도: 0.9287
+F116,F157,UID_ISO_FIPS_LookUp_Table.csv,time_series_covid19_deaths_global.csv,semantic_related,0.927,E5 임베딩 유사도: 0.9270
+F116,F126,UID_ISO_FIPS_LookUp_Table.csv,notebook-papers.ipynb,semantic_related,0.9144,E5 임베딩 유사도: 0.9144
+F117,F118,assignment.md,README.md,semantic_related,0.928,E5 임베딩 유사도: 0.9280
+F117,F145,assignment.md,assignment.md,semantic_related,0.9187,E5 임베딩 유사도: 0.9187
+F117,F130,assignment.md,assignment.md,semantic_related,0.917,E5 임베딩 유사도: 0.9170
+F117,F136,assignment.md,assignment.md,semantic_related,0.9137,E5 임베딩 유사도: 0.9137
+F117,F122,assignment.md,README.md,semantic_related,0.9136,E5 임베딩 유사도: 0.9136
+F118,F122,README.md,README.md,semantic_related,0.9553,E5 임베딩 유사도: 0.9553
+F118,F128,README.md,README.md,semantic_related,0.9553,E5 임베딩 유사도: 0.9553
+F118,F106,README.md,README.md,semantic_related,0.9525,E5 임베딩 유사도: 0.9525
+F118,F147,README.md,README.md,semantic_related,0.9523,E5 임베딩 유사도: 0.9523
+F118,F132,README.md,README.md,semantic_related,0.9414,E5 임베딩 유사도: 0.9414
+F119,F120,assignment.md,CocaColaCo.xlsx,semantic_related,0.953,E5 임베딩 유사도: 0.9530
+F119,F189,assignment.md,데이터사이언스_강의자료11.pdf,semantic_related,0.9062,E5 임베딩 유사도: 0.9062
+F119,F124,assignment.md,assignment.md,semantic_related,0.9041,E5 임베딩 유사도: 0.9041
+F119,F185,assignment.md,week7_2.ipynb,semantic_related,0.9023,E5 임베딩 유사도: 0.9023
+F119,F142,assignment.md,assignment.md,semantic_related,0.9006,E5 임베딩 유사도: 0.9006
+F120,F119,CocaColaCo.xlsx,assignment.md,semantic_related,0.953,E5 임베딩 유사도: 0.9530
+F120,F185,CocaColaCo.xlsx,week7_2.ipynb,semantic_related,0.9018,E5 임베딩 유사도: 0.9018
+F120,F189,CocaColaCo.xlsx,데이터사이언스_강의자료11.pdf,semantic_related,0.8904,E5 임베딩 유사도: 0.8904
+F120,F151,CocaColaCo.xlsx,notebook.ipynb,semantic_related,0.8904,E5 임베딩 유사도: 0.8904
+F120,F162,CocaColaCo.xlsx,14주차_종합과제-2.ipynb,semantic_related,0.8901,E5 임베딩 유사도: 0.8901
+F121,F123,PersonsData.json,TwitterData.json,semantic_related,0.9107,E5 임베딩 유사도: 0.9107
+F121,F122,PersonsData.json,README.md,semantic_related,0.8992,E5 임베딩 유사도: 0.8992
+F121,F155,PersonsData.json,letters.json,semantic_related,0.8895,E5 임베딩 유사도: 0.8895
+F121,F107,PersonsData.json,README.md,semantic_related,0.8893,E5 임베딩 유사도: 0.8893
+F121,F128,PersonsData.json,README.md,semantic_related,0.8883,E5 임베딩 유사도: 0.8883
+F122,F118,README.md,README.md,semantic_related,0.9553,E5 임베딩 유사도: 0.9553
+F122,F106,README.md,README.md,semantic_related,0.9484,E5 임베딩 유사도: 0.9484
+F122,F128,README.md,README.md,semantic_related,0.9477,E5 임베딩 유사도: 0.9477
+F122,F147,README.md,README.md,semantic_related,0.9459,E5 임베딩 유사도: 0.9459
+F122,F132,README.md,README.md,semantic_related,0.9423,E5 임베딩 유사도: 0.9423
+F123,F147,TwitterData.json,README.md,semantic_related,0.9268,E5 임베딩 유사도: 0.9268
+F123,F128,TwitterData.json,README.md,semantic_related,0.9232,E5 임베딩 유사도: 0.9232
+F123,F107,TwitterData.json,README.md,semantic_related,0.923,E5 임베딩 유사도: 0.9230
+F123,F122,TwitterData.json,README.md,semantic_related,0.9192,E5 임베딩 유사도: 0.9192
+F123,F145,TwitterData.json,assignment.md,semantic_related,0.9173,E5 임베딩 유사도: 0.9173
+F124,F128,assignment.md,README.md,semantic_related,0.9452,E5 임베딩 유사도: 0.9452
+F124,F125,assignment.md,notebook-covidspread.ipynb,semantic_related,0.9446,E5 임베딩 유사도: 0.9446
+F124,F126,assignment.md,notebook-papers.ipynb,semantic_related,0.9426,E5 임베딩 유사도: 0.9426
+F124,F147,assignment.md,README.md,semantic_related,0.936,E5 임베딩 유사도: 0.9360
+F124,F136,assignment.md,assignment.md,semantic_related,0.9311,E5 임베딩 유사도: 0.9311
+F125,F156,notebook-covidspread.ipynb,time_series_covid19_confirmed_global.csv,semantic_related,0.9563,E5 임베딩 유사도: 0.9563
+F125,F126,notebook-covidspread.ipynb,notebook-papers.ipynb,semantic_related,0.9543,E5 임베딩 유사도: 0.9543
+F125,F158,notebook-covidspread.ipynb,time_series_covid19_recovered_global.csv,semantic_related,0.9523,E5 임베딩 유사도: 0.9523
+F125,F157,notebook-covidspread.ipynb,time_series_covid19_deaths_global.csv,semantic_related,0.9479,E5 임베딩 유사도: 0.9479
+F125,F124,notebook-covidspread.ipynb,assignment.md,semantic_related,0.9446,E5 임베딩 유사도: 0.9446
+F126,F125,notebook-papers.ipynb,notebook-covidspread.ipynb,semantic_related,0.9543,E5 임베딩 유사도: 0.9543
+F126,F128,notebook-papers.ipynb,README.md,semantic_related,0.9515,E5 임베딩 유사도: 0.9515
+F126,F131,notebook-papers.ipynb,notebook.ipynb,semantic_related,0.946,E5 임베딩 유사도: 0.9460
+F126,F124,notebook-papers.ipynb,assignment.md,semantic_related,0.9426,E5 임베딩 유사도: 0.9426
+F126,F162,notebook-papers.ipynb,14주차_종합과제-2.ipynb,semantic_related,0.9383,E5 임베딩 유사도: 0.9383
+F127,F131,notebook.ipynb,notebook.ipynb,semantic_related,0.9428,E5 임베딩 유사도: 0.9428
+F127,F128,notebook.ipynb,README.md,semantic_related,0.9409,E5 임베딩 유사도: 0.9409
+F127,F185,notebook.ipynb,week7_2.ipynb,semantic_related,0.936,E5 임베딩 유사도: 0.9360
+F127,F126,notebook.ipynb,notebook-papers.ipynb,semantic_related,0.932,E5 임베딩 유사도: 0.9320
+F127,F162,notebook.ipynb,14주차_종합과제-2.ipynb,semantic_related,0.9314,E5 임베딩 유사도: 0.9314
+F128,F132,README.md,README.md,semantic_related,0.9711,E5 임베딩 유사도: 0.9711
+F128,F147,README.md,README.md,semantic_related,0.9574,E5 임베딩 유사도: 0.9574
+F128,F106,README.md,README.md,semantic_related,0.9564,E5 임베딩 유사도: 0.9564
+F128,F118,README.md,README.md,semantic_related,0.9553,E5 임베딩 유사도: 0.9553
+F128,F107,README.md,README.md,semantic_related,0.9531,E5 임베딩 유사도: 0.9531
+F129,F130,assignment.ipynb,assignment.md,semantic_related,0.9502,E5 임베딩 유사도: 0.9502
+F129,F111,assignment.ipynb,form.csv,semantic_related,0.9339,E5 임베딩 유사도: 0.9339
+F129,F131,assignment.ipynb,notebook.ipynb,semantic_related,0.9333,E5 임베딩 유사도: 0.9333
+F129,F149,assignment.ipynb,notebook.ipynb,semantic_related,0.9303,E5 임베딩 유사도: 0.9303
+F129,F127,assignment.ipynb,notebook.ipynb,semantic_related,0.9302,E5 임베딩 유사도: 0.9302
+F130,F129,assignment.md,assignment.ipynb,semantic_related,0.9502,E5 임베딩 유사도: 0.9502
+F130,F145,assignment.md,assignment.md,semantic_related,0.9394,E5 임베딩 유사도: 0.9394
+F130,F136,assignment.md,assignment.md,semantic_related,0.9376,E5 임베딩 유사도: 0.9376
+F130,F147,assignment.md,README.md,semantic_related,0.9306,E5 임베딩 유사도: 0.9306
+F130,F133,assignment.md,assignment.md,semantic_related,0.9275,E5 임베딩 유사도: 0.9275
+F131,F126,notebook.ipynb,notebook-papers.ipynb,semantic_related,0.946,E5 임베딩 유사도: 0.9460
+F131,F127,notebook.ipynb,notebook.ipynb,semantic_related,0.9428,E5 임베딩 유사도: 0.9428
+F131,F132,notebook.ipynb,README.md,semantic_related,0.9417,E5 임베딩 유사도: 0.9417
+F131,F128,notebook.ipynb,README.md,semantic_related,0.9386,E5 임베딩 유사도: 0.9386
+F131,F134,notebook.ipynb,notebook.ipynb,semantic_related,0.9345,E5 임베딩 유사도: 0.9345
+F132,F128,README.md,README.md,semantic_related,0.9711,E5 임베딩 유사도: 0.9711
+F132,F147,README.md,README.md,semantic_related,0.9535,E5 임베딩 유사도: 0.9535
+F132,F106,README.md,README.md,semantic_related,0.9433,E5 임베딩 유사도: 0.9433
+F132,F188,README.md,데이터사이언스_강의자료10.pdf,semantic_related,0.9423,E5 임베딩 유사도: 0.9423
+F132,F122,README.md,README.md,semantic_related,0.9423,E5 임베딩 유사도: 0.9423
+F133,F136,assignment.md,assignment.md,semantic_related,0.9488,E5 임베딩 유사도: 0.9488
+F133,F142,assignment.md,assignment.md,semantic_related,0.9425,E5 임베딩 유사도: 0.9425
+F133,F135,assignment.md,README.md,semantic_related,0.9348,E5 임베딩 유사도: 0.9348
+F133,F145,assignment.md,assignment.md,semantic_related,0.9288,E5 임베딩 유사도: 0.9288
+F133,F130,assignment.md,assignment.md,semantic_related,0.9275,E5 임베딩 유사도: 0.9275
+F134,F137,notebook.ipynb,notebook.ipynb,semantic_related,0.9826,E5 임베딩 유사도: 0.9826
+F134,F143,notebook.ipynb,notebook.ipynb,semantic_related,0.9568,E5 임베딩 유사도: 0.9568
+F134,F140,notebook.ipynb,notebook.ipynb,semantic_related,0.9455,E5 임베딩 유사도: 0.9455
+F134,F148,notebook.ipynb,notebook.ipynb,semantic_related,0.9353,E5 임베딩 유사도: 0.9353
+F134,F131,notebook.ipynb,notebook.ipynb,semantic_related,0.9345,E5 임베딩 유사도: 0.9345
+F135,F138,README.md,README.md,semantic_related,0.9715,E5 임베딩 유사도: 0.9715
+F135,F148,README.md,notebook.ipynb,semantic_related,0.9635,E5 임베딩 유사도: 0.9635
+F135,F108,README.md,birds.csv,semantic_related,0.9506,E5 임베딩 유사도: 0.9506
+F135,F107,README.md,README.md,semantic_related,0.9475,E5 임베딩 유사도: 0.9475
+F135,F147,README.md,README.md,semantic_related,0.9461,E5 임베딩 유사도: 0.9461
+F136,F133,assignment.md,assignment.md,semantic_related,0.9488,E5 임베딩 유사도: 0.9488
+F136,F142,assignment.md,assignment.md,semantic_related,0.945,E5 임베딩 유사도: 0.9450
+F136,F145,assignment.md,assignment.md,semantic_related,0.9378,E5 임베딩 유사도: 0.9378
+F136,F130,assignment.md,assignment.md,semantic_related,0.9376,E5 임베딩 유사도: 0.9376
+F136,F138,assignment.md,README.md,semantic_related,0.9346,E5 임베딩 유사도: 0.9346
+F137,F134,notebook.ipynb,notebook.ipynb,semantic_related,0.9826,E5 임베딩 유사도: 0.9826
+F137,F143,notebook.ipynb,notebook.ipynb,semantic_related,0.9494,E5 임베딩 유사도: 0.9494
+F137,F140,notebook.ipynb,notebook.ipynb,semantic_related,0.9394,E5 임베딩 유사도: 0.9394
+F137,F108,notebook.ipynb,birds.csv,semantic_related,0.9316,E5 임베딩 유사도: 0.9316
+F137,F148,notebook.ipynb,notebook.ipynb,semantic_related,0.9304,E5 임베딩 유사도: 0.9304
+F138,F135,README.md,README.md,semantic_related,0.9715,E5 임베딩 유사도: 0.9715
+F138,F149,README.md,notebook.ipynb,semantic_related,0.9578,E5 임베딩 유사도: 0.9578
+F138,F148,README.md,notebook.ipynb,semantic_related,0.952,E5 임베딩 유사도: 0.9520
+F138,F108,README.md,birds.csv,semantic_related,0.9469,E5 임베딩 유사도: 0.9469
+F138,F107,README.md,README.md,semantic_related,0.9451,E5 임베딩 유사도: 0.9451
+F139,F136,assignment.md,assignment.md,semantic_related,0.9271,E5 임베딩 유사도: 0.9271
+F139,F141,assignment.md,README.md,semantic_related,0.9241,E5 임베딩 유사도: 0.9241
+F139,F142,assignment.md,assignment.md,semantic_related,0.922,E5 임베딩 유사도: 0.9220
+F139,F133,assignment.md,assignment.md,semantic_related,0.9186,E5 임베딩 유사도: 0.9186
+F139,F122,assignment.md,README.md,semantic_related,0.9146,E5 임베딩 유사도: 0.9146
+F140,F143,notebook.ipynb,notebook.ipynb,semantic_related,0.949,E5 임베딩 유사도: 0.9490
+F140,F134,notebook.ipynb,notebook.ipynb,semantic_related,0.9455,E5 임베딩 유사도: 0.9455
+F140,F141,notebook.ipynb,README.md,semantic_related,0.9404,E5 임베딩 유사도: 0.9404
+F140,F137,notebook.ipynb,notebook.ipynb,semantic_related,0.9394,E5 임베딩 유사도: 0.9394
+F140,F150,notebook.ipynb,notebook.ipynb,semantic_related,0.9393,E5 임베딩 유사도: 0.9393
+F141,F150,README.md,notebook.ipynb,semantic_related,0.9601,E5 임베딩 유사도: 0.9601
+F141,F113,README.md,mushrooms.csv,semantic_related,0.9588,E5 임베딩 유사도: 0.9588
+F141,F107,README.md,README.md,semantic_related,0.9481,E5 임베딩 유사도: 0.9481
+F141,F147,README.md,README.md,semantic_related,0.9451,E5 임베딩 유사도: 0.9451
+F141,F140,README.md,notebook.ipynb,semantic_related,0.9404,E5 임베딩 유사도: 0.9404
+F142,F136,assignment.md,assignment.md,semantic_related,0.945,E5 임베딩 유사도: 0.9450
+F142,F133,assignment.md,assignment.md,semantic_related,0.9425,E5 임베딩 유사도: 0.9425
+F142,F144,assignment.md,README.md,semantic_related,0.9405,E5 임베딩 유사도: 0.9405
+F142,F112,assignment.md,honey.csv,semantic_related,0.9296,E5 임베딩 유사도: 0.9296
+F142,F145,assignment.md,assignment.md,semantic_related,0.9288,E5 임베딩 유사도: 0.9288
+F143,F134,notebook.ipynb,notebook.ipynb,semantic_related,0.9568,E5 임베딩 유사도: 0.9568
+F143,F137,notebook.ipynb,notebook.ipynb,semantic_related,0.9494,E5 임베딩 유사도: 0.9494
+F143,F140,notebook.ipynb,notebook.ipynb,semantic_related,0.949,E5 임베딩 유사도: 0.9490
+F143,F131,notebook.ipynb,notebook.ipynb,semantic_related,0.9283,E5 임베딩 유사도: 0.9283
+F143,F142,notebook.ipynb,assignment.md,semantic_related,0.9274,E5 임베딩 유사도: 0.9274
+F144,F151,README.md,notebook.ipynb,semantic_related,0.9498,E5 임베딩 유사도: 0.9498
+F144,F135,README.md,README.md,semantic_related,0.9444,E5 임베딩 유사도: 0.9444
+F144,F147,README.md,README.md,semantic_related,0.9441,E5 임베딩 유사도: 0.9441
+F144,F112,README.md,honey.csv,semantic_related,0.942,E5 임베딩 유사도: 0.9420
+F144,F142,README.md,assignment.md,semantic_related,0.9405,E5 임베딩 유사도: 0.9405
+F145,F130,assignment.md,assignment.md,semantic_related,0.9394,E5 임베딩 유사도: 0.9394
+F145,F136,assignment.md,assignment.md,semantic_related,0.9378,E5 임베딩 유사도: 0.9378
+F145,F147,assignment.md,README.md,semantic_related,0.9313,E5 임베딩 유사도: 0.9313
+F145,F133,assignment.md,assignment.md,semantic_related,0.9288,E5 임베딩 유사도: 0.9288
+F145,F142,assignment.md,assignment.md,semantic_related,0.9288,E5 임베딩 유사도: 0.9288
+F146,F126,correlation-analysis.ipynb,notebook-papers.ipynb,semantic_related,0.9365,E5 임베딩 유사도: 0.9365
+F146,F128,correlation-analysis.ipynb,README.md,semantic_related,0.9265,E5 임베딩 유사도: 0.9265
+F146,F162,correlation-analysis.ipynb,14주차_종합과제-2.ipynb,semantic_related,0.9248,E5 임베딩 유사도: 0.9248
+F146,F125,correlation-analysis.ipynb,notebook-covidspread.ipynb,semantic_related,0.9241,E5 임베딩 유사도: 0.9241
+F146,F147,correlation-analysis.ipynb,README.md,semantic_related,0.9238,E5 임베딩 유사도: 0.9238
+F147,F107,README.md,README.md,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F147,F128,README.md,README.md,semantic_related,0.9574,E5 임베딩 유사도: 0.9574
+F147,F132,README.md,README.md,semantic_related,0.9535,E5 임베딩 유사도: 0.9535
+F147,F118,README.md,README.md,semantic_related,0.9523,E5 임베딩 유사도: 0.9523
+F147,F106,README.md,README.md,semantic_related,0.9464,E5 임베딩 유사도: 0.9464
+F148,F135,notebook.ipynb,README.md,semantic_related,0.9635,E5 임베딩 유사도: 0.9635
+F148,F149,notebook.ipynb,notebook.ipynb,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F148,F138,notebook.ipynb,README.md,semantic_related,0.952,E5 임베딩 유사도: 0.9520
+F148,F108,notebook.ipynb,birds.csv,semantic_related,0.9473,E5 임베딩 유사도: 0.9473
+F148,F134,notebook.ipynb,notebook.ipynb,semantic_related,0.9353,E5 임베딩 유사도: 0.9353
+F149,F148,notebook.ipynb,notebook.ipynb,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F149,F138,notebook.ipynb,README.md,semantic_related,0.9578,E5 임베딩 유사도: 0.9578
+F149,F151,notebook.ipynb,notebook.ipynb,semantic_related,0.9384,E5 임베딩 유사도: 0.9384
+F149,F135,notebook.ipynb,README.md,semantic_related,0.9345,E5 임베딩 유사도: 0.9345
+F149,F108,notebook.ipynb,birds.csv,semantic_related,0.9337,E5 임베딩 유사도: 0.9337
+F150,F141,notebook.ipynb,README.md,semantic_related,0.9601,E5 임베딩 유사도: 0.9601
+F150,F113,notebook.ipynb,mushrooms.csv,semantic_related,0.955,E5 임베딩 유사도: 0.9550
+F150,F140,notebook.ipynb,notebook.ipynb,semantic_related,0.9393,E5 임베딩 유사도: 0.9393
+F150,F126,notebook.ipynb,notebook-papers.ipynb,semantic_related,0.9335,E5 임베딩 유사도: 0.9335
+F150,F149,notebook.ipynb,notebook.ipynb,semantic_related,0.9293,E5 임베딩 유사도: 0.9293
+F151,F144,notebook.ipynb,README.md,semantic_related,0.9498,E5 임베딩 유사도: 0.9498
+F151,F149,notebook.ipynb,notebook.ipynb,semantic_related,0.9384,E5 임베딩 유사도: 0.9384
+F151,F112,notebook.ipynb,honey.csv,semantic_related,0.9361,E5 임베딩 유사도: 0.9361
+F151,F148,notebook.ipynb,notebook.ipynb,semantic_related,0.9306,E5 임베딩 유사도: 0.9306
+F151,F150,notebook.ipynb,notebook.ipynb,semantic_related,0.9257,E5 임베딩 유사도: 0.9257
+F152,F153,README.md,README.md,semantic_related,0.9984,E5 임베딩 유사도: 0.9984
+F152,F147,README.md,README.md,semantic_related,0.9258,E5 임베딩 유사도: 0.9258
+F152,F107,README.md,README.md,semantic_related,0.9161,E5 임베딩 유사도: 0.9161
+F152,F106,README.md,README.md,semantic_related,0.9156,E5 임베딩 유사도: 0.9156
+F152,F155,README.md,letters.json,semantic_related,0.9113,E5 임베딩 유사도: 0.9113
+F153,F152,README.md,README.md,semantic_related,0.9984,E5 임베딩 유사도: 0.9984
+F153,F147,README.md,README.md,semantic_related,0.9246,E5 임베딩 유사도: 0.9246
+F153,F106,README.md,README.md,semantic_related,0.917,E5 임베딩 유사도: 0.9170
+F153,F107,README.md,README.md,semantic_related,0.9155,E5 임베딩 유사도: 0.9155
+F153,F122,README.md,README.md,semantic_related,0.9111,E5 임베딩 유사도: 0.9111
+F154,F155,letters.json,letters.json,semantic_related,0.9907,E5 임베딩 유사도: 0.9907
+F154,F147,letters.json,README.md,semantic_related,0.9168,E5 임베딩 유사도: 0.9168
+F154,F107,letters.json,README.md,semantic_related,0.909,E5 임베딩 유사도: 0.9090
+F154,F152,letters.json,README.md,semantic_related,0.907,E5 임베딩 유사도: 0.9070
+F154,F199,letters.json,데이터사이언스_강의자료9.pdf,semantic_related,0.9062,E5 임베딩 유사도: 0.9062
+F155,F154,letters.json,letters.json,semantic_related,0.9907,E5 임베딩 유사도: 0.9907
+F155,F147,letters.json,README.md,semantic_related,0.916,E5 임베딩 유사도: 0.9160
+F155,F152,letters.json,README.md,semantic_related,0.9113,E5 임베딩 유사도: 0.9113
+F155,F153,letters.json,README.md,semantic_related,0.9102,E5 임베딩 유사도: 0.9102
+F155,F107,letters.json,README.md,semantic_related,0.9071,E5 임베딩 유사도: 0.9071
+F156,F158,time_series_covid19_confirmed_global.csv,time_series_covid19_recovered_global.csv,semantic_related,0.9817,E5 임베딩 유사도: 0.9817
+F156,F157,time_series_covid19_confirmed_global.csv,time_series_covid19_deaths_global.csv,semantic_related,0.9776,E5 임베딩 유사도: 0.9776
+F156,F125,time_series_covid19_confirmed_global.csv,notebook-covidspread.ipynb,semantic_related,0.9563,E5 임베딩 유사도: 0.9563
+F156,F116,time_series_covid19_confirmed_global.csv,UID_ISO_FIPS_LookUp_Table.csv,semantic_related,0.9287,E5 임베딩 유사도: 0.9287
+F156,F128,time_series_covid19_confirmed_global.csv,README.md,semantic_related,0.9269,E5 임베딩 유사도: 0.9269
+F157,F158,time_series_covid19_deaths_global.csv,time_series_covid19_recovered_global.csv,semantic_related,0.9799,E5 임베딩 유사도: 0.9799
+F157,F156,time_series_covid19_deaths_global.csv,time_series_covid19_confirmed_global.csv,semantic_related,0.9776,E5 임베딩 유사도: 0.9776
+F157,F125,time_series_covid19_deaths_global.csv,notebook-covidspread.ipynb,semantic_related,0.9479,E5 임베딩 유사도: 0.9479
+F157,F128,time_series_covid19_deaths_global.csv,README.md,semantic_related,0.927,E5 임베딩 유사도: 0.9270
+F157,F116,time_series_covid19_deaths_global.csv,UID_ISO_FIPS_LookUp_Table.csv,semantic_related,0.927,E5 임베딩 유사도: 0.9270
+F158,F156,time_series_covid19_recovered_global.csv,time_series_covid19_confirmed_global.csv,semantic_related,0.9817,E5 임베딩 유사도: 0.9817
+F158,F157,time_series_covid19_recovered_global.csv,time_series_covid19_deaths_global.csv,semantic_related,0.9799,E5 임베딩 유사도: 0.9799
+F158,F125,time_series_covid19_recovered_global.csv,notebook-covidspread.ipynb,semantic_related,0.9523,E5 임베딩 유사도: 0.9523
+F158,F116,time_series_covid19_recovered_global.csv,UID_ISO_FIPS_LookUp_Table.csv,semantic_related,0.9295,E5 임베딩 유사도: 0.9295
+F158,F128,time_series_covid19_recovered_global.csv,README.md,semantic_related,0.927,E5 임베딩 유사도: 0.9270
+F159,F160,01. 금융의역할과주요금융지표.pdf,02. 금융상품과금융시장.pdf,semantic_related,0.9621,E5 임베딩 유사도: 0.9621
+F159,F161,01. 금융의역할과주요금융지표.pdf,03. 저축의이해.pdf,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F159,F195,01. 금융의역할과주요금융지표.pdf,데이터사이언스_강의자료4.pdf,semantic_related,0.929,E5 임베딩 유사도: 0.9290
+F159,F189,01. 금융의역할과주요금융지표.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.9282,E5 임베딩 유사도: 0.9282
+F159,F194,01. 금융의역할과주요금융지표.pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.9262,E5 임베딩 유사도: 0.9262
+F160,F159,02. 금융상품과금융시장.pdf,01. 금융의역할과주요금융지표.pdf,semantic_related,0.9621,E5 임베딩 유사도: 0.9621
+F160,F161,02. 금융상품과금융시장.pdf,03. 저축의이해.pdf,semantic_related,0.954,E5 임베딩 유사도: 0.9540
+F160,F195,02. 금융상품과금융시장.pdf,데이터사이언스_강의자료4.pdf,semantic_related,0.9272,E5 임베딩 유사도: 0.9272
+F160,F194,02. 금융상품과금융시장.pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.9186,E5 임베딩 유사도: 0.9186
+F160,F104,02. 금융상품과금융시장.pdf,한국현대사와 영화 ‘국제시장＇.pdf,semantic_related,0.9181,E5 임베딩 유사도: 0.9181
+F161,F160,03. 저축의이해.pdf,02. 금융상품과금융시장.pdf,semantic_related,0.954,E5 임베딩 유사도: 0.9540
+F161,F159,03. 저축의이해.pdf,01. 금융의역할과주요금융지표.pdf,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F161,F195,03. 저축의이해.pdf,데이터사이언스_강의자료4.pdf,semantic_related,0.924,E5 임베딩 유사도: 0.9240
+F161,F189,03. 저축의이해.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.9178,E5 임베딩 유사도: 0.9178
+F161,F199,03. 저축의이해.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9177,E5 임베딩 유사도: 0.9177
+F162,F190,14주차_종합과제-2.ipynb,데이터사이언스_강의자료12.pdf,semantic_related,0.954,E5 임베딩 유사도: 0.9540
+F162,F192,14주차_종합과제-2.ipynb,데이터사이언스_강의자료14.pdf,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F162,F180,14주차_종합과제-2.ipynb,week14_assignment.ipynb,semantic_related,0.95,E5 임베딩 유사도: 0.9500
+F162,F176,14주차_종합과제-2.ipynb,week12.ipynb,semantic_related,0.9466,E5 임베딩 유사도: 0.9466
+F162,F189,14주차_종합과제-2.ipynb,데이터사이언스_강의자료11.pdf,semantic_related,0.9452,E5 임베딩 유사도: 0.9452
+F163,F175,customers.csv,week11_shop.csv,semantic_related,0.9556,E5 임베딩 유사도: 0.9556
+F163,F170,customers.csv,week10_example.csv,semantic_related,0.9268,E5 임베딩 유사도: 0.9268
+F163,F172,customers.csv,week10_hospital_raw.csv,semantic_related,0.9167,E5 임베딩 유사도: 0.9167
+F163,F173,customers.csv,week11_home.ipynb,semantic_related,0.9161,E5 임베딩 유사도: 0.9161
+F163,F166,customers.csv,orders_202403.csv,semantic_related,0.9099,E5 임베딩 유사도: 0.9099
+F164,F165,orders_202401.csv,orders_202402.csv,semantic_related,0.9904,E5 임베딩 유사도: 0.9904
+F164,F166,orders_202401.csv,orders_202403.csv,semantic_related,0.9893,E5 임베딩 유사도: 0.9893
+F164,F174,orders_202401.csv,week11_item.csv,semantic_related,0.9225,E5 임베딩 유사도: 0.9225
+F164,F168,orders_202401.csv,reviews.csv,semantic_related,0.9216,E5 임베딩 유사도: 0.9216
+F164,F186,orders_202401.csv,week_7_convenience_store.csv,semantic_related,0.9209,E5 임베딩 유사도: 0.9209
+F165,F164,orders_202402.csv,orders_202401.csv,semantic_related,0.9904,E5 임베딩 유사도: 0.9904
+F165,F166,orders_202402.csv,orders_202403.csv,semantic_related,0.9885,E5 임베딩 유사도: 0.9885
+F165,F186,orders_202402.csv,week_7_convenience_store.csv,semantic_related,0.9213,E5 임베딩 유사도: 0.9213
+F165,F168,orders_202402.csv,reviews.csv,semantic_related,0.9208,E5 임베딩 유사도: 0.9208
+F165,F174,orders_202402.csv,week11_item.csv,semantic_related,0.9181,E5 임베딩 유사도: 0.9181
+F166,F164,orders_202403.csv,orders_202401.csv,semantic_related,0.9893,E5 임베딩 유사도: 0.9893
+F166,F165,orders_202403.csv,orders_202402.csv,semantic_related,0.9885,E5 임베딩 유사도: 0.9885
+F166,F168,orders_202403.csv,reviews.csv,semantic_related,0.9297,E5 임베딩 유사도: 0.9297
+F166,F174,orders_202403.csv,week11_item.csv,semantic_related,0.9235,E5 임베딩 유사도: 0.9235
+F166,F167,orders_202403.csv,products.csv,semantic_related,0.922,E5 임베딩 유사도: 0.9220
+F167,F174,products.csv,week11_item.csv,semantic_related,0.9394,E5 임베딩 유사도: 0.9394
+F167,F168,products.csv,reviews.csv,semantic_related,0.9257,E5 임베딩 유사도: 0.9257
+F167,F166,products.csv,orders_202403.csv,semantic_related,0.922,E5 임베딩 유사도: 0.9220
+F167,F164,products.csv,orders_202401.csv,semantic_related,0.9166,E5 임베딩 유사도: 0.9166
+F167,F186,products.csv,week_7_convenience_store.csv,semantic_related,0.9166,E5 임베딩 유사도: 0.9166
+F168,F166,reviews.csv,orders_202403.csv,semantic_related,0.9297,E5 임베딩 유사도: 0.9297
+F168,F174,reviews.csv,week11_item.csv,semantic_related,0.9284,E5 임베딩 유사도: 0.9284
+F168,F167,reviews.csv,products.csv,semantic_related,0.9257,E5 임베딩 유사도: 0.9257
+F168,F164,reviews.csv,orders_202401.csv,semantic_related,0.9216,E5 임베딩 유사도: 0.9216
+F168,F165,reviews.csv,orders_202402.csv,semantic_related,0.9208,E5 임베딩 유사도: 0.9208
+F169,F181,student_performance.csv,week14_data.csv,semantic_related,0.9333,E5 임베딩 유사도: 0.9333
+F169,F162,student_performance.csv,14주차_종합과제-2.ipynb,semantic_related,0.9232,E5 임베딩 유사도: 0.9232
+F169,F132,student_performance.csv,README.md,semantic_related,0.9118,E5 임베딩 유사도: 0.9118
+F169,F126,student_performance.csv,notebook-papers.ipynb,semantic_related,0.9097,E5 임베딩 유사도: 0.9097
+F169,F141,student_performance.csv,README.md,semantic_related,0.9082,E5 임베딩 유사도: 0.9082
+F170,F172,week10_example.csv,week10_hospital_raw.csv,semantic_related,0.9748,E5 임베딩 유사도: 0.9748
+F170,F171,week10_example.csv,week10_homework.ipynb,semantic_related,0.9509,E5 임베딩 유사도: 0.9509
+F170,F175,week10_example.csv,week11_shop.csv,semantic_related,0.9374,E5 임베딩 유사도: 0.9374
+F170,F179,week10_example.csv,week13_health.csv,semantic_related,0.9312,E5 임베딩 유사도: 0.9312
+F170,F184,week10_example.csv,Week6_share.ipynb,semantic_related,0.931,E5 임베딩 유사도: 0.9310
+F171,F188,week10_homework.ipynb,데이터사이언스_강의자료10.pdf,semantic_related,0.955,E5 임베딩 유사도: 0.9550
+F171,F176,week10_homework.ipynb,week12.ipynb,semantic_related,0.9543,E5 임베딩 유사도: 0.9543
+F171,F172,week10_homework.ipynb,week10_hospital_raw.csv,semantic_related,0.9536,E5 임베딩 유사도: 0.9536
+F171,F184,week10_homework.ipynb,Week6_share.ipynb,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F171,F170,week10_homework.ipynb,week10_example.csv,semantic_related,0.9509,E5 임베딩 유사도: 0.9509
+F172,F170,week10_hospital_raw.csv,week10_example.csv,semantic_related,0.9748,E5 임베딩 유사도: 0.9748
+F172,F171,week10_hospital_raw.csv,week10_homework.ipynb,semantic_related,0.9536,E5 임베딩 유사도: 0.9536
+F172,F179,week10_hospital_raw.csv,week13_health.csv,semantic_related,0.9403,E5 임베딩 유사도: 0.9403
+F172,F177,week10_hospital_raw.csv,week12_data.csv,semantic_related,0.9371,E5 임베딩 유사도: 0.9371
+F172,F175,week10_hospital_raw.csv,week11_shop.csv,semantic_related,0.9313,E5 임베딩 유사도: 0.9313
+F173,F171,week11_home.ipynb,week10_homework.ipynb,semantic_related,0.9443,E5 임베딩 유사도: 0.9443
+F173,F175,week11_home.ipynb,week11_shop.csv,semantic_related,0.9442,E5 임베딩 유사도: 0.9442
+F173,F162,week11_home.ipynb,14주차_종합과제-2.ipynb,semantic_related,0.9413,E5 임베딩 유사도: 0.9413
+F173,F185,week11_home.ipynb,week7_2.ipynb,semantic_related,0.9401,E5 임베딩 유사도: 0.9401
+F173,F189,week11_home.ipynb,데이터사이언스_강의자료11.pdf,semantic_related,0.9398,E5 임베딩 유사도: 0.9398
+F174,F167,week11_item.csv,products.csv,semantic_related,0.9394,E5 임베딩 유사도: 0.9394
+F174,F175,week11_item.csv,week11_shop.csv,semantic_related,0.9304,E5 임베딩 유사도: 0.9304
+F174,F168,week11_item.csv,reviews.csv,semantic_related,0.9284,E5 임베딩 유사도: 0.9284
+F174,F185,week11_item.csv,week7_2.ipynb,semantic_related,0.9236,E5 임베딩 유사도: 0.9236
+F174,F166,week11_item.csv,orders_202403.csv,semantic_related,0.9235,E5 임베딩 유사도: 0.9235
+F175,F163,week11_shop.csv,customers.csv,semantic_related,0.9556,E5 임베딩 유사도: 0.9556
+F175,F173,week11_shop.csv,week11_home.ipynb,semantic_related,0.9442,E5 임베딩 유사도: 0.9442
+F175,F170,week11_shop.csv,week10_example.csv,semantic_related,0.9374,E5 임베딩 유사도: 0.9374
+F175,F172,week11_shop.csv,week10_hospital_raw.csv,semantic_related,0.9313,E5 임베딩 유사도: 0.9313
+F175,F174,week11_shop.csv,week11_item.csv,semantic_related,0.9304,E5 임베딩 유사도: 0.9304
+F176,F178,week12.ipynb,week13_assignment-2.ipynb,semantic_related,0.9753,E5 임베딩 유사도: 0.9753
+F176,F190,week12.ipynb,데이터사이언스_강의자료12.pdf,semantic_related,0.9583,E5 임베딩 유사도: 0.9583
+F176,F171,week12.ipynb,week10_homework.ipynb,semantic_related,0.9543,E5 임베딩 유사도: 0.9543
+F176,F162,week12.ipynb,14주차_종합과제-2.ipynb,semantic_related,0.9466,E5 임베딩 유사도: 0.9466
+F176,F177,week12.ipynb,week12_data.csv,semantic_related,0.9465,E5 임베딩 유사도: 0.9465
+F177,F179,week12_data.csv,week13_health.csv,semantic_related,0.951,E5 임베딩 유사도: 0.9510
+F177,F176,week12_data.csv,week12.ipynb,semantic_related,0.9465,E5 임베딩 유사도: 0.9465
+F177,F178,week12_data.csv,week13_assignment-2.ipynb,semantic_related,0.9376,E5 임베딩 유사도: 0.9376
+F177,F172,week12_data.csv,week10_hospital_raw.csv,semantic_related,0.9371,E5 임베딩 유사도: 0.9371
+F177,F171,week12_data.csv,week10_homework.ipynb,semantic_related,0.9369,E5 임베딩 유사도: 0.9369
+F178,F176,week13_assignment-2.ipynb,week12.ipynb,semantic_related,0.9753,E5 임베딩 유사도: 0.9753
+F178,F190,week13_assignment-2.ipynb,데이터사이언스_강의자료12.pdf,semantic_related,0.951,E5 임베딩 유사도: 0.9510
+F178,F177,week13_assignment-2.ipynb,week12_data.csv,semantic_related,0.9376,E5 임베딩 유사도: 0.9376
+F178,F191,week13_assignment-2.ipynb,데이터사이언스_강의자료13.pdf,semantic_related,0.9364,E5 임베딩 유사도: 0.9364
+F178,F180,week13_assignment-2.ipynb,week14_assignment.ipynb,semantic_related,0.9352,E5 임베딩 유사도: 0.9352
+F179,F177,week13_health.csv,week12_data.csv,semantic_related,0.951,E5 임베딩 유사도: 0.9510
+F179,F172,week13_health.csv,week10_hospital_raw.csv,semantic_related,0.9403,E5 임베딩 유사도: 0.9403
+F179,F176,week13_health.csv,week12.ipynb,semantic_related,0.9355,E5 임베딩 유사도: 0.9355
+F179,F170,week13_health.csv,week10_example.csv,semantic_related,0.9312,E5 임베딩 유사도: 0.9312
+F179,F178,week13_health.csv,week13_assignment-2.ipynb,semantic_related,0.9309,E5 임베딩 유사도: 0.9309
+F180,F162,week14_assignment.ipynb,14주차_종합과제-2.ipynb,semantic_related,0.95,E5 임베딩 유사도: 0.9500
+F180,F176,week14_assignment.ipynb,week12.ipynb,semantic_related,0.9418,E5 임베딩 유사도: 0.9418
+F180,F126,week14_assignment.ipynb,notebook-papers.ipynb,semantic_related,0.9376,E5 임베딩 유사도: 0.9376
+F180,F190,week14_assignment.ipynb,데이터사이언스_강의자료12.pdf,semantic_related,0.9365,E5 임베딩 유사도: 0.9365
+F180,F189,week14_assignment.ipynb,데이터사이언스_강의자료11.pdf,semantic_related,0.9365,E5 임베딩 유사도: 0.9365
+F181,F169,week14_data.csv,student_performance.csv,semantic_related,0.9333,E5 임베딩 유사도: 0.9333
+F181,F162,week14_data.csv,14주차_종합과제-2.ipynb,semantic_related,0.9264,E5 임베딩 유사도: 0.9264
+F181,F180,week14_data.csv,week14_assignment.ipynb,semantic_related,0.9262,E5 임베딩 유사도: 0.9262
+F181,F187,week14_data.csv,데이터사이언스_강의자료1.pdf,semantic_related,0.9215,E5 임베딩 유사도: 0.9215
+F181,F179,week14_data.csv,week13_health.csv,semantic_related,0.9192,E5 임베딩 유사도: 0.9192
+F182,F185,Week4_Assignment.ipynb,week7_2.ipynb,semantic_related,0.9343,E5 임베딩 유사도: 0.9343
+F182,F173,Week4_Assignment.ipynb,week11_home.ipynb,semantic_related,0.9201,E5 임베딩 유사도: 0.9201
+F182,F184,Week4_Assignment.ipynb,Week6_share.ipynb,semantic_related,0.9164,E5 임베딩 유사도: 0.9164
+F182,F189,Week4_Assignment.ipynb,데이터사이언스_강의자료11.pdf,semantic_related,0.9113,E5 임베딩 유사도: 0.9113
+F182,F199,Week4_Assignment.ipynb,데이터사이언스_강의자료9.pdf,semantic_related,0.9104,E5 임베딩 유사도: 0.9104
+F183,F184,week5.ipynb,Week6_share.ipynb,semantic_related,0.9297,E5 임베딩 유사도: 0.9297
+F183,F185,week5.ipynb,week7_2.ipynb,semantic_related,0.9192,E5 임베딩 유사도: 0.9192
+F183,F162,week5.ipynb,14주차_종합과제-2.ipynb,semantic_related,0.9186,E5 임베딩 유사도: 0.9186
+F183,F173,week5.ipynb,week11_home.ipynb,semantic_related,0.9181,E5 임베딩 유사도: 0.9181
+F183,F176,week5.ipynb,week12.ipynb,semantic_related,0.9167,E5 임베딩 유사도: 0.9167
+F184,F171,Week6_share.ipynb,week10_homework.ipynb,semantic_related,0.9533,E5 임베딩 유사도: 0.9533
+F184,F176,Week6_share.ipynb,week12.ipynb,semantic_related,0.9422,E5 임베딩 유사도: 0.9422
+F184,F197,Week6_share.ipynb,데이터사이언스_강의자료6.pdf,semantic_related,0.9364,E5 임베딩 유사도: 0.9364
+F184,F185,Week6_share.ipynb,week7_2.ipynb,semantic_related,0.9361,E5 임베딩 유사도: 0.9361
+F184,F199,Week6_share.ipynb,데이터사이언스_강의자료9.pdf,semantic_related,0.9354,E5 임베딩 유사도: 0.9354
+F185,F186,week7_2.ipynb,week_7_convenience_store.csv,semantic_related,0.9413,E5 임베딩 유사도: 0.9413
+F185,F173,week7_2.ipynb,week11_home.ipynb,semantic_related,0.9401,E5 임베딩 유사도: 0.9401
+F185,F184,week7_2.ipynb,Week6_share.ipynb,semantic_related,0.9361,E5 임베딩 유사도: 0.9361
+F185,F127,week7_2.ipynb,notebook.ipynb,semantic_related,0.936,E5 임베딩 유사도: 0.9360
+F185,F182,week7_2.ipynb,Week4_Assignment.ipynb,semantic_related,0.9343,E5 임베딩 유사도: 0.9343
+F186,F185,week_7_convenience_store.csv,week7_2.ipynb,semantic_related,0.9413,E5 임베딩 유사도: 0.9413
+F186,F165,week_7_convenience_store.csv,orders_202402.csv,semantic_related,0.9213,E5 임베딩 유사도: 0.9213
+F186,F164,week_7_convenience_store.csv,orders_202401.csv,semantic_related,0.9209,E5 임베딩 유사도: 0.9209
+F186,F166,week_7_convenience_store.csv,orders_202403.csv,semantic_related,0.9207,E5 임베딩 유사도: 0.9207
+F186,F167,week_7_convenience_store.csv,products.csv,semantic_related,0.9166,E5 임베딩 유사도: 0.9166
+F187,F194,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.9682,E5 임베딩 유사도: 0.9682
+F187,F196,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료5.pdf,semantic_related,0.9637,E5 임베딩 유사도: 0.9637
+F187,F199,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9498,E5 임베딩 유사도: 0.9498
+F187,F195,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료4.pdf,semantic_related,0.9495,E5 임베딩 유사도: 0.9495
+F187,F192,데이터사이언스_강의자료1.pdf,데이터사이언스_강의자료14.pdf,semantic_related,0.9488,E5 임베딩 유사도: 0.9488
+F188,F199,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9685,E5 임베딩 유사도: 0.9685
+F188,F189,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.9638,E5 임베딩 유사도: 0.9638
+F188,F190,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료12.pdf,semantic_related,0.9603,E5 임베딩 유사도: 0.9603
+F188,F192,데이터사이언스_강의자료10.pdf,데이터사이언스_강의자료14.pdf,semantic_related,0.9573,E5 임베딩 유사도: 0.9573
+F188,F171,데이터사이언스_강의자료10.pdf,week10_homework.ipynb,semantic_related,0.955,E5 임베딩 유사도: 0.9550
+F189,F199,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9735,E5 임베딩 유사도: 0.9735
+F189,F188,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료10.pdf,semantic_related,0.9638,E5 임베딩 유사도: 0.9638
+F189,F190,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료12.pdf,semantic_related,0.9626,E5 임베딩 유사도: 0.9626
+F189,F198,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료7.pdf,semantic_related,0.959,E5 임베딩 유사도: 0.9590
+F189,F192,데이터사이언스_강의자료11.pdf,데이터사이언스_강의자료14.pdf,semantic_related,0.9584,E5 임베딩 유사도: 0.9584
+F190,F191,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료13.pdf,semantic_related,0.972,E5 임베딩 유사도: 0.9720
+F190,F192,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료14.pdf,semantic_related,0.9714,E5 임베딩 유사도: 0.9714
+F190,F189,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.9626,E5 임베딩 유사도: 0.9626
+F190,F188,데이터사이언스_강의자료12.pdf,데이터사이언스_강의자료10.pdf,semantic_related,0.9603,E5 임베딩 유사도: 0.9603
+F190,F176,데이터사이언스_강의자료12.pdf,week12.ipynb,semantic_related,0.9583,E5 임베딩 유사도: 0.9583
+F191,F190,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료12.pdf,semantic_related,0.972,E5 임베딩 유사도: 0.9720
+F191,F192,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료14.pdf,semantic_related,0.9651,E5 임베딩 유사도: 0.9651
+F191,F005,데이터사이언스_강의자료13.pdf,선형회귀_업데이트.pdf,semantic_related,0.9564,E5 임베딩 유사도: 0.9564
+F191,F189,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.9517,E5 임베딩 유사도: 0.9517
+F191,F188,데이터사이언스_강의자료13.pdf,데이터사이언스_강의자료10.pdf,semantic_related,0.9511,E5 임베딩 유사도: 0.9511
+F192,F190,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료12.pdf,semantic_related,0.9714,E5 임베딩 유사도: 0.9714
+F192,F191,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료13.pdf,semantic_related,0.9651,E5 임베딩 유사도: 0.9651
+F192,F189,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.9584,E5 임베딩 유사도: 0.9584
+F192,F188,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료10.pdf,semantic_related,0.9573,E5 임베딩 유사도: 0.9573
+F192,F199,데이터사이언스_강의자료14.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9557,E5 임베딩 유사도: 0.9557
+F193,F194,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.9595,E5 임베딩 유사도: 0.9595
+F193,F196,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료5.pdf,semantic_related,0.9584,E5 임베딩 유사도: 0.9584
+F193,F198,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료7.pdf,semantic_related,0.9566,E5 임베딩 유사도: 0.9566
+F193,F199,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.953,E5 임베딩 유사도: 0.9530
+F193,F197,데이터사이언스_강의자료2.pdf,데이터사이언스_강의자료6.pdf,semantic_related,0.9511,E5 임베딩 유사도: 0.9511
+F194,F196,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료5.pdf,semantic_related,0.9698,E5 임베딩 유사도: 0.9698
+F194,F187,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료1.pdf,semantic_related,0.9682,E5 임베딩 유사도: 0.9682
+F194,F195,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료4.pdf,semantic_related,0.9669,E5 임베딩 유사도: 0.9669
+F194,F197,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료6.pdf,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F194,F193,데이터사이언스_강의자료3.pdf,데이터사이언스_강의자료2.pdf,semantic_related,0.9595,E5 임베딩 유사도: 0.9595
+F195,F194,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.9669,E5 임베딩 유사도: 0.9669
+F195,F196,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료5.pdf,semantic_related,0.9654,E5 임베딩 유사도: 0.9654
+F195,F197,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료6.pdf,semantic_related,0.9593,E5 임베딩 유사도: 0.9593
+F195,F193,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료2.pdf,semantic_related,0.9501,E5 임베딩 유사도: 0.9501
+F195,F187,데이터사이언스_강의자료4.pdf,데이터사이언스_강의자료1.pdf,semantic_related,0.9495,E5 임베딩 유사도: 0.9495
+F196,F194,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.9698,E5 임베딩 유사도: 0.9698
+F196,F197,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료6.pdf,semantic_related,0.9684,E5 임베딩 유사도: 0.9684
+F196,F195,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료4.pdf,semantic_related,0.9654,E5 임베딩 유사도: 0.9654
+F196,F187,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료1.pdf,semantic_related,0.9637,E5 임베딩 유사도: 0.9637
+F196,F199,데이터사이언스_강의자료5.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9593,E5 임베딩 유사도: 0.9593
+F197,F196,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료5.pdf,semantic_related,0.9684,E5 임베딩 유사도: 0.9684
+F197,F194,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료3.pdf,semantic_related,0.9605,E5 임베딩 유사도: 0.9605
+F197,F195,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료4.pdf,semantic_related,0.9593,E5 임베딩 유사도: 0.9593
+F197,F199,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9592,E5 임베딩 유사도: 0.9592
+F197,F198,데이터사이언스_강의자료6.pdf,데이터사이언스_강의자료7.pdf,semantic_related,0.9552,E5 임베딩 유사도: 0.9552
+F198,F199,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료9.pdf,semantic_related,0.9714,E5 임베딩 유사도: 0.9714
+F198,F189,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.959,E5 임베딩 유사도: 0.9590
+F198,F193,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료2.pdf,semantic_related,0.9566,E5 임베딩 유사도: 0.9566
+F198,F196,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료5.pdf,semantic_related,0.9556,E5 임베딩 유사도: 0.9556
+F198,F197,데이터사이언스_강의자료7.pdf,데이터사이언스_강의자료6.pdf,semantic_related,0.9552,E5 임베딩 유사도: 0.9552
+F199,F189,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료11.pdf,semantic_related,0.9735,E5 임베딩 유사도: 0.9735
+F199,F198,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료7.pdf,semantic_related,0.9714,E5 임베딩 유사도: 0.9714
+F199,F188,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료10.pdf,semantic_related,0.9685,E5 임베딩 유사도: 0.9685
+F199,F196,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료5.pdf,semantic_related,0.9593,E5 임베딩 유사도: 0.9593
+F199,F197,데이터사이언스_강의자료9.pdf,데이터사이언스_강의자료6.pdf,semantic_related,0.9592,E5 임베딩 유사도: 0.9592
+F200,F162,test_new_file.py,14주차_종합과제-2.ipynb,semantic_related,0.8958,E5 임베딩 유사도: 0.8958
+F200,F184,test_new_file.py,Week6_share.ipynb,semantic_related,0.8914,E5 임베딩 유사도: 0.8914
+F200,F051,test_new_file.py,python3_voice_alert.py,semantic_related,0.8895,E5 임베딩 유사도: 0.8895
+F200,F126,test_new_file.py,notebook-papers.ipynb,semantic_related,0.8875,E5 임베딩 유사도: 0.8875
+F200,F056,test_new_file.py,voice_test.py,semantic_related,0.8859,E5 임베딩 유사도: 0.8859
+F201,F051,test_penguin_ai.py,python3_voice_alert.py,semantic_related,0.8793,E5 임베딩 유사도: 0.8793
+F201,F162,test_penguin_ai.py,14주차_종합과제-2.ipynb,semantic_related,0.8769,E5 임베딩 유사도: 0.8769
+F201,F056,test_penguin_ai.py,voice_test.py,semantic_related,0.8766,E5 임베딩 유사도: 0.8766
+F201,F149,test_penguin_ai.py,notebook.ipynb,semantic_related,0.8761,E5 임베딩 유사도: 0.8761
+F201,F057,test_penguin_ai.py,YOLO(test) (1).ipynb,semantic_related,0.8732,E5 임베딩 유사도: 0.8732
+F202,F049,op.py,message_hello (1).py,semantic_related,0.8897,E5 임베딩 유사도: 0.8897
+F202,F184,op.py,Week6_share.ipynb,semantic_related,0.8796,E5 임베딩 유사도: 0.8796
+F202,F051,op.py,python3_voice_alert.py,semantic_related,0.8769,E5 임베딩 유사도: 0.8769
+F202,F134,op.py,notebook.ipynb,semantic_related,0.8732,E5 임베딩 유사도: 0.8732
+F202,F128,op.py,README.md,semantic_related,0.8726,E5 임베딩 유사도: 0.8726

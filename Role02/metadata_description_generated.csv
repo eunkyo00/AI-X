@@ -201,3 +201,4 @@ F199,데이터사이언스_강의자료9.pdf,.pdf,dataset/files/데이터사이�
 F200,test_new_file.py,.py,dataset/files/test_new_file.py,255,2026-11-12 13:31:52,2026-11-12 16:23:20,,,이 파일은 점수에 따라 학점을 매핑하는 로직과 수정된 파일의 임베딩 재생성 여부를 확인하는 테스트 함수를 포함하고 있습니다.
 F201,test_penguin_ai.py,.py,dataset/files/test_penguin_ai.py,182,2026-11-12 15:53:00,2026-11-12 16:23:20,,,"이 파일은 펭귄 이미지를 입력받아 Adelie, Chinstrap, Gentoo 중 하나를 반환하는 이미지 분류 기능을 구현한 테스트 코드입니다."
 F202,op.py,.py,dataset/files/op.py,22,2026-11-16 15:00:13,2026-11-16 15:00:43,,,"이 파일은 Python 언어를 사용하여 'Hello, World!'라는 기본 메시지를 화면에 출력하는 간단한 예제 코드입니다."
+F203,test_yolo_detection.py,.py,dataset/files/test_yolo_detection.py,218,2026-11-19 16:11:01,2026-11-19 16:11:09,,,이 파일은 Ultralytics 라이브러리를 사용하여 사전 학습된 YOLOv8 모델을 불러와 웹캠을 통해 실시간으로 객체를 탐지하는 데 목적이 있습니다.

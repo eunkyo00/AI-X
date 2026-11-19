@@ -1,10 +1,10 @@
 {
-  "files": 158,
-  "extraction_success": 158,
-  "local_files_found": 158,
+  "files": 203,
+  "extraction_success": 203,
+  "local_files_found": 203,
   "size_mismatches": 0,
-  "references": 162,
-  "resolved": 19,
-  "ambiguous": 22,
-  "missing": 121
+  "references": 197,
+  "resolved": 29,
+  "ambiguous": 42,
+  "missing": 126
 }

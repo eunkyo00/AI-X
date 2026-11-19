@@ -56341,3 +56341,15 @@ def classify_penguin(image):
 
 # 자동 감시 기능 테스트",143,success,182,2026-11-12 15:53:00,2026-11-12 16:23:20,,,
 F202,op.py,.py,dataset/files/op.py,"print(""Hello, World!"")",22,success,22,2026-11-16 15:00:13,2026-11-16 15:00:43,,,
+F203,test_yolo_detection.py,.py,dataset/files/test_yolo_detection.py,"from ultralytics import YOLO
+
+# 사전 학습 모델 불러오기
+model = YOLO(""yolov8n.pt"")
+
+# 웹캠 영상 객체 탐지
+results = model.predict(
+    source=0,
+    imgsz=640,
+    conf=0.5,
+    show=True
+)",171,success,218,2026-11-19 16:11:01,2026-11-19 16:11:09,,,
