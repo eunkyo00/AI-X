@@ -5,6 +5,15 @@ import json
 import hashlib
 import os
 import shutil
+try:
+    import pytesseract
+except ImportError:
+    pytesseract = None
+import pymupdf
+from openpyxl import load_workbook
+from docx import Document
+from pptx import Presentation
+from PIL import Image
 
 # 1. 파일 경로 및 기본 설정
 METADATA_CSV=BASE_DIR / "metadata.csv"
@@ -23,6 +32,8 @@ MAX_PDF_PAGES = 100
 OCR_COMMAND = os.environ.get("TESSERACT_CMD") or shutil.which("tesseract")
 if not OCR_COMMAND and Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe").is_file():
     OCR_COMMAND = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+if pytesseract is not None and OCR_COMMAND:
+    pytesseract.pytesseract.tesseract_cmd = OCR_COMMAND
 
 
 class OCRUnavailable(RuntimeError):
@@ -130,7 +141,6 @@ def extract_csv(file_path):
 
 
 def extract_xlsx(file_path):
-    from openpyxl import load_workbook
     workbook = load_workbook(
         file_path,
         read_only=True,
@@ -160,7 +170,6 @@ def extract_xlsx(file_path):
 
 
 def extract_pdf(file_path):
-    import pymupdf
     texts = []
     with pymupdf.open(file_path) as pdf:
         for page_num, page in enumerate(pdf):
@@ -171,14 +180,8 @@ def extract_pdf(file_path):
             text = page.get_text()
             # 텍스트가 없으면 OCR 실행
             if not text.strip():
-                try:
-                    import pytesseract
-                except ImportError:
-                    pytesseract = None
                 if pytesseract is None or not OCR_COMMAND:
                     raise OCRUnavailable("Tesseract와 kor/eng 언어 데이터가 필요합니다.")
-                from PIL import Image
-                pytesseract.pytesseract.tesseract_cmd = OCR_COMMAND
                 print(f"  OCR 처리 중: {page_num + 1}페이지")
                 pix = page.get_pixmap(
                     matrix=pymupdf.Matrix(2, 2),
@@ -201,7 +204,6 @@ def extract_pdf(file_path):
 
 
 def extract_docx(file_path):
-    from docx import Document
     doc = Document(file_path)
     texts = []
     # 본문 문단
@@ -220,7 +222,6 @@ def extract_docx(file_path):
 
 
 def extract_pptx(file_path):
-    from pptx import Presentation
     presentation = Presentation(file_path)
     texts = []
     for slide_num, slide in enumerate(presentation.slides, start=1):
