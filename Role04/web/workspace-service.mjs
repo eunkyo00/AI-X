@@ -1,10 +1,10 @@
 /** Service contracts and browser-local storage. No semantic search is fabricated. */
-export const SUPPORTED = new Set(['pdf','csv','pptx','txt','py','r','png','jpg','jpeg','webp','docx','md','json','ipynb']);
+export const SUPPORTED = new Set(['pdf','csv','tsv','xlsx','pptx','txt','py','r','png','jpg','jpeg','webp','docx','md','json','ipynb','html','css','js','sql']);
 export const MAX_FILE_SIZE = 25 * 1024 * 1024;
 export function extension(name) { return String(name).split('.').pop().toLowerCase(); }
 export function fileType(name) {
   const ext = extension(name);
-  return ['csv','json'].includes(ext) ? 'data' : ['py','r','ipynb'].includes(ext) ? 'code' : ['png','jpg','jpeg','webp'].includes(ext) ? 'image' : ext === 'pptx' ? 'presentation' : 'document';
+  return ['csv','json'].includes(ext) ? 'data' : ['py','r','ipynb','html','css','js','sql'].includes(ext) ? 'code' : ['png','jpg','jpeg','webp'].includes(ext) ? 'image' : ext === 'pptx' ? 'presentation' : 'document';
 }
 export function validateFile(file) {
   if (!SUPPORTED.has(extension(file.name))) return '지원하지 않는 파일 형식입니다.';
@@ -31,6 +31,9 @@ export function normalizeFile(raw, index = 0, source = 'api') {
     contentAvailable: typeof (raw.content_available ?? raw.contentAvailable)==='boolean' ? (raw.content_available ?? raw.contentAvailable) : null,
     relationsAvailable: typeof (raw.relations_available ?? raw.relationsAvailable)==='boolean' ? (raw.relations_available ?? raw.relationsAvailable) : null,
     score: Number.isFinite(raw.score) ? raw.score : null, excerpt: text(raw.excerpt),
+    created: text(raw.created_at), project: text(raw.project),
+    activityAt: text(raw.activity_at), timeSource: text(raw.time_source),
+    classification: raw.classification && typeof raw.classification==='object' ? raw.classification : {},
     summary: text(raw.summary, '제공된 요약이 없습니다.'),
     evidence: Array.isArray(raw.evidence) ? raw.evidence.filter(item => item && typeof item.text === 'string').map(item => ({text: item.text, certainty: ['confirmed','inferred'].includes(item.certainty) ? item.certainty : 'unknown'})) : [],
     indexStatus: text(raw.index_status, 'unknown'),
@@ -50,6 +53,7 @@ export function normalizeResponse(raw, source = 'api') {
   const relations = (Array.isArray(raw.relations) ? raw.relations : []).filter(link => link && ids.has(link.source_file_id || link.from) && ids.has(link.target_file_id || link.to)).map(link => ({
     from: link.source_file_id || link.from, to: link.target_file_id || link.to,
     label: text(link.label || link.relation_type, '관계 정보 없음'), certainty: ['confirmed','inferred'].includes(link.certainty) ? link.certainty : 'unknown',
+    evidence: text(link.evidence),
   }));
   const taskNames = {};
   for (const file of catalog) if (file.task && file.taskName) taskNames[file.task] = file.taskName;
@@ -152,10 +156,14 @@ export class ApiWorkspace {
   async add(file,{signal}={}) {
     const reason = validateFile(file); if (reason) throw Error(reason);
     const form = new FormData(); form.append('file',file); form.append('relative_path',file.webkitRelativePath || file.name);
+    if(Number.isFinite(file.lastModified))form.append('modified_at',String(file.lastModified));
     const response = await this.request('/files',{method:'POST',body:form,signal,timeoutMs:60000});
     return {file:{...normalizeFile(response.file),apiBase:this.base}, jobId:typeof response.job_id === 'string' ? response.job_id : null, duplicate:response.duplicate===true};
   }
   async job(id,{signal}={}) { return this.request(`/jobs/${encodeURIComponent(id)}`,{signal}); }
+  async folders() { return this.request('/folders'); }
+  async saveFolder(body,remove=false) { return this.request(remove?'/folders/remove':'/folders',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}); }
+  async refreshIndex() { return this.request('/refresh',{method:'POST'}); }
   async previewPdf(id,page=1) { return this.request(`/files/${encodeURIComponent(id)}/preview?page=${page}`); }
   async blob(id) { return this.request(`/files/${encodeURIComponent(id)}/content`,{blob:true}); }
   async reveal(id) { return this.request(`/files/${encodeURIComponent(id)}/reveal`,{method:'POST'}); }

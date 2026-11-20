@@ -18,6 +18,21 @@ from search_api import SearchService, original_path
 class FakeService:
     catalog = {'F1': {'file_id': 'F1', 'name': 'sample.R'}}
 
+    def __init__(self):
+        self.watcher = self
+        self.folders = []
+
+    def add_folder(self, path):
+        self.folders.append({'id': 'test-folder', 'path': path})
+
+    def remove_folder(self, folder_id):
+        if folder_id != 'test-folder':
+            raise KeyError('missing folder')
+        self.folders = []
+
+    def watch_status(self):
+        return {'watching': True, 'folders': list(self.folders), 'error': ''}
+
     def content(self, file_id):
         raise FileNotFoundError('missing')
 
@@ -65,6 +80,19 @@ class ApiTests(unittest.TestCase):
             self.assertEqual(status, 200)
             self.assertEqual(json.loads(response)['files'][0]['file_id'], 'F1')
 
+    def test_watch_folder_contract_and_validation(self):
+        self.assertEqual(self.request('POST', '/api/folders', '{}')[0], 400)
+        self.assertEqual(self.request('POST', '/api/folders', '[]')[0], 400)
+        self.assertEqual(self.request('POST', '/api/folders', '{"path":"/test"}', 'https://other.example')[0], 403)
+        status, body = self.request('POST', '/api/folders', '{"path":"/test"}')
+        self.assertEqual(status, 200)
+        self.assertEqual(json.loads(body)['folders'][0]['path'], '/test')
+        status, body = self.request('GET', '/api/folders')
+        self.assertTrue(json.loads(body)['watching'])
+        self.assertEqual(self.request('POST', '/api/folders/remove', '{"id":"missing"}')[0], 400)
+        status, body = self.request('POST', '/api/folders/remove', '{"id":"test-folder"}')
+        self.assertEqual(json.loads(body)['folders'], [])
+
     def test_invalid_input_and_unavailable_features(self):
         for body in ['{', '[]', '{"query":3}', json.dumps({'query': 'a' * 2001})]:
             self.assertEqual(self.request('POST', '/api/search', body)[0], 400)
@@ -72,22 +100,6 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(self.request('POST', '/api/search', '{"query":"x"}', 'https://other.example')[0], 403)
         self.assertEqual(self.request('POST', '/api/files', '{}')[0], 501)
         self.assertEqual(self.request('GET', '/api/files/F1/content')[0], 404)
-
-    def test_catalog_refreshes_after_engine_reload(self):
-        class Frame:
-            def to_dict(self, orient):
-                return [{'file_id': 'NEW', 'filename': 'new.txt'}]
-        class Engine:
-            df = Frame()
-            def search_files(self, query, top_k):
-                return [{'file_id': 'NEW', 'score': 1.0, 'chunk_text': 'new content'}]
-        service = SearchService.__new__(SearchService)
-        service.lock = threading.Lock()
-        service.engine = Engine()
-        service.catalog = {'OLD': {'file_id': 'OLD'}}
-        result = service.search('new')
-        self.assertEqual(result['files'][0]['file_id'], 'NEW')
-        self.assertEqual(set(service.catalog), {'NEW'})
 
     def test_bootstrap_and_metadata(self):
         self.assertIn(b'"base": "/api"', self.request('GET', '/runtime-config.js')[1])

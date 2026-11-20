@@ -28,8 +28,8 @@ class IntegrationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             one, two = root/'Role01', root/'Role02'
-            write_csv(one/'metadata.csv', [dict(file_id='F2', filename='same.txt', role='', project='manual'),
-                                            dict(file_id='F1', filename='same.txt', role='manual', project='')])
+            write_csv(one/'metadata.csv', [dict(path='dataset/files/second.txt', file_id='F2', filename='same.txt', role='', project='manual'),
+                                            dict(path='dataset/files/first.txt', file_id='F1', filename='same.txt', role='manual', project='')])
             write_csv(one/'extracted_text.csv', [dict(file_id='F1', extraction_status='success'),
                                                  dict(file_id='F2', extraction_status='success')])
             write_csv(two/'metadata_description_generated.csv', [dict(file_id='F1', description='first'),
@@ -44,6 +44,12 @@ class IntegrationTests(unittest.TestCase):
                     return [dict(file_id='F2', score=.8, chunk_text='body')]
             service = SearchService.__new__(SearchService)
             service.engine_dir, service.lock, service.engine = one, threading.Lock(), Engine()
+            service.backend, service.original_root = root, one/'dataset/files'
+            service.active_job = None
+            class IDs(list):
+                def astype(self, kind): return self
+            service.engine.df = {'file_id': IDs(['F1', 'F2'])}
+            service.engine.get_related_files = lambda *args, **kwargs: []
             result = service.search('query')['files'][0]
             self.assertEqual((result['file_id'], result['summary'], result['role']), ('F2', 'second', 'code'))
             self.assertEqual((result['project'], result['year_month']), ('manual', '2026-11'))
@@ -76,7 +82,7 @@ class IntegrationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             for name in ('Role01/paths.py', 'Role01/file_reload_code.py', 'Role01/extract_content.py',
-                         'Role01/refresh_search.py', 'Role01/file_reload_append_only.py',
+                         'Role01/refresh_search.py', 'Role01/file_reload_append_only.py', 'Role01/file_relations_v5.py',
                          'Role03/file_db.py', 'update_pipeline_integrated.py',
                          'Role02/description_generator.py', 'Role02/classify_metadata.py',
                          'Role02/project_classifier.py', 'Role02/project_classifier_v3.py', 'Role02/role_classifier.py'):
@@ -103,7 +109,7 @@ class IntegrationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             for relative in ('Role01/paths.py', 'Role01/file_reload_code.py', 'Role01/extract_content.py',
-                             'Role01/refresh_search.py', 'Role01/file_reload_append_only.py',
+                             'Role01/refresh_search.py', 'Role01/file_reload_append_only.py', 'Role01/file_relations_v5.py',
                              'Role03/file_db.py', 'update_pipeline_integrated.py',
                              'Role02/description_generator.py', 'Role02/classify_metadata.py',
                              'Role02/project_classifier.py', 'Role02/project_classifier_v3.py', 'Role02/role_classifier.py'):
@@ -124,8 +130,11 @@ class IntegrationTests(unittest.TestCase):
                         write_csv(stage/'Role02'/name, [row])
                     (stage/'Role02/description_hashes.json').write_text('{}')
                     (stage/'Role01/.extraction_cache.json').write_text('{}')
+                    (stage/'Role01/file_relations.csv').write_text('source_file_id,target_file_id\n')
                     (stage/'Role01/search_index').mkdir()
                     (stage/'Role01/search_index/index.json').write_text('{}')
+                elif script.name == 'file_relations_v5.py':
+                    (script.parent/'file_relations_v5.csv').write_text('source_file_id,target_file_id\n')
                 else:
                     self.assertEqual(script.name, 'file_db.py')
                     for relative in ARTIFACTS:
@@ -134,7 +143,7 @@ class IntegrationTests(unittest.TestCase):
                             path.parent.mkdir(parents=True, exist_ok=True)
                             path.write_text('db result')
             update(root, runner=runner, integrated=True)
-            self.assertEqual(calls, ['update_pipeline_integrated.py', 'file_db.py'])
+            self.assertEqual(calls, ['update_pipeline_integrated.py', 'file_db.py', 'file_relations_v5.py'])
             self.assertIn('Qwen result', (root/'Role02/metadata_description_generated.csv').read_text())
             self.assertIn('code', (root/'Role02/metadata_classification_generated.csv').read_text())
             self.assertIn('F1', (root/'Role01/metadata.csv').read_text())

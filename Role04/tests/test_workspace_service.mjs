@@ -77,3 +77,27 @@ test('semantic result keeps similarity and excerpt without inventing evidence', 
   assert.deepEqual(file.evidence,[]);
   assert.equal(normalizeFile({file_id:'F2',name:'x',score:'90%'}).score,null);
 });
+
+test('related evidence and creation metadata survive the API boundary',()=>{
+  const response=normalizeResponse({files:[{file_id:'a',name:'a.py',created_at:'2026-10-01T00:00:00',project:'시계열'}],catalog:[{file_id:'b',name:'b.csv'}],relations:[{source_file_id:'a',target_file_id:'b',certainty:'inferred',evidence:'read.csv("b.csv")'}]});
+  assert.equal(response.files[0].created,'2026-10-01T00:00:00');
+  assert.equal(response.files[0].project,'시계열');
+  assert.equal(response.relations[0].evidence,'read.csv("b.csv")');
+});
+
+test('refresh starts a server job and status is retrieved separately',async()=>{
+  const calls=[];
+  const api=new ApiWorkspace('http://127.0.0.1:8000/api',async(url,options)=>{calls.push({url,options});return Response.json(url.endsWith('/refresh')?{job_id:'j1'}:{status:'ready'});});
+  assert.equal((await api.refreshIndex()).job_id,'j1');
+  assert.equal(calls[0].options.method,'POST');
+  assert.equal((await api.job('j1')).status,'ready');
+  assert.ok(calls[1].url.endsWith('/jobs/j1'));
+});
+
+test('classification evidence and activity metadata survive normalization',()=>{
+  const file=normalizeFile({file_id:'F1',name:'code.js',project:'수동 과목',activity_at:'2026-11-16',time_source:'modified_at',classification:{predicted_project:'예측 과목',project_needs_confirmation:'True'}});
+  assert.equal(file.project,'수동 과목');
+  assert.equal(file.activityAt,'2026-11-16');
+  assert.equal(file.classification.project_needs_confirmation,'True');
+  assert.equal(file.type,'code');
+});
