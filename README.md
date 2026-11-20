@@ -1,5 +1,16 @@
 # Context-based Personal Search
 
+## 팀원 로컬 GUI 실행
+
+각자 컴퓨터에 Git과 Python 3.13을 설치한 뒤 이 저장소 전체를 받으세요. `Role04/GUI 실행/`에서 운영체제에 맞는 **처음 설치** 파일을 한 번 실행하고, 이후 **Context Search 실행** 파일로 엽니다. 설치와 첫 모델 다운로드에는 인터넷이 필요합니다. 브라우저 주소는 실행 시 각자의 터미널에 표시됩니다.
+
+- macOS: `처음 설치.command` → 이후 `Context Search 실행.command`
+- Windows: `처음 설치.cmd` → 이후 `Context Search 실행.cmd` (실기기 미검증)
+
+[상세 설치·사용 안내](Role04/GUI%20실행/README.md) · [연결 기능과 지원 범위](Role04/README.md)
+
+
+
 **파일 이름을 몰라도, 사용했던 상황으로 다시 찾는 AI 기반 개인 파일 검색**
 
 ## **프로젝트 개요**

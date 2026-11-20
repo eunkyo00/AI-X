@@ -157,3 +157,30 @@ reveal 기능이 없으면 GUI는 저장 경로와 브라우저 한계를 안내
 `GET /files/{file_id}/content`: 등록된 ID의 원본 바이트를 반환한다. 서버의 런타임 원본 폴더에 준비된 파일만 허용한다. 파일별 `content_available`을 제공하며 원본이 없으면 404다.
 
 `GET /files/{file_id}/preview?page=1`: PDF 페이지를 PNG로 렌더링해 `{page, page_count, image_base64}`를 반환한다. 페이지는 1부터 시작하며 잘못된 페이지나 PDF 이외 형식은 400이다. GUI는 원본 다운로드와 별도로 페이지를 표시한다.
+
+## 2026-11-09 내장 서버 구현 갱신
+
+이 절은 위의 이전 미지원 설명보다 우선합니다. 최신 GUI는 실제 의미·생성일/수정일 검색, Role01 관계 후보와 Role03의 해결된 정적 참조, 원본·PDF 미리보기, 새 파일 등록과 갱신을 연결합니다.
+
+- `GET /health`: `capabilities.upload/refresh/content=true`, `active_job` 및 `index_ready`를 제공합니다. 갱신 중에는 검색 준비를 false로 표시합니다.
+- `POST /files`: 기존 multipart 계약과 `modified_at`(브라우저의 lastModified, 밀리초)을 받습니다. 파일·상대 경로·크기·형식을 검증하고 `{file,job_id,duplicate}`를 반환합니다. 파일 ID는 갱신 이후에도 유지됩니다. 새 이미지는 미지원입니다.
+- `POST /refresh`: `{job_id}`와 HTTP 202를 반환하고 본문·DB·검색·관계를 백그라운드에서 갱신합니다. GitHub 소스를 받는 동작은 아닙니다.
+- `GET /jobs/{id}`: `processing/ready/failed`, `phase`, 실패 시 `error`를 제공합니다. 상태는 현재 서버 프로세스에 보관되며 서버 재시작 뒤에는 목록으로 결과를 확인합니다.
+- `/search`: 날짜 조건 오류는 400, 등록·갱신 중 검색은 409로 응답합니다. 실제 원본 존재 여부를 검색 후에도 유지합니다. `catalog`와 `relations`를 반환하며 관계의 근거 문자열도 전달합니다.
+- 파일 메타데이터에 `created_at`, `project`를 추가합니다. 프로젝트명이 같다는 이유만으로 task_id를 만들지 않습니다.
+- `index_status=no_text`: 원본은 있으나 검색할 본문이 없는 상태입니다. 검색 준비 완료와 구분합니다.
+
+갱신기는 준비 폴더에서 팀의 update_data.py를 실행하고 관계를 갱신한 뒤 새 엔진 로딩을 검증합니다. 성공 후 실행 데이터를 교체하고 이전 데이터를 백업합니다. OCR 재사용은 이전 캐시 또는 감사 기록의 원본 해시가 일치할 때만 허용합니다. 등록 처리 실패 파일은 failed_uploads에 보관하여 후속 갱신을 막지 않도록 합니다. 이는 운영 중 강제 종료에 대한 완전한 다중 파일 원자성을 보장하지 않습니다.
+
+
+## 2026-11-19 최신 팀 연결
+
+파일 응답에 `classification`(팀 예측 원본), `activity_at`, `time_source`, `year_month`, `quarter`, `half_year`, `season`을 제공합니다. 수동 project/role을 우선하며 확인 불필요인 예측만 빈 라벨에 적용합니다. GUI의 시각 근거는 생성·수정 메타데이터의 출처이며 실제 사용 이력이 아닙니다.
+
+- `GET /api/folders`: `{watching, folders: [{id, path, name, error}], error}`.
+- `POST /api/folders`: JSON `{path: "원본 폴더 전체 경로"}`. 성공 시 전체 감시 상태 반환. 원본은 읽기만 하고 앱 데이터에 복사합니다.
+- `POST /api/folders/remove`: JSON `{id}`. 연결 설정만 해제하며 보관본은 남깁니다.
+- `GET /api/health`: `watch`와 `last_job`을 추가합니다. 자동 작업이 빠르게 끝나도 GUI가 마지막 작업의 성공·실패를 확인합니다.
+- `GET /api/jobs/{id}`: 완료 시 `warnings` 문자열 배열을 포함할 수 있습니다. Ollama/Qwen 부재 시 설명 생성을 건너뛰었다는 안내를 제공합니다.
+
+동일 출처 검사와 localhost Host 검증은 모든 폴더 변경 요청에도 적용됩니다. 파일 등록은 기존 단일 파일 multipart 계약을 유지하며 HTML/CSS/JS/SQL을 추가 지원합니다.
