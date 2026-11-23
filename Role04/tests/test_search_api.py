@@ -58,6 +58,22 @@ class ApiTests(unittest.TestCase):
         cls.server.server_close()
         cls.thread.join()
 
+    def test_browser_modules_ignore_os_mime_associations(self):
+        import mimetypes
+        from unittest.mock import patch
+        with patch.dict(mimetypes.types_map, {'.mjs': 'application/octet-stream',
+                                              '.js': 'text/plain', '.css': 'text/plain'}):
+            for path in ('/app.js', '/workspace-ui.mjs', '/search-view.mjs', '/styles.css'):
+                with self.subTest(path=path):
+                    conn = http.client.HTTPConnection('127.0.0.1', self.server.server_port)
+                    conn.request('GET', path)
+                    response = conn.getresponse()
+                    self.assertEqual(response.status, 200)
+                    expected = 'text/css' if path.endswith('.css') else 'text/javascript'
+                    self.assertEqual(response.getheader('Content-Type').split(';')[0], expected)
+                    self.assertTrue(response.read())
+                    conn.close()
+
     def request(self, method, path, body=None, origin=None):
         conn = http.client.HTTPConnection('127.0.0.1', self.server.server_port)
         headers = {'Content-Type': 'application/json'}

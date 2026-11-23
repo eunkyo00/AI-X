@@ -20,6 +20,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class Handler(SimpleHTTPRequestHandler):
     service = None
+    # Windows registry MIME associations must not prevent ES module loading.
+    extensions_map = {
+        **SimpleHTTPRequestHandler.extensions_map,
+        '.js': 'text/javascript; charset=utf-8',
+        '.mjs': 'text/javascript; charset=utf-8',
+        '.css': 'text/css; charset=utf-8',
+    }
 
     def valid_host(self):
         if self.headers.get('Host') not in {f'{host}:{self.server.server_port}' for host in ('127.0.0.1', 'localhost')}:
