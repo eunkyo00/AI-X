@@ -35,10 +35,12 @@
 Git과 Python 3.13을 설치한 뒤 다음 명령으로 받습니다. 실행 데이터 준비에 Git 이력이 필요하므로 ZIP 다운로드 대신 clone을 사용하세요.
 
 ```sh
-git clone --branch codex/gui-team-share-20261123 https://github.com/eunkyo00/AI-X.git
+git clone https://github.com/eunkyo00/AI-X.git
 cd AI-X
 ```
 
 작업 중인 저장소가 있다면 별도 폴더에 clone하여 본인의 변경 사항을 보존하세요. 이 폴더의 OS별 `처음 설치` 파일을 실행합니다. 모델은 최초 실행 시 다운로드하고 이후 캐시를 사용합니다.
 
 이 버전은 팀 검색·분류·관계 추천 v5 및 파일·폴더 등록을 연결했습니다. 작업 보기와 작업 맥락 탭은 제거했습니다. Qwen 새 설명 생성은 Ollama의 qwen3.5:4b가 실행 중일 때 동작합니다. Windows 실행은 실기기 미검증입니다.
+
+이미 main을 받은 팀원은 본인의 변경 사항을 커밋하거나 보관한 후 `git pull --ff-only origin main`으로 업데이트하세요. 기존 등록 데이터는 `Role04/runtime/`에 유지됩니다.
