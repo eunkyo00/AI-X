@@ -56353,3 +56353,19 @@ results = model.predict(
     conf=0.5,
     show=True
 )",171,success,218,2026-11-19 16:11:01,2026-11-19 16:11:09,,,
+F204,password_generator.py,.py,dataset/files/password_generator.py,"import string
+import secrets
+
+# 비밀번호 생성 함수
+def generate_password(length=12):
+    characters = string.ascii_letters + string.digits + ""!@#$%""
+    password = """"
+
+    for i in range(length):
+        password += secrets.choice(characters)
+
+    return password
+
+# 비밀번호 5개 생성
+for i in range(5):
+    print(f""비밀번호 {i+1}: {generate_password()}"")",336,success,389,2026-11-23 15:57:05,2026-11-23 15:57:07,,,

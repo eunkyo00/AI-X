@@ -202,3 +202,4 @@ F200,test_new_file.py,.py,dataset/files/test_new_file.py,255,2026-11-12 13:31:52
 F201,test_penguin_ai.py,.py,dataset/files/test_penguin_ai.py,182,2026-11-12 15:53:00,2026-11-12 16:23:20,,,"이 파일은 펭귄 이미지를 입력받아 Adelie, Chinstrap, Gentoo 중 하나를 반환하는 이미지 분류 기능을 구현한 테스트 코드입니다."
 F202,op.py,.py,dataset/files/op.py,22,2026-11-16 15:00:13,2026-11-16 15:00:43,,,"이 파일은 Python 언어를 사용하여 'Hello, World!'라는 기본 메시지를 화면에 출력하는 간단한 예제 코드입니다."
 F203,test_yolo_detection.py,.py,dataset/files/test_yolo_detection.py,218,2026-11-19 16:11:01,2026-11-19 16:11:09,,,이 파일은 Ultralytics 라이브러리를 사용하여 사전 학습된 YOLOv8 모델을 불러와 웹캠을 통해 실시간으로 객체를 탐지하는 데 목적이 있습니다.
+F204,password_generator.py,.py,dataset/files/password_generator.py,389,2026-11-23 15:57:05,2026-11-23 15:57:07,,,"이 파일은 `secrets` 모듈을 사용하여 보안적으로 안전한 랜덤 문자열을 생성하는 Python 스크립트입니다. 지정된 길이의 알파벳, 숫자 및 특수문자를 조합하여 5 개의 비밀번호를 출력합니다."

@@ -5090,3 +5090,1072 @@ integrated=True, snapshot=True
 기존 데이터 백업: C:\Users\User\Desktop\AI+X\AI-X\update_backups\20261119_161708_418163
 [DEBUG] 결과 파일 교체 완료
 갱신 완료. 실행 중인 검색은 다음 검색부터 새 데이터를 사용합니다.
+검색 엔진 준비 중입니다. 첫 실행은 모델 다운로드가 필요합니다.
+Context Search: http://127.0.0.1:5173
+
+[1/5] 파일 목록 갱신
+실행 스크립트: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\file_reload_append_only.py
+탐색 폴더: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\dataset\files
+저장 CSV: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\metadata.csv
+발견한 전체 파일: 205개
+백업: metadata_backup_20261123_123348_605876.csv
+
+=== 갱신 결과 ===
+기존 CSV 행 수: 203
+제외한 파일: 2
+새로 등록한 파일: 0
+기존 파일의 자동 항목 변경: 0
+최종 CSV 행 수: 203
+저장 완료: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\metadata.csv
+[안내] 새 파일이 0개입니다. 위 탐색 폴더에 새 파일이 실제로 있는지 확인하세요.
+[TIME] 파일 목록 갱신: 3.83초
+
+[2/5] 파일 내용 추출
+처리 중: Cross-Validation_Decoded.pdf
+  캐시 재사용
+처리 중: MLP(다층퍼셉트론)(강의).pdf
+  캐시 재사용
+처리 중: Transformer_강의자료.pdf
+  캐시 재사용
+처리 중: 머신러닝(내용추가).pdf
+  캐시 재사용
+처리 중: 선형회귀_업데이트.pdf
+  캐시 재사용
+처리 중: 심층신경망.pdf
+  캐시 재사용
+처리 중: 영상인식과 딥러닝.pdf
+  캐시 재사용
+처리 중: 제09장 컨벌루션 신경망(강의).pdf
+  캐시 재사용
+처리 중: 제11장 순환신경망(강의).pdf
+  캐시 재사용
+처리 중: 케라스 라이브러리.pdf
+  캐시 재사용
+처리 중: 퍼셉트론_추가.pdf
+  캐시 재사용
+처리 중: time_series_analysis10_1.R
+  캐시 재사용
+처리 중: time_series_analysis11_1.R
+  캐시 재사용
+처리 중: time_series_analysis12_1.R
+  캐시 재사용
+처리 중: time_series_analysis13_1.R
+  캐시 재사용
+처리 중: time_series_analysis14_1.R
+  캐시 재사용
+처리 중: time_series_analysis2_1.R
+  캐시 재사용
+처리 중: time_series_analysis2_2.R
+  캐시 재사용
+처리 중: time_series_analysis3_1.R
+  캐시 재사용
+처리 중: time_series_analysis4_1.R
+  캐시 재사용
+처리 중: time_series_analysis5_1.R
+  캐시 재사용
+처리 중: time_series_analysis6_1.R
+  캐시 재사용
+처리 중: time_series_analysis7_1.R
+  캐시 재사용
+처리 중: time_series_analysis9_1.R
+  캐시 재사용
+처리 중: week10.R
+  캐시 재사용
+처리 중: week10_cheating.R
+  캐시 재사용
+처리 중: week11_cheating.R
+  캐시 재사용
+처리 중: week12.R
+  캐시 재사용
+처리 중: week12_cheating.R
+  캐시 재사용
+처리 중: week13.R
+  캐시 재사용
+처리 중: week13_cheating.R
+  캐시 재사용
+처리 중: week14_apple_forecast_analysis_2026.R
+  캐시 재사용
+처리 중: week14_apple_forecast_analysis_2026_1.R
+  캐시 재사용
+처리 중: week14_apple_forecast_analysis_2026_cheating.R
+  캐시 재사용
+처리 중: week2.R
+  캐시 재사용
+처리 중: week2_cheating.R
+  캐시 재사용
+처리 중: week3.R
+  캐시 재사용
+처리 중: week3_cheating.R
+  캐시 재사용
+처리 중: week4.R
+  캐시 재사용
+처리 중: week4_cheating.R
+  캐시 재사용
+처리 중: week5 (1).R
+  캐시 재사용
+처리 중: week5.R
+  캐시 재사용
+처리 중: week5_cheating.R
+  캐시 재사용
+처리 중: week6.R
+  캐시 재사용
+처리 중: week6_cheating.R
+  캐시 재사용
+처리 중: week7.R
+  캐시 재사용
+처리 중: week7_cheating.R
+  캐시 재사용
+처리 중: week9_cheating.R
+  캐시 재사용
+처리 중: message_hello (1).py
+  캐시 재사용
+처리 중: pigpio.py
+  캐시 재사용
+처리 중: python3_voice_alert.py
+  캐시 재사용
+처리 중: rpi_gpio.py
+  캐시 재사용
+처리 중: stream_yolo.py
+  캐시 재사용
+처리 중: voice_alert.py
+  캐시 재사용
+처리 중: voice_alert1.py
+  캐시 재사용
+처리 중: voice_test.py
+  캐시 재사용
+처리 중: YOLO(test) (1).ipynb
+  캐시 재사용
+처리 중: YOLO(test)_picture(light_ver) (1).ipynb
+  캐시 재사용
+처리 중: YOLO(test)_picture.ipynb
+  캐시 재사용
+처리 중: yolo_learn.ipynb
+  캐시 재사용
+처리 중: yolo_learning2 (1).ipynb
+  캐시 재사용
+처리 중: yolo_learning5 (1).ipynb
+  캐시 재사용
+처리 중: yolo_open.py
+  캐시 재사용
+처리 중: yolo_stream.py
+  캐시 재사용
+처리 중: yolo_stream_front.py
+  캐시 재사용
+처리 중: 19세기_후반_불평등조약체제의_성립_과정.pdf
+  캐시 재사용
+처리 중: 4주차_강화도조약과 개항.pdf
+  캐시 재사용
+처리 중: 강화도조약과 개항.pdf
+  캐시 재사용
+처리 중: 개항기 조선 서양과 만나다.pdf
+  캐시 재사용
+처리 중: 근대 국민국가와 왕권.pdf
+  캐시 재사용
+처리 중: 근대 국민국가와 왕권_sum.pdf
+  캐시 재사용
+처리 중: 근대사_연표_19세기 후반.pdf
+  캐시 재사용
+처리 중: 동아시아의 개항 난징조약에서 강화도 조약까지.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강 1.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강1_ppt.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강2.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강2＿ppt_2026.pdf
+  캐시 재사용
+처리 중: 일본의 개항과 미국.pdf
+  캐시 재사용
+처리 중: 읽기자료_갑오개혁의 전개와 성과.pdf
+  캐시 재사용
+처리 중: 읽기자료_갑오개혁의 한계.pdf
+  캐시 재사용
+처리 중: 임오군란과 갑신정변.pdf
+  캐시 재사용
+처리 중: 청일전쟁과 갑오개혁_ppt.pdf
+  캐시 재사용
+처리 중: 청일전쟁과 갑오개혁_요약.pdf
+  캐시 재사용
+처리 중: 한국 근현대 인물사 연구방법론.pdf
+  캐시 재사용
+처리 중: 한국의 식민지 근대는 어떠한 성격의 사회였나.pdf
+  캐시 재사용
+처리 중: 한성도시개조사업.pdf
+  캐시 재사용
+처리 중: 행정개혁기구의_성공_조건.pdf
+  캐시 재사용
+처리 중: 후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf
+  캐시 재사용
+처리 중: 근대 서양 문물의 도입_ppt.pdf
+  캐시 재사용
+처리 중: 근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf
+  캐시 재사용
+처리 중: 세균설과 근대의 보건_위생_ppt.pdf
+  캐시 재사용
+처리 중: 해방전후의 한국 정치와 사회_제주.pdf
+  캐시 재사용
+처리 중: 해외 인력 송출의 역사와 파독 광부 간호사.pdf
+  캐시 재사용
+처리 중: 4.3history.pdf
+  캐시 재사용
+처리 중: 근대 서양 문물의 도입과 일상생활.pdf
+  캐시 재사용
+처리 중: 근대의 법과 제도는 어떻게 이식되었는가.pdf
+  캐시 재사용
+처리 중: 메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf
+  캐시 재사용
+처리 중: 세균설과 식민지 근대의 보건ㆍ위생_노트.pdf
+  캐시 재사용
+처리 중: 유관순의 발굴과 재현.pdf
+  캐시 재사용
+처리 중: 유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf
+  캐시 재사용
+처리 중: 제주 4·3의 진실과 역사적 의미_박찬식.pdf
+  캐시 재사용
+처리 중: 파월기술자의 전쟁경험.pdf
+  캐시 재사용
+처리 중: 한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf
+  캐시 재사용
+처리 중: 한국현대사와 영화 ‘국제시장＇.pdf
+  캐시 재사용
+처리 중: 해방이전 제주의 사회와 경제_양정필.pdf
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: birds.csv
+  캐시 재사용
+처리 중: diabetes.tsv
+  캐시 재사용
+처리 중: emails.csv
+  캐시 재사용
+처리 중: form.csv
+  캐시 재사용
+처리 중: honey.csv
+  캐시 재사용
+처리 중: mushrooms.csv
+  캐시 재사용
+처리 중: SOCR_MLB.tsv
+  캐시 재사용
+처리 중: taxi.csv
+  캐시 재사용
+처리 중: UID_ISO_FIPS_LookUp_Table.csv
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: CocaColaCo.xlsx
+  캐시 재사용
+처리 중: PersonsData.json
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: TwitterData.json
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook-covidspread.ipynb
+  캐시 재사용
+처리 중: notebook-papers.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.ipynb
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: correlation-analysis.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: letters.json
+  캐시 재사용
+처리 중: letters.json
+  캐시 재사용
+처리 중: time_series_covid19_confirmed_global.csv
+  캐시 재사용
+처리 중: time_series_covid19_deaths_global.csv
+  캐시 재사용
+처리 중: time_series_covid19_recovered_global.csv
+  캐시 재사용
+처리 중: 01. 금융의역할과주요금융지표.pdf
+  캐시 재사용
+처리 중: 02. 금융상품과금융시장.pdf
+  캐시 재사용
+처리 중: 03. 저축의이해.pdf
+  캐시 재사용
+처리 중: 14주차_종합과제-2.ipynb
+  캐시 재사용
+처리 중: customers.csv
+  캐시 재사용
+처리 중: orders_202401.csv
+  캐시 재사용
+처리 중: orders_202402.csv
+  캐시 재사용
+처리 중: orders_202403.csv
+  캐시 재사용
+처리 중: products.csv
+  캐시 재사용
+처리 중: reviews.csv
+  캐시 재사용
+처리 중: student_performance.csv
+  캐시 재사용
+처리 중: week10_example.csv
+  캐시 재사용
+처리 중: week10_homework.ipynb
+  캐시 재사용
+처리 중: week10_hospital_raw.csv
+  캐시 재사용
+처리 중: week11_home.ipynb
+  캐시 재사용
+처리 중: week11_item.csv
+  캐시 재사용
+처리 중: week11_shop.csv
+  캐시 재사용
+처리 중: week12.ipynb
+  캐시 재사용
+처리 중: week12_data.csv
+  캐시 재사용
+처리 중: week13_assignment-2.ipynb
+  캐시 재사용
+처리 중: week13_health.csv
+  캐시 재사용
+처리 중: week14_assignment.ipynb
+  캐시 재사용
+처리 중: week14_data.csv
+  캐시 재사용
+처리 중: Week4_Assignment.ipynb
+  캐시 재사용
+처리 중: week5.ipynb
+  캐시 재사용
+처리 중: Week6_share.ipynb
+  캐시 재사용
+처리 중: week7_2.ipynb
+  캐시 재사용
+처리 중: week_7_convenience_store.csv
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료1.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료10.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료11.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료12.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료13.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료14.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료2.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료3.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료4.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료5.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료6.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료7.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료9.pdf
+  캐시 재사용
+처리 중: test_new_file.py
+  캐시 재사용
+처리 중: test_penguin_ai.py
+  캐시 재사용
+처리 중: op.py
+  캐시 재사용
+처리 중: test_yolo_detection.py
+  캐시 재사용
+캐시 재사용: 203개 / 새로 추출: 0개
+
+텍스트 추출 및 파일 정보 결합 완료!
+총 파일 수: 203
+추출 성공: 203
+저장 위치: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\extracted_text.csv
+file_id                     filename  char_count extraction_status                                                                                              preview
+   F001 Cross-Validation_Decoded.pdf        5485           success [페이지 1] 교차 A3S(Cross-Validation)2| 해부학  NumPy 엔진 직접 구현부터 Scikit-learn2| 우아한 자동화까지  A) NotebookLM    
+   F002          MLP(다층퍼셉트론)(강의).pdf        8159           success [페이지 1] MLP(다층퍼셉트론)   [페이지 2] 학습목표  MLP의작동원리를이해한다.   경사하강법을이해한다.   역전파알고리즘을이해한다.   넘파이만으로MLP를구현해
+   F003         Transformer_강의자료.pdf        8234           success [페이지 1] TRANSFORMER   [페이지 2] ChatGPT의등장  ChatGPT는OpenAI에서개발하고2022년11월30일에출시된챗봇이 다. ChatGPT는우리에게많은충
+   F004               머신러닝(내용추가).pdf        9133           success [페이지 1] 머신러닝   [페이지 2] 학습목표  머신러닝과전통적인프로그래밍의차이를이해한다.  머신러닝의과정을이해한다.  붓꽃데이터를분류해본다.  숫자이미지를분류해본다. 
+   F005                선형회귀_업데이트.pdf        5723           success [페이지 1] 선형회귀   [페이지 2] 학습목표  회귀의개념을이해한다.  경사하강법을이해한다.  과잉적합과과소적합을이해한다.  파이썬과sklearn을이용하여회귀를구현해본다
+   F006                    심층신경망.pdf       13338           success [페이지 1] 심층신경망   [페이지 2] 학습목표  심층신경망의구조를이해한다.  은닉층의역할을이해한다.  그래디언트소실문제를이해한다.  새로등장한여러가지활성화함수를이해한다
+   F007                영상인식과 딥러닝.pdf        4042           success [페이지 1] 데이터증대  데이터증대(data augmentation)는한정된데이터에서여러가지로변형된데 이터를만들어내는기법이다.   [페이지 2] 라이브러리를포함시킨다. impo
+   F008        제09장 컨벌루션 신경망(강의).pdf        5945           success [페이지 1] 9장컨벌루션신경망   [페이지 2] 학습목표  컨벌루션신경망을이해한다.  컨벌루션신경망을적용해본다.   [페이지 3] 컨볼루션신경망(CNN)  컨볼루션(Conv
+   F009           제11장 순환신경망(강의).pdf        7540           success [페이지 1] 11장순환신경망   [페이지 2] 학습목표  순환신경망의작동원리를이해한다.  순환신경망을이용하여서사인파를예측하는프로그램을작성해본다.  순환신경망을이용하여서주가를
+   F010                케라스 라이브러리.pdf        9998           success [페이지 1] 케라스라이브러리   [페이지 2] 텐서플로우와케라스  텐서플로우(TensorFlow)는딥러닝프레임워크의일종이다. 텐서플로우 는내부적으로C/C++로구현되어있고파이썬을
+[TIME] 파일 내용 추출: 9.98초
+
+[3/5] AI 설명 생성
+이전 자동 생성 결과를 불러왔습니다.
+기존 description 재사용: 46 개
+수동 description 보호: 157 개
+생성/재생성 대상: 0 개
+
+작업 완료!
+전체 파일: 203
+description 작성 완료: 203
+description 미작성: 0
+이번 실행 생성/재생성: 0
+본문 없는 파일: 0
+저장 위치: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role02\metadata_description_generated.csv
+해시 저장 위치: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role02\description_hashes.json
+[TIME] AI 설명 생성: 5.34초
+
+[4/5] 프로젝트·Role·시간 자동 분류
+분류 결과 저장: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role02\metadata_classification_generated.csv (203개)
+주의: 기존 검색 엔진에 예측 라벨을 적용하려면 별도 연결이 필요합니다.
+[TIME] 프로젝트·Role·시간 자동 분류: 14.47초
+
+[5/5] 증분 임베딩 갱신
+검색 대상 파일 수: 203
+검색 텍스트 조각 수: 4884
+기존 임베딩 재사용: 203개 파일
+새로 임베딩: 0개 파일
+검색 인덱스 저장 완료: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\search_index
+[TIME] 증분 임베딩 갱신: 7.42초
+
+========== 실행 시간 요약 ==========
+파일 목록 갱신: 3.83초
+파일 내용 추출: 9.98초
+AI 설명 생성: 5.34초
+프로젝트·Role·시간 자동 분류: 14.47초
+증분 임베딩 갱신: 7.42초
+전체 실행 시간: 41.05초
+====================================
+
+완료! 파일, 설명, 분류 결과, 검색 인덱스 갱신 성공.
+자동 분류 결과: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role02\metadata_classification_generated.csv
+검색 인덱스: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\search_index
+[TIME] update_pipeline_integrated.py: 41.42초
+[1/4] 파일 목록과 메타데이터 갱신
+[2/4] 전체 파일 본문 추출
+[3/4] DB와 파일 관계 갱신
+{
+  "files": 203,
+  "extraction_success": 203,
+  "local_files_found": 203,
+  "size_mismatches": 0,
+  "references": 197,
+  "resolved": 29,
+  "ambiguous": 42,
+  "missing": 126
+}
+[TIME] file_db.py: 31.33초
+[4/4] 검색 임베딩과 인덱스 갱신
+[5/5] AI 관련 파일 추천 갱신
+전체 파일: 203개
+임베딩 보유 파일: 203개
+관련 파일 관계: 1015개
+relation_type
+context_related     961
+direct_reference     54
+Name: count, dtype: int64
+저장 완료: C:\Users\User\Desktop\AI+X\AI-X\.update-a63h0vw7\Role01\file_relations_v5.csv
+[TIME] file_relations_v5.py: 9.59초
+integrated=True, snapshot=True
+[DEBUG] DB 경로 수정 시작
+[DEBUG] SQLite 경로 수정 완료
+[DEBUG] audit.csv 경로 수정 완료
+[DEBUG] DB 경로 수정 단계 종료
+[DEBUG] 결과 파일 교체 시작
+[DEBUG] 파일 교체 시작: Role01/metadata.csv
+[DEBUG] 파일 교체 시작: Role01/extracted_text.csv
+[DEBUG] 파일 교체 시작: Role01/search_index
+[DEBUG] 파일 교체 시작: Role03/output/files.sqlite3
+[DEBUG] 파일 교체 시작: Role03/output/audit.csv
+[DEBUG] 파일 교체 시작: Role03/output/relations.csv
+[DEBUG] 파일 교체 시작: Role03/output/summary.json
+[DEBUG] 파일 교체 시작: Role02/metadata_description_generated.csv
+[DEBUG] 파일 교체 시작: Role02/metadata_classification_generated.csv
+[DEBUG] 파일 교체 시작: Role02/description_hashes.json
+[DEBUG] 파일 교체 시작: Role01/.extraction_cache.json
+[DEBUG] 파일 교체 시작: Role01/file_relations_v5.csv
+기존 데이터 백업: C:\Users\User\Desktop\AI+X\AI-X\update_backups\20261123_123507_737471
+[DEBUG] 결과 파일 교체 완료
+갱신 완료. 실행 중인 검색은 다음 검색부터 새 데이터를 사용합니다.
+검색 엔진 준비 중입니다. 첫 실행은 모델 다운로드가 필요합니다.
+Context Search: http://127.0.0.1:5173
+
+[1/5] 파일 목록 갱신
+실행 스크립트: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\file_reload_append_only.py
+탐색 폴더: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\dataset\files
+저장 CSV: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\metadata.csv
+발견한 전체 파일: 205개
+백업: metadata_backup_20261123_153320_127754.csv
+
+=== 갱신 결과 ===
+기존 CSV 행 수: 203
+제외한 파일: 2
+새로 등록한 파일: 0
+기존 파일의 자동 항목 변경: 0
+최종 CSV 행 수: 203
+저장 완료: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\metadata.csv
+[안내] 새 파일이 0개입니다. 위 탐색 폴더에 새 파일이 실제로 있는지 확인하세요.
+[TIME] 파일 목록 갱신: 2.98초
+
+[2/5] 파일 내용 추출
+처리 중: Cross-Validation_Decoded.pdf
+  캐시 재사용
+처리 중: MLP(다층퍼셉트론)(강의).pdf
+  캐시 재사용
+처리 중: Transformer_강의자료.pdf
+  캐시 재사용
+처리 중: 머신러닝(내용추가).pdf
+  캐시 재사용
+처리 중: 선형회귀_업데이트.pdf
+  캐시 재사용
+처리 중: 심층신경망.pdf
+  캐시 재사용
+처리 중: 영상인식과 딥러닝.pdf
+  캐시 재사용
+처리 중: 제09장 컨벌루션 신경망(강의).pdf
+  캐시 재사용
+처리 중: 제11장 순환신경망(강의).pdf
+  캐시 재사용
+처리 중: 케라스 라이브러리.pdf
+  캐시 재사용
+처리 중: 퍼셉트론_추가.pdf
+  캐시 재사용
+처리 중: time_series_analysis10_1.R
+  캐시 재사용
+처리 중: time_series_analysis11_1.R
+  캐시 재사용
+처리 중: time_series_analysis12_1.R
+  캐시 재사용
+처리 중: time_series_analysis13_1.R
+  캐시 재사용
+처리 중: time_series_analysis14_1.R
+  캐시 재사용
+처리 중: time_series_analysis2_1.R
+  캐시 재사용
+처리 중: time_series_analysis2_2.R
+  캐시 재사용
+처리 중: time_series_analysis3_1.R
+  캐시 재사용
+처리 중: time_series_analysis4_1.R
+  캐시 재사용
+처리 중: time_series_analysis5_1.R
+  캐시 재사용
+처리 중: time_series_analysis6_1.R
+  캐시 재사용
+처리 중: time_series_analysis7_1.R
+  캐시 재사용
+처리 중: time_series_analysis9_1.R
+  캐시 재사용
+처리 중: week10.R
+  캐시 재사용
+처리 중: week10_cheating.R
+  캐시 재사용
+처리 중: week11_cheating.R
+  캐시 재사용
+처리 중: week12.R
+  캐시 재사용
+처리 중: week12_cheating.R
+  캐시 재사용
+처리 중: week13.R
+  캐시 재사용
+처리 중: week13_cheating.R
+  캐시 재사용
+처리 중: week14_apple_forecast_analysis_2026.R
+  캐시 재사용
+처리 중: week14_apple_forecast_analysis_2026_1.R
+  캐시 재사용
+처리 중: week14_apple_forecast_analysis_2026_cheating.R
+  캐시 재사용
+처리 중: week2.R
+  캐시 재사용
+처리 중: week2_cheating.R
+  캐시 재사용
+처리 중: week3.R
+  캐시 재사용
+처리 중: week3_cheating.R
+  캐시 재사용
+처리 중: week4.R
+  캐시 재사용
+처리 중: week4_cheating.R
+  캐시 재사용
+처리 중: week5 (1).R
+  캐시 재사용
+처리 중: week5.R
+  캐시 재사용
+처리 중: week5_cheating.R
+  캐시 재사용
+처리 중: week6.R
+  캐시 재사용
+처리 중: week6_cheating.R
+  캐시 재사용
+처리 중: week7.R
+  캐시 재사용
+처리 중: week7_cheating.R
+  캐시 재사용
+처리 중: week9_cheating.R
+  캐시 재사용
+처리 중: message_hello (1).py
+  캐시 재사용
+처리 중: pigpio.py
+  캐시 재사용
+처리 중: python3_voice_alert.py
+  캐시 재사용
+처리 중: rpi_gpio.py
+  캐시 재사용
+처리 중: stream_yolo.py
+  캐시 재사용
+처리 중: voice_alert.py
+  캐시 재사용
+처리 중: voice_alert1.py
+  캐시 재사용
+처리 중: voice_test.py
+  캐시 재사용
+처리 중: YOLO(test) (1).ipynb
+  캐시 재사용
+처리 중: YOLO(test)_picture(light_ver) (1).ipynb
+  캐시 재사용
+처리 중: YOLO(test)_picture.ipynb
+  캐시 재사용
+처리 중: yolo_learn.ipynb
+  캐시 재사용
+처리 중: yolo_learning2 (1).ipynb
+  캐시 재사용
+처리 중: yolo_learning5 (1).ipynb
+  캐시 재사용
+처리 중: yolo_open.py
+  캐시 재사용
+처리 중: yolo_stream.py
+  캐시 재사용
+처리 중: yolo_stream_front.py
+  캐시 재사용
+처리 중: 19세기_후반_불평등조약체제의_성립_과정.pdf
+  캐시 재사용
+처리 중: 4주차_강화도조약과 개항.pdf
+  캐시 재사용
+처리 중: 강화도조약과 개항.pdf
+  캐시 재사용
+처리 중: 개항기 조선 서양과 만나다.pdf
+  캐시 재사용
+처리 중: 근대 국민국가와 왕권.pdf
+  캐시 재사용
+처리 중: 근대 국민국가와 왕권_sum.pdf
+  캐시 재사용
+처리 중: 근대사_연표_19세기 후반.pdf
+  캐시 재사용
+처리 중: 동아시아의 개항 난징조약에서 강화도 조약까지.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강 1.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강1_ppt.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강2.pdf
+  캐시 재사용
+처리 중: 서세동점 동아시아와 서양 열강2＿ppt_2026.pdf
+  캐시 재사용
+처리 중: 일본의 개항과 미국.pdf
+  캐시 재사용
+처리 중: 읽기자료_갑오개혁의 전개와 성과.pdf
+  캐시 재사용
+처리 중: 읽기자료_갑오개혁의 한계.pdf
+  캐시 재사용
+처리 중: 임오군란과 갑신정변.pdf
+  캐시 재사용
+처리 중: 청일전쟁과 갑오개혁_ppt.pdf
+  캐시 재사용
+처리 중: 청일전쟁과 갑오개혁_요약.pdf
+  캐시 재사용
+처리 중: 한국 근현대 인물사 연구방법론.pdf
+  캐시 재사용
+처리 중: 한국의 식민지 근대는 어떠한 성격의 사회였나.pdf
+  캐시 재사용
+처리 중: 한성도시개조사업.pdf
+  캐시 재사용
+처리 중: 행정개혁기구의_성공_조건.pdf
+  캐시 재사용
+처리 중: 후지타 쓰구아키라의 생애를 통해 본 식민지 조선의 의학의료위생-13-27.pdf
+  캐시 재사용
+처리 중: 근대 서양 문물의 도입_ppt.pdf
+  캐시 재사용
+처리 중: 근대의 법과 제도는 어떻게 이식되었는가_ppt.pdf
+  캐시 재사용
+처리 중: 세균설과 근대의 보건_위생_ppt.pdf
+  캐시 재사용
+처리 중: 해방전후의 한국 정치와 사회_제주.pdf
+  캐시 재사용
+처리 중: 해외 인력 송출의 역사와 파독 광부 간호사.pdf
+  캐시 재사용
+처리 중: 4.3history.pdf
+  캐시 재사용
+처리 중: 근대 서양 문물의 도입과 일상생활.pdf
+  캐시 재사용
+처리 중: 근대의 법과 제도는 어떻게 이식되었는가.pdf
+  캐시 재사용
+처리 중: 메이지 일본에서 근대적 위생의 형성과정 1868-1905.pdf
+  캐시 재사용
+처리 중: 세균설과 식민지 근대의 보건ㆍ위생_노트.pdf
+  캐시 재사용
+처리 중: 유관순의 발굴과 재현.pdf
+  캐시 재사용
+처리 중: 유관순이라는 표상의 형성과 기억의 정치학_필기노트.pdf
+  캐시 재사용
+처리 중: 제주 4·3의 진실과 역사적 의미_박찬식.pdf
+  캐시 재사용
+처리 중: 파월기술자의 전쟁경험.pdf
+  캐시 재사용
+처리 중: 한국전쟁기 임시수도 부산지역의 피난학교 연구.pdf
+  캐시 재사용
+처리 중: 한국현대사와 영화 ‘국제시장＇.pdf
+  캐시 재사용
+처리 중: 해방이전 제주의 사회와 경제_양정필.pdf
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: birds.csv
+  캐시 재사용
+처리 중: diabetes.tsv
+  캐시 재사용
+처리 중: emails.csv
+  캐시 재사용
+처리 중: form.csv
+  캐시 재사용
+처리 중: honey.csv
+  캐시 재사용
+처리 중: mushrooms.csv
+  캐시 재사용
+처리 중: SOCR_MLB.tsv
+  캐시 재사용
+처리 중: taxi.csv
+  캐시 재사용
+처리 중: UID_ISO_FIPS_LookUp_Table.csv
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: CocaColaCo.xlsx
+  캐시 재사용
+처리 중: PersonsData.json
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: TwitterData.json
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook-covidspread.ipynb
+  캐시 재사용
+처리 중: notebook-papers.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.ipynb
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: assignment.md
+  캐시 재사용
+처리 중: correlation-analysis.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: notebook.ipynb
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: README.md
+  캐시 재사용
+처리 중: letters.json
+  캐시 재사용
+처리 중: letters.json
+  캐시 재사용
+처리 중: time_series_covid19_confirmed_global.csv
+  캐시 재사용
+처리 중: time_series_covid19_deaths_global.csv
+  캐시 재사용
+처리 중: time_series_covid19_recovered_global.csv
+  캐시 재사용
+처리 중: 01. 금융의역할과주요금융지표.pdf
+  캐시 재사용
+처리 중: 02. 금융상품과금융시장.pdf
+  캐시 재사용
+처리 중: 03. 저축의이해.pdf
+  캐시 재사용
+처리 중: 14주차_종합과제-2.ipynb
+  캐시 재사용
+처리 중: customers.csv
+  캐시 재사용
+처리 중: orders_202401.csv
+  캐시 재사용
+처리 중: orders_202402.csv
+  캐시 재사용
+처리 중: orders_202403.csv
+  캐시 재사용
+처리 중: products.csv
+  캐시 재사용
+처리 중: reviews.csv
+  캐시 재사용
+처리 중: student_performance.csv
+  캐시 재사용
+처리 중: week10_example.csv
+  캐시 재사용
+처리 중: week10_homework.ipynb
+  캐시 재사용
+처리 중: week10_hospital_raw.csv
+  캐시 재사용
+처리 중: week11_home.ipynb
+  캐시 재사용
+처리 중: week11_item.csv
+  캐시 재사용
+처리 중: week11_shop.csv
+  캐시 재사용
+처리 중: week12.ipynb
+  캐시 재사용
+처리 중: week12_data.csv
+  캐시 재사용
+처리 중: week13_assignment-2.ipynb
+  캐시 재사용
+처리 중: week13_health.csv
+  캐시 재사용
+처리 중: week14_assignment.ipynb
+  캐시 재사용
+처리 중: week14_data.csv
+  캐시 재사용
+처리 중: Week4_Assignment.ipynb
+  캐시 재사용
+처리 중: week5.ipynb
+  캐시 재사용
+처리 중: Week6_share.ipynb
+  캐시 재사용
+처리 중: week7_2.ipynb
+  캐시 재사용
+처리 중: week_7_convenience_store.csv
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료1.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료10.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료11.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료12.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료13.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료14.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료2.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료3.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료4.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료5.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료6.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료7.pdf
+  캐시 재사용
+처리 중: 데이터사이언스_강의자료9.pdf
+  캐시 재사용
+처리 중: test_new_file.py
+  캐시 재사용
+처리 중: test_penguin_ai.py
+  캐시 재사용
+처리 중: op.py
+  캐시 재사용
+처리 중: test_yolo_detection.py
+  캐시 재사용
+캐시 재사용: 203개 / 새로 추출: 0개
+
+텍스트 추출 및 파일 정보 결합 완료!
+총 파일 수: 203
+추출 성공: 203
+저장 위치: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\extracted_text.csv
+file_id                     filename  char_count extraction_status                                                                                              preview
+   F001 Cross-Validation_Decoded.pdf        5485           success [페이지 1] 교차 A3S(Cross-Validation)2| 해부학  NumPy 엔진 직접 구현부터 Scikit-learn2| 우아한 자동화까지  A) NotebookLM    
+   F002          MLP(다층퍼셉트론)(강의).pdf        8159           success [페이지 1] MLP(다층퍼셉트론)   [페이지 2] 학습목표  MLP의작동원리를이해한다.   경사하강법을이해한다.   역전파알고리즘을이해한다.   넘파이만으로MLP를구현해
+   F003         Transformer_강의자료.pdf        8234           success [페이지 1] TRANSFORMER   [페이지 2] ChatGPT의등장  ChatGPT는OpenAI에서개발하고2022년11월30일에출시된챗봇이 다. ChatGPT는우리에게많은충
+   F004               머신러닝(내용추가).pdf        9133           success [페이지 1] 머신러닝   [페이지 2] 학습목표  머신러닝과전통적인프로그래밍의차이를이해한다.  머신러닝의과정을이해한다.  붓꽃데이터를분류해본다.  숫자이미지를분류해본다. 
+   F005                선형회귀_업데이트.pdf        5723           success [페이지 1] 선형회귀   [페이지 2] 학습목표  회귀의개념을이해한다.  경사하강법을이해한다.  과잉적합과과소적합을이해한다.  파이썬과sklearn을이용하여회귀를구현해본다
+   F006                    심층신경망.pdf       13338           success [페이지 1] 심층신경망   [페이지 2] 학습목표  심층신경망의구조를이해한다.  은닉층의역할을이해한다.  그래디언트소실문제를이해한다.  새로등장한여러가지활성화함수를이해한다
+   F007                영상인식과 딥러닝.pdf        4042           success [페이지 1] 데이터증대  데이터증대(data augmentation)는한정된데이터에서여러가지로변형된데 이터를만들어내는기법이다.   [페이지 2] 라이브러리를포함시킨다. impo
+   F008        제09장 컨벌루션 신경망(강의).pdf        5945           success [페이지 1] 9장컨벌루션신경망   [페이지 2] 학습목표  컨벌루션신경망을이해한다.  컨벌루션신경망을적용해본다.   [페이지 3] 컨볼루션신경망(CNN)  컨볼루션(Conv
+   F009           제11장 순환신경망(강의).pdf        7540           success [페이지 1] 11장순환신경망   [페이지 2] 학습목표  순환신경망의작동원리를이해한다.  순환신경망을이용하여서사인파를예측하는프로그램을작성해본다.  순환신경망을이용하여서주가를
+   F010                케라스 라이브러리.pdf        9998           success [페이지 1] 케라스라이브러리   [페이지 2] 텐서플로우와케라스  텐서플로우(TensorFlow)는딥러닝프레임워크의일종이다. 텐서플로우 는내부적으로C/C++로구현되어있고파이썬을
+[TIME] 파일 내용 추출: 7.10초
+
+[3/5] AI 설명 생성
+이전 자동 생성 결과를 불러왔습니다.
+기존 description 재사용: 46 개
+수동 description 보호: 157 개
+생성/재생성 대상: 0 개
+
+작업 완료!
+전체 파일: 203
+description 작성 완료: 203
+description 미작성: 0
+이번 실행 생성/재생성: 0
+본문 없는 파일: 0
+저장 위치: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role02\metadata_description_generated.csv
+해시 저장 위치: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role02\description_hashes.json
+[TIME] AI 설명 생성: 1.66초
+
+[4/5] 프로젝트·Role·시간 자동 분류
+분류 결과 저장: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role02\metadata_classification_generated.csv (203개)
+주의: 기존 검색 엔진에 예측 라벨을 적용하려면 별도 연결이 필요합니다.
+[TIME] 프로젝트·Role·시간 자동 분류: 3.29초
+
+[5/5] 증분 임베딩 갱신
+검색 대상 파일 수: 203
+검색 텍스트 조각 수: 4884
+기존 임베딩 재사용: 203개 파일
+새로 임베딩: 0개 파일
+검색 인덱스 저장 완료: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\search_index
+[TIME] 증분 임베딩 갱신: 1.37초
+
+========== 실행 시간 요약 ==========
+파일 목록 갱신: 2.98초
+파일 내용 추출: 7.10초
+AI 설명 생성: 1.66초
+프로젝트·Role·시간 자동 분류: 3.29초
+증분 임베딩 갱신: 1.37초
+전체 실행 시간: 16.40초
+====================================
+
+완료! 파일, 설명, 분류 결과, 검색 인덱스 갱신 성공.
+자동 분류 결과: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role02\metadata_classification_generated.csv
+검색 인덱스: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\search_index
+[TIME] update_pipeline_integrated.py: 16.64초
+[1/4] 파일 목록과 메타데이터 갱신
+[2/4] 전체 파일 본문 추출
+[3/4] DB와 파일 관계 갱신
+{
+  "files": 203,
+  "extraction_success": 203,
+  "local_files_found": 203,
+  "size_mismatches": 0,
+  "references": 197,
+  "resolved": 29,
+  "ambiguous": 42,
+  "missing": 126
+}
+[TIME] file_db.py: 10.86초
+[4/4] 검색 임베딩과 인덱스 갱신
+[5/5] AI 관련 파일 추천 갱신
+전체 파일: 203개
+임베딩 보유 파일: 203개
+관련 파일 관계: 1015개
+relation_type
+context_related     961
+direct_reference     54
+Name: count, dtype: int64
+저장 완료: C:\Users\User\Desktop\AI+X\AI-X\.update-zo6hf7d6\Role01\file_relations_v5.csv
+[TIME] file_relations_v5.py: 4.05초
+integrated=True, snapshot=True
+[DEBUG] DB 경로 수정 시작
+[DEBUG] SQLite 경로 수정 완료
+[DEBUG] audit.csv 경로 수정 완료
+[DEBUG] DB 경로 수정 단계 종료
+[DEBUG] 결과 파일 교체 시작
+[DEBUG] 파일 교체 시작: Role01/metadata.csv
+[DEBUG] 파일 교체 시작: Role01/extracted_text.csv
+[DEBUG] 파일 교체 시작: Role01/search_index
+[DEBUG] 파일 교체 시작: Role03/output/files.sqlite3
+[DEBUG] 파일 교체 시작: Role03/output/audit.csv
+[DEBUG] 파일 교체 시작: Role03/output/relations.csv
+[DEBUG] 파일 교체 시작: Role03/output/summary.json
+[DEBUG] 파일 교체 시작: Role02/metadata_description_generated.csv
+[DEBUG] 파일 교체 시작: Role02/metadata_classification_generated.csv
+[DEBUG] 파일 교체 시작: Role02/description_hashes.json
+[DEBUG] 파일 교체 시작: Role01/.extraction_cache.json
+[DEBUG] 파일 교체 시작: Role01/file_relations_v5.csv
+기존 데이터 백업: C:\Users\User\Desktop\AI+X\AI-X\update_backups\20261123_153348_805366
+[DEBUG] 결과 파일 교체 완료
+갱신 완료. 실행 중인 검색은 다음 검색부터 새 데이터를 사용합니다.
+127.0.0.1 - - [23/Nov/2026 15:34:13] "GET /api/health HTTP/1.1" 200 -

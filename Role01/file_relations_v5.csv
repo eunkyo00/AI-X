@@ -1008,9 +1008,14 @@ F202,F203,op.py,test_yolo_detection.py,context_related,0.6546,0.8659,0.0,0.5,0.7
 F202,F201,op.py,test_penguin_ai.py,context_related,0.6517,0.8611,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8611 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
 F202,F200,op.py,test_new_file.py,context_related,0.6494,0.8573,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8573 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
 F202,F193,op.py,데이터사이언스_강의자료2.pdf,context_related,0.6283,0.8555,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8555 / 상호 보완적인 파일 역할
-F202,F196,op.py,데이터사이언스_강의자료5.pdf,context_related,0.6271,0.8535,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8535 / 상호 보완적인 파일 역할
+F202,F204,op.py,password_generator.py,context_related,0.628,0.855,0.0,0.5,0.3,1.0,0.0,False,E5 유사도 0.8550 / 동일 파일 역할 / 동일 폴더
 F203,F200,test_yolo_detection.py,test_new_file.py,context_related,0.6584,0.8724,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8724 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
 F203,F201,test_yolo_detection.py,test_penguin_ai.py,context_related,0.6567,0.8696,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8696 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
 F203,F202,test_yolo_detection.py,op.py,context_related,0.6546,0.8659,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8659 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
 F203,F188,test_yolo_detection.py,데이터사이언스_강의자료10.pdf,context_related,0.6365,0.8691,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8691 / 상호 보완적인 파일 역할
 F203,F190,test_yolo_detection.py,데이터사이언스_강의자료12.pdf,context_related,0.6361,0.8685,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8685 / 상호 보완적인 파일 역할
+F204,F199,password_generator.py,데이터사이언스_강의자료9.pdf,context_related,0.634,0.865,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8650 / 상호 보완적인 파일 역할
+F204,F190,password_generator.py,데이터사이언스_강의자료12.pdf,context_related,0.6323,0.8622,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8622 / 상호 보완적인 파일 역할
+F204,F203,password_generator.py,test_yolo_detection.py,context_related,0.6323,0.8288,0.0,0.5,0.7,1.0,0.0,False,E5 유사도 0.8288 / 동일 파일 역할 / 작업 시기가 가까움 / 동일 폴더
+F204,F198,password_generator.py,데이터사이언스_강의자료7.pdf,context_related,0.6323,0.8621,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8621 / 상호 보완적인 파일 역할
+F204,F193,password_generator.py,데이터사이언스_강의자료2.pdf,context_related,0.6319,0.8615,0.0,1.0,0.3,0.0,0.0,False,E5 유사도 0.8615 / 상호 보완적인 파일 역할
