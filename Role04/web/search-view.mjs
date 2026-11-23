@@ -41,7 +41,7 @@ export class SearchView {
     this.tabs.forEach((tab, index) => {
       tab.addEventListener('click', () => this.setTab(tab.dataset.tab));
       tab.addEventListener('keydown', event => {
-        const next = { ArrowRight: (index + 1) % 4, ArrowLeft: (index + 3) % 4, Home: 0, End: 3 }[event.key];
+        const next = { ArrowRight: (index + 1) % this.tabs.length, ArrowLeft: (index + this.tabs.length - 1) % this.tabs.length, Home: 0, End: this.tabs.length - 1 }[event.key];
         if (next !== undefined) {
           event.preventDefault();
           this.setTab(this.tabs[next].dataset.tab);
@@ -145,7 +145,7 @@ export class SearchView {
       const heading = el('span', 'result-card-heading');
       heading.append(el('strong', '', file.name), el('span', 'result-rank', `${this.source==='local'?'순서':'추천'} ${file.rank}`));
       const meta = el('span', 'result-meta');
-      [file.name.split('.').pop().toUpperCase(), this.taskNames[file.task] || file.taskName || '작업 정보 없음', file.role || '알 수 없음', displayDate(file.modified)].forEach(value => meta.append(el('span', '', value)));
+      [file.name.split('.').pop().toUpperCase(), this.taskNames[file.task] || file.taskName || file.project || '작업 정보 없음', file.role || '알 수 없음', displayDate(file.modified)].forEach(value => meta.append(el('span', '', value)));
       if(Number.isFinite(file.score))meta.append(el('span','','유사도 '+file.score.toFixed(3)));
       body.append(heading, el('span', 'result-path', file.path), meta, el('span', 'result-summary', file.summary));
       button.append(body);
@@ -202,15 +202,21 @@ export class SearchView {
     if(file.contentAvailable===false)this.detail.append(el('p','capability-note','원본 파일 열기는 아직 연결되지 않았습니다. 검색에 사용한 본문 발췌를 아래에서 확인할 수 있습니다.'));
     if (this.activeTab === 'overview') {
       const table = el('dl', 'file-properties');
-      [['파일 형식', file.name.split('.').pop().toUpperCase()], ['크기', file.size], ['역할', file.role || '알 수 없음'], ['수정 날짜', displayDate(file.modified)], ['위치', file.path]].forEach(([name, value]) => {
+      [['파일 형식', file.name.split('.').pop().toUpperCase()], ['크기', file.size], ['프로젝트', file.project || '알 수 없음'], ['역할', file.role || '알 수 없음'], ['생성 날짜', displayDate(file.created)], ['수정 날짜', displayDate(file.modified)], ['분류 기준 시각', file.activityAt || '미제공'], ['시각 근거', ({modified_at:'수정 날짜',created_at:'생성 날짜',activity_at:'기록된 활동 시각'}[file.timeSource] || file.timeSource || '미제공')], ['시간 분류', ['year_month','quarter','half_year','season'].map(key=>file.classification?.[key]).filter(Boolean).join(' · ') || '미제공'], ['위치', file.path]].forEach(([name, value]) => {
         table.append(el('dt', '', name), el('dd', '', value));
       });
       this.detail.append(table);
+      for(const [field,label] of [['project','프로젝트'],['role','역할']]){
+        const prediction=file.classification || {};
+        if(prediction['predicted_'+field]){
+          const needs=['true','1','yes'].includes(String(prediction[field+'_needs_confirmation']).toLowerCase());
+          this.detail.append(el('p','capability-note',`${label} 자동 예측: ${prediction['predicted_'+field]} · ${needs?'확인 필요':'모델 판정'}${prediction[field+'_confidence']?' · 신뢰도 '+prediction[field+'_confidence']:''}`));
+        }
+      }
       this.renderEvidence(file, true);
       this.renderRelated(file, true);
     } else if (this.activeTab === 'evidence') this.renderEvidence(file);
     else if (this.activeTab === 'related') this.renderRelated(file);
-    else this.renderContext(file);
     this.detail.append(el('p', 'detail-footnote', this.source==='mock'?'화면용 예시 데이터입니다. 예시 파일에는 실제 원본이 없습니다.':this.source==='local'?'브라우저에 보관한 파일입니다. AI 분석·검색 인덱싱과 작업 관계는 아직 제공되지 않았습니다.':'팀원 API가 반환한 정보입니다. 누락된 근거는 임의로 채우지 않습니다.'));
   }
   renderEvidence(file, compact = false) {
@@ -253,31 +259,12 @@ export class SearchView {
       button.setAttribute('aria-label', `${target.name} 관련 파일 상세 보기`);
       button.append(fileIcon(target), el('strong', '', target.name));
       if (!compact) button.append(el('span', 'related-description', relation.label));
+      if (!compact && relation.evidence) button.append(el('span', 'related-description', relation.evidence));
       button.append(badge(relation.certainty));
       button.addEventListener('click', () => this.select(target, true));
       list.append(button);
     });
     this.detail.append(list);
     if (compact && related.length) this.detail.append(this.tabLink('관계와 근거 확인 →', 'related'));
-  }
-  renderContext(file) {
-    if(!file.task){this.detail.append(el('p','context-intro','제공된 작업 정보가 없습니다. 파일명이나 시각만으로 같은 작업이라고 단정하지 않습니다.'));return;}
-    this.detail.append(el('h3', '', this.taskNames[file.task] || file.taskName || '작업 정보 없음'), el('p', 'context-intro', this.source==='mock'?'예시 파일의 내용·참조를 바탕으로 구성한 작업 맥락입니다. 같은 작업이라는 판단에는 추정이 포함됩니다.':'서비스가 제공한 작업 ID와 관계를 표시합니다. 확인된 사실과 추정을 구분해 확인하세요.'));
-    const group = el('div', 'context-files');
-    this.catalog.filter(item => item.task === file.task).forEach(item => {
-      const button = el('button', 'context-file', `${item.role} · ${item.name}`);
-      button.type = 'button';
-      button.setAttribute('aria-current', String(item.id === file.id));
-      button.addEventListener('click', () => this.select(item, true));
-      group.append(button);
-    });
-    this.detail.append(group, el('h3', 'context-relations-title', '파일 간 연결'));
-    const list = el('ul', 'context-relations');
-    this.relations.filter(link => this.catalog.find(item => item.id === link.from)?.task === file.task).forEach(link => {
-      const row = el('li', link.certainty);
-      row.append(el('strong', '', `${this.catalog.find(item => item.id === link.from).name} → ${this.catalog.find(item => item.id === link.to).name}`), el('span', '', link.label), badge(link.certainty));
-      list.append(row);
-    });
-    this.detail.append(list);
   }
 }

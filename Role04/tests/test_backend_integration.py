@@ -39,11 +39,17 @@ class IntegrationTests(unittest.TestCase):
                      predicted_project='ignored', project_needs_confirmation='False', year_month='2026-11'),
                 dict(file_id='F1', predicted_role='ignored', role_needs_confirmation='False',
                      predicted_project='uncertain', project_needs_confirmation='True', year_month='2026-10')])
+            import pandas as pd
             class Engine:
+                df = pd.DataFrame({"file_id": ["F1", "F2"]})
+                def get_related_files(self, file_id, top_n): return []
                 def search_files(self, query, top_k):
                     return [dict(file_id='F2', score=.8, chunk_text='body')]
             service = SearchService.__new__(SearchService)
             service.engine_dir, service.lock, service.engine = one, threading.Lock(), Engine()
+            service.backend = root
+            service.active_job = None
+            service.original_root = one / 'dataset/files'
             result = service.search('query')['files'][0]
             self.assertEqual((result['file_id'], result['summary'], result['role']), ('F2', 'second', 'code'))
             self.assertEqual((result['project'], result['year_month']), ('manual', '2026-11'))
@@ -76,7 +82,7 @@ class IntegrationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             for name in ('Role01/paths.py', 'Role01/file_reload_code.py', 'Role01/extract_content.py',
-                         'Role01/refresh_search.py', 'Role01/file_reload_append_only.py',
+                         'Role01/refresh_search.py', 'Role01/file_reload_append_only.py', 'Role01/file_relations_v5.py',
                          'Role03/file_db.py', 'update_pipeline_integrated.py',
                          'Role02/description_generator.py', 'Role02/classify_metadata.py',
                          'Role02/project_classifier.py', 'Role02/project_classifier_v3.py', 'Role02/role_classifier.py'):
@@ -103,7 +109,7 @@ class IntegrationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             for relative in ('Role01/paths.py', 'Role01/file_reload_code.py', 'Role01/extract_content.py',
-                             'Role01/refresh_search.py', 'Role01/file_reload_append_only.py',
+                             'Role01/refresh_search.py', 'Role01/file_reload_append_only.py', 'Role01/file_relations_v5.py',
                              'Role03/file_db.py', 'update_pipeline_integrated.py',
                              'Role02/description_generator.py', 'Role02/classify_metadata.py',
                              'Role02/project_classifier.py', 'Role02/project_classifier_v3.py', 'Role02/role_classifier.py'):
@@ -126,6 +132,8 @@ class IntegrationTests(unittest.TestCase):
                     (stage/'Role01/.extraction_cache.json').write_text('{}')
                     (stage/'Role01/search_index').mkdir()
                     (stage/'Role01/search_index/index.json').write_text('{}')
+                elif script.name == 'file_relations_v5.py':
+                    (script.parent/'file_relations_v5.csv').write_text('source_file_id,target_file_id\nF1,F2\n')
                 else:
                     self.assertEqual(script.name, 'file_db.py')
                     for relative in ARTIFACTS:
@@ -134,7 +142,7 @@ class IntegrationTests(unittest.TestCase):
                             path.parent.mkdir(parents=True, exist_ok=True)
                             path.write_text('db result')
             update(root, runner=runner, integrated=True)
-            self.assertEqual(calls, ['update_pipeline_integrated.py', 'file_db.py'])
+            self.assertEqual(calls, ['update_pipeline_integrated.py', 'file_db.py', 'file_relations_v5.py'])
             self.assertIn('Qwen result', (root/'Role02/metadata_description_generated.csv').read_text())
             self.assertIn('code', (root/'Role02/metadata_classification_generated.csv').read_text())
             self.assertIn('F1', (root/'Role01/metadata.csv').read_text())

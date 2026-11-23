@@ -17,3 +17,14 @@ Role01/dataset/files/uploads/
 Role01/dataset/files/watched/
 Role01/.file_id_state.json
 Role01/.extraction_cache.json
+
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.env
+build/
+dist/
+*.egg-info/
+# GUI runtime data, model cache and backups
+Role04/runtime/

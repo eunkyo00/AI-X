@@ -24,7 +24,6 @@ document.querySelectorAll('[data-icon]').forEach(el => { el.innerHTML = icon(el.
 
 const pages = {
   files: ['내 파일', '등록한 파일을 한곳에서 확인하는 공간입니다.'],
-  tasks: ['작업 보기', '파일을 작업 단위로 살펴보는 공간입니다.'],
   history: ['최근 검색', '이전 검색 기록을 관리하는 공간입니다.'],
   favorites: ['즐겨찾기', '다시 찾고 싶은 파일을 모아두는 공간입니다.'],
   register: ['파일 등록', '파일과 폴더를 등록하는 공간입니다.'],
@@ -148,7 +147,7 @@ function route() {
   const page = requested === 'results' && !currentQuery ? 'home' : requested;
   const placeholder = Object.hasOwn(pages, page);
   if (page !== 'results') searchController.cancel('navigation');
-  const target = ['files','register','favorites','tasks','settings'].includes(page) ? `${page}-page` : page === 'history' ? 'history-page' : placeholder ? 'placeholder-page' : page === 'results' ? 'results-page' : 'home-page';
+  const target = ['files','register','favorites','settings'].includes(page) ? `${page}-page` : page === 'history' ? 'history-page' : placeholder ? 'placeholder-page' : page === 'results' ? 'results-page' : 'home-page';
   document.querySelectorAll('main > .page').forEach(el => { el.hidden = el.id !== target; });
   document.querySelectorAll('[data-page]').forEach(el => {
     const selected = el.dataset.page === (page === 'results' || !placeholder ? 'home' : page);
@@ -191,59 +190,6 @@ document.querySelectorAll('[data-query]').forEach(button => {
     document.querySelector('#home-query').dispatchEvent(new Event('input'));
     search(button.dataset.query);
   });
-});
-const demoTasks = [
-  { id: 'r-analysis', title: 'R 데이터 분석 과제', color: 'orange', date: '2026. 10', query: '지난달 R 과제할 때 사용했던 데이터', description: '입력 데이터에서 분석 코드, 그래프, 보고서로 이어지는 작업 예시입니다.', files: [['R_과제_설명.pdf', '참고 문서'], ['student_data.csv', '입력 데이터'], ['analysis.R', '분석 코드'], ['result_plot.png', '그래프'], ['분석_보고서.docx', '결과 문서']] },
-  { id: 'presentation', title: '딥러닝 발표 준비', color: 'purple', date: '2026. 09', query: '딥러닝 발표 준비했던 PPT 찾아줘', description: '참고 논문과 정리 노트를 모아 발표를 준비한 작업 예시입니다.', files: [['강화학습_논문.pdf', '참고 자료'], ['발표_메모.txt', '작업 노트'], ['딥러닝_발표.pptx', '발표자료']] },
-  { id: 'python', title: 'Python 실습', color: 'blue', date: '2026. 09', query: 'Python 실습할 때 쓴 코드랑 결과 파일', description: '원본 데이터를 코드로 처리하고 결과를 저장한 실습 예시입니다.', files: [['Python_실습_안내.pdf', '실습 안내'], ['raw_data.csv', '입력 데이터'], ['process.py', '처리 코드'], ['output.csv', '결과 데이터']] },
-];
-const dialog = document.querySelector('#task-dialog');
-function showTask(task) {
-  const container = document.querySelector('#task-dialog-content');
-  container.replaceChildren();
-  const title = element('h2', '', task.title);
-  title.id = 'task-dialog-title';
-  container.append(title, element('p', 'task-description', task.description));
-  const files = element('ul', 'task-files');
-  task.files.forEach(([name, role]) => {
-    const row = element('li', '');
-    row.innerHTML = `<span class="task-file-icon ${task.color}">${icon('document')}</span>`;
-    row.append(element('span', '', name), element('small', '', role));
-    files.append(row);
-  });
-  container.append(files, element('p', 'task-demo-note', '화면 설명을 위한 예시입니다. 실제 파일이 등록되거나 열리지는 않습니다.'));
-  const searchButton = element('button', 'task-search-button', '이 작업의 예시 질문으로 검색 →');
-  searchButton.addEventListener('click', () => { dialog.close(); search(task.query); });
-  container.append(searchButton);
-  dialog.showModal();
-}
-demoTasks.forEach(task => {
-  const button = element('button', 'task-shortcut');
-  button.type = 'button';
-  button.innerHTML = `<span class="task-icon ${task.color}">${icon('folder')}</span>`;
-  const text = element('span', 'task-shortcut-text');
-  text.append(element('strong', '', task.title), element('small', '', `예시 파일 ${task.files.length}개 · ${task.date}`));
-  button.append(text);
-  button.addEventListener('click', () => showTask(task));
-  document.querySelector('#recent-tasks').append(button);
-});
-document.querySelector('#view-demo-tasks').addEventListener('click', () => {
-  const container = document.querySelector('#task-dialog-content');
-  container.replaceChildren();
-  const title = element('h2', '', '작업 맥락 미리보기');
-  title.id = 'task-dialog-title';
-  container.append(title, element('p', 'task-description', '작업을 선택해 관련 파일 구성을 살펴보세요.'));
-  demoTasks.forEach(task => {
-    const button = element('button', 'task-overview-button', `${task.title} · 예시 파일 ${task.files.length}개 →`);
-    button.addEventListener('click', () => { dialog.close(); showTask(task); });
-    container.append(button);
-  });
-  dialog.showModal();
-});
-document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-dialog.addEventListener('click', event => {
-  const rect = dialog.getBoundingClientRect();
-  if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
 });
 document.querySelector('#clear-history').addEventListener('click', () => {
   recent = [];
