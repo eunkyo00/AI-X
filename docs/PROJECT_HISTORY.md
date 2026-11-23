@@ -160,6 +160,51 @@ V4는 적중률이 높아졌지만 회수율과 순위는 나빠졌다. V5는 �
 
 현재 과목별 묶음과 정적 참조를 제공하지만, 실제 파일 사용 이력이나 작업 세션 전체를 복원했다고 볼 근거는 없다.
 
-## 7. 상세 근거
+## 7. 역할별 Markdown 문서 목록
 
-본문 링크에서 코드와 원시 결과를 확인할 수 있다. 추가 기록은 [검색 실행 검증](../Role04/docs/search-engine-validation.md), [DB 참조 점검](../Role03/REFERENCE_CHECK_REPORT.md), [GUI 11/9 검증](../Role04/docs/integration-2026-11-09.md), [전체 커밋 이력](https://github.com/eunkyo00/AI-X/commits/6606aee277c154051d3d94be07842b85bed1a687/)을 참고한다. 개인별 기여와 실제 개발일이 확인되지 않은 활동은 임의로 배정하지 않았다.
+프로젝트 문서 24개를 **개요 → 설계·구현 → 실험·검증 → 실행** 흐름으로 정리했다. 작성일순이 아닌 읽는 순서이며, 검색용으로 가져온 외부 수업 자료의 Markdown은 제외했다. 과거 계획·점검 문서는 당시 상태로 읽고, 현재 실행 방법은 최신 README를 따른다.
+
+### 공통 — 프로젝트와 데이터 이해
+
+- [README.md](../README.md) — 상황으로 파일을 찾는 문제, 프로젝트 목표와 전체 검색 흐름을 소개한다.
+- [data/README.md](../data/README.md) — 원본·라벨 데이터 구성, 공개 자료 출처와 평가 데이터 관리 기준을 설명한다.
+- [docs/PROJECT_HISTORY.md](PROJECT_HISTORY.md) — 프로젝트 시작부터 검색·분류·DB·GUI 통합까지의 개발 흐름과 핵심 결과를 정리한다.
+
+### Role01 — 검색 방향과 갱신 방법
+
+- [Role01/README.md](../Role01/README.md) — 의미·시간·역할·관계 검색의 담당 범위, 개발 계획과 데이터·검색 갱신 방법을 정리한다.
+
+검색 실험의 세부 결과는 본문 4절의 CSV에, GUI에서 실제 검색을 실행한 기록은 아래 Role04의 `search-engine-validation.md`에 있다.
+
+### Role02 — 평가 기준 → 분류 구현 → 설명 효과 검증
+
+- [Role02/README.md](../Role02/README.md) — 작업별 데이터·검색 정답 구성과 검색 성능 평가 기준을 정리한다.
+- [PROJECT_CLASSIFIER.md](../Role02/PROJECT_CLASSIFIER.md) — 과목 분류기의 학습·예측 방법과 v3/v3.1의 신규 과목 감지 개선을 설명한다.
+- [FILE_METADATA_CLASSIFIERS.md](../Role02/FILE_METADATA_CLASSIFIERS.md) — 시간 정보 생성 규칙과 6종 자료 유형 분류 방법을 설명한다.
+- [DESCRIPTION_AB_EXPERIMENT.md](../Role02/DESCRIPTION_AB_EXPERIMENT.md) — 생성 설명 유무에 따른 분류 신뢰도·신규 과목 감지·오배정을 비교한다.
+
+### Role03 — DB 구현 → 참조 점검 → 데이터 품질 개선
+
+- [Role03/README.md](../Role03/README.md) — 파일·본문·참조 근거의 저장 구조, DB 실행·조회 방법과 지원 범위를 설명한다.
+- [WEEK06_REPORT.md](../Role03/WEEK06_REPORT.md) — 161개 입력 사본의 DB 등록·참조 추출·기본 테스트와 다음 연동 작업을 기록한다.
+- [REFERENCE_CHECK_REPORT.md](../Role03/REFERENCE_CHECK_REPORT.md) — 참조 경로·대상 ID·근거 위치와 연결 상태를 점검하고 중복·미등록 참조 처리를 보완한 기록이다.
+- [QUALITY_CHECK_REPORT.md](../Role03/QUALITY_CHECK_REPORT.md) — 줄바꿈에 따른 크기 차이, TSV 추출 복구와 외부 링크 오탐의 원인·처리 결과를 정리한다.
+
+### Role04 — 화면 구상 → 웹 개발 → 통합 검증 → 실행
+
+`docs/images`의 두 문서는 GUI 구상 자료로 함께 묶었다.
+
+- [Role04/README.md](../Role04/README.md) — 현재 GUI의 기능, 백엔드 연결 범위, 실행 방법과 남은 한계를 안내한다.
+- [search-ui-prompt.md](images/search-ui-prompt.md) — 검색 결과·추천 근거·관련 작업을 보여 주는 초기 화면 시안의 생성 프롬프트를 보관한다.
+- [search-ui-prompt-v2.md](images/search-ui-prompt-v2.md) — 시안에 파일 간 작업 흐름을 추가하고 확인된 참조와 추정을 구분한 수정 기록이다.
+- [gui-usability-plan.md](../Role04/docs/gui-usability-plan.md) — 파일 등록부터 검색·근거 확인·원본 열기까지의 화면·사용성 개발 계획을 정리한다.
+- [web-development.md](../Role04/docs/web-development.md) — 브라우저 GUI로 전환한 뒤 검색·필터·저장·비동기 오류 처리를 구현한 과정을 기록한다.
+- [api-contract.md](../Role04/docs/api-contract.md) — GUI와 백엔드가 주고받을 파일·검색·등록·작업 상태 데이터 규격을 정리한다.
+- [search-engine-validation.md](../Role04/docs/search-engine-validation.md) — 실제 검색 엔진의 실행 시간·캐시·GUI 연결과 원본·PDF 미리보기를 검증한 기록이다.
+- [integration-2026-11-09.md](../Role04/docs/integration-2026-11-09.md) — 시간 검색·관계·업로드·중복 감지·갱신·원본 열기를 실제 파일로 확인한 기록이다.
+- [integration-2026-11-19.md](../Role04/docs/integration-2026-11-19.md) — 설명·자동 분류·폴더 동기화와 수정 후 재분류·삭제 반영을 검증한 기록이다.
+- [integration-2026-11-23.md](../Role04/docs/integration-2026-11-23.md) — V5 추천 근거와 재계산을 GUI에 연결하고 최신 통합 상태를 확인한 기록이다.
+- [gui-handoff.md](../Role04/docs/gui-handoff.md) — 이전 GUI의 인수인계·시연 절차와 미완료 사용성 점검 항목을 정리한다.
+- [GUI 실행/README.md](../Role04/GUI%20실행/README.md) — 팀원의 설치·앱 실행·파일 등록·갱신·오류 대응 방법을 안내한다.
+
+개별 변경은 [전체 커밋 이력](https://github.com/eunkyo00/AI-X/commits/6606aee277c154051d3d94be07842b85bed1a687/)에서 확인할 수 있다. 개인별 기여와 실제 개발일이 확인되지 않은 활동은 임의로 배정하지 않았다.
